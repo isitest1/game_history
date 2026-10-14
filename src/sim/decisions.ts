@@ -233,7 +233,8 @@ export const DECISIONS: DecisionDef[] = [
       const rate = S.eduRate('highSchool', y, p.sex) / 100;
       const school = y < 1948 ? (p.sex === 'male' ? '旧制中学' : '高等女学校') : '高校';
       if (opt === 'go') {
-        const prob = p.flags.includes('elite_middle') ? 0.97 : wishProb(rate, p);
+        // ほとんど全員が進学する時代は、望めばほぼ進める（定時制・通信制も含む）
+        const prob = p.flags.includes('elite_middle') ? 0.97 : Math.max(wishProb(rate, p), rate > 0.95 ? 0.995 : 0);
         if (rng.chance(prob)) {
           p.inSchool = 'high';
           p.stats.knowledge = Math.min(100, p.stats.knowledge + 5);
@@ -242,7 +243,7 @@ export const DECISIONS: DecisionDef[] = [
         }
         p.wishes.push({ age: 15, wish: '高校進学', result: '中学を出て就職', ok: false });
         findJob(st, p, rng, y, 'middle');
-        const why = p.familyClass <= 2 ? '家計を助けるため' : '家の事情で';
+        const why = rate > 0.9 ? '体を壊して受験できず' : p.familyClass <= 2 ? '家計を助けるため' : '家の事情で';
         return { ok: false, text: `${school}に行きたかったが、${why}働くことになった。この年の高校進学率は${pct(rate * 100)}だった。` };
       }
       findJob(st, p, rng, y, 'middle');
@@ -746,7 +747,7 @@ export const DECISIONS: DecisionDef[] = [
       { id: 'retire', label: '定年で辞めて、のんびりしたい' },
     ],
     resolve: (p, opt, st) => {
-      st.prefs.retireAt = opt === 'continue' ? 70 : 55;
+      st.prefs.retireAt = opt === 'continue' ? 65 : 55;
       const y = yearOf(p);
       if (opt === 'continue') return { ok: true, text: y < 2006 ? '定年後も、嘱託として働くつもりだった。' : '65歳まで、再雇用で働くつもりだった。' };
       return { ok: true, text: '定年で辞めると決めた。' };

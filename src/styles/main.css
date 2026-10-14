@@ -1290,8 +1290,26 @@ button {
 }
 .svgchart {
   width: 100%;
+  max-width: 680px;
   height: auto;
   display: block;
+  margin: 0 auto;
+}
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  justify-content: center;
+  font-size: 13px;
+  margin-top: 6px;
+}
+.legend i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+  vertical-align: -1px;
 }
 .share {
   display: grid;

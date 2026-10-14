@@ -758,7 +758,8 @@ function pensionAndRetire(state: GameState, p: Person, rng: Rng, year: number): 
     if (!contributor) start = 65;
     if (state.prefs.pensionTiming === 'early') start = Math.max(60, start - 3);
     if (state.prefs.pensionTiming === 'late') start = Math.min(75, start + 5);
-    if (a >= start && (p.retired || a >= 65 || p.job === 'none')) {
+    // 働きながらでも、支給開始年齢になったら受け取り始める（在職老齢年金による減額は扱わない）
+    if (a >= start) {
       startPension(state, p, year, start);
     }
   }
@@ -805,7 +806,7 @@ function startPension(state: GameState, p: Person, year: number, start: number):
     p,
     'pension',
     `${p.age}歳で年金の受給開始`,
-    `${year}年、年金を受け取り始めた。月に約${man(nominal)}${year !== 2020 ? `（今の価値で約${man(p.pensionMonthlyReal)}）` : ''}。${range ? '2024年の財政検証の見通しから計算した推計で、幅がある。' : ''}`,
+    `${year}年、年金を受け取り始めた。月に約${man(nominal)}${year !== 2020 ? `（今の価値で約${man(p.pensionMonthlyReal)}）` : ''}。${p.age < 65 && year >= 1986 ? '65歳までは厚生年金の部分だけで、基礎年金が加わるのは65歳から（ここでは65歳以降の月額を示す）。' : ''}${range ? '2024年の財政検証の見通しから計算した推計で、幅がある。' : ''}`,
   );
 }
 

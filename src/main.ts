@@ -920,11 +920,12 @@ function survivalSvg(st: GameState): string {
     const c = survivalCurve(p.birthYear, p.sex);
     const d = c.map((v, a) => `${a === 0 ? 'M' : 'L'}${x(a).toFixed(1)},${y(v).toFixed(1)}`).join('');
     const da = p.deathAge ?? 0;
-    return `<path d="${d}" fill="none" stroke="${colors[i]}" stroke-width="2.5"/><circle cx="${x(da)}" cy="${y(c[Math.min(da, 105)])}" r="5" fill="${colors[i]}"/><text x="${Math.min(x(da) + 8, W - 112)}" y="${y(c[Math.min(da, 105)]) - 8 - i * 17}" font-size="13" fill="${colors[i]}" font-weight="700">${p.birthYear}年生まれ・${da}歳</text>`;
+    return `<path d="${d}" fill="none" stroke="${colors[i]}" stroke-width="2.5"/><circle cx="${x(da)}" cy="${y(c[Math.min(da, 105)])}" r="5" fill="${colors[i]}"/><text x="${x(da)}" y="${y(c[Math.min(da, 105)]) + (i === 1 ? 20 : -10)}" font-size="13" text-anchor="middle" fill="${colors[i]}" font-weight="700">${da}</text>`;
   });
   const grid = [0, 20, 40, 60, 80, 100].map((a) => `<line x1="${x(a)}" x2="${x(a)}" y1="${pad / 2}" y2="${H - pad}" stroke="currentColor" opacity=".12"/><text x="${x(a)}" y="${H - 10}" font-size="11" text-anchor="middle" fill="currentColor" opacity=".7">${a}歳</text>`);
   const yg = [0, 0.5, 1].map((v) => `<text x="4" y="${y(v) + 4}" font-size="11" fill="currentColor" opacity=".7">${v * 100}%</text>`);
-  return `<svg class="svgchart" viewBox="0 0 ${W} ${H}" role="img" aria-label="3つの生まれ年の生存曲線">${grid.join('')}${yg.join('')}${lines.join('')}</svg>`;
+  const legend = st.persons.map((p, i) => `<span><i style="background:${colors[i]}"></i>${p.birthYear}年生まれ（${p.deathAge}歳で死去）</span>`).join('');
+  return `<svg class="svgchart" viewBox="0 0 ${W} ${H}" role="img" aria-label="3つの生まれ年の生存曲線">${grid.join('')}${yg.join('')}${lines.join('')}</svg><div class="legend">${legend}</div>`;
 }
 
 function lifeMapRow(p: Person, i: number): string {
