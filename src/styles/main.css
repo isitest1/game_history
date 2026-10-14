@@ -2097,3 +2097,20 @@ button {
 .hero .triplet {
   margin-bottom: 24px;
 }
+.col-head .wa {
+  font-size: 12px;
+}
+.col.era-0 .scene {
+  border-radius: 4px 4px 0 0;
+}
+.col.era-1 .scene {
+  border-radius: 22px 22px 0 0 / 28px 28px 0 0;
+}
+@media (min-width: 900px) {
+  .col-head .wa {
+    font-size: 13px;
+  }
+  .bars .b {
+    font-size: 13px;
+  }
+}
