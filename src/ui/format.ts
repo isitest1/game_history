@@ -25,6 +25,16 @@ export function yen(v: number): string {
   return `${sign}${Math.round(a).toLocaleString('ja-JP')}円`;
 }
 
+/** 狭い欄のための短い書き方（例：1168万、1.2億） */
+export function shortYen(v: number): string {
+  if (!Number.isFinite(v)) return '−';
+  const a = Math.abs(v);
+  const sign = v < 0 ? '−' : '';
+  if (a >= 1e8) return `${sign}${(a / 1e8).toFixed(a >= 1e10 ? 0 : 1)}億`;
+  if (a >= 1e4) return `${sign}${Math.round(a / 1e4)}万`;
+  return `${sign}${Math.round(a)}円`;
+}
+
 export function $(sel: string, root: ParentNode = document): HTMLElement {
   const el = root.querySelector(sel);
   if (!el) throw new Error(`missing ${sel}`);
