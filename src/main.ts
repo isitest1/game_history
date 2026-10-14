@@ -418,16 +418,18 @@ async function showLife(): Promise<void> {
   renderAll();
   renderFocus();
   const colsEl = app.querySelector('.cols') as HTMLElement;
+  const agebarEl = app.querySelector('.agebar') as HTMLElement;
   // スマホ：少しでも下へ送ったら、3人の欄を小さくして上に貼りつける（行き来でちらつかないよう、戻す位置は浅めにする）
   const onScroll = () => {
     if (!colsEl) return;
     const compact = colsEl.classList.contains('is-compact');
     const y = window.scrollY;
-    colsEl.classList.toggle('is-compact', isMobile() && (compact ? y > 4 : y > 24));
+    const on = isMobile() && (compact ? y > 4 : y > 24);
+    colsEl.classList.toggle('is-compact', on);
+    agebarEl.classList.toggle('is-compact', on);
   };
   window.addEventListener('scroll', onScroll, { passive: true });
   // 3人の欄は、上の年齢の帯のすぐ下に貼りつける。帯の高さは端末で変わるので測って渡す
-  const agebarEl = app.querySelector('.agebar') as HTMLElement;
   const setBarH = () => document.documentElement.style.setProperty('--agebar-h', `${agebarEl.offsetHeight}px`);
   setBarH();
   if ('ResizeObserver' in window) new ResizeObserver(setBarH).observe(agebarEl);
@@ -535,7 +537,7 @@ function renderCol(i: number): void {
     <div class="col-head"><span class="yr-num">${year}</span><span class="wa">${wareki(year)}</span></div>
     <div class="who"><span class="nm">${esc(p.name)}</span><span class="st">${esc(statusLine(p))}</span></div>
     ${!alive
-      ? `<div class="tomb"><div class="line">${p.birthYear}–${p.deathYear}</div><div class="kyonen">享年${p.deathAge}</div><div class="line">${esc(p.deathCause ?? '')}</div></div><div class="mini" aria-hidden="true"><span>${esc(p.name.split(' ')[1] ?? p.name)}</span><span>${esc(p.deathCause ?? '')}</span></div>`
+      ? `<div class="tomb"><div class="line">${p.birthYear}–${p.deathYear}</div><div class="kyonen">享年${p.deathAge}</div><div class="line">${esc(p.deathCause ?? '')}</div></div><div class="mini" aria-hidden="true"><b>${esc(p.name.split(' ')[1] ?? p.name)}</b><span>${esc(p.deathCause ?? '')}</span></div>`
       : html`<div class="bars" role="img" aria-label="健康${Math.round(s.health)}、幸福${Math.round(s.happiness)}、知識${Math.round(s.knowledge)}、人間関係${Math.round(s.relation)}">
           <span class="b" title="健康"><em>健康</em><span class="bar"><i style="width:${s.health}%"></i></span></span>
           <span class="b" title="幸福"><em>幸福</em><span class="bar"><i style="width:${s.happiness}%"></i></span></span>
@@ -544,7 +546,7 @@ function renderCol(i: number): void {
         </div>
         <div class="money"><span>${p.money < 0 ? 'ローン' : '貯え'}</span><b>${yen(Math.abs(p.money))}</b></div>
         ${p.income > 0 && !p.retired ? `<div class="money inc"><span>年収</span><b>${yen(p.income)}</b></div>` : p.pensionMonthly ? `<div class="money inc"><span>年金</span><b>月${yen(p.pensionMonthly)}</b></div>` : ''}
-        <div class="mini" aria-hidden="true"><span>${esc(p.name.split(' ')[1] ?? p.name)}</span><span>${p.money < 0 ? '借金' : '貯え'}${shortYen(Math.abs(p.money))}</span></div>`}
+        <div class="mini" aria-hidden="true"><b>${esc(p.name.split(' ')[1] ?? p.name)}</b><span>${p.money < 0 ? '借金' : '貯え'}${shortYen(Math.abs(p.money))}</span></div>`}
     <ul class="feed">
       ${entries.map((e, k) => feedItem(e, k > 0 && !freshEntries.has(e)))}
     </ul>`;
@@ -569,15 +571,17 @@ function renderMFeed(): void {
       const lines = st.persons.map((p, i) => {
         const es = rows.filter((r) => r.i === i && r.e.age === age).map((r) => r.e);
         const year = p.birthYear + age;
-        const who = `<span class="mwho"><b>${year}</b><small>${esc(p.name.split(' ')[1] ?? '')}</small></span>`;
+        const whoOf = (more = '') => `<span class="mwho"><b>${year}</b><small>${esc(p.name.split(' ')[1] ?? '')}</small>${more}</span>`;
+        const who = whoOf();
         if (!es.length) {
           const dead = p.deathAge !== undefined && p.deathAge < age && !deathPending(p);
           if (dead) return '';
           return `<div class="mline ${ERA_CLASS[i]} empty">${who}<div class="mbody"><p class="d">特に記録なし</p></div></div>`;
         }
         const moreKey = `${i}:${age}:more`;
-        const showAll = openKeys.has(moreKey) || es.length <= 2;
-        const visible = showAll ? es : es.slice(0, 2);
+        // 3人を一度に見られるよう、1人につき1件だけ出す。残りは「ほか○件」で開く
+        const showAll = openKeys.has(moreKey) || es.length <= 1;
+        const visible = showAll ? es : es.slice(0, 1);
         const inner = visible
           .map((e) => {
             const key = `${i}:${age}:${p.log.indexOf(e)}`;
@@ -585,8 +589,8 @@ function renderMFeed(): void {
             return `<button type="button" class="ment ${cls}" data-key="${key}" aria-expanded="${openKeys.has(key)}"><b class="t">${esc(e.title)}</b><span class="d">${esc(e.text)}</span></button>${e.heavy ? '<button class="help-note" data-act="helpnote">つらいときの相談先</button>' : ''}`;
           })
           .join('');
-        const more = showAll ? '' : `<button type="button" class="mmore" data-more="${moreKey}">ほか${es.length - 2}件</button>`;
-        return `<div class="mline ${ERA_CLASS[i]}">${who}<div class="mbody">${inner}${more}</div></div>`;
+        const more = showAll ? '' : `<button type="button" class="mmore" data-more="${moreKey}">ほか${es.length - 1}件</button>`;
+        return `<div class="mline ${ERA_CLASS[i]}">${whoOf(more)}<div class="mbody">${inner}</div></div>`;
       });
       const gone = st.persons.filter((p) => p.deathAge !== undefined && p.deathAge < age && !deathPending(p)).map((p) => `${esc(p.name.split(' ')[1] ?? '')}は${p.deathAge}歳で死去`);
       return `<section class="mrow"><h3 class="mage">${age}歳${gone.length ? `<small>${gone.join('・')}</small>` : ''}</h3>${lines.join('')}</section>`;
