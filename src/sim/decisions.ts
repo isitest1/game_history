@@ -829,6 +829,16 @@ function survival(p: Person): number {
   return s;
 }
 
+/** その人に関係のない決断の理由（「この人は」で始める） */
+function irrelevantReason(id: string, p: Person): string {
+  if (id === 'college') return p.job && p.job !== 'none' ? `この人は中学を出てすでに働いているので、この決断はない。` : 'この人は高校に通っていないので、この決断はない。';
+  if (id === 'city') return 'この人はもう都会で暮らしているので、この決断はない。';
+  if (id === 'career') return 'この人はいま勤めに出ていないので、この決断はない。';
+  if (id === 'care') return 'この人の両親はもう亡くなっているので、この決断はない。';
+  if (id === 'pensiontiming') return 'この人はもう年金を受け取っているので、この決断はない。';
+  return 'この人には、この決断はない。';
+}
+
 /** この年齢で聞く決断（まだ済んでいないもの） */
 export function dueDecision(st: GameState): DecisionDef | null {
   for (const d of DECISIONS) {
@@ -851,7 +861,7 @@ export function viewOf(st: GameState, d: DecisionDef): DecisionView {
     age: d.age,
     title: d.title,
     prompt: d.prompt,
-    evidence: st.persons.map((p) => (alive(p) ? (d.relevant && !d.relevant(p, st) ? 'この人には関係がない' : d.evidence(p, st)) : '')),
+    evidence: st.persons.map((p) => (alive(p) ? (d.relevant && !d.relevant(p, st) ? irrelevantReason(d.id, p) : d.evidence(p, st)) : '')),
     options: d.options.map((o) => ({
       id: o.id,
       label: o.label,
@@ -871,6 +881,7 @@ export function applyDecision(st: GameState, decisionId: string, optionId: strin
     p.age = st.age;
     if (d.relevant && !d.relevant(p, st)) return null;
     const av = opt.available ? opt.available(p, st) : { ok: true };
+    const at = p.log.length; // 決断の記録は、決断で起きたこと（就職など）より前に置く
     let out: Outcome;
     if (!av.ok) {
       out = { ok: false, text: `「${opt.label}」は選べなかった。${av.reason ?? ''}。` };
@@ -878,7 +889,9 @@ export function applyDecision(st: GameState, decisionId: string, optionId: strin
     } else {
       out = d.resolve(p, optionId, st, rng);
     }
-    log(p, out.ok ? 'decision' : 'wish', `${d.title}：${opt.label}`, out.text, { star: !out.ok });
+    const entry = log(p, out.ok ? 'decision' : 'wish', `${d.title}：${opt.label}`, out.text, { star: !out.ok });
+    p.log.pop();
+    p.log.splice(at, 0, entry);
     return out;
   });
   st.done.push(d.id);

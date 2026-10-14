@@ -237,10 +237,17 @@ async function showGacha(): Promise<void> {
   };
   const addRow = (k: string, v: string, pr: string) => {
     const li = document.createElement('li');
-    li.innerHTML = `<span class="k">${esc(k)}</span><b>${esc(v)}</b><span class="p">${esc(pr)}</span>`;
+    const per = Math.round(parseFloat(pr) * 10);
+    li.innerHTML = `<span class="k">${esc(k)}</span><b>${esc(v)}</b><span class="p">${esc(pr)}<small>1000人のうち${per}人</small></span>`;
     ledger.appendChild(li);
   };
-  const mark = (i: number) => app.querySelectorAll('[data-step]').forEach((c, k) => c.classList.toggle('on', k <= i));
+  const mark = (i: number) =>
+    app.querySelectorAll('[data-step]').forEach((c, k) => {
+      c.classList.toggle('done', k < i);
+      c.classList.toggle('on', k === i);
+      if (k === i) c.setAttribute('aria-current', 'step');
+      else c.removeAttribute('aria-current');
+    });
   const g = st.gacha;
   const fam = ['苦しい', 'やや苦しい', 'ふつう', 'やや豊か', '豊か'];
   mark(0);
@@ -270,6 +277,7 @@ async function showGacha(): Promise<void> {
   prob.textContent = `${g.years[1]}年に生まれたのは${(g.birthsInYear[1] / 10000).toFixed(0)}万人`;
   addRow('生まれる年', `${g.years[1]}年`, `${(g.middleYearProb * 100).toFixed(1)}%`);
   await sleep(skip ? 150 : 900);
+  mark(4);
   label.textContent = '30年ずつ離れた、3つの生まれ年';
   reel.textContent = '';
   prob.textContent = '';
@@ -379,6 +387,7 @@ async function showLife(): Promise<void> {
       <div class="cols">
         ${st.persons.map((p, i) => `<section class="col ${ERA_CLASS[i]}" id="col${i}" aria-label="${p.birthYear}年生まれの人生"></section>`)}
       </div>
+      <div class="mfeed" id="mfeed" aria-live="polite"></div>
     </main>
     <nav class="controls" aria-label="進め方">
       <div class="inner">
@@ -399,7 +408,7 @@ async function showLife(): Promise<void> {
       </div>
     </nav>`;
   bindCommon(app);
-  st.persons.forEach((_, i) => renderCol(i));
+  renderAll();
   renderFocus();
   if (st.age === 0) setTimeout(() => toast('列を押すと、その人の記録が開きます。下の「今年の重点」で育ち方が変わります'), 600);
   app.querySelectorAll<HTMLElement>('.col').forEach((c, i) =>
@@ -464,16 +473,33 @@ function statusLine(p: Person): string {
   return parts.join('・') || (p.age < 6 ? '子ども' : '');
 }
 
-function renderCol(i: number, fresh: LogEntry[] = []): void {
+const mobileMq = typeof matchMedia !== 'undefined' ? matchMedia('(max-width: 640px)') : null;
+const isMobile = () => !!mobileMq?.matches;
+mobileMq?.addEventListener?.('change', () => renderAll());
+
+/** 表示が始まるまで隠しておく、その年の出来事 */
+let hiddenEntries = new Set<LogEntry>();
+let freshEntries = new Set<LogEntry>();
+const isShown = (e: LogEntry) => !hiddenEntries.has(e);
+
+/** 亡くなったことを、まだ画面に出していないか */
+function deathPending(p: Person): boolean {
+  if (p.alive) return false;
+  const d = p.log.find((e) => e.kind === 'death');
+  return !!d && hiddenEntries.has(d);
+}
+
+function renderCol(i: number): void {
   if (!state) return;
   const p = state.persons[i];
   const col = app.querySelector(`#col${i}`) as HTMLElement | null;
   if (!col) return;
-  const age = p.alive ? shownAge : p.deathAge ?? shownAge;
+  const alive = p.alive || deathPending(p);
+  const age = alive ? shownAge : p.deathAge ?? shownAge;
   const year = p.birthYear + age;
-  const entries = p.log.slice(-6).reverse();
+  const entries = isMobile() ? [] : p.log.filter(isShown).slice(-6).reverse();
   const s = p.stats;
-  col.classList.toggle('dead', !p.alive);
+  col.classList.toggle('dead', !alive);
   if (col.dataset.year !== String(year) || !col.querySelector('.scene')) {
     col.dataset.year = String(year);
     col.innerHTML = `${sceneSvg(year)}<div class="col-body"></div>`;
@@ -481,19 +507,50 @@ function renderCol(i: number, fresh: LogEntry[] = []): void {
   const body = col.querySelector('.col-body') as HTMLElement;
   body.innerHTML = html`
     <div class="col-head"><span class="yr-num">${year}</span><span class="wa">${wareki(year)}</span></div>
-    <div class="who">${esc(p.name)}<br />${esc(statusLine(p))}</div>
-    ${!p.alive
+    <div class="who"><span class="nm">${esc(p.name)}</span><span class="st">${esc(statusLine(p))}</span></div>
+    ${!alive
       ? `<div class="tomb"><div class="line">${p.birthYear}–${p.deathYear}</div><div class="kyonen">享年${p.deathAge}</div><div class="line">${esc(p.deathCause ?? '')}</div></div>`
-      : html`<div class="bars" aria-label="状態">
-          <span>健康</span><span class="bar"><i style="width:${s.health}%"></i></span>
-          <span>幸福</span><span class="bar"><i style="width:${s.happiness}%"></i></span>
-          <span>知識</span><span class="bar"><i style="width:${s.knowledge}%"></i></span>
-          <span>人間関係</span><span class="bar"><i style="width:${s.relation}%"></i></span>
+      : html`<div class="bars" role="img" aria-label="健康${Math.round(s.health)}、幸福${Math.round(s.happiness)}、知識${Math.round(s.knowledge)}、人間関係${Math.round(s.relation)}">
+          <span class="b" title="健康"><em>健</em><span class="bar"><i style="width:${s.health}%"></i></span></span>
+          <span class="b" title="幸福"><em>幸</em><span class="bar"><i style="width:${s.happiness}%"></i></span></span>
+          <span class="b" title="知識"><em>知</em><span class="bar"><i style="width:${s.knowledge}%"></i></span></span>
+          <span class="b" title="人間関係"><em>人</em><span class="bar"><i style="width:${s.relation}%"></i></span></span>
         </div>
         <div class="money"><span>貯え</span><b>${yen(p.money)}</b></div>`}
     <ul class="feed">
-      ${entries.map((e, k) => feedItem(e, k > 0 && !fresh.includes(e)))}
+      ${entries.map((e, k) => feedItem(e, k > 0 && !freshEntries.has(e)))}
     </ul>`;
+}
+
+/** スマホ：3列の下に、同い年の出来事を横幅いっぱいで読めるように並べる */
+function renderMFeed(): void {
+  if (!state) return;
+  const box = app.querySelector('#mfeed') as HTMLElement | null;
+  if (!box) return;
+  if (!isMobile()) {
+    if (box.innerHTML) box.innerHTML = '';
+    return;
+  }
+  const st = state;
+  const rows: { e: LogEntry; i: number }[] = [];
+  st.persons.forEach((p, i) => p.log.filter(isShown).forEach((e) => rows.push({ e, i })));
+  const ages = [...new Set(rows.map((r) => r.e.age))].sort((a, b) => b - a).slice(0, 4);
+  box.innerHTML = ages
+    .map((age) => {
+      const items = rows.filter((r) => r.e.age === age).sort((a, b) => a.i - b.i);
+      return `<section class="mrow"><h3 class="mage">${age}歳</h3>${items
+        .map(({ e, i }) => {
+          const cls = [ERA_CLASS[i], e.kind === 'wish' ? 'wish' : '', e.kind === 'death' ? 'death' : '', e.heavy ? 'heavy' : '', freshEntries.has(e) ? 'fresh' : ''].join(' ');
+          return `<article class="mcard ${cls}"><span class="meta">${e.year}年・${esc(st.persons[i].name.split(' ')[1] ?? '')}</span><b class="t">${esc(e.title)}</b><p class="d">${esc(e.text)}</p>${e.heavy ? '<button class="help-note" data-act="helpnote">つらいときの相談先</button>' : ''}</article>`;
+        })
+        .join('')}</section>`;
+    })
+    .join('');
+}
+
+function renderAll(): void {
+  state?.persons.forEach((_, i) => renderCol(i));
+  renderMFeed();
 }
 
 function feedItem(e: LogEntry, old: boolean): string {
@@ -543,7 +600,7 @@ async function loop(): Promise<void> {
         choice = await askDecision(view);
       }
       const res = applyDecision(st, d.id, choice);
-      st.persons.forEach((_, i) => renderCol(i));
+      renderAll();
       if (!autoMode) await showResult(view, res);
       d = dueDecision(st);
     }
@@ -569,47 +626,36 @@ async function playYear(st: GameState, entries: YearEntry[], me: { stop: boolean
   const prog = app.querySelector('#prog') as HTMLElement | null;
   shownAge = st.age - 1;
   if (ageEl) ageEl.textContent = String(shownAge);
-  // 列の年だけ先に進める
   const fast = untilDecision || autoMode;
   const dur = fast ? 120 : yearMs();
-  const t0 = performance.now();
   let idx = 0;
   // その年の出来事は、表示が始まるまで隠しておく
-  const hidden = new Set(entries.map((x) => x.entry));
-  const visibleLog = (p: Person) => p.log.filter((e) => !hidden.has(e));
-  const render = (i: number, fresh: LogEntry[]) => {
-    const p = st.persons[i];
-    const saved = p.log;
-    const aliveSaved = p.alive;
-    const deadNotShown = !p.alive && entries.some((x) => x.personIndex === i && x.entry.kind === 'death' && hidden.has(x.entry));
-    p.log = visibleLog(p);
-    if (deadNotShown) p.alive = true;
-    renderCol(i, fresh);
-    p.log = saved;
-    p.alive = aliveSaved;
-  };
-  st.persons.forEach((_, i) => render(i, []));
+  hiddenEntries = new Set(entries.map((x) => x.entry));
+  freshEntries = new Set();
+  renderAll();
   let elapsed = 0;
-  let last = t0;
+  let last = performance.now();
   while (!me.stop) {
     const now = performance.now();
     if (!paused) elapsed += now - last;
     last = now;
     const t = Math.min(1, elapsed / dur);
     if (prog) prog.style.transform = `scaleX(${t})`;
-    const fresh: Record<number, LogEntry[]> = {};
+    let changed = false;
     while (idx < entries.length && entries[idx].t <= t) {
       const x = entries[idx];
-      hidden.delete(x.entry);
-      (fresh[x.personIndex] ??= []).push(x.entry);
+      hiddenEntries.delete(x.entry);
+      freshEntries.add(x.entry);
       if (x.entry.kind === 'death') sound.bell();
       idx++;
+      changed = true;
     }
-    Object.keys(fresh).forEach((k) => render(Number(k), fresh[Number(k)]));
+    if (changed) renderAll();
     if (t >= 1) break;
     await sleep(fast ? 16 : 50);
   }
-  st.persons.forEach((_, i) => renderCol(i));
+  hiddenEntries = new Set();
+  renderAll();
 }
 
 // ---------- 重ねる画面 ----------
@@ -633,8 +679,10 @@ function sheet(inner: string, opts: { label: string; dismiss?: boolean } = { lab
     back.addEventListener('click', (e) => e.target === back && close());
     back.addEventListener('click', (e) => (e.target as HTMLElement).closest('[data-x]') && close());
   }
-  const first = back.querySelector<HTMLElement>('button, a, textarea, select');
-  setTimeout(() => first?.focus(), 30);
+  // 最初のフォーカスは見出しに置く（選択肢に枠が付いて「選んである」ように見えないように）
+  const h = back.querySelector<HTMLElement>('h2');
+  if (h) h.setAttribute('tabindex', '-1');
+  setTimeout(() => (h ?? back.querySelector<HTMLElement>('button'))?.focus({ preventScroll: true }), 30);
   return { el: back, close };
 }
 
@@ -647,7 +695,7 @@ function askDecision(v: DecisionView): Promise<string> {
         <h2>${esc(v.title)}</h2>
         <p class="prompt">${esc(v.prompt)}</p>
         <div class="ev3">
-          ${st.persons.map((p, i) => `<div class="${ERA_CLASS[i]}"><b>${p.birthYear + v.age}年</b>${p.alive ? esc(v.evidence[i]) : '（亡くなっている）'}</div>`)}
+          ${st.persons.map((p, i) => `<div class="${ERA_CLASS[i]} ${p.alive && !v.evidence[i].startsWith('この人') ? '' : 'na'}"><b>${p.birthYear + v.age}年</b>${p.alive ? esc(v.evidence[i]) : `${p.deathAge}歳で亡くなっている`}</div>`)}
         </div>
         <div class="opts">
           ${v.options.map((o) => {
@@ -680,7 +728,7 @@ function showResult(v: DecisionView, r: DecisionResult): Promise<void> {
         <div class="res3">
           ${r.results.map((x, i) => {
             const p = st.persons[i];
-            if (!x) return `<div class="${ERA_CLASS[i]}"><span class="mark">${p.birthYear + v.age}年</span>${p.alive ? '関係なし' : '（亡くなっている）'}</div>`;
+            if (!x) return `<div class="${ERA_CLASS[i]} na"><span class="mark">${p.birthYear + v.age}年</span>${p.alive ? esc(v.evidence[i]) : `${p.deathAge}歳で亡くなっている`}</div>`;
             return `<div class="${ERA_CLASS[i]} ${x.ok ? 'ok' : 'ng'}"><span class="hanko" aria-hidden="true">${x.ok ? '叶' : '否'}</span><span class="mark">${p.birthYear + v.age}年　${x.ok ? '叶った' : '叶わなかった'}</span>${esc(x.text)}</div>`;
           })}
         </div>
@@ -734,7 +782,7 @@ function showLog(i: number): void {
   const st = state!;
   const render = (k: number) => {
     const p = st.persons[k];
-    return html`<div class="tabs">${st.persons.map((q, j) => `<button class="btn small ${j === k ? '' : 'ghost'}" data-tab="${j}">${q.birthYear}年</button>`)}</div>
+    return html`<div class="logwrap ${ERA_CLASS[k]}"><div class="tabs" role="tablist">${st.persons.map((q, j) => `<button class="btn small ${j === k ? '' : 'ghost'}" role="tab" aria-selected="${j === k}" data-tab="${j}">${q.birthYear}年</button>`)}</div>
       <h2>${esc(p.name)}の記録</h2>
       <p class="muted" style="margin-top:0">☆を押すと、走馬灯に残ります。</p>
       <ul class="logfull">
@@ -746,7 +794,7 @@ function showLog(i: number): void {
               `<li><span class="a">${e.age}歳<br /><span class="muted" style="font-weight:400">${e.year}</span></span><span><b>${esc(e.title)}</b><br />${esc(e.text)}${e.source ? `<br /><span class="muted" style="font-size:12px">出典：${esc(e.source)}</span>` : ''}</span><button class="star" data-star="${idx}" aria-pressed="${!!e.star}" aria-label="☆を付ける">${e.star ? '★' : '☆'}</button></li>`,
           )}
       </ul>
-      <div style="margin-top:12px"><button class="btn" data-close>閉じる</button></div>`;
+      <div style="margin-top:12px"><button class="btn" data-close>閉じる</button></div></div>`;
   };
   const { el, close } = sheet(render(i), { label: '人生の記録', dismiss: true });
   const bind = (k: number) => {
@@ -818,11 +866,12 @@ async function showEnd(skipSlides = false): Promise<void> {
       <p class="kicker">3つの死亡記録</p>
       <h2 class="big">同じ人が、<br />${st.persons.map((p, i) => `<span class="nw">享年${p.deathAge}${i < 2 ? '、' : '。'}</span>`).join('')}</h2>
       <div class="records">${st.persons.map((p, i) => record(p, i))}</div>
+      ${recordTable(st)}
 
       <section class="panel">
         <h3>生涯年収（今の価値）</h3>
         <div class="compare-bars">
-          ${st.persons.map((p, i) => `<div class="r"><span>${p.birthYear}年</span><div class="track"><i class="${ERA_CLASS[i]}" style="width:${(p.lifetimeEarningsReal / maxLife) * 100}%;background:var(--c-acc)"></i><span>${yen(p.lifetimeEarningsReal)}</span></div></div>`)}
+          ${st.persons.map((p, i) => `<div class="r"><span>${p.birthYear}年</span><div class="track"><i class="${ERA_CLASS[i]}" style="width:${(p.lifetimeEarningsReal / maxLife) * 100}%;background:var(--c-acc)"></i></div><span class="vals">${yen(p.lifetimeEarningsReal)}</span></div>`)}
         </div>
         <p class="muted" style="font-size:12px;margin-bottom:0">毎年の年収を消費者物価指数で2020年の価値に直して足したもの。2026年より先は推計。</p>
       </section>
@@ -833,7 +882,7 @@ async function showEnd(skipSlides = false): Promise<void> {
           ${st.persons.map((p, i) => {
             const v = p.pensionMonthlyReal ?? 0;
             const label = p.pensionStartAge !== undefined ? `${p.pensionStartAge}歳から 月${yen(v)}${p.pensionRange ? `（${yen(p.pensionRange[0])}〜${yen(p.pensionRange[1])}）` : ''}` : '受け取る前に亡くなった';
-            return `<div class="r"><span>${p.birthYear}年</span><div class="track"><i class="${ERA_CLASS[i]}" style="width:${(v / maxPen) * 100}%;background:var(--c-acc)"></i><span>${label}</span></div></div>`;
+            return `<div class="r"><span>${p.birthYear}年</span><div class="track"><i class="${ERA_CLASS[i]}" style="width:${(v / maxPen) * 100}%;background:var(--c-acc)"></i></div><span class="vals">${label}</span></div>`;
           })}
         </div>
         <p class="muted" style="font-size:12px;margin-bottom:0">今の価値（2020年基準）。2025年より先に受け取り始める人は、2024年財政検証の2つのケースの幅で示します。</p>
@@ -862,9 +911,9 @@ async function showEnd(skipSlides = false): Promise<void> {
           <button class="btn small ghost" id="copy">文章をコピー</button>
         </div>
       </section>
-      <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <div class="end-acts">
         <button class="btn" id="again">もう一度生まれる</button>
-        <button class="btn ghost" data-act="sources2">出典</button>
+        <button class="btn ghost" data-act="sources2">使った統計と出典</button>
       </div>
     </main>`;
   bindCommon(app);
@@ -927,6 +976,25 @@ function record(p: Person, i: number): string {
   </article>`;
 }
 
+/** スマホ用：行見出しつきの比較表（ラベルを列ごとにくり返さない） */
+function recordTable(st: GameState): string {
+  const ps = st.persons;
+  const rows: [string, (p: Person) => string][] = [
+    ['死因', (p) => esc(p.deathCause ?? '')],
+    ['学歴', (p) => EDU_LABEL[p.edu]],
+    ['仕事', (p) => esc(p.jobTitle || 'なし')],
+    ['家族', (p) => `${p.married ? `${p.marriageType ?? ''}結婚` : '独身'}${p.children.length ? `・子${p.children.length}人` : ''}`],
+    ['幸せな年', (p) => `${p.bestYear.age}歳`],
+    ['遺産', (p) => yen(Math.max(0, p.money) * S.toReal2020(p.deathYear ?? 2020))],
+    ['長生き', (p) => `${survivalPercentile(p)}%より長く`],
+  ];
+  return html`<div class="rtable" role="table" aria-label="3人の死亡記録の比較">
+    <div class="rt-row rt-head" role="row"><span role="columnheader"></span>${ps.map((p, i) => `<span role="columnheader" class="${ERA_CLASS[i]}"><small>${p.birthYear}–${p.deathYear}</small><b>享年${p.deathAge}</b>${esc(p.name.split(' ')[1] ?? '')}</span>`)}</div>
+    ${rows.map(([k, f]) => `<div class="rt-row" role="row"><span role="rowheader">${k}</span>${ps.map((p, i) => `<span role="cell" class="${ERA_CLASS[i]}">${f(p)}</span>`).join('')}</div>`)}
+  </div>
+  <p class="muted rt-note">遺産は今の価値（2020年基準）。「長生き」は、同じ年に同じ性別で生まれた人のうち何%より長く生きたか。</p>`;
+}
+
 function survivalSvg(st: GameState): string {
   const W = 420;
   const H = 260;
@@ -958,13 +1026,16 @@ function lifeMapRow(p: Person, i: number): string {
 }
 
 function wishesPanel(st: GameState): string {
-  const rows = st.persons.flatMap((p, i) => p.wishes.filter((w) => !w.ok).map((w) => ({ p, i, w })));
-  if (!rows.length) return '';
+  const any = st.persons.some((p) => p.wishes.some((w) => !w.ok));
+  if (!any) return '';
   return html`<section class="panel">
     <h3>望んだのに、叶わなかったこと</h3>
-    <ul style="margin:0;padding-left:1.2em">
-      ${rows.slice(0, 18).map(({ p, w }) => `<li>${p.birthYear}年生まれ・${w.age}歳：${esc(w.wish)} → ${esc(w.result)}</li>`)}
-    </ul>
+    <div class="wish3">
+      ${st.persons.map((p, i) => {
+        const ws = p.wishes.filter((w) => !w.ok).slice(0, 6);
+        return `<div class="${ERA_CLASS[i]}"><b>${p.birthYear}年生まれ</b>${ws.length ? `<ul>${ws.map((w) => `<li><span class="x" aria-hidden="true">否</span><span>${w.age}歳　${esc(w.wish)}<small>→ ${esc(w.result)}</small></span></li>`).join('')}</ul>` : '<p>望んだことは、おおむね叶った。</p>'}</div>`;
+      })}
+    </div>
   </section>`;
 }
 
