@@ -775,7 +775,7 @@ function breathStat(birthYear: number, sex: 'male' | 'female', age: number): str
   if (age === 6) return `同い年の子は約${Math.round(S.nationalBirths(birthYear) / 10000)}万人`;
   if (age === 15) return `高校進学率 ${Math.round(S.eduRate('highSchool', y, sex))}%`;
   if (age === 22) return `大学進学率 ${Math.round(S.eduRate('university', birthYear + 18, sex))}%`;
-  if (age === 40) return y > 2026 ? `平均初婚年齢 ${S.meanMarriageAge(Math.min(y - 12, 2025), sex).toFixed(1)}歳` : `完全失業率 ${S.unemployment(y).toFixed(1)}%`;
+  if (age === 40) return y > 2025 ? '完全失業率 推計なし' : `完全失業率 ${S.unemployment(y).toFixed(1)}%`;
   if (age === 65) return `厚生年金の支給開始 ${S.pensionStartAge(birthYear, 6, sex)}歳`;
   return '';
 }
@@ -857,9 +857,9 @@ function showHelp(): void {
     html`<p class="kicker">相談窓口</p>
       <h2>つらい気持ちになったら</h2>
       <p class="prompt">このゲームには、戦争・災害・病気・自殺など、重い出来事が出てきます。読んでいて苦しくなったら、ひとりで抱えずに話してください。</p>
+      <p class="muted" style="font-size:13px;margin-top:-6px">厚生労働省「まもろうよ こころ」に掲載の窓口（2026年10月14日に確認）。受付時間は変わることがあります。</p>
       <ul class="helplist">${HELP_LINES.map((h) => `<li><b>${esc(h.name)}</b>${h.tel ? `<a class="tel" href="tel:${h.tel.replace(/-/g, '')}">${esc(h.tel)}</a>` : ''}<span class="hours">${esc(h.hours)}</span>${h.url ? `<br /><a href="${h.url}" target="_blank" rel="noopener">${esc(h.url)}</a>` : ''}</li>`)}</ul>
-      <p class="muted" style="font-size:13px">厚生労働省「まもろうよ こころ」に掲載の窓口（2026年10月14日に確認）。受付時間は変わることがあります。</p>
-      <button class="btn" data-close>閉じる</button>`,
+      <button class="btn" data-close style="margin-top:12px">閉じる</button>`,
     { label: '相談窓口', dismiss: true },
   );
   el.querySelector('[data-close]')!.addEventListener('click', close);

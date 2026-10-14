@@ -2715,3 +2715,15 @@ button {
     max-width: 720px;
   }
 }
+
+.gyears .yr.wait {
+  opacity: 0.8;
+}
+.gyears .yr.wait span {
+  color: var(--ink-2);
+}
+@media (min-width: 900px) {
+  .gacha-steps .chip {
+    font-size: 13px;
+  }
+}
