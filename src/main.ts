@@ -3,7 +3,7 @@ import { createGame, runYear, survivalPercentile, survivalCurve, cohortLifeExpec
 import { dueDecision, viewOf, applyDecision, autoChoose } from './sim/decisions';
 import * as S from './sim/stats';
 import type { Person, DecisionView, DecisionResult, LogEntry } from './sim/types';
-import { esc, wareki, yen, html, sleep, reducedMotion } from './ui/format';
+import { esc, wareki, yen, shortYen, html, sleep, reducedMotion } from './ui/format';
 import { drawShareCard, shareText } from './ui/sharecard';
 import { HELP_LINES, SOURCES } from './ui/content';
 import { sound } from './ui/sound';
@@ -418,8 +418,19 @@ async function showLife(): Promise<void> {
   renderAll();
   renderFocus();
   const colsEl = app.querySelector('.cols') as HTMLElement;
-  const onScroll = () => colsEl?.classList.toggle('is-compact', isMobile() && window.scrollY > 140);
+  // スマホ：少しでも下へ送ったら、3人の欄を小さくして上に貼りつける（行き来でちらつかないよう、戻す位置は浅めにする）
+  const onScroll = () => {
+    if (!colsEl) return;
+    const compact = colsEl.classList.contains('is-compact');
+    const y = window.scrollY;
+    colsEl.classList.toggle('is-compact', isMobile() && (compact ? y > 4 : y > 24));
+  };
   window.addEventListener('scroll', onScroll, { passive: true });
+  // 3人の欄は、上の年齢の帯のすぐ下に貼りつける。帯の高さは端末で変わるので測って渡す
+  const agebarEl = app.querySelector('.agebar') as HTMLElement;
+  const setBarH = () => document.documentElement.style.setProperty('--agebar-h', `${agebarEl.offsetHeight}px`);
+  setBarH();
+  if ('ResizeObserver' in window) new ResizeObserver(setBarH).observe(agebarEl);
   if (st.age === 0) setTimeout(() => toast('列を押すと、その人の記録が開きます。下の「今年の重点」で育ち方が変わります'), 600);
   app.querySelectorAll<HTMLElement>('.col').forEach((c, i) =>
     c.addEventListener('click', (e) => {
@@ -524,7 +535,7 @@ function renderCol(i: number): void {
     <div class="col-head"><span class="yr-num">${year}</span><span class="wa">${wareki(year)}</span></div>
     <div class="who"><span class="nm">${esc(p.name)}</span><span class="st">${esc(statusLine(p))}</span></div>
     ${!alive
-      ? `<div class="tomb"><div class="line">${p.birthYear}–${p.deathYear}</div><div class="kyonen">享年${p.deathAge}</div><div class="line">${esc(p.deathCause ?? '')}</div></div>`
+      ? `<div class="tomb"><div class="line">${p.birthYear}–${p.deathYear}</div><div class="kyonen">享年${p.deathAge}</div><div class="line">${esc(p.deathCause ?? '')}</div></div><div class="mini" aria-hidden="true"><span>${esc(p.name.split(' ')[1] ?? p.name)}</span><span>${esc(p.deathCause ?? '')}</span></div>`
       : html`<div class="bars" role="img" aria-label="健康${Math.round(s.health)}、幸福${Math.round(s.happiness)}、知識${Math.round(s.knowledge)}、人間関係${Math.round(s.relation)}">
           <span class="b" title="健康"><em>健康</em><span class="bar"><i style="width:${s.health}%"></i></span></span>
           <span class="b" title="幸福"><em>幸福</em><span class="bar"><i style="width:${s.happiness}%"></i></span></span>
@@ -533,7 +544,7 @@ function renderCol(i: number): void {
         </div>
         <div class="money"><span>${p.money < 0 ? 'ローン' : '貯え'}</span><b>${yen(Math.abs(p.money))}</b></div>
         ${p.income > 0 && !p.retired ? `<div class="money inc"><span>年収</span><b>${yen(p.income)}</b></div>` : p.pensionMonthly ? `<div class="money inc"><span>年金</span><b>月${yen(p.pensionMonthly)}</b></div>` : ''}
-        <div class="mini" aria-hidden="true">${esc(p.name.split(' ')[1] ?? '')}・${p.money < 0 ? 'ローン' : ''}${yen(Math.abs(p.money))}</div>`}
+        <div class="mini" aria-hidden="true"><span>${esc(p.name.split(' ')[1] ?? p.name)}</span><span>${p.money < 0 ? '借金' : '貯え'}${shortYen(Math.abs(p.money))}</span></div>`}
     <ul class="feed">
       ${entries.map((e, k) => feedItem(e, k > 0 && !freshEntries.has(e)))}
     </ul>`;
