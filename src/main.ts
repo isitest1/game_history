@@ -419,16 +419,15 @@ async function showLife(): Promise<void> {
   renderFocus();
   const colsEl = app.querySelector('.cols') as HTMLElement;
   const agebarEl = app.querySelector('.agebar') as HTMLElement;
-  // スマホ：少しでも下へ送ったら、3人の欄を小さくして上に貼りつける（行き来でちらつかないよう、戻す位置は浅めにする）
-  const onScroll = () => {
-    if (!colsEl) return;
-    const compact = colsEl.classList.contains('is-compact');
-    const y = window.scrollY;
-    const on = isMobile() && (compact ? y > 4 : y > 24);
-    colsEl.classList.toggle('is-compact', on);
-    agebarEl.classList.toggle('is-compact', on);
+  // スマホでは、3人の欄と年齢の帯をはじめから小さくしておく。
+  // スクロールの量で大きさを変えると、その分だけ下の出来事が上下に飛び、最新の年が隠れてしまうため
+  const setCompact = () => {
+    const on = isMobile();
+    colsEl?.classList.toggle('is-compact', on);
+    agebarEl?.classList.toggle('is-compact', on);
   };
-  window.addEventListener('scroll', onScroll, { passive: true });
+  setCompact();
+  window.addEventListener('resize', setCompact, { passive: true });
   // 3人の欄は、上の年齢の帯のすぐ下に貼りつける。帯の高さは端末で変わるので測って渡す
   const setBarH = () => document.documentElement.style.setProperty('--agebar-h', `${agebarEl.offsetHeight}px`);
   setBarH();
