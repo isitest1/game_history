@@ -379,6 +379,13 @@ export const DECISIONS: DecisionDef[] = [
         p.flags.push('smoker');
         return { ok: true, text: y < 1975 ? 'タバコを吸い始めた。職場でも汽車の中でも、みんな吸っていた。' : y < 2003 ? 'タバコを吸い始めた。' : 'タバコを吸い始めた。吸える場所はどんどん減っていた。' };
       }
+      // 吸わないと決めたら、そのあとの出来事で吸い始めることはない
+      p.flags.push('nonsmoker');
+      if (p.flags.includes('smoker')) {
+        p.flags = p.flags.filter((f) => f !== 'smoker');
+        st.prefs.smoke = false;
+        return { ok: true, text: '覚えたばかりのタバコを、やめると決めた。' };
+      }
       if (y < 1980 && p.sex === 'male') {
         p.stats.health = Math.max(0, p.stats.health - 2);
         return { ok: true, text: '吸わなかった。それでも、職場も家もタバコの煙でいっぱいだった。' };
