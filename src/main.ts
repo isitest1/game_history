@@ -296,7 +296,7 @@ function showBirth(): void {
   window.scrollTo(0, 0);
   const fam = ['苦しい', 'やや苦しい', 'ふつう', 'やや豊か', '豊か'][st.shared.familyClass - 1];
   app.innerHTML = html`${topbar()}
-    <main class="wrap" id="main" style="padding-bottom:40px">
+    <main class="wrap birth" id="main">
       <p class="kicker">母子手帳</p>
       <h2 style="font-family:var(--serif);font-size:clamp(24px,5vw,36px);margin:6px 0 4px">${esc(S.PREFS[st.shared.pref - 1])}に、${st.shared.sex === 'male' ? '男の子' : '女の子'}が3人生まれた。</h2>
       <p class="muted" style="margin:0 0 12px">家の暮らし向きは「${fam}」。才能は「${esc(st.shared.talent)}」。3人とも同じ人です。</p>
@@ -511,10 +511,10 @@ function renderCol(i: number): void {
     ${!alive
       ? `<div class="tomb"><div class="line">${p.birthYear}–${p.deathYear}</div><div class="kyonen">享年${p.deathAge}</div><div class="line">${esc(p.deathCause ?? '')}</div></div>`
       : html`<div class="bars" role="img" aria-label="健康${Math.round(s.health)}、幸福${Math.round(s.happiness)}、知識${Math.round(s.knowledge)}、人間関係${Math.round(s.relation)}">
-          <span class="b" title="健康"><em>健</em><span class="bar"><i style="width:${s.health}%"></i></span></span>
-          <span class="b" title="幸福"><em>幸</em><span class="bar"><i style="width:${s.happiness}%"></i></span></span>
-          <span class="b" title="知識"><em>知</em><span class="bar"><i style="width:${s.knowledge}%"></i></span></span>
-          <span class="b" title="人間関係"><em>人</em><span class="bar"><i style="width:${s.relation}%"></i></span></span>
+          <span class="b" title="健康"><em>健康</em><span class="bar"><i style="width:${s.health}%"></i></span></span>
+          <span class="b" title="幸福"><em>幸福</em><span class="bar"><i style="width:${s.happiness}%"></i></span></span>
+          <span class="b" title="知識"><em>知識</em><span class="bar"><i style="width:${s.knowledge}%"></i></span></span>
+          <span class="b" title="人間関係"><em>関係</em><span class="bar"><i style="width:${s.relation}%"></i></span></span>
         </div>
         <div class="money"><span>貯え</span><b>${yen(p.money)}</b></div>`}
     <ul class="feed">
@@ -538,12 +538,12 @@ function renderMFeed(): void {
   box.innerHTML = ages
     .map((age) => {
       const items = rows.filter((r) => r.e.age === age).sort((a, b) => a.i - b.i);
-      return `<section class="mrow"><h3 class="mage">${age}歳</h3>${items
+      return `<section class="mrow"><h3 class="mage">${age}歳<small>${items.length > 1 ? '横にめくって見比べる' : ''}</small></h3><div class="mswipe">${items
         .map(({ e, i }) => {
           const cls = [ERA_CLASS[i], e.kind === 'wish' ? 'wish' : '', e.kind === 'death' ? 'death' : '', e.heavy ? 'heavy' : '', freshEntries.has(e) ? 'fresh' : ''].join(' ');
           return `<article class="mcard ${cls}"><span class="meta">${e.year}年・${esc(st.persons[i].name.split(' ')[1] ?? '')}</span><b class="t">${esc(e.title)}</b><p class="d">${esc(e.text)}</p>${e.heavy ? '<button class="help-note" data-act="helpnote">つらいときの相談先</button>' : ''}</article>`;
         })
-        .join('')}</section>`;
+        .join('')}</div></section>`;
     })
     .join('');
 }
@@ -695,7 +695,7 @@ function askDecision(v: DecisionView): Promise<string> {
         <h2>${esc(v.title)}</h2>
         <p class="prompt">${esc(v.prompt)}</p>
         <div class="ev3">
-          ${st.persons.map((p, i) => `<div class="${ERA_CLASS[i]} ${p.alive && !v.evidence[i].startsWith('この人') ? '' : 'na'}"><b>${p.birthYear + v.age}年</b>${p.alive ? esc(v.evidence[i]) : `${p.deathAge}歳で亡くなっている`}</div>`)}
+          ${st.persons.map((p, i) => `<div class="${ERA_CLASS[i]} ${p.alive && !v.evidence[i].startsWith('この人') ? '' : 'na is-na'}"><b>${p.birthYear + v.age}年</b>${p.alive ? esc(v.evidence[i]) : `${p.deathAge}歳で亡くなっている`}</div>`)}
         </div>
         <div class="opts">
           ${v.options.map((o) => {
@@ -728,11 +728,11 @@ function showResult(v: DecisionView, r: DecisionResult): Promise<void> {
         <div class="res3">
           ${r.results.map((x, i) => {
             const p = st.persons[i];
-            if (!x) return `<div class="${ERA_CLASS[i]} na"><span class="mark">${p.birthYear + v.age}年</span>${p.alive ? esc(v.evidence[i]) : `${p.deathAge}歳で亡くなっている`}</div>`;
+            if (!x) return `<div class="${ERA_CLASS[i]} na is-na"><span class="mark">${p.birthYear + v.age}年</span>${p.alive ? esc(v.evidence[i]) : `${p.deathAge}歳で亡くなっている`}</div>`;
             return `<div class="${ERA_CLASS[i]} ${x.ok ? 'ok' : 'ng'}"><span class="hanko" aria-hidden="true">${x.ok ? '叶' : '否'}</span><span class="mark">${p.birthYear + v.age}年　${x.ok ? '叶った' : '叶わなかった'}</span>${esc(x.text)}</div>`;
           })}
         </div>
-        <button class="btn" id="cont">続ける</button>`,
+        <button class="btn cont" id="cont">続ける</button>`,
       { label: '決断の結果' },
     );
     el.querySelector('#cont')!.addEventListener('click', () => {
@@ -791,7 +791,7 @@ function showLog(i: number): void {
           .reverse()
           .map(
             ({ e, idx }) =>
-              `<li><span class="a">${e.age}歳<br /><span class="muted" style="font-weight:400">${e.year}</span></span><span><b>${esc(e.title)}</b><br />${esc(e.text)}${e.source ? `<br /><span class="muted" style="font-size:12px">出典：${esc(e.source)}</span>` : ''}</span><button class="star" data-star="${idx}" aria-pressed="${!!e.star}" aria-label="☆を付ける">${e.star ? '★' : '☆'}</button></li>`,
+              `<li><span class="a">${e.age}歳<br /><span class="muted" style="font-weight:400">${e.year}</span></span><span><b>${esc(e.title)}</b><button class="star" data-star="${idx}" aria-pressed="${!!e.star}" aria-label="☆を付ける">${e.star ? '★' : '☆'}</button><br />${esc(e.text)}${e.source ? `<br /><span class="muted src-l">出典：${esc(e.source)}</span>` : ''}</span></li>`,
           )}
       </ul>
       <div style="margin-top:12px"><button class="btn" data-close>閉じる</button></div></div>`;
@@ -871,7 +871,7 @@ async function showEnd(skipSlides = false): Promise<void> {
       <section class="panel">
         <h3>生涯年収（今の価値）</h3>
         <div class="compare-bars">
-          ${st.persons.map((p, i) => `<div class="r"><span>${p.birthYear}年</span><div class="track"><i class="${ERA_CLASS[i]}" style="width:${(p.lifetimeEarningsReal / maxLife) * 100}%;background:var(--c-acc)"></i></div><span class="vals">${yen(p.lifetimeEarningsReal)}</span></div>`)}
+          ${st.persons.map((p, i) => `<div class="r"><span class="yr">${p.birthYear}年</span><span class="vals">${yen(p.lifetimeEarningsReal)}</span><div class="track"><i class="${ERA_CLASS[i]}" style="width:${(p.lifetimeEarningsReal / maxLife) * 100}%;background:var(--c-acc)"></i></div></div>`)}
         </div>
         <p class="muted" style="font-size:12px;margin-bottom:0">毎年の年収を消費者物価指数で2020年の価値に直して足したもの。2026年より先は推計。</p>
       </section>
@@ -882,7 +882,7 @@ async function showEnd(skipSlides = false): Promise<void> {
           ${st.persons.map((p, i) => {
             const v = p.pensionMonthlyReal ?? 0;
             const label = p.pensionStartAge !== undefined ? `${p.pensionStartAge}歳から 月${yen(v)}${p.pensionRange ? `（${yen(p.pensionRange[0])}〜${yen(p.pensionRange[1])}）` : ''}` : '受け取る前に亡くなった';
-            return `<div class="r"><span>${p.birthYear}年</span><div class="track"><i class="${ERA_CLASS[i]}" style="width:${(v / maxPen) * 100}%;background:var(--c-acc)"></i></div><span class="vals">${label}</span></div>`;
+            return `<div class="r"><span class="yr">${p.birthYear}年</span><span class="vals">${label}</span><div class="track"><i class="${ERA_CLASS[i]}" style="width:${(v / maxPen) * 100}%;background:var(--c-acc)"></i></div></div>`;
           })}
         </div>
         <p class="muted" style="font-size:12px;margin-bottom:0">今の価値（2020年基準）。2025年より先に受け取り始める人は、2024年財政検証の2つのケースの幅で示します。</p>
@@ -984,20 +984,20 @@ function recordTable(st: GameState): string {
     ['学歴', (p) => EDU_LABEL[p.edu]],
     ['仕事', (p) => esc(p.jobTitle || 'なし')],
     ['家族', (p) => `${p.married ? `${p.marriageType ?? ''}結婚` : '独身'}${p.children.length ? `・子${p.children.length}人` : ''}`],
-    ['幸せな年', (p) => `${p.bestYear.age}歳`],
+    ['最良の年', (p) => `${p.bestYear.age}歳`],
     ['遺産', (p) => yen(Math.max(0, p.money) * S.toReal2020(p.deathYear ?? 2020))],
     ['長生き', (p) => `${survivalPercentile(p)}%より長く`],
   ];
   return html`<div class="rtable" role="table" aria-label="3人の死亡記録の比較">
-    <div class="rt-row rt-head" role="row"><span role="columnheader"></span>${ps.map((p, i) => `<span role="columnheader" class="${ERA_CLASS[i]}"><small>${p.birthYear}–${p.deathYear}</small><b>享年${p.deathAge}</b>${esc(p.name.split(' ')[1] ?? '')}</span>`)}</div>
+    <div class="rt-row rt-head" role="row"><span role="columnheader"></span>${ps.map((p, i) => `<span role="columnheader" class="${ERA_CLASS[i]}"><small>${p.birthYear}年</small><b>享年${p.deathAge}</b>${esc(p.name.split(' ')[1] ?? '')}</span>`)}</div>
     ${rows.map(([k, f]) => `<div class="rt-row" role="row"><span role="rowheader">${k}</span>${ps.map((p, i) => `<span role="cell" class="${ERA_CLASS[i]}">${f(p)}</span>`).join('')}</div>`)}
   </div>
   <p class="muted rt-note">遺産は今の価値（2020年基準）。「長生き」は、同じ年に同じ性別で生まれた人のうち何%より長く生きたか。</p>`;
 }
 
 function survivalSvg(st: GameState): string {
-  const W = 420;
-  const H = 260;
+  const W = 600;
+  const H = 300;
   const pad = 30;
   const x = (a: number) => pad + (a / 105) * (W - pad * 1.5);
   const y = (v: number) => H - pad - v * (H - pad * 1.6);

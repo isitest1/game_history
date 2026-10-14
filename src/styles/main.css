@@ -502,7 +502,8 @@ button {
     radial-gradient(120% 80% at 50% 0%, rgba(255, 255, 255, 0.35), transparent 60%);
 }
 .era-0 .yr-num,
-.era-0 b {
+.era-0 .bk-year,
+.era-0 .kyonen {
   text-shadow: 0.4px 0.6px 0 rgba(60, 30, 10, 0.35);
 }
 .era-1 {
@@ -518,7 +519,10 @@ button {
     radial-gradient(130% 90% at 50% 40%, rgba(90, 216, 255, 0.16), transparent 70%);
 }
 .era-1 .yr-num,
-.era-1 b {
+.era-1 .bk-year,
+.era-1 .kyonen,
+.era-1.yr b,
+.gyears .era-1 b {
   text-shadow:
     0 0 10px rgba(255, 106, 168, 0.35),
     1px 0 0 rgba(90, 216, 255, 0.5),
@@ -2112,5 +2116,232 @@ button {
   }
   .bars .b {
     font-size: 13px;
+  }
+}
+
+/* ---------- 5周目の改善 ---------- */
+.feed .meta,
+.money,
+.bars .b,
+.ledger .p small,
+.cmp span,
+.art-card dt,
+.wish3 small {
+  font-size: max(12px, 0.8125rem);
+}
+.bars {
+  grid-template-columns: 1fr;
+}
+@media (min-width: 380px) {
+  .bars {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 900px) {
+  .bars {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.bars .b em {
+  width: 2.2em;
+}
+.era-1 .feed .t,
+.era-1.mcard .t,
+.logwrap.era-1 h2 {
+  text-decoration: underline 3px color-mix(in srgb, var(--c-acc) 55%, transparent);
+  text-underline-offset: 4px;
+  text-decoration-skip-ink: none;
+}
+.era-1 .hanko {
+  border: 0;
+  color: #fff;
+  background: var(--c-acc);
+  box-shadow: 0 0 0 3px #fff, 0 3px 10px rgba(224, 54, 122, 0.45);
+  font-family: var(--round);
+  transform: rotate(8deg);
+}
+/* 令和は「通知カード」の型 */
+.era-2 .feed li,
+.era-2.mcard {
+  border-radius: 16px;
+  position: relative;
+  padding-left: 30px;
+}
+.era-2 .feed li::before,
+.era-2.mcard::before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 14px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--c-acc);
+}
+.era-2 .feed .meta,
+.era-2.mcard .meta {
+  font-family: ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+}
+/* スマホ：同い年の3人を横にめくって見比べる */
+@media (max-width: 640px) {
+  .mage small {
+    font-family: var(--sans);
+    font-size: 12px;
+    color: var(--ink-3);
+    margin-left: 10px;
+    font-weight: 400;
+  }
+  .mswipe {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 86%;
+    gap: 8px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    margin: 0 -10px;
+    padding: 0 10px 4px;
+    align-items: start;
+  }
+  .mswipe::-webkit-scrollbar {
+    display: none;
+  }
+  .mswipe > .mcard {
+    scroll-snap-align: start;
+  }
+  .mswipe > .mcard:only-child {
+    grid-column: 1 / -1;
+  }
+  .mrow:has(.mcard:only-child) .mswipe {
+    grid-auto-columns: 100%;
+  }
+  .wish3 {
+    grid-template-columns: 1fr;
+  }
+  .rt-row {
+    grid-template-columns: 4.6em repeat(3, minmax(0, 1fr));
+  }
+  .rt-head b {
+    font-size: 18px;
+  }
+  .sheet .cont {
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+  }
+}
+/* 棒：年と数字を同じ行に、棒はその下 */
+.compare-bars .r {
+  grid-template-columns: 4.5em 1fr;
+  grid-template-areas: 'yr val' 'bar bar';
+  row-gap: 4px;
+}
+.compare-bars .r .yr {
+  grid-area: yr;
+}
+.compare-bars .r .vals {
+  grid-area: val;
+  grid-column: auto;
+  margin: 0;
+  text-align: right;
+}
+.compare-bars .track {
+  grid-area: bar;
+}
+@media (min-width: 760px) {
+  .compare-bars .r {
+    grid-template-columns: 4.5em 1fr minmax(12em, auto);
+    grid-template-areas: 'yr bar val';
+    column-gap: 12px;
+  }
+  .compare-bars .r .vals {
+    text-align: left;
+  }
+}
+/* 対象外の見た目を1つの型に */
+.is-na {
+  opacity: 1 !important;
+  color: var(--ink-2) !important;
+  background-image: repeating-linear-gradient(135deg, color-mix(in srgb, var(--ink) 6%, transparent) 0 6px, transparent 6px 12px) !important;
+}
+/* 重ねる画面の幅 */
+@media (min-width: 760px) {
+  .sheet {
+    width: min(820px, 100%);
+  }
+  .sheet[aria-label='人生の記録'],
+  .sheet[aria-label='相談窓口'],
+  .sheet[aria-label='出典'],
+  .sheet[aria-label='このゲームについて'] {
+    width: min(720px, 100%);
+    font-size: 15px;
+  }
+  .opts {
+    max-width: none;
+  }
+}
+.logfull li {
+  grid-template-columns: 52px 1fr;
+}
+.logfull .star {
+  min-height: 0;
+  font-size: 18px;
+  margin-left: 6px;
+  vertical-align: -1px;
+  padding: 2px 4px;
+}
+.src-l {
+  font-size: 12px;
+}
+.birth {
+  min-height: calc(100dvh - 72px);
+  display: grid;
+  align-content: center;
+  padding-bottom: 40px;
+}
+.ledger li {
+  animation: drop 0.5s var(--ease) both;
+}
+@keyframes drop {
+  0% {
+    transform: translateY(-18px);
+    opacity: 0;
+  }
+  70% {
+    transform: translateY(2px) scale(1.04);
+    opacity: 1;
+  }
+  100% {
+    transform: none;
+  }
+}
+@media (min-width: 900px) {
+  .ledger {
+    width: min(520px, 100%);
+  }
+  .ledger b {
+    font-size: 22px;
+  }
+  .ledger .p {
+    font-size: 26px;
+  }
+}
+@media (max-width: 640px) {
+  .bars {
+    grid-template-columns: 1fr 1fr;
+    gap: 4px 8px;
+  }
+  .bars .b {
+    grid-template-columns: 1fr;
+    gap: 1px;
+    line-height: 1.3;
+  }
+  .bars .b em {
+    width: auto;
+  }
+  .col-head .yr-num {
+    font-size: 24px;
   }
 }
