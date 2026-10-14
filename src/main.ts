@@ -520,7 +520,8 @@ function renderCol(i: number): void {
           <span class="b" title="知識"><em>知識</em><span class="bar"><i style="width:${s.knowledge}%"></i></span></span>
           <span class="b" title="人間関係"><em>関係</em><span class="bar"><i style="width:${s.relation}%"></i></span></span>
         </div>
-        <div class="money"><span>貯え</span><b>${yen(p.money)}</b></div>`}
+        <div class="money"><span>貯え</span><b>${yen(p.money)}</b></div>
+        <div class="mini" aria-hidden="true">${esc(p.name.split(' ')[1] ?? '')}・${yen(p.money)}</div>`}
     <ul class="feed">
       ${entries.map((e, k) => feedItem(e, k > 0 && !freshEntries.has(e)))}
     </ul>`;
@@ -1005,7 +1006,7 @@ function recordTable(st: GameState): string {
     ['長生き', (p) => `${survivalPercentile(p)}%より長く`],
   ];
   return html`<div class="rtable" role="table" aria-label="3人の死亡記録の比較">
-    <div class="rt-row rt-head" role="row"><span role="columnheader"></span>${ps.map((p, i) => `<span role="columnheader" class="${ERA_CLASS[i]}"><small>${p.birthYear}年</small><b>享年${p.deathAge}</b>${esc(p.name.split(' ')[1] ?? '')}</span>`)}</div>
+    <div class="rt-row rt-head" role="row"><span role="columnheader"></span>${ps.map((p, i) => `<span role="columnheader" class="${ERA_CLASS[i]}"><small>${p.birthYear}–${p.deathYear}</small><b>享年${p.deathAge}</b>${esc(p.name.split(' ')[1] ?? '')}</span>`)}</div>
     ${rows.map(([k, f]) => `<div class="rt-row" role="row"><span role="rowheader">${k}</span>${ps.map((p, i) => `<span role="cell" class="${ERA_CLASS[i]}">${f(p)}</span>`).join('')}</div>`)}
   </div>
   <p class="muted rt-note">遺産は今の価値（2020年基準）。「長生き」は、同じ年に同じ性別で生まれた人のうち何%より長く生きたか。</p>`;

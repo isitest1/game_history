@@ -119,10 +119,14 @@ body {
   min-height: 100dvh;
 }
 /* 紙のざらつき（全体にうっすら） */
+body {
+  position: relative;
+}
 body::before {
   content: '';
-  position: fixed;
+  position: absolute;
   inset: 0;
+  min-height: 100dvh;
   pointer-events: none;
   opacity: 0.35;
   mix-blend-mode: multiply;
@@ -2486,4 +2490,64 @@ button {
     padding-bottom: 6px;
     box-shadow: 0 6px 12px -10px rgba(0, 0, 0, 0.4);
   }
+}
+
+/* ---------- 7周目の改善 ---------- */
+.mini {
+  display: none;
+}
+@media (max-width: 640px) {
+  .cols.is-compact .mini {
+    display: block;
+    font-size: 12px;
+    line-height: 1.3;
+    margin-top: 3px;
+    color: var(--c-sub);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .mswipe {
+    align-items: start;
+  }
+  .birth-acts {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+@media (min-width: 900px) {
+  .feed .d,
+  .feed li.old .d {
+    display: block;
+    -webkit-line-clamp: unset;
+    overflow: visible;
+  }
+  .col .who {
+    font-size: 14px;
+  }
+  .feed .meta,
+  .money,
+  .bars .b,
+  .compare-bars .r,
+  .rt-note,
+  .panel .muted {
+    font-size: 13.5px;
+  }
+  .record dl,
+  .wish3 > div,
+  .cmp > div,
+  .cmp span {
+    font-size: 14.5px !important;
+  }
+  .share .acts .btn {
+    font-size: 15px;
+  }
+}
+.wish3 {
+  align-items: start;
+}
+.gacha {
+  min-height: calc(100dvh - 72px);
+  justify-content: center;
+  padding-top: 0;
 }
