@@ -1,4 +1,6 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, beforeAll } from 'vitest';
+import { loadEvents } from '../src/sim/events';
+await loadEvents();
 import { createGame } from '../src/sim/engine';
 import { playToEnd } from '../src/sim/lab';
 

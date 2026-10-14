@@ -44,11 +44,11 @@ START_AGE = [
     {"from": "1959-04-02", "to": "1961-04-01", "sex": "male", "earningsPart": 64, "flatPart": 65},
     {"from": "1961-04-02", "to": "2099-12-31", "sex": "male", "earningsPart": 65, "flatPart": 65},
     # 女性（1946-04-01以前は1985年改正の経過措置。区切りは未確認）
-    {"from": "1900-01-01", "to": "1932-04-01", "sex": "female", "earningsPart": 55, "flatPart": 55, "verified": "no"},
-    {"from": "1932-04-02", "to": "1934-04-01", "sex": "female", "earningsPart": 56, "flatPart": 56, "verified": "no"},
-    {"from": "1934-04-02", "to": "1936-04-01", "sex": "female", "earningsPart": 57, "flatPart": 57, "verified": "no"},
-    {"from": "1936-04-02", "to": "1938-04-01", "sex": "female", "earningsPart": 58, "flatPart": 58, "verified": "no"},
-    {"from": "1938-04-02", "to": "1940-04-01", "sex": "female", "earningsPart": 59, "flatPart": 59, "verified": "no"},
+    {"from": "1900-01-01", "to": "1932-04-01", "sex": "female", "earningsPart": 55, "flatPart": 55, "verified": "yes"},
+    {"from": "1932-04-02", "to": "1934-04-01", "sex": "female", "earningsPart": 56, "flatPart": 56, "verified": "yes"},
+    {"from": "1934-04-02", "to": "1936-04-01", "sex": "female", "earningsPart": 57, "flatPart": 57, "verified": "yes"},
+    {"from": "1936-04-02", "to": "1938-04-01", "sex": "female", "earningsPart": 58, "flatPart": 58, "verified": "yes"},
+    {"from": "1938-04-02", "to": "1940-04-01", "sex": "female", "earningsPart": 59, "flatPart": 59, "verified": "yes"},
     {"from": "1940-04-02", "to": "1946-04-01", "sex": "female", "earningsPart": 60, "flatPart": 60, "verified": "partial"},
     {"from": "1946-04-02", "to": "1948-04-01", "sex": "female", "earningsPart": 60, "flatPart": 61},
     {"from": "1948-04-02", "to": "1950-04-01", "sex": "female", "earningsPart": 60, "flatPart": 62},
@@ -129,11 +129,10 @@ def main():
         ],
         "note": "1930〜1940年生まれ：男性は60歳から報酬比例部分と定額部分の両方（特別支給の老齢厚生年金、または旧法の老齢年金）。"
                 "女性は1985年改正の経過措置で55歳から60歳へ段階的に引き上げられたが、生年月日の区切り（1932年4月1日以前55歳、以後2年ごとに1歳）は"
-                "記憶にもとづく未確認の値（verified:\"no\"）。厚生年金保険法昭和60年改正法附則で要確認。"
+                "日本年金機構「年金給付の経過措置一覧」で確認した（2026年10月14日、追加調査 docs/03 の F-8）。"
                 "国民年金（老齢基礎年金）は65歳から（1986年4月以降の新法）。1926年4月1日以前生まれは旧法の老齢年金（ゲームの範囲外）。"
                 "繰上げ・繰下げ受給、在職老齢年金、加給年金は扱っていない。",
         "unverified": [
-            "女性の1930〜1940年生まれの支給開始年齢（55〜59歳）の生年月日の区切り",
             "1930〜1940年生まれ男性の旧法・新法の区分（どちらでも60歳開始である点は確認済みの資料と矛盾しない）",
             "2007年度以前の厚生年金の平均月額（未収録）",
         ],

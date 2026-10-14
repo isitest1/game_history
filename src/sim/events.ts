@@ -1,10 +1,12 @@
-// data/events/*.json を読み込む。形が正しくないものは捨てる（読み込みで止まらないように）。
+// data/events/*.json を読み込む。最初の画面を軽くするため、ゲームを始めるときに後から読み込む。
+// 形が正しくないものは捨てる（読み込みで止まらないように）。
 
 import type { GameEvent } from './types';
 
-const files = import.meta.glob('../../data/events/*.json', { eager: true, import: 'default' }) as Record<string, unknown>;
+const loaders = import.meta.glob('../../data/events/*.json', { import: 'default' }) as Record<string, () => Promise<unknown>>;
 
 let cache: GameEvent[] | null = null;
+let pending: Promise<GameEvent[]> | null = null;
 
 export function isValidEvent(e: any): e is GameEvent {
   return (
@@ -19,20 +21,30 @@ export function isValidEvent(e: any): e is GameEvent {
   );
 }
 
-export function allEvents(): GameEvent[] {
-  if (cache) return cache;
-  const seen = new Set<string>();
-  const out: GameEvent[] = [];
-  for (const data of Object.values(files)) {
-    if (!Array.isArray(data)) continue;
-    for (const e of data) {
-      if (!isValidEvent(e) || seen.has(e.id)) continue;
-      seen.add(e.id);
-      out.push(e);
-    }
+export function loadEvents(): Promise<GameEvent[]> {
+  if (cache) return Promise.resolve(cache);
+  if (!pending) {
+    pending = Promise.all(Object.values(loaders).map((f) => f())).then((all) => {
+      const seen = new Set<string>();
+      const out: GameEvent[] = [];
+      for (const data of all) {
+        if (!Array.isArray(data)) continue;
+        for (const e of data) {
+          if (!isValidEvent(e) || seen.has(e.id)) continue;
+          seen.add(e.id);
+          out.push(e);
+        }
+      }
+      cache = out;
+      return out;
+    });
   }
-  cache = out;
-  return out;
+  return pending;
+}
+
+/** 読み込み済みの出来事（loadEvents の前は空） */
+export function allEvents(): GameEvent[] {
+  return cache ?? [];
 }
 
 export function eventStats(): { total: number; byCategory: Record<string, number>; verified: number } {

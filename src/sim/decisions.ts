@@ -123,12 +123,14 @@ export const DECISIONS: DecisionDef[] = [
     ],
     resolve: (p, opt, _st, rng) => {
       const y = yearOf(p);
-      const war = y >= 1941 && y <= 1946;
+      const war = y >= 1941 && y <= 1945;
+      const postwar = y >= 1946 && y <= 1948;
       if (opt === 'none') {
         p.stats.happiness = Math.min(100, p.stats.happiness + 4);
-        return { ok: true, text: war ? '習い事どころではなかった。' : '放課後は外で遊んだ。' };
+        return { ok: true, text: war || postwar ? '習い事どころではなかった。' : '放課後は外で遊んだ。' };
       }
       if (war) return { ok: false, text: '戦争中で、習い事どころではなかった。' };
+      if (postwar) return { ok: false, text: '戦争が終わったばかりで、食べるものにも困っていた。習い事どころではなかった。' };
       // ピアノ：1960〜70年代にピアノの家庭への普及が進んだ（目安）
       const base = opt === 'piano' ? (y < 1955 ? 0.05 : y < 1975 ? 0.35 : 0.5) : opt === 'juku' ? (y < 1960 ? 0.15 : y < 1975 ? 0.4 : 0.6) : y < 1960 ? 0.5 : 0.6;
       const ok = rng.chance(Math.min(0.95, base * (0.6 + p.familyClass * 0.15)));

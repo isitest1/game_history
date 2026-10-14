@@ -64,7 +64,15 @@ def load_gakko():
     return rows
 
 
+def fetch_prewar_images():
+    """値を読み取った元の表の画像を data/raw/ に保存しておく（目で照合するため）。"""
+    base = "https://www.mext.go.jp/b_menu/hakusho/image/hpae196301/"
+    for f, what in (("f5048001.gif", "Table5"), ("f5052001.gif", "Table8"), ("f5058001.gif", "Table10")):
+        c.download(base + f, f"mext_1963_{what}_{f}")
+
+
 def main():
+    fetch_prewar_images()
     g = load_gakko()
     hs = {"male": {}, "female": {}}
     un = {"male": {}, "female": {}}

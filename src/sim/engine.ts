@@ -292,8 +292,10 @@ function matches(ev: GameEvent, p: Person, year: number): boolean {
 }
 
 let eventIndex: Map<number, GameEvent[]> | null = null;
+let indexedCount = -1;
 function eventsForYear(year: number): GameEvent[] {
-  if (!eventIndex) {
+  if (!eventIndex || indexedCount !== allEvents().length) {
+    indexedCount = allEvents().length;
     eventIndex = new Map();
     for (const ev of allEvents()) {
       const end = Math.min(ev.endYear ?? ev.year, ev.year + 80);

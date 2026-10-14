@@ -1,5 +1,7 @@
 // 実験室：たくさんの人生を走らせ、元の統計と合うかを確かめる。
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, beforeAll } from 'vitest';
+import { loadEvents } from '../src/sim/events';
+await loadEvents();
 import { runLab } from '../src/sim/lab';
 import { cohortLifeExpectancy } from '../src/sim/engine';
 import * as S from '../src/sim/stats';

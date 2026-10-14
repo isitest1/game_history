@@ -145,7 +145,30 @@ def newgrad_middle_high():
     return mid, high
 
 
+def verify_pdfs():
+    """本文から転記した値を、元のPDFのテキストで照合する（pdftotext があるときだけ）。"""
+    import shutil
+    import subprocess
+    files = {
+        "works_daisotsu_kyujin_43.pdf": (WORKS_URL, ["2.34倍", "2.86倍", "0.99倍", "1.53倍", "1.75倍"]),
+        "roudou_hakusho_1969_02.pdf": (WHITE_PAPER_NEWGRAD[1969]["src"], ["中学卒4.8倍,高校卒5.7倍"]),
+        "roudou_hakusho_1973_02.pdf": (WHITE_PAPER_NEWGRAD[1971]["src"], ["中学卒6.83倍,高校卒3.99倍"]),
+    }
+    for name, (url, _) in files.items():
+        c.download(url, name)
+    if not shutil.which("pdftotext"):
+        print("pdftotext がないので照合を省略")
+        return
+    for name, (_, needles) in files.items():
+        txt = subprocess.run(["pdftotext", str(c.RAW / name), "-"], capture_output=True, text=True).stdout
+        txt = re.sub(r"\s+", "", txt)
+        for n in needles:
+            assert n in txt, (name, n)
+    print("PDFとの照合OK")
+
+
 def main():
+    verify_pdfs()
     un = unemployment()
     # 1930〜1952年：比較できる公的な年平均の完全失業率が見つからなかった → 1953年の値で据え置く（推計）
     est_un = list(range(START, 1953))

@@ -6,7 +6,7 @@ import type { Edu, Sex } from './types';
 
 type AnyJson = any;
 
-const files = import.meta.glob('../../data/stats/*.json', { eager: true, import: 'default' }) as Record<string, AnyJson>;
+const files = import.meta.glob(['../../data/stats/*.json', '!../../data/stats/mortality_variants.json'], { eager: true, import: 'default' }) as Record<string, AnyJson>;
 
 function file(name: string): AnyJson | undefined {
   return files[`../../data/stats/${name}.json`];

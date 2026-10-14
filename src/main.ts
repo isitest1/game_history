@@ -7,6 +7,7 @@ import { esc, wareki, yen, html, sleep, reducedMotion } from './ui/format';
 import { drawShareCard, shareText } from './ui/sharecard';
 import { HELP_LINES, SOURCES } from './ui/content';
 import { sound } from './ui/sound';
+import { loadEvents } from './sim/events';
 
 const app = document.getElementById('app')!;
 const SAVE_KEY = 'umaredoshi.save.v1';
@@ -71,11 +72,11 @@ let timer: { stop: boolean } | null = null;
 
 function topbar(extra = ''): string {
   return html`<header class="topbar">
-    <a class="logo" href="./" data-act="home" aria-label="生まれ年ガチャ トップへ"><span class="seal" aria-hidden="true">生</span>生まれ年ガチャ</a>
+    <a class="logo" href="./" data-act="home"><span class="seal" aria-hidden="true">生</span>生まれ年ガチャ</a>
     <div style="display:flex;gap:6px;align-items:center">
       ${extra}
       <button class="iconbtn" data-act="theme" aria-label="${themeLabel()}">${ICON[ui.theme]}</button>
-      <button class="iconbtn" data-act="help" aria-label="相談窓口">相談先</button>
+      <button class="iconbtn" data-act="help">相談先</button>
     </div>
   </header>`;
 }
@@ -112,7 +113,7 @@ function showTitle(): void {
     <main class="wrap hero" id="main">
       <div class="hero-grid"><div>
         <p class="kicker">Born in three eras</p>
-        <h1>同じ私が、<br />三つの時代に<em>生まれる</em>。</h1>
+        <h1><span class="nw">同じ私が、</span><br /><span class="nw">三つの時代に</span><span class="nw"><em>生まれる</em>。</span></h1>
         <div class="triplet" aria-hidden="true">
           ${years.map((y, i) => `<div class="yr ${ERA_CLASS[i]}"><b class="yr-num" data-roll="${i}">${y}</b><span>${['活版と紙', 'ブラウン管', 'フラット'][i]}</span></div>`)}
         </div>
@@ -198,6 +199,7 @@ function showTitle(): void {
 
 async function showGacha(): Promise<void> {
   if (!state) return;
+  void loadEvents();
   const st = state;
   window.scrollTo(0, 0);
   const steps = ['生まれる県', '性別', '家の暮らし向き', '生まれる年'];
@@ -337,8 +339,9 @@ function yearMs(): number {
   return Math.max(1500, total / 90) / speed;
 }
 
-function showLife(): void {
+async function showLife(): Promise<void> {
   if (!state) return;
+  await loadEvents();
   const st = state;
   shownAge = st.age;
   window.scrollTo(0, 0);
@@ -351,7 +354,7 @@ function showLife(): void {
         </div>
         <div style="display:flex;gap:6px">
           <button class="iconbtn" data-act="theme" aria-label="${themeLabel()}">${ICON[ui.theme]}</button>
-          <button class="iconbtn" data-act="help" aria-label="相談窓口">相談先</button>
+          <button class="iconbtn" data-act="help">相談先</button>
         </div>
       </div>
       <div class="yearprog"><i id="prog"></i></div>
@@ -989,6 +992,7 @@ async function boot(): Promise<void> {
   const q = new URLSearchParams(location.search);
   const demo = q.get('demo');
   if (demo) {
+    await loadEvents();
     const seed = Number(q.get('seed') ?? 12345);
     state = createGame({ seed, playerBirthYear: 1990 });
     const { playToEnd } = await import('./sim/lab');
