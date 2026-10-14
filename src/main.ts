@@ -12,6 +12,12 @@ const app = document.getElementById('app')!;
 const SAVE_KEY = 'umaredoshi.save.v1';
 const PREF_KEY = 'umaredoshi.prefs.v1';
 const ERA_CLASS = ['era-0', 'era-1', 'era-2'];
+const ICON = {
+  auto: '<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg>',
+  dark: '<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="currentColor"/></svg>',
+  light: '<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg>',
+};
+const themeLabel = () => `表示の明るさを切り替える（いま：${ui.theme === 'auto' ? '端末に合わせる' : ui.theme === 'dark' ? '暗い' : '明るい'}）`;
 const BREATH_AGES = [6, 15, 22, 40, 65];
 
 interface UiPrefs {
@@ -68,7 +74,7 @@ function topbar(extra = ''): string {
     <a class="logo" href="./" data-act="home" aria-label="生まれ年ガチャ トップへ"><span class="seal" aria-hidden="true">生</span>生まれ年ガチャ</a>
     <div style="display:flex;gap:6px;align-items:center">
       ${extra}
-      <button class="iconbtn" data-act="theme" aria-label="表示の明るさを切り替える（いま：${ui.theme === 'auto' ? '自動' : ui.theme === 'dark' ? '暗い' : '明るい'}）">${ui.theme === 'dark' ? '☾' : ui.theme === 'light' ? '☀' : '◐'}</button>
+      <button class="iconbtn" data-act="theme" aria-label="${themeLabel()}">${ICON[ui.theme]}</button>
       <button class="iconbtn" data-act="help" aria-label="相談窓口">相談先</button>
     </div>
   </header>`;
@@ -87,8 +93,8 @@ function bindCommon(root: HTMLElement): void {
     savePrefs();
     applyTheme();
     const b = root.querySelector('[data-act="theme"]') as HTMLElement;
-    b.textContent = ui.theme === 'dark' ? '☾' : ui.theme === 'light' ? '☀' : '◐';
-    b.setAttribute('aria-label', `表示の明るさを切り替える（いま：${ui.theme === 'auto' ? '自動' : ui.theme === 'dark' ? '暗い' : '明るい'}）`);
+    b.innerHTML = ICON[ui.theme];
+    b.setAttribute('aria-label', themeLabel());
   });
   root.querySelector('[data-act="help"]')?.addEventListener('click', () => showHelp());
 }
@@ -104,7 +110,7 @@ function showTitle(): void {
     .join('');
   app.innerHTML = html`${topbar()}
     <main class="wrap hero" id="main">
-      <div>
+      <div class="hero-grid"><div>
         <p class="kicker">Born in three eras</p>
         <h1>同じ私が、<br />三つの時代に<em>生まれる</em>。</h1>
         <div class="triplet" aria-hidden="true">
@@ -134,18 +140,33 @@ function showTitle(): void {
           <button data-act="about">このゲームについて</button>
         </div>
       </div>
+      <div class="hero-art" aria-hidden="true">${[0, 1, 2].map((i) => `<div class="art-card ${ERA_CLASS[i]}" data-art="${i}"></div>`).join('')}</div>
+      </div>
     </main>`;
   bindCommon(app);
-  // 年号がくるくる回る
+  // 年号がくるくる回る。右の札には、その年に生まれた人の数字を出す
+  const els = app.querySelectorAll<HTMLElement>('[data-roll]');
+  const arts = app.querySelectorAll<HTMLElement>('[data-art]');
+  const paint = (mid: number) => {
+    els.forEach((el, i) => (el.textContent = String(mid + (i - 1) * 30)));
+    arts.forEach((el, i) => {
+      const y = mid + (i - 1) * 30;
+      const q0 = (S.qx(y, 0, 'male') + S.qx(y, 0, 'female')) / 2;
+      el.innerHTML = `<span class="art-k">${['活版と紙', 'ブラウン管', 'フラット'][i]}</span><b class="yr-num">${y}</b><span class="art-w">${wareki(y)}生まれ</span>
+        <dl><dt>生まれた赤ちゃん</dt><dd>${Math.round(S.nationalBirths(y) / 10000)}万人</dd>
+        <dt>1歳まで</dt><dd>${Math.round(1 / Math.max(q0, 0.0003))}人に1人が亡くなる</dd>
+        <dt>15歳で高校へ</dt><dd>${Math.round((S.eduRate('highSchool', y + 15, 'male') + S.eduRate('highSchool', y + 15, 'female')) / 2)}%</dd>
+        <dt>見込みの寿命</dt><dd>${Math.round((cohortLifeExpectancy(y, 'male') + cohortLifeExpectancy(y, 'female')) / 2)}歳</dd></dl>`;
+    });
+  };
+  paint(1965);
   if (!reducedMotion()) {
-    const els = app.querySelectorAll<HTMLElement>('[data-roll]');
     let n = 0;
     const iv = setInterval(() => {
+      if (!document.body.contains(els[0])) return clearInterval(iv);
       n++;
-      const mid = 1960 + ((n * 7) % 16);
-      els.forEach((el, i) => (el.textContent = String(mid + (i - 1) * 30)));
-      if (!document.body.contains(els[0])) clearInterval(iv);
-    }, 1400);
+      paint(1960 + ((5 + n * 7) % 16));
+    }, 2600);
   }
   app.querySelectorAll<HTMLButtonElement>('[data-min]').forEach((b) =>
     b.addEventListener('click', () => {
@@ -329,7 +350,7 @@ function showLife(): void {
           <div class="age" aria-live="polite"><span id="age">${st.age}</span><small>歳</small></div>
         </div>
         <div style="display:flex;gap:6px">
-          <button class="iconbtn" data-act="theme" aria-label="表示の明るさを切り替える">${ui.theme === 'dark' ? '☾' : ui.theme === 'light' ? '☀' : '◐'}</button>
+          <button class="iconbtn" data-act="theme" aria-label="${themeLabel()}">${ICON[ui.theme]}</button>
           <button class="iconbtn" data-act="help" aria-label="相談窓口">相談先</button>
         </div>
       </div>
@@ -889,7 +910,7 @@ function survivalSvg(st: GameState): string {
     const c = survivalCurve(p.birthYear, p.sex);
     const d = c.map((v, a) => `${a === 0 ? 'M' : 'L'}${x(a).toFixed(1)},${y(v).toFixed(1)}`).join('');
     const da = p.deathAge ?? 0;
-    return `<path d="${d}" fill="none" stroke="${colors[i]}" stroke-width="2.5"/><circle cx="${x(da)}" cy="${y(c[Math.min(da, 105)])}" r="5" fill="${colors[i]}"/><text x="${x(da) + 7}" y="${y(c[Math.min(da, 105)]) - 6}" font-size="12" fill="currentColor">${p.birthYear}年生まれ</text>`;
+    return `<path d="${d}" fill="none" stroke="${colors[i]}" stroke-width="2.5"/><circle cx="${x(da)}" cy="${y(c[Math.min(da, 105)])}" r="5" fill="${colors[i]}"/><text x="${Math.min(x(da) + 8, W - 92)}" y="${y(c[Math.min(da, 105)]) - 8 - i * 15}" font-size="12" fill="${colors[i]}" font-weight="700">${p.birthYear}年生まれ・${da}歳</text>`;
   });
   const grid = [0, 20, 40, 60, 80, 100].map((a) => `<line x1="${x(a)}" x2="${x(a)}" y1="${pad / 2}" y2="${H - pad}" stroke="currentColor" opacity=".12"/><text x="${x(a)}" y="${H - 10}" font-size="11" text-anchor="middle" fill="currentColor" opacity=".7">${a}歳</text>`);
   const yg = [0, 0.5, 1].map((v) => `<text x="4" y="${y(v) + 4}" font-size="11" fill="currentColor" opacity=".7">${v * 100}%</text>`);

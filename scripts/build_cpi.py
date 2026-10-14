@@ -18,10 +18,13 @@ import econ_common as c  # noqa: E402
 
 START, END = 1930, 2025
 
-# 戦前基準（1934〜36年平均=1）の東京都区部消費者物価指数の1947年値。
-# 総務省統計局『消費者物価指数年報』に収録（統計局FAQ 17A-Q07）。紙の年報で、今回は数値を確認できなかった。
-# 一般に約110倍とされる値を「未確認の仮置き」として使う。確認できたらここを直す。
-PREWAR_1947_MULTIPLE = 109.1  # 未確認
+# 経済企画庁『昭和29年度 年次経済報告』（経済白書）第2部 消費・家計の節：
+#  「本年４月における消費者物価は朝鮮動乱直前に比し、４６％高、戦前（昭和９～１１年）の３０４倍となっている」
+#  https://www5.cao.go.jp/keizai3/keizaiwp/wp-je54/wp-je54-021002.html
+# この「1954年4月＝1934〜36年平均の304倍」を、1954年の年平均にあてはめて戦前の水準を求める（近似）。
+ANCHOR_YEAR = 1954
+ANCHOR_MULTIPLE = 304
+ANCHOR_URL = "https://www5.cao.go.jp/keizai3/keizaiwp/wp-je54/wp-je54-021002.html"
 PREWAR_FLAT_UNTIL = 1936      # 1930〜1936年は1934〜36年平均と同じ水準で据え置く（推計）
 
 
@@ -56,7 +59,7 @@ def main():
             linked.append(y)
 
     # 1946年以前の推計
-    base_prewar = years[1947] / PREWAR_1947_MULTIPLE  # 1934〜36年平均の水準（2020年=100）
+    base_prewar = years[ANCHOR_YEAR] / ANCHOR_MULTIPLE  # 1934〜36年平均の水準（2020年=100）
     est = {}
     for y in range(START, PREWAR_FLAT_UNTIL + 1):
         est[y] = base_prewar
@@ -80,6 +83,9 @@ def main():
             {"name": "同 持家の帰属家賃を除く総合指数（全国、1947年〜）",
              "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000032103937&fileKind=1",
              "license": "政府標準利用規約（第2.0版）", "retrieved": c.RETRIEVED},
+            {"name": "経済企画庁『昭和29年 年次経済報告』（消費者物価は戦前（昭和9〜11年）の304倍）",
+             "url": ANCHOR_URL,
+             "license": "内閣府ホームページ（政府標準利用規約に準拠）", "retrieved": c.RETRIEVED},
         ],
         "interpolated": c.ranges(filled_years),
         "estimated": c.ranges(list(est)),
@@ -87,14 +93,15 @@ def main():
         "method": [
             "1970〜2025年：全国・総合の年平均（2020年基準）をそのまま使用。",
             f"1947〜1969年：全国の『持家の帰属家賃を除く総合』に、1970年の総合との比（{link:.4f}）を掛けてつないだ。",
-            f"1930〜{PREWAR_FLAT_UNTIL}年（推計）：戦前基準（1934〜36年平均=1）の東京都区部消費者物価指数の1947年値を"
-            f"{PREWAR_1947_MULTIPLE}（未確認の仮置き）とし、1947年の値÷{PREWAR_1947_MULTIPLE}を1934〜36年の水準として据え置いた。"
+            f"1930〜{PREWAR_FLAT_UNTIL}年（推計）：1954年の経済白書の『1954年4月の消費者物価は戦前（昭和9〜11年）の{ANCHOR_MULTIPLE}倍』を使い、"
+            f"{ANCHOR_YEAR}年の年平均÷{ANCHOR_MULTIPLE}を1934〜36年平均の水準とみなして据え置いた（4月の値を年平均に、白書の系列を全国系列に当てはめた近似）。"
             "昭和恐慌期（1930〜32年）の物価下落は反映していない。",
             f"{PREWAR_FLAT_UNTIL + 1}〜1946年（推計・補間）：{PREWAR_FLAT_UNTIL}年と1947年の間を対数で直線補間した。"
             "実際には1945〜47年に急激なインフレがあり、1940年代前半の物価はこの補間値より低く、1946年はより高かったと考えられる。",
         ],
         "unverified": [
-            f"戦前基準の1947年値（{PREWAR_1947_MULTIPLE}）。総務省『消費者物価指数年報』（紙）で確認が必要。",
+            "1937〜1946年の年ごとの動き（公的な年次の電子データが見つからなかった）。"
+            "総務省『消費者物価指数年報』（紙）の戦前基準指数（東京都区部、1947年〜）や日本銀行の戦前基準指数で確認するとよい。",
         ],
         "note": "1946年以前の値は物の値段の目安として使い、生涯年収などの換算に使うときは幅を持たせること。1972年以前は沖縄県を含まない。",
     }

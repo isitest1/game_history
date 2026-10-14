@@ -193,12 +193,32 @@ export function neverMarried50(year: number, sex: Sex): number {
 const wages = file('wages');
 const cpiFile = file('cpi');
 
+/** 統計がある最後の年 */
+function lastKey(t: Record<string, number> | undefined): number | undefined {
+  if (!t) return undefined;
+  const ks = Object.keys(t).map(Number).filter(Number.isFinite);
+  return ks.length ? Math.max(...ks) : undefined;
+}
+
+/**
+ * 名目賃金の水準（2020=100）。統計がない未来は、物価を2025年で止めたうえで（＝2025年の物価で表す）、
+ * 実質賃金が年1.1%ずつ伸びるとみなす。2024年財政検証の実質賃金上昇率の前提（成長型経済移行・継続ケース1.5%、過去30年投影ケース0.5%）の中間（目安）
+ */
 export function incomeIndex(year: number): number {
-  return interp(wages?.annualIncomeIndex, year) ?? fb('wages', Math.max(0.3, 100 * Math.exp((year - 2020) * 0.06)));
+  const t = wages?.annualIncomeIndex as Record<string, number> | undefined;
+  const last = lastKey(t);
+  if (t && last !== undefined) {
+    if (year <= last) return interp(t, year)!;
+    return t[String(last)] * Math.pow(1.011, year - last);
+  }
+  usedFallback.add('wages');
+  // 目安：1950年代〜90年代に大きく伸び、その後は横ばい
+  const base = year <= 1997 ? 100 * Math.exp((year - 1997) * 0.075) : 100 * Math.pow(1.002, year - 1997);
+  return year > 2025 ? base * Math.pow(1.011, year - 2025) : base;
 }
 
 export function cpi(year: number): number {
-  return interp(cpiFile?.years, Math.min(year, 2025)) ?? fb('cpi', Math.max(0.2, 100 * Math.exp((year - 2020) * 0.05)));
+  return interp(cpiFile?.years, Math.min(year, 2025)) ?? fb('cpi', year <= 1995 ? 100 * Math.exp((year - 1995) * 0.06) : 100);
 }
 
 /** その年の1円が、2020年の何円にあたるか（未来は2025年の物価で止める） */
