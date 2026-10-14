@@ -336,7 +336,7 @@
       ]
     },
     "title": "和文タイピスト",
-    "text": "タイピストとして会社に入った。二千を超える活字の並んだ盤から一字ずつ拾って打つ。速く正確に打てる人は、男より給料がよかった。",
+    "text": "タイピストとして会社に入った。二千を超える活字の並んだ盤から一字ずつ拾って打つ。速く正確に打てる人は職人のように重宝され、指名で仕事を頼まれた。",
     "effects": {
       "knowledge": 1,
       "flags": [
@@ -344,11 +344,11 @@
       ]
     },
     "probability": 0.05,
-    "probNote": "目安。給料の比較は未確認",
+    "probNote": "目安",
     "source": {
-      "title": "（未確認）和文タイプライターとタイピストの職業",
-      "url": "",
-      "verified": false
+      "title": "特許庁 十大発明家 杉本京太（和文タイプライター、2,400字の活字）",
+      "url": "https://www.jpo.go.jp/introduction/rekishi/document/10hatsumeika/06sugimoto.pdf",
+      "verified": true
     }
   },
   {
@@ -485,9 +485,9 @@
     "probability": 0.03,
     "probNote": "目安",
     "source": {
-      "title": "（未確認）バスガイドの職業（高度成長期）",
-      "url": "",
-      "verified": false
+      "title": "トラベルボイス（はとバスは創業以来バスガイドに女性を採用）",
+      "url": "https://www.travelvoice.jp/20190312-127605",
+      "verified": true
     }
   },
   {
@@ -741,7 +741,7 @@
       ]
     },
     "title": "派遣社員として働く",
-    "text": "派遣会社に登録し、商社でワープロを打つ仕事に就いた。正社員より時給は高く、残業もなかった。ただ契約が切れれば終わりだった。",
+    "text": "派遣会社に登録し、商社でワープロを打つ仕事に就いた。時給はよく、残業もほとんどなかった。ただ、契約が切れればそれで終わりだった。",
     "effects": {
       "money": 10000,
       "flags": [
@@ -749,11 +749,11 @@
       ]
     },
     "probability": 0.06,
-    "probNote": "施行日と対象業務は今回確かめていない。目安",
+    "probNote": "目安。1986年7月施行、対象は当初13業務（事務用機器操作など）",
     "source": {
-      "title": "（未確認）労働者派遣法 1986年施行（対象業務を限定）",
-      "url": "",
-      "verified": false
+      "title": "厚生労働省 労働者派遣法の制定・改正経緯について（1986年7月施行、当初13業務）",
+      "url": "https://www.mhlw.go.jp/stf/shingi/2r9852000002m113-att/siryou05.pdf",
+      "verified": true
     }
   },
   {
@@ -786,9 +786,9 @@
     "probability": 0.08,
     "probNote": "目安",
     "source": {
-      "title": "（未確認）製造業への労働者派遣の解禁（2004年）",
-      "url": "",
-      "verified": false
+      "title": "厚生労働省 労働者派遣法の制定・改正経緯について（2004年3月 製造業務の派遣解禁）",
+      "url": "https://www.mhlw.go.jp/stf/shingi/2r9852000002m113-att/siryou05.pdf",
+      "verified": true
     }
   },
   {
@@ -915,9 +915,9 @@
     "probability": 0.06,
     "probNote": "目安",
     "source": {
-      "title": "（未確認）ITエンジニアの増加（1990年代後半〜）",
-      "url": "",
-      "verified": false
+      "title": "経済産業省 IT人材を巡る現状について（データ編）（国勢調査のIT技術者は1985年以降増加）",
+      "url": "https://www.meti.go.jp/shingikai/sankoshin/shomu_ryutsu/joho_keizai/it_jinzai/pdf/001_04_02.pdf",
+      "verified": true
     }
   },
   {
@@ -1224,7 +1224,7 @@
       ]
     },
     "title": "料理の配達員",
-    "text": "スマホのアプリに登録し、自転車で料理を運ぶ配達員になった。好きな時間に働けるが、けがをしても補償はなにもなかった。",
+    "text": "スマホのアプリに登録し、自転車で料理を運ぶ配達員になった。好きな時間に働けるが、会社員のように労災で守られているわけではなかった。",
     "effects": {
       "money": 5000,
       "health": -1
@@ -1232,9 +1232,9 @@
     "probability": 0.04,
     "probNote": "目安",
     "source": {
-      "title": "（未確認）フードデリバリー配達員の増加（2020年）",
-      "url": "",
-      "verified": false
+      "title": "厚生労働省 フードデリバリー配達員への労災保険特別加入適用について（2021年5月 労災保険部会資料）",
+      "url": "https://www.mhlw.go.jp/content/11601000/000779065.pdf",
+      "verified": true
     }
   },
   {
@@ -1337,9 +1337,9 @@
     "probability": 0.1,
     "probNote": "目安",
     "source": {
-      "title": "（未確認）農家の出稼ぎ（高度成長期）",
-      "url": "",
-      "verified": false
+      "title": "コトバンク 出稼ぎ（東北・日本海側の農閑期の出稼ぎ、高度成長期に増加）",
+      "url": "https://kotobank.jp/word/%E5%87%BA%E7%A8%BC%E3%81%8E-100718",
+      "verified": true
     }
   },
   {
@@ -1359,9 +1359,9 @@
     "probability": 0.1,
     "probNote": "目安",
     "source": {
-      "title": "（未確認）コンビニエンスストアの普及（1974年セブン-イレブン1号店）",
-      "url": "",
-      "verified": false
+      "title": "nippon.com Japan Data（1974年5月 セブン-イレブン1号店、1975年に24時間営業開始）",
+      "url": "https://www.nippon.com/ja/japan-data/h01982/",
+      "verified": true
     }
   }
 ]

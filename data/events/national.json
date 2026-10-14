@@ -48,6 +48,7 @@
     "key": "new-constitution-1947",
     "category": "national",
     "year": 1947,
+    "month": 5,
     "ageMin": 6,
     "ageMax": 17,
     "sex": "any",
@@ -59,9 +60,9 @@
     "probability": 0.8,
     "probNote": "目安",
     "source": {
-      "title": "国立公文書館 日本国憲法の公布・施行",
-      "url": "https://www.archives.go.jp/",
-      "verified": false
+      "title": "国立公文書館 再建日本の出発－1947年5月 日本国憲法の施行－",
+      "url": "https://www.archives.go.jp/exhibition/digital/saiken/shousai.html",
+      "verified": true
     }
   },
   {
@@ -720,9 +721,9 @@
     "probability": 0.6,
     "probNote": "目安",
     "source": {
-      "title": "内閣府 経済白書（第2次石油危機）",
-      "url": "https://www5.cao.go.jp/",
-      "verified": false
+      "title": "内閣府 昭和56年 年次経済報告 第I部 第2次石油危機を乗り越える日本経済（影響は第1次より軽微）",
+      "url": "https://www5.cao.go.jp/keizai3/keizaiwp/wp-je81/wp-je81-01100.html",
+      "verified": true
     }
   },
   {
@@ -741,9 +742,9 @@
     "probability": 0.5,
     "probNote": "目安",
     "source": {
-      "title": "内閣府 経済白書（第2次石油危機）",
-      "url": "https://www5.cao.go.jp/",
-      "verified": false
+      "title": "三菱電機 コラム（1979年 第2次オイルショックの省エネルック、当時の内閣の提案）",
+      "url": "https://www.mitsubishielectric.co.jp/medigital/column/oasis/039/",
+      "verified": true
     }
   },
   {
@@ -966,9 +967,9 @@
     "probability": 0.9,
     "probNote": "目安",
     "source": {
-      "title": "首相官邸 新元号の公表（平成・令和）",
-      "url": "https://www.kantei.go.jp/",
-      "verified": false
+      "title": "国立公文書館 特集 天皇皇后両陛下と平成の時代（1989年1月7日崩御、1月8日から平成）",
+      "url": "https://www.archives.go.jp/naj_news/17/special.html",
+      "verified": true
     }
   },
   {
@@ -1749,9 +1750,9 @@
     "probability": 0.5,
     "probNote": "目安",
     "source": {
-      "title": "内閣府 年次経済財政報告（アベノミクス）",
-      "url": "https://www5.cao.go.jp/",
-      "verified": false
+      "title": "内閣府 平成25年度 年次経済財政報告（2013年4月 量的・質的金融緩和、円安・株高）",
+      "url": "https://www5.cao.go.jp/j-j/wp/wp-je13/pdf/all_01.pdf",
+      "verified": true
     }
   },
   {
@@ -1771,9 +1772,9 @@
     "probability": 0.9,
     "probNote": "目安",
     "source": {
-      "title": "首相官邸 新元号の公表（平成・令和）",
-      "url": "https://www.kantei.go.jp/",
-      "verified": false
+      "title": "内閣府 天皇の即位の日及び即位礼正殿の儀の行われる日を休日とする法律の概要（2019年4月27日〜5月6日の10連休）",
+      "url": "https://www8.cao.go.jp/chosei/shukujitsu/about/gaiyou/20190405gaiyouchirashi.pdf",
+      "verified": true
     }
   },
   {
@@ -1794,9 +1795,9 @@
     "probability": 0.9,
     "probNote": "目安",
     "source": {
-      "title": "文部科学省 新型コロナウイルス感染症対策のための臨時休業",
-      "url": "https://www.mext.go.jp/",
-      "verified": false
+      "title": "文部科学省 全国一斉臨時休業関係（2020年2月28日要請、3月2日から）",
+      "url": "https://www.mext.go.jp/a_menu/coronavirus/mext_00006.html",
+      "verified": true
     }
   },
   {
@@ -1817,9 +1818,9 @@
     "probability": 0.9,
     "probNote": "目安",
     "source": {
-      "title": "文部科学省 新型コロナウイルス感染症対策のための臨時休業",
-      "url": "https://www.mext.go.jp/",
-      "verified": false
+      "title": "文部科学省 全国一斉臨時休業関係（2020年2月28日要請、3月2日から）",
+      "url": "https://www.mext.go.jp/a_menu/coronavirus/mext_00006.html",
+      "verified": true
     }
   },
   {

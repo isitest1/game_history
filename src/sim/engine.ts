@@ -573,8 +573,9 @@ function lifecycle(state: GameState, p: Person, rng: Rng, year: number): void {
 }
 
 function birthPlaceText(year: number): string {
-  // 自宅から病院・診療所・助産所へ、出産の場所が移った流れ（人口動態統計「出生の場所別」）。境目の年は目安（未確認）
-  if (year < 1955) return '家で、産婆さんに取り上げてもらった。';
+  // 施設（病院・診療所・助産所）で生まれた割合：1950年4.6%、1955年17.6%、1960年50.1%、1965年84.0%、1970年96.1%
+  // （厚生労働省の資料、原資料は人口動態統計「出生の場所別」。docs/03 の G 章）
+  if (year < 1960) return '家で、産婆さんに取り上げてもらった。';
   if (year < 1965) return '病院か助産所で生まれた。家で産むのは少なくなっていた。';
   return '病院で生まれた。';
 }
@@ -733,7 +734,8 @@ function work(p: Person, rng: Rng, year: number): void {
 
 function pensionAndRetire(state: GameState, p: Person, rng: Rng, year: number): void {
   const a = p.age;
-  // 定年の目安（未確認）：1980年ごろまでは55歳が多く、その後60歳へ移った（ここでは1980〜97年を58歳とした）。
+  // 定年の目安：一律定年制の企業のうち60歳以上の定年は1984年に半数を超えた（衆議院答弁書・JILPT。docs/03 の G 章）。
+  // それより前は55歳が多く、その後60歳へ移った（ここでは1980〜97年を58歳とした）。
   // 1998年から60歳未満の定年は禁止。2013年からは65歳までの雇用確保が実質的に義務になったので65歳とした
   const teinen = year < 1980 ? 55 : year < 1998 ? 58 : year < 2013 ? 60 : 65;
   const employee = p.job === 'bigco' || p.job === 'smallco' || p.job === 'public';

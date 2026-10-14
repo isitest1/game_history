@@ -271,6 +271,7 @@
     "key": "roujin-hoken-1983",
     "category": "system",
     "year": 1983,
+    "month": 2,
     "ageMin": 38,
     "ageMax": 53,
     "sex": "any",
@@ -279,10 +280,9 @@
     "probability": 0.6,
     "probNote": "目安",
     "source": {
-      "title": "厚生労働省 老人保健法による一部負担の導入",
+      "title": "厚生労働省 老人保健制度の資料（患者負担 外来1月400円・入院1日300円）。施行1983年2月はコトバンク「老人保健法」で確認",
       "url": "https://www.mhlw.go.jp/seisaku/dl/07b.pdf",
-      "verified": false,
-      "note": "負担額は確認済み、施行の月は未確認"
+      "verified": true
     }
   },
   {
@@ -290,6 +290,7 @@
     "key": "roujin-hoken-1983",
     "category": "system",
     "year": 1983,
+    "month": 2,
     "ageMin": 8,
     "ageMax": 23,
     "sex": "any",
@@ -298,10 +299,9 @@
     "probability": 0.4,
     "probNote": "目安",
     "source": {
-      "title": "厚生労働省 老人保健法による一部負担の導入",
+      "title": "厚生労働省 老人保健制度の資料（患者負担 外来1月400円・入院1日300円）。施行1983年2月はコトバンク「老人保健法」で確認",
       "url": "https://www.mhlw.go.jp/seisaku/dl/07b.pdf",
-      "verified": false,
-      "note": "施行の月は未確認"
+      "verified": true
     }
   },
   {
@@ -847,9 +847,9 @@
     "text": "新しい学習指導要領で、授業の時間が少し減り、「ゆとりの時間」ができた。何をするかは学校任せで、ドッジボールをしたり花壇の世話をしたりした。",
     "probability": 1.0,
     "source": {
-      "title": "文部科学省 学習指導要領の変遷",
-      "url": "https://www.mext.go.jp/",
-      "verified": false
+      "title": "imidas（1977年改訂で「ゆとりの時間（学校裁量時間）」導入）、文部科学省『学制百二十年史』（小学校は1980年度から実施）",
+      "url": "https://imidas.jp/genre/detail/F-101-0030.html",
+      "verified": true
     }
   },
   {
@@ -912,9 +912,9 @@
     },
     "probability": 1.0,
     "source": {
-      "title": "ベネッセ教育総合研究所 学習指導要領の変遷",
-      "url": "https://benesse.jp/berd/up_images/research/Sido_KOKO_09.pdf",
-      "verified": false
+      "title": "文部科学省 小学校外国語活動サイト（2011年度から5・6年で外国語活動 年35単位時間）",
+      "url": "https://www.mext.go.jp/a_menu/shotou/gaikokugo/index.htm",
+      "verified": true
     }
   },
   {
@@ -1214,9 +1214,9 @@
     "probability": 0.3,
     "probNote": "目安",
     "source": {
-      "title": "内閣府 幼児教育・保育の無償化",
-      "url": "https://www.cao.go.jp/",
-      "verified": false
+      "title": "こども家庭庁 幼児教育・保育の無償化の概要（2019年10月から3〜5歳、消費税率引上げの増収分を活用）",
+      "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/11326fe3-8956-449d-89f9-c225655511a7/5443f61d/20230929_policies_kokoseido_mushouka_gaiyou_02.pdf",
+      "verified": true
     }
   },
   {
@@ -1263,9 +1263,9 @@
     "probability": 0.7,
     "probNote": "目安",
     "source": {
-      "title": "マイナビエージェント 定年制の歴史（1994年改正、施行年は未確認）",
-      "url": "https://mynavi-agent.jp/dainishinsotsu/canvas/2020/08/post-381.html",
-      "verified": false
+      "title": "高齢・障害・求職者雇用支援機構 高年齢者雇用安定法改正の資料（平成6年改正 60歳定年の義務化、平成10年4月1日施行）",
+      "url": "https://www.jeed.go.jp/elderly/activity/q2k4vk000001ww3k-att/q2k4vk000003owxb.pdf",
+      "verified": true
     }
   },
   {
@@ -1420,16 +1420,16 @@
       ]
     },
     "title": "年金の開始が遅くなる",
-    "text": "60歳になったが、厚生年金はまだ受け取れなかった。女性の支給開始年齢は男性より5年遅れで引き上げられ、自分の生まれ年では60代前半はほぼ空白だった。",
+    "text": "60歳になったが、厚生年金はまだ受け取れなかった。女性の支給開始年齢は男性より5年遅れで引き上げられ、生まれ年によって62歳から65歳まで待つことになった。",
     "effects": {
       "happiness": -3
     },
     "probability": 0.9,
     "probNote": "目安",
     "source": {
-      "title": "日本年金機構 支給開始年齢（女性は男性の5年遅れ）",
+      "title": "日本年金機構 特別支給の老齢厚生年金の支給開始年齢（女性は男性の5年遅れ）",
       "url": "https://www.nenkin.go.jp/oshirase/taisetu/2012.files/kaishi.pdf",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -1449,9 +1449,9 @@
     "probability": 0.7,
     "probNote": "目安",
     "source": {
-      "title": "厚生労働省 1985年年金改正（基礎年金・第3号被保険者）",
-      "url": "https://www.mhlw.go.jp/",
-      "verified": false
+      "title": "厚生労働省年金局 第3号被保険者制度について（基礎年金制度・第3号被保険者制度の創設 S61.4施行）",
+      "url": "https://www.mhlw.go.jp/content/12601000/001174760.pdf",
+      "verified": true
     }
   },
   {
@@ -1536,9 +1536,9 @@
     "probability": 0.8,
     "probNote": "目安",
     "source": {
-      "title": "日本年金機構 被用者年金一元化",
-      "url": "https://www.nenkin.go.jp/",
-      "verified": false
+      "title": "日本年金機構 被用者の年金制度の一元化（2015年10月1日、共済年金を厚生年金に統一）",
+      "url": "https://www.nenkin.go.jp/service/jukyu/seido/kyotsu/joho/ichigenka/20150917.html",
+      "verified": true
     }
   },
   {
@@ -1704,9 +1704,9 @@
     "probability": 0.3,
     "probNote": "目安",
     "source": {
-      "title": "NTTドコモ iモードの開始",
-      "url": "https://www.docomo.ne.jp/",
-      "verified": false
+      "title": "INTERNET Watch（iNTERNET magazine Reboot 今日は何の日：1999年2月22日 NTTドコモがiモードを開始）",
+      "url": "https://internet.watch.impress.co.jp/docs/imreboot/today/1107442.html",
+      "verified": true
     }
   },
   {
@@ -1788,9 +1788,9 @@
     "probability": 0.3,
     "probNote": "目安",
     "source": {
-      "title": "金融庁 新しいNISA",
-      "url": "https://www.fsa.go.jp/policy/nisa2/",
-      "verified": false
+      "title": "金融庁 NISA特設ウェブサイト NISAを知る（2024年1月からの新しいNISA）",
+      "url": "https://www.fsa.go.jp/policy/nisa2/know/index.html",
+      "verified": true
     }
   }
 ]

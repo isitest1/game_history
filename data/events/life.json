@@ -860,8 +860,8 @@
     "ageMin": 6,
     "ageMax": 12,
     "sex": "female",
-    "title": "ゴム跳びとおはじき",
-    "text": "放課後は、女の子どうしでゴム跳びやおはじき、お手玉をした。日が暮れて母に呼ばれるまで、路地でいつまでも遊び続けた。",
+    "title": "ゴム跳びとお手玉",
+    "text": "放課後は、女の子どうしでゴム跳びやお手玉をした。ゴムは自転車の古いチューブを切って作った。日が暮れて母に呼ばれるまで、路地でいつまでも遊び続けた。",
     "effects": {
       "happiness": 4,
       "relation": 2
@@ -869,9 +869,9 @@
     "probability": 0.4,
     "probNote": "目安。女の子の遊びの年代は資料で確かめていない",
     "source": {
-      "title": "岐阜市歴史博物館 昭和の遊び",
+      "title": "岐阜市歴史博物館 参考資料集 遊びセット（ゴムとび・お手玉）",
       "url": "https://www.rekihaku.gifu.gifu.jp/gmh/wp-content/uploads/2019/10/1-4asobiset.pdf",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -1604,9 +1604,9 @@
     "probability": 0.25,
     "probNote": "iモード開始日（1999年2月22日）は今回の検索では確かめられなかった。年率は目安",
     "source": {
-      "title": "NTTドコモ iモード（1999年2月サービス開始）",
-      "url": "https://internet.watch.impress.co.jp/cda/news/2005/04/25/7428.html",
-      "verified": false
+      "title": "nippon.com ドコモがiモード終了（1999年2月22日開始、絵文字を生んだ）",
+      "url": "https://www.nippon.com/ja/japan-topics/g02591/",
+      "verified": true
     }
   },
   {
@@ -2478,9 +2478,9 @@
     "probability": 0.2,
     "probNote": "家族葬の割合は未確認。目安",
     "source": {
-      "title": "Nippon.com Stripped-Down Funerals and Untended Graves",
+      "title": "Nippon.com Stripped-Down Funerals and Untended Graves（会葬者の平均 1996年180人→2005年100人→2013年46人）",
       "url": "https://www.nippon.com/en/currents/d00389/",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -2723,9 +2723,9 @@
     "probability": 0.5,
     "probNote": "1960〜80年代の実施率は未確認。目安",
     "source": {
-      "title": "産労総合研究所 社内イベント・社員旅行等に関する調査（2014年 実施率46.0%）",
-      "url": "https://www.travelvoice.jp/20141212-33008",
-      "verified": false
+      "title": "デイリースポーツ 昭和の日に思い出す懐かしの社員旅行（バスで温泉へ、夜は宴会）",
+      "url": "https://www.daily.co.jp/society/life/2022/04/29/0015259956.shtml",
+      "verified": true
     }
   },
   {
@@ -2786,9 +2786,9 @@
     "probability": 0.6,
     "probNote": "大企業・官公庁の新入社員。目安",
     "source": {
-      "title": "労働政策研究・研修機構 日本的雇用慣行（終身雇用）",
-      "url": "https://www.jil.go.jp/institute/zassi/backnumber/2005/01/pdf/016-028.pdf",
-      "verified": false
+      "title": "RIETI 川口大司「揺らぐ日本型雇用慣行」（長期雇用は高度成長期に完成）",
+      "url": "https://www.rieti.go.jp/jp/papers/contribution/kawaguchi/03.html",
+      "verified": true
     }
   },
   {
@@ -2811,9 +2811,9 @@
     "probability": 0.3,
     "probNote": "目安",
     "source": {
-      "title": "労働政策研究・研修機構 日本的雇用慣行（終身雇用）",
-      "url": "https://www.jil.go.jp/institute/zassi/backnumber/2005/01/pdf/016-028.pdf",
-      "verified": false
+      "title": "厚生労働省 学歴別就職後3年以内離職率の推移（大卒 1997〜2000年3月卒で32〜36%）",
+      "url": "https://www.mhlw.go.jp/content/11805001/001597922.pdf",
+      "verified": true
     }
   },
   {
@@ -2827,7 +2827,8 @@
     "sex": "male",
     "conditions": {
       "notFlags": [
-        "smoker"
+        "smoker",
+        "nonsmoker"
       ]
     },
     "title": "たばこを覚えた",
@@ -2857,11 +2858,12 @@
     "sex": "male",
     "conditions": {
       "notFlags": [
-        "smoker"
+        "smoker",
+        "nonsmoker"
       ]
     },
-    "title": "たばこは吸わない",
-    "text": "職場は全面禁煙で、吸う人は外の小さな喫煙所に肩を寄せて集まっていた。同期の男で、たばこを吸う人は数えるほどだった。",
+    "title": "たばこを覚えた",
+    "text": "職場の喫煙所は建物の外に追いやられていた。それでも同期の男の何人かは吸っていて、休憩のたびに誘われ、一本もらううちに自分も吸うようになった。",
     "effects": {
       "health": -2,
       "flags": [
@@ -2871,9 +2873,9 @@
     "probability": 0.05,
     "probNote": "吸い始める年率の目安。2018年値はJT原典を確かめていない",
     "source": {
-      "title": "オリコン（2018年 男性喫煙率27.8%）",
-      "url": "https://www.oricon.co.jp/special/54484/",
-      "verified": false
+      "title": "東京都 成人喫煙率（JT全国たばこ喫煙者率調査：20歳代男性 2006年44.4%→2014年29.4%）",
+      "url": "https://www.hokeniryo.metro.tokyo.lg.jp/kensui//kitsuen/judoukitsuenboushitaisaku_kentoukai/2nd/pdf/sanko01-3zenkokutabakokituensyaritsu.pdf",
+      "verified": true
     }
   },
   {
@@ -3008,9 +3010,9 @@
     "probability": 0.6,
     "probNote": "married_this_year＝その年に結婚したときのフラグ。1960〜80年代の割合は未確認の目安",
     "source": {
-      "title": "ゼクシィ結婚トレンド調査（仲人の減少）の紹介",
+      "title": "All About 仲人を立てる人は減少（ゼクシィ結婚トレンド調査2009で1.1%）",
       "url": "https://allabout.co.jp/gm/gc/290941",
-      "verified": false
+      "verified": true
     }
   },
   {
@@ -3059,9 +3061,10 @@
     "probability": 0.5,
     "probNote": "moved_to_city＝地元を出て都市に住んでいるフラグ。目安",
     "source": {
-      "title": "（出典未確認）高度成長期の帰省ラッシュ",
-      "url": "https://www.toshiseibi.metro.tokyo.lg.jp/keikaku_chousa_singikai/pdf/tokyotoshizukuri/3_06.pdf",
-      "verified": false
+      "title": "（未確認）高度成長期の盆の帰省（夜行列車の混雑）",
+      "url": "",
+      "verified": false,
+      "note": "盆の一斉休業で帰省できたことや1978年の上野発臨時夜行列車の多さは見つかったが、1960年前後の帰省列車の混雑（通路まで満員など）を示す資料は見つからなかった。元のURLは通勤電車の混雑率の資料で内容が合わないため外した"
     }
   },
   {
@@ -3088,9 +3091,10 @@
     "probability": 0.5,
     "probNote": "目安",
     "source": {
-      "title": "（出典未確認）お盆の帰省渋滞",
-      "url": "https://www.toshiseibi.metro.tokyo.lg.jp/keikaku_chousa_singikai/pdf/tokyotoshizukuri/3_06.pdf",
-      "verified": false
+      "title": "（未確認）お盆の帰省渋滞（1970年代）",
+      "url": "",
+      "verified": false,
+      "note": "見つかったのは2010年代以降のお盆渋滞の記録だけで、1970年代の高速道路の帰省渋滞の規模（何十キロ）を示す資料は見つからなかった。元のURLは通勤電車の混雑率の資料で内容が合わないため外した"
     }
   },
   {
@@ -3119,9 +3123,9 @@
     "probability": 0.3,
     "probNote": "施行は1992年4月とされるが今回確かめていない。取得率は目安",
     "source": {
-      "title": "（施行日未確認）育児休業法",
-      "url": "https://www.jil.go.jp/kokunai/blt/backnumber/2024/10/kokunai_05.html",
-      "verified": false
+      "title": "コトバンク 育児介護休業法（育児休業法は1991年成立、1992年4月1日施行）",
+      "url": "https://kotobank.jp/word/育児介護休業法",
+      "verified": true
     }
   },
   {
