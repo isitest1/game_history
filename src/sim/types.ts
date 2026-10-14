@@ -56,7 +56,8 @@ export type LogKind =
   | 'health'
   | 'death'
   | 'wish' // 望んだが叶わなかった
-  | 'pension';
+  | 'pension'
+  | 'note'; // プレイヤーが残した思い
 
 export interface LogEntry {
   age: number;

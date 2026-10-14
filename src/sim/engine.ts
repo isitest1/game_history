@@ -466,6 +466,8 @@ function growth(state: GameState, p: Person, rng: Rng): void {
   }
   // 年をとると健康は下がる
   if (a > 45) s.health = clamp(s.health - (a - 45) * 0.03 - rng.next() * 0.8);
+  // 健康は、その年齢の平均へ少しずつ戻る（病気やけがの影響は生命表にすでに含まれているため、二重に数えない）
+  s.health = clamp(s.health + (expectedHealth(a) - s.health) * 0.08);
   // 幸福はゆっくり60に戻る
   s.happiness = clamp(s.happiness + (60 - s.happiness) * 0.12 + rng.normal(0, 2));
   s.relation = clamp(s.relation + (50 - s.relation) * 0.05);
@@ -559,6 +561,11 @@ function lifecycle(state: GameState, p: Person, rng: Rng, year: number): void {
     const prob = marriageHazard(p, year, state.prefs.marryWish);
     if (rng.chance(prob)) marry(state, p, rng, year);
   }
+
+  // 病気と治療費
+  illness(p, rng, year);
+  // 才能が花開くか（時代しだい）
+  talentBloom(state, p, rng, year);
 
   // 定年と年金
   pensionAndRetire(state, p, rng, year);
@@ -705,6 +712,7 @@ function work(p: Person, rng: Rng, year: number): void {
   const base = S.annualWage(year, p.age, p.sex, p.edu);
   let income = base * JOB_FACTOR[job] * (0.9 + rng.next() * 0.2);
   if (p.flags.includes('part_time')) income *= 0.45;
+  if (p.flags.includes('talent_bloom')) income *= 1.08;
   p.income = income;
   p.workYears += 1;
   p.lifetimeEarnings += income;
@@ -950,4 +958,107 @@ export function findJob(state: GameState, p: Person, rng: Rng, year: number, lev
 
 export function jobWishLabel(w: Job | 'city'): string {
   return { farm: '家業の農業', self: '自分の店', smallco: '地元の会社', bigco: '大企業', public: '公務員', none: '働かない', city: '都会で働くこと' }[w];
+}
+
+// ---------- 病気と治療費 ----------
+
+/**
+ * 医療費の自己負担の割合（目安）。制度の変わり目は docs/03 の F-1（厚労省「患者負担の推移」）に合わせた。
+ * - 1961年 国民皆保険。それより前は、勤め人でなければ保険がないことが多い
+ * - 勤め人本人：1984年まで定額（ほぼ0）→ 1割、1997年 2割、2003年 3割
+ * - 家族・国保：5割 → 1973年から3割（家族）
+ * - 70歳以上：1973〜82年は無料（老人医療費無料化）、1983年から定額の一部負担、2002年から1割（70〜74歳は2014年から2割）
+ * - 子ども：2002年から3歳未満、2008年から小学校に上がる前は2割
+ */
+export function copayRate(year: number, age: number, employee: boolean): { rate: number; note: string } {
+  if (age >= 70) {
+    if (year >= 1973 && year <= 1982) return { rate: 0, note: '老人医療費の無料化で、自己負担はなかった' };
+    if (year < 1973) return { rate: employee ? 0.05 : 0.5, note: '' };
+    if (year < 2002) return { rate: 0.03, note: '老人保健制度の定額の負担だけだった' };
+    if (age < 75 && year >= 2014) return { rate: 0.2, note: '70〜74歳は2割負担' };
+    return { rate: 0.1, note: '高齢者は1割負担' };
+  }
+  if (age < 6 && year >= 2008) return { rate: 0.2, note: '小学校に上がる前の子は2割負担' };
+  if (year < 1961 && !employee) return { rate: 1, note: '国民皆保険の前で、保険がなく全額を払った' };
+  if (employee) {
+    if (year < 1984) return { rate: 0.03, note: '勤め人本人は定額の負担だけだった' };
+    if (year < 1997) return { rate: 0.1, note: '勤め人本人は1割負担' };
+    if (year < 2003) return { rate: 0.2, note: '勤め人本人は2割負担' };
+    return { rate: 0.3, note: '3割負担' };
+  }
+  if (year < 1973) return { rate: 0.5, note: '5割負担' };
+  return { rate: 0.3, note: '3割負担' };
+}
+
+function illness(p: Person, rng: Rng, year: number): void {
+  const a = p.age;
+  if (a < 1) return;
+  // 入院するような病気やけがの確率（年あたりの目安）。年齢とともに増え、健康が低いと増える
+  const base = a < 15 ? 0.012 : a < 40 ? 0.015 : a < 65 ? 0.03 : 0.07;
+  const prob = base * (p.stats.health < 40 ? 1.8 : p.stats.health > 75 ? 0.7 : 1);
+  if (!rng.chance(prob)) return;
+  const employee = p.job === 'bigco' || p.job === 'smallco' || p.job === 'public' || (p.married && p.sex === 'female' && year >= 1961);
+  // 1回の入院の医療費：2020年に約60万円として賃金の水準で動かす（目安）
+  const cost = 600000 * (S.incomeIndex(year) / 100) * (0.6 + rng.next() * 0.9);
+  const { rate, note } = copayRate(year, a, employee);
+  const pay = cost * rate;
+  p.money -= pay;
+  const what = a < 15 ? rng.pick(['肺炎', '盲腸', '骨折']) : a < 50 ? rng.pick(['盲腸', '骨折', '胃潰瘍', '肺炎']) : rng.pick(['心臓の病気', '脳卒中', 'がん', '骨折', '肺炎']);
+  applyEffects(p, { health: -4, happiness: -6 });
+  const heavy = what === 'がん' || what === '脳卒中' || what === '心臓の病気';
+  log(
+    p,
+    'health',
+    `${what}で入院`,
+    `${year}年、${what}で入院した。医療費は約${man(cost)}、${note || `自己負担は${Math.round(rate * 100)}%`}。払ったのは約${man(pay)}。`,
+    { heavy },
+  );
+}
+
+// ---------- 才能 ----------
+
+/** 生まれつきの才能が、その時代に花開くか。1回きり、16〜30歳のどこかで */
+function talentBloom(state: GameState, p: Person, rng: Rng, year: number): void {
+  if (p.age < 16 || p.age > 30 || p.flags.includes('talent_checked')) return;
+  if (!rng.chance(0.12)) return;
+  p.flags.push('talent_checked');
+  const t = state.shared.talent;
+  const pre = year < 1955; // 戦中・戦後すぐ
+  const table: Record<string, { p: number; ok: string; ng: string }> = {
+    絵: year < 1955
+      ? { p: 0.1, ok: '絵の才を見こまれ、看板屋に弟子入りした。', ng: '絵がうまいと言われたが、描く暇も紙もなかった。' }
+      : year < 1995
+        ? { p: 0.35, ok: '漫画を描いて雑誌に投稿し、小さな賞をもらった。', ng: '漫画家を目指したが、その道は狭かった。' }
+        : { p: 0.45, ok: 'デジタルで描いた絵をネットに上げると、思いがけず多くの人に見られた。', ng: '絵を描き続けたが、仕事にはならなかった。' },
+    音楽: pre
+      ? { p: 0.08, ok: 'のど自慢で歌い、町で評判になった。', ng: '歌がうまかったが、それを生かす場はなかった。' }
+      : year < 2005
+        ? { p: 0.3, ok: '仲間とバンドを組み、ライブハウスに立った。', ng: 'バンドを組んだが、楽器を買うお金が続かなかった。' }
+        : { p: 0.4, ok: '演奏の動画を投稿し、知らない人から感想が届いた。', ng: '音楽を続けたが、仕事にはならなかった。' },
+    運動: pre
+      ? { p: 0.15, ok: '足の速さを買われ、地元の大会で優勝した。', ng: '運動が得意だったが、食べ物も道具も足りなかった。' }
+      : { p: 0.35, ok: '部活で県大会に出た。運動の才は、本人の自信になった。', ng: '運動が得意だったが、けがで続けられなかった。' },
+    計算: year < 1975
+      ? { p: 0.4, ok: 'そろばんの腕を見こまれ、経理の仕事を任された。', ng: '計算は速かったが、上の学校には行けなかった。' }
+      : { p: 0.45, ok: 'プログラムを書くのが得意になり、仕事で重宝された。', ng: '数字に強かったが、それを生かす仕事に就けなかった。' },
+    話すこと: { p: 0.35, ok: '人前で話すのがうまく、営業の仕事で頼りにされた。', ng: '話すのは得意だったが、口下手な職場では浮いてしまった。' },
+    手先の器用さ: year < 1975
+      ? { p: 0.45, ok: '器用さを見こまれ、職人として腕を磨いた。', ng: '手先は器用だったが、機械に仕事を取られていった。' }
+      : { p: 0.3, ok: '器用さを生かして、ものづくりの仕事に就いた。', ng: '手先は器用だったが、趣味の域を出なかった。' },
+    文章: pre
+      ? { p: 0.1, ok: '綴り方がほめられ、新聞に載った。', ng: '文章を書くのが好きだったが、紙も本も足りなかった。' }
+      : { p: 0.3, ok: '書いた文章が賞を取り、名前が雑誌に載った。', ng: '文章を書き続けたが、読まれる場はなかった。' },
+    人の世話: year < 1990
+      ? { p: 0.3, ok: '面倒見のよさで、家族や近所から頼りにされた。', ng: '人の世話が得意だったが、それは仕事とは見なされなかった。' }
+      : { p: 0.45, ok: '人の世話が得意で、介護や看護の仕事で頼りにされた。', ng: '人の世話が得意だったが、その仕事の給料は低かった。' },
+  };
+  const row = table[t] ?? { p: 0.3, ok: '才能が花開いた。', ng: '才能はあったが、生かす場がなかった。' };
+  const ok = rng.chance(row.p * [0.7, 0.85, 1, 1.15, 1.3][p.familyClass - 1]);
+  if (ok) {
+    p.flags.push('talent_bloom');
+    applyEffects(p, { happiness: 10, knowledge: 4 });
+  } else {
+    p.wishes.push({ age: p.age, wish: `「${t}」の才能を生かすこと`, result: '時代が許さなかった', ok: false });
+  }
+  log(p, ok ? 'event' : 'wish', ok ? `${t}の才能が花開いた` : `${t}の才能`, ok ? row.ok : row.ng);
 }

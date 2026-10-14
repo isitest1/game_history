@@ -151,11 +151,12 @@ function wrap(g: CanvasRenderingContext2D, text: string, x: number, y: number, m
   g.fillText(line, x, y);
 }
 
-export function shareText(st: GameState): string {
+export function shareText(st: GameState, okuri?: string): string {
   const pref = S.PREFS[st.shared.pref - 1];
   const rows = st.persons.map((p) => {
     const pen = p.pensionStartAge !== undefined ? `年金${p.pensionStartAge}歳から月${yen(p.pensionMonthlyReal ?? 0)}` : '年金の前に死去';
     return `${p.birthYear}年生まれ：享年${p.deathAge}、${EDU_LABEL[p.edu]}、生涯年収${yen(p.lifetimeEarningsReal)}、${pen}`;
   });
-  return `同じ私が、三つの時代に生まれた（${pref}・${st.shared.sex === 'male' ? '男' : '女'}）。\n${rows.join('\n')}\n#生まれ年ガチャ`;
+  const msg = okuri && okuri.trim() ? `\n「${okuri.trim().slice(0, 140)}」` : '';
+  return `同じ私が、三つの時代に生まれた（${pref}・${st.shared.sex === 'male' ? '男' : '女'}）。\n${rows.join('\n')}${msg}\n#生まれ年ガチャ`;
 }
