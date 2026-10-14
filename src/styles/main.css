@@ -715,9 +715,11 @@ button {
 }
 .yearprog i {
   position: absolute;
-  inset: 0 auto 0 0;
-  width: 0;
+  inset: 0;
+  transform: scaleX(0);
+  transform-origin: left center;
   background: var(--accent);
+  will-change: transform;
 }
 .cols {
   display: grid;
@@ -1351,10 +1353,14 @@ button {
   left: 50%;
   bottom: 160px;
   transform: translateX(-50%);
+  width: max-content;
+  max-width: calc(100vw - 32px);
+  text-align: center;
+  line-height: 1.5;
   background: var(--ink);
   color: var(--bg);
   padding: 10px 16px;
-  border-radius: 999px;
+  border-radius: 18px;
   font-size: 14px;
   z-index: 80;
   animation: fade 0.2s both;
@@ -1479,5 +1485,32 @@ button {
 @media (min-width: 1024px) {
   .hero h1 {
     font-size: clamp(44px, 4.6vw, 66px);
+  }
+}
+
+.scene {
+  display: block;
+  width: calc(100% + 18px);
+  height: 52px;
+  margin: -10px -9px 8px;
+  border-radius: 14px 14px 0 0;
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--c-acc) 10%, transparent), transparent);
+}
+@media (min-width: 900px) {
+  .scene {
+    width: calc(100% + 32px);
+    margin: -16px -16px 10px;
+    height: 72px;
+  }
+}
+.feed li:first-child:not(.old) {
+  border-left: 3px solid var(--c-acc);
+}
+@media (max-width: 640px) {
+  .lifemap .cells {
+    grid-template-columns: repeat(25, 1fr);
+  }
+  .lifemap .rowm {
+    grid-template-columns: 44px 1fr;
   }
 }

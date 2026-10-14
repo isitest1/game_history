@@ -8,6 +8,7 @@ import { drawShareCard, shareText } from './ui/sharecard';
 import { HELP_LINES, SOURCES } from './ui/content';
 import { sound } from './ui/sound';
 import { loadEvents } from './sim/events';
+import { sceneSvg } from './ui/scene';
 
 const app = document.getElementById('app')!;
 const SAVE_KEY = 'umaredoshi.save.v1';
@@ -373,7 +374,7 @@ async function showLife(): Promise<void> {
         <div class="row1">
           <div class="grp">
             <button class="iconbtn" id="pp" aria-pressed="false" aria-label="一時停止">❚❚</button>
-            <button class="iconbtn" id="spd" aria-label="速さを変える">×1</button>
+            <button class="iconbtn" id="spd">×1</button>
           </div>
           <div class="grp">
             <button class="iconbtn" id="auto" aria-pressed="${autoMode}" aria-label="決断をおまかせにする">おまかせ</button>
@@ -385,6 +386,7 @@ async function showLife(): Promise<void> {
   bindCommon(app);
   st.persons.forEach((_, i) => renderCol(i));
   renderFocus();
+  if (st.age === 0) setTimeout(() => toast('列を押すと、その人の記録が開きます。下の「今年の重点」で育ち方が変わります'), 600);
   app.querySelectorAll<HTMLElement>('.col').forEach((c, i) =>
     c.addEventListener('click', (e) => {
       if ((e.target as HTMLElement).closest('button')) return;
@@ -457,7 +459,12 @@ function renderCol(i: number, fresh: LogEntry[] = []): void {
   const entries = p.log.slice(-6).reverse();
   const s = p.stats;
   col.classList.toggle('dead', !p.alive);
-  col.innerHTML = html`
+  if (col.dataset.year !== String(year) || !col.querySelector('.scene')) {
+    col.dataset.year = String(year);
+    col.innerHTML = `${sceneSvg(year)}<div class="col-body"></div>`;
+  }
+  const body = col.querySelector('.col-body') as HTMLElement;
+  body.innerHTML = html`
     <div class="col-head"><span class="yr-num">${year}</span><span class="wa">${wareki(year)}</span></div>
     <div class="who">${esc(p.name)}<br />${esc(statusLine(p))}</div>
     ${!p.alive
@@ -574,7 +581,7 @@ async function playYear(st: GameState, entries: YearEntry[], me: { stop: boolean
     if (!paused) elapsed += now - last;
     last = now;
     const t = Math.min(1, elapsed / dur);
-    if (prog) prog.style.width = `${t * 100}%`;
+    if (prog) prog.style.transform = `scaleX(${t})`;
     const fresh: Record<number, LogEntry[]> = {};
     while (idx < entries.length && entries[idx].t <= t) {
       const x = entries[idx];
@@ -791,7 +798,7 @@ async function showEnd(skipSlides = false): Promise<void> {
   app.innerHTML = html`${topbar()}
     <main class="wrap end" id="main" style="padding-bottom:60px">
       <p class="kicker">3つの死亡記録</p>
-      <h2 class="big">同じ人が、<br />${st.persons.map((p) => `享年${p.deathAge}`).join('、')}。</h2>
+      <h2 class="big">同じ人が、<br />${st.persons.map((p, i) => `<span class="nw">享年${p.deathAge}${i < 2 ? '、' : '。'}</span>`).join('')}</h2>
       <div class="records">${st.persons.map((p, i) => record(p, i))}</div>
 
       <section class="panel">
@@ -903,7 +910,7 @@ function record(p: Person, i: number): string {
 }
 
 function survivalSvg(st: GameState): string {
-  const W = 600;
+  const W = 420;
   const H = 260;
   const pad = 30;
   const x = (a: number) => pad + (a / 105) * (W - pad * 1.5);
@@ -913,7 +920,7 @@ function survivalSvg(st: GameState): string {
     const c = survivalCurve(p.birthYear, p.sex);
     const d = c.map((v, a) => `${a === 0 ? 'M' : 'L'}${x(a).toFixed(1)},${y(v).toFixed(1)}`).join('');
     const da = p.deathAge ?? 0;
-    return `<path d="${d}" fill="none" stroke="${colors[i]}" stroke-width="2.5"/><circle cx="${x(da)}" cy="${y(c[Math.min(da, 105)])}" r="5" fill="${colors[i]}"/><text x="${Math.min(x(da) + 8, W - 92)}" y="${y(c[Math.min(da, 105)]) - 8 - i * 15}" font-size="12" fill="${colors[i]}" font-weight="700">${p.birthYear}年生まれ・${da}歳</text>`;
+    return `<path d="${d}" fill="none" stroke="${colors[i]}" stroke-width="2.5"/><circle cx="${x(da)}" cy="${y(c[Math.min(da, 105)])}" r="5" fill="${colors[i]}"/><text x="${Math.min(x(da) + 8, W - 112)}" y="${y(c[Math.min(da, 105)]) - 8 - i * 17}" font-size="13" fill="${colors[i]}" font-weight="700">${p.birthYear}年生まれ・${da}歳</text>`;
   });
   const grid = [0, 20, 40, 60, 80, 100].map((a) => `<line x1="${x(a)}" x2="${x(a)}" y1="${pad / 2}" y2="${H - pad}" stroke="currentColor" opacity=".12"/><text x="${x(a)}" y="${H - 10}" font-size="11" text-anchor="middle" fill="currentColor" opacity=".7">${a}歳</text>`);
   const yg = [0, 0.5, 1].map((v) => `<text x="4" y="${y(v) + 4}" font-size="11" fill="currentColor" opacity=".7">${v * 100}%</text>`);
@@ -984,7 +991,7 @@ function toast(msg: string): void {
   t.setAttribute('role', 'status');
   t.textContent = msg;
   document.body.appendChild(t);
-  setTimeout(() => t.remove(), 2200);
+  setTimeout(() => t.remove(), msg.length > 30 ? 4800 : 2200);
 }
 
 // URL で画面確認用の状態に飛べるようにする（?demo=life など。Playwright のスクリーンショット用）
