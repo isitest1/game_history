@@ -314,7 +314,7 @@ export const DECISIONS: DecisionDef[] = [
       const kind = opt === 'univ' ? 'university' : 'juniorCollege';
       const rate = S.eduRate(kind, y, p.sex);
       const cond = Math.min(0.95, rate / hs);
-      const prob = wishProb(cond, p, 0.9);
+      const prob = wishProb(cond, p, 0.4);
       const label = opt === 'univ' ? '大学' : '短大';
       if (rng.chance(prob)) {
         p.inSchool = opt === 'univ' ? 'univ' : 'junior';

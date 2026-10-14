@@ -189,7 +189,7 @@ function makePerson(rng: Rng, era: EraId, birthYear: number, shared: Shared, sur
     motherAlive: true,
     age: 0,
     alive: true,
-    stats: { health: 70, happiness: 60, knowledge: 30, relation: 50 },
+    stats: { health: 72, happiness: 60, knowledge: 30, relation: 50 },
     money: 0,
     income: 0,
     lifetimeEarnings: 0,
@@ -213,6 +213,7 @@ function makePerson(rng: Rng, era: EraId, birthYear: number, shared: Shared, sur
     wishes: [],
   };
   if (p.parentJob === 'farm' && p.birthOrder === 1 && p.sex === 'male') p.flags.push('heir');
+  if (p.birthOrder === 1 && p.sex === 'male') p.flags.push('eldest_son');
   if (shared.pref === 47 && birthYear >= 1945 && birthYear <= 1972) p.flags.push('okinawa_us');
   const pj = JOB_LABEL[parentJob];
   log(p, 'birth', '誕生', `${birthYear}年${birthMonth}月、${S.PREFS[shared.pref - 1]}で${p.siblings}人きょうだいの${orderLabel(p.birthOrder, p.siblings)}として生まれた。家は${pj}。`);
@@ -359,14 +360,21 @@ export interface YearEntry {
 
 /** 死亡率にかける倍率。全体の平均がほぼ1になるようにしている */
 function mortalityMultiplier(p: Person): number {
-  let m = 1;
-  const h = p.stats.health;
-  if (h < 20) m *= 2.2;
-  else if (h < 35) m *= 1.5;
-  else if (h > 80) m *= 0.8;
-  m *= [1.2, 1.08, 1.0, 0.94, 0.86][p.familyClass - 1];
-  if (p.flags.includes('smoker')) m *= p.age >= 40 ? 1.6 : 1.1;
+  // 健康の数値は、その年齢の平均（expectedHealth）からのずれだけを死亡率に効かせる。
+  // こうしないと、年をとって健康が下がるぶん死亡率を二重に数えてしまう（生命表にはもう入っている）
+  const dev = (expectedHealth(p.age) - p.stats.health) / 35;
+  let m = Math.min(2.2, Math.max(0.6, Math.exp(dev)));
+  m *= [1.18, 1.06, 0.99, 0.93, 0.84][p.familyClass - 1];
+  // 喫煙：生命表には喫煙者も含まれているので、吸う人を上げ、吸わない人を少し下げる（目安）
+  if (p.age >= 35) m *= p.flags.includes('smoker') ? 1.25 : 0.85;
   return m;
+}
+
+/** 健康の数値の、年齢ごとの平均の目安（growth の下がり方に合わせる） */
+export function expectedHealth(age: number): number {
+  if (age <= 45) return 72;
+  const n = age - 45;
+  return Math.max(5, 72 - (0.03 * n * (n + 1)) / 2 - 0.4 * n);
 }
 
 export function runYear(state: GameState): YearEntry[] {
@@ -377,7 +385,9 @@ export function runYear(state: GameState): YearEntry[] {
     const before = p.log.length;
     p.age = state.age;
     const year = yearOf(p);
+    p.flags = p.flags.filter((f) => f !== 'gave_birth' && f !== 'married_this_year');
     lifecycle(state, p, rng, year);
+    if (p.movedToCity && !S.METRO.has(p.pref) && !p.flags.includes('moved_to_city')) p.flags.push('moved_to_city');
     pickEvents(p, rng, year);
     growth(state, p, rng);
     // 死亡判定
@@ -453,7 +463,7 @@ function growth(state: GameState, p: Person, rng: Rng): void {
     p.money += p.income * 0.02;
   }
   // 年をとると健康は下がる
-  if (a > 45) s.health = clamp(s.health - (a - 45) * 0.06 - rng.next() * 0.8);
+  if (a > 45) s.health = clamp(s.health - (a - 45) * 0.03 - rng.next() * 0.8);
   // 幸福はゆっくり60に戻る
   s.happiness = clamp(s.happiness + (60 - s.happiness) * 0.12 + rng.normal(0, 2));
   s.relation = clamp(s.relation + (50 - s.relation) * 0.05);
@@ -516,6 +526,7 @@ function lifecycle(state: GameState, p: Person, rng: Rng, year: number): void {
         const csex: Sex = rng.chance(0.513) ? 'male' : 'female';
         const child = { birthYear: year, sex: csex, alive: true };
         p.children.push(child);
+        p.flags.push('gave_birth');
         const n = p.children.length;
         log(p, 'family', `${n === 1 ? '第1子' : `第${n}子`}が生まれた`, `${year}年、${csex === 'male' ? '男の子' : '女の子'}が生まれた。${birthPlaceText(year)}`);
         applyEffects(p, { happiness: 12, relation: 6, money: -S.annualWage(year, 30, 'male', 'high') * 0.1 });
@@ -623,6 +634,7 @@ export function arrangedShare(year: number): number {
 function marry(state: GameState, p: Person, rng: Rng, year: number): void {
   p.married = true;
   p.spouseAlive = true;
+  p.flags.push('married_this_year');
   p.marriageAge = p.age;
   const arr = arrangedShare(year);
   const wish = state.prefs.marryWish;

@@ -5453,5 +5453,1918 @@
       "verified": true,
       "note": "2024年3月16日金沢―敦賀開業"
     }
+  },
+  {
+    "id": "pref-1954-03-shudan-shushoku-tohoku-youth",
+    "key": "shudan-shushoku",
+    "category": "pref",
+    "year": 1954,
+    "endYear": 1975,
+    "month": 3,
+    "prefs": [
+      2,
+      3,
+      5,
+      6,
+      7
+    ],
+    "ageMin": 15,
+    "ageMax": 15,
+    "sex": "any",
+    "conditions": {
+      "education": [
+        "middle"
+      ]
+    },
+    "title": "集団就職列車で上京",
+    "text": "3月、中学を卒業してすぐ、同級生たちと集団就職の臨時列車に乗った。一晩かけて上野駅に着き、迎えに来た会社の人に連れられて、住み込みの職場へ向かった。",
+    "effects": {
+      "happiness": -3,
+      "knowledge": 2,
+      "relation": -3,
+      "flags": [
+        "shudan_shushoku",
+        "moved_to_city"
+      ]
+    },
+    "probability": 0.25,
+    "probNote": "目安。中学卒業後すぐ県外に就職した人の割合。年代で大きく変わり、1970年代には下がる",
+    "source": {
+      "title": "Wikipedia日本語版「集団就職」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%9B%86%E5%9B%A3%E5%B0%B1%E8%81%B7",
+      "verified": true,
+      "note": "集団就職列車は1954年4月5日青森発上野行きから1975年まで。1964年に「金の卵」が流行語"
+    }
+  },
+  {
+    "id": "pref-1954-03-shudan-shushoku-kyushu-youth",
+    "key": "shudan-shushoku",
+    "category": "pref",
+    "year": 1954,
+    "endYear": 1975,
+    "month": 3,
+    "prefs": [
+      42,
+      43,
+      45,
+      46
+    ],
+    "ageMin": 15,
+    "ageMax": 15,
+    "sex": "any",
+    "conditions": {
+      "education": [
+        "middle"
+      ]
+    },
+    "title": "集団就職で関西へ",
+    "text": "3月、中学を卒業すると、同じ学校の何人かと一緒に列車で関西の工場へ向かった。駅のホームで、母親が見えなくなるまで手をふっていた。最初の給料の一部は家に送った。",
+    "effects": {
+      "happiness": -3,
+      "knowledge": 2,
+      "relation": -3,
+      "flags": [
+        "shudan_shushoku",
+        "moved_to_city"
+      ]
+    },
+    "probability": 0.25,
+    "probNote": "目安。中学卒業後すぐ県外に就職した人の割合",
+    "source": {
+      "title": "Wikipedia日本語版「集団就職」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%9B%86%E5%9B%A3%E5%B0%B1%E8%81%B7",
+      "verified": false,
+      "note": "九州から関西・中京への集団就職の行き先と時期は個別に未確認"
+    }
+  },
+  {
+    "id": "pref-1954-shudan-receive-youth",
+    "key": "shudan-shushoku-receive",
+    "category": "pref",
+    "year": 1954,
+    "endYear": 1975,
+    "prefs": [
+      13,
+      14,
+      27,
+      23
+    ],
+    "ageMin": 15,
+    "ageMax": 22,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco",
+        "self"
+      ]
+    },
+    "title": "地方から来た「金の卵」",
+    "text": "職場に、東北や九州から集団就職で来た同い年くらいの若者が入ってきた。「金の卵」と呼ばれていたが、住み込みで休みも少なく、ふるさとの話をする時だけ顔がゆるんだ。",
+    "effects": {
+      "relation": 2
+    },
+    "probability": 0.15,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「集団就職」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%9B%86%E5%9B%A3%E5%B0%B1%E8%81%B7",
+      "verified": true,
+      "note": "集団就職列車は1954年4月5日青森発上野行きから1975年まで。1964年に「金の卵」が流行語"
+    }
+  },
+  {
+    "id": "pref-1954-shudan-receive-adult",
+    "key": "shudan-shushoku-receive",
+    "category": "pref",
+    "year": 1954,
+    "endYear": 1975,
+    "prefs": [
+      13,
+      14,
+      27,
+      23
+    ],
+    "ageMin": 30,
+    "ageMax": 45,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "self",
+        "smallco"
+      ]
+    },
+    "title": "地方から来た「金の卵」",
+    "text": "店に、地方から集団就職で来た中学を出たばかりの子が住み込みで入った。求人は多いのに人は足りず、中卒の若者は「金の卵」と呼ばれた。親代わりに面倒をみた。",
+    "effects": {
+      "relation": 2
+    },
+    "probability": 0.15,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「集団就職」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%9B%86%E5%9B%A3%E5%B0%B1%E8%81%B7",
+      "verified": true,
+      "note": "集団就職列車は1954年4月5日青森発上野行きから1975年まで。1964年に「金の卵」が流行語"
+    }
+  },
+  {
+    "id": "pref-1946-okinawa-us-rule-child",
+    "key": "okinawa-us-rule",
+    "category": "pref",
+    "year": 1946,
+    "endYear": 1971,
+    "prefs": [
+      47
+    ],
+    "ageMin": 0,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "アメリカ統治下の沖縄",
+    "text": "戦争のあと、沖縄はアメリカの統治下に置かれた。町には英語の看板と基地があり、本土へ行くにはパスポートが要った。学校では、本土を「日本」と呼ぶ大人もいた。",
+    "effects": {
+      "knowledge": 1,
+      "flags": [
+        "okinawa_us_rule"
+      ]
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「沖縄返還」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%B2%96%E7%B8%84%E8%BF%94%E9%82%84",
+      "verified": true,
+      "note": "施政権返還は1972年5月15日。それまで本土への渡航にはパスポートが必要"
+    }
+  },
+  {
+    "id": "pref-1946-okinawa-us-rule-youth",
+    "key": "okinawa-us-rule",
+    "category": "pref",
+    "year": 1946,
+    "endYear": 1971,
+    "prefs": [
+      47
+    ],
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "アメリカ統治下の沖縄",
+    "text": "アメリカの統治下で育った。基地で働けば給料はよかったが、本土の大学へ進むにはパスポートを取らなければならなかった。復帰を求める運動に加わる同世代も多かった。",
+    "effects": {
+      "knowledge": 1,
+      "flags": [
+        "okinawa_us_rule"
+      ]
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「沖縄返還」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%B2%96%E7%B8%84%E8%BF%94%E9%82%84",
+      "verified": true,
+      "note": "施政権返還は1972年5月15日。それまで本土への渡航にはパスポートが必要"
+    }
+  },
+  {
+    "id": "pref-1958-09-okinawa-dollar-youth",
+    "key": "okinawa-dollar-1958",
+    "category": "pref",
+    "year": 1958,
+    "month": 9,
+    "prefs": [
+      47
+    ],
+    "ageMin": 13,
+    "ageMax": 28,
+    "sex": "any",
+    "title": "B円からドルへ",
+    "text": "9月16日、沖縄で使われていた軍票のB円が廃止され、アメリカのドルに切り替わった。120B円が1ドルになった。値札の数字ががらりと変わり、しばらく計算に戸惑った。",
+    "effects": {
+      "knowledge": 1,
+      "flags": [
+        "okinawa_dollar"
+      ]
+    },
+    "probability": 0.9,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「B円」",
+      "url": "https://ja.wikipedia.org/wiki/B%E5%86%86",
+      "verified": true,
+      "note": "1958年9月16日にB円を廃止し米ドルへ。1ドル=120B円"
+    }
+  },
+  {
+    "id": "pref-1970-12-koza-riot-youth",
+    "key": "koza-riot-1970",
+    "category": "pref",
+    "year": 1970,
+    "month": 12,
+    "prefs": [
+      47
+    ],
+    "ageMin": 25,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "コザ騒動",
+    "text": "12月20日の未明、コザでアメリカ兵の起こした交通事故をきっかけに、集まった住民が米軍の車を次々に焼いた。80台あまりが燃えた。たまっていた怒りが噴き出したと感じた。",
+    "effects": {
+      "happiness": -2
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「コザ暴動」",
+      "url": "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%82%B6%E6%9A%B4%E5%8B%95",
+      "verified": true,
+      "note": "1970年12月20日未明、米軍車両82台が焼かれた"
+    }
+  },
+  {
+    "id": "pref-1970-12-koza-riot-adult",
+    "key": "koza-riot-1970",
+    "category": "pref",
+    "year": 1970,
+    "month": 12,
+    "prefs": [
+      47
+    ],
+    "ageMin": 30,
+    "ageMax": 40,
+    "sex": "any",
+    "title": "コザ騒動",
+    "text": "12月20日、コザでアメリカ軍の車80台あまりが住民に焼かれた。米兵の事件や事故がきちんと裁かれないことへの怒りが積もっていた。復帰まで、あと1年半だった。",
+    "effects": {
+      "happiness": -2
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「コザ暴動」",
+      "url": "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%82%B6%E6%9A%B4%E5%8B%95",
+      "verified": true,
+      "note": "1970年12月20日未明、米軍車両82台が焼かれた"
+    }
+  },
+  {
+    "id": "pref-1972-05-okinawa-reversion-child",
+    "key": "okinawa-reversion-1972",
+    "category": "pref",
+    "year": 1972,
+    "month": 5,
+    "prefs": [
+      47
+    ],
+    "ageMin": 0,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "沖縄の本土復帰",
+    "text": "5月15日、沖縄が日本に復帰した。お金がドルから円に替わり、1ドルは305円で交換された。パスポートなしで本土へ行けるようになったと、大人たちが話していた。",
+    "effects": {
+      "happiness": 3,
+      "flags": [
+        "okinawa_reversion"
+      ]
+    },
+    "probability": 1.0,
+    "probNote": "県民全員に関わるため1",
+    "source": {
+      "title": "沖縄県公文書館 通貨交換の資料／琉球新報（1972年5月13日紙面）",
+      "url": "https://www.archives.pref.okinawa.jp/wp-content/uploads/No.26_PF-Currency-Exchange.pdf",
+      "verified": true,
+      "note": "1972年5月15日施政権返還、通貨は1ドル=305円で交換"
+    }
+  },
+  {
+    "id": "pref-1972-05-okinawa-reversion-youth",
+    "key": "okinawa-reversion-1972",
+    "category": "pref",
+    "year": 1972,
+    "month": 5,
+    "prefs": [
+      47
+    ],
+    "ageMin": 27,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "沖縄の本土復帰",
+    "text": "5月15日、沖縄の本土復帰の日を迎えた。ドルは1ドル305円で円に替えられたが、物価は上がり、基地もそのまま残った。喜びと不満が入りまじった一日だった。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "okinawa_reversion"
+      ]
+    },
+    "probability": 1.0,
+    "probNote": "県民全員に関わるため1",
+    "source": {
+      "title": "沖縄県公文書館 通貨交換の資料／琉球新報（1972年5月13日紙面）",
+      "url": "https://www.archives.pref.okinawa.jp/wp-content/uploads/No.26_PF-Currency-Exchange.pdf",
+      "verified": true,
+      "note": "1972年5月15日施政権返還、通貨は1ドル=305円で交換"
+    }
+  },
+  {
+    "id": "pref-1972-05-okinawa-reversion-adult",
+    "key": "okinawa-reversion-1972",
+    "category": "pref",
+    "year": 1972,
+    "month": 5,
+    "prefs": [
+      47
+    ],
+    "ageMin": 30,
+    "ageMax": 42,
+    "sex": "any",
+    "title": "沖縄の本土復帰",
+    "text": "5月15日、沖縄が日本に復帰した。給料も貯金もドルから円に替わり、1ドル305円の交換に損をしたと感じる人が多かった。アメリカ統治の27年が終わった。",
+    "effects": {
+      "happiness": 2,
+      "money": -20000,
+      "flags": [
+        "okinawa_reversion"
+      ]
+    },
+    "probability": 1.0,
+    "probNote": "県民全員に関わるため1",
+    "source": {
+      "title": "沖縄県公文書館 通貨交換の資料／琉球新報（1972年5月13日紙面）",
+      "url": "https://www.archives.pref.okinawa.jp/wp-content/uploads/No.26_PF-Currency-Exchange.pdf",
+      "verified": true,
+      "note": "1972年5月15日施政権返還、通貨は1ドル=305円で交換"
+    }
+  },
+  {
+    "id": "pref-1975-07-okinawa-expo-child",
+    "key": "okinawa-expo-1975",
+    "category": "pref",
+    "year": 1975,
+    "month": 7,
+    "prefs": [
+      47
+    ],
+    "ageMin": 0,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "沖縄海洋博",
+    "text": "7月から本部町で沖縄国際海洋博覧会が開かれた。海の上に浮かぶ未来の都市のような建物を見に、家族で出かけた。復帰を記念する博覧会だった。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「沖縄国際海洋博覧会」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%B2%96%E7%B8%84%E5%9B%BD%E9%9A%9B%E6%B5%B7%E6%B4%8B%E5%8D%9A%E8%A6%A7%E4%BC%9A",
+      "verified": true,
+      "note": "1975年7月20日〜1976年1月18日、本部町、入場者約349万人（目標450万人）"
+    }
+  },
+  {
+    "id": "pref-1975-07-okinawa-expo-youth",
+    "key": "okinawa-expo-1975",
+    "category": "pref",
+    "year": 1975,
+    "month": 7,
+    "prefs": [
+      47
+    ],
+    "ageMin": 13,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "沖縄海洋博",
+    "text": "7月20日、海洋博が開幕した。道路やホテルの工事で一時は景気がよかったが、入場者は目標の450万人に届かず、約349万人にとどまった。博覧会のあとは不景気が来た。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「沖縄国際海洋博覧会」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%B2%96%E7%B8%84%E5%9B%BD%E9%9A%9B%E6%B5%B7%E6%B4%8B%E5%8D%9A%E8%A6%A7%E4%BC%9A",
+      "verified": true,
+      "note": "1975年7月20日〜1976年1月18日、本部町、入場者約349万人（目標450万人）"
+    }
+  },
+  {
+    "id": "pref-1975-07-okinawa-expo-adult",
+    "key": "okinawa-expo-1975",
+    "category": "pref",
+    "year": 1975,
+    "month": 7,
+    "prefs": [
+      47
+    ],
+    "ageMin": 30,
+    "ageMax": 45,
+    "sex": "any",
+    "title": "沖縄海洋博",
+    "text": "海洋博の客をあてこんで民宿を始めた知り合いがいたが、入場者は目標に届かなかった。閉幕後に店をたたむ人が続き、「起爆剤ではなく自爆剤」とまで言われた。",
+    "effects": {
+      "happiness": -1
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「沖縄国際海洋博覧会」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%B2%96%E7%B8%84%E5%9B%BD%E9%9A%9B%E6%B5%B7%E6%B4%8B%E5%8D%9A%E8%A6%A7%E4%BC%9A",
+      "verified": true,
+      "note": "1975年7月20日〜1976年1月18日、本部町、入場者約349万人（目標450万人）"
+    }
+  },
+  {
+    "id": "pref-1978-07-okinawa-730-child",
+    "key": "okinawa-730-1978",
+    "category": "pref",
+    "year": 1978,
+    "month": 7,
+    "prefs": [
+      47
+    ],
+    "ageMin": 3,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "ナナサンマル",
+    "text": "7月30日の朝6時、沖縄の車が右側通行から左側通行に一斉に変わった。「ナナサンマル」と呼ばれた。学校で、道の渡り方を一から教わり直した。",
+    "effects": {
+      "knowledge": 1
+    },
+    "probability": 1.0,
+    "probNote": "県民全員に関わるため1",
+    "source": {
+      "title": "沖縄県『美ら島沖縄』資料（730 交通方法の変更）",
+      "url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/014/724/cyura07_0607.pdf",
+      "verified": true,
+      "note": "1978年7月30日午前6時に右側通行から左側通行へ"
+    }
+  },
+  {
+    "id": "pref-1978-07-okinawa-730-youth",
+    "key": "okinawa-730-1978",
+    "category": "pref",
+    "year": 1978,
+    "month": 7,
+    "prefs": [
+      47
+    ],
+    "ageMin": 13,
+    "ageMax": 18,
+    "sex": "any",
+    "title": "ナナサンマル",
+    "text": "7月30日、沖縄の道路が右側通行から左側通行に切り替わった。初日は事故や渋滞が相次いだ。切り替えに合わせて入れ替えられた新しいバスは、730バスと呼ばれた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "probability": 1.0,
+    "probNote": "県民全員に関わるため1",
+    "source": {
+      "title": "沖縄県『美ら島沖縄』資料（730 交通方法の変更）",
+      "url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/014/724/cyura07_0607.pdf",
+      "verified": true,
+      "note": "1978年7月30日午前6時に右側通行から左側通行へ"
+    }
+  },
+  {
+    "id": "pref-1978-07-okinawa-730-adult",
+    "key": "okinawa-730-1978",
+    "category": "pref",
+    "year": 1978,
+    "month": 7,
+    "prefs": [
+      47
+    ],
+    "ageMin": 33,
+    "ageMax": 48,
+    "sex": "any",
+    "title": "ナナサンマル",
+    "text": "7月30日、ナナサンマルの日。前の晩まで右側を走っていた車が、朝から左側を走った。体が覚えた運転を直すのに、何週間もかかった。復帰から6年たっていた。",
+    "effects": {
+      "happiness": -1
+    },
+    "probability": 1.0,
+    "probNote": "県民全員に関わるため1",
+    "source": {
+      "title": "沖縄県『美ら島沖縄』資料（730 交通方法の変更）",
+      "url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/014/724/cyura07_0607.pdf",
+      "verified": true,
+      "note": "1978年7月30日午前6時に右側通行から左側通行へ"
+    }
+  },
+  {
+    "id": "pref-1964-10-tokyo-olympics-child",
+    "key": "tokyo-olympics-1964",
+    "category": "pref",
+    "year": 1964,
+    "month": 10,
+    "prefs": [
+      13
+    ],
+    "ageMin": 0,
+    "ageMax": 4,
+    "sex": "any",
+    "title": "東京オリンピック",
+    "text": "10月10日、東京オリンピックが開幕した。前の年から町じゅうで道路や首都高速の工事が続いていた。家のテレビで開会式を見た。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「1964年東京オリンピック」",
+      "url": "https://ja.wikipedia.org/wiki/1964%E5%B9%B4%E6%9D%B1%E4%BA%AC%E3%82%AA%E3%83%AA%E3%83%B3%E3%83%94%E3%83%83%E3%82%AF",
+      "verified": true,
+      "note": "1964年10月10日〜24日"
+    }
+  },
+  {
+    "id": "pref-1964-10-tokyo-olympics-youth",
+    "key": "tokyo-olympics-1964",
+    "category": "pref",
+    "year": 1964,
+    "month": 10,
+    "prefs": [
+      13
+    ],
+    "ageMin": 19,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "東京オリンピック",
+    "text": "10月10日、東京オリンピックが始まった。道路も地下鉄も、この日に合わせて急いでつくられた。競技場の近くまで行って、外国の選手団を見た。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「1964年東京オリンピック」",
+      "url": "https://ja.wikipedia.org/wiki/1964%E5%B9%B4%E6%9D%B1%E4%BA%AC%E3%82%AA%E3%83%AA%E3%83%B3%E3%83%94%E3%83%83%E3%82%AF",
+      "verified": true,
+      "note": "1964年10月10日〜24日"
+    }
+  },
+  {
+    "id": "pref-1964-10-tokyo-olympics-adult",
+    "key": "tokyo-olympics-1964",
+    "category": "pref",
+    "year": 1964,
+    "month": 10,
+    "prefs": [
+      13
+    ],
+    "ageMin": 30,
+    "ageMax": 34,
+    "sex": "any",
+    "title": "東京オリンピック",
+    "text": "10月、東京でオリンピックが開かれた。準備の工事で仕事は忙しく、町の景色は数年で大きく変わった。戦争の焼け跡から20年足らずのことだった。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「1964年東京オリンピック」",
+      "url": "https://ja.wikipedia.org/wiki/1964%E5%B9%B4%E6%9D%B1%E4%BA%AC%E3%82%AA%E3%83%AA%E3%83%B3%E3%83%94%E3%83%83%E3%82%AF",
+      "verified": true,
+      "note": "1964年10月10日〜24日"
+    }
+  },
+  {
+    "id": "pref-1962-senri-newtown-youth",
+    "key": "senri-newtown-1962",
+    "category": "pref",
+    "year": 1962,
+    "prefs": [
+      27
+    ],
+    "ageMin": 17,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "千里ニュータウン",
+    "text": "大阪の千里丘陵に大規模なニュータウンができ、入居が始まった。新しい団地に、若い夫婦や子どものいる家族が次々に移り住み、のちの各地のニュータウンのお手本になった。",
+    "effects": {
+      "happiness": 3,
+      "flags": [
+        "newtown"
+      ]
+    },
+    "probability": 0.05,
+    "probNote": "目安。府民のうち入居した人の割合",
+    "source": {
+      "title": "Wikipedia日本語版「千里ニュータウン」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8D%83%E9%87%8C%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%BF%E3%82%A6%E3%83%B3",
+      "verified": true,
+      "note": "1962年に初入居"
+    }
+  },
+  {
+    "id": "pref-1962-senri-newtown-adult",
+    "key": "senri-newtown-1962",
+    "category": "pref",
+    "year": 1962,
+    "prefs": [
+      27
+    ],
+    "ageMin": 30,
+    "ageMax": 32,
+    "sex": "any",
+    "title": "千里ニュータウン",
+    "text": "千里ニュータウンの団地の抽選に当たり、家族で引っ越した。竹やぶの丘が切りひらかれ、同じ年ごろの家族ばかりの新しい町ができていった。",
+    "effects": {
+      "happiness": 4,
+      "flags": [
+        "newtown"
+      ]
+    },
+    "probability": 0.05,
+    "probNote": "目安。府民のうち入居した人の割合",
+    "source": {
+      "title": "Wikipedia日本語版「千里ニュータウン」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8D%83%E9%87%8C%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%BF%E3%82%A6%E3%83%B3",
+      "verified": true,
+      "note": "1962年に初入居"
+    }
+  },
+  {
+    "id": "pref-1969-kashima-industrial-child",
+    "key": "kashima-industrial-1969",
+    "category": "pref",
+    "year": 1969,
+    "prefs": [
+      8
+    ],
+    "ageMin": 0,
+    "ageMax": 9,
+    "sex": "any",
+    "title": "鹿島臨海工業地帯の操業",
+    "text": "鹿島の海沿いの砂丘に、製鉄所や石油化学の工場が次々に建った。工場で働く人の家族が引っ越してきて、学校には転校生が急に増えた。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.2,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「鹿島臨海工業地帯」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%B9%BF%E5%B3%B6%E8%87%A8%E6%B5%B7%E5%B7%A5%E6%A5%AD%E5%9C%B0%E5%B8%AF",
+      "verified": true,
+      "note": "1969年4月に住友金属鹿島製鉄所が操業、10月に鹿島港開港"
+    }
+  },
+  {
+    "id": "pref-1969-kashima-industrial-youth",
+    "key": "kashima-industrial-1969",
+    "category": "pref",
+    "year": 1969,
+    "prefs": [
+      8
+    ],
+    "ageMin": 24,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "鹿島臨海工業地帯の操業",
+    "text": "4月、鹿島に製鉄所ができて操業を始め、10月には鹿島港が開いた。畑と松林ばかりだった地元に、工場の求人がたくさん出た。町の様子は数年で一変した。",
+    "effects": {
+      "happiness": 2,
+      "money": 10000
+    },
+    "probability": 0.2,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「鹿島臨海工業地帯」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%B9%BF%E5%B3%B6%E8%87%A8%E6%B5%B7%E5%B7%A5%E6%A5%AD%E5%9C%B0%E5%B8%AF",
+      "verified": true,
+      "note": "1969年4月に住友金属鹿島製鉄所が操業、10月に鹿島港開港"
+    }
+  },
+  {
+    "id": "pref-1969-kashima-industrial-adult",
+    "key": "kashima-industrial-1969",
+    "category": "pref",
+    "year": 1969,
+    "prefs": [
+      8
+    ],
+    "ageMin": 30,
+    "ageMax": 39,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "farm"
+      ]
+    },
+    "title": "鹿島臨海工業地帯の操業",
+    "text": "鹿島の工業地帯の開発で、家の畑が工場用地として買い上げられた。まとまったお金が入ったが、先祖からの土地を手放すことには迷いがあった。",
+    "effects": {
+      "happiness": -1,
+      "money": 500000
+    },
+    "probability": 0.2,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「鹿島臨海工業地帯」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%B9%BF%E5%B3%B6%E8%87%A8%E6%B5%B7%E5%B7%A5%E6%A5%AD%E5%9C%B0%E5%B8%AF",
+      "verified": true,
+      "note": "1969年4月に住友金属鹿島製鉄所が操業、10月に鹿島港開港"
+    }
+  },
+  {
+    "id": "pref-1970-03-osaka-expo-child",
+    "key": "osaka-expo-1970",
+    "category": "pref",
+    "year": 1970,
+    "month": 3,
+    "prefs": [
+      27
+    ],
+    "ageMin": 0,
+    "ageMax": 10,
+    "sex": "any",
+    "title": "大阪万博",
+    "text": "3月から千里丘陵で日本万国博覧会が開かれた。太陽の塔を見上げ、人気の館は何時間も並んだ。外国の人にサインをもらうのがはやった。",
+    "effects": {
+      "happiness": 6
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「日本万国博覧会」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E4%B8%87%E5%9B%BD%E5%8D%9A%E8%A6%A7%E4%BC%9A",
+      "verified": true,
+      "note": "1970年3月15日〜9月13日、来場者6421万8770人"
+    }
+  },
+  {
+    "id": "pref-1970-03-osaka-expo-youth",
+    "key": "osaka-expo-1970",
+    "category": "pref",
+    "year": 1970,
+    "month": 3,
+    "prefs": [
+      27
+    ],
+    "ageMin": 25,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "大阪万博",
+    "text": "大阪万博に友だちと何度も通った。183日間で6,400万人あまりが訪れた。月の石の前の行列はあきらめ、外国のパビリオンを回った。",
+    "effects": {
+      "happiness": 5
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「日本万国博覧会」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E4%B8%87%E5%9B%BD%E5%8D%9A%E8%A6%A7%E4%BC%9A",
+      "verified": true,
+      "note": "1970年3月15日〜9月13日、来場者6421万8770人"
+    }
+  },
+  {
+    "id": "pref-1970-03-osaka-expo-adult",
+    "key": "osaka-expo-1970",
+    "category": "pref",
+    "year": 1970,
+    "month": 3,
+    "prefs": [
+      27
+    ],
+    "ageMin": 30,
+    "ageMax": 40,
+    "sex": "any",
+    "title": "大阪万博",
+    "text": "大阪万博が開かれ、全国から人が押し寄せた。会場へ向かう道路や鉄道もこのために整えられた。家族を連れて、太陽の塔のまわりを歩いた。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「日本万国博覧会」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E4%B8%87%E5%9B%BD%E5%8D%9A%E8%A6%A7%E4%BC%9A",
+      "verified": true,
+      "note": "1970年3月15日〜9月13日、来場者6421万8770人"
+    }
+  },
+  {
+    "id": "pref-1971-03-tama-newtown-child",
+    "key": "tama-newtown-1971",
+    "category": "pref",
+    "year": 1971,
+    "month": 3,
+    "prefs": [
+      13
+    ],
+    "ageMin": 0,
+    "ageMax": 11,
+    "sex": "any",
+    "title": "多摩ニュータウン入居",
+    "text": "3月、多摩ニュータウンの団地に家族で引っ越した。まだ駅も店も少なく、まわりは工事中の丘ばかりだった。同じ学年の子がたくさんいた。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "newtown"
+      ]
+    },
+    "probability": 0.03,
+    "probNote": "目安。都民のうち入居した人の割合",
+    "source": {
+      "title": "Wikipedia日本語版「多摩ニュータウン」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%A4%9A%E6%91%A9%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%BF%E3%82%A6%E3%83%B3",
+      "verified": true,
+      "note": "1971年3月26日に第1次入居"
+    }
+  },
+  {
+    "id": "pref-1971-03-tama-newtown-youth",
+    "key": "tama-newtown-1971",
+    "category": "pref",
+    "year": 1971,
+    "month": 3,
+    "prefs": [
+      13
+    ],
+    "ageMin": 26,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "多摩ニュータウン入居",
+    "text": "多摩丘陵を切りひらいたニュータウンの入居が始まった。都心の家賃は高く、結婚したら郊外の団地に住むのが当たり前に思えた。抽選の倍率の高さに驚いた。",
+    "effects": {
+      "happiness": 1,
+      "flags": [
+        "newtown"
+      ]
+    },
+    "probability": 0.03,
+    "probNote": "目安。都民のうち入居した人の割合",
+    "source": {
+      "title": "Wikipedia日本語版「多摩ニュータウン」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%A4%9A%E6%91%A9%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%BF%E3%82%A6%E3%83%B3",
+      "verified": true,
+      "note": "1971年3月26日に第1次入居"
+    }
+  },
+  {
+    "id": "pref-1971-03-tama-newtown-adult",
+    "key": "tama-newtown-1971",
+    "category": "pref",
+    "year": 1971,
+    "month": 3,
+    "prefs": [
+      13
+    ],
+    "ageMin": 30,
+    "ageMax": 41,
+    "sex": "any",
+    "title": "多摩ニュータウン入居",
+    "text": "3月、多摩ニュータウンの第1次入居が始まった。抽選に当たり、都心へ1時間以上かけて通う暮らしが始まった。夏は泥、冬は砂ぼこりの町だった。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "newtown"
+      ]
+    },
+    "probability": 0.03,
+    "probNote": "目安。都民のうち入居した人の割合",
+    "source": {
+      "title": "Wikipedia日本語版「多摩ニュータウン」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%A4%9A%E6%91%A9%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%BF%E3%82%A6%E3%83%B3",
+      "verified": true,
+      "note": "1971年3月26日に第1次入居"
+    }
+  },
+  {
+    "id": "pref-1972-02-sapporo-olympics-child",
+    "key": "sapporo-olympics-1972",
+    "category": "pref",
+    "year": 1972,
+    "month": 2,
+    "prefs": [
+      1
+    ],
+    "ageMin": 0,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "札幌オリンピック",
+    "text": "2月、札幌でアジア初の冬季オリンピックが開かれた。ジャンプの日本選手が表彰台を独占し、学校でもその話でもちきりだった。休み時間はジャンプのまねをした。",
+    "effects": {
+      "happiness": 5
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「1972年札幌オリンピック」",
+      "url": "https://ja.wikipedia.org/wiki/1972%E5%B9%B4%E6%9C%AD%E5%B9%8C%E3%82%AA%E3%83%AA%E3%83%B3%E3%83%94%E3%83%83%E3%82%AF",
+      "verified": true,
+      "note": "1972年2月3日〜13日、アジア初の冬季五輪。地下鉄開通など"
+    }
+  },
+  {
+    "id": "pref-1972-02-sapporo-olympics-youth",
+    "key": "sapporo-olympics-1972",
+    "category": "pref",
+    "year": 1972,
+    "month": 2,
+    "prefs": [
+      1
+    ],
+    "ageMin": 27,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "札幌オリンピック",
+    "text": "2月3日、札幌オリンピックが開幕した。地下鉄や地下街がこのために整えられ、札幌の町は一気に都会になった。大会の熱気は、しばらく町に残った。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「1972年札幌オリンピック」",
+      "url": "https://ja.wikipedia.org/wiki/1972%E5%B9%B4%E6%9C%AD%E5%B9%8C%E3%82%AA%E3%83%AA%E3%83%B3%E3%83%94%E3%83%83%E3%82%AF",
+      "verified": true,
+      "note": "1972年2月3日〜13日、アジア初の冬季五輪。地下鉄開通など"
+    }
+  },
+  {
+    "id": "pref-1972-02-sapporo-olympics-adult",
+    "key": "sapporo-olympics-1972",
+    "category": "pref",
+    "year": 1972,
+    "month": 2,
+    "prefs": [
+      1
+    ],
+    "ageMin": 30,
+    "ageMax": 42,
+    "sex": "any",
+    "title": "札幌オリンピック",
+    "text": "2月、札幌オリンピックが開かれた。準備のために地下鉄ができ、真駒内の町も整えられた。大会のあと、札幌の町はぐっと大きくなっていった。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「1972年札幌オリンピック」",
+      "url": "https://ja.wikipedia.org/wiki/1972%E5%B9%B4%E6%9C%AD%E5%B9%8C%E3%82%AA%E3%83%AA%E3%83%B3%E3%83%94%E3%83%83%E3%82%AF",
+      "verified": true,
+      "note": "1972年2月3日〜13日、アジア初の冬季五輪。地下鉄開通など"
+    }
+  },
+  {
+    "id": "pref-1978-05-narita-airport-child",
+    "key": "narita-airport-1978",
+    "category": "pref",
+    "year": 1978,
+    "month": 5,
+    "prefs": [
+      12
+    ],
+    "ageMin": 3,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "成田空港の開港",
+    "text": "5月20日、成田に新東京国際空港が開港した。厳重な警備の中での開港だった。空港の近くでは、大きな飛行機が頭の上を飛ぶようになった。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「成田国際空港」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%88%90%E7%94%B0%E5%9B%BD%E9%9A%9B%E7%A9%BA%E6%B8%AF",
+      "verified": true,
+      "note": "1978年5月20日開港。成田空港問題（三里塚闘争）"
+    }
+  },
+  {
+    "id": "pref-1978-05-narita-airport-youth",
+    "key": "narita-airport-1978",
+    "category": "pref",
+    "year": 1978,
+    "month": 5,
+    "prefs": [
+      12
+    ],
+    "ageMin": 13,
+    "ageMax": 18,
+    "sex": "any",
+    "title": "成田空港の開港",
+    "text": "5月20日、成田空港が開港した。土地を手放すことを拒む農家と支援者の反対運動が長く続き、開港の日も厳重な警備が敷かれた。",
+    "effects": {
+      "happiness": 0
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「成田国際空港」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%88%90%E7%94%B0%E5%9B%BD%E9%9A%9B%E7%A9%BA%E6%B8%AF",
+      "verified": true,
+      "note": "1978年5月20日開港。成田空港問題（三里塚闘争）"
+    }
+  },
+  {
+    "id": "pref-1978-05-narita-airport-adult",
+    "key": "narita-airport-1978",
+    "category": "pref",
+    "year": 1978,
+    "month": 5,
+    "prefs": [
+      12
+    ],
+    "ageMin": 33,
+    "ageMax": 48,
+    "sex": "any",
+    "title": "成田空港の開港",
+    "text": "5月、成田空港が開港した。用地の買収をめぐって、地元は賛成と反対に分かれ、激しい衝突も起きた。空港で働く人も増え、町の様子は変わっていった。",
+    "effects": {
+      "happiness": 0
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「成田国際空港」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%88%90%E7%94%B0%E5%9B%BD%E9%9A%9B%E7%A9%BA%E6%B8%AF",
+      "verified": true,
+      "note": "1978年5月20日開港。成田空港問題（三里塚闘争）"
+    }
+  },
+  {
+    "id": "pref-1983-04-tokyo-disneyland-child",
+    "key": "tdl-1983",
+    "category": "pref",
+    "year": 1983,
+    "month": 4,
+    "prefs": [
+      12,
+      13
+    ],
+    "ageMin": 8,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "東京ディズニーランド開園",
+    "text": "4月15日、浦安に東京ディズニーランドが開園した。埋め立て地に突然あらわれた外国のような遊園地に、家族で出かける日を指折り数えた。",
+    "effects": {
+      "happiness": 6
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「東京ディズニーランド」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BA%AC%E3%83%87%E3%82%A3%E3%82%BA%E3%83%8B%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89",
+      "verified": true,
+      "note": "1983年4月15日開園、千葉県浦安市"
+    }
+  },
+  {
+    "id": "pref-1983-04-tokyo-disneyland-youth",
+    "key": "tdl-1983",
+    "category": "pref",
+    "year": 1983,
+    "month": 4,
+    "prefs": [
+      12,
+      13
+    ],
+    "ageMin": 13,
+    "ageMax": 23,
+    "sex": "any",
+    "title": "東京ディズニーランド開園",
+    "text": "4月15日、東京ディズニーランドが開園した。デートや友だちとの遊び場として、たちまち人気になった。入場券を手に入れるのに、前もって並んだこともあった。浦安という町の名前が、あっという間に全国に知られた。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「東京ディズニーランド」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BA%AC%E3%83%87%E3%82%A3%E3%82%BA%E3%83%8B%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89",
+      "verified": true,
+      "note": "1983年4月15日開園、千葉県浦安市"
+    }
+  },
+  {
+    "id": "pref-1983-04-tokyo-disneyland-adult",
+    "key": "tdl-1983",
+    "category": "pref",
+    "year": 1983,
+    "month": 4,
+    "prefs": [
+      12,
+      13
+    ],
+    "ageMin": 38,
+    "ageMax": 53,
+    "sex": "any",
+    "title": "東京ディズニーランド開園",
+    "text": "4月、浦安の埋め立て地に東京ディズニーランドが開園した。子どもにせがまれ、休みの日に家族で出かけた。入るまでの行列に驚いた。",
+    "effects": {
+      "happiness": 3,
+      "money": -20000
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「東京ディズニーランド」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BA%AC%E3%83%87%E3%82%A3%E3%82%BA%E3%83%8B%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89",
+      "verified": true,
+      "note": "1983年4月15日開園、千葉県浦安市"
+    }
+  },
+  {
+    "id": "pref-1985-03-tsukuba-expo-child",
+    "key": "tsukuba-expo-1985",
+    "category": "pref",
+    "year": 1985,
+    "month": 3,
+    "prefs": [
+      8
+    ],
+    "ageMin": 10,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "つくば科学万博",
+    "text": "3月から、つくばで国際科学技術博覧会が開かれた。ロボットや大きな映像のパビリオンに、学校の遠足でも出かけた。未来はこうなるのかと思った。",
+    "effects": {
+      "happiness": 5,
+      "knowledge": 2
+    },
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「国際科学技術博覧会」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%9A%9B%E7%A7%91%E5%AD%A6%E6%8A%80%E8%A1%93%E5%8D%9A%E8%A6%A7%E4%BC%9A",
+      "verified": true,
+      "note": "1985年3月17日開幕、筑波研究学園都市、来場者2033万人"
+    }
+  },
+  {
+    "id": "pref-1985-03-tsukuba-expo-youth",
+    "key": "tsukuba-expo-1985",
+    "category": "pref",
+    "year": 1985,
+    "month": 3,
+    "prefs": [
+      8
+    ],
+    "ageMin": 13,
+    "ageMax": 25,
+    "sex": "any",
+    "title": "つくば科学万博",
+    "text": "つくば科学万博が開かれ、2,000万人あまりが訪れた。研究学園都市の名前が全国に知られるようになった。地元の大学や研究所に興味を持つきっかけになった。",
+    "effects": {
+      "happiness": 3,
+      "knowledge": 1
+    },
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「国際科学技術博覧会」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%9A%9B%E7%A7%91%E5%AD%A6%E6%8A%80%E8%A1%93%E5%8D%9A%E8%A6%A7%E4%BC%9A",
+      "verified": true,
+      "note": "1985年3月17日開幕、筑波研究学園都市、来場者2033万人"
+    }
+  },
+  {
+    "id": "pref-1985-03-tsukuba-expo-adult",
+    "key": "tsukuba-expo-1985",
+    "category": "pref",
+    "year": 1985,
+    "month": 3,
+    "prefs": [
+      8
+    ],
+    "ageMin": 40,
+    "ageMax": 55,
+    "sex": "any",
+    "title": "つくば科学万博",
+    "text": "つくば科学万博が開かれた。会場までの道路や常磐線の臨時駅も整えられた。家族で出かけ、ロボットの展示に子どもが夢中になった。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「国際科学技術博覧会」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%9A%9B%E7%A7%91%E5%AD%A6%E6%8A%80%E8%A1%93%E5%8D%9A%E8%A6%A7%E4%BC%9A",
+      "verified": true,
+      "note": "1985年3月17日開幕、筑波研究学園都市、来場者2033万人"
+    }
+  },
+  {
+    "id": "pref-1994-09-kansai-airport-child",
+    "key": "kansai-airport-1994",
+    "category": "pref",
+    "year": 1994,
+    "month": 9,
+    "prefs": [
+      27
+    ],
+    "ageMin": 0,
+    "ageMax": 4,
+    "sex": "any",
+    "title": "関西国際空港の開港",
+    "text": "9月4日、大阪湾の沖を埋め立ててつくった関西国際空港が開港した。海の上の空港へ、橋を渡って見に行った。海の上の空港へ、橋を渡って家族で見に行った。大きな飛行機が海の上から飛び立っていった。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「関西国際空港」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%96%A2%E8%A5%BF%E5%9B%BD%E9%9A%9B%E7%A9%BA%E6%B8%AF",
+      "verified": true,
+      "note": "1994年9月4日開港、24時間運用"
+    }
+  },
+  {
+    "id": "pref-1994-09-kansai-airport-youth",
+    "key": "kansai-airport-1994",
+    "category": "pref",
+    "year": 1994,
+    "month": 9,
+    "prefs": [
+      27
+    ],
+    "ageMin": 19,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "関西国際空港の開港",
+    "text": "9月4日、関西国際空港が開港した。海の上につくられ、24時間飛行機が飛べる空港だった。海外旅行がぐっと身近になった。海外旅行がぐっと身近になり、休みに友だちと出かける計画を立てた。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「関西国際空港」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%96%A2%E8%A5%BF%E5%9B%BD%E9%9A%9B%E7%A9%BA%E6%B8%AF",
+      "verified": true,
+      "note": "1994年9月4日開港、24時間運用"
+    }
+  },
+  {
+    "id": "pref-1994-09-kansai-airport-adult",
+    "key": "kansai-airport-1994",
+    "category": "pref",
+    "year": 1994,
+    "month": 9,
+    "prefs": [
+      27
+    ],
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "関西国際空港の開港",
+    "text": "9月4日、関西国際空港が開港した。バブルのあとの不景気の中だったが、関西の新しい玄関口ができたと話題になった。出張で海外へ行く同僚が増えた。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「関西国際空港」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%96%A2%E8%A5%BF%E5%9B%BD%E9%9A%9B%E7%A9%BA%E6%B8%AF",
+      "verified": true,
+      "note": "1994年9月4日開港、24時間運用"
+    }
+  },
+  {
+    "id": "pref-1994-09-kansai-airport-elder",
+    "key": "kansai-airport-1994",
+    "category": "pref",
+    "year": 1994,
+    "month": 9,
+    "prefs": [
+      27
+    ],
+    "ageMin": 60,
+    "ageMax": 64,
+    "sex": "any",
+    "title": "関西国際空港の開港",
+    "text": "9月、関空が開港した。若い頃には、飛行機で海外へ行くなど考えもしなかった。旅行会社の団体旅行に申しこんでみた。旅行会社の団体旅行に、夫婦で申しこんでみた。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「関西国際空港」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%96%A2%E8%A5%BF%E5%9B%BD%E9%9A%9B%E7%A9%BA%E6%B8%AF",
+      "verified": true,
+      "note": "1994年9月4日開港、24時間運用"
+    }
+  },
+  {
+    "id": "pref-1998-02-nagano-olympics-child",
+    "key": "nagano-olympics-1998",
+    "category": "pref",
+    "year": 1998,
+    "month": 2,
+    "prefs": [
+      20
+    ],
+    "ageMin": 0,
+    "ageMax": 8,
+    "sex": "any",
+    "title": "長野オリンピック",
+    "text": "2月、長野で冬季オリンピックが開かれた。日本選手が金メダルをとる場面を、学校のテレビでみんなで見た。外国の選手と交流する授業もあった。",
+    "effects": {
+      "happiness": 5
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「1998年長野オリンピック」",
+      "url": "https://ja.wikipedia.org/wiki/1998%E5%B9%B4%E9%95%B7%E9%87%8E%E3%82%AA%E3%83%AA%E3%83%B3%E3%83%94%E3%83%83%E3%82%AF",
+      "verified": true,
+      "note": "1998年2月7日〜22日"
+    }
+  },
+  {
+    "id": "pref-1998-02-nagano-olympics-youth",
+    "key": "nagano-olympics-1998",
+    "category": "pref",
+    "year": 1998,
+    "month": 2,
+    "prefs": [
+      20
+    ],
+    "ageMin": 23,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "長野オリンピック",
+    "text": "2月7日、長野オリンピックが開幕した。ボランティアとして会場の案内をした。世界中から来た人と、片言の英語で話した。忘れられない冬になった。",
+    "effects": {
+      "happiness": 5,
+      "flags": [
+        "volunteer"
+      ]
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「1998年長野オリンピック」",
+      "url": "https://ja.wikipedia.org/wiki/1998%E5%B9%B4%E9%95%B7%E9%87%8E%E3%82%AA%E3%83%AA%E3%83%B3%E3%83%94%E3%83%83%E3%82%AF",
+      "verified": true,
+      "note": "1998年2月7日〜22日"
+    }
+  },
+  {
+    "id": "pref-1998-02-nagano-olympics-adult",
+    "key": "nagano-olympics-1998",
+    "category": "pref",
+    "year": 1998,
+    "month": 2,
+    "prefs": [
+      20
+    ],
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "長野オリンピック",
+    "text": "2月、長野オリンピックが開かれた。新幹線や高速道路の開通で町は便利になったが、大会のあとには施設の維持費と借金の話が残った。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「1998年長野オリンピック」",
+      "url": "https://ja.wikipedia.org/wiki/1998%E5%B9%B4%E9%95%B7%E9%87%8E%E3%82%AA%E3%83%AA%E3%83%B3%E3%83%94%E3%83%83%E3%82%AF",
+      "verified": true,
+      "note": "1998年2月7日〜22日"
+    }
+  },
+  {
+    "id": "pref-1998-02-nagano-olympics-elder",
+    "key": "nagano-olympics-1998",
+    "category": "pref",
+    "year": 1998,
+    "month": 2,
+    "prefs": [
+      20
+    ],
+    "ageMin": 60,
+    "ageMax": 68,
+    "sex": "any",
+    "title": "長野オリンピック",
+    "text": "2月、長野でオリンピックが開かれた。善光寺の鐘の音で開会式が始まった。地元で世界の大会が見られるとは思わなかった。生きているうちに、地元で世界の大会が見られるとは思わなかった。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「1998年長野オリンピック」",
+      "url": "https://ja.wikipedia.org/wiki/1998%E5%B9%B4%E9%95%B7%E9%87%8E%E3%82%AA%E3%83%AA%E3%83%B3%E3%83%94%E3%83%83%E3%82%AF",
+      "verified": true,
+      "note": "1998年2月7日〜22日"
+    }
+  },
+  {
+    "id": "pref-2005-03-aichi-expo-child",
+    "key": "aichi-expo-2005",
+    "category": "pref",
+    "year": 2005,
+    "month": 3,
+    "prefs": [
+      23
+    ],
+    "ageMin": 0,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "愛・地球博",
+    "text": "3月から長久手で愛・地球博が開かれた。ひと月前には常滑の海に中部国際空港も開港した。ロボットのパビリオンに何度も並んだ。",
+    "effects": {
+      "happiness": 5
+    },
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「2005年日本国際博覧会」",
+      "url": "https://ja.wikipedia.org/wiki/2005%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%9B%BD%E9%9A%9B%E5%8D%9A%E8%A6%A7%E4%BC%9A",
+      "verified": true,
+      "note": "2005年3月25日〜9月25日。中部国際空港は2005年2月17日開港"
+    }
+  },
+  {
+    "id": "pref-2005-03-aichi-expo-youth",
+    "key": "aichi-expo-2005",
+    "category": "pref",
+    "year": 2005,
+    "month": 3,
+    "prefs": [
+      23
+    ],
+    "ageMin": 13,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "愛・地球博",
+    "text": "3月25日、愛・地球博が開幕した。自然との共生がテーマだった。2月に開港したセントレアとあわせて、地元はにぎわった。会場で外国の人と話す機会もあった。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「2005年日本国際博覧会」",
+      "url": "https://ja.wikipedia.org/wiki/2005%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%9B%BD%E9%9A%9B%E5%8D%9A%E8%A6%A7%E4%BC%9A",
+      "verified": true,
+      "note": "2005年3月25日〜9月25日。中部国際空港は2005年2月17日開港"
+    }
+  },
+  {
+    "id": "pref-2005-03-aichi-expo-adult",
+    "key": "aichi-expo-2005",
+    "category": "pref",
+    "year": 2005,
+    "month": 3,
+    "prefs": [
+      23
+    ],
+    "ageMin": 30,
+    "ageMax": 45,
+    "sex": "any",
+    "title": "愛・地球博",
+    "text": "愛・地球博が開かれた。年間パスポートを買って、家族で何度も通った。2月には常滑沖に中部国際空港も開港し、県内は活気づいた。",
+    "effects": {
+      "happiness": 3,
+      "money": -30000
+    },
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「2005年日本国際博覧会」",
+      "url": "https://ja.wikipedia.org/wiki/2005%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%9B%BD%E9%9A%9B%E5%8D%9A%E8%A6%A7%E4%BC%9A",
+      "verified": true,
+      "note": "2005年3月25日〜9月25日。中部国際空港は2005年2月17日開港"
+    }
+  },
+  {
+    "id": "pref-2005-03-aichi-expo-elder",
+    "key": "aichi-expo-2005",
+    "category": "pref",
+    "year": 2005,
+    "month": 3,
+    "prefs": [
+      23
+    ],
+    "ageMin": 60,
+    "ageMax": 75,
+    "sex": "any",
+    "title": "愛・地球博",
+    "text": "愛・地球博が開かれた。年寄り仲間と連れ立って出かけた。大阪万博から35年、今度は地元で万博が見られた。孫と一緒に、つえをついて会場を歩いた。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「2005年日本国際博覧会」",
+      "url": "https://ja.wikipedia.org/wiki/2005%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%9B%BD%E9%9A%9B%E5%8D%9A%E8%A6%A7%E4%BC%9A",
+      "verified": true,
+      "note": "2005年3月25日〜9月25日。中部国際空港は2005年2月17日開港"
+    }
+  },
+  {
+    "id": "pref-2025-04-osaka-expo-2025-youth",
+    "key": "osaka-expo-2025",
+    "category": "pref",
+    "year": 2025,
+    "month": 4,
+    "prefs": [
+      27
+    ],
+    "ageMin": 20,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "大阪・関西万博",
+    "text": "4月13日、大阪湾の人工島、夢洲で大阪・関西万博が開幕した。予約のとり方に苦労しながら、友だちと出かけた。会場の大きな木造の屋根の下を歩いた。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「2025年日本国際博覧会」",
+      "url": "https://ja.wikipedia.org/wiki/2025%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%9B%BD%E9%9A%9B%E5%8D%9A%E8%A6%A7%E4%BC%9A",
+      "verified": true,
+      "note": "2025年4月13日〜10月13日、夢洲"
+    }
+  },
+  {
+    "id": "pref-2025-04-osaka-expo-2025-adult",
+    "key": "osaka-expo-2025",
+    "category": "pref",
+    "year": 2025,
+    "month": 4,
+    "prefs": [
+      27
+    ],
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "大阪・関西万博",
+    "text": "4月、夢洲で大阪・関西万博が始まった。55年前の大阪万博を親から聞かされて育った世代として、子どもを連れて会場を歩いた。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「2025年日本国際博覧会」",
+      "url": "https://ja.wikipedia.org/wiki/2025%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%9B%BD%E9%9A%9B%E5%8D%9A%E8%A6%A7%E4%BC%9A",
+      "verified": true,
+      "note": "2025年4月13日〜10月13日、夢洲"
+    }
+  },
+  {
+    "id": "pref-2025-04-osaka-expo-2025-elder",
+    "key": "osaka-expo-2025",
+    "category": "pref",
+    "year": 2025,
+    "month": 4,
+    "prefs": [
+      27
+    ],
+    "ageMin": 60,
+    "ageMax": 95,
+    "sex": "any",
+    "title": "大阪・関西万博",
+    "text": "4月、大阪・関西万博が開幕した。若い頃、1970年の大阪万博に通ったことを思い出した。孫に、太陽の塔の話をした。万博を2度見られたのは長生きのおかげだと思った。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「2025年日本国際博覧会」",
+      "url": "https://ja.wikipedia.org/wiki/2025%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%9B%BD%E9%9A%9B%E5%8D%9A%E8%A6%A7%E4%BC%9A",
+      "verified": true,
+      "note": "2025年4月13日〜10月13日、夢洲"
+    }
+  },
+  {
+    "id": "pref-1983-07-shimane-flood-child",
+    "key": "shimane-flood-1983",
+    "category": "pref",
+    "year": 1983,
+    "month": 7,
+    "prefs": [
+      32
+    ],
+    "ageMin": 8,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "島根の梅雨前線豪雨",
+    "text": "7月下旬、梅雨前線の豪雨で島根の西部を中心に川があふれ、山が崩れた。全国で117人が亡くなった。夏休みの間、家の片づけを手伝った。",
+    "effects": {
+      "happiness": -6,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 8e-05,
+        "cause": "水害",
+        "note": "全国の死者・行方不明者117人（特に島根）÷島根県人口約79万人で大まかに置いた"
+      }
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1983-07-shimane-flood-youth",
+    "key": "shimane-flood-1983",
+    "category": "pref",
+    "year": 1983,
+    "month": 7,
+    "prefs": [
+      32
+    ],
+    "ageMin": 13,
+    "ageMax": 23,
+    "sex": "any",
+    "title": "島根の梅雨前線豪雨",
+    "text": "7月の梅雨前線豪雨で、島根の西部が大きな被害を受け、全国で117人が亡くなった。道路も鉄道も寸断され、しばらく通勤ができなかった。",
+    "effects": {
+      "happiness": -6,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 8e-05,
+        "cause": "水害",
+        "note": "全国の死者・行方不明者117人（特に島根）÷島根県人口約79万人で大まかに置いた"
+      }
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1983-07-shimane-flood-adult",
+    "key": "shimane-flood-1983",
+    "category": "pref",
+    "year": 1983,
+    "month": 7,
+    "prefs": [
+      32
+    ],
+    "ageMin": 38,
+    "ageMax": 53,
+    "sex": "any",
+    "title": "島根の梅雨前線豪雨",
+    "text": "7月の豪雨で、島根西部の川があふれた。全国の死者・行方不明者117人の多くが島根だった。家の片づけと田んぼの復旧に、夏じゅうかかった。",
+    "effects": {
+      "happiness": -6,
+      "money": -200000,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 8e-05,
+        "cause": "水害",
+        "note": "全国の死者・行方不明者117人（特に島根）÷島根県人口約79万人で大まかに置いた"
+      }
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2011-09-kii-flood-child",
+    "key": "kii-flood-2011",
+    "category": "pref",
+    "year": 2011,
+    "month": 9,
+    "prefs": [
+      29,
+      30
+    ],
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "紀伊半島の大水害",
+    "text": "9月はじめ、台風12号の大雨で紀伊半島の山があちこちで崩れた。近畿と四国で98人が亡くなり、行方不明になった。学校はしばらく休みになった。",
+    "effects": {
+      "happiness": -6,
+      "death": {
+        "prob": 8e-05,
+        "cause": "水害・土砂災害",
+        "note": "台風第12号の死者・行方不明者98人（近畿・四国）÷奈良・和歌山の人口計約240万人で大まかに置いた"
+      }
+    },
+    "probability": 0.25,
+    "probNote": "目安。紀伊半島南部に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2011-09-kii-flood-adult",
+    "key": "kii-flood-2011",
+    "category": "pref",
+    "year": 2011,
+    "month": 9,
+    "prefs": [
+      29,
+      30
+    ],
+    "ageMin": 36,
+    "ageMax": 51,
+    "sex": "any",
+    "title": "紀伊半島の大水害",
+    "text": "9月、台風12号の記録的な大雨で、紀伊半島の山あいの集落が土砂崩れで孤立した。死者・行方不明者は98人。東日本大震災の半年後のことだった。",
+    "effects": {
+      "happiness": -6,
+      "death": {
+        "prob": 8e-05,
+        "cause": "水害・土砂災害",
+        "note": "台風第12号の死者・行方不明者98人（近畿・四国）÷奈良・和歌山の人口計約240万人で大まかに置いた"
+      }
+    },
+    "probability": 0.25,
+    "probNote": "目安。紀伊半島南部に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2011-09-kii-flood-elder",
+    "key": "kii-flood-2011",
+    "category": "pref",
+    "year": 2011,
+    "month": 9,
+    "prefs": [
+      29,
+      30
+    ],
+    "ageMin": 66,
+    "ageMax": 81,
+    "sex": "any",
+    "title": "紀伊半島の大水害",
+    "text": "9月、台風12号の大雨で、山あいの集落が土砂崩れに襲われた。死者・行方不明者は98人。長く住んだ村を離れて、仮設住宅に移った人も多かった。",
+    "effects": {
+      "health": -3,
+      "happiness": -8,
+      "death": {
+        "prob": 8e-05,
+        "cause": "水害・土砂災害",
+        "note": "台風第12号の死者・行方不明者98人（近畿・四国）÷奈良・和歌山の人口計約240万人で大まかに置いた"
+      }
+    },
+    "probability": 0.25,
+    "probNote": "目安。紀伊半島南部に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2014-02-yamanashi-snow-youth",
+    "key": "yamanashi-snow-2014",
+    "category": "pref",
+    "year": 2014,
+    "month": 2,
+    "prefs": [
+      19
+    ],
+    "ageMin": 13,
+    "ageMax": 24,
+    "sex": "any",
+    "title": "山梨の記録的大雪",
+    "text": "2月、山梨でこれまでにない大雪が降った。道路も鉄道も止まり、県内の多くの集落が孤立した。コンビニの棚から食べ物が消えた。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1（平成25年の大雪等、特に山梨）",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": false,
+      "note": "白書は期間を平成25年11月〜26年3月、死者・行方不明者95人とする。2月の大雪の日付と積雪量は未確認"
+    }
+  },
+  {
+    "id": "pref-2014-02-yamanashi-snow-adult",
+    "key": "yamanashi-snow-2014",
+    "category": "pref",
+    "year": 2014,
+    "month": 2,
+    "prefs": [
+      19
+    ],
+    "ageMin": 39,
+    "ageMax": 54,
+    "sex": "any",
+    "title": "山梨の記録的大雪",
+    "text": "2月の記録的な大雪で、甲府の町が雪に埋まった。車は何日も動かせず、ビニールハウスや車庫が雪の重みでつぶれた。近所と助け合って雪かきを続けた。",
+    "effects": {
+      "happiness": -4,
+      "money": -100000
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1（平成25年の大雪等、特に山梨）",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": false,
+      "note": "白書は期間を平成25年11月〜26年3月、死者・行方不明者95人とする。2月の大雪の日付と積雪量は未確認"
+    }
+  },
+  {
+    "id": "pref-2014-02-yamanashi-snow-elder",
+    "key": "yamanashi-snow-2014",
+    "category": "pref",
+    "year": 2014,
+    "month": 2,
+    "prefs": [
+      19
+    ],
+    "ageMin": 69,
+    "ageMax": 84,
+    "sex": "any",
+    "title": "山梨の記録的大雪",
+    "text": "2月、山梨に記録的な大雪が降り、何日も家から出られなかった。この冬の大雪で、全国で95人が亡くなった。近所の人が雪かきに来てくれた。",
+    "effects": {
+      "health": -2,
+      "happiness": -4
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1（平成25年の大雪等、特に山梨）",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": false,
+      "note": "白書は期間を平成25年11月〜26年3月、死者・行方不明者95人とする。2月の大雪の日付と積雪量は未確認"
+    }
   }
 ]

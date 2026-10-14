@@ -40,7 +40,7 @@ export function runLab(n: number, seed0 = 1): LabResult {
       a.n++;
       a.minY = Math.min(a.minY, p.birthYear);
       a.maxY = Math.max(a.maxY, p.birthYear);
-      a.death += p.deathAge ?? 0;
+      a.death += (p.deathAge ?? 0) + 0.5; // 亡くなった年の途中で亡くなるとみなす
       a.exp += cohortLifeExpectancy(p.birthYear, p.sex);
       if (['high', 'junior', 'univ'].includes(p.edu)) a.hs++;
       if (p.edu === 'univ') a.univ++;

@@ -36,6 +36,8 @@ for t in ["T04-01", "T05-02", "T05-07", "T05-13", "T05-14", "T05-15",
 # 1935-36年（第6回）と1965年（第12回）の5歳ごとの平均余命は、過去の版にだけ載っている
 FILES["ipss_popular/old/P2008_T05-14.xls"] = IPSS_POP.format(2008, "T05-14.xls")
 FILES["ipss_popular/old/P2025_T05-13.xlsx"] = IPSS_POP.format(2025, "T05-13.xlsx")
+# 年齢別初婚率の1960年・2005年は2012年版にだけ載っている
+FILES["ipss_popular/old/P2012_T06-04.xls"] = IPSS_POP.format(2012, "T06-04.xls")
 
 # --- 厚労省 令和6年簡易生命表 参考資料2 主な年齢の平均余命の年次推移（1947〜2024年、毎年）
 FILES["mhlw/life24-09.pdf"] = MHLW + "/toukei/saikin/hw/life/life24/dl/life24-09.pdf"
