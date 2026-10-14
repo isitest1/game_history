@@ -207,10 +207,10 @@ async function showGacha(): Promise<void> {
   app.innerHTML = html`${topbar()}
     <main class="wrap gacha" id="main">
       <div class="gacha-steps" aria-hidden="true">${steps.map((s, i) => `<span class="chip" data-step="${i}">${s}</span>`)}</div>
+      <ol class="ledger" id="ledger" aria-label="引いた結果"></ol>
       <div class="label" id="glabel">生まれる県</div>
       <div class="reel" id="reel" aria-live="polite">　</div>
       <div class="prob" id="gprob"></div>
-      <ol class="ledger" id="ledger" aria-label="引いた結果"></ol>
       <div class="gyears" id="gyears" aria-hidden="true"></div>
       <button class="btn ghost small" id="skip">とばす</button>
     </main>`;
@@ -303,7 +303,8 @@ function showBirth(): void {
       <div class="books">
         ${st.persons.map((p, i) => birthBook(p, i))}
       </div>
-      <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <p class="muted" style="font-size:13px;margin:-8px 0 16px">見込み寿命は、その年に生まれた人が生命表どおりに生きた場合の平均。1歳までの死亡は、その年の0歳の死亡率から。</p>
+      <div class="birth-acts">
         <button class="btn" id="go">人生を始める</button>
         <button class="btn ghost" id="again">引き直す</button>
       </div>
@@ -332,7 +333,7 @@ function birthBook(p: Person, i: number): string {
       <dt>父・母</dt><dd>${p.birthYear - p.fatherBirthYear}歳・${p.birthYear - p.motherBirthYear}歳</dd>
       <dt>この年の出生</dt><dd>${Math.round(S.nationalBirths(p.birthYear) / 10000)}万人</dd>
       <dt>1歳まで</dt><dd>${Math.round(1 / Math.max(q0, 0.0003))}人に1人が亡くなる</dd>
-      <dt>見込み寿命</dt><dd>${le.toFixed(0)}歳（この年生まれの平均）</dd>
+      <dt>見込み寿命</dt><dd>${le.toFixed(0)}歳</dd>
     </dl>
   </article>`;
 }
@@ -410,6 +411,9 @@ async function showLife(): Promise<void> {
   bindCommon(app);
   renderAll();
   renderFocus();
+  const colsEl = app.querySelector('.cols') as HTMLElement;
+  const onScroll = () => colsEl?.classList.toggle('is-compact', isMobile() && window.scrollY > 140);
+  window.addEventListener('scroll', onScroll, { passive: true });
   if (st.age === 0) setTimeout(() => toast('列を押すと、その人の記録が開きます。下の「今年の重点」で育ち方が変わります'), 600);
   app.querySelectorAll<HTMLElement>('.col').forEach((c, i) =>
     c.addEventListener('click', (e) => {
@@ -536,16 +540,28 @@ function renderMFeed(): void {
   st.persons.forEach((p, i) => p.log.filter(isShown).forEach((e) => rows.push({ e, i })));
   const ages = [...new Set(rows.map((r) => r.e.age))].sort((a, b) => b - a).slice(0, 4);
   box.innerHTML = ages
-    .map((age) => {
+    .map((age, ai) => {
       const items = rows.filter((r) => r.e.age === age).sort((a, b) => a.i - b.i);
-      return `<section class="mrow"><h3 class="mage">${age}歳<small>${items.length > 1 ? '横にめくって見比べる' : ''}</small></h3><div class="mswipe">${items
+      return `<section class="mrow"><h3 class="mage">${age}歳<small>${items.length > 1 && ai === 0 ? '横にめくって見比べる' : ''}</small></h3><div class="mswipe">${items
         .map(({ e, i }) => {
-          const cls = [ERA_CLASS[i], e.kind === 'wish' ? 'wish' : '', e.kind === 'death' ? 'death' : '', e.heavy ? 'heavy' : '', freshEntries.has(e) ? 'fresh' : ''].join(' ');
+          const cls = [ERA_CLASS[i], e.kind === 'wish' ? 'wish' : '', e.kind === 'decision' || e.kind === 'wish' ? 'dec' : '', e.kind === 'death' ? 'death' : '', e.heavy ? 'heavy' : '', freshEntries.has(e) ? 'fresh' : ''].join(' ');
           return `<article class="mcard ${cls}"><span class="meta">${e.year}年・${esc(st.persons[i].name.split(' ')[1] ?? '')}</span><b class="t">${esc(e.title)}</b><p class="d">${esc(e.text)}</p>${e.heavy ? '<button class="help-note" data-act="helpnote">つらいときの相談先</button>' : ''}</article>`;
         })
-        .join('')}</div></section>`;
+        .join('')}</div>${items.length > 1 ? `<div class="mdots" aria-hidden="true">${items.map((it, k) => `<i class="${ERA_CLASS[it.i]} ${k === 0 ? 'on' : ''}"></i>`).join('')}</div>` : ''}</section>`;
     })
     .join('');
+  box.querySelectorAll<HTMLElement>('.mswipe').forEach((sw) => {
+    const dots = sw.nextElementSibling?.querySelectorAll('i');
+    if (!dots) return;
+    sw.addEventListener(
+      'scroll',
+      () => {
+        const k = Math.round(sw.scrollLeft / Math.max(1, (sw.firstElementChild as HTMLElement).offsetWidth + 8));
+        dots.forEach((d, j) => d.classList.toggle('on', j === k));
+      },
+      { passive: true },
+    );
+  });
 }
 
 function renderAll(): void {
@@ -554,7 +570,7 @@ function renderAll(): void {
 }
 
 function feedItem(e: LogEntry, old: boolean): string {
-  const cls = [e.kind === 'wish' ? 'wish' : '', e.kind === 'death' ? 'death' : '', e.heavy ? 'heavy' : '', old ? 'old' : ''].join(' ');
+  const cls = [e.kind === 'wish' ? 'wish' : '', e.kind === 'decision' || e.kind === 'wish' ? 'dec' : '', e.kind === 'death' ? 'death' : '', e.heavy ? 'heavy' : '', old ? 'old' : ''].join(' ');
   return html`<li class="${cls}">
     <span class="meta">${e.age}歳・${e.year}年</span>
     <span class="t">${esc(e.title)}</span>
@@ -732,7 +748,7 @@ function showResult(v: DecisionView, r: DecisionResult): Promise<void> {
             return `<div class="${ERA_CLASS[i]} ${x.ok ? 'ok' : 'ng'}"><span class="hanko" aria-hidden="true">${x.ok ? '叶' : '否'}</span><span class="mark">${p.birthYear + v.age}年　${x.ok ? '叶った' : '叶わなかった'}</span>${esc(x.text)}</div>`;
           })}
         </div>
-        <button class="btn cont" id="cont">続ける</button>`,
+        <div class="actions"><button class="btn cont" id="cont">続ける</button></div>`,
       { label: '決断の結果' },
     );
     el.querySelector('#cont')!.addEventListener('click', () => {
@@ -766,7 +782,7 @@ function showBreather(age: number): Promise<void> {
           <label for="ans" style="font-weight:700;display:block;margin-bottom:6px">${esc(BREATH_Q[age])}</label>
           <textarea id="ans" placeholder="書かなくても進めます。この端末の中にだけ残ります。">${esc(ui.answers[String(age)] ?? '')}</textarea>
         </div>
-        <div style="margin-top:12px"><button class="btn" id="cont">続ける</button></div>`,
+        <div class="actions" style="margin-top:12px"><button class="btn cont" id="cont">続ける</button></div>`,
       { label: `ひと息 ${age}歳` },
     );
     el.querySelector('#cont')!.addEventListener('click', () => {
@@ -904,7 +920,7 @@ async function showEnd(skipSlides = false): Promise<void> {
 
       <section class="panel share">
         <h3>共有カード</h3>
-        <canvas id="card" width="1200" height="630" aria-label="3人の人生をまとめた画像"></canvas>
+        <canvas id="card" width="1200" height="630" role="img" aria-label="3人の人生をまとめた共有用の画像"></canvas>
         <div class="acts">
           <button class="btn small" id="save">画像を保存</button>
           <button class="btn small ghost" id="shareb">共有する</button>
@@ -919,7 +935,7 @@ async function showEnd(skipSlides = false): Promise<void> {
   bindCommon(app);
   store.del(SAVE_KEY);
   const canvas = app.querySelector('#card') as HTMLCanvasElement;
-  await drawShareCard(canvas, st);
+  await drawShareCard(canvas, st, isMobile());
   app.querySelector('#save')!.addEventListener('click', () => {
     const a = document.createElement('a');
     a.href = canvas.toDataURL('image/png');
@@ -969,9 +985,9 @@ function record(p: Person, i: number): string {
       <dt>学歴</dt><dd>${EDU_LABEL[p.edu]}</dd>
       <dt>仕事</dt><dd>${esc(p.jobTitle || 'なし')}</dd>
       <dt>家族</dt><dd>${p.married ? `${p.marriageType ?? ''}結婚` : '独身'}${kids ? `・子${kids}人` : ''}</dd>
-      <dt>幸せな年</dt><dd>${best.age}歳（${best.year}年）</dd>
-      <dt>遺した財産</dt><dd>${yen(Math.max(0, p.money) * S.toReal2020(p.deathYear ?? 2020))}（今の価値）</dd>
-      <dt>長生き</dt><dd>同じ年に生まれた人の${survivalPercentile(p)}%より長く生きた</dd>
+      <dt>最良の年</dt><dd>${best.age}歳（${best.year}年）</dd>
+      <dt>遺産</dt><dd>${yen(Math.max(0, p.money) * S.toReal2020(p.deathYear ?? 2020))}</dd>
+      <dt>長生き</dt><dd>${survivalPercentile(p)}%より長く</dd>
     </dl>
   </article>`;
 }
@@ -996,8 +1012,9 @@ function recordTable(st: GameState): string {
 }
 
 function survivalSvg(st: GameState): string {
-  const W = 600;
-  const H = 300;
+  const small = isMobile();
+  const W = small ? 340 : 600;
+  const H = small ? 230 : 300;
   const pad = 30;
   const x = (a: number) => pad + (a / 105) * (W - pad * 1.5);
   const y = (v: number) => H - pad - v * (H - pad * 1.6);
@@ -1006,10 +1023,10 @@ function survivalSvg(st: GameState): string {
     const c = survivalCurve(p.birthYear, p.sex);
     const d = c.map((v, a) => `${a === 0 ? 'M' : 'L'}${x(a).toFixed(1)},${y(v).toFixed(1)}`).join('');
     const da = p.deathAge ?? 0;
-    return `<path d="${d}" fill="none" stroke="${colors[i]}" stroke-width="2.5"/><circle cx="${x(da)}" cy="${y(c[Math.min(da, 105)])}" r="5" fill="${colors[i]}"/><text x="${x(da)}" y="${y(c[Math.min(da, 105)]) + (i === 1 ? 20 : -10)}" font-size="13" text-anchor="middle" fill="${colors[i]}" font-weight="700">${da}</text>`;
+    return `<path d="${d}" fill="none" stroke="${colors[i]}" stroke-width="2.5"/><circle cx="${x(da)}" cy="${y(c[Math.min(da, 105)])}" r="5" fill="${colors[i]}"/><text x="${x(da)}" y="${y(c[Math.min(da, 105)]) + (i === 1 ? 20 : -10)}" font-size="13" text-anchor="middle" fill="${colors[i]}" font-weight="700" class="lbl">${da}</text>`;
   });
-  const grid = [0, 20, 40, 60, 80, 100].map((a) => `<line x1="${x(a)}" x2="${x(a)}" y1="${pad / 2}" y2="${H - pad}" stroke="currentColor" opacity=".12"/><text x="${x(a)}" y="${H - 10}" font-size="11" text-anchor="middle" fill="currentColor" opacity=".7">${a}歳</text>`);
-  const yg = [0, 0.5, 1].map((v) => `<text x="4" y="${y(v) + 4}" font-size="11" fill="currentColor" opacity=".7">${v * 100}%</text>`);
+  const grid = [0, 20, 40, 60, 80, 100].map((a) => `<line x1="${x(a)}" x2="${x(a)}" y1="${pad / 2}" y2="${H - pad}" stroke="currentColor" opacity=".12"/><text x="${x(a)}" y="${H - 10}" font-size="12" text-anchor="middle" fill="currentColor" opacity=".8">${a}${small ? '' : '歳'}</text>`);
+  const yg = [0, 0.5, 1].map((v) => `<text x="2" y="${y(v) + 4}" font-size="12" fill="currentColor" opacity=".8">${v * 100}%</text>`);
   const legend = st.persons.map((p, i) => `<span><i style="background:${colors[i]}"></i>${p.birthYear}年生まれ（${p.deathAge}歳で死去）</span>`).join('');
   return `<svg class="svgchart" viewBox="0 0 ${W} ${H}" role="img" aria-label="3つの生まれ年の生存曲線">${grid.join('')}${yg.join('')}${lines.join('')}</svg><div class="legend">${legend}</div>`;
 }

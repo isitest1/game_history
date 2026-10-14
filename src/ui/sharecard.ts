@@ -11,12 +11,15 @@ const ERA = [
   { bg: '#f5f7fb', ink: '#10162b', sub: '#4f5873', acc: '#3554e8', font: '"Zen Kaku Gothic New", sans-serif', label: 'フラット' },
 ];
 
-export async function drawShareCard(c: HTMLCanvasElement, st: GameState): Promise<void> {
+export async function drawShareCard(c: HTMLCanvasElement, st: GameState, portrait = false): Promise<void> {
   try {
     await (document as any).fonts?.ready;
   } catch {
     /* noop */
   }
+  if (portrait) return drawPortrait(c, st);
+  c.width = 1200;
+  c.height = 630;
   const g = c.getContext('2d');
   if (!g) return;
   const W = 1200;
@@ -72,6 +75,58 @@ export async function drawShareCard(c: HTMLCanvasElement, st: GameState): Promis
   g.fillStyle = '#8a7f6d';
   g.font = '400 14px "Zen Kaku Gothic New", sans-serif';
   g.fillText('日本の統計（人口動態統計・生命表・学校基本調査ほか）でシミュレーション。2026年より先は推計。', 48, 596);
+}
+
+/** スマホ向けの縦長（1080×1350）。3人を縦に積む */
+function drawPortrait(c: HTMLCanvasElement, st: GameState): void {
+  c.width = 1080;
+  c.height = 1350;
+  const g = c.getContext('2d');
+  if (!g) return;
+  const W = 1080;
+  g.fillStyle = '#15130f';
+  g.fillRect(0, 0, W, 1350);
+  g.textBaseline = 'top';
+  g.fillStyle = '#f3eadb';
+  g.font = '800 54px "Shippori Mincho", serif';
+  g.fillText('同じ私が、', 60, 56);
+  g.fillText('三つの時代に生まれた。', 60, 124);
+  g.font = '400 28px "Zen Kaku Gothic New", sans-serif';
+  g.fillStyle = '#bfb39f';
+  g.fillText(`${S.PREFS[st.shared.pref - 1]}・${st.shared.sex === 'male' ? '男' : '女'}　生まれ年ガチャ`, 60, 204);
+  st.persons.forEach((p, i) => {
+    const e = ERA[i];
+    const x = 60;
+    const y = 270 + i * 340;
+    const w = W - 120;
+    const h = 316;
+    g.fillStyle = e.bg;
+    roundRect(g, x, y, w, h, 24);
+    g.fill();
+    if (i === 1) {
+      g.fillStyle = 'rgba(0,0,0,0.035)';
+      for (let yy = y; yy < y + h; yy += 3) g.fillRect(x, yy, w, 1);
+    }
+    g.fillStyle = e.sub;
+    g.font = `400 26px ${e.font}`;
+    g.fillText(`${p.birthYear}–${p.deathYear ?? ''}　${p.name}`, x + 32, y + 26);
+    g.fillStyle = e.ink;
+    g.font = `800 96px ${e.font}`;
+    g.fillText(`享年${p.deathAge ?? '−'}`, x + 28, y + 64);
+    g.font = `400 28px ${e.font}`;
+    const lines = [
+      `${p.deathCause ?? ''}・${EDU_LABEL[p.edu]}・${p.jobTitle || '仕事なし'}`,
+      `生涯年収 ${yen(p.lifetimeEarningsReal)}`,
+      p.pensionStartAge !== undefined ? `年金 ${p.pensionStartAge}歳から月${yen(p.pensionMonthlyReal ?? 0)}` : '年金を受け取る前に死去',
+    ];
+    lines.forEach((t, k) => {
+      g.fillStyle = k === 0 ? e.acc : e.ink;
+      wrap(g, t, x + 32, y + 184 + k * 40, w - 64);
+    });
+  });
+  g.fillStyle = '#8a7f6d';
+  g.font = '400 22px "Zen Kaku Gothic New", sans-serif';
+  g.fillText('日本の統計でシミュレーション。2026年より先は推計。', 60, 1300);
 }
 
 function roundRect(g: CanvasRenderingContext2D, x: number, y: number, w: number, h: number, r: number): void {

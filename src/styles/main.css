@@ -2145,9 +2145,8 @@ button {
 .bars .b em {
   width: 2.2em;
 }
-.era-1 .feed .t,
-.era-1.mcard .t,
-.logwrap.era-1 h2 {
+.era-1 .feed .dec .t,
+.era-1.mcard.dec .t {
   text-decoration: underline 3px color-mix(in srgb, var(--c-acc) 55%, transparent);
   text-underline-offset: 4px;
   text-decoration-skip-ink: none;
@@ -2343,5 +2342,148 @@ button {
   }
   .col-head .yr-num {
     font-size: 24px;
+  }
+}
+
+/* ---------- 6周目の改善 ---------- */
+.svgchart .lbl {
+  paint-order: stroke;
+  stroke: var(--card);
+  stroke-width: 3px;
+}
+.mdots {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 2px;
+}
+.mdots i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--c-acc);
+  opacity: 0.3;
+  transition: opacity 0.2s;
+}
+.mdots i.on {
+  opacity: 1;
+}
+@media (max-width: 640px) {
+  .mswipe {
+    align-items: stretch;
+  }
+  .cols {
+    position: sticky;
+    top: 59px;
+    z-index: 15;
+  }
+  .cols.is-compact .scene,
+  .cols.is-compact .who .st,
+  .cols.is-compact .money,
+  .cols.is-compact .bars .b em,
+  .cols.is-compact .col-head .wa,
+  .cols.is-compact .who {
+    display: none;
+  }
+  .cols.is-compact .col {
+    padding: 6px 7px;
+  }
+  .cols.is-compact .col-head .yr-num {
+    font-size: 20px;
+  }
+  .cols.is-compact .bars {
+    gap: 3px 6px;
+    margin: 4px 0 0;
+  }
+  .cols.is-compact .tomb {
+    padding: 4px;
+  }
+  .cols.is-compact .tomb .line {
+    display: none;
+  }
+  .cols.is-compact .tomb .kyonen {
+    font-size: 16px;
+  }
+}
+@media (min-width: 900px) {
+  .feed .meta,
+  .money,
+  .bars .b {
+    font-size: 13px;
+  }
+  .record dl,
+  .wish3 > div {
+    font-size: 14px;
+  }
+  .wish3 small {
+    font-size: 13px;
+  }
+  .share .acts .btn {
+    font-size: 14px;
+    min-height: 44px;
+  }
+  .ledger .p small,
+  .ledger .k {
+    font-size: 13px;
+  }
+  .cmp > div {
+    font-size: 13px;
+  }
+  .cmp span {
+    font-size: 13px !important;
+  }
+}
+.actions {
+  display: flex;
+}
+@media (min-width: 760px) {
+  .actions {
+    justify-content: flex-end;
+  }
+  .actions .btn {
+    min-width: 200px;
+  }
+}
+.is-na {
+  background-image: repeating-linear-gradient(135deg, color-mix(in srgb, var(--ink) 4%, transparent) 0 6px, transparent 6px 12px) !important;
+  color: var(--ink) !important;
+}
+.birth-acts {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+@media (min-width: 900px) {
+  .birth-acts {
+    justify-content: center;
+  }
+}
+
+.share canvas {
+  max-height: 80dvh;
+  object-fit: contain;
+}
+.gacha {
+  padding-top: 8vh;
+}
+.ledger:empty {
+  display: none;
+}
+.gacha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.gyears:empty {
+  display: none;
+}
+@media (max-width: 640px) {
+  .cols.is-compact {
+    background: color-mix(in srgb, var(--bg) 94%, transparent);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding-bottom: 6px;
+    box-shadow: 0 6px 12px -10px rgba(0, 0, 0, 0.4);
   }
 }

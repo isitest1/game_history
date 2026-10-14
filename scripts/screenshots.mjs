@@ -17,6 +17,7 @@ const pages = [
   ['08_breath', '?demo=decision&seed=12345&age=6'],
   ['09_log', '?demo=life&seed=12345&age=30', 'log'],
   ['10_help', '', 'help'],
+  ['11_life_scrolled', '?demo=life&seed=12345&age=40', 'scroll'],
 ];
 const browser = await chromium.launch({ executablePath: process.env.CHROME || '/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell' });
 for (const [vw, vh, tag] of [[390, 844, 'sp'], [1440, 900, 'pc']]) {
@@ -31,6 +32,10 @@ for (const [vw, vh, tag] of [[390, 844, 'sp'], [1440, 900, 'pc']]) {
       await page.goto(base + q, { waitUntil: 'networkidle' });
       await page.waitForTimeout(name === '03_life' ? 1500 : 900);
       if (action === 'wait') await page.waitForTimeout(1600);
+      if (action === 'scroll') {
+        await page.evaluate(() => window.scrollTo(0, 600));
+        await page.waitForTimeout(500);
+      }
       if (action === 'log') {
         await page.click('#col1');
         await page.waitForTimeout(600);
