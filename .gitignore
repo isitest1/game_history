@@ -1,3 +1,8 @@
 .DS_Store
 node_modules/
 .env
+data/raw/
+dist/
+test-results/
+playwright-report/
+.lighthouse/
