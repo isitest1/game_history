@@ -1,0 +1,3123 @@
+[
+  {
+    "id": "d0-001",
+    "kind": "daily",
+    "ageMin": 0,
+    "ageMax": 0,
+    "when": {
+      "mother": true,
+      "father": true
+    },
+    "text": "生まれて三か月ほどのころ、母の顔を見て初めて声を出して笑った。母はその晩、帰ってきた父に何度もその話をした。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-002",
+    "kind": "daily",
+    "ageMin": 0,
+    "ageMax": 1,
+    "when": {
+      "mother": true
+    },
+    "text": "夜中に何度も泣いて目を覚ました。母（{mAge}歳）は眠い目をこすりながら、背中をとんとんとたたき続けた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-003",
+    "kind": "daily",
+    "ageMin": 1,
+    "ageMax": 1,
+    "text": "つかまり立ちから手を離して、三歩だけ歩いた。見ていた祖母が手をたたいて、台所の母を大声で呼んだ。",
+    "effects": {
+      "happiness": 2,
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-004",
+    "kind": "daily",
+    "ageMin": 1,
+    "ageMax": 2,
+    "text": "初めて口にした言葉は「まんま」だった。家じゅうの大人が、自分のことを呼んだのだと言い張った。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-005",
+    "kind": "daily",
+    "ageMin": 0,
+    "ageMax": 2,
+    "when": {
+      "mother": true
+    },
+    "text": "熱を出して一晩じゅうぐずった。母は濡らした手ぬぐいを何度も取り替え、朝まで枕元に座っていた。",
+    "effects": {
+      "health": -1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-006",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 4,
+    "when": {
+      "hasSibling": true
+    },
+    "text": "{sib}とおもちゃの取り合いになり、二人で大声で泣いた。母が来て、そのおもちゃは棚の上にしまわれてしまった。",
+    "effects": {
+      "happiness": -1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-007",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "text": "祖母の膝の上で、昔話を聞いた。鬼が出てくるところで怖くなり、祖母の袖をぎゅっとつかんで離さなかった。",
+    "effects": {
+      "happiness": 1,
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-008",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 5,
+    "text": "雨の日、窓ガラスに息を吹きかけて、指で丸や線を描いた。すぐに消えてしまうので、何度も同じことを繰り返した。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-009",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "hasSibling": true
+    },
+    "text": "夜、一人で便所に行けず、{sib}を起こしてついてきてもらった。{sib}は文句を言いながらも、廊下で待っていてくれた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-010",
+    "kind": "daily",
+    "ageMin": 1,
+    "ageMax": 3,
+    "when": {
+      "mother": true
+    },
+    "text": "転んでひざをすりむき、わんわん泣いた。母が「痛いの痛いの、飛んでいけ」と言うと、少しだけ泣きやんだ。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-011",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "when": {
+      "father": true
+    },
+    "text": "父の大きな靴をはいて、玄関を歩き回った。ぱかぱかと音がして、父は笑いながら新聞から目を上げた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-012",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "text": "道ばたでダンゴムシを見つけ、手のひらの上で丸めて遊んだ。ポケットに入れたまま忘れて、あとで母に叱られた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-013",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "text": "「大きくなったら何になりたい？」と聞かれ、迷わず「電車の運転手」と答えた。それからしばらく、誰に聞かれても同じ答えをした。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-014",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "text": "「大きくなったら何になりたい？」と聞かれ、「お菓子屋さん」と答えた。毎日お菓子が食べられると思っていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-015",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 4,
+    "when": {
+      "father": true
+    },
+    "text": "父に肩車をしてもらった。いつもより高いところから、塀の向こうの家の庭までよく見えた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-016",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "mother": true
+    },
+    "text": "母の買い物についていき、帰り道で歩けないと座り込んだ。結局、家まではずっと母の背中におぶわれていた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-017",
+    "kind": "daily",
+    "ageMin": 0,
+    "ageMax": 0,
+    "text": "生まれてひと月ほどで、お宮参りに連れていかれた。晴れ着にくるまれたまま、境内ではずっと眠っていた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-018",
+    "kind": "daily",
+    "ageMin": 1,
+    "ageMax": 1,
+    "text": "一歳の誕生日に、一升餅を背負わされた。重さに尻もちをついて泣き出し、大人たちはそれを見て笑った。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-019",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "mother": true
+    },
+    "text": "初めて自分でボタンを留めた。一つずつずれていたが、母に見せると「上手にできたね」と言われた。",
+    "effects": {
+      "happiness": 1,
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-020",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "text": "夕方の帰り道、自分の影が長くのびているのに気づいた。走っても走ってもついてくるので、何度も振り返った。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-021",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 5,
+    "when": {
+      "hasSibling": true
+    },
+    "text": "庭先で線香花火をした。火の玉がぽとりと落ちるたびに、{sib}と顔を見合わせて「あーあ」と言った。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-022",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "father": true
+    },
+    "text": "初めて海を見た。足もとの砂が波に引かれていくのが怖くて、父のズボンにしがみついたままだった。",
+    "effects": {
+      "happiness": 1,
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-023",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "urban": false
+    },
+    "text": "冬の朝、霜柱をざくざくと踏んで歩いた。靴の裏が土だらけになり、玄関で母にため息をつかれた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-024",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 4,
+    "when": {
+      "hasSibling": true
+    },
+    "text": "畳の上で昼寝をして、起きたら頬に畳の跡がついていた。{sib}に指さされて笑われ、むっとした。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-025",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "text": "祖父と散歩に出て、道ばたの草の名前をいくつも教わった。家に着くころには、ほとんど忘れていた。",
+    "effects": {
+      "knowledge": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-026",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "text": "近所の犬に吠えられてから、しばらくその家の前を通れなくなった。遠回りする道を、自分で見つけた。",
+    "effects": {
+      "happiness": -1,
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-027",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 3,
+    "text": "鏡に映った自分に話しかけていた。いつまでも返事がないので、鏡の裏側をのぞきこんだ。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-028",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "father": true
+    },
+    "text": "母が出かけた日、父が作った昼ごはんは塩辛い焼きめしだった。全部食べると、父は少しうれしそうな顔をした。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-029",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "text": "祭りの人混みで母の手を離してしまい、迷子になった。知らないおばさんに手を引かれ、泣きながら母を待った。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-030",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 5,
+    "when": {
+      "mother": true
+    },
+    "text": "ひどい風邪で三日寝込んだ。熱が下がった朝、母が作ったおかゆの上に、梅干しが一つのっていた。",
+    "effects": {
+      "health": -1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-031",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 5,
+    "text": "前歯がぐらぐらしてきて、一日じゅう舌で触っていた。抜けたら痛いのか、夜になって急に心配になった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-032",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "text": "雪が積もった朝、小さな雪だるまを作った。昼には溶けかけて、首が横に傾いていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-033",
+    "kind": "daily",
+    "ageMin": 1,
+    "ageMax": 3,
+    "text": "祖母が編んだ毛糸の帽子をかぶせられた。ちくちくするのが嫌で、何度も脱いで放り投げた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-034",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "father": true
+    },
+    "text": "夜道を歩いていると、月がずっとついてくるように見えた。父に「お月さまがついてくる」と言うと、父は「そうだな」と笑った。",
+    "effects": {
+      "knowledge": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-035",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "when": {
+      "mother": true
+    },
+    "text": "母の鏡台の口紅を、こっそり塗ってみた。はみ出した顔で出ていくと、母は叱る前に吹き出した。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-036",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 4,
+    "when": {
+      "father": true
+    },
+    "text": "夕飯のあと、父の膝に座って、あごのひげをなでた。ざらざらしていて、くすぐったかった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-037",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "text": "初めて自分の名前をひらがなで書いた。「{name}」の字の一つが、裏返しになっていた。",
+    "effects": {
+      "knowledge": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-038",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "when": {
+      "hasSibling": true
+    },
+    "text": "{sib}のまねをして、同じことを何でもした。うるさがられても、{sib}の後ろをどこまでもついて回った。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-039",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 4,
+    "when": {
+      "hasSibling": false,
+      "mother": true
+    },
+    "text": "きょうだいがいないので、母がままごとの相手をしてくれた。母はいつも、お客さんの役だった。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-040",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "hasSibling": false
+    },
+    "text": "家に子どもは自分一人だった。大人たちの話す声を、食卓の下にもぐって聞いているのが好きだった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-041",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "father": false,
+      "mother": true
+    },
+    "text": "父のいない家で、母は朝早くから夜まで働いた。夕方、近所の家で母の帰りを待つのが毎日のことだった。",
+    "effects": {
+      "happiness": -1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-042",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "when": {
+      "father": false
+    },
+    "text": "近所のおじさんが、自転車の荷台に乗せて坂を下ってくれた。風を切る音がして、背中が大きく見えた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-043",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 5,
+    "when": {
+      "mother": false
+    },
+    "text": "母のいない家で、祖母が毎朝ご飯を炊いてくれた。祖母のにぎるおにぎりは大きくて、少ししょっぱかった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-044",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "mother": false,
+      "father": true
+    },
+    "text": "父と二人の夕飯は、たいてい静かだった。父はときどき、自分の皿のおかずを一つ、こっちへ移した。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-045",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "rich": true
+    },
+    "text": "誕生日に、箱入りの大きな積み木をもらった。お城を建てては崩し、また最初から建てた。",
+    "effects": {
+      "happiness": 2,
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-046",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "poor": true,
+      "hasSibling": true
+    },
+    "text": "おもちゃは少なかったが、空き箱とひもで電車を作った。{sib}が引っぱり、自分はお客さんになった。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-047",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 5,
+    "when": {
+      "poor": true,
+      "mother": true
+    },
+    "text": "母が古いセーターをほどいて、自分の小さなセーターに編み直してくれた。袖が少し長くて、手が隠れた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-048",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "urban": false
+    },
+    "text": "田んぼのあぜ道で、カエルを追いかけた。泥だらけになって帰ると、祖母がたらいに水を張って待っていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-049",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "urban": false
+    },
+    "text": "裏山で、どんぐりを帽子いっぱいに拾った。家で並べて数えてみたが、二十より先は数えられなかった。",
+    "effects": {
+      "happiness": 1,
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-050",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "urban": false
+    },
+    "text": "夏、川の浅いところに足をつけて遊んだ。小さな魚が足の指をつつき、思わずきゃっと声をあげた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-051",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 5,
+    "when": {
+      "urban": true
+    },
+    "text": "駅のそばを通るたびに、走り抜ける電車をじっと見た。電車が来ると、母の手を強く引っぱって立ち止まった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-052",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "text": "近所の年上の子たちの遊びに、混ぜてもらった。鬼ごっこでは、いつまでたっても鬼のままだった。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-053",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "text": "かくれんぼで押し入れに隠れたまま、眠ってしまった。家じゅうで探され、夕飯の時間にやっと見つかった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-054",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "text": "七五三で、慣れない着物を着せられた。千歳飴の袋が地面につきそうで、ずっと引きずって歩いた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-055",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 5,
+    "text": "正月、親戚の家でお年玉の袋をもらった。中身はすぐに母に預けられ、袋だけが手もとに残った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-056",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "father": true
+    },
+    "text": "節分の夜、父が鬼の面をかぶって出てきた。声で父だと分かったのに、豆を投げながら泣いてしまった。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-057",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "sex": "female"
+    },
+    "text": "ひな人形の前で、ひなあられを一粒ずつ食べた。夜になると、人形の白い顔が少し怖かった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-058",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "sex": "male"
+    },
+    "text": "庭にこいのぼりが上がった。風のない日は、こいのぼりがだらりと下がっているのが残念だった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-059",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "text": "初めてはさみを使って、色紙を切った。まっすぐ切ったつもりが、ぎざぎざになっていた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-060",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 4,
+    "when": {
+      "father": true
+    },
+    "text": "父と風呂に入り、十まで数えた。数え終わらないと出してもらえないので、九のあとはいつも早口になった。",
+    "effects": {
+      "knowledge": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-061",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "when": {
+      "hasSibling": true
+    },
+    "text": "夜、布団の中で{sib}とひそひそ話をした。母に「早く寝なさい」と言われ、二人で笑いをこらえた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-062",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "mother": true
+    },
+    "text": "台所で母が卵焼きを焼く音で、目が覚めた。甘いにおいが、布団の中まで届いていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-063",
+    "kind": "daily",
+    "ageMin": 1,
+    "ageMax": 3,
+    "when": {
+      "mother": true
+    },
+    "text": "同じ絵本を、何度も読んでとせがんだ。母はそのうち、ページを見なくても読めるようになっていた。",
+    "effects": {
+      "knowledge": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-064",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "urban": false
+    },
+    "text": "庭の柿の木に登ろうとして、一段目で落ちた。尻もちをついただけだったが、祖父に「まだ早い」と言われた。",
+    "effects": {
+      "health": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-065",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "when": {
+      "hasSibling": false,
+      "mother": true
+    },
+    "text": "近所の赤ん坊を見て、自分にも弟か妹がほしいと母にねだった。母は笑うだけで、返事をしなかった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-066",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 4,
+    "text": "冬の夜、布団に湯たんぽを入れてもらった。足で押しているうちに、朝には布団の外へ転がっていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-067",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "text": "祭りの獅子舞に、頭をかまれた。大泣きしたあとで、これで丈夫に育つと言われた。",
+    "effects": {
+      "health": 1,
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-068",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "text": "祭りの夜店で、金魚すくいをした。紙がすぐに破れたが、店のおじさんが一匹おまけしてくれた。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-069",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "when": {
+      "hasSibling": true
+    },
+    "text": "泥だんごのご飯に葉っぱのおかずを添えて、{sib}とままごとをした。{sib}は本当に食べるふりをしてくれた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-070",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "text": "補助なしで自転車に乗ろうとして、何度も転んだ。最後に一人で進めたとき、後ろを振り向いてまた転んだ。",
+    "effects": {
+      "happiness": 1,
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-071",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 4,
+    "when": {
+      "mother": true,
+      "father": true
+    },
+    "text": "両親の間に寝るのが好きだった。夜中に目を覚まして、どちらかの腕に触ると、安心してまた眠った。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-072",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "text": "大事にしていたぬいぐるみの耳がとれた。祖母が針と糸で縫ってくれたが、少し曲がってついた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-073",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "when": {
+      "father": true
+    },
+    "text": "父（{fAge}歳）の仕事の道具を、勝手にさわって叱られた。夕方になると、父は何事もなかったように頭をなでた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-074",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "text": "近所の家の柱時計が鳴る音を、指を折って数えた。数え終わるより先に、鐘が鳴りやんだ。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-075",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "hasSibling": true
+    },
+    "text": "{sib}が先に食べ終えて遊びに行くのを見て、あわてて残りのご飯をかきこんだ。むせて、母に背中をたたかれた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-076",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "when": {
+      "mood": "low"
+    },
+    "text": "何がいやなのか自分でも分からず、一日じゅう機嫌が悪かった。夕方、祖母の背中におぶわれて、やっと泣きやんだ。",
+    "effects": {
+      "happiness": -1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-077",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "when": {
+      "mood": "high"
+    },
+    "text": "朝から何もかも楽しくて、家の中を走り回った。廊下ですべって転んでも、笑ったまま起き上がった。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-078",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "text": "{pref}の夏はむし暑く、昼寝の間じゅう母がうちわで扇いでくれた。起きると、枕が汗でしめっていた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d0-079",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1930,
+    "yearMax": 1941,
+    "when": {
+      "urban": true
+    },
+    "text": "路地に紙芝居屋の拍子木が鳴ると、近所の子どもたちが駆け寄った。水あめを買えない日は、いちばん後ろから見た。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：街頭紙芝居は昭和初期に登場し、テレビが普及する昭和30年代まで空き地などで演じられた（国立アートリサーチセンター所蔵資料解説、筑紫女学園大学紀要）"
+  },
+  {
+    "id": "d0-080",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1946,
+    "yearMax": 1959,
+    "when": {
+      "urban": true
+    },
+    "text": "空き地に紙芝居のおじさんが自転車でやって来た。型抜きの菓子をなめながら、話の続きを来週まで待った。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "check": "確認済み：街頭紙芝居は昭和初期に登場し、テレビが普及する昭和30年代まで空き地などで演じられた（国立アートリサーチセンター所蔵資料解説、筑紫女学園大学紀要）"
+  },
+  {
+    "id": "d0-081",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1941,
+    "yearMax": 1950,
+    "when": {
+      "mother": true
+    },
+    "text": "配給の列に、母と長い時間並んだ。やっと受け取ったのは、少しの米と芋だけだった。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "確認済み：米穀配給通帳制は1941年4月1日に六大都市で開始（江戸東京博物館所蔵の米穀通帳、食糧管理法の解説）"
+  },
+  {
+    "id": "d0-082",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 5,
+    "yearMin": 1943,
+    "yearMax": 1949,
+    "when": {
+      "hasSibling": true
+    },
+    "text": "おやつは、ふかしたさつまいもだった。{sib}と半分に分けると、どちらが大きいかで言い合いになった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-083",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1944,
+    "yearMax": 1946,
+    "when": {
+      "urban": true
+    },
+    "text": "親戚を頼って、田舎の家へ移った。広い土間は夜になると暗く、柱時計の音がやけに大きく聞こえた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "確認済み：縁故疎開は1944年3月に閣議決定、学童集団疎開より先行し人数も多かった（新潟市・横浜市の資料）"
+  },
+  {
+    "id": "d0-084",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1944,
+    "yearMax": 1946,
+    "when": {
+      "urban": true
+    },
+    "text": "移った先の家で、いとこたちとにわとりの卵を探した。温かい卵を手のひらにのせると、少し誇らしかった。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：縁故疎開は1944年3月に閣議決定、学童集団疎開より先行し人数も多かった（新潟市・横浜市の資料）"
+  },
+  {
+    "id": "d0-085",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1944,
+    "yearMax": 1946,
+    "when": {
+      "urban": true,
+      "mother": true
+    },
+    "text": "田舎の家で、母は朝から畑を手伝った。自分は縁側に座り、母の手ぬぐいが畑の向こうで動くのを見ていた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：縁故疎開は1944年3月に閣議決定、学童集団疎開より先行し人数も多かった（新潟市・横浜市の資料）"
+  },
+  {
+    "id": "d0-086",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1942,
+    "yearMax": 1945,
+    "text": "夜は灯りがもれないように、電灯に黒い布がかけられた。薄暗い部屋では、母の顔がいつもより遠くに見えた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-087",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1945,
+    "yearMax": 1950,
+    "when": {
+      "mother": true
+    },
+    "text": "母が着物をふろしきに包んで農家へ出かけ、米と替えてきた。その晩の白いご飯を、ゆっくりかんで食べた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-088",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1930,
+    "yearMax": 1940,
+    "when": {
+      "urban": true
+    },
+    "text": "縁日の夜店で、母に薄荷のあめを一つ買ってもらった。カーバイドのにおいと人の声で、胸がどきどきした。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-089",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 5,
+    "yearMin": 1930,
+    "yearMax": 1955,
+    "text": "冬の夜、火鉢のまわりに家族が集まった。祖母が網に餅をのせると、ぷうっとふくらむのをじっと見ていた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-090",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1930,
+    "yearMax": 1955,
+    "when": {
+      "urban": false
+    },
+    "text": "井戸のつるべで水をくむ母のそばで、桶の中で揺れる水を見ていた。夏の井戸水は、手が痛いほど冷たかった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-091",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1930,
+    "yearMax": 1950,
+    "text": "近所の兄さんたちのめんこ遊びを、しゃがんで見ていた。一枚もらうと、宝物のように空き缶にしまった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-092",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1930,
+    "yearMax": 1955,
+    "when": {
+      "sex": "female"
+    },
+    "text": "祖母にお手玉を教わった。中の小豆がしゃりしゃりと鳴り、二つ目を投げるとすぐに落とした。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-093",
+    "kind": "daily",
+    "ageMin": 0,
+    "ageMax": 1,
+    "yearMin": 1930,
+    "yearMax": 1955,
+    "when": {
+      "mother": true
+    },
+    "text": "母は自分をおぶったまま、たらいと洗濯板で洗濯をした。背中の上でごしごしという音を聞きながら、眠ってしまった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：1960〜70年に電気冷蔵庫・電気洗濯機などが急速に普及（内閣府「消費動向調査」をもとにした特許庁審議会資料・教材資料）"
+  },
+  {
+    "id": "d0-094",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1930,
+    "yearMax": 1955,
+    "text": "台所のかまどで、母が薪をくべてご飯を炊いた。火吹き竹の音を聞きながら、土間にしゃがんで炊けるのを待った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-095",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1946,
+    "yearMax": 1950,
+    "when": {
+      "urban": true
+    },
+    "text": "焼け跡の残る町の空き地で、近所の子どもたちと石けりをした。夕方になると、どこかの母親が子を呼ぶ声がした。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-096",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1944,
+    "yearMax": 1949,
+    "text": "配給のパンは黒っぽくて固く、口の中でいつまでもぼそぼそしていた。それでも残さず食べた。",
+    "effects": {
+      "health": -1
+    },
+    "weight": 1,
+    "check": "確認済み：米穀配給通帳制は1941年4月1日に六大都市で開始（江戸東京博物館所蔵の米穀通帳、食糧管理法の解説）"
+  },
+  {
+    "id": "d0-097",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 5,
+    "yearMin": 1930,
+    "yearMax": 1955,
+    "when": {
+      "urban": false
+    },
+    "text": "夜、いろりのそばで、祖父がわらで縄をなうのを見ていた。手の中からするすると縄が伸びていくのが不思議だった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-098",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1930,
+    "yearMax": 1940,
+    "when": {
+      "rich": true
+    },
+    "text": "誕生日に、ブリキの自動車を買ってもらった。ぜんまいを巻いて走らせると、畳のへりで何度もひっくり返った。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-099",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1944,
+    "yearMax": 1950,
+    "when": {
+      "poor": true
+    },
+    "text": "穴のあいた足袋を、母が何度も繕ってくれた。つぎの布の色が左右で違うのも気にせず、はいて外へ出た。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-100",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1930,
+    "yearMax": 1945,
+    "text": "ラジオの前に大人たちが集まると、子どもは静かにしていなければならなかった。大人たちの真剣な顔を、じっと見ていた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-101",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1930,
+    "yearMax": 1955,
+    "when": {
+      "urban": false
+    },
+    "text": "田植えの日、大人たちが総出で田んぼに入った。あぜに座って、運ばれてきたおにぎりを一緒に食べた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-102",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1930,
+    "yearMax": 1960,
+    "text": "祖父が小刀で竹を削って、竹とんぼを作ってくれた。勢いよく回すと、屋根の高さまで上がった。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-103",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1946,
+    "yearMax": 1952,
+    "when": {
+      "father": true
+    },
+    "text": "夜、停電してろうそくをともした。父が壁に手の影を映して、犬やきつねを作ってくれた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-104",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1930,
+    "yearMax": 1960,
+    "when": {
+      "urban": false
+    },
+    "text": "年に一度、薬売りのおじさんが大きな荷物を背負ってやって来た。おまけの紙風船をもらい、一日じゅうついて遊んだ。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-105",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1942,
+    "yearMax": 1950,
+    "text": "甘いものがなく、母が干し柿を少しずつ分けてくれた。一切れを、長い時間かけて口の中で溶かした。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-106",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1930,
+    "yearMax": 1955,
+    "text": "下駄で走って、鼻緒が切れた。片足でけんけんして帰ると、祖母が手ぬぐいを裂いてすげ替えてくれた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-107",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1930,
+    "yearMax": 1955,
+    "when": {
+      "urban": true
+    },
+    "text": "朝、納豆売りの声が路地を通っていった。母に小銭を渡されて、器を持って追いかけた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-108",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 4,
+    "yearMin": 1930,
+    "yearMax": 1955,
+    "text": "夏の夜、蚊帳の中で寝た。緑の網ごしに見る電灯がぼんやりしていて、海の底にいるような気がした。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-109",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1946,
+    "yearMax": 1950,
+    "when": {
+      "poor": true,
+      "hasSibling": true
+    },
+    "text": "{sib}と二人で、道に落ちている落ち穂を拾い集めた。母はそれを干して、少しだけご飯に混ぜた。",
+    "effects": {
+      "happiness": -1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-110",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1930,
+    "yearMax": 1950,
+    "when": {
+      "rich": true,
+      "urban": true
+    },
+    "text": "母に連れられて、百貨店の食堂へ行った。旗の立ったお子様ランチが運ばれてきて、しばらく手をつけられなかった。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-111",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 5,
+    "yearMin": 1930,
+    "yearMax": 1975,
+    "when": {
+      "urban": true,
+      "father": true
+    },
+    "text": "父に連れられて銭湯へ行った。湯船が熱くて足しか入れられず、帰りに父が瓶のコーヒー牛乳を買ってくれた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-112",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1960,
+    "yearMax": 1964,
+    "when": {
+      "urban": true
+    },
+    "text": "路地に紙芝居のおじさんが来ると、子どもたちが走って集まった。家にテレビが来てから、行く回数が減った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：街頭紙芝居は昭和初期に登場し、テレビが普及する昭和30年代まで空き地などで演じられた（国立アートリサーチセンター所蔵資料解説、筑紫女学園大学紀要）"
+  },
+  {
+    "id": "d0-113",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 5,
+    "yearMin": 1960,
+    "yearMax": 1970,
+    "text": "夜、茶の間の白黒テレビの前に、家族が並んで座った。番組が終わると、画面の真ん中に白い点が残って消えた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：白黒テレビの普及率は1962年に80%を超えた（平成4年版通信白書、経済企画庁「消費動向調査」）"
+  },
+  {
+    "id": "d0-114",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1960,
+    "yearMax": 1963,
+    "when": {
+      "poor": true
+    },
+    "text": "家にはまだテレビがなく、近所の家に見せてもらいに行った。人の家の畳の上で、ひざを抱えて見た。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：白黒テレビの普及率は1962年に80%を超えた（平成4年版通信白書、経済企画庁「消費動向調査」）"
+  },
+  {
+    "id": "d0-115",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 5,
+    "yearMin": 1960,
+    "yearMax": 2010,
+    "text": "朝、テレビの『おかあさんといっしょ』に合わせて体を動かした。画面の中の子どもたちと同じように、手をあげた。",
+    "effects": {
+      "happiness": 1,
+      "health": 1
+    },
+    "weight": 1,
+    "check": "確認済み：『おかあさんといっしょ』は1959年10月5日にNHKで放送開始"
+  },
+  {
+    "id": "d0-116",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1971,
+    "yearMax": 1980,
+    "when": {
+      "hasSibling": true
+    },
+    "text": "仮面ライダーの変身のまねを、{sib}と毎日やった。どちらがライダーの役をするかで、いつももめた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：『仮面ライダー』は1971年4月3日放送開始"
+  },
+  {
+    "id": "d0-117",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1971,
+    "yearMax": 1973,
+    "when": {
+      "rich": true
+    },
+    "text": "変身ベルトを買ってもらい、腰に巻いて電池が切れるまで風車を回した。夜も枕もとに置いて寝た。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "check": "確認済み：ポピーの「光る!回る!変身ベルト」は1971年発売、2年間で380万個（玩具系の記事。一次資料は未確認）"
+  },
+  {
+    "id": "d0-118",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1979,
+    "yearMax": 2010,
+    "when": {
+      "mother": true
+    },
+    "text": "夕方、テレビでドラえもんを見た。ひみつ道具が出てくるたびに、あれがほしいと母に言った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：アニメ『ドラえもん』（テレビ朝日）は1979年4月2日放送開始（nippon.com）"
+  },
+  {
+    "id": "d0-119",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 5,
+    "yearMin": 1960,
+    "yearMax": 1985,
+    "when": {
+      "urban": true
+    },
+    "text": "団地の四階に住んでいた。階段を声に出して数えながら上り、玄関の前に着くといつも同じ数で止まった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "確認済み：日本住宅公団は1955年7月25日発足、団地を大量に建設（UR都市機構の資料）"
+  },
+  {
+    "id": "d0-120",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1960,
+    "yearMax": 1985,
+    "when": {
+      "urban": true
+    },
+    "text": "団地の砂場で、同じ棟の子どもたちと山を作った。夕方になると、ベランダから次々と母親の呼ぶ声がした。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：日本住宅公団は1955年7月25日発足、団地を大量に建設（UR都市機構の資料）"
+  },
+  {
+    "id": "d0-121",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1965,
+    "yearMax": 2010,
+    "when": {
+      "mother": true
+    },
+    "text": "幼稚園の送迎バスに乗るとき、毎朝母に手を振った。窓から見える母の姿が、角を曲がると見えなくなった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-122",
+    "kind": "daily",
+    "ageMin": 1,
+    "ageMax": 4,
+    "yearMin": 1960,
+    "yearMax": 1970,
+    "when": {
+      "mother": true
+    },
+    "text": "家に電気冷蔵庫がやって来た。母は何度も扉を開け閉めしては、冷えた麦茶をうれしそうにコップに注いだ。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：1960〜70年に電気冷蔵庫・電気洗濯機などが急速に普及（内閣府「消費動向調査」をもとにした特許庁審議会資料・教材資料）"
+  },
+  {
+    "id": "d0-123",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 4,
+    "yearMin": 1960,
+    "yearMax": 1970,
+    "when": {
+      "mother": true
+    },
+    "text": "家に電気洗濯機が来た。ぐるぐる回る水を、母と並んでのぞきこみ、ローラーで絞られた服が平たく出てくるのに驚いた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：1960〜70年に電気冷蔵庫・電気洗濯機などが急速に普及（内閣府「消費動向調査」をもとにした特許庁審議会資料・教材資料）"
+  },
+  {
+    "id": "d0-124",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1960,
+    "yearMax": 1980,
+    "text": "十円玉をにぎって、近所の駄菓子屋へ行った。ガラスのふたの瓶を一つずつのぞいて、長いこと迷った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-125",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1960,
+    "yearMax": 1975,
+    "when": {
+      "urban": true
+    },
+    "text": "空き地に積まれた土管の中にもぐりこんだ。「おーい」と叫ぶと、声がわんわんと響いて返ってきた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-126",
+    "kind": "daily",
+    "ageMin": 0,
+    "ageMax": 1,
+    "yearMin": 1960,
+    "yearMax": 1980,
+    "when": {
+      "mother": true
+    },
+    "text": "物干しざおに、布おむつがずらりと並んだ。母は毎日それを洗い、雨の日は部屋じゅうにつるして乾かした。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：パンパースの日本発売は1977年、ムーニーは1981年、1980年代半ばに高吸水性の紙おむつで一気に普及（All About ほか）"
+  },
+  {
+    "id": "d0-127",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1960,
+    "yearMax": 1980,
+    "when": {
+      "urban": false
+    },
+    "text": "祖父の耕運機の荷台に乗せてもらった。でこぼこの道でお尻が跳ねるたびに、声をあげて笑った。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-128",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1930,
+    "yearMax": 1970,
+    "when": {
+      "father": true
+    },
+    "text": "ちゃぶ台を囲んで、家族そろって夕飯を食べた。父のおかずだけ一品多いのが、少しうらやましかった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-129",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1966,
+    "yearMax": 1985,
+    "when": {
+      "father": true
+    },
+    "text": "父が買ったばかりの車で、家族そろって遠出をした。窓から手を出そうとして、母にあわてて止められた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-130",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 5,
+    "yearMin": 1960,
+    "yearMax": 1990,
+    "text": "冬、石油ストーブの上でやかんがしゅんしゅんと鳴っていた。そばに寄りすぎて、母に何度も引き戻された。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-131",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1960,
+    "yearMax": 1985,
+    "text": "黒電話が鳴ると、走っていって受話器を取った。「もしもし」と言ったあと、何を話していいか分からなくなった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-132",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1965,
+    "yearMax": 2010,
+    "when": {
+      "mother": true
+    },
+    "text": "スーパーマーケットで、お菓子を一つだけ選んでいいと言われた。棚の前で長いこと迷って、母を待たせた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-133",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1930,
+    "yearMax": 1975,
+    "when": {
+      "urban": true
+    },
+    "text": "夏、母に連れられて田舎の祖母の家へ行った。蚊帳の中で眠り、朝はにわとりの声で目が覚めた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-134",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1960,
+    "yearMax": 1985,
+    "when": {
+      "father": true,
+      "hasSibling": true
+    },
+    "text": "クリスマスの夜、父がバタークリームのケーキを買って帰ってきた。砂糖のバラの飾りを、{sib}と取り合った。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-135",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 4,
+    "yearMin": 1955,
+    "yearMax": 1980,
+    "when": {
+      "poor": true,
+      "mother": true
+    },
+    "text": "母は夜遅くまで、内職の造花を作っていた。自分もそばで花びらを並べ、手伝っているつもりになっていた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-136",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1966,
+    "yearMax": 1985,
+    "text": "ソフトビニールの怪獣の人形を、布団の上で戦わせた。しっぽがちぎれかけても、捨てさせなかった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-137",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1955,
+    "yearMax": 1990,
+    "when": {
+      "sex": "female"
+    },
+    "text": "近所の年上の女の子たちに混ざって、ゴム跳びをした。足が届かず、ゴムを持つ役ばかりだった。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-138",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1960,
+    "yearMax": 1975,
+    "when": {
+      "urban": true
+    },
+    "text": "豆腐屋のラッパの音が聞こえると、母に言われて鍋を持って走った。帰り道は、鍋をずっと両手で抱えていた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-139",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1960,
+    "yearMax": 1980,
+    "when": {
+      "urban": false
+    },
+    "text": "夏の夕方、庭先にたらいを出して行水をした。風呂から上がると、母がシッカロールを首にはたいてくれた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-140",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1965,
+    "yearMax": 1985,
+    "text": "近所の写真館で、家族そろって写真を撮った。「動かないで」と言われ、まばたきを我慢して目が痛くなった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-141",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1960,
+    "yearMax": 1980,
+    "when": {
+      "urban": true
+    },
+    "text": "団地の集会所で、子ども会のクリスマス会があった。紙の三角帽子をかぶり、袋入りのお菓子をもらった。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：日本住宅公団は1955年7月25日発足、団地を大量に建設（UR都市機構の資料）"
+  },
+  {
+    "id": "d0-142",
+    "kind": "daily",
+    "ageMin": 1,
+    "ageMax": 3,
+    "yearMin": 1960,
+    "yearMax": 1980,
+    "when": {
+      "mother": true
+    },
+    "text": "母は自分を乗せた乳母車を押して、毎日市場へ買い物に行った。魚屋の威勢のいい声に、目を丸くしていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-143",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1970,
+    "yearMax": 1985,
+    "text": "家族で遊園地へ行き、初めて観覧車に乗った。てっぺんに近づくと急に怖くなり、ずっと床を見ていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-144",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 5,
+    "yearMin": 1960,
+    "yearMax": 1980,
+    "when": {
+      "hasSibling": false
+    },
+    "text": "一人っ子で、昼間はよく一人で積み木をしていた。テレビの音を小さくつけたまま、自分だけの町を作った。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-145",
+    "kind": "daily",
+    "ageMin": 0,
+    "ageMax": 2,
+    "yearMin": 1985,
+    "yearMax": 2010,
+    "when": {
+      "mother": true
+    },
+    "text": "夜中、母は手早く紙おむつを替えた。テープをはがすびりっという音が、静かな部屋に小さく響いた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：パンパースの日本発売は1977年、ムーニーは1981年、1980年代半ばに高吸水性の紙おむつで一気に普及（All About ほか）"
+  },
+  {
+    "id": "d0-146",
+    "kind": "daily",
+    "ageMin": 1,
+    "ageMax": 5,
+    "yearMin": 1990,
+    "yearMax": 2005,
+    "text": "アンパンマンのビデオを、テープがのびるほど繰り返し見た。顔が取れる場面になると、毎回息をのんだ。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：アニメ『それいけ!アンパンマン』は1988年10月3日放送開始。ビデオで繰り返し見たことは未確認"
+  },
+  {
+    "id": "d0-147",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1997,
+    "yearMax": 2010,
+    "when": {
+      "hasSibling": true
+    },
+    "text": "{sib}が見ているポケモンのアニメを、横で一緒に見た。ピカチュウの鳴き声を、一日に何度もまねした。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：アニメ『ポケットモンスター』は1997年4月1日テレビ東京系で放送開始"
+  },
+  {
+    "id": "d0-148",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1990,
+    "yearMax": 2003,
+    "when": {
+      "hasSibling": true
+    },
+    "text": "{sib}のゲームボーイを、横からのぞきこんだ。貸してもらえたのは、電池が切れかけたときだけだった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：ゲームボーイは1989年4月21日に任天堂から発売（ファミ通ほか）"
+  },
+  {
+    "id": "d0-149",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1997,
+    "yearMax": 1999,
+    "text": "親戚のお姉さんのたまごっちを預かった。ピーピー鳴るたびに、あわてて母のところへ持っていった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：初代「たまごっち」は1996年11月23日にバンダイから発売"
+  },
+  {
+    "id": "d0-150",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1990,
+    "yearMax": 1995,
+    "when": {
+      "hasSibling": true
+    },
+    "text": "{sib}のファミコンのコントローラーを持たせてもらった。何もできないうちに、画面の中ですぐにやられた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：ファミリーコンピュータは1983年7月15日に任天堂から発売（ファミ通ほか）"
+  },
+  {
+    "id": "d0-151",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1990,
+    "yearMax": 2010,
+    "when": {
+      "mother": true
+    },
+    "text": "保育園のお迎えは、いつも最後のほうだった。母が門に走ってくるのが見えると、積み木を放り出して駆け出した。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-152",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1990,
+    "yearMax": 2010,
+    "when": {
+      "urban": true
+    },
+    "text": "マンションの下の公園で、すべり台を何十回もすべった。母はベンチで、ほかの母親たちと話しこんでいた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-153",
+    "kind": "daily",
+    "ageMin": 1,
+    "ageMax": 4,
+    "yearMin": 1990,
+    "yearMax": 2010,
+    "when": {
+      "father": true
+    },
+    "text": "父がビデオカメラを向けると、急に恥ずかしくなって母の後ろに隠れた。あとで見ると、自分の足しか映っていなかった。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-154",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1975,
+    "yearMax": 2010,
+    "text": "家族でファミリーレストランへ行き、旗の立ったお子様ランチを食べた。おまけのおもちゃを選ぶのに時間がかかった。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-155",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1985,
+    "yearMax": 2010,
+    "when": {
+      "father": true
+    },
+    "text": "夜、父とコンビニへ行き、アイスを一つ買ってもらった。明るい店の中は、夜なのに昼のようだった。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-156",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 4,
+    "yearMin": 2000,
+    "yearMax": 2010,
+    "when": {
+      "mother": true
+    },
+    "text": "母の携帯電話のボタンを勝手に押して、知らない番号にかけてしまった。母は電話の向こうに何度も謝っていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-157",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1990,
+    "yearMax": 2010,
+    "when": {
+      "urban": false
+    },
+    "text": "週末、車で郊外の大きなショッピングセンターへ行った。広すぎて、母のカートから手が離せなかった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-158",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 2000,
+    "yearMax": 2010,
+    "when": {
+      "father": true
+    },
+    "text": "父のデジタルカメラの小さな画面に、さっき撮った自分の顔が映った。もう一回とせがんで、何枚も撮らせた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-159",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1985,
+    "yearMax": 2010,
+    "text": "電子レンジが「チン」と鳴ると、台所へ走っていった。中から出てくるのは、たいてい昨日の残りのおかずだった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-160",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1975,
+    "yearMax": 2010,
+    "when": {
+      "rich": true
+    },
+    "text": "週に一度、スイミングスクールに通った。顔を水につけるのが怖くて、最初の日は泣きながら帰った。",
+    "effects": {
+      "health": 1,
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-161",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1990,
+    "yearMax": 2010,
+    "when": {
+      "poor": true,
+      "mother": true
+    },
+    "text": "母の仕事が終わるまで、アパートの部屋でテレビを見て待った。鍵の回る音がすると、玄関まで走った。",
+    "effects": {
+      "happiness": -1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-162",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1970,
+    "yearMax": 2010,
+    "when": {
+      "urban": true
+    },
+    "text": "お盆に、新幹線で祖父母の家へ帰った。トンネルに入るたびに、窓に映る自分の顔をじっと見ていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-163",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1980,
+    "yearMax": 2010,
+    "when": {
+      "father": true
+    },
+    "text": "回転ずしで、流れてくるプリンばかり目で追っていた。父に「すしも食べなさい」と言われた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-164",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1990,
+    "yearMax": 2010,
+    "when": {
+      "mother": true
+    },
+    "text": "スーパーの出口のガチャガチャの前で、足が止まった。母に百円玉をもらって回すと、ほしくない色が出てきた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-165",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1995,
+    "yearMax": 2010,
+    "when": {
+      "father": true
+    },
+    "text": "父のパソコンの前に座らせてもらい、マウスで絵を描いた。画面の線は、ぐにゃぐにゃに曲がった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-166",
+    "kind": "daily",
+    "ageMin": 1,
+    "ageMax": 3,
+    "yearMin": 1990,
+    "yearMax": 2010,
+    "when": {
+      "mother": true
+    },
+    "text": "ベビーカーに乗せられて、母と駅前まで出かけた。エレベーターの扉が閉まるたびに、手をたたいて喜んだ。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-167",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1990,
+    "yearMax": 2010,
+    "when": {
+      "sex": "female"
+    },
+    "text": "シール帳に、キラキラしたシールを一枚ずつ貼った。もったいなくて、いちばん好きなシールだけは貼れなかった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-168",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1990,
+    "yearMax": 2010,
+    "text": "保育園の昼寝の時間、なかなか眠れずに天井のしみを数えた。気がつくと、先生に肩をたたかれて起こされていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-169",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1990,
+    "yearMax": 2010,
+    "when": {
+      "urban": true
+    },
+    "text": "母と自転車で保育園へ通った。後ろの子ども用の座席から、母の背中ごしに朝の商店街を見ていた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-170",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1990,
+    "yearMax": 2010,
+    "when": {
+      "father": true
+    },
+    "text": "日曜の朝、戦隊もののヒーロー番組を見ながら、父と並んで決めのポーズをとった。父のほうが本気だった。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-171",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1995,
+    "yearMax": 2010,
+    "when": {
+      "hasSibling": false,
+      "mother": true,
+      "father": true
+    },
+    "text": "一人っ子なので、休みの日はいつも両親と三人で出かけた。帰りの車の中で、いつも途中で眠ってしまった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-172",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1990,
+    "yearMax": 2010,
+    "when": {
+      "urban": false
+    },
+    "text": "祖父の軽トラックの助手席に乗って、田んぼを見回りに行った。カーラジオの演歌を聞きながら、窓の外の稲を見ていた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-173",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1990,
+    "yearMax": 2010,
+    "text": "幼稚園のお遊戯会で、木の役をした。せりふはなかったが、両手をあげたまま最後まで動かなかった。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-174",
+    "kind": "daily",
+    "ageMin": 2,
+    "ageMax": 4,
+    "yearMin": 1990,
+    "yearMax": 2010,
+    "when": {
+      "mother": true
+    },
+    "text": "母と一緒に、近所の子育て支援の広場へ通った。知らない子のおもちゃに手を伸ばして、母があわてて謝った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d0-175",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1990,
+    "yearMax": 2010,
+    "when": {
+      "mother": true,
+      "father": true
+    },
+    "text": "休日の朝、父と母が並んで台所に立っていた。パンケーキの焼けるにおいで、布団から飛び起きた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "t0-001",
+    "kind": "think",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "mother": true
+    },
+    "text": "「おかあさん、まだかな」",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t0-002",
+    "kind": "think",
+    "ageMin": 4,
+    "ageMax": 5,
+    "when": {
+      "father": true
+    },
+    "text": "「おとうさんのくつ、おおきいなあ」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t0-003",
+    "kind": "think",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "hasSibling": true
+    },
+    "text": "「{sib}ばっかり、ずるい」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t0-004",
+    "kind": "think",
+    "ageMin": 4,
+    "ageMax": 5,
+    "text": "「くらいところなんて、こわくないもん」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t0-005",
+    "kind": "think",
+    "ageMin": 4,
+    "ageMax": 5,
+    "text": "「おおきくなったら、でんしゃのうんてんしゅになるんだ」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t0-006",
+    "kind": "think",
+    "ageMin": 3,
+    "ageMax": 5,
+    "text": "「おばあちゃん、そのおはなし、もういっかい」",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t0-007",
+    "kind": "think",
+    "ageMin": 4,
+    "ageMax": 5,
+    "text": "「あしたも、いいおてんきだといいな」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t0-008",
+    "kind": "think",
+    "ageMin": 4,
+    "ageMax": 5,
+    "text": "「ないてないもん。めにごみがはいっただけだもん」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t0-009",
+    "kind": "think",
+    "ageMin": 4,
+    "ageMax": 5,
+    "text": "「どうしてそらは、あおいんだろう」",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t0-010",
+    "kind": "think",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1942,
+    "yearMax": 1950,
+    "text": "「おなか、すいたなあ」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t0-011",
+    "kind": "think",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1943,
+    "yearMax": 1949,
+    "text": "「おいもじゃなくて、しろいごはんがたべたいな」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t0-012",
+    "kind": "think",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1944,
+    "yearMax": 1946,
+    "when": {
+      "urban": true
+    },
+    "text": "「まえのおうちに、かえりたいな」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "確認済み：縁故疎開は1944年3月に閣議決定、学童集団疎開より先行し人数も多かった（新潟市・横浜市の資料）"
+  },
+  {
+    "id": "t0-013",
+    "kind": "think",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1960,
+    "yearMax": 1970,
+    "text": "「テレビのなかに、ちいさいひとがはいってるのかな」",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "確認済み：白黒テレビの普及率は1962年に80%を超えた（平成4年版通信白書、経済企画庁「消費動向調査」）"
+  },
+  {
+    "id": "t0-014",
+    "kind": "think",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1971,
+    "yearMax": 1980,
+    "text": "「ぼくも、ほんとうにへんしんできたらいいのに」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：『仮面ライダー』は1971年4月3日放送開始"
+  },
+  {
+    "id": "t0-015",
+    "kind": "think",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1979,
+    "yearMax": 2010,
+    "text": "「ドラえもんが、うちにもきてくれたらいいのに」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：アニメ『ドラえもん』（テレビ朝日）は1979年4月2日放送開始（nippon.com）"
+  },
+  {
+    "id": "t0-016",
+    "kind": "think",
+    "ageMin": 2,
+    "ageMax": 5,
+    "yearMin": 1988,
+    "yearMax": 2010,
+    "text": "「アンパンマン、がんばれ」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：アニメ『それいけ!アンパンマン』は1988年10月3日放送開始"
+  },
+  {
+    "id": "t0-017",
+    "kind": "think",
+    "ageMin": 4,
+    "ageMax": 5,
+    "yearMin": 1997,
+    "yearMax": 2010,
+    "text": "「ピカチュウ、ほんとうにいたらいいのにな」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：アニメ『ポケットモンスター』は1997年4月1日テレビ東京系で放送開始"
+  },
+  {
+    "id": "t0-018",
+    "kind": "think",
+    "ageMin": 3,
+    "ageMax": 5,
+    "yearMin": 1990,
+    "yearMax": 2010,
+    "text": "「きょうは、ほいくえんにいきたくないな」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t0-019",
+    "kind": "think",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "mother": true
+    },
+    "text": "「おかあさん、はやくむかえにきて」",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t0-020",
+    "kind": "think",
+    "ageMin": 4,
+    "ageMax": 5,
+    "when": {
+      "hasSibling": false
+    },
+    "text": "「ひとりで、つまんないな。おとうとがほしいな」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t0-021",
+    "kind": "think",
+    "ageMin": 4,
+    "ageMax": 5,
+    "when": {
+      "father": false
+    },
+    "text": "「よそのうちには、おとうさんがいるのにな」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t0-022",
+    "kind": "think",
+    "ageMin": 3,
+    "ageMax": 5,
+    "text": "「ゆき、もっともっとふればいいのに」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t0-023",
+    "kind": "think",
+    "ageMin": 3,
+    "ageMax": 5,
+    "text": "「ねむくないもん。まだあそぶもん」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t0-024",
+    "kind": "think",
+    "ageMin": 4,
+    "ageMax": 5,
+    "text": "「あのいぬ、きょうもほえるかな」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t0-025",
+    "kind": "think",
+    "ageMin": 3,
+    "ageMax": 5,
+    "text": "「きょうのおやつ、なにかな」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t0-026",
+    "kind": "think",
+    "ageMin": 4,
+    "ageMax": 5,
+    "text": "「おまつり、まだおわらないで」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t0-027",
+    "kind": "think",
+    "ageMin": 4,
+    "ageMax": 5,
+    "text": "「おほしさまって、いくつあるんだろう」",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t0-028",
+    "kind": "think",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "mother": true
+    },
+    "text": "「おかあさん、おこってる。どうしよう」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t0-029",
+    "kind": "think",
+    "ageMin": 3,
+    "ageMax": 5,
+    "text": "「じぶんでできるもん。てつだわないで」",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t0-030",
+    "kind": "think",
+    "ageMin": 4,
+    "ageMax": 5,
+    "text": "「おばけなんて、ほんとうはいないよね」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t0-031",
+    "kind": "think",
+    "ageMin": 4,
+    "ageMax": 5,
+    "text": "「ようちえん、きょうはたのしかったな」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t0-032",
+    "kind": "think",
+    "ageMin": 4,
+    "ageMax": 5,
+    "text": "「これはぼくのたからもの。だれにもあげない」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t0-033",
+    "kind": "think",
+    "ageMin": 4,
+    "ageMax": 5,
+    "when": {
+      "father": true
+    },
+    "text": "「おとうさん、きょうははやくかえってくるかな」",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t0-034",
+    "kind": "think",
+    "ageMin": 3,
+    "ageMax": 5,
+    "text": "「あめ、やまないかな。おそとであそびたいな」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t0-035",
+    "kind": "think",
+    "ageMin": 4,
+    "ageMax": 5,
+    "when": {
+      "mother": true
+    },
+    "text": "「おかあさんのごはんが、いちばんおいしい」",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t0-036",
+    "kind": "think",
+    "ageMin": 4,
+    "ageMax": 5,
+    "when": {
+      "hasSibling": true
+    },
+    "text": "「{sib}みたいに、はやくおおきくなりたいな」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t0-037",
+    "kind": "think",
+    "ageMin": 4,
+    "ageMax": 5,
+    "when": {
+      "mother": false
+    },
+    "text": "「おかあさんって、どんなにおいがするのかな」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t0-038",
+    "kind": "think",
+    "ageMin": 4,
+    "ageMax": 5,
+    "when": {
+      "mood": "low"
+    },
+    "text": "「だれも、あそんでくれない」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t0-039",
+    "kind": "think",
+    "ageMin": 4,
+    "ageMax": 5,
+    "text": "「あしたになったら、もうひとつおおきくなってるかな」",
+    "effects": {},
+    "weight": 1
+  }
+]

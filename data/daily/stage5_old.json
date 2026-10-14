@@ -1,0 +1,4033 @@
+[
+  {
+    "id": "d5-001",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 67,
+    "when": {
+      "retired": true,
+      "married": true
+    },
+    "text": "退職して最初の月曜日、いつもの時間に目が覚めた。{spouse}に「もう少し寝ていたら」と言われ、布団に戻った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-002",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 68,
+    "when": {
+      "retired": true,
+      "sex": "male"
+    },
+    "text": "引き出しを片づけていたら、使いかけの名刺の箱が出てきた。しばらく眺めてから、資源ごみの袋に入れた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-003",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 70,
+    "when": {
+      "retired": true
+    },
+    "text": "平日の昼にスーパーへ行き、店がすいていることに驚いた。値引きのシールが貼られる時間も覚えた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-004",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 72,
+    "when": {
+      "retired": true,
+      "married": true
+    },
+    "text": "{spouse}と二人で昼ごはんを食べる日が続いた。三日目に、昼はそれぞれ好きにしようと決めた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-005",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 75,
+    "when": {
+      "working": true
+    },
+    "text": "六十五歳を過ぎても、週に三日の仕事を続けた。若い同僚に、昔のやり方を聞かれることがあった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-006",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 78,
+    "when": {
+      "working": true
+    },
+    "text": "朝、駅前の駐輪場の整理の仕事に出た。自転車を一台ずつそろえていくと、不思議と気分がよかった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-007",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 75,
+    "when": {
+      "retired": true,
+      "poor": true
+    },
+    "text": "近所の公園の草取りを請け負った。帰りに、もらったお金で鯛焼きを二つ買った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-008",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 72,
+    "when": {
+      "retired": true
+    },
+    "text": "朝の散歩を始めた。同じ時間に会う犬連れの人と、会釈をするようになった。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-009",
+    "kind": "daily",
+    "ageMin": 66,
+    "ageMax": 82,
+    "when": {
+      "retired": true
+    },
+    "text": "図書館の新聞コーナーに通うようになった。同じ席に座る人の顔を、何人か覚えた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-010",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 80,
+    "when": {
+      "retired": true
+    },
+    "text": "公民館の書道教室に通い始めた。先生は自分より二十歳も若く、筆の持ち方から直された。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-011",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 80,
+    "when": {
+      "retired": true
+    },
+    "text": "そば打ち教室で打ったそばは、太さがばらばらだった。それでも家でゆでて食べると、うまかった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-012",
+    "kind": "daily",
+    "ageMin": 66,
+    "ageMax": 85,
+    "when": {},
+    "text": "朝のラジオ体操に通った。首から下げたカードに、判子が少しずつたまっていった。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1,
+    "repeatGap": 5
+  },
+  {
+    "id": "d5-013",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 74,
+    "when": {
+      "retired": true
+    },
+    "text": "退職の日にもらった花束を、花瓶に分けて生けた。花がしおれるまで、毎朝水を替えた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-014",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 82,
+    "when": {},
+    "text": "庭のトマトが赤くなった。毎朝一つずつもいで、台所で塩をふってそのままかじった。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1,
+    "repeatGap": 4
+  },
+  {
+    "id": "d5-015",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 85,
+    "when": {
+      "urban": false
+    },
+    "text": "畑で取れた大根を、近所に配って歩いた。帰りには、よその家の白菜を抱えていた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-016",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 78,
+    "when": {
+      "urban": true
+    },
+    "text": "区民農園の小さな区画を借りた。初めて植えたナスは、三つしか実らなかった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-017",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 85,
+    "when": {},
+    "text": "梅干しを漬けた。赤じそをもむうちに指先が紫色に染まり、二、三日は落ちなかった。",
+    "effects": {},
+    "weight": 1,
+    "repeatGap": 6
+  },
+  {
+    "id": "d5-018",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 88,
+    "when": {},
+    "text": "夏の夕方、ホースで庭に水をまいた。乾いた土のにおいが立ちのぼり、隣の猫が塀の上へ逃げた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-019",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 88,
+    "when": {
+      "urban": false
+    },
+    "text": "秋、干し柿を軒下につるした。いちばん形のいい一つを、カラスに持っていかれた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-020",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 88,
+    "when": {
+      "urban": false
+    },
+    "text": "雪下ろしを、近所の若い人に頼むようになった。お礼に、漬物の包みを持っていった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-021",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 75,
+    "when": {
+      "urban": false
+    },
+    "text": "集落の寄り合いで、空き家の話になった。気がつけば、出席者の中で自分がいちばん若かった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-022",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 88,
+    "when": {
+      "urban": false
+    },
+    "text": "腰を痛めて、畑の半分を休ませることにした。草が伸びた畝を、縁側から眺めた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-023",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 88,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "{child}が盆に孫を連れて帰ってきた。家じゅうが騒がしくなり、三日後に急に静かになった。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "repeatGap": 4
+  },
+  {
+    "id": "d5-024",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 80,
+    "when": {
+      "hasChildren": true,
+      "sex": "male"
+    },
+    "text": "孫に初めて「じいじ」と呼ばれた。その晩、{child}との電話でその話を三回した。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-025",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 80,
+    "when": {
+      "hasChildren": true,
+      "sex": "female"
+    },
+    "text": "孫に初めて「ばあば」と呼ばれた。台所でひとりになってから、もう一度その声を思い出した。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-026",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 80,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "孫を預かった日、公園の砂場で二時間遊んだ。次の日は、腰がなかなか上がらなかった。",
+    "effects": {
+      "happiness": 1,
+      "health": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-027",
+    "kind": "daily",
+    "ageMin": 66,
+    "ageMax": 85,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "孫の運動会を見に行った。どの子が孫なのか、最後までよく分からなかった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-028",
+    "kind": "daily",
+    "ageMin": 68,
+    "ageMax": 88,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "孫からお年玉の礼の手紙が届いた。大きな字で、名前のところだけが漢字だった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-029",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 90,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "大きくなった孫が、照れくさそうに恋人を連れてきた。何を話していいか分からず、みかんばかりすすめた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-030",
+    "kind": "daily",
+    "ageMin": 72,
+    "ageMax": 92,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "孫の成人式の写真が送られてきた。冷蔵庫の扉に磁石で留めて、毎朝見た。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-031",
+    "kind": "daily",
+    "ageMin": 75,
+    "ageMax": 95,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "ひ孫を抱かせてもらった。思っていたより重く、すぐに{child}の腕に返した。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-032",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 85,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "{child}から宅配便が届いた。中身は健康食品の箱と、「ちゃんと食べてる？」と書いた短い手紙だった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-033",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 88,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "{child}が電話で「無理しないでね」と言った。電話を切ってから、はしごを出して雨どいの掃除をした。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-034",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 90,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "{child}の夫婦と、この家をどうするか話し合った。結論は出ず、すき焼きを食べて帰っていった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-035",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 85,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "孫に、紙ひこうきの折り方を教えた。孫のひこうきのほうが、ずっと遠くまで飛んだ。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-036",
+    "kind": "daily",
+    "ageMin": 68,
+    "ageMax": 90,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "{child}が、古い家電を新しいものに替えていった。新しい炊飯器のボタンの多さに、しばらく手が止まった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-037",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 92,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "{child}の家の近くに引っ越した。窓から見える景色が、まだよその町のようだった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-038",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 85,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "孫の誕生日に、図書カードを送った。電話の向こうで、「ありがとう」と言わされている声がした。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-039",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 90,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "眼鏡をかけたまま、眼鏡を探していた。孫に笑われて、自分も一緒に笑った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-040",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 80,
+    "when": {
+      "married": true
+    },
+    "text": "{spouse}と二人の夕食は、おかずが三品になった。皿の数が減って、洗い物はすぐに終わった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-041",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 90,
+    "when": {
+      "married": true
+    },
+    "text": "{spouse}のいびきがうるさくて、居間に布団を移した。朝になると、{spouse}は「静かでよく眠れた」と言った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-042",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 90,
+    "when": {
+      "married": true
+    },
+    "text": "{spouse}が庭で転んだ。大きなけがはなかったが、その日から買い物には二人で行くことにした。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-043",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 90,
+    "when": {
+      "married": true
+    },
+    "text": "{spouse}と病院の待合室に並んで座った。どちらが診てもらうのか、受付で聞き返された。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-044",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 88,
+    "when": {
+      "married": true
+    },
+    "text": "結婚記念日に、{spouse}がケーキを一切れだけ買ってきた。二人で半分ずつ食べた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-045",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 92,
+    "when": {
+      "married": true
+    },
+    "text": "夕方、{spouse}と縁側で茶を飲んだ。何も話さないまま、日が沈んでいった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-046",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 88,
+    "when": {
+      "married": true
+    },
+    "text": "{spouse}が同じ話を三度した。三度とも、初めて聞いたように相づちを打った。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-047",
+    "kind": "daily",
+    "ageMin": 72,
+    "ageMax": 95,
+    "when": {
+      "married": true
+    },
+    "text": "{spouse}の足の爪を切ってやった。「昔は自分で切れたのに」と、{spouse}がつぶやいた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-048",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 88,
+    "when": {
+      "married": true
+    },
+    "text": "{spouse}と言い争いをして、半日口をきかなかった。夕飯のみそ汁が、いつもより少し濃かった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-049",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 80,
+    "when": {
+      "married": true,
+      "rich": true
+    },
+    "text": "{spouse}と温泉旅行に出かけた。宿の浴衣に着替えると、二人ともしばらく窓の外を眺めていた。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-050",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 80,
+    "when": {
+      "married": true
+    },
+    "text": "{spouse}と旅行の計画を立てた。机に地図を広げたが、行き先を決めるだけで三日かかった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-051",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 80,
+    "when": {
+      "married": true,
+      "rich": true
+    },
+    "text": "{spouse}と船の旅に出た。毎晩の夕食のたびに着る服を選ぶのが、少し面倒だった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-052",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 88,
+    "when": {
+      "married": true
+    },
+    "text": "正月の餅を、小さく切ってから食べた。{spouse}が隣で、のどに詰まらせないか見張っていた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-053",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 85,
+    "when": {
+      "married": true
+    },
+    "text": "結婚式の写真を見つけて、{spouse}に見せた。「これ誰」と言われ、二人で笑った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-054",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 85,
+    "when": {
+      "married": true
+    },
+    "text": "人の名前が出てこなくなった。「ほら、あの人」で、{spouse}にはちゃんと通じた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-055",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 88,
+    "when": {
+      "married": true,
+      "sick": true
+    },
+    "text": "体調を崩して寝ている間、{spouse}が慣れない手つきで洗濯物を干した。シャツが裏返しのまま並んでいた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-056",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 85,
+    "when": {
+      "married": true,
+      "hasChildren": false
+    },
+    "text": "{spouse}と、二人きりの老後のことを話した。どちらが先でも困らないよう、通帳の場所を確かめ合った。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-057",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 85,
+    "when": {
+      "married": true,
+      "hasChildren": false
+    },
+    "text": "子どものいない二人で、毎年同じ宿に泊まった。宿のおかみが、二人の好物を覚えていてくれた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-058",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 85,
+    "when": {
+      "married": true,
+      "hasChildren": false
+    },
+    "text": "{spouse}が、近所の人から犬を飼わないかと勧められて帰ってきた。二人で一晩考えて、断った。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-059",
+    "kind": "daily",
+    "ageMin": 80,
+    "ageMax": 95,
+    "when": {
+      "married": true
+    },
+    "text": "{spouse}の手を引いて、近所を一回りした。行きより帰りのほうが、二人とも足が速かった。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-060",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 95,
+    "when": {
+      "widowed": true
+    },
+    "text": "ひとりになってから、台所で立ったままご飯を食べるようになった。向かいの椅子には、新聞を置いた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-061",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 95,
+    "when": {
+      "widowed": true
+    },
+    "text": "炊飯器で一合だけ炊くことを覚えた。最初の何回かは、水の量を間違えた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-062",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 95,
+    "when": {
+      "widowed": true,
+      "sex": "female"
+    },
+    "text": "夫の背広を、やっと処分した。内ポケットから、古いレシートが一枚出てきた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-063",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 95,
+    "when": {
+      "widowed": true,
+      "sex": "female"
+    },
+    "text": "夫が使っていた湯のみを、食器棚の奥にしまった。ときどき取り出して、また元に戻した。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-064",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 95,
+    "when": {
+      "widowed": true,
+      "sex": "male"
+    },
+    "text": "妻の残した家計簿を開いた。最後のページに、牛乳と卵と書いてあった。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-065",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 95,
+    "when": {
+      "widowed": true,
+      "sex": "male"
+    },
+    "text": "初めて自分で洗濯機を回した。洗剤をどれだけ入れるのか、隣の家に聞きに行った。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-066",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 95,
+    "when": {
+      "widowed": true,
+      "sex": "male"
+    },
+    "text": "妻がつけていたぬか床を、捨てられずにかき混ぜ続けた。漬かったきゅうりは、少ししょっぱかった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-067",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 98,
+    "when": {
+      "widowed": true
+    },
+    "text": "月命日に、駅前の花屋で花を買った。店員は何も聞かずに、白い菊を新聞紙で包んでくれた。",
+    "effects": {},
+    "weight": 1,
+    "repeatGap": 3
+  },
+  {
+    "id": "d5-068",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "widowed": true
+    },
+    "text": "仏壇に朝のご飯を供えるのが日課になった。線香の煙は、いつも同じほうへ流れた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-069",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 95,
+    "when": {
+      "widowed": true
+    },
+    "text": "夜、テレビをつけたまま眠るようになった。音がしないと、家が広すぎた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-070",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 95,
+    "when": {
+      "widowed": true
+    },
+    "text": "連れ合いの一周忌を終えた。親戚が帰ったあと、座布団を一枚ずつ押し入れにしまった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-071",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 95,
+    "when": {
+      "widowed": true
+    },
+    "text": "同じように連れ合いを亡くした人たちと、月に一度お茶を飲むようになった。皆、亡くなった人の話を少しだけした。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-072",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 95,
+    "when": {
+      "widowed": true,
+      "mood": "high"
+    },
+    "text": "ひとり暮らしにも慣れた。好きな時間に起き、好きなものを食べて、夜は早く寝た。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-073",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 95,
+    "when": {
+      "widowed": true
+    },
+    "text": "ひとりで初詣に行った。おみくじは吉で、境内の木の枝に結んで帰った。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-074",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 95,
+    "when": {
+      "widowed": true
+    },
+    "text": "連れ合いの好きだった店で、同じ定食を頼んだ。店の主人は、黙って漬物を一皿多くつけてくれた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-075",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 95,
+    "when": {
+      "widowed": true
+    },
+    "text": "連れ合いの眼鏡を、まだ処分できずにいた。眼鏡ケースは、電話台の上に置いたままだった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-076",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 95,
+    "when": {
+      "widowed": true
+    },
+    "text": "ひとりになって最初の冬、灯油のポリタンクを自分で運んだ。玄関まで、三回休んだ。",
+    "effects": {
+      "health": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-077",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 95,
+    "when": {
+      "married": false,
+      "hasChildren": false
+    },
+    "text": "ひとり暮らしの部屋で正月を迎えた。雑煮の餅を二つ焼き、テレビの駅伝を最後まで見た。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-078",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 90,
+    "when": {
+      "hasChildren": false,
+      "hasSibling": true
+    },
+    "text": "甥から年賀状が届いた。小さな子どもの写真が刷ってあり、あの甥が父親になったのかと思った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-079",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 90,
+    "when": {
+      "married": false
+    },
+    "text": "旅行のみやげの饅頭を、近所に配った。誰かにものをあげるのが、ひとり暮らしの楽しみになっていた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-080",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 85,
+    "when": {
+      "married": false,
+      "urban": true
+    },
+    "text": "マンションの管理組合の役が回ってきた。会合で初めて、隣の部屋の人の名前を知った。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-081",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 88,
+    "when": {
+      "married": false,
+      "hasChildren": false,
+      "hasSibling": true
+    },
+    "text": "{sib}の家に呼ばれて、甥や姪と鍋を囲んだ。帰り道、持たされた漬物の袋が重かった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-082",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 90,
+    "when": {
+      "married": false
+    },
+    "text": "ひとり分の買い物かごは、なかなかいっぱいにならなかった。それでも毎日、商店街まで歩いた。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-083",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 90,
+    "when": {
+      "married": false
+    },
+    "text": "ひとりで食堂に入り、焼き魚の定食を頼んだ。店の主人が、ご飯を少なめにしておいたよと言った。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-084",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 88,
+    "when": {
+      "married": false,
+      "hasChildren": false
+    },
+    "text": "これからの住まいのことで、役所の相談窓口へ行った。もらったパンフレットを、帰ってから二度読んだ。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-085",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 95,
+    "when": {
+      "married": false
+    },
+    "text": "夜中に雷が鳴った。ひとりで起きて、窓の鍵を一つずつ確かめて回った。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-086",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 92,
+    "when": {
+      "married": false,
+      "mood": "low"
+    },
+    "text": "誰とも話さない日が三日続いた。四日目、レジの人に「暑いですね」と言われ、少しうれしかった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-087",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 90,
+    "when": {
+      "married": false,
+      "hasChildren": false
+    },
+    "text": "近所の子どもたちが、家の前を通るたびに「こんにちは」と言っていった。名前は知らないが、顔は覚えた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-088",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 85,
+    "when": {
+      "hasChildren": false,
+      "sex": "female",
+      "hasSibling": true
+    },
+    "text": "姪の結婚式に呼ばれた。親族の席で、新婦のおばとして短いあいさつをした。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-089",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 82,
+    "when": {
+      "married": false
+    },
+    "text": "ひとりで旅に出た。ローカル線の窓から田んぼを見ていたら、降りる駅を一つ過ぎてしまった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-090",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 95,
+    "when": {
+      "married": false
+    },
+    "text": "民生委員が、ときどき顔を見に来るようになった。いつも玄関先で、季節の話をして帰っていった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-091",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 90,
+    "when": {
+      "married": false,
+      "sick": true
+    },
+    "text": "熱を出して寝込んだ。隣の人が、玄関先にスポーツドリンクとおかゆのパックを置いていってくれた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-092",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 92,
+    "when": {
+      "married": false,
+      "hasChildren": false
+    },
+    "text": "自分が亡くなったあとの手続きを、専門家に相談した。書類にはんこを押して、肩の荷が少し下りた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-093",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 90,
+    "when": {
+      "married": false
+    },
+    "text": "ひとり暮らしの家に、友人を呼んで手料理をふるまった。煮物の味を、何度もほめてもらった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-094",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 88,
+    "when": {
+      "married": false,
+      "urban": true
+    },
+    "text": "ひとりで映画館に入った。平日の昼の客席には、自分と同じくらいの年の人が五、六人いた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-095",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 90,
+    "when": {
+      "married": false,
+      "hasChildren": false
+    },
+    "text": "近所の家の留守中、頼まれて植木に水をやった。お礼に、旅先のせんべいをもらった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-096",
+    "kind": "daily",
+    "ageMin": 68,
+    "ageMax": 92,
+    "when": {
+      "hasChildren": false
+    },
+    "text": "子どものいない友だち同士で、行き先を決めずに日帰りのバスに乗った。終点の町で、うどんを食べて帰った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-097",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 92,
+    "when": {
+      "married": false
+    },
+    "text": "ひとり用の土鍋を買った。湯豆腐を作って、湯気の向こうのテレビを見た。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-098",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 90,
+    "when": {},
+    "text": "{pet}を連れて朝の散歩に出た。帰り道の角は、{pet}のほうが先に曲がった。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-099",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 92,
+    "when": {},
+    "text": "{pet}が年を取り、散歩の距離が短くなった。自分の足にも、ちょうどよかった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-100",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 92,
+    "when": {
+      "married": false
+    },
+    "text": "{pet}がこたつの中で丸くなって離れなかった。足を伸ばせないまま、一緒に昼寝をした。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-101",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 82,
+    "when": {},
+    "text": "老眼鏡を三本持つようになった。それでも、探すのはいつも同じ一本だった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-102",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 85,
+    "when": {},
+    "text": "健康診断で、血圧が高めだと言われた。その日から、みそ汁を少し薄くした。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-103",
+    "kind": "daily",
+    "ageMin": 68,
+    "ageMax": 92,
+    "when": {},
+    "text": "整形外科の待合室に、いつもの顔ぶれがそろっていた。一人来ないと、皆で「風邪かね」と話した。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "repeatGap": 5
+  },
+  {
+    "id": "d5-104",
+    "kind": "daily",
+    "ageMin": 68,
+    "ageMax": 90,
+    "when": {},
+    "text": "駅の階段で、手すりをつかむようになった。手すりが片側にしかないことに、初めて気づいた。",
+    "effects": {
+      "health": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-105",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 92,
+    "when": {},
+    "text": "耳が遠くなり、テレビの音を大きくした。家族に「うるさい」と言われ、字幕の出し方を覚えた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-106",
+    "kind": "daily",
+    "ageMin": 72,
+    "ageMax": 95,
+    "when": {},
+    "text": "補聴器を作った。最初の日は、自分の足音や冷蔵庫のうなる音が、やけに大きく聞こえた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-107",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 95,
+    "when": {},
+    "text": "歯医者で新しい入れ歯を作った。家に帰って、おそるおそるたくあんを一切れかんでみた。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-108",
+    "kind": "daily",
+    "ageMin": 72,
+    "ageMax": 95,
+    "when": {},
+    "text": "膝が痛み、杖を買った。最初は恥ずかしくて、折りたたんでかばんに入れたまま歩いた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-109",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 92,
+    "when": {},
+    "text": "白内障の手術を受けた。眼帯が取れたら、台所の壁が思っていたより汚れていた。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-110",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 92,
+    "when": {
+      "hasChildren": true,
+      "sick": true
+    },
+    "text": "ひどい風邪で、三日寝込んだ。{child}が仕事を休んで来て、台所でおかゆを作っていった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-111",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 95,
+    "when": {},
+    "text": "薬の数が増え、曜日ごとに分けるケースを買った。月曜の分を、火曜に見つけたこともあった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-112",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 95,
+    "when": {},
+    "text": "冷蔵庫を開けて、何を取りに来たのか思い出せなかった。扉を閉めると、思い出した。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-113",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 85,
+    "when": {
+      "married": false
+    },
+    "text": "朝、目が覚めるのが早くなった。四時半に起きて、新聞が届く音を待った。",
+    "effects": {},
+    "weight": 1,
+    "repeatGap": 10
+  },
+  {
+    "id": "d5-114",
+    "kind": "daily",
+    "ageMin": 68,
+    "ageMax": 95,
+    "when": {},
+    "text": "昼ごはんのあと、こたつでうたた寝をするようになった。起きると、外はもう暗かった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-115",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 95,
+    "when": {
+      "married": false
+    },
+    "text": "自分では背中に湿布を貼れなくなった。孫の手に貼りつけて、背中に押し当てた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-116",
+    "kind": "daily",
+    "ageMin": 68,
+    "ageMax": 95,
+    "when": {
+      "sick": true
+    },
+    "text": "二週間入院していた病院から、家に戻った。玄関を開けると、自分の家のにおいがした。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-117",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 95,
+    "when": {
+      "sick": true
+    },
+    "text": "リハビリで、平行棒の間を歩いた。理学療法士が、昨日より三歩多いと言った。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-118",
+    "kind": "daily",
+    "ageMin": 72,
+    "ageMax": 95,
+    "when": {},
+    "text": "握力が落ちて、瓶のふたが開かなくなった。ゴム手袋をはめて、ようやく開けた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-119",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 95,
+    "when": {},
+    "text": "家の段差に、手すりをつけてもらった。大工が帰ったあと、何度も握ってみた。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-120",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 92,
+    "when": {
+      "married": false,
+      "mood": "low"
+    },
+    "text": "眠れない夜、ラジオの深夜放送を聞いた。同じように眠れない人からのはがきが読まれた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-121",
+    "kind": "daily",
+    "ageMin": 68,
+    "ageMax": 90,
+    "when": {},
+    "text": "かかりつけ医に、もう少し歩きましょうと言われた。帰り道、バス停を一つ手前で降りた。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-122",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 90,
+    "when": {},
+    "text": "{friend}と久しぶりに電話で話した。お互いの病院の話だけで、三十分たった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-123",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 88,
+    "when": {},
+    "text": "{friend}と喫茶店で会った。注文したコーヒーが来るまでに、二人とも薬を飲んだ。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-124",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 95,
+    "when": {},
+    "text": "{friend}からの年賀状が来なかった。松の内が過ぎても、郵便受けを二度のぞいた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-125",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 95,
+    "when": {},
+    "text": "古い友人の家族から、喪中のはがきが届いた。昔二人で撮った写真を、引き出しから出して眺めた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-126",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 80,
+    "when": {},
+    "text": "同窓会の通知が届いた。出欠のはがきに出席と書いてから、しばらく投函を迷った。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-127",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 82,
+    "when": {},
+    "text": "同窓会に出た。胸の名札を見なければ、誰が誰だか分からなかった。帰りの電車でも、まだ顔と名前を合わせていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-128",
+    "kind": "daily",
+    "ageMin": 75,
+    "ageMax": 92,
+    "when": {},
+    "text": "同級生の名簿を見直した。名前の横に、鉛筆で小さな印をいくつかつけた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-129",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 88,
+    "when": {},
+    "text": "{friend}と、互いの家を行き来して将棋を指した。勝ったほうがお茶をいれる決まりだった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-130",
+    "kind": "daily",
+    "ageMin": 68,
+    "ageMax": 90,
+    "when": {},
+    "text": "{friend}が、子どもの家の近くへ引っ越すことになった。駅のホームまで送っていった。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-131",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 92,
+    "when": {},
+    "text": "{friend}から、手書きの暑中見舞いが届いた。字が前より少し大きくなっていた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-132",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 85,
+    "when": {},
+    "text": "老人会の日帰り旅行に参加した。バスの中で、誰かが持ってきたみかんが回ってきた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-133",
+    "kind": "daily",
+    "ageMin": 68,
+    "ageMax": 85,
+    "when": {},
+    "text": "老人会の役員を頼まれた。名簿の電話番号を、一軒ずつかけて確かめた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-134",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 82,
+    "when": {},
+    "text": "町内の清掃に出た。若い家族が来ていて、小さな子がごみ袋を持ってくれた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-135",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 92,
+    "when": {},
+    "text": "回覧板を隣に回しに行き、玄関先で三十分話しこんだ。家に戻ると、やかんの湯がすっかり冷めていた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-136",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 92,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "近所の人と道ばたで立ち話をした。話題は、天気と病院と孫のことだった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-137",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 88,
+    "when": {},
+    "text": "道に迷った若い人に、駅までの道を教えた。説明が長くなり、途中まで一緒に歩いた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-138",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 92,
+    "when": {},
+    "text": "スーパーで、若い店員が重い袋を出口まで運んでくれた。名札の名前を覚えて帰った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-139",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 80,
+    "when": {},
+    "text": "小学校の登校の見守りに立った。黄色い旗を持って、毎朝同じ子に「おはよう」と言った。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-140",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 82,
+    "when": {},
+    "text": "地域の子どもたちに、昔の遊びを教える会に呼ばれた。こまを回すと、子どもたちが声を上げた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-141",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 85,
+    "when": {},
+    "text": "お寺の行事の手伝いに出た。若い住職が、先代の住職の話を聞きたがった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-142",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 92,
+    "when": {},
+    "text": "祭りの神輿を、道ばたの折りたたみ椅子に座って見送った。若いころは、自分もあの中で担いでいた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-143",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 88,
+    "when": {
+      "urban": true
+    },
+    "text": "近所の喫茶店で、毎朝同じ席に座った。店の人は、注文を聞かずにモーニングを出した。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-144",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 85,
+    "when": {},
+    "text": "町内会の夏祭りで、焼きそばの係をした。鉄板の前で汗をかき、夜は早く眠った。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-145",
+    "kind": "daily",
+    "ageMin": 75,
+    "ageMax": 95,
+    "when": {},
+    "text": "デイサービスに通い始めた。最初の日は、迎えの車が来ても玄関でぐずぐずしていた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-146",
+    "kind": "daily",
+    "ageMin": 75,
+    "ageMax": 98,
+    "when": {},
+    "text": "デイサービスで、ぬり絵をした。隣の人が、色の選び方をほめてくれた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-147",
+    "kind": "daily",
+    "ageMin": 75,
+    "ageMax": 98,
+    "when": {},
+    "text": "デイサービスの風呂は広かった。湯船につかって、昔の銭湯を思い出した。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-148",
+    "kind": "daily",
+    "ageMin": 75,
+    "ageMax": 100,
+    "when": {},
+    "text": "デイサービスで誕生日を祝ってもらった。職員の歌う声が、少し照れくさかった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-149",
+    "kind": "daily",
+    "ageMin": 78,
+    "ageMax": 98,
+    "when": {
+      "married": false
+    },
+    "text": "郵便受けに、老人ホームの広告が入っていた。捨てずに、電話台の横に置いた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-150",
+    "kind": "daily",
+    "ageMin": 80,
+    "ageMax": 100,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "施設に入る日、玄関の鍵を{child}に渡した。車の窓から、庭の柿の木が見えなくなるまで振り返った。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-151",
+    "kind": "daily",
+    "ageMin": 80,
+    "ageMax": 100,
+    "when": {},
+    "text": "施設の部屋に、家から持ってきた写真を飾った。同じ階の人が、それを見て話しかけてきた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-152",
+    "kind": "daily",
+    "ageMin": 80,
+    "ageMax": 100,
+    "when": {
+      "married": false
+    },
+    "text": "施設に入ることを、ひとりで決めた。荷物は、段ボール箱四つにおさまった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-153",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 90,
+    "when": {},
+    "text": "春、川べりの桜を見に行った。毎年同じ木の下で、同じおにぎりを広げた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 5
+  },
+  {
+    "id": "d5-154",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 92,
+    "when": {},
+    "text": "盆の迎え火を、玄関の前でたいた。煙が細く立ちのぼるのを、しゃがんだまま見ていた。",
+    "effects": {},
+    "weight": 1,
+    "repeatGap": 5
+  },
+  {
+    "id": "d5-155",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 92,
+    "when": {},
+    "text": "大みそか、年越しそばをすすりながら、除夜の鐘の数を数えた。途中で眠ってしまった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 5
+  },
+  {
+    "id": "d5-156",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 95,
+    "when": {},
+    "text": "冬至にゆず湯に入った。湯に浮かんだゆずを指で押して沈めると、すぐにまた浮かんできた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 5
+  },
+  {
+    "id": "d5-157",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 95,
+    "when": {},
+    "text": "敬老の日に、町から記念品が届いた。包みを開けると紅白の饅頭で、仏壇に一つ供えた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 5
+  },
+  {
+    "id": "d5-158",
+    "kind": "daily",
+    "ageMin": 75,
+    "ageMax": 95,
+    "when": {},
+    "text": "年賀状の枚数を減らした。「今年で年賀状を最後にします」と、一筆ずつ書き添えた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-159",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 90,
+    "when": {},
+    "text": "衣替えで、何年も着ていない服を見つけた。袖を通すと、まだ着られた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-160",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 92,
+    "when": {},
+    "text": "台風が近づき、昼のうちに雨戸を閉めた。家の中が、昼なのに夜のように暗くなった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-161",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 92,
+    "when": {},
+    "text": "節分に、豆を年の数だけ食べようとして、途中であきらめた。残りは小皿に取っておいた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-162",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 92,
+    "when": {},
+    "text": "押し入れから、古いアルバムが出てきた。白黒の写真の中で、子どもの自分が笑っていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-163",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 88,
+    "when": {},
+    "text": "母校の前を通った。校舎は建て替えられ、門の脇の木だけが残っていた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-164",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 88,
+    "when": {},
+    "text": "昔住んでいた町を訪ねた。住んでいた家のあった場所は、駐車場になっていた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-165",
+    "kind": "daily",
+    "ageMin": 68,
+    "ageMax": 92,
+    "when": {
+      "married": false
+    },
+    "text": "古い手紙の束を読み返した。差出人の何人かは、もう住所が分からなかった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-166",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 95,
+    "when": {},
+    "text": "子どものころに歌った歌が、ラジオから流れてきた。歌詞を思い出す前に、口が動いていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-167",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 90,
+    "when": {},
+    "text": "テレビに{pref}の祭りが映った。知っている通りが出てきて、思わず身を乗り出した。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-168",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 85,
+    "when": {},
+    "text": "生まれた家を見に、ふるさとへ行った。駅前の店は、一軒も残っていなかった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-169",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 82,
+    "when": {
+      "mother": true
+    },
+    "text": "{mAge}歳の母と、こたつでみかんを食べた。母に「あんたも年を取ったね」と言われた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-170",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 78,
+    "when": {
+      "mother": true
+    },
+    "text": "{mAge}歳の母の入っている施設へ、面会に行った。母は自分のことを「先生」と呼んで、頭を下げた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-171",
+    "kind": "daily",
+    "ageMin": 68,
+    "ageMax": 92,
+    "when": {},
+    "text": "終活の本を買った。エンディングノートの一ページ目に、名前と生年月日だけを書いた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-172",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 92,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "{child}に、通帳と印鑑の置き場所を教えた。{child}は困った顔で、メモを取った。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-173",
+    "kind": "daily",
+    "ageMin": 68,
+    "ageMax": 92,
+    "when": {
+      "married": false
+    },
+    "text": "押し入れの整理を始めた。一日で片づいたのは、引き出し一つだけだった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-174",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 92,
+    "when": {},
+    "text": "墓参りに行った。墓石に水をかけて花を替え、しばらくその前に立っていた。",
+    "effects": {},
+    "weight": 1,
+    "repeatGap": 3
+  },
+  {
+    "id": "d5-175",
+    "kind": "daily",
+    "ageMin": 75,
+    "ageMax": 95,
+    "when": {},
+    "text": "遺影に使う写真を、アルバムから自分で選んだ。少し若いころの、笑っているものにした。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-176",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 92,
+    "when": {
+      "sex": "female"
+    },
+    "text": "大事にしてきた着物を、知り合いの娘さんに譲った。着た姿の写真が、手紙と一緒に届いた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-177",
+    "kind": "daily",
+    "ageMin": 68,
+    "ageMax": 90,
+    "when": {},
+    "text": "使わなくなった食器を、バザーに出した。自分が買った皿を、若い夫婦が手に取っていた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-178",
+    "kind": "daily",
+    "ageMin": 68,
+    "ageMax": 90,
+    "when": {
+      "hasChildren": true,
+      "rich": true
+    },
+    "text": "孫の学費の足しにと、まとまったお金を{child}に渡した。{child}は何度も頭を下げた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-179",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 92,
+    "when": {
+      "poor": true
+    },
+    "text": "電気代を気にして、夜は早く寝るようにした。暗い部屋で、ラジオだけをつけていた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-180",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 92,
+    "when": {
+      "poor": true
+    },
+    "text": "年金が入る前の週は、冷蔵庫の残り物で献立を考えた。もやしの料理が三日続いた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-181",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 90,
+    "when": {},
+    "text": "古い家の雨漏りを直した。業者に「次は十年後ですね」と言われ、少し笑った。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-182",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 95,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "{child}が、この家の片づけを手伝いに来た。捨てる物の山から、一つずつ拾い戻した。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-183",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 88,
+    "when": {},
+    "text": "家計簿をつけ始めた。一か月続けて、パンとお菓子にお金を使っていることが分かった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-184",
+    "kind": "daily",
+    "ageMin": 90,
+    "ageMax": 105,
+    "when": {},
+    "text": "九十歳の祝い状が、市から届いた。読み上げてくれた職員の声が大きかった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-185",
+    "kind": "daily",
+    "ageMin": 90,
+    "ageMax": 105,
+    "when": {},
+    "text": "朝、窓の外の雀を見て一日が始まった。数えると、昨日より一羽多かった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-186",
+    "kind": "daily",
+    "ageMin": 90,
+    "ageMax": 105,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "ひ孫が、絵を描いて持ってきた。顔のまわりに、花がいくつも描いてあった。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-187",
+    "kind": "daily",
+    "ageMin": 90,
+    "ageMax": 105,
+    "when": {},
+    "text": "車いすで、施設の庭を回った。押してくれた職員に、昔の田植えの話をした。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-188",
+    "kind": "daily",
+    "ageMin": 90,
+    "ageMax": 108,
+    "when": {},
+    "text": "昼も夜も、うとうとしている時間が長くなった。目を開けるたびに、窓の光の色が違っていた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-189",
+    "kind": "daily",
+    "ageMin": 90,
+    "ageMax": 105,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "{child}の顔を見て、しばらく名前が出てこなかった。「よく来てくれた」とだけ言った。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-190",
+    "kind": "daily",
+    "ageMin": 90,
+    "ageMax": 105,
+    "when": {},
+    "text": "施設の夏祭りで、職員が浴衣を着せてくれた。帯を締めてもらうとき、背筋がのびた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-191",
+    "kind": "daily",
+    "ageMin": 90,
+    "ageMax": 108,
+    "when": {},
+    "text": "職員がスプーンで口に入れてくれたプリンが、甘かった。もう一口と、目で頼んだ。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-192",
+    "kind": "daily",
+    "ageMin": 90,
+    "ageMax": 105,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "{child}が、昔の写真を一枚ずつ見せてくれた。写真に写った家の近所の人の名前を、{child}より先に言えた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-193",
+    "kind": "daily",
+    "ageMin": 90,
+    "ageMax": 105,
+    "when": {},
+    "text": "百歳の人のお祝いの会に出た。「次はあんたの番だ」と、隣の人に肩をたたかれた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-194",
+    "kind": "daily",
+    "ageMin": 99,
+    "ageMax": 110,
+    "when": {},
+    "text": "百歳を迎え、祝いの品が届いた。部屋に来た人たちが、代わる代わる写真を撮っていった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-195",
+    "kind": "daily",
+    "ageMin": 90,
+    "ageMax": 105,
+    "when": {
+      "married": true
+    },
+    "text": "{spouse}と、施設の同じ部屋で暮らすようになった。夜、隣のベッドから聞こえる寝息を聞いてから眠った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-196",
+    "kind": "daily",
+    "ageMin": 90,
+    "ageMax": 108,
+    "when": {
+      "widowed": true
+    },
+    "text": "夢に、若いころの連れ合いが出てきた。目が覚めてから、しばらく天井を見ていた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-197",
+    "kind": "daily",
+    "ageMin": 90,
+    "ageMax": 105,
+    "when": {
+      "married": false
+    },
+    "text": "ひとり暮らしの家に、毎朝ヘルパーが来た。カーテンを開ける音で、朝が来たと分かった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-198",
+    "kind": "daily",
+    "ageMin": 90,
+    "ageMax": 105,
+    "when": {},
+    "text": "施設の玄関に、ひな人形が飾られた。指でさわると、着物の布がざらざらしていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-199",
+    "kind": "daily",
+    "ageMin": 90,
+    "ageMax": 108,
+    "when": {},
+    "text": "耳元で、職員が今日の日付を言ってくれた。何年なのかは、聞き返さなかった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-200",
+    "kind": "daily",
+    "ageMin": 90,
+    "ageMax": 105,
+    "when": {},
+    "text": "昔覚えた歌を、職員と一緒に口ずさんだ。言葉は途中から出てこなかったが、節は最後まで覚えていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-201",
+    "kind": "daily",
+    "ageMin": 90,
+    "ageMax": 105,
+    "when": {
+      "hasChildren": false,
+      "hasSibling": true
+    },
+    "text": "姪が、遠くから面会に来た。手を握ると、子どものころと同じ握り方をした。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-202",
+    "kind": "daily",
+    "ageMin": 90,
+    "ageMax": 108,
+    "when": {},
+    "text": "食事の量が少しずつ減った。好物の煮豆だけは、最後まで残さなかった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-203",
+    "kind": "daily",
+    "ageMin": 90,
+    "ageMax": 105,
+    "when": {
+      "married": false
+    },
+    "text": "日なたの椅子に座り、窓越しに小学生の下校を見送った。黄色い帽子が、角を曲がって消えた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-204",
+    "kind": "daily",
+    "ageMin": 90,
+    "ageMax": 108,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "ベッドの上で、{child}が爪を切ってくれた。ぱちんという音を、目を閉じて聞いた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-205",
+    "kind": "daily",
+    "ageMin": 90,
+    "ageMax": 105,
+    "when": {
+      "mood": "high"
+    },
+    "text": "職員に、長生きの秘けつを聞かれた。「よく寝ることだ」と答えたら、皆が笑った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-206",
+    "kind": "daily",
+    "ageMin": 90,
+    "ageMax": 105,
+    "when": {
+      "married": false,
+      "hasChildren": false
+    },
+    "text": "誕生日に、近所の人がケーキを届けてくれた。ろうそくは一本だけ立っていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-207",
+    "kind": "daily",
+    "ageMin": 90,
+    "ageMax": 108,
+    "when": {
+      "married": false
+    },
+    "text": "窓辺に置いてもらった鉢植えに、つぼみがついた。毎朝、少しずつふくらむのを見ていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-208",
+    "kind": "daily",
+    "ageMin": 90,
+    "ageMax": 105,
+    "when": {
+      "married": false
+    },
+    "text": "{pet}が、ベッドの足もとで丸くなって眠った。そのぬくもりを感じながら、自分も眠った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-209",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 92,
+    "when": {
+      "married": false
+    },
+    "text": "ひとりの夕食に、スーパーの総菜を三つ買った。パックのまま並べるのはやめて、小皿に移してから食べた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-210",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 92,
+    "when": {
+      "married": false
+    },
+    "text": "郵便受けに届いた電気料金の知らせを、老眼鏡をかけて読んだ。先月より少し上がっていて、こたつの温度を一つ下げた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-211",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 88,
+    "when": {
+      "married": false,
+      "hasChildren": false
+    },
+    "text": "向かいの家の小学生が、宿題で昔の暮らしを聞きに来た。ちゃぶ台の話をすると、熱心にメモを取っていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-212",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 95,
+    "when": {
+      "married": false
+    },
+    "text": "ひとりで迎える誕生日に、少し高い寿司を買った。ふたを開ける前に、湯のみに熱い茶をいれた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-213",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 95,
+    "when": {
+      "widowed": true
+    },
+    "text": "連れ合いの好きだった花の種を、庭にまいた。夏に咲いた花を、仏壇に一輪供えた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-214",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 95,
+    "when": {
+      "widowed": true
+    },
+    "text": "連れ合いの声が、留守番電話に残っていた。消さずに、ときどき再生のボタンを押した。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-215",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 92,
+    "when": {
+      "married": false,
+      "hasChildren": false,
+      "hasSibling": true
+    },
+    "text": "{sib}から、体の具合を尋ねる電話が来た。お互いに同じ薬を飲んでいることが分かり、二人で笑った。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-216",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 95,
+    "when": {
+      "married": false,
+      "hasChildren": true
+    },
+    "text": "ひとり暮らしを心配した{child}が、毎晩八時に電話をくれるようになった。八時前には、電話の前に座っていた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-217",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 92,
+    "when": {
+      "married": false,
+      "hasChildren": true
+    },
+    "text": "{child}から、一緒に住まないかと言われた。返事は、来年の春まで待ってもらった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-218",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 85,
+    "when": {
+      "married": true,
+      "hasChildren": false,
+      "rich": true
+    },
+    "text": "{spouse}と二人の老後のために、家を小さく建て替えた。新しい家には、どこにも段差がなかった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-219",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 92,
+    "when": {
+      "married": false,
+      "urban": true
+    },
+    "text": "団地の集会所で、ひとり暮らしの人たちの食事会があった。隣の席の人と、同じ郷里だと分かった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-220",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 92,
+    "when": {
+      "married": false
+    },
+    "text": "夕方、ひとりで散歩に出ると、どこからか魚を焼くにおいがした。帰りに、さんまを一尾買った。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-221",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 95,
+    "when": {
+      "widowed": true
+    },
+    "text": "連れ合いの名前で届く郵便物が、少しずつ減っていった。最後の一通は、古い会員証の更新の案内だった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-222",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 95,
+    "when": {
+      "hasChildren": false
+    },
+    "text": "子どもがいないので、墓をどうするか考えた。お寺の住職に相談すると、ゆっくり決めればいいと言われた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-223",
+    "kind": "daily",
+    "ageMin": 85,
+    "ageMax": 100,
+    "when": {
+      "married": false
+    },
+    "text": "ひとり暮らしの家に、近所の人が煮物を届けてくれた。器を洗って、次の日に返しに行った。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-224",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 88,
+    "when": {
+      "married": false,
+      "urban": false
+    },
+    "text": "冬の朝、ひとりで雪かきをした。玄関から道まで、細い一本の道ができた。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-225",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 95,
+    "when": {
+      "married": false
+    },
+    "text": "台所の電球が切れた。脚立にのぼるのはやめて、隣の家の息子さんに替えてもらった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-226",
+    "kind": "daily",
+    "ageMin": 66,
+    "ageMax": 95,
+    "when": {
+      "widowed": true
+    },
+    "text": "連れ合いの三回忌に、遠い親戚から手紙が届いた。若いころの連れ合いの話が、便箋二枚に書いてあった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "d5-227",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 90,
+    "when": {
+      "married": false,
+      "mood": "high"
+    },
+    "text": "ひとりで始めた絵手紙が、百枚をこえた。季節の野菜を描いて、遠くの友人に送った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d5-228",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 96,
+    "yearMin": 2009,
+    "yearMax": 2011,
+    "when": {},
+    "text": "アナログ放送が終わる前に、電器店で薄型テレビに買い替えた。古いテレビは、店の人が運んでいった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：総務省（地上アナログ放送は2011年7月24日までに終了。2003年12月に関東・中京・近畿で地デジ開始）。岩手・宮城・福島の延期は未確認"
+  },
+  {
+    "id": "d5-229",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 96,
+    "yearMin": 2008,
+    "yearMax": 2011,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "古いテレビの画面の隅に、「アナログ」の文字が出るようになった。{child}が来て、地デジのチューナーをつないでいった。",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：総務省（地上アナログ放送は2011年7月24日までに終了。2003年12月に関東・中京・近畿で地デジ開始）。岩手・宮城・福島の延期は未確認"
+  },
+  {
+    "id": "d5-230",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 95,
+    "yearMin": 2000,
+    "yearMax": 2010,
+    "when": {},
+    "text": "介護保険の認定のために、役所の調査員が家に来た。ふだんより背筋を伸ばして、質問に答えた。",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：厚生労働省の審議会資料（介護保険制度は2000年4月施行）"
+  },
+  {
+    "id": "d5-231",
+    "kind": "daily",
+    "ageMin": 75,
+    "ageMax": 75,
+    "yearMin": 2008,
+    "yearMax": 2024,
+    "when": {},
+    "text": "七十五歳の誕生日を前に、後期高齢者医療の保険証が郵便で届いた。封筒の宛名を、しばらく眺めた。",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：自治体広報など（後期高齢者医療制度は2008年4月開始、75歳から加入）。紙の保険証の新規発行は2024年12月に終了"
+  },
+  {
+    "id": "d5-232",
+    "kind": "daily",
+    "ageMin": 72,
+    "ageMax": 96,
+    "yearMin": 2002,
+    "yearMax": 2026,
+    "when": {},
+    "text": "運転免許を返納した。警察署で受け取った運転経歴証明書を、財布の免許証の場所に入れた。",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：各県警の資料（自主返納制度は1998年4月導入、運転経歴証明書は2002年開始）"
+  },
+  {
+    "id": "d5-233",
+    "kind": "daily",
+    "ageMin": 68,
+    "ageMax": 96,
+    "yearMin": 1998,
+    "yearMax": 2026,
+    "when": {
+      "urban": false
+    },
+    "text": "車を手放した日、車庫ががらんとした。翌日から、買い物にはバスで行くことにした。",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：各県警の資料（運転免許の自主返納制度は1998年4月導入）"
+  },
+  {
+    "id": "d5-234",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 85,
+    "yearMin": 2000,
+    "yearMax": 2012,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "らくらくホンを買った。大きなボタンで、{child}の番号を短縮に入れてもらった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "確認済み：NTTドコモの発表資料など（らくらくホン初代は1999年10月発売）"
+  },
+  {
+    "id": "d5-235",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 92,
+    "yearMin": 2012,
+    "yearMax": 2026,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "孫に、LINEの使い方を教わった。初めて送ったスタンプは、間違えて二回送ってしまった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "確認済み：LINE株式会社の沿革（2011年6月サービス開始、同年10月スタンプ・無料通話追加）"
+  },
+  {
+    "id": "d5-236",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 92,
+    "yearMin": 2015,
+    "yearMax": 2026,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "スマホのビデオ通話で、遠くに住む孫と話した。画面に顔を近づけすぎて、鼻しか映らないと笑われた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認（LINEのビデオ通話の開始時期は確認できず。2013年8月時点では未提供）"
+  },
+  {
+    "id": "d5-237",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 92,
+    "yearMin": 2013,
+    "yearMax": 2026,
+    "when": {},
+    "text": "携帯電話の店で、二つ折りの携帯からスマホに替えた。説明を聞くうちに、窓の外が暗くなっていた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d5-238",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 99,
+    "yearMin": 2025,
+    "yearMax": 2026,
+    "when": {},
+    "text": "病院の受付で、マイナンバーカードを機械に置いた。顔の写真を撮られるのに、なかなか慣れなかった。",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：厚生労働省関連の報道（2024年12月2日に従来の保険証の新規発行を終了し、マイナ保険証を基本に移行）"
+  },
+  {
+    "id": "d5-239",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 99,
+    "yearMin": 2021,
+    "yearMax": 2021,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "市から、新型コロナのワクチンの接種券が届いた。予約の電話はなかなかつながらず、{child}が代わりに取ってくれた。",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：報道・自治体資料（65歳以上への優先接種は2021年4月12日開始、本格化は5月以降）"
+  },
+  {
+    "id": "d5-240",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 99,
+    "yearMin": 2021,
+    "yearMax": 2021,
+    "when": {
+      "married": false
+    },
+    "text": "市から、新型コロナのワクチンの接種券が届いた。ひとりで会場へ行き、終わったあと椅子で十五分待った。",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：報道・自治体資料（65歳以上への優先接種は2021年4月12日開始）"
+  },
+  {
+    "id": "d5-241",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 99,
+    "yearMin": 2020,
+    "yearMax": 2021,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "盆に帰ってくるはずだった{child}から、今年はやめておくと電話があった。用意していたスイカを、近所に分けた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d5-242",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 90,
+    "yearMin": 2003,
+    "yearMax": 2003,
+    "when": {},
+    "text": "敬老の日が、九月十五日から月曜日に変わった。カレンダーの赤い数字を、指でたどって確かめた。",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：祝日の解説記事（2003年から敬老の日は9月第3月曜日）"
+  },
+  {
+    "id": "d5-243",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 96,
+    "yearMin": 1995,
+    "yearMax": 2026,
+    "when": {},
+    "text": "偶数月の十五日、年金を下ろしに銀行へ行った。ATMの前には、見覚えのある顔が並んでいた。",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：年金の解説記事（公的年金は偶数月の15日に前2か月分を支給）。1995年当時から同じかは未確認"
+  },
+  {
+    "id": "d5-244",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 80,
+    "yearMin": 1995,
+    "yearMax": 2005,
+    "when": {},
+    "text": "公民館の広場で、ゲートボールの仲間に入れてもらった。打つ順番を、最後まで覚えられなかった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "t5-001",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 75,
+    "when": {
+      "trigger": "retire"
+    },
+    "text": "「明日から、どこへも行かなくていいのか」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-002",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 75,
+    "when": {
+      "trigger": "retire"
+    },
+    "text": "「最後まで勤め上げた。それだけは、胸を張っていい」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t5-003",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 75,
+    "when": {
+      "trigger": "retire",
+      "married": true
+    },
+    "text": "「これからは{spouse}と過ごす時間のほうが長くなる。うまくやれるだろうか」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-004",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 75,
+    "when": {
+      "trigger": "retire"
+    },
+    "text": "「肩書きがなくなったら、自分は何者なんだろう」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-005",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 75,
+    "when": {
+      "trigger": "retire",
+      "urban": true
+    },
+    "text": "「もう、朝の満員電車に乗らなくていい」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t5-006",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 75,
+    "when": {
+      "trigger": "retire",
+      "married": false
+    },
+    "text": "「ひとりの時間が、こんなに長いとは思わなかった」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-007",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 75,
+    "when": {
+      "trigger": "retire",
+      "urban": false
+    },
+    "text": "「畑なら、体が動くうちはいつまでも続けられる」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-008",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 105,
+    "when": {
+      "trigger": "spouse_death"
+    },
+    "text": "「もっと話をしておけばよかった」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-009",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 105,
+    "when": {
+      "trigger": "spouse_death"
+    },
+    "text": "「ありがとうと、ちゃんと言えていただろうか」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-010",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 105,
+    "when": {
+      "trigger": "spouse_death"
+    },
+    "text": "「家の中のどこを見ても、あの人がいる」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-011",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 105,
+    "when": {
+      "trigger": "spouse_death"
+    },
+    "text": "「ひとり分のご飯の作り方を、一から覚えなければ」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-012",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 105,
+    "when": {
+      "trigger": "spouse_death"
+    },
+    "text": "「向こうで、もう少し待っていてくれ」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-013",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 105,
+    "when": {
+      "trigger": "spouse_death",
+      "hasChildren": true
+    },
+    "text": "「子どもたちの前では、泣かないでおこう」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-014",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 105,
+    "when": {
+      "trigger": "spouse_death"
+    },
+    "text": "「二人で使っていた布団が、ひとりには広すぎる」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-015",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 105,
+    "when": {
+      "trigger": "ill"
+    },
+    "text": "「体が言うことを聞かない。気持ちだけは、まだ若いつもりなのに」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-016",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 105,
+    "when": {
+      "trigger": "ill"
+    },
+    "text": "「病院のベッドから見る空は、狭いな」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-017",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 105,
+    "when": {
+      "trigger": "ill",
+      "married": true
+    },
+    "text": "「{spouse}に、迷惑をかけたくない」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-018",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 105,
+    "when": {
+      "trigger": "ill",
+      "hasChildren": true
+    },
+    "text": "「{child}に心配をかけたくない。電話では、元気だと言っておこう」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-019",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 105,
+    "when": {
+      "trigger": "ill",
+      "married": false
+    },
+    "text": "「ひとりで入院すると、家に干したままの洗濯物のことばかり気になる」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-020",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 105,
+    "when": {
+      "trigger": "ill"
+    },
+    "text": "「もう一度、自分の足で外を歩きたい」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-021",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 80,
+    "when": {
+      "trigger": "parent_death"
+    },
+    "text": "「この年になっても、母を亡くすのはこたえる」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-022",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 80,
+    "when": {
+      "trigger": "parent_death"
+    },
+    "text": "「親を見送って、とうとう自分がいちばん上になった」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-023",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 80,
+    "when": {
+      "trigger": "parent_death"
+    },
+    "text": "「長生きしてくれた。それだけで十分だ」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-024",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 90,
+    "when": {
+      "trigger": "wish_fail"
+    },
+    "text": "「叶わなかったことも、今となっては話の種だ」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-025",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 72,
+    "when": {
+      "trigger": "child",
+      "sex": "male"
+    },
+    "text": "「この子が成人するとき、自分はいくつになっているだろう」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-026",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 105,
+    "when": {
+      "mood": "high"
+    },
+    "text": "「いろいろあったが、悪くない人生だった」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t5-027",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {},
+    "text": "「あのとき別の道を選んでいたら、と考えるのは、もうやめた」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-028",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 68,
+    "when": {},
+    "text": "「若いころは、六十五歳といえば、もっと年寄りだと思っていた」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-029",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "「子どもを育てたことが、いちばんの仕事だったのかもしれない」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-030",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 105,
+    "when": {
+      "married": false,
+      "hasChildren": false
+    },
+    "text": "「家族は持たなかったが、ひとりで生きてきたことに悔いはない」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-031",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {},
+    "text": "「この家に住んで、もう何十年になるだろう」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-032",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 105,
+    "when": {},
+    "text": "「生まれた年が違えば、まるで別の人生だっただろう」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-033",
+    "kind": "think",
+    "ageMin": 70,
+    "ageMax": 105,
+    "when": {},
+    "text": "「貧しいころも、少し楽になったころも見てきた。どちらにも笑った日はあった」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-034",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {},
+    "text": "「あのころの自分に、そんなに急がなくていいと言ってやりたい」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-035",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 105,
+    "when": {
+      "widowed": true
+    },
+    "text": "「あの人なら、今日の夕焼けを見て何と言っただろう」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-036",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 105,
+    "when": {
+      "widowed": true
+    },
+    "text": "「返事はない。それでも、毎朝おはようと言う」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-037",
+    "kind": "think",
+    "ageMin": 80,
+    "ageMax": 105,
+    "when": {},
+    "text": "「同級生の半分は、もういない。自分はまだここにいる」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-038",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "father": false
+    },
+    "text": "「父の年を、とうに越えてしまった」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-039",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "mother": false
+    },
+    "text": "「母が最後に言った言葉を、ときどき思い出す」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-040",
+    "kind": "think",
+    "ageMin": 70,
+    "ageMax": 105,
+    "when": {},
+    "text": "「{friend}が元気でいてくれるだけで、心強い」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-041",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "「孫の時代は、どんな世の中になるのだろう」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-042",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {},
+    "text": "「若い人は忙しそうだ。自分たちもそうだった」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-043",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {},
+    "text": "「若い人に教わることが、増えてきた」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-044",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "「孫には、好きなことをして生きてほしい」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-045",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {},
+    "text": "「昔はよかった、とは言わないでおこう」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-046",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "hasChildren": false
+    },
+    "text": "「近所の子が大きくなるのを見るのは、自分の子がいなくても楽しい」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t5-047",
+    "kind": "think",
+    "ageMin": 70,
+    "ageMax": 100,
+    "when": {
+      "hasChildren": false
+    },
+    "text": "「この家と庭を、誰に託そうか」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-048",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 105,
+    "when": {},
+    "text": "「ずいぶん便利な世の中になったものだ」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-049",
+    "kind": "think",
+    "ageMin": 75,
+    "ageMax": 100,
+    "yearMin": 1995,
+    "yearMax": 2026,
+    "when": {},
+    "text": "「戦争のころを覚えている者も、少なくなった」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-050",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 96,
+    "yearMin": 2019,
+    "yearMax": 2019,
+    "when": {},
+    "text": "「昭和、平成と生きてきた。また新しい時代か」",
+    "effects": {},
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "t5-051",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "urban": false
+    },
+    "text": "「この村の田んぼを、誰が継ぐのだろう」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-052",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 90,
+    "when": {},
+    "text": "「まだ行ったことのない土地へ、一度行ってみたい」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t5-053",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 95,
+    "when": {},
+    "text": "「もう一度、ふるさとの海が見たい」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-054",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 85,
+    "when": {},
+    "text": "「今から三味線を習ったら、笑われるだろうか」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-055",
+    "kind": "think",
+    "ageMin": 80,
+    "ageMax": 99,
+    "when": {},
+    "text": "「百歳まで生きたら、何をしていよう」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t5-056",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 85,
+    "when": {
+      "working": true
+    },
+    "text": "「働けるうちは、働いていたい」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-057",
+    "kind": "think",
+    "ageMin": 70,
+    "ageMax": 100,
+    "when": {},
+    "text": "「階段がつらい。でも、まだ自分で上れる」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-058",
+    "kind": "think",
+    "ageMin": 70,
+    "ageMax": 100,
+    "when": {},
+    "text": "「忘れることが増えた。忘れたくないことから、書いておこう」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-059",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "married": true
+    },
+    "text": "「{spouse}を残して、先に行くわけにはいかない」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-060",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "married": true,
+      "mood": "high"
+    },
+    "text": "「{spouse}と一緒になって、よかった」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t5-061",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "married": true
+    },
+    "text": "「けんかもしたが、ここまで二人で来た」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-062",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "poor": true
+    },
+    "text": "「年金だけで、あと何年やっていけるだろう」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-063",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "mood": "low"
+    },
+    "text": "「誰かの役に立てる日は、もう来ないのだろうか」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-064",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 105,
+    "when": {
+      "married": false,
+      "mood": "low"
+    },
+    "text": "「夜が長い」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-065",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 95,
+    "when": {
+      "rich": true
+    },
+    "text": "「お金は残すより、使いきるほうがいいのかもしれない」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-066",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {},
+    "text": "「{pet}を残しては、行けないな」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-067",
+    "kind": "think",
+    "ageMin": 90,
+    "ageMax": 110,
+    "when": {},
+    "text": "「よく生きたものだ」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t5-068",
+    "kind": "think",
+    "ageMin": 90,
+    "ageMax": 110,
+    "when": {},
+    "text": "「みんな先に行ってしまった。ずいぶん待たせている」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-069",
+    "kind": "think",
+    "ageMin": 90,
+    "ageMax": 110,
+    "when": {},
+    "text": "「今日も目が覚めた。ありがたいことだ」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t5-070",
+    "kind": "think",
+    "ageMin": 90,
+    "ageMax": 110,
+    "when": {},
+    "text": "「名前は忘れても、あの人の顔は覚えている」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-071",
+    "kind": "think",
+    "ageMin": 90,
+    "ageMax": 110,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "「ひ孫の顔まで見られるとは思わなかった」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t5-072",
+    "kind": "think",
+    "ageMin": 90,
+    "ageMax": 110,
+    "when": {},
+    "text": "「もう、急ぐことは何もない」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t5-073",
+    "kind": "think",
+    "ageMin": 90,
+    "ageMax": 110,
+    "when": {
+      "married": false
+    },
+    "text": "「ひとりで、ここまで来た」",
+    "effects": {},
+    "weight": 1
+  }
+]

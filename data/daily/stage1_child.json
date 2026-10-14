@@ -1,0 +1,3381 @@
+[
+  {
+    "id": "d1-001",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 6,
+    "when": {
+      "school": "elem",
+      "mother": true
+    },
+    "text": "入学式の朝、母が{name}の胸に名札を付けてくれた。安全ピンがなかなか通らず、母は何度もやり直していた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-002",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 6,
+    "when": {
+      "school": "elem"
+    },
+    "text": "教室の机に、平仮名で書かれた自分の名前が貼ってあった。隣の席の子が、自分の消しゴムを半分に割って一つくれた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-003",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 7,
+    "when": {
+      "school": "elem"
+    },
+    "text": "初めての授業参観で、手を挙げたのに当てられなかった。後ろを振り向くと、家の人が小さくうなずいていた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-004",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 7,
+    "when": {
+      "school": "elem"
+    },
+    "text": "前歯がぐらぐらしていて、給食のパンをかじった拍子に抜けた。言われたとおり、抜けた歯を屋根の上へ投げた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-005",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 8,
+    "when": {
+      "school": "elem"
+    },
+    "text": "算数の時間、おはじきを使って足し算をした。一つ床に落としてしまい、机の下にもぐって探しているうちに授業が進んでいた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-006",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 9,
+    "when": {
+      "school": "elem"
+    },
+    "text": "日直になり、朝の会で「起立、礼」と号令をかけた。声が裏返って、教室じゅうがくすくす笑った。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-007",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 10,
+    "when": {
+      "school": "elem"
+    },
+    "text": "席替えのくじで、窓際のいちばん後ろの席が当たった。授業中に校庭の木の枝が揺れるのを、ついぼんやり眺めた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-008",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 11,
+    "when": {
+      "school": "elem"
+    },
+    "text": "漢字の書き取りで百点を取った。答案を折らないように教科書の間に挟んで、家まで小走りで帰った。",
+    "effects": {
+      "happiness": 1,
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-009",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 11,
+    "when": {
+      "school": "elem"
+    },
+    "text": "宿題をやり忘れ、朝の教室で{name}だけが立ち上がって謝った。顔が熱くなり、その日は一日うつむいていた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-010",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "学級委員の選挙で、黒板に書かれた{name}の名前の下に正の字が一つだけ付いた。誰が書いてくれたのか、ずっと気になっていた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-011",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 11,
+    "when": {
+      "school": "elem"
+    },
+    "text": "飼育係になり、毎朝うさぎ小屋を掃除した。キャベツの芯を差し出すと、うさぎが鼻をひくひくさせて寄ってきた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-012",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "冬の体育の時間に、二重跳びが初めて続けて三回できた。縄が地面を打つ音が、いつもより軽く聞こえた。",
+    "effects": {
+      "health": 1,
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-013",
+    "kind": "daily",
+    "ageMin": 9,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "学芸会の劇で、{name}は木の役だった。せりふは一つもなかったが、両手を広げたまま最後まで動かなかった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-014",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 9,
+    "when": {
+      "school": "elem"
+    },
+    "text": "遠足の前の晩、リュックにおやつを詰めては出し、また詰め直した。結局よく眠れないまま朝になった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-015",
+    "kind": "daily",
+    "ageMin": 11,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "修学旅行の夜、旅館の布団で枕投げをした。見回りの先生の足音が近づくと、全員が一斉に寝たふりをした。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-016",
+    "kind": "daily",
+    "ageMin": 9,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "書き初めで「希望」と書いた。最後の払いがかすれてしまい、新しい半紙を三枚使い切った。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-017",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 11,
+    "when": {
+      "school": "elem"
+    },
+    "text": "図書室で借りた冒険の本を、布団の中で夢中になって読んだ。母に見つかって、明かりを消された。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-018",
+    "kind": "daily",
+    "ageMin": 9,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "理科の授業で、豆電球が初めて点いた。班の四人が同時に「ついた」と声を上げ、先生に静かにと言われた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-019",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "終業式の日、通知表を開く前に深呼吸をした。「もう少し」の欄に丸が一つあり、帰り道は石ばかり蹴っていた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "repeatGap": 2
+  },
+  {
+    "id": "d1-020",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "father": true
+    },
+    "text": "通知表に「よくできました」が並んだ。{fAge}歳の父に見せると、黙って{name}の頭をくしゃくしゃとなでた。",
+    "effects": {
+      "happiness": 2,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-021",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "mother": true
+    },
+    "text": "通知表の先生の言葉に「忘れ物が多い」と書いてあった。母は読み上げてから、明日の時間割を一緒にそろえてくれた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-022",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 10,
+    "when": {
+      "school": "elem"
+    },
+    "text": "運動会の徒競走で、ゴールの手前で転んだ。ひざをすりむいたまま走りきると、見物の人たちから大きな拍手が起きた。",
+    "effects": {
+      "happiness": 1,
+      "health": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-023",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 11,
+    "when": {
+      "school": "elem"
+    },
+    "text": "運動会の昼休み、家族でござを広げて弁当を食べた。重箱には、ふだんは出ない卵焼きとのり巻きが並んでいた。",
+    "effects": {
+      "happiness": 2,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-024",
+    "kind": "daily",
+    "ageMin": 9,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "運動会の騎馬戦で、{name}は上に乗る役になった。相手の鉢巻きをつかんだ瞬間、下の三人ごと砂の上に崩れた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-025",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "夏休みの宿題を、最後の三日間でまとめて片付けた。朝顔の観察日記は、思い出しながら色鉛筆で描いた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "repeatGap": 2
+  },
+  {
+    "id": "d1-026",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "自由研究で、庭の蟻の行列を毎朝数えた。数字を並べた表を先生にほめられ、少し得意になった。",
+    "effects": {
+      "knowledge": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-027",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 10,
+    "when": {
+      "school": "elem"
+    },
+    "text": "夏休みの朝、眠い目をこすってラジオ体操に通った。首から下げたカードに、はんこが一つずつ増えていった。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-028",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 9,
+    "when": {
+      "school": "elem"
+    },
+    "text": "給食のにんじんが食べられず、昼休みになっても一人だけ席に残された。最後は鼻をつまんで、ひと口で飲みこんだ。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-029",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "給食当番で、大きな鍋のおかずを配った。おかわりの列に並ぶ男子たちが、{name}の手元をじっと見つめていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-030",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "給食で残ったデザートを、じゃんけんで取り合った。最後の一人まで勝ち残り、教室の真ん中で両手を挙げた。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-031",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 9,
+    "when": {
+      "school": "elem",
+      "hasSibling": true
+    },
+    "text": "{sib}の手を引いて、近所の店までお使いに行った。{sib}が転ばないよう、何度も後ろを振り返った。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-032",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "hasSibling": true
+    },
+    "text": "{sib}と、おやつのせんべいの大きさで取っ組み合いになった。二人とも叱られ、せんべいは両方取り上げられた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-033",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "hasSibling": true
+    },
+    "text": "{sib}がおねしょをした朝、{name}は黙って布団を干すのを手伝った。{sib}は一日じゅう、{name}の後ろをついて回った。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-034",
+    "kind": "daily",
+    "ageMin": 9,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "hasSibling": true
+    },
+    "text": "{sib}の宿題を見てやることになった。教えているうちに{name}のほうが分からなくなり、二人で教科書をにらんだ。",
+    "effects": {
+      "knowledge": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-035",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "hasSibling": false
+    },
+    "text": "家に帰ると誰もいなくて、一人でトランプを並べた。きょうだいの多い友だちの家のにぎやかさが、少しうらやましかった。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-036",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "mother": true
+    },
+    "text": "{name}の誕生日の夜、母が好物のおかずを作ってくれた。{mAge}歳の母は、台所で鼻歌を歌いながら鍋をかき回していた。",
+    "effects": {
+      "happiness": 2,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-037",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "father": true
+    },
+    "text": "日曜日、父と土手でキャッチボールをした。{fAge}歳の父の球は思ったより速く、手のひらがじんとしびれた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-038",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 9,
+    "when": {
+      "school": "elem",
+      "father": true
+    },
+    "text": "父に荷台を押さえてもらって、自転車の練習をした。気づくと父の手は離れていて、{name}は一人で角まで走っていた。",
+    "effects": {
+      "happiness": 2,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-039",
+    "kind": "daily",
+    "ageMin": 9,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "father": false,
+      "mother": true
+    },
+    "text": "母の帰りが遅い日は、夕飯の支度が{name}の役目だった。鍋の火を小さくして、窓の外の足音に耳を澄ませた。",
+    "effects": {
+      "relation": 1,
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-040",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "mother": false,
+      "father": true
+    },
+    "text": "授業参観の日、教室の後ろに並んだ大人の中に、仕事着のままの父がいた。{name}は急に背筋を伸ばした。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-041",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "正月、親戚からもらったお年玉を畳に並べて数えた。半分は「預かっておく」と言われ、それきり戻ってこなかった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "repeatGap": 3
+  },
+  {
+    "id": "d1-042",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 9,
+    "when": {
+      "school": "elem"
+    },
+    "text": "初めて一人でお使いに行った。店先で頼まれた数を忘れてしまい、指を折りながら必死に思い出した。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-043",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 10,
+    "when": {
+      "school": "elem",
+      "mother": true
+    },
+    "text": "熱を出して学校を休んだ。母がすりおろしてくれたりんごが、少し茶色くなっていて甘かった。",
+    "effects": {
+      "health": -1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-044",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "茶わんを割ってしまい、破片を新聞紙に包んで隠した。夕飯のとき、自分の茶わんだけ違うのを家の人に気づかれた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-045",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "大みそかの夜、家族でこたつに入ってそばをすすった。除夜の鐘が鳴り始めるまで起きていようとして、途中で寝てしまった。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-046",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 10,
+    "when": {
+      "school": "elem"
+    },
+    "text": "七夕の短冊に「足が速くなりますように」と書いた。笹の葉が風に揺れて、願い事がくるくる回っていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-047",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "poor": true
+    },
+    "text": "新しい鉛筆を買ってもらえず、短くなった鉛筆に筒をはめて使った。指がつりそうになりながら、漢字を書いた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-048",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "poor": true
+    },
+    "text": "ほかの子が新しい運動靴で並ぶなか、{name}の靴はつま先が薄くなっていた。走るときは、足の指を少し丸めた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-049",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "rich": true
+    },
+    "text": "誕生日に、たくさんの色が並んだ色鉛筆の缶をもらった。もったいなくて、しばらくは一本も削れなかった。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-050",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "{pet}の散歩は{name}の当番だった。雨の日も、{pet}は玄関の前で尻尾を振って待っていた。",
+    "effects": {
+      "happiness": 1,
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-051",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "夢を聞かれるたびに、{name}はいつも同じ答えをした。言うたびに、本当にそうなる気がしていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-052",
+    "kind": "daily",
+    "ageMin": 9,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "作文の題は「将来の夢」だった。書き出しの一行に迷って、鉛筆の頭をかじっているうちに授業が終わった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-053",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "urban": false
+    },
+    "text": "田植えの日は、学校が終わるとすぐ田んぼへ走った。泥に足を取られて尻もちをつき、祖母に大笑いされた。",
+    "effects": {
+      "health": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-054",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "urban": false
+    },
+    "text": "稲刈りのあと、刈った稲を干すのを手伝った。腕がちくちくかゆくなり、夜になっても赤い筋が残っていた。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-055",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 11,
+    "when": {
+      "school": "elem",
+      "urban": false
+    },
+    "text": "夏の夜、田んぼのあぜ道で蛍を追いかけた。手のひらで包んだ蛍の光が、指のすき間からもれていた。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-056",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "urban": false
+    },
+    "text": "川で網を構えて、魚を追いこんだ。網に入ったのは小さな沢蟹だけで、川原の石の上に放してやった。",
+    "effects": {
+      "happiness": 1,
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-057",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "urban": false
+    },
+    "text": "秋の山で、いがを靴で踏み開けて栗を拾った。指にとげが刺さったまま、ポケットをぱんぱんにして帰った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-058",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 10,
+    "when": {
+      "school": "elem",
+      "urban": false
+    },
+    "text": "朝早く雑木林へ行き、樹液の出る木を見て回った。大きなかぶと虫を見つけ、虫かごを抱えて家まで走った。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-059",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "urban": false
+    },
+    "text": "冬の朝、通学路の水たまりに氷が張っていた。踏み割る音が気持ちよくて、わざと遠回りをした。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-060",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "urban": true
+    },
+    "text": "夏休み、田舎の祖父母の家に泊まった。夜は虫の声がうるさいほどで、なかなか寝つけなかった。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-061",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "urban": true
+    },
+    "text": "家の前の路地で、近所の子たちとゴム跳びをした。車が来るたびに、ゴムを持つ子が端へ寄った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-062",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "urban": true
+    },
+    "text": "電車に一人で乗って、二駅先の親戚の家へ行った。切符を握りしめすぎて、改札で渡すときにはしわくちゃになっていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-063",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 8,
+    "when": {
+      "school": "elem"
+    },
+    "text": "休み時間、鉄棒で逆上がりの練習をしていたら、{friend}が足を押し上げてくれた。それから毎日いっしょに帰るようになった。",
+    "effects": {
+      "happiness": 2,
+      "relation": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-064",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 8,
+    "when": {
+      "school": "elem"
+    },
+    "text": "入学してすぐ、{friend}と帰り道が同じだと分かった。分かれ道の電柱の前で、毎日「また明日」と言い合った。",
+    "effects": {
+      "happiness": 1,
+      "relation": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-065",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 11,
+    "when": {
+      "school": "elem"
+    },
+    "text": "{friend}と、どちらが先にブランコに乗るかで言い合いになった。次の日は一言も口をきかず、帰り道がやけに長く感じた。",
+    "effects": {
+      "happiness": -2,
+      "relation": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-066",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 11,
+    "when": {
+      "school": "elem"
+    },
+    "text": "けんかして三日目の朝、{friend}が黙って飴玉を一つ机に置いていった。昼休みには、もう二人で笑っていた。",
+    "effects": {
+      "happiness": 2,
+      "relation": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-067",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 11,
+    "when": {
+      "school": "elem"
+    },
+    "text": "{friend}と、空き地の隅に板切れを集めて秘密基地を作った。合言葉を決めて、ほかの子には場所を教えなかった。",
+    "effects": {
+      "happiness": 2,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-068",
+    "kind": "daily",
+    "ageMin": 9,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "{friend}の家が遠くへ引っ越すことになった。最後の日、新しい住所を書いた紙を受け取り、何度も読み返した。",
+    "effects": {
+      "happiness": -2
+    },
+    "weight": 0.3
+  },
+  {
+    "id": "d1-069",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "{friend}の家に初めて泊まった。よその家の布団は少し違うにおいがして、夜中まで小声でしゃべり続けた。",
+    "effects": {
+      "happiness": 2,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-070",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "{friend}と通知表を見せ合った。体育は{friend}のほうが上で、図工は{name}のほうが上だった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-071",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 11,
+    "when": {
+      "school": "elem",
+      "urban": false
+    },
+    "text": "{friend}と川で魚を追いかけて、靴を片方流してしまった。{friend}が下流まで走って、拾ってきてくれた。",
+    "effects": {
+      "relation": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-072",
+    "kind": "daily",
+    "ageMin": 9,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "{friend}にだけ、好きな子の名前を打ち明けた。次の日、{friend}は約束どおり誰にも言っていなかった。",
+    "effects": {
+      "relation": 2,
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-073",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 11,
+    "when": {
+      "school": "elem"
+    },
+    "text": "{friend}の誕生日に、折り紙の箱に小さな手紙を入れて渡した。{friend}はそれを筆箱の中にずっとしまっていた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-074",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "貸した本を{friend}がなくしたと聞いて、つい大きな声を出した。あとで自分の机の奥から出てきて、走って謝りに行った。",
+    "effects": {
+      "relation": 1,
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-075",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 10,
+    "when": {
+      "school": "elem"
+    },
+    "text": "帰り道に夕立が来て、{friend}と一本の傘に入った。二人とも肩までびしょぬれになり、家の前で笑い合った。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-076",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "運動会のリレーで、{friend}からバトンを受け取った。手の中のバトンが温かくて、いつもより速く走れた気がした。",
+    "effects": {
+      "happiness": 2,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-077",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "クラス替えで、{friend}と別の組になった。休み時間になるたびに、廊下の端で待ち合わせをした。",
+    "effects": {
+      "happiness": -1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-078",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 11,
+    "when": {
+      "school": "elem"
+    },
+    "text": "{friend}が風邪で休んだ日、連絡帳とプリントを家まで届けた。玄関に出てきた{friend}の家の人に、お菓子をもらった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-079",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "urban": false
+    },
+    "text": "{friend}と柿の木に登って、高い枝の実をもいだ。渋柿だと分かり、二人で顔をしかめて吐き出した。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-080",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "夏休みの最後の日、{friend}の家で宿題の残りを片付けた。日記の天気が思い出せず、二人で古新聞をめくった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-081",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 11,
+    "when": {
+      "school": "elem"
+    },
+    "text": "夏祭りの夜、{friend}と金魚すくいをした。{friend}がすくった一匹を、{name}の袋に入れてくれた。",
+    "effects": {
+      "happiness": 2,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-082",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 10,
+    "when": {
+      "school": "elem"
+    },
+    "text": "雪の積もった朝、{friend}と校庭で雪だるまを作った。次の日に見に行くと、少し傾いて小さくなっていた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-083",
+    "kind": "daily",
+    "ageMin": 9,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "{friend}が、ほかの子と楽しそうに話しているのを見て、なぜか胸がもやもやした。その日は一人で先に帰った。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-084",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "{friend}とけんかして一週間が過ぎた。自分から「ごめん」と言ったら、{friend}も同時に同じことを言った。",
+    "effects": {
+      "happiness": 2,
+      "relation": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "d1-085",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 6,
+    "yearMin": 1936,
+    "yearMax": 1940,
+    "when": {
+      "school": "elem"
+    },
+    "text": "尋常小学校の入学式に、母が縫ってくれた布のかばんを肩から下げていった。新しい草履の鼻緒が、少し指に食いこんだ。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：国民学校は1941年4月〜1947年3月、その前は小学校（尋常小学校）（コトバンク「国民学校」、中央区デジタルミュージアム）"
+  },
+  {
+    "id": "d1-086",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 6,
+    "yearMin": 1941,
+    "yearMax": 1946,
+    "when": {
+      "school": "elem"
+    },
+    "text": "国民学校に入学した。大きすぎる上着の袖を折り返し、校門の前で背の高い上級生たちを見上げた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "確認済み：国民学校は1941年4月〜1947年3月、その前は小学校（尋常小学校）（コトバンク「国民学校」、中央区デジタルミュージアム）"
+  },
+  {
+    "id": "d1-087",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1941,
+    "yearMax": 1946,
+    "when": {
+      "school": "elem"
+    },
+    "text": "国民学校の朝礼で、校長先生の長い話を聞いた。前の列の子の坊主頭を、ぼんやり数えていた。",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：国民学校は1941年4月〜1947年3月、その前は小学校（尋常小学校）（コトバンク「国民学校」、中央区デジタルミュージアム）"
+  },
+  {
+    "id": "d1-088",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "yearMin": 1942,
+    "yearMax": 1946,
+    "when": {
+      "school": "elem"
+    },
+    "text": "校庭の一部が畑になり、みんなでさつまいもの苗を植えた。秋に掘り出した芋は、思っていたより細かった。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-089",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1945,
+    "yearMax": 1946,
+    "when": {
+      "school": "elem"
+    },
+    "text": "先生に言われて、教科書のあちこちを墨で黒く塗った。何が書いてあったのか、もう読めなくなった。",
+    "effects": {
+      "knowledge": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-090",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1946,
+    "yearMax": 1949,
+    "when": {
+      "school": "elem",
+      "urban": true
+    },
+    "text": "教室が足りず、校庭の木の下で授業を受けた。風で教科書がめくれるたび、みんなが手で押さえた。",
+    "effects": {},
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-091",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1947,
+    "yearMax": 1947,
+    "when": {
+      "school": "elem"
+    },
+    "text": "学校の名前が国民学校から小学校に戻った。校門の表札が掛け替えられるのを、{friend}と並んで見ていた。",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：1947年の学校教育法で国民学校は6年制の小学校に改編（中央区デジタルミュージアム、コトバンク）"
+  },
+  {
+    "id": "d1-092",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1947,
+    "yearMax": 1957,
+    "when": {
+      "school": "elem"
+    },
+    "text": "給食の脱脂粉乳が、アルミの器になみなみとつがれた。鼻をつまんで飲み干すと、{friend}が小さく拍手した。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1,
+    "check": "確認済み：ララ物資の脱脂粉乳を使った給食は1947年1月から本格的に始まった（各自治体の給食だより）"
+  },
+  {
+    "id": "d1-093",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "yearMin": 1947,
+    "yearMax": 1957,
+    "when": {
+      "school": "elem"
+    },
+    "text": "給食の脱脂粉乳の表面に、薄い膜が張っていた。それを箸でよけているうちに、すっかりぬるくなった。",
+    "effects": {
+      "health": 1,
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "確認済み：ララ物資の脱脂粉乳を使った給食は1947年1月から本格的に始まった（各自治体の給食だより）"
+  },
+  {
+    "id": "d1-094",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 11,
+    "yearMin": 1946,
+    "yearMax": 1957,
+    "when": {
+      "school": "elem"
+    },
+    "text": "拍子木の音が聞こえると、路地に子どもが集まった。水あめを買った子が前に座り、{name}は後ろから首を伸ばした。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：街頭紙芝居の最盛期は昭和20〜30年代、テレビの普及で昭和30年代後半に衰えた（文化遺産オンライン、国立アートリサーチセンターの解説）"
+  },
+  {
+    "id": "d1-095",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1946,
+    "yearMax": 1957,
+    "when": {
+      "school": "elem"
+    },
+    "text": "紙芝居のおじさんが、いいところで「続きはまた明日」と言った。帰り道、{friend}と続きを勝手に考え合った。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：街頭紙芝居の最盛期は昭和20〜30年代、テレビの普及で昭和30年代後半に衰えた（文化遺産オンライン、国立アートリサーチセンターの解説）"
+  },
+  {
+    "id": "d1-096",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1936,
+    "yearMax": 1957,
+    "when": {
+      "school": "elem",
+      "sex": "male"
+    },
+    "text": "路地で、めんこを地面にたたきつけた。{friend}のめんこが裏返り、勝った一枚を大事にポケットへしまった。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-097",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "yearMin": 1936,
+    "yearMax": 1957,
+    "when": {
+      "school": "elem",
+      "sex": "male"
+    },
+    "text": "ひもを巻いたべいごまを、桶に張った布の上へ投げこんだ。はじき出された相手のこまは、そのまま{name}のものになった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-098",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 11,
+    "yearMin": 1936,
+    "yearMax": 1957,
+    "when": {
+      "school": "elem",
+      "sex": "female"
+    },
+    "text": "縁側で、祖母に教わりながらお手玉をした。小豆の入った布の玉が、手のひらでしゃりしゃりと鳴った。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-099",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 11,
+    "yearMin": 1936,
+    "yearMax": 1957,
+    "when": {
+      "school": "elem",
+      "sex": "female"
+    },
+    "text": "畳の上におはじきを広げ、{friend}と取り合った。光にかざすと、ガラスの中に小さな泡が見えた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-100",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1936,
+    "yearMax": 1957,
+    "when": {
+      "school": "elem"
+    },
+    "text": "下駄の鼻緒が切れて、片足でけんけんしながら帰った。{friend}が手ぬぐいを裂いて、すげ替えてくれた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-101",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1936,
+    "yearMax": 1957,
+    "when": {
+      "school": "elem",
+      "urban": false
+    },
+    "text": "朝起きると、まず井戸から水をくんで台所の甕を満たした。冬は桶のつるが冷たく、手が真っ赤になった。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-102",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "yearMin": 1936,
+    "yearMax": 1957,
+    "when": {
+      "school": "elem",
+      "urban": false
+    },
+    "text": "風呂を沸かすのが{name}の役目だった。かまどに薪をくべ、煙で目をしょぼしょぼさせながら火の番をした。",
+    "effects": {
+      "health": 0,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-103",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1936,
+    "yearMax": 1952,
+    "when": {
+      "school": "elem",
+      "hasSibling": true
+    },
+    "text": "{sib}を背中におぶったまま、外で遊んだ。{sib}が眠ってしまうと、背中だけがじんわり温かかった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-104",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "yearMin": 1936,
+    "yearMax": 1957,
+    "when": {
+      "school": "elem",
+      "urban": false
+    },
+    "text": "田植えと稲刈りの時期には、学校が農繁休みになった。{name}も朝から田んぼに出て、苗を運んだ。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-105",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "yearMin": 1936,
+    "yearMax": 1957,
+    "when": {
+      "school": "elem"
+    },
+    "text": "夕方、ラジオの前に家族が集まった。連続の放送劇が始まると、母は繕い物の手を止めて耳を寄せた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-106",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1953,
+    "yearMax": 1957,
+    "when": {
+      "school": "elem",
+      "urban": true
+    },
+    "text": "駅前の街頭テレビに人だかりができていた。大人の背中のすき間から、白黒の画面がちらりと見えた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-107",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "yearMin": 1950,
+    "yearMax": 1957,
+    "when": {
+      "school": "elem"
+    },
+    "text": "貸本屋で漫画を一冊借りて、{friend}と回し読みをした。返す日を一日過ぎて、店のおばさんににらまれた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-108",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1946,
+    "yearMax": 1957,
+    "when": {
+      "school": "elem"
+    },
+    "text": "冬の教室では、だるまストーブの燃料を運ぶのが当番の仕事だった。弁当箱をストーブの上に載せておくと、昼にはほかほかになった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-109",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 10,
+    "yearMin": 1936,
+    "yearMax": 1957,
+    "when": {
+      "school": "elem",
+      "hasSibling": true
+    },
+    "text": "竹馬に初めて乗れた。高い所から見る路地はいつもと違って見え、{sib}に向かって手を振った。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-110",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1947,
+    "yearMax": 1957,
+    "when": {
+      "school": "elem",
+      "hasSibling": true
+    },
+    "text": "給食のコッペパンを半分残して、紙に包んで持ち帰った。{sib}にあげると、すぐに食べてしまった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-111",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1936,
+    "yearMax": 1957,
+    "when": {
+      "school": "elem"
+    },
+    "text": "縁日で、ハッカのパイプを一本だけ買ってもらった。吸うたびに、口の中がすうっと冷たくなった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-112",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "yearMin": 1946,
+    "yearMax": 1957,
+    "when": {
+      "school": "elem",
+      "poor": true
+    },
+    "text": "弁当のおかずは、いつも梅干しとたくあんだった。ふたで隠しながら食べていたら、隣の子が煮豆を一つ分けてくれた。",
+    "effects": {
+      "happiness": 0,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-113",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1936,
+    "yearMax": 1957,
+    "when": {
+      "school": "elem",
+      "urban": true
+    },
+    "text": "銭湯の帰り、手ぬぐいを振り回して歩いた。家に着くころには、手ぬぐいが板のように凍っていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-114",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "yearMin": 1966,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem"
+    },
+    "text": "給食の瓶の牛乳は、紙のふたを爪で開けるのが難しかった。勢いよく開けた拍子に、白いしぶきが顔に飛んだ。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1,
+    "check": "確認済み：脱脂粉乳から牛乳への切り替えは1965年前後の地域が多く、大阪市は1972年（川越市・大阪市の給食資料）"
+  },
+  {
+    "id": "d1-115",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1966,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem"
+    },
+    "text": "学校の帰りに駄菓子屋へ寄り、十円のくじ付きガムを買った。外れの紙を丸めて、{friend}に投げつけた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-116",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1966,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem"
+    },
+    "text": "駄菓子屋の前で、{friend}と小銭を出し合った。一つの袋菓子を半分ずつにしようとして、何度も数え直した。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-117",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1966,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem"
+    },
+    "text": "夕暮れの公園で缶けりをした。鬼のすきを突いて{name}が缶を蹴ると、隠れていたみんなが一斉に走り出した。",
+    "effects": {
+      "happiness": 2,
+      "health": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-118",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 10,
+    "yearMin": 1970,
+    "yearMax": 1970,
+    "when": {
+      "school": "elem"
+    },
+    "text": "万博に連れていってもらった。長い行列にくたびれて、大人の足の間からパビリオンの屋根ばかり見ていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：日本万国博覧会は1970年3月15日〜9月13日、大阪で開催（財務省の資料）"
+  },
+  {
+    "id": "d1-119",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 10,
+    "yearMin": 1970,
+    "yearMax": 1970,
+    "when": {
+      "school": "elem"
+    },
+    "text": "万博へ行った子が、外国の人のサインをクラスで見せて回った。{name}は行けなかったので、黙って聞いていた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "確認済み：日本万国博覧会は1970年3月15日〜9月13日、大阪で開催（財務省の資料）"
+  },
+  {
+    "id": "d1-120",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "yearMin": 1968,
+    "yearMax": 1978,
+    "when": {
+      "school": "elem"
+    },
+    "text": "家にカラーテレビが来た。夜、家族そろって画面の前に座り、色が付いたアニメに{name}は思わず声を上げた。",
+    "effects": {
+      "happiness": 2,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み（大まか）：白黒テレビは1960年代に普及し、カラーテレビは1970年代に急速に普及（教材資料。年ごとの普及率は未確認）"
+  },
+  {
+    "id": "d1-121",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "yearMin": 1966,
+    "yearMax": 1972,
+    "when": {
+      "school": "elem",
+      "poor": true
+    },
+    "text": "家のテレビは白黒で、友だちの話す番組の色が分からなかった。話を合わせて、うなずくだけにした。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "確認済み（大まか）：白黒テレビは1960年代に普及し、カラーテレビは1970年代に急速に普及（教材資料。年ごとの普及率は未確認）"
+  },
+  {
+    "id": "d1-122",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "yearMin": 1966,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem"
+    },
+    "text": "夕方のアニメが始まる時刻になると、外遊びを切り上げて家へ走った。間に合わず、主題歌の終わりだけ聞いた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-123",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "yearMin": 1969,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem",
+      "sex": "male"
+    },
+    "text": "発売日の朝、{friend}が少年ジャンプを学校に持ってきた。休み時間ごとに、机の周りに頭がいくつも集まった。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：少年ジャンプは1968年創刊、1969年に週刊化（集英社の展覧会の案内記事）"
+  },
+  {
+    "id": "d1-124",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1977,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem",
+      "sex": "male"
+    },
+    "text": "コロコロコミックの分厚い号を、床屋の待合で読みふけった。自分の番が来たことに、呼ばれて二度目で気づいた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：コロコロコミックは1977年5月創刊（英語版Wikipedia、経済メディアの記事）"
+  },
+  {
+    "id": "d1-125",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1983,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem"
+    },
+    "text": "{friend}の家にファミコンがあった。コントローラーを順番に回し、自分の番が来るまで画面の前でひざを抱えていた。",
+    "effects": {
+      "happiness": 2,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：ファミリーコンピュータの発売は1983年7月15日（ファミ通ほか）"
+  },
+  {
+    "id": "d1-126",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1983,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem",
+      "rich": true
+    },
+    "text": "クリスマスの朝、枕元にファミコンの箱があった。テレビにつなぐ線が分からず、父が説明書を読み上げた。",
+    "effects": {
+      "happiness": 3
+    },
+    "weight": 1,
+    "check": "確認済み：ファミリーコンピュータの発売は1983年7月15日（ファミ通ほか）"
+  },
+  {
+    "id": "d1-127",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1984,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem"
+    },
+    "text": "ファミコンは一日一時間と決められていた。夕飯の支度の音が聞こえ始めると、急いでセーブできる場所を探した。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "確認済み：ファミリーコンピュータの発売は1983年7月15日（ファミ通ほか）"
+  },
+  {
+    "id": "d1-128",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1984,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem",
+      "poor": true
+    },
+    "text": "クラスの男子の話はファミコンのことばかりだった。{name}の家にはなく、休み時間は聞いているふりをした。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "確認済み：ファミリーコンピュータの発売は1983年7月15日（ファミ通ほか）"
+  },
+  {
+    "id": "d1-129",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "yearMin": 1986,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem"
+    },
+    "text": "{friend}と、ミニ四駆のモーターを取り替えて速さを競った。廊下を走り抜けたミニ四駆が壁にぶつかり、部品が飛び散った。",
+    "effects": {
+      "happiness": 2,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：ミニ四駆の第一次ブームは1980年代後半、第二次ブームは1994年のフルカウルミニ四駆発売以降の1990年代半ば（ORICON、乗りものニュース）"
+  },
+  {
+    "id": "d1-130",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "yearMin": 1966,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem",
+      "mother": true
+    },
+    "text": "土曜日は授業が昼までだった。チャイムが鳴ると急いで帰り、台所で母が作った焼きそばをかきこんだ。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：学校週5日制は1992年9月に月1回、1995年4月に月2回、2002年4月に完全実施。それまで土曜日も授業があった（imidas、ベネッセ教育総合研究所の資料）"
+  },
+  {
+    "id": "d1-131",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "yearMin": 1966,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem"
+    },
+    "text": "黒電話のダイヤルを回して、{friend}の家に電話をかけた。出たのが{friend}の父親で、思わず受話器を両手で握った。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-132",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "yearMin": 1966,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem",
+      "urban": true
+    },
+    "text": "団地の階段を駆け下りて、公園の砂場に集まった。夕方五時の音楽が流れると、みんな一斉に棟へ散っていった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-133",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1966,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem",
+      "urban": true
+    },
+    "text": "首から鍵をひもで下げて学校へ通った。家に帰ってドアを開けると、しんとした台所におやつと書き置きがあった。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-134",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 12,
+    "yearMin": 1975,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem",
+      "urban": true
+    },
+    "text": "クラスの半分くらいが塾に通い始めた。{name}も週二回、駅前の雑居ビルの教室へ行くことになった。",
+    "effects": {
+      "knowledge": 1,
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-135",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1966,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem"
+    },
+    "text": "給食にソフト麺が出た日、袋から出した麺をスープの器に入れようとして、半分を机にこぼした。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-136",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "yearMin": 1966,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem"
+    },
+    "text": "音楽の時間、鍵盤ハーモニカのホースをくわえて合奏した。隣の子がずっと半音ずれていて、笑いをこらえた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-137",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "yearMin": 1970,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem",
+      "sex": "female"
+    },
+    "text": "{friend}と交換日記を始めた。キャラクターのシールを貼ったノートを、一日おきにこっそり渡し合った。",
+    "effects": {
+      "relation": 2
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-138",
+    "kind": "daily",
+    "ageMin": 9,
+    "ageMax": 12,
+    "yearMin": 1975,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem"
+    },
+    "text": "ラジカセを机に置き、テレビの前で歌番組を録音した。途中で母の呼ぶ声が入り、何度も聞き返して頭を抱えた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-139",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1966,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem",
+      "urban": false
+    },
+    "text": "集落の子どもたちで川へ泳ぎに行った。上級生が飛びこむ岩から、{name}も目をつぶって飛び降りた。",
+    "effects": {
+      "happiness": 2,
+      "health": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-140",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "yearMin": 1966,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem"
+    },
+    "text": "消しゴム集めがはやり、筆箱の中は使えない消しゴムでいっぱいになった。{friend}と、いちばん珍しい一個を交換した。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-141",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "yearMin": 1966,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem"
+    },
+    "text": "学校のプールの授業で、初めて顔を水につけたまま進めた。息継ぎで顔を上げると、塩素のにおいが鼻にしみた。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-142",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1996,
+    "yearMax": 2001,
+    "when": {
+      "school": "elem"
+    },
+    "text": "ゲームボーイの通信ケーブルで、{friend}と育てたモンスターを交換した。電池が切れかけて、画面が薄くなっていった。",
+    "effects": {
+      "happiness": 2,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：ゲームボーイの発売は1989年4月21日（ファミ通ほか）"
+  },
+  {
+    "id": "d1-143",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1996,
+    "yearMax": 2001,
+    "when": {
+      "school": "elem",
+      "poor": true
+    },
+    "text": "みんなが持っているゲームボーイを、{name}は持っていなかった。友だちの肩越しに、小さな画面をのぞきこんだ。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "確認済み：ゲームボーイの発売は1989年4月21日（ファミ通ほか）"
+  },
+  {
+    "id": "d1-144",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "yearMin": 1996,
+    "yearMax": 1998,
+    "when": {
+      "school": "elem"
+    },
+    "text": "たまごっちの世話を、授業中もこっそりしていた。休み時間に見ると、画面の中でふんが三つ並んでいた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：たまごっちの発売は1996年11月23日（ORICONほか）"
+  },
+  {
+    "id": "d1-145",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1996,
+    "yearMax": 2005,
+    "when": {
+      "school": "elem"
+    },
+    "text": "{friend}とポケモンカードを床に並べて対戦した。キラキラ光るカードを一枚出され、{name}は思わず黙りこんだ。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：ポケモンカードゲーム第1弾は1996年10月20日発売（ポケモンカードゲーム公式20周年年表）"
+  },
+  {
+    "id": "d1-146",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1997,
+    "yearMax": 2005,
+    "when": {
+      "school": "elem"
+    },
+    "text": "お小遣いを握りしめて、カードの拡張パックを一つ買った。袋を開ける前に、指で厚みを確かめた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：ポケモンカードゲーム第1弾は1996年10月20日発売（ポケモンカードゲーム公式20周年年表）"
+  },
+  {
+    "id": "d1-147",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1996,
+    "yearMax": 1999,
+    "when": {
+      "school": "elem"
+    },
+    "text": "{friend}とミニ四駆のボディに色を塗った。公園の段差で走らせると、片方のタイヤが外れて転がっていった。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：ミニ四駆の第一次ブームは1980年代後半、第二次ブームは1994年のフルカウルミニ四駆発売以降の1990年代半ば（ORICON、乗りものニュース）"
+  },
+  {
+    "id": "d1-148",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1996,
+    "yearMax": 1999,
+    "when": {
+      "school": "elem"
+    },
+    "text": "親戚のお兄さんにもらったスーパーファミコンで遊んだ。カセットの差しこみ口に、何度も息を吹きかけた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：スーパーファミコンの発売は1990年11月21日（ファミ通ほか）"
+  },
+  {
+    "id": "d1-149",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "yearMin": 1996,
+    "yearMax": 2001,
+    "when": {
+      "school": "elem"
+    },
+    "text": "第2土曜日は学校が休みだった。{name}は朝からパジャマのまま、テレビの前でごろごろしていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：学校週5日制は1992年9月に月1回、1995年4月に月2回、2002年4月に完全実施。それまで土曜日も授業があった（imidas、ベネッセ教育総合研究所の資料）"
+  },
+  {
+    "id": "d1-150",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "yearMin": 2002,
+    "yearMax": 2017,
+    "when": {
+      "school": "elem"
+    },
+    "text": "土曜日の朝、学校のない日だと思い出して、もう一度布団にもぐった。家の中に掃除機の音が響いていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：学校週5日制は1992年9月に月1回、1995年4月に月2回、2002年4月に完全実施。それまで土曜日も授業があった（imidas、ベネッセ教育総合研究所の資料）"
+  },
+  {
+    "id": "d1-151",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 9,
+    "yearMin": 1998,
+    "yearMax": 2017,
+    "when": {
+      "school": "elem"
+    },
+    "text": "放課後は学童保育で過ごした。指導員さんとこまを回しているうちに窓の外が暗くなり、迎えの声が聞こえた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：放課後児童健全育成事業（学童保育）は1997年の児童福祉法改正で法制化、1998年4月施行（舞鶴市の資料ほか）"
+  },
+  {
+    "id": "d1-152",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 9,
+    "yearMin": 1998,
+    "yearMax": 2017,
+    "when": {
+      "school": "elem"
+    },
+    "text": "学童保育のおやつは、いつも小さな袋のせんべいと麦茶だった。{friend}と、おまけのシールを見せ合った。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：放課後児童健全育成事業（学童保育）は1997年の児童福祉法改正で法制化、1998年4月施行（舞鶴市の資料ほか）"
+  },
+  {
+    "id": "d1-153",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 2004,
+    "yearMax": 2013,
+    "when": {
+      "school": "elem"
+    },
+    "text": "{friend}とニンテンドーDSを持ち寄って、通信で対戦した。負けた{name}は、すぐに「もう一回」と言った。",
+    "effects": {
+      "happiness": 2,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：ニンテンドーDSの日本発売は2004年12月2日（ファミ通、GAME Watch）"
+  },
+  {
+    "id": "d1-154",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 2005,
+    "yearMax": 2013,
+    "when": {
+      "school": "elem"
+    },
+    "text": "DSのタッチペンをなくして、つまようじの頭で画面をつついた。母に見つかって、画面が傷つくと叱られた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "確認済み：ニンテンドーDSの日本発売は2004年12月2日（ファミ通、GAME Watch）"
+  },
+  {
+    "id": "d1-155",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 2011,
+    "yearMax": 2017,
+    "when": {
+      "school": "elem"
+    },
+    "text": "3DSを持って休日の駅前を歩いた。家に帰ると、知らない人とのすれちがいの記録がいくつも届いていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：ニンテンドー3DSの発売は2011年2月26日（ファミ通）"
+  },
+  {
+    "id": "d1-156",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 12,
+    "yearMin": 2011,
+    "yearMax": 2017,
+    "when": {
+      "school": "elem"
+    },
+    "text": "外国語活動の時間に、外国から来た先生と英語で自己紹介をした。「マイネームイズ」のあとが小さな声になった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "確認済み：小学校5・6年の外国語活動は2011年度から必修（神戸新聞ほか）"
+  },
+  {
+    "id": "d1-157",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 11,
+    "yearMin": 2014,
+    "yearMax": 2015,
+    "when": {
+      "school": "elem"
+    },
+    "text": "妖怪メダルが品薄で、どの店にもなかった。{friend}がダブった一枚をくれて、{name}は筆箱の奥に大事にしまった。",
+    "effects": {
+      "happiness": 2,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：妖怪メダルは2014年1月発売、2014年は品薄が続いた（東洋経済オンライン、インサイドゲームズ）"
+  },
+  {
+    "id": "d1-158",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 2002,
+    "yearMax": 2017,
+    "when": {
+      "school": "elem"
+    },
+    "text": "総合的な学習の時間に、町の商店街を班で調べた。八百屋のおじさんに話を聞き、メモ帳がすぐにいっぱいになった。",
+    "effects": {
+      "knowledge": 2
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-159",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1996,
+    "yearMax": 2017,
+    "when": {
+      "school": "elem"
+    },
+    "text": "週に一度スイミングスクールに通った。帰りのバスの中で、塩素のにおいが残る髪のまま眠ってしまった。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-160",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1996,
+    "yearMax": 2017,
+    "when": {
+      "school": "elem"
+    },
+    "text": "ピアノ教室の発表会で、途中で指が止まった。もう一度最初から弾き直すと、客席から小さな拍手が起きた。",
+    "effects": {
+      "happiness": 0,
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-161",
+    "kind": "daily",
+    "ageMin": 9,
+    "ageMax": 12,
+    "yearMin": 1996,
+    "yearMax": 2017,
+    "when": {
+      "school": "elem",
+      "urban": true
+    },
+    "text": "中学受験の塾に通い始めた。夜九時すぎ、コンビニの明かりの前で、迎えの車をじっと待った。",
+    "effects": {
+      "knowledge": 2,
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-162",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "yearMin": 2004,
+    "yearMax": 2017,
+    "when": {
+      "school": "elem"
+    },
+    "text": "ランドセルの横に、防犯ブザーがぶら下がっていた。{friend}がふざけてひもを引き、通学路に大きな音が響いた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-163",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "yearMin": 2006,
+    "yearMax": 2015,
+    "when": {
+      "school": "elem"
+    },
+    "text": "塾の帰りが遅くなるからと、キッズケータイを持たされた。登録された番号は、家と父母のものだけだった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-164",
+    "kind": "daily",
+    "ageMin": 9,
+    "ageMax": 12,
+    "yearMin": 2012,
+    "yearMax": 2017,
+    "when": {
+      "school": "elem"
+    },
+    "text": "クラスに、親のスマホで動画を見せてくれる子がいた。昼休みには、その子の周りに人だかりができた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-165",
+    "kind": "daily",
+    "ageMin": 9,
+    "ageMax": 12,
+    "yearMin": 2000,
+    "yearMax": 2010,
+    "when": {
+      "school": "elem"
+    },
+    "text": "調べ学習で、パソコン室のインターネットを使った。検索の結果が出るまで、{friend}と画面をじっと見つめていた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-166",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 10,
+    "yearMin": 2000,
+    "yearMax": 2017,
+    "when": {
+      "school": "elem"
+    },
+    "text": "運動会で、家の人がデジタルカメラを構えていた。走り終えてから、画面に映った自分の変な顔を見せられた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-167",
+    "kind": "daily",
+    "ageMin": 9,
+    "ageMax": 12,
+    "yearMin": 1996,
+    "yearMax": 2008,
+    "when": {
+      "school": "elem",
+      "sex": "female"
+    },
+    "text": "{friend}とゲームセンターでプリクラを撮った。小さなシールを半分に切り分け、手帳の表紙に貼った。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-168",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1996,
+    "yearMax": 2017,
+    "when": {
+      "school": "elem",
+      "urban": false
+    },
+    "text": "週末は祖父の軽トラックの荷台に乗って畑へ行った。土の中から出てきた大きなさつまいもを、両手で掲げた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "d1-169",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1996,
+    "yearMax": 2017,
+    "when": {
+      "school": "elem"
+    },
+    "text": "{friend}の家で、携帯ゲーム機を持ち寄って遊んだ。夕方になって、{friend}の家の人に「もう帰る時間よ」と言われた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "t1-001",
+    "kind": "think",
+    "ageMin": 6,
+    "ageMax": 6,
+    "when": {
+      "school": "elem",
+      "trigger": "school"
+    },
+    "text": "「ランドセルが重い。でも、背負って歩くとちょっと大きくなった気がする」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t1-002",
+    "kind": "think",
+    "ageMin": 6,
+    "ageMax": 6,
+    "when": {
+      "school": "elem",
+      "trigger": "school"
+    },
+    "text": "「先生の顔が怖そうだった。明日も行かなきゃいけないのかな」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t1-003",
+    "kind": "think",
+    "ageMin": 6,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「大きくなったら、電車の運転士になる。毎日いろんな町に行けるから」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t1-004",
+    "kind": "think",
+    "ageMin": 6,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「大きくなったら、お店屋さんになりたい。好きなものを並べて、自分で値段をつけるんだ」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t1-005",
+    "kind": "think",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「将来の夢を聞かれると困る。みんなはすぐ答えられて、ずるい」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t1-006",
+    "kind": "think",
+    "ageMin": 8,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「先生みたいになりたい。黒板にきれいな字を書けたら、かっこいいと思う」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t1-007",
+    "kind": "think",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「{friend}とずっと友だちでいたい。大人になっても、近くに住めたらいいのに」",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t1-008",
+    "kind": "think",
+    "ageMin": 7,
+    "ageMax": 11,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「{friend}に悪いことを言った。明日、どんな顔をして会えばいいんだろう」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t1-009",
+    "kind": "think",
+    "ageMin": 8,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「{friend}と同じクラスになれますように。それだけでいい」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t1-010",
+    "kind": "think",
+    "ageMin": 8,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「{friend}がいなかったら、学校はもっとつまらなかったと思う」",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t1-011",
+    "kind": "think",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "hasSibling": true
+    },
+    "text": "「どうして{sib}ばっかり許されるんだろう。いつも{name}だけが叱られる」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t1-012",
+    "kind": "think",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "hasSibling": true
+    },
+    "text": "「{sib}はうるさいけど、いないとつまらない」",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t1-013",
+    "kind": "think",
+    "ageMin": 6,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "hasSibling": false
+    },
+    "text": "「きょうだいがいたら、けんかもできるのにな」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t1-014",
+    "kind": "think",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "mother": true
+    },
+    "text": "「お母さんが疲れた顔をしている。今日は皿洗いをやってあげよう」",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t1-015",
+    "kind": "think",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "father": true
+    },
+    "text": "「お父さんは怒るとこわいけど、ほめてくれると一日うれしい」",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t1-016",
+    "kind": "think",
+    "ageMin": 8,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "father": false
+    },
+    "text": "「父の日の作文、何を書けばいいんだろう」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t1-017",
+    "kind": "think",
+    "ageMin": 8,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "mother": false
+    },
+    "text": "「参観日、みんなのお母さんがまぶしかった」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t1-018",
+    "kind": "think",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「算数のテスト、あと一問で百点だった。あそこで見直していれば」",
+    "effects": {
+      "happiness": -1,
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t1-019",
+    "kind": "think",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「くじ引きで当たった。今日は何をやってもうまくいく気がする」",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "t1-020",
+    "kind": "think",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「お小遣いでおもちゃを買ったら、次の日に安くなっていた。損した」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t1-021",
+    "kind": "think",
+    "ageMin": 8,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「どうして勉強しなきゃいけないんだろう。大人は誰も教えてくれない」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t1-022",
+    "kind": "think",
+    "ageMin": 6,
+    "ageMax": 10,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「夏休みがずっと続けばいいのに」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t1-023",
+    "kind": "think",
+    "ageMin": 9,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「好きな子と目が合った。たぶん、たまたまだ」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t1-024",
+    "kind": "think",
+    "ageMin": 9,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「早く大人になりたい。夜ふかししても、誰にも怒られないから」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t1-025",
+    "kind": "think",
+    "ageMin": 10,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「中学生になったら、何かが変わる気がする。何が変わるのかは分からないけど」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t1-026",
+    "kind": "think",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "mood": "low"
+    },
+    "text": "「学校に行きたくない。おなかが痛いことにしたら、ばれるかな」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t1-027",
+    "kind": "think",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "mood": "high"
+    },
+    "text": "「今日はいい日だった。明日もきっと楽しい」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t1-028",
+    "kind": "think",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "poor": true
+    },
+    "text": "「ほしいと言ったら、お母さんが困った顔をした。もう言わないことにしよう」",
+    "effects": {
+      "happiness": -1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t1-029",
+    "kind": "think",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "rich": true
+    },
+    "text": "「新しいおもちゃを持っていったら、みんなが集まってきた。でも、ちょっと気まずかった」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t1-030",
+    "kind": "think",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "urban": false
+    },
+    "text": "「町の子は、田んぼの手伝いなんてしないんだろうな」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t1-031",
+    "kind": "think",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "school": "elem",
+      "urban": true
+    },
+    "text": "「おばあちゃんの家みたいに、星がたくさん見えたらいいのに」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t1-032",
+    "kind": "think",
+    "ageMin": 6,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「{pet}は、{name}の言うことがちゃんと分かっていると思う」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "t1-033",
+    "kind": "think",
+    "ageMin": 8,
+    "ageMax": 12,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「運動会で一等になりたい。一回だけでいいから」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "t1-034",
+    "kind": "think",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1946,
+    "yearMax": 1957,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「紙芝居の続きが気になって、夜も眠れない」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：街頭紙芝居の最盛期は昭和20〜30年代、テレビの普及で昭和30年代後半に衰えた（文化遺産オンライン、国立アートリサーチセンターの解説）"
+  },
+  {
+    "id": "t1-035",
+    "kind": "think",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1947,
+    "yearMax": 1957,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「脱脂粉乳さえなければ、給食はもっと好きなのに」",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：ララ物資の脱脂粉乳を使った給食は1947年1月から本格的に始まった（各自治体の給食だより）"
+  },
+  {
+    "id": "t1-036",
+    "kind": "think",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1936,
+    "yearMax": 1957,
+    "when": {
+      "school": "elem",
+      "urban": false
+    },
+    "text": "「大きくなったら、汽車に乗って東京へ行ってみたい」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "t1-037",
+    "kind": "think",
+    "ageMin": 6,
+    "ageMax": 12,
+    "yearMin": 1966,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「テレビのアニメみたいに、空を飛べたらいいのに」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "t1-038",
+    "kind": "think",
+    "ageMin": 8,
+    "ageMax": 12,
+    "yearMin": 1984,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「ファミコンがほしい。うちにあったら、毎日みんなが遊びに来るのに」",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：ファミリーコンピュータの発売は1983年7月15日（ファミ通ほか）"
+  },
+  {
+    "id": "t1-039",
+    "kind": "think",
+    "ageMin": 8,
+    "ageMax": 12,
+    "yearMin": 1975,
+    "yearMax": 1987,
+    "when": {
+      "school": "elem",
+      "urban": true
+    },
+    "text": "「塾なんて行きたくない。でも、みんな行っているし」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "t1-040",
+    "kind": "think",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 1996,
+    "yearMax": 2005,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「あのキラキラのカード、どうしてもほしい。お小遣い、あと何か月ためればいいんだろう」",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：ポケモンカードゲーム第1弾は1996年10月20日発売（ポケモンカードゲーム公式20周年年表）"
+  },
+  {
+    "id": "t1-041",
+    "kind": "think",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 2004,
+    "yearMax": 2013,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「DSを持っていないの、クラスで{name}だけかもしれない」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "確認済み：ニンテンドーDSの日本発売は2004年12月2日（ファミ通、GAME Watch）"
+  },
+  {
+    "id": "t1-042",
+    "kind": "think",
+    "ageMin": 6,
+    "ageMax": 9,
+    "yearMin": 1998,
+    "yearMax": 2017,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「学童は楽しいけど、早くお迎えに来てほしい」",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：放課後児童健全育成事業（学童保育）は1997年の児童福祉法改正で法制化、1998年4月施行（舞鶴市の資料ほか）"
+  },
+  {
+    "id": "t1-043",
+    "kind": "think",
+    "ageMin": 9,
+    "ageMax": 12,
+    "yearMin": 2012,
+    "yearMax": 2017,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「スマホを持っている子がうらやましい。中学生になったら買ってもらえるかな」",
+    "effects": {},
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "t1-044",
+    "kind": "think",
+    "ageMin": 9,
+    "ageMax": 12,
+    "yearMin": 2002,
+    "yearMax": 2017,
+    "when": {
+      "school": "elem"
+    },
+    "text": "「土曜日が休みなのはうれしいけど、そのぶん宿題が多い気がする」",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：学校週5日制は1992年9月に月1回、1995年4月に月2回、2002年4月に完全実施。それまで土曜日も授業があった（imidas、ベネッセ教育総合研究所の資料）"
+  }
+]

@@ -1,0 +1,3601 @@
+[
+ {
+  "id": "d2-001",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "school": "middle"
+  },
+  "text": "朝練に遅れそうになり、パンをくわえたまま自転車をこいだ。校門の前で先生に名前を呼ばれた。",
+  "effects": {
+   "health": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-002",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "school": "middle"
+  },
+  "text": "部活の練習で、夏の校庭を何十周も走らされた。水道の蛇口に口をつけて、ぬるい水を飲んだ。",
+  "effects": {
+   "health": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-003",
+  "kind": "daily",
+  "ageMin": 14,
+  "ageMax": 17,
+  "text": "三年生が引退した日、部室の掃除をした。棚の奥から、何年も前の先輩の名前が書かれたボールが出てきた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-004",
+  "kind": "daily",
+  "ageMin": 14,
+  "ageMax": 18,
+  "when": {
+   "school": "high"
+  },
+  "text": "最後の大会は一回戦で負けた。帰りのバスでは、誰も口をきかずに窓の外を見ていた。",
+  "effects": {
+   "happiness": -1,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-005",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "school": "high"
+  },
+  "text": "試験の前の晩、机に向かったまま眠ってしまった。目が覚めると、ノートによだれのしみができていた。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-006",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "試験の答案が返ってきた。思ったより点が悪く、かばんの底に押し込んで家に帰った。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-007",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "数学の問題がやっと解けた。夜中に一人で、小さく「よし」と声を出した。",
+  "effects": {
+   "knowledge": 1,
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-008",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "{friend}と帰り道に遠回りをして、川の土手に座って話した。日が沈んで、急に寒くなった。",
+  "effects": {
+   "relation": 1,
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-009",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "{friend}とささいなことで言い合いになり、三日間口をきかなかった。四日目に{friend}のほうから「ごめん」と言ってきた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-010",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "{friend}の家に泊まりに行き、布団を並べて明け方まで話した。何を話したのかは、あとでほとんど思い出せなかった。",
+  "effects": {
+   "relation": 2,
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-011",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 16,
+  "text": "{friend}が転校することになった。駅のホームで、手紙を書くと約束した。",
+  "effects": {
+   "happiness": -1,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-012",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "好きな人と廊下ですれ違うだけで、その日一日が明るく見えた。目が合ったかどうかを、何度も思い返した。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-013",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "好きな人に手紙を書いた。書き直しているうちに夜が明け、結局渡せないまま引き出しにしまった。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-014",
+  "kind": "daily",
+  "ageMin": 14,
+  "ageMax": 18,
+  "text": "思い切って気持ちを伝えた。返事は「ごめんね」だった。その夜は布団をかぶって眠れなかった。",
+  "effects": {
+   "happiness": -2
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-015",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "text": "好きな人から返事をもらい、つき合うことになった。翌朝、どんな顔で学校へ行けばいいのか分からなかった。",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-016",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "mother": true
+  },
+  "text": "母に「勉強しなさい」と言われ、「いまやろうと思ってたのに」と言い返して部屋の戸を強く閉めた。",
+  "effects": {
+   "relation": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-017",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "when": {
+   "father": true
+  },
+  "text": "父と進路のことで言い合いになった。父は黙ってたばこを吸い、灰皿に火をもみ消して部屋を出ていった。",
+  "effects": {
+   "relation": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-018",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1965,
+  "yearMax": 2027,
+  "when": {
+   "mother": true
+  },
+  "text": "夜遅く帰ると、台所に母が作ったおにぎりが置いてあった。ラップの上に「おかえり」と書いた紙がのっていた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-019",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "mother": true
+  },
+  "text": "母が{mAge}歳の誕生日を迎えた。小遣いで小さな花を買って渡すと、母は照れて台所へ逃げた。",
+  "effects": {
+   "relation": 2
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-020",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "father": true
+  },
+  "text": "父が{fAge}歳になった。食卓で白髪が増えたのに気づいたが、何も言わずにご飯をかきこんだ。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-021",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "hasSibling": true
+  },
+  "text": "{sib}と一つしかない部屋を分け合っていた。机のあいだに本棚を置いて、境目にした。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-022",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "hasSibling": true
+  },
+  "text": "{sib}に勝手に服を着ていかれ、帰ってくるなり大げんかになった。母が間に入って、二人とも叱られた。",
+  "effects": {
+   "relation": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-023",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "hasSibling": true
+  },
+  "text": "{sib}が熱を出した日、台所で慣れない手つきでおかゆを作った。少し焦げたが、{sib}は全部食べた。",
+  "effects": {
+   "relation": 2
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-024",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "when": {
+   "hasSibling": true
+  },
+  "text": "{sib}に進路の相談をした。ふだんはけんかばかりなのに、その夜は遅くまで話を聞いてくれた。",
+  "effects": {
+   "relation": 2
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-025",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "school": "high"
+  },
+  "text": "文化祭の準備で、教室に夜まで残った。ベニヤ板にペンキを塗りながら、みんなでくだらない話をした。",
+  "effects": {
+   "relation": 1,
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-026",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "修学旅行の夜、先生の見回りの足音が近づくたびに、みんなで布団にもぐって寝たふりをした。",
+  "effects": {
+   "happiness": 2,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-027",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "体育祭のリレーでアンカーを走った。ゴールの前で一人抜かれ、クラスの席に戻るのがつらかった。",
+  "effects": {
+   "health": 1,
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-028",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "school": "middle"
+  },
+  "text": "合唱コンクールの練習で、男子が歌わないと女子が怒った。本番の日には、なぜか全員が声を出していた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-029",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "担任の先生に「お前は本当はできるんだ」と言われた。照れくさくて、返事をせずに頭をかいた。",
+  "effects": {
+   "happiness": 1,
+   "knowledge": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-030",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "図書室の窓際の席で、放課後に小説を読みふけった。気がつくと、司書の先生が鍵を持って待っていた。",
+  "effects": {
+   "knowledge": 2
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-031",
+  "kind": "daily",
+  "ageMin": 14,
+  "ageMax": 17,
+  "text": "進路調査の紙を前にして、何も書けないまま提出の日が来た。「未定」と書いて出した。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-032",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "text": "合格発表の掲示板の前で、自分の番号を三度確かめた。家に電話をかける手が震えた。",
+  "effects": {
+   "happiness": 3
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-033",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "text": "合格発表に自分の番号はなかった。駅までの道を、わざとゆっくり歩いて帰った。",
+  "effects": {
+   "happiness": -2
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-034",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "text": "卒業式のあと、校舎の裏でクラスの友だちと写真を撮った。誰かが泣き出して、つられてみんな泣いた。",
+  "effects": {
+   "relation": 2,
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-035",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "鏡の前で前髪を何度も直し、家族に「早くしなさい」とせかされた。その日は一日、髪のことばかり気にしていた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-036",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 14,
+  "when": {
+   "sex": "male"
+  },
+  "text": "声変わりが始まり、電話に出ると父と間違えられるようになった。",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "d2-037",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 15,
+  "text": "背が急に伸びて、一年で制服の袖が短くなった。母がため息をつきながら袖口を出してくれた。",
+  "effects": {
+   "health": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-038",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 17,
+  "text": "顔のにきびが気になって、人と目を合わせて話せない日が続いた。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-039",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "ひどい風邪をひいて、三日学校を休んだ。久しぶりに教室へ入ると、席替えが済んでいた。",
+  "effects": {
+   "health": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-040",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "夜中に眠れず、窓を開けて外の音を聞いていた。遠くで犬が鳴き、新聞配達のバイクが通っていった。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-041",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "親せきの法事で、知らない大人たちに「大きくなったね」と何度も言われた。座布団の上で足がしびれた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-042",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 16,
+  "text": "正月に祖父母の家へ行き、お年玉をもらった。祖母はこっそり、もう一つ袋をくれた。",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-043",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 16,
+  "text": "祖母の家の縁側で、二人で黙ってすいかを食べた。祖母は種を庭に飛ばして笑った。",
+  "effects": {
+   "relation": 1,
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-044",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "先生に呼び出されて、職員室で長い説教を受けた。窓の外では、運動部のかけ声が続いていた。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-045",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "school": "middle"
+  },
+  "text": "授業中に手紙を回していたら先生に見つかり、みんなの前で読み上げられそうになった。",
+  "effects": {
+   "happiness": -1,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-046",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "大雨の日、傘を忘れて{friend}と一本の傘に入って帰った。二人とも肩がびしょぬれになった。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-047",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 16,
+  "text": "初めて一人で電車に乗って遠くの町まで行った。帰りの切符を落とさないよう、ずっと手に握っていた。",
+  "effects": {
+   "happiness": 1,
+   "knowledge": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-048",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 15,
+  "text": "夏休みの宿題を最後の三日間でまとめて片づけた。日記の天気が思い出せず、{friend}に聞いた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-049",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "家族で囲む夕飯の席で、学校の話を聞かれても「別に」としか答えなかった。",
+  "effects": {
+   "relation": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-050",
+  "kind": "daily",
+  "ageMin": 14,
+  "ageMax": 18,
+  "text": "机の引き出しの奥に、小学生のころの作文が残っていた。「将来の夢」の欄を読んで、一人で赤くなった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-051",
+  "kind": "daily",
+  "ageMin": 14,
+  "ageMax": 18,
+  "text": "自分で選んだ服を初めて買った。家に帰って着てみると、店で見たときほど似合わなかった。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-052",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "夕焼けの帰り道、自転車を押しながら、明日のことと何年も先のことを交互に考えた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-053",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "{pet}の散歩は、いつの間にか自分の役目になっていた。夜道で{pet}だけには何でも話せた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-054",
+  "kind": "daily",
+  "ageMin": 14,
+  "ageMax": 17,
+  "text": "部活の後輩に初めて「先輩」と呼ばれた。くすぐったかったが、その日はいつもより背筋を伸ばして球を拾った。",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-055",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 16,
+  "text": "学級委員に選ばれ、断れないまま引き受けた。朝の会で前に立つと、声がうわずった。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-056",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "poor": true
+  },
+  "text": "家計が苦しいのを知っていて、修学旅行の積立金のことを親に言い出せなかった。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-057",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "poor": true
+  },
+  "text": "友だちの家で、自分の家にはない大きなテレビや本棚を見た。帰り道、なんとなく口数が少なくなった。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-058",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1960,
+  "yearMax": 2027,
+  "text": "親が塾の費用を出してくれた。月謝の袋を受け取るとき、ずしりと重く感じた。",
+  "effects": {
+   "knowledge": 1,
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-059",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1960,
+  "yearMax": 2027,
+  "text": "家に帰っても誰もいないので、{friend}の家で夕飯までテレビを見せてもらった。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-060",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "urban": false
+  },
+  "text": "夏の夜、町内の盆踊りに浴衣で出かけた。やぐらの下で、同級生と出くわして気まずく笑った。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-061",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "urban": false,
+   "sex": "male"
+  },
+  "text": "村の祭りで、初めて大人に混じって神輿をかついだ。肩が赤くはれたが、誇らしかった。",
+  "effects": {
+   "relation": 1,
+   "health": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-062",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1943,
+  "yearMax": 1975,
+  "when": {
+   "urban": false
+  },
+  "text": "学校までは山道を歩いて一時間かかった。冬は暗いうちに家を出て、息を白くして歩いた。",
+  "effects": {
+   "health": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-063",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1943,
+  "yearMax": 1965,
+  "when": {
+   "urban": false
+  },
+  "text": "田植えの時期は学校を休んで手伝った。泥に足をとられて、何度も尻もちをついた。",
+  "effects": {
+   "health": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-064",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1943,
+  "yearMax": 1975,
+  "when": {
+   "urban": false
+  },
+  "text": "稲刈りの日は家族総出で田に出た。昼に食べた塩むすびが、やけにおいしかった。",
+  "effects": {
+   "health": 1,
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-065",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1960,
+  "yearMax": 2027,
+  "when": {
+   "urban": true,
+   "school": "high"
+  },
+  "text": "満員電車で通学した。かばんを胸に抱え、知らない人の背中に押されながら窓の外を見ていた。",
+  "effects": {
+   "health": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-066",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1950,
+  "yearMax": 2000,
+  "when": {
+   "urban": true
+  },
+  "text": "駅前の本屋で立ち読みをしていたら、店の人にはたきをかけられた。",
+  "effects": {},
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-067",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "urban": false
+  },
+  "text": "海の見える高台の学校で、窓から漁船が戻ってくるのが見えた。授業より船の数を数えていた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-068",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 15,
+  "when": {
+   "urban": false
+  },
+  "text": "雪の朝、校庭で雪合戦になり、授業の始まりの鐘が鳴っても誰も戻らなかった。",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-069",
+  "kind": "daily",
+  "ageMin": 16,
+  "ageMax": 18,
+  "yearMin": 1960,
+  "yearMax": 2027,
+  "when": {
+   "school": "high"
+  },
+  "text": "夏休みに初めてアルバイトをした。給料袋を受け取ると、まっさきに家族へ何か買いたくなった。",
+  "effects": {
+   "happiness": 2,
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-070",
+  "kind": "daily",
+  "ageMin": 16,
+  "ageMax": 18,
+  "yearMin": 1970,
+  "yearMax": 2027,
+  "when": {
+   "school": "high"
+  },
+  "text": "アルバイト先で失敗して客に怒られた。帰りに店長が缶ジュースをおごってくれた。",
+  "effects": {
+   "happiness": 0,
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-071",
+  "kind": "daily",
+  "ageMin": 14,
+  "ageMax": 18,
+  "text": "先生に将来の夢を聞かれ、とっさに「まだ分かりません」と答えた。本当はあったのに、言えなかった。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-072",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 16,
+  "yearMin": 1945,
+  "yearMax": 1975,
+  "when": {
+   "working": true
+  },
+  "text": "中学を出てすぐ、町の工場で働き始めた。朝、油のにおいのする作業服に袖を通すと、急に大人になった気がした。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-073",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "yearMin": 1945,
+  "yearMax": 1975,
+  "when": {
+   "working": true,
+   "mother": true
+  },
+  "text": "初めての給料で、母に手ぬぐいと飴を買った。母は使わずに、たんすの引き出しにしまっておいた。",
+  "effects": {
+   "relation": 2
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-074",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "yearMin": 1950,
+  "yearMax": 1975,
+  "when": {
+   "working": true
+  },
+  "text": "給料のほとんどを家に送った。手元に残った小銭で、月に一度だけ映画を見に行った。",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-075",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "yearMin": 1945,
+  "yearMax": 1975,
+  "when": {
+   "working": true
+  },
+  "text": "住み込みの店で、朝は誰よりも早く起きて店先を掃いた。夜、二階の狭い部屋で故郷のことを思った。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-076",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "yearMin": 1945,
+  "yearMax": 1975,
+  "when": {
+   "working": true
+  },
+  "text": "同じ年ごろの子が制服で通り過ぎていくのを、配達の自転車を止めて見ていた。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-077",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "yearMin": 1948,
+  "yearMax": 1975,
+  "when": {
+   "working": true
+  },
+  "text": "昼間は工場で働き、夜は定時制の高校に通った。授業中に眠くなると、鉛筆で手の甲をつついた。",
+  "effects": {
+   "knowledge": 2,
+   "health": -1
+  },
+  "weight": 1,
+  "check": "確認済み：新制中学は1947年4月、新制高校は1948年4月に発足し、男女共学が始まった（宮城県資料、福井県文書館資料）"
+ },
+ {
+  "id": "d2-078",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "yearMin": 1948,
+  "yearMax": 1975,
+  "when": {
+   "working": true
+  },
+  "text": "夜学の帰り、同じ工場の仲間と屋台でうどんをすすった。湯気の向こうで、みんな将来の話をしていた。",
+  "effects": {
+   "relation": 2
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-079",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "yearMin": 1950,
+  "yearMax": 1975,
+  "when": {
+   "working": true,
+   "mother": true
+  },
+  "text": "故郷から届いた母の手紙は、かなが多くて読みやすかった。何度も読み返して、枕の下に入れた。",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-080",
+  "kind": "daily",
+  "ageMin": 16,
+  "ageMax": 18,
+  "yearMin": 1955,
+  "yearMax": 1975,
+  "when": {
+   "working": true,
+   "hasSibling": true
+  },
+  "text": "盆休みに故郷へ帰ると、弟や妹が駅まで迎えに来ていた。都会の土産を渡すと、目を丸くした。",
+  "effects": {
+   "relation": 2,
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-081",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "yearMin": 1950,
+  "yearMax": 1975,
+  "when": {
+   "working": true
+  },
+  "text": "工場の先輩に、機械の扱いを一から教わった。最初に一人で仕上げた部品を、いつまでも眺めていた。",
+  "effects": {
+   "knowledge": 2
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-082",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 17,
+  "yearMin": 1950,
+  "yearMax": 1975,
+  "when": {
+   "working": true
+  },
+  "text": "仕事でしくじり、親方にきつく叱られた。その晩、寮の布団の中で声を殺して泣いた。",
+  "effects": {
+   "happiness": -2
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-083",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "yearMin": 1955,
+  "yearMax": 1975,
+  "when": {
+   "working": true
+  },
+  "text": "寮の同部屋の子と、休みの日に初めて都会の百貨店へ行った。エスカレーターに乗るとき、足がすくんだ。",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-084",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "yearMin": 1945,
+  "yearMax": 1970,
+  "when": {
+   "working": true,
+   "urban": false,
+   "father": true
+  },
+  "text": "家の田畑を継ぐことになり、父と並んで鍬をふるった。父の背中が、思っていたより小さく見えた。",
+  "effects": {
+   "health": 1,
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-085",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "yearMin": 1945,
+  "yearMax": 1975,
+  "when": {
+   "working": true,
+   "urban": false
+  },
+  "text": "朝の牛の世話を終えてから、ようやく自分の朝飯になった。手には、いつも土と干し草のにおいがしていた。",
+  "effects": {
+   "health": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-086",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "yearMin": 1945,
+  "yearMax": 1975,
+  "when": {
+   "working": true
+  },
+  "text": "家の商売を手伝い、店番をしながらそろばんをはじいた。客に「若いのにしっかりしてる」と言われた。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-087",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "yearMin": 1948,
+  "yearMax": 1970,
+  "when": {
+   "working": true,
+   "sex": "female"
+  },
+  "text": "紡績工場の寮で、同じ年の女の子たちと暮らした。消灯のあとも、小声で故郷の話が続いた。",
+  "effects": {
+   "relation": 2
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-088",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "yearMin": 1950,
+  "yearMax": 1975,
+  "when": {
+   "working": true
+  },
+  "text": "勤め先の寮で、休みの日に洗濯をしながら同室の子とラジオの歌番組を聞いた。",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-089",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "yearMin": 1950,
+  "yearMax": 1975,
+  "when": {
+   "working": true,
+   "sex": "female"
+  },
+  "text": "仕事帰りに通う洋裁学校で、初めて自分の服を縫い上げた。鏡の前で何度もくるりと回った。",
+  "effects": {
+   "knowledge": 1,
+   "happiness": 2
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-090",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1943,
+  "yearMax": 1949,
+  "text": "配給の米が足りず、ご飯にはいつも芋が混ざっていた。弁当箱のふたを少しだけ開けて、急いで食べた。",
+  "effects": {
+   "health": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-091",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1944,
+  "yearMax": 1948,
+  "text": "校庭の半分が畑になっていて、授業のあとはかぼちゃやさつまいもの世話をした。",
+  "effects": {
+   "health": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-092",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1945,
+  "yearMax": 1949,
+  "when": {
+   "mother": true
+  },
+  "text": "日曜になると、母と二人で汽車に乗って農家へ食べ物を分けてもらいに行った。帰りのリュックがずしりと重かった。",
+  "effects": {
+   "health": 1,
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-093",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1945,
+  "yearMax": 1946,
+  "text": "教科書の文字に、墨を塗るように言われた。黒くなったページを、隣の子と黙って見比べた。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-094",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1947,
+  "yearMax": 1950,
+  "text": "新しい中学ができたが、校舎が足りず、お寺の本堂を借りて授業を受けた。冬は畳が冷たかった。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "確認済み：新制中学は1947年4月、新制高校は1948年4月に発足し、男女共学が始まった（宮城県資料、福井県文書館資料）"
+ },
+ {
+  "id": "d2-095",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1947,
+  "yearMax": 1950,
+  "text": "学校が男女共学になり、教室に女子が入ってきた。最初の一週間は、誰も口をきかなかった。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "確認済み：新制中学は1947年4月、新制高校は1948年4月に発足し、男女共学が始まった（宮城県資料、福井県文書館資料）"
+ },
+ {
+  "id": "d2-096",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1945,
+  "yearMax": 1950,
+  "when": {
+   "poor": true
+  },
+  "text": "ノートが買えず、新聞のすき間や広告の裏に字を書いて勉強した。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-097",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1943,
+  "yearMax": 1950,
+  "when": {
+   "poor": true
+  },
+  "text": "靴がすり減って穴があき、わら草履で学校へ通った。雨の日は足の指が真っ赤になった。",
+  "effects": {
+   "health": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-098",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1945,
+  "yearMax": 1949,
+  "when": {
+   "urban": true
+  },
+  "text": "駅の近くの闇市で、湯気の立つすいとんを一杯買った。財布の中身を数えてから食べた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-099",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1946,
+  "yearMax": 1955,
+  "text": "ラジオから流れる英語の講座を、意味も分からないまま口まねした。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-100",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1946,
+  "yearMax": 1958,
+  "text": "町に一軒だけの映画館に、近所の子どもたちと詰めかけた。立ち見で首が痛くなるまで見上げていた。",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-101",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 15,
+  "yearMin": 1950,
+  "yearMax": 1962,
+  "text": "高校へ行けるのはクラスの半分ほどだった。卒業式のあと、働きに出る友だちと校門で手を振って別れた。",
+  "effects": {
+   "relation": 1,
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "確認済み：高校進学率は1950年42.5%、1960年57.7%、1974年90.7%（国立社会保障・人口問題研究所 人口統計資料集、文部科学省資料）"
+ },
+ {
+  "id": "d2-102",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 15,
+  "yearMin": 1950,
+  "yearMax": 1965,
+  "when": {
+   "father": true
+  },
+  "text": "担任の先生が家まで来て、「この子は高校へやってください」と父に頭を下げた。父は長いこと黙っていた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-103",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 15,
+  "yearMin": 1954,
+  "yearMax": 1975,
+  "when": {
+   "working": true,
+   "urban": true
+  },
+  "text": "中学を出た春、集団就職の列車に乗った。ホームで母がいつまでも手を振り、やがて見えなくなった。",
+  "effects": {
+   "happiness": -1,
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "確認済み：青森発上野行きの集団就職列車は1954〜1975年（たびねす「上野駅」の記事）"
+ },
+ {
+  "id": "d2-104",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 15,
+  "yearMin": 1954,
+  "yearMax": 1975,
+  "when": {
+   "working": true,
+   "urban": true
+  },
+  "text": "上野の駅に着くと、人の多さに足が止まった。迎えに来た会社の人が、名前の書かれた札を掲げていた。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "確認済み：青森発上野行きの集団就職列車は1954〜1975年（たびねす「上野駅」の記事）"
+ },
+ {
+  "id": "d2-105",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 16,
+  "yearMin": 1953,
+  "yearMax": 1962,
+  "text": "近所でテレビを買った家があり、夕方になるとその家の茶の間に子どもたちが集まった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-106",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 16,
+  "yearMin": 1950,
+  "yearMax": 1965,
+  "text": "貸本屋で漫画を借りて、布団の中で懐中電灯をつけて読んだ。返す日を過ぎて、母に怒られた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-107",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1950,
+  "yearMax": 1970,
+  "text": "家に電話がなく、急ぎの用は近所の店の電話を借りた。呼び出してもらうたびに、頭を下げに行った。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-108",
+  "kind": "daily",
+  "ageMin": 16,
+  "ageMax": 18,
+  "yearMin": 1950,
+  "yearMax": 1975,
+  "when": {
+   "sex": "female",
+   "school": "high"
+  },
+  "text": "女の子が大学なんて、と親せきに言われた。帰りの道で、悔しくて小石を蹴った。",
+  "effects": {
+   "happiness": -2
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-109",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1945,
+  "yearMax": 1970,
+  "when": {
+   "sex": "female",
+   "hasSibling": true
+  },
+  "text": "学校から帰ると、まず弟や妹の世話と夕飯の支度をした。宿題は、みんなが寝てから台所の明かりでやった。",
+  "effects": {
+   "knowledge": 1,
+   "health": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-110",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "yearMin": 1945,
+  "yearMax": 1975,
+  "when": {
+   "sex": "male"
+  },
+  "text": "長男だから家を継ぐものだと、誰もが当たり前のように言った。自分では一度も決めた覚えがなかった。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-111",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1967,
+  "yearMax": 1993,
+  "text": "深夜放送のラジオを、枕元に置いて小さな音で聞いた。自分のはがきが読まれた夜は、朝まで眠れなかった。",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1,
+  "check": "確認済み：オールナイトニッポンは1967年10月2日開始、深夜に勉強する受験生に支持された（マイナビニュース）"
+ },
+ {
+  "id": "d2-112",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "yearMin": 1967,
+  "yearMax": 1993,
+  "when": {
+   "school": "high"
+  },
+  "text": "受験勉強の合間に、深夜のラジオをつけた。同じ時間に起きている誰かがいると思うと、少し心強かった。",
+  "effects": {
+   "happiness": 1,
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "確認済み：オールナイトニッポンは1967年10月2日開始、深夜に勉強する受験生に支持された（マイナビニュース）"
+ },
+ {
+  "id": "d2-113",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1966,
+  "yearMax": 1980,
+  "text": "お年玉をためてフォークギターを買った。指先が痛くなるまで、同じコードばかり練習した。",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1,
+  "check": "未確認（1960年代後半〜70年代のフォークブーム）"
+ },
+ {
+  "id": "d2-114",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1966,
+  "yearMax": 1980,
+  "text": "放課後の教室で、{friend}がギターを弾き、みんなで流行りの歌を口ずさんだ。",
+  "effects": {
+   "relation": 2
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-115",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1972,
+  "yearMax": 1995,
+  "text": "ラジオの歌番組を、カセットテープに録音した。曲の終わりにしゃべりが入ってしまい、何度もやり直した。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-116",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1965,
+  "yearMax": 2027,
+  "when": {
+   "school": "middle"
+  },
+  "text": "塾の帰りに、夜の商店街で{friend}と肉まんを分け合った。白い湯気が、二人の顔の前にたなびいた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-117",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "yearMin": 1965,
+  "yearMax": 2027,
+  "when": {
+   "school": "high"
+  },
+  "text": "偏差値の数字が書かれた模試の結果を、机のマットの下にはさんだ。毎晩それを見てから勉強を始めた。",
+  "effects": {
+   "knowledge": 1,
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-118",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 15,
+  "yearMin": 1974,
+  "yearMax": 1990,
+  "text": "高校へ行くのが当たり前になった。中学のクラスで働きに出たのは、数人だけだった。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "確認済み：高校進学率は1950年42.5%、1960年57.7%、1974年90.7%（国立社会保障・人口問題研究所 人口統計資料集、文部科学省資料）"
+ },
+ {
+  "id": "d2-119",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1965,
+  "yearMax": 1985,
+  "text": "家に電話が引かれ、黒い電話機が玄関に置かれた。好きな人に電話するときは、家族に聞かれないよう声をひそめた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-120",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1960,
+  "yearMax": 1995,
+  "text": "友だちの家の電話にかけると、父親が出た。名前を名乗る声が、自分でも驚くほど裏返った。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-121",
+  "kind": "daily",
+  "ageMin": 18,
+  "ageMax": 18,
+  "yearMin": 1979,
+  "yearMax": 1989,
+  "when": {
+   "school": "high"
+  },
+  "text": "共通一次の試験会場で、マークシートの丸を鉛筆で塗りつぶした。消しゴムをかける音が、教室じゅうに響いていた。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "確認済み：共通一次試験は1979〜1989年、マークシート方式（nippon.com、インターエデュ）"
+ },
+ {
+  "id": "d2-122",
+  "kind": "daily",
+  "ageMin": 18,
+  "ageMax": 18,
+  "yearMin": 1979,
+  "yearMax": 2027,
+  "when": {
+   "school": "high"
+  },
+  "text": "新聞に載った解答で自己採点をした。赤ペンの丸を数え直し、志望校を下げるかどうか一晩迷った。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "確認済み：共通一次試験は1979〜1989年、マークシート方式（nippon.com、インターエデュ）"
+ },
+ {
+  "id": "d2-123",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1980,
+  "yearMax": 1998,
+  "text": "ウォークマンでテープを聞きながら通学した。電車の窓に映る自分が、少しだけ大人びて見えた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：初代ウォークマン TPS-L2 は1979年7月1日発売（All About ニュース、ITmedia）"
+ },
+ {
+  "id": "d2-124",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1975,
+  "yearMax": 2000,
+  "text": "好きな曲を集めたカセットテープを作り、背のラベルに小さく題名を書いて{friend}に渡した。",
+  "effects": {
+   "relation": 2
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-125",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1970,
+  "yearMax": 1995,
+  "text": "レコード店の試聴機の前で、買うかどうか一時間迷った。結局、ラジオで録音することにした。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-126",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1979,
+  "yearMax": 1985,
+  "when": {
+   "school": "middle"
+  },
+  "text": "学校の廊下のガラスが何枚も割られていた。先生たちは朝から険しい顔で、竹刀を持って立っていた。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "確認済み：校内暴力が全国的に激しかったのは1980年代初め（ニューズウィーク日本版）"
+ },
+ {
+  "id": "d2-127",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1978,
+  "yearMax": 1995,
+  "when": {
+   "school": "middle"
+  },
+  "text": "校則で決められた髪の長さを、先生が定規で測った。前髪が一センチ長いと言われ、放課後に切りに行かされた。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-129",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 15,
+  "yearMin": 1984,
+  "yearMax": 2027,
+  "text": "友だちの家で、テレビにつないだ家庭用ゲーム機で夜まで遊んだ。帰りが遅くなり、玄関で父が待っていた。",
+  "effects": {
+   "happiness": 1,
+   "relation": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-130",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 16,
+  "yearMin": 1975,
+  "yearMax": 2000,
+  "when": {
+   "sex": "female"
+  },
+  "text": "交換日記のノートを{friend}と回した。色ペンで書いた字が、ページごとに違う色をしていた。",
+  "effects": {
+   "relation": 2
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-131",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1950,
+  "yearMax": 2001,
+  "text": "土曜は昼までの授業だった。鐘が鳴ると、{friend}と駅前の店でラーメンを食べてから帰った。",
+  "effects": {
+   "relation": 1,
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：学校の土曜休みは1992年9月に月1回、1995年4月に月2回、2002年4月から完全学校週5日制（ベネッセ教育情報ほか）"
+ },
+ {
+  "id": "d2-132",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1975,
+  "yearMax": 2027,
+  "when": {
+   "urban": true
+  },
+  "text": "ファストフード店で{friend}とポテトを一つだけ頼み、閉店近くまでしゃべり続けた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-133",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1985,
+  "yearMax": 2010,
+  "text": "レンタルビデオ店で映画を借りて、{friend}の家で見た。返す期限を一日過ぎて、延滞料を割り勘にした。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-134",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "yearMin": 1986,
+  "yearMax": 1998,
+  "text": "家にワープロが来た。キーを一つずつ探しながら、文化祭のビラを打った。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-135",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1992,
+  "yearMax": 1998,
+  "text": "ポケベルに数字が届いた。「0840」を見て、思わず教室の窓のほうを向いて笑った。",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "確認済み：1990年代前半から女子高生の間でポケベルの数字の語呂合わせが広まり、1995年ごろ新規契約の多くが高校生（Real Sound、J-CAST）"
+ },
+ {
+  "id": "d2-136",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1992,
+  "yearMax": 1998,
+  "text": "公衆電話に並んで、ポケベルに数字を打ち込んだ。後ろの人の視線が気になって、指が速くなった。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "確認済み：1990年代前半から女子高生の間でポケベルの数字の語呂合わせが広まり、1995年ごろ新規契約の多くが高校生（Real Sound、J-CAST）"
+ },
+ {
+  "id": "d2-137",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1995,
+  "yearMax": 2010,
+  "text": "{friend}とプリクラを撮りに行った。小さなシールを手帳にびっしり貼り、ほかの子と交換した。",
+  "effects": {
+   "relation": 2,
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：プリント倶楽部は1995年7月発売、2000年ごろにかけて女子中高生にブーム（DIME、写真シールの日の記事）"
+ },
+ {
+  "id": "d2-138",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1994,
+  "yearMax": 2002,
+  "when": {
+   "sex": "female",
+   "school": "high"
+  },
+  "text": "ルーズソックスがずり落ちないよう、すねに糊を塗った。朝の支度が五分長くなった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "一部確認：ルーズソックスは1990年代のコギャル文化の象徴で、2003年ごろには紺のハイソックスに人気が移った（東洋経済オンライン、アツギの資料）。流行の始まりの年は未確認"
+ },
+ {
+  "id": "d2-139",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1990,
+  "yearMax": 2027,
+  "when": {
+   "sex": "female",
+   "school": "high"
+  },
+  "text": "スカートを折って短くし、校門の前でだけ元に戻した。先生と目が合うと、何事もない顔で通った。",
+  "effects": {},
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-140",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1995,
+  "yearMax": 2001,
+  "text": "土曜が月に二回休みになった。何をしていいか分からず、昼過ぎまで寝ていた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：学校の土曜休みは1992年9月に月1回、1995年4月に月2回、2002年4月から完全学校週5日制（ベネッセ教育情報ほか）"
+ },
+ {
+  "id": "d2-141",
+  "kind": "daily",
+  "ageMin": 18,
+  "ageMax": 18,
+  "yearMin": 1990,
+  "yearMax": 2020,
+  "when": {
+   "school": "high"
+  },
+  "text": "センター試験の朝、雪で電車が遅れないかと、いつもより一本早く家を出た。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "確認済み：大学入試センター試験は1990〜2020年、2021年から大学入学共通テスト（nippon.com）"
+ },
+ {
+  "id": "d2-142",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1996,
+  "yearMax": 2003,
+  "text": "家のパソコンがインターネットにつながった。電話代がかかると言われ、夜中に少しだけ見た。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-143",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1993,
+  "yearMax": 2005,
+  "text": "CDを借りてMDに録音し、自分で選んだ曲の順番を何度も入れ替えた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-144",
+  "kind": "daily",
+  "ageMin": 14,
+  "ageMax": 18,
+  "yearMin": 1988,
+  "yearMax": 2027,
+  "text": "カラオケボックスで、{friend}たちと三時間歌った。最後はみんな声がかれていた。",
+  "effects": {
+   "relation": 2,
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-145",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1999,
+  "yearMax": 2010,
+  "text": "初めて自分の携帯電話を持った。メールの着信音が鳴るたびに、すぐに画面を開いた。",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1,
+  "check": "確認済み：iモードは1999年2月開始、2000年に1000万契約（コトバンク）"
+ },
+ {
+  "id": "d2-146",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1999,
+  "yearMax": 2012,
+  "text": "夜中に布団の中で、{friend}と携帯でメールを打ち合った。親に見つからないよう、画面の明かりを手で隠した。",
+  "effects": {
+   "relation": 1,
+   "health": -1
+  },
+  "weight": 1,
+  "check": "確認済み：iモードは1999年2月開始、2000年に1000万契約（コトバンク）"
+ },
+ {
+  "id": "d2-147",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1999,
+  "yearMax": 2012,
+  "text": "好きな人にメールを送ったあと、返事が来るまで何度も問い合わせのボタンを押した。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "確認済み：iモードは1999年2月開始、2000年に1000万契約（コトバンク）"
+ },
+ {
+  "id": "d2-148",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 2001,
+  "yearMax": 2012,
+  "text": "カメラ付きの携帯で、夕焼けを撮って{friend}に送った。「きれい」と一言だけ返ってきた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "確認済み：J-フォンのカメラ付き携帯 J-SH04 と写メールは2000年11月（Wikipedia「J-SH04」「Sha-Mail」）"
+ },
+ {
+  "id": "d2-149",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1999,
+  "yearMax": 2010,
+  "text": "携帯の料金が高くなりすぎて、親に取り上げられそうになった。翌月からは、文字を減らしてメールを打った。",
+  "effects": {
+   "relation": -1
+  },
+  "weight": 1,
+  "check": "確認済み：iモードは1999年2月開始、2000年に1000万契約（コトバンク）"
+ },
+ {
+  "id": "d2-150",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 2002,
+  "yearMax": 2027,
+  "text": "土曜日が毎週休みになった。部活のない土曜は、{friend}と自転車で遠くの大型店まで出かけた。",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "確認済み：学校の土曜休みは1992年9月に月1回、1995年4月に月2回、2002年4月から完全学校週5日制（ベネッセ教育情報ほか）"
+ },
+ {
+  "id": "d2-151",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 2001,
+  "yearMax": 2012,
+  "text": "携帯の待ち受け画面を、{friend}と撮った写真にした。開くたびに二人の変な顔が出てきて、授業中に笑いをこらえた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "確認済み：J-フォンのカメラ付き携帯 J-SH04 と写メールは2000年11月（Wikipedia「J-SH04」「Sha-Mail」）"
+ },
+ {
+  "id": "d2-152",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 2009,
+  "yearMax": 2023,
+  "text": "初めてスマートフォンを持った。最初の夜、画面を触っているうちに日付が変わっていた。",
+  "effects": {
+   "happiness": 2,
+   "health": -1
+  },
+  "weight": 1,
+  "check": "確認済み：iPhone 3G は2008年7月11日に日本で発売（ソフトバンク 2008年6月10日プレスリリース）"
+ },
+ {
+  "id": "d2-153",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 2012,
+  "yearMax": 2023,
+  "text": "クラスのLINEのグループで、夜中まで通知が鳴りやまなかった。既読をつけるかどうか、少し迷った。",
+  "effects": {
+   "relation": 0
+  },
+  "weight": 1,
+  "check": "確認済み：LINE は2011年6月に公開（LINE株式会社 2011年6月27日プレスリリース）"
+ },
+ {
+  "id": "d2-154",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 2012,
+  "yearMax": 2023,
+  "text": "{friend}から来たLINEに、何を返すか十分迷った。結局スタンプを一つだけ送った。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "確認済み：LINE は2011年6月に公開（LINE株式会社 2011年6月27日プレスリリース）"
+ },
+ {
+  "id": "d2-155",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 2010,
+  "yearMax": 2023,
+  "text": "寝る前にスマホを見ていて、気づいたら二時を過ぎていた。朝、目覚ましを三回止めた。",
+  "effects": {
+   "health": -1
+  },
+  "weight": 1,
+  "check": "確認済み：iPhone 3G は2008年7月11日に日本で発売（ソフトバンク 2008年6月10日プレスリリース）"
+ },
+ {
+  "id": "d2-156",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 2012,
+  "yearMax": 2023,
+  "text": "友だちが写真を載せていた。自分が誘われていない集まりだと分かり、スマホを伏せて天井を見た。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-157",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 2012,
+  "yearMax": 2023,
+  "when": {
+   "school": "high"
+  },
+  "text": "調べものはスマホで済ませるようになったが、試験の前だけは紙の参考書に線を引いた。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-158",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 2010,
+  "yearMax": 2023,
+  "text": "動画サイトでギターの弾き方を見ながら、部屋で何度も同じところを練習した。",
+  "effects": {
+   "knowledge": 1,
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-159",
+  "kind": "daily",
+  "ageMin": 18,
+  "ageMax": 18,
+  "yearMin": 2021,
+  "yearMax": 2023,
+  "when": {
+   "school": "high"
+  },
+  "text": "大学入学共通テストの会場で、受験票をポケットの上から何度も確かめた。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "確認済み：大学入試センター試験は1990〜2020年、2021年から大学入学共通テスト（nippon.com）"
+ },
+ {
+  "id": "d2-160",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 2014,
+  "yearMax": 2023,
+  "text": "{friend}とスマホで写真を撮り、加工の仕方で一時間もめた。どれも本当の顔とは違って見えた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-161",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 2012,
+  "yearMax": 2023,
+  "text": "部活の連絡がすべてスマホで来るようになった。返事が遅れると、先輩からもう一度連絡が来た。",
+  "effects": {
+   "relation": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-162",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 2013,
+  "yearMax": 2023,
+  "when": {
+   "mother": true,
+   "hasSibling": true
+  },
+  "text": "家族のLINEに、母がよく分からないスタンプを送ってきた。{sib}と顔を見合わせて笑った。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "確認済み：LINE は2011年6月に公開（LINE株式会社 2011年6月27日プレスリリース）"
+ },
+ {
+  "id": "d2-163",
+  "kind": "daily",
+  "ageMin": 16,
+  "ageMax": 18,
+  "yearMin": 1985,
+  "yearMax": 2027,
+  "when": {
+   "school": "high"
+  },
+  "text": "コンビニでバイトを始めた。レジの操作より、肉まんの補充のほうが難しかった。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-164",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 15,
+  "when": {
+   "urban": false,
+   "school": "high"
+  },
+  "text": "町には高校が一つしかなく、同じ顔ぶれのまま三年を過ごすことになった。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-165",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1960,
+  "yearMax": 2027,
+  "when": {
+   "urban": false
+  },
+  "text": "バスは一時間に一本で、乗り遅れると家まで歩いて帰った。田んぼの道で、カエルの声がうるさかった。",
+  "effects": {
+   "health": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-166",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "when": {
+   "urban": false
+  },
+  "text": "都会の高校に進む同級生を、駅で見送った。自分は地元に残ると決めていたのに、胸がざわついた。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-167",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1975,
+  "yearMax": 2027,
+  "when": {
+   "urban": false
+  },
+  "text": "塾は隣の町にしかなく、親に車で送ってもらった。帰りの車の中では、たいてい眠っていた。",
+  "effects": {
+   "knowledge": 1,
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-168",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "urban": false
+  },
+  "text": "近所の人がみんな顔見知りで、どこで誰といたかがその日のうちに親に伝わっていた。",
+  "effects": {
+   "relation": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-169",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1955,
+  "yearMax": 2027,
+  "when": {
+   "urban": true
+  },
+  "text": "学校帰りに繁華街を歩くと、知らない人ばかりで気が楽だった。ネオンの明かりが、制服の白いシャツに映った。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-170",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1970,
+  "yearMax": 2027,
+  "when": {
+   "urban": true
+  },
+  "text": "同じマンションに住む子とは、名前も知らないまま毎朝エレベーターで一緒になった。",
+  "effects": {},
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-171",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "rich": true
+  },
+  "text": "家庭教師が週に二回来た。お茶とケーキが出るので、勉強よりその時間を楽しみにしていた。",
+  "effects": {
+   "knowledge": 2
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-172",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1975,
+  "yearMax": 2027,
+  "when": {
+   "rich": true
+  },
+  "text": "夏休みに家族で海外旅行へ行った。帰ってきても、空港のにおいがしばらく鼻に残っていた。",
+  "effects": {
+   "happiness": 2,
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-173",
+  "kind": "daily",
+  "ageMin": 14,
+  "ageMax": 16,
+  "when": {
+   "rich": true
+  },
+  "text": "習っていたピアノを、受験を理由にやめた。最後のレッスンの日、先生は好きな曲を弾かせてくれた。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-174",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "poor": true
+  },
+  "text": "新聞配達で朝四時に起きた。冬の朝は、配り終えるころに指の感覚がなくなっていた。",
+  "effects": {
+   "health": -1,
+   "knowledge": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-175",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 15,
+  "when": {
+   "poor": true
+  },
+  "text": "兄や姉のおさがりの制服を着て入学した。袖口がてかてかに光っていたが、誰にも気づかれなかった。",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "d2-176",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 18,
+  "when": {
+   "poor": true,
+   "mother": true
+  },
+  "text": "進学をあきらめて就職すると決めた夜、母が台所で背を向けたまま「ごめんね」と言った。",
+  "effects": {
+   "happiness": -2,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-177",
+  "kind": "daily",
+  "ageMin": 17,
+  "ageMax": 18,
+  "yearMin": 1950,
+  "yearMax": 2027,
+  "when": {
+   "poor": true,
+   "school": "high"
+  },
+  "text": "奨学金の書類を、先生と一緒に書いた。父の収入を書く欄で、手が止まった。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-178",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1958,
+  "yearMax": 1992,
+  "when": {
+   "school": "middle",
+   "sex": "male"
+  },
+  "text": "男子だけが技術、女子だけが家庭科の授業だった。調理室から漂ってくる甘いにおいが、うらやましかった。",
+  "effects": {},
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-179",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1958,
+  "yearMax": 1992,
+  "when": {
+   "school": "middle",
+   "sex": "female"
+  },
+  "text": "家庭科の授業で、ブラウスを縫った。同じ時間、男子は木工室で本棚を作っていた。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-180",
+  "kind": "daily",
+  "ageMin": 17,
+  "ageMax": 18,
+  "yearMin": 1965,
+  "yearMax": 1995,
+  "when": {
+   "sex": "female",
+   "school": "high"
+  },
+  "text": "父に「女は短大で十分だ」と言われた。担任の先生だけが、四年制を受けてみろと言ってくれた。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-181",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1943,
+  "yearMax": 2005,
+  "when": {
+   "sex": "male"
+  },
+  "text": "男なんだから泣くなと言われて育った。部活で負けた日は、誰もいない体育館の裏で泣いた。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-182",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1975,
+  "yearMax": 2027,
+  "when": {
+   "sex": "female"
+  },
+  "text": "バレンタインの前の夜、台所でチョコレートを溶かして型に流した。渡す相手は、まだ決めていなかった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-183",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1975,
+  "yearMax": 2027,
+  "when": {
+   "sex": "male"
+  },
+  "text": "バレンタインの日、げた箱を開けるのが少しだけこわかった。中には上履きしか入っていなかった。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-184",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1985,
+  "yearMax": 2027,
+  "when": {
+   "sex": "female"
+  },
+  "text": "体育のあと、更衣室で友だちと日焼け止めのにおいに包まれながら、好きな人の話をした。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-185",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1970,
+  "yearMax": 2027,
+  "text": "部活のあと、{friend}と自販機の前でどれを買うか迷い、結局いつもと同じ炭酸を押した。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-186",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1945,
+  "yearMax": 1995,
+  "text": "冬の朝、教室のストーブのまわりにみんなが集まった。誰かの弁当が上で温められて、においが広がった。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-187",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "雨の日の体育は体育館で、男子と女子がネットをはさんでバレーボールをした。",
+  "effects": {
+   "health": 1,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-188",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 14,
+  "yearMin": 1950,
+  "yearMax": 2010,
+  "text": "放課後、{friend}と駄菓子屋でくじを引いた。当たりが出て、二人で大声を上げた。",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-189",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "hasSibling": true
+  },
+  "text": "台風で学校が休みになった。窓に打ちつける雨の音を聞きながら、{sib}とトランプをした。",
+  "effects": {
+   "relation": 1,
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-190",
+  "kind": "daily",
+  "ageMin": 16,
+  "ageMax": 18,
+  "when": {
+   "father": true
+  },
+  "text": "夜、父の晩酌に付き合わされ、仕事の話を延々と聞かされた。眠いのに、なぜか席を立てなかった。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-191",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "mother": true
+  },
+  "text": "母が昔の写真を出してきた。自分と同じ年ごろの母は、知らない人のような顔で笑っていた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-192",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 16,
+  "text": "祖父の昔話を、何度目か分からないまま最後まで聞いた。祖父は話し終えると満足そうに茶をすすった。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-193",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 17,
+  "text": "担任が若い先生に代わった。最初の日、黒板に大きく自分の名前を書いて、チョークを折った。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-194",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "教室の窓から、遠くの山に雲がかかっていくのを授業中ずっと見ていた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-195",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "友だちのあいだで流行っている話題についていけず、昼休みは本を読むふりをしていた。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-196",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "{friend}に借りた本を返すとき、気に入った場面にはさんでおいたしおりのことを話した。",
+  "effects": {
+   "relation": 1,
+   "knowledge": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-197",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1960,
+  "yearMax": 2027,
+  "text": "一人で家にいた日曜、台所で初めてカレーを作った。帰ってきた家族に、玉ねぎが大きすぎると笑われた。",
+  "effects": {
+   "relation": 1,
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-198",
+  "kind": "daily",
+  "ageMin": 14,
+  "ageMax": 18,
+  "text": "進路面談で、親と担任が自分の将来について話すのを、横でずっと黙って聞いていた。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-199",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 15,
+  "text": "入学式の日、新しい制服が体にかたくて、首のまわりがこすれて赤くなった。",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "d2-200",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "通学路の途中にある神社で、試験の前だけ手を合わせた。賽銭は十円にした。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-201",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "友だちの悩みを夜遅くまで聞いた。何も言ってあげられなかったが、帰りぎわに「ありがとう」と言われた。",
+  "effects": {
+   "relation": 2
+  },
+  "weight": 1
+ },
+ {
+  "id": "d2-202",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1950,
+  "yearMax": 2000,
+  "text": "自分の部屋のふすまに、好きな歌手の切り抜きを貼った。母にのりのあとが残ると叱られた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d2-203",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "部活の合宿で、夜にみんなで肝だめしをした。一番こわがっていたのは、言い出した先輩だった。",
+  "effects": {
+   "relation": 2,
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t2-001",
+  "kind": "think",
+  "ageMin": 14,
+  "ageMax": 18,
+  "text": "「自分が何になりたいのか、自分がいちばん分かっていない」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-002",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 18,
+  "text": "「親の言うとおりの道に進むのは、負けみたいで嫌だ」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-003",
+  "kind": "think",
+  "ageMin": 13,
+  "ageMax": 18,
+  "text": "「あの子の前だと、どうしてこんなにうまく話せないんだろう」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-004",
+  "kind": "think",
+  "ageMin": 14,
+  "ageMax": 18,
+  "text": "「明日も同じ一日が来る。それがうれしいのか退屈なのか、よく分からない」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-005",
+  "kind": "think",
+  "ageMin": 13,
+  "ageMax": 16,
+  "text": "「大人はずるい。でも、早く大人になりたい」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-006",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 18,
+  "when": {
+   "father": true
+  },
+  "text": "「父さんみたいにはならない。そう思うのに、話し方が似てきた」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-007",
+  "kind": "think",
+  "ageMin": 13,
+  "ageMax": 17,
+  "when": {
+   "mother": true
+  },
+  "text": "「母さんにひどいことを言った。謝りたいのに、口が開かない」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-008",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 18,
+  "text": "「{friend}がいなかったら、この三年はもっと長かった」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-009",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 18,
+  "text": "「{friend}が先に進んでいく気がして、少し焦る」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-010",
+  "kind": "think",
+  "ageMin": 13,
+  "ageMax": 17,
+  "text": "「みんなと同じでいたいのに、同じだとつまらない」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-011",
+  "kind": "think",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "trigger": "wish_fail"
+  },
+  "text": "「頑張ったのにだめだった。頑張らなければよかったとは、思わないけれど」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-012",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 18,
+  "when": {
+   "trigger": "wish_fail"
+  },
+  "text": "「この結果は、まだ終わりじゃない。……そう思わないと立っていられない」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-013",
+  "kind": "think",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "trigger": "school"
+  },
+  "text": "「新しい教室、新しい顔ぶれ。今度こそ、うまくやれるだろうか」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-014",
+  "kind": "think",
+  "ageMin": 13,
+  "ageMax": 15,
+  "when": {
+   "trigger": "school"
+  },
+  "text": "「制服を着た自分が鏡に映った。少しだけ知らない人に見えた」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-015",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 18,
+  "when": {
+   "trigger": "job",
+   "working": true
+  },
+  "text": "「今日から働く。もう子どもとは言っていられない」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-016",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 18,
+  "yearMin": 1945,
+  "yearMax": 1975,
+  "when": {
+   "working": true
+  },
+  "text": "「みんなが学校へ行く時間に、自分は仕事場にいる。それでいい、と思うことにした」",
+  "effects": {},
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "t2-017",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 18,
+  "yearMin": 1945,
+  "yearMax": 1975,
+  "when": {
+   "working": true,
+   "hasSibling": true
+  },
+  "text": "「稼いだお金で、弟や妹には学校へ行かせてやりたい」",
+  "effects": {},
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "t2-018",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 18,
+  "when": {
+   "trigger": "moved"
+  },
+  "text": "「都会の夜は明るすぎて、星が見えない。故郷の空を思い出す」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-019",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 18,
+  "yearMin": 1950,
+  "yearMax": 1975,
+  "when": {
+   "working": true,
+   "mother": true
+  },
+  "text": "「帰りたいと手紙に書けば、母さんが心配する。だから元気だと書いた」",
+  "effects": {},
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "t2-020",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 18,
+  "yearMin": 1948,
+  "yearMax": 1975,
+  "when": {
+   "working": true
+  },
+  "text": "「夜学で習う一行が、昼間の仕事の疲れを忘れさせてくれる」",
+  "effects": {},
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "t2-021",
+  "kind": "think",
+  "ageMin": 14,
+  "ageMax": 18,
+  "when": {
+   "urban": false
+  },
+  "text": "「いつかこの町を出る。どこへ行くかは、まだ決めていない」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-022",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 18,
+  "when": {
+   "urban": false
+  },
+  "text": "「この町が嫌いなわけじゃない。ここしか知らないのが怖いだけだ」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-023",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 18,
+  "when": {
+   "urban": true
+  },
+  "text": "「人がこんなにいるのに、誰も自分のことを知らない。それが楽で、少しさみしい」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-024",
+  "kind": "think",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "poor": true
+  },
+  "text": "「うちにお金がないことを、恥ずかしいと思う自分がいちばん恥ずかしい」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-025",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 18,
+  "when": {
+   "rich": true
+  },
+  "text": "「親が用意してくれた道を、ただ歩いているだけなのかもしれない」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-026",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 18,
+  "yearMin": 1945,
+  "yearMax": 1995,
+  "when": {
+   "sex": "female"
+  },
+  "text": "「女だからと言われるたびに、じゃあ男だったら何でも許されたのかと思う」",
+  "effects": {},
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "t2-027",
+  "kind": "think",
+  "ageMin": 14,
+  "ageMax": 18,
+  "when": {
+   "sex": "male"
+  },
+  "text": "「男らしくしろと言われても、それがどういうことか誰も教えてくれない」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-028",
+  "kind": "think",
+  "ageMin": 14,
+  "ageMax": 18,
+  "text": "「勉強ができても、できなくても、自分は自分だ。……たぶん」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-029",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 18,
+  "when": {
+   "school": "high"
+  },
+  "text": "「将来のために今を我慢しろと言われる。今はいつ来るんだろう」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-030",
+  "kind": "think",
+  "ageMin": 14,
+  "ageMax": 18,
+  "text": "「あの先生の一言がなかったら、とっくにやめていた」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-031",
+  "kind": "think",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "hasSibling": true
+  },
+  "text": "「{sib}がうらやましい。でも、そう思っていることは絶対に言わない」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-032",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 18,
+  "when": {
+   "hasSibling": true
+  },
+  "text": "「{sib}がいてよかったと、口に出したことはまだ一度もない」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-033",
+  "kind": "think",
+  "ageMin": 14,
+  "ageMax": 18,
+  "text": "「好きだと言えば、今の関係が壊れる。言わなければ、何も始まらない」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-034",
+  "kind": "think",
+  "ageMin": 14,
+  "ageMax": 18,
+  "text": "「ふられた。世界が終わったと思ったのに、腹はちゃんと減る」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-035",
+  "kind": "think",
+  "ageMin": 14,
+  "ageMax": 18,
+  "text": "「本当の自分を見せたら、きっと嫌われる。でも、本当の自分ってどれだ」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-036",
+  "kind": "think",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1967,
+  "yearMax": 1993,
+  "text": "「夜中にラジオを聞いていると、世界に自分ひとりじゃない気がする」",
+  "effects": {},
+  "weight": 1,
+  "check": "確認済み：オールナイトニッポンは1967年10月2日開始、深夜に勉強する受験生に支持された（マイナビニュース）"
+ },
+ {
+  "id": "t2-037",
+  "kind": "think",
+  "ageMin": 16,
+  "ageMax": 18,
+  "yearMin": 1965,
+  "yearMax": 2027,
+  "when": {
+   "school": "high"
+  },
+  "text": "「いい大学に入れば、いい人生。本当にそうなんだろうか」",
+  "effects": {},
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "t2-038",
+  "kind": "think",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1992,
+  "yearMax": 1998,
+  "text": "「ポケベルが鳴らないと、それだけで一日が灰色になる」",
+  "effects": {},
+  "weight": 1,
+  "check": "確認済み：1990年代前半から女子高生の間でポケベルの数字の語呂合わせが広まり、1995年ごろ新規契約の多くが高校生（Real Sound、J-CAST）"
+ },
+ {
+  "id": "t2-039",
+  "kind": "think",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1999,
+  "yearMax": 2012,
+  "text": "「メールの返事が来ない。たった一時間なのに、もう嫌われた気がする」",
+  "effects": {},
+  "weight": 1,
+  "check": "確認済み：iモードは1999年2月開始、2000年に1000万契約（コトバンク）"
+ },
+ {
+  "id": "t2-040",
+  "kind": "think",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 2012,
+  "yearMax": 2023,
+  "text": "「既読がついたのに返事がない。何を間違えたのか、さっきの文を読み返している」",
+  "effects": {},
+  "weight": 1,
+  "check": "確認済み：LINE は2011年6月に公開（LINE株式会社 2011年6月27日プレスリリース）"
+ },
+ {
+  "id": "t2-041",
+  "kind": "think",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 2012,
+  "yearMax": 2023,
+  "text": "「スマホの中のみんなは楽しそうだ。画面の外の自分だけが、取り残されている」",
+  "effects": {},
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "t2-042",
+  "kind": "think",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1945,
+  "yearMax": 1949,
+  "text": "「腹いっぱい食べられる日が、いつか来るのだろうか」",
+  "effects": {},
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "t2-043",
+  "kind": "think",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1945,
+  "yearMax": 1946,
+  "text": "「教科書が黒く塗られた。昨日まで正しかったことは、何だったんだろう」",
+  "effects": {},
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "t2-044",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 15,
+  "yearMin": 1954,
+  "yearMax": 1975,
+  "when": {
+   "working": true
+  },
+  "text": "「集団就職の列車が動き出した。もう引き返せない。それなら前を見る」",
+  "effects": {},
+  "weight": 1,
+  "check": "確認済み：青森発上野行きの集団就職列車は1954〜1975年（たびねす「上野駅」の記事）"
+ },
+ {
+  "id": "t2-045",
+  "kind": "think",
+  "ageMin": 14,
+  "ageMax": 15,
+  "yearMin": 1945,
+  "yearMax": 1970,
+  "when": {
+   "poor": true
+  },
+  "text": "「高校へ行きたい。でも、それを言ったら家が困る」",
+  "effects": {},
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "t2-046",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 18,
+  "yearMin": 1945,
+  "yearMax": 1980,
+  "text": "「家を継げと言われる。継ぎたくないわけじゃない。ただ、選びたかった」",
+  "effects": {},
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "t2-047",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 18,
+  "when": {
+   "father": true
+  },
+  "text": "「父さんは何も言わないけれど、毎朝早く出ていく背中で分かることがある」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-048",
+  "kind": "think",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "mother": true
+  },
+  "text": "「母さんの手が荒れているのに、初めて気がついた」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-049",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 18,
+  "text": "「ありがとうと言うのが、こんなに難しい年ごろだなんて」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-050",
+  "kind": "think",
+  "ageMin": 13,
+  "ageMax": 17,
+  "text": "「部活をやめたい。でも、やめた自分を想像するともっと嫌だ」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-051",
+  "kind": "think",
+  "ageMin": 14,
+  "ageMax": 18,
+  "text": "「試合に負けた。悔しいのに、ほっとしている自分もいる」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-052",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 18,
+  "text": "「もう子どもじゃないと言うくせに、困ったときは親を頼っている」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-053",
+  "kind": "think",
+  "ageMin": 17,
+  "ageMax": 18,
+  "text": "「卒業したら、{friend}とはどうなるんだろう。今と同じではいられない気がする」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-054",
+  "kind": "think",
+  "ageMin": 16,
+  "ageMax": 18,
+  "text": "「何者かになりたい。何者でもない今の自分が、少しだけ好きでもある」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-055",
+  "kind": "think",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "mood": "low"
+  },
+  "text": "「気分が晴れない日が続く。誰かに話してみようか、と少しだけ思った」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-056",
+  "kind": "think",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "mood": "high"
+  },
+  "text": "「今日はなんだか、何もかもうまくいった。こういう日を覚えておこう」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-057",
+  "kind": "think",
+  "ageMin": 13,
+  "ageMax": 18,
+  "when": {
+   "trigger": "ill"
+  },
+  "text": "「寝込んでいるあいだ、窓の外の声がやけに遠くに聞こえた」",
+  "effects": {},
+  "weight": 1
+ },
+ {
+  "id": "t2-058",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 18,
+  "text": "「この家から出ていきたい。でも、この家の夕飯のにおいは好きだ」",
+  "effects": {},
+  "weight": 1
+ }
+]

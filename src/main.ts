@@ -578,17 +578,24 @@ function renderMFeed(): void {
           return `<div class="mline ${ERA_CLASS[i]} empty">${who}<div class="mbody"><p class="d">特に記録なし</p></div></div>`;
         }
         const moreKey = `${i}:${age}:more`;
-        // 3人を一度に見られるよう、1人につき1件だけ出す。残りは「ほか○件」で開く
-        const showAll = openKeys.has(moreKey) || es.length <= 1;
-        const visible = showAll ? es : es.slice(0, 1);
+        // 3人を一度に見られるよう、1人につき大事な1件と、心の声1つだけを出す。残りは「ほか○件」で開く
+        const rank = (e: LogEntry) => KIND_RANK[e.kind] ?? 5;
+        const sorted = [...es].sort((x, y) => rank(x) - rank(y));
+        const main = sorted.find((e) => e.kind !== 'think') ?? sorted[0];
+        // 2行目は心の声。なければ日々のこと（出来事だけでは、その人の暮らしが見えないため）
+        const second = sorted.find((e) => e.kind === 'think' && e !== main) ?? (main.kind !== 'daily' ? sorted.find((e) => e.kind === 'daily') : undefined);
+        const top = [main, second].filter(Boolean) as LogEntry[];
+        const showAll = openKeys.has(moreKey) || es.length <= top.length;
+        const visible = showAll ? [...top, ...sorted.filter((e) => !top.includes(e))] : top;
         const inner = visible
           .map((e) => {
             const key = `${i}:${age}:${p.log.indexOf(e)}`;
-            const cls = [e.kind === 'wish' ? 'wish' : '', e.kind === 'decision' || e.kind === 'wish' ? 'dec' : '', e.kind === 'death' ? 'death' : '', e.heavy ? 'heavy' : '', freshEntries.has(e) ? 'fresh' : '', openKeys.has(key) ? 'open' : ''].join(' ');
-            return `<button type="button" class="ment ${cls}" data-key="${key}" aria-expanded="${openKeys.has(key)}"><b class="t">${esc(e.title)}</b><span class="d">${esc(e.text)}</span></button>${e.heavy ? '<button class="help-note" data-act="helpnote">つらいときの相談先</button>' : ''}`;
+            const cls = [`k-${e.kind}`, e.kind === 'wish' ? 'wish' : '', e.kind === 'decision' || e.kind === 'wish' ? 'dec' : '', e.kind === 'death' ? 'death' : '', e.heavy ? 'heavy' : '', freshEntries.has(e) ? 'fresh' : '', openKeys.has(key) ? 'open' : ''].join(' ');
+            const plain = e.kind === 'daily' || e.kind === 'think';
+            return `<button type="button" class="ment ${cls}" data-key="${key}" aria-expanded="${openKeys.has(key)}">${plain ? '' : `<b class="t">${esc(e.title)}</b>`}<span class="d">${esc(e.text)}</span></button>${e.heavy ? '<button class="help-note" data-act="helpnote">つらいときの相談先</button>' : ''}`;
           })
           .join('');
-        const more = showAll ? '' : `<button type="button" class="mmore" data-more="${moreKey}">ほか${es.length - 1}件</button>`;
+        const more = showAll ? '' : `<button type="button" class="mmore" data-more="${moreKey}">ほか${es.length - top.length}件</button>`;
         return `<div class="mline ${ERA_CLASS[i]}">${whoOf(more)}<div class="mbody">${inner}</div></div>`;
       });
       const gone = st.persons.filter((p) => p.deathAge !== undefined && p.deathAge < age && !deathPending(p)).map((p) => `${esc(p.name.split(' ')[1] ?? '')}は${p.deathAge}歳で死去`);
@@ -622,8 +629,11 @@ function renderAll(): void {
   renderMFeed();
 }
 
+/** スマホで1人につき1件だけ出すときの、大事さの順（小さいほど先） */
+const KIND_RANK: Partial<Record<LogEntry['kind'], number>> = { death: 0, decision: 1, wish: 1, birth: 1, family: 2, work: 2, school: 2, pension: 2, event: 3, health: 4, money: 4, daily: 5, note: 5, think: 6 };
+
 function feedItem(e: LogEntry, old: boolean): string {
-  const cls = [e.kind === 'wish' ? 'wish' : '', e.kind === 'decision' || e.kind === 'wish' ? 'dec' : '', e.kind === 'death' ? 'death' : '', e.heavy ? 'heavy' : '', old ? 'old' : ''].join(' ');
+  const cls = [`k-${e.kind}`, e.kind === 'wish' ? 'wish' : '', e.kind === 'decision' || e.kind === 'wish' ? 'dec' : '', e.kind === 'death' ? 'death' : '', e.heavy ? 'heavy' : '', old ? 'old' : ''].join(' ');
   return html`<li class="${cls}">
     <span class="meta">${e.age}歳・${e.year}年</span>
     <span class="t">${esc(e.title)}</span>
@@ -871,7 +881,7 @@ function showLog(i: number): void {
           .reverse()
           .map(
             ({ e, idx }) =>
-              `<li><span class="a">${e.age}歳<br /><span class="muted" style="font-weight:400">${e.year}</span></span><span><b>${esc(e.title)}</b><button class="star" data-star="${idx}" aria-pressed="${!!e.star}" aria-label="☆を付ける">${e.star ? '★' : '☆'}</button><br />${esc(e.text)}${e.source ? `<br /><span class="muted src-l">出典：${esc(e.source)}</span>` : ''}</span></li>`,
+              `<li class="k-${e.kind}"><span class="a">${e.age}歳<br /><span class="muted" style="font-weight:400">${e.year}</span></span><span><b>${esc(e.title)}</b><button class="star" data-star="${idx}" aria-pressed="${!!e.star}" aria-label="☆を付ける">${e.star ? '★' : '☆'}</button><br />${esc(e.text)}${e.source ? `<br /><span class="muted src-l">出典：${esc(e.source)}</span>` : ''}</span></li>`,
           )}
       </ul>
       <div style="margin-top:12px"><button class="btn" data-close>閉じる</button></div></div>`;
@@ -1149,6 +1159,7 @@ async function showEnd(skipSlides = false): Promise<void> {
         <p class="muted" style="font-size:12px;margin-bottom:0">1マスが1年。色が濃いほど幸福だった年。</p>
       </section>
 
+      ${thoughtsPanel(st)}
       ${wishesPanel(st)}
 
       <section class="panel">
@@ -1282,6 +1293,22 @@ function lifeMapRow(p: Person, i: number): string {
     cells.push(`<i style="${style}" title="${a}歳"></i>`);
   }
   return `<div class="rowm ${ERA_CLASS[i]}" style="background:none"><span>${p.birthYear}年</span><div class="cells">${cells.join('')}</div></div>`;
+}
+
+/** 一生のあいだに思ったこと。子ども・若いころ・働き盛り・老後から1つずつ */
+function thoughtsPanel(st: GameState): string {
+  const stages: [number, number][] = [[0, 12], [13, 24], [25, 44], [45, 64], [65, 130]];
+  const rows = st.persons.map((p) => {
+    const ts = p.log.filter((e) => e.kind === 'think');
+    return stages.map(([a, b]) => ts.filter((e) => e.age >= a && e.age <= b)).map((g) => g[Math.floor(g.length / 2)]).filter(Boolean) as LogEntry[];
+  });
+  if (rows.every((r) => !r.length)) return '';
+  return html`<section class="panel">
+    <h3>それぞれが、そのとき思ったこと</h3>
+    <div class="wish3 thoughts3">
+      ${st.persons.map((p, i) => `<div class="${ERA_CLASS[i]}"><b>${p.birthYear}年生まれ</b>${rows[i].length ? `<ul>${rows[i].map((e) => `<li><span class="ta">${e.age}歳</span><span>${esc(e.text)}</span></li>`).join('')}</ul>` : '<p>思いを言葉にする前に、亡くなった。</p>'}</div>`)}
+    </div>
+  </section>`;
 }
 
 function wishesPanel(st: GameState): string {

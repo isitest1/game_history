@@ -3113,3 +3113,60 @@ button {
     height: 40px;
   }
 }
+
+/* ---------- 日々のことと心の声（docs/07） ---------- */
+.ment.k-think .d,
+.feed .k-think .d {
+  color: var(--c-sub);
+  padding-left: 10px;
+  border-left: 2px solid color-mix(in srgb, var(--c-acc) 55%, transparent);
+}
+.ment.k-think,
+.ment + .ment.k-daily {
+  border-top: 0 !important;
+  padding-top: 0 !important;
+  margin-top: -2px;
+}
+.ment.k-think .d {
+  -webkit-line-clamp: 2;
+}
+.logfull .k-think b {
+  color: var(--c-acc);
+  font-size: 0.85em;
+}
+.logfull .k-daily b {
+  color: var(--c-sub);
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+.thoughts3 li {
+  display: grid;
+  grid-template-columns: 3.2em 1fr;
+  gap: 6px;
+  align-items: baseline;
+}
+.thoughts3 .ta {
+  font-size: 12px;
+  color: var(--c-sub);
+  font-variant-numeric: tabular-nums;
+}
+
+.ment.k-daily .d {
+  font-size: 13px;
+}
+@media (max-width: 640px) {
+  .mline {
+    padding: 5px 8px 6px 7px;
+  }
+  .mrow {
+    gap: 4px;
+  }
+  .mbody {
+    gap: 4px;
+  }
+  .ment.k-think .d,
+  .ment.k-daily .d {
+    line-height: 1.45;
+  }
+}
