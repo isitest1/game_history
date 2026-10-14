@@ -28,6 +28,7 @@ interface UiPrefs {
   theme: 'auto' | 'light' | 'dark';
   sound: boolean;
   answers: Record<string, string>;
+  speed?: number;
 }
 
 const store = {
@@ -353,7 +354,9 @@ const FOCUS: { id: Focus; label: string; minAge: number; maxAge: number }[] = [
   { id: 'health', label: '健康', minAge: 40, maxAge: 200 },
 ];
 
-let speed = 1;
+/** 進む速さ。0.5倍・0.8倍でゆっくり読める。選んだ速さはこの端末に覚えておく */
+const SPEEDS = [0.5, 0.8, 1, 2, 4, 8];
+let speed = SPEEDS.includes(Number(ui.speed)) ? Number(ui.speed) : 1;
 let paused = false;
 let untilDecision = false;
 let autoMode = false;
@@ -433,9 +436,13 @@ async function showLife(): Promise<void> {
   });
   const spd = app.querySelector('#spd') as HTMLButtonElement;
   spd.textContent = `×${speed}`;
+  spd.setAttribute('aria-label', `速さ ×${speed}（押すと切り替わる）`);
   spd.addEventListener('click', () => {
-    speed = speed >= 8 ? 1 : speed * 2;
+    speed = SPEEDS[(SPEEDS.indexOf(speed) + 1) % SPEEDS.length];
     spd.textContent = `×${speed}`;
+    spd.setAttribute('aria-label', `速さ ×${speed}（押すと切り替わる）`);
+    ui.speed = speed;
+    savePrefs();
   });
   app.querySelector('#next')!.addEventListener('click', () => {
     untilDecision = true;
