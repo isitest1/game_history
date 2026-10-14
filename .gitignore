@@ -6,3 +6,4 @@ dist/
 test-results/
 playwright-report/
 .lighthouse/
+__pycache__/

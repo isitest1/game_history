@@ -1,0 +1,5457 @@
+[
+  {
+    "id": "pref-1933-03-sanriku-tsunami-child",
+    "key": "showa-sanriku-tsunami-1933",
+    "category": "pref",
+    "year": 1933,
+    "month": 3,
+    "prefs": [
+      3,
+      4
+    ],
+    "ageMin": 0,
+    "ageMax": 3,
+    "sex": "any",
+    "title": "昭和三陸津波",
+    "text": "3月3日の未明、三陸沖の地震で大きな津波が沿岸を襲い、岩手・宮城で3,000人あまりが亡くなった。まだ幼くて覚えていないが、家族はその夜のことをのちに何度も話した。",
+    "effects": {
+      "happiness": -5,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.003,
+        "cause": "津波",
+        "note": "岩手県の死者・行方不明者2,713人÷県人口約100万人≒0.27%。宮城県はこれより少ない"
+      }
+    },
+    "probability": 0.3,
+    "probNote": "目安。被害が三陸沿岸に集中したため、県民のうち沿岸部に住む割合を約3割と置いた",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「昭和三陸地震」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%98%AD%E5%92%8C%E4%B8%89%E9%99%B8%E5%9C%B0%E9%9C%87",
+      "verified": true,
+      "note": "死者・行方不明者3,064人（岩手・宮城中心）。岩手県分2,713人は地震調査研究推進本部資料"
+    }
+  },
+  {
+    "id": "pref-1934-09-muroto-typhoon-child",
+    "key": "muroto-typhoon-1934",
+    "category": "pref",
+    "year": 1934,
+    "month": 9,
+    "prefs": [
+      27,
+      39,
+      26,
+      28
+    ],
+    "ageMin": 0,
+    "ageMax": 4,
+    "sex": "any",
+    "title": "室戸台風",
+    "text": "9月21日の朝、室戸台風が上陸し、大阪湾では高潮が起きた。全国で3,000人あまりが亡くなり、倒れた校舎で多くの子どもと先生が犠牲になった。家族はこの日を長く忘れなかった。",
+    "effects": {
+      "happiness": -5,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.0003,
+        "cause": "台風",
+        "note": "全国の死者・行方不明者3,036人。大阪府の死者は約990人とする資料がある（未確認）。÷府人口約400万人≒0.02〜0.03%"
+      }
+    },
+    "probability": 0.4,
+    "probNote": "目安。大阪湾岸の高潮と強風の被害地域に住む割合",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「室戸台風」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%AE%A4%E6%88%B8%E5%8F%B0%E9%A2%A8",
+      "verified": true,
+      "note": "死者2,702人、行方不明者334人（気象庁資料の引用）"
+    }
+  },
+  {
+    "id": "pref-1943-09-tottori-eq-child",
+    "key": "tottori-eq-1943",
+    "category": "pref",
+    "year": 1943,
+    "month": 9,
+    "prefs": [
+      31
+    ],
+    "ageMin": 0,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "鳥取地震",
+    "text": "9月10日の夕方、鳥取で大きな地震があり、鳥取市を中心に1,000人あまりが亡くなった。戦争中で、町はまだ立て直す余裕もないまま、家族で崩れた家を片づけた。",
+    "effects": {
+      "health": -3,
+      "happiness": -10,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.002,
+        "cause": "地震",
+        "note": "死者1,083人÷鳥取県人口約50万人≒0.22%"
+      }
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「鳥取地震」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%B3%A5%E5%8F%96%E5%9C%B0%E9%9C%87",
+      "verified": true,
+      "note": "1943年9月10日、M7.2、死者1,083人"
+    }
+  },
+  {
+    "id": "pref-1944-12-tonankai-eq-child",
+    "key": "tonankai-eq-1944",
+    "category": "pref",
+    "year": 1944,
+    "month": 12,
+    "prefs": [
+      24,
+      23,
+      22
+    ],
+    "ageMin": 0,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "東南海地震",
+    "text": "12月7日の昼、熊野灘沖で大きな地震があり、三重・愛知・静岡で1,200人あまりが亡くなった。戦争中で新聞にはほとんど載らず、大人たちは小声で被害を話していた。",
+    "effects": {
+      "happiness": -8,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.0003,
+        "cause": "地震",
+        "note": "死者・行方不明者1,223人÷三重・愛知・静岡の人口計約600万人≒0.02%"
+      }
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「昭和東南海地震」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%98%AD%E5%92%8C%E6%9D%B1%E5%8D%97%E6%B5%B7%E5%9C%B0%E9%9C%87",
+      "verified": true,
+      "note": "1944年12月7日、死者・行方不明者1,223人"
+    }
+  },
+  {
+    "id": "pref-1944-12-tonankai-eq-youth",
+    "key": "tonankai-eq-1944",
+    "category": "pref",
+    "year": 1944,
+    "month": 12,
+    "prefs": [
+      24,
+      23,
+      22
+    ],
+    "ageMin": 13,
+    "ageMax": 14,
+    "sex": "any",
+    "title": "東南海地震",
+    "text": "12月7日、動員先の工場で大きな揺れにあった。東南海地震で1,200人あまりが亡くなったが、戦争中のため報道は抑えられ、何が起きたのかは人づてに知るしかなかった。",
+    "effects": {
+      "happiness": -8,
+      "flags": [
+        "disaster_survivor",
+        "mobilized"
+      ],
+      "death": {
+        "prob": 0.0003,
+        "cause": "地震",
+        "note": "死者・行方不明者1,223人÷三重・愛知・静岡の人口計約600万人≒0.02%"
+      }
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「昭和東南海地震」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%98%AD%E5%92%8C%E6%9D%B1%E5%8D%97%E6%B5%B7%E5%9C%B0%E9%9C%87",
+      "verified": true,
+      "note": "1944年12月7日、死者・行方不明者1,223人"
+    }
+  },
+  {
+    "id": "pref-1945-01-mikawa-eq-child",
+    "key": "mikawa-eq-1945",
+    "category": "pref",
+    "year": 1945,
+    "month": 1,
+    "prefs": [
+      23
+    ],
+    "ageMin": 0,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "三河地震",
+    "text": "1月13日の未明、三河で大きな地震があり、2,300人あまりが亡くなった。東南海地震からひと月ほどしかたっていなかった。疎開してきた子どもたちも被害にあったと聞いた。",
+    "effects": {
+      "happiness": -10,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.0008,
+        "cause": "地震",
+        "note": "死者2,306人÷愛知県人口約300万人≒0.08%"
+      }
+    },
+    "probability": 0.3,
+    "probNote": "目安。被害が三河地方に集中したため",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1945-01-mikawa-eq-youth",
+    "key": "mikawa-eq-1945",
+    "category": "pref",
+    "year": 1945,
+    "month": 1,
+    "prefs": [
+      23
+    ],
+    "ageMin": 13,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "三河地震",
+    "text": "1月13日の未明、三河地震が起きた。死者は2,300人あまり。戦争中で報道は抑えられ、壊れた家の片づけと工場への動員が同時に続いた。",
+    "effects": {
+      "happiness": -10,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.0008,
+        "cause": "地震",
+        "note": "死者2,306人÷愛知県人口約300万人≒0.08%"
+      }
+    },
+    "probability": 0.3,
+    "probNote": "目安。被害が三河地方に集中したため",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1946-12-nankai-eq-child",
+    "key": "nankai-eq-1946",
+    "category": "pref",
+    "year": 1946,
+    "month": 12,
+    "prefs": [
+      39,
+      30,
+      36
+    ],
+    "ageMin": 1,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "南海地震",
+    "text": "12月21日の明け方、南海地震が起き、高知・和歌山・徳島を中心に1,400人あまりが亡くなった。戦争が終わって1年あまり、ようやく落ち着きかけた暮らしがまた揺らいだ。",
+    "effects": {
+      "happiness": -10,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.0005,
+        "cause": "地震・津波",
+        "note": "死者・行方不明者1,443人（高知679人、和歌山269人、徳島211人）÷3県人口計約270万人≒0.04%。高知はやや高く約0.08%"
+      }
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1946-12-nankai-eq-youth",
+    "key": "nankai-eq-1946",
+    "category": "pref",
+    "year": 1946,
+    "month": 12,
+    "prefs": [
+      39,
+      30,
+      36
+    ],
+    "ageMin": 13,
+    "ageMax": 16,
+    "sex": "any",
+    "title": "南海地震",
+    "text": "12月21日の明け方、南海地震にあった。津波と揺れで1,400人あまりが亡くなった。食べ物も足りない時期で、家を直す材木もなかなか手に入らなかった。",
+    "effects": {
+      "happiness": -10,
+      "money": 0,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.0005,
+        "cause": "地震・津波",
+        "note": "死者・行方不明者1,443人（高知679人、和歌山269人、徳島211人）÷3県人口計約270万人≒0.04%。高知はやや高く約0.08%"
+      }
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1948-06-fukui-eq-child",
+    "key": "fukui-eq-1948",
+    "category": "pref",
+    "year": 1948,
+    "month": 6,
+    "prefs": [
+      18
+    ],
+    "ageMin": 3,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "福井地震",
+    "text": "6月28日の夕方、福井平野で大きな地震があり、3,700人あまりが亡くなった。空襲で焼けた町が、ようやく建て直されはじめたところだった。",
+    "effects": {
+      "health": -3,
+      "happiness": -12,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.005,
+        "cause": "地震",
+        "note": "死者3,769人÷福井県人口約73万人≒0.5%（福井平野ではさらに高い）"
+      }
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1948-06-fukui-eq-youth",
+    "key": "fukui-eq-1948",
+    "category": "pref",
+    "year": 1948,
+    "month": 6,
+    "prefs": [
+      18
+    ],
+    "ageMin": 13,
+    "ageMax": 18,
+    "sex": "any",
+    "title": "福井地震",
+    "text": "6月28日の夕方、福井地震にあった。死者は3,700人あまり。空襲から3年、建て直した家がまた倒れ、町は二度目のやり直しになった。",
+    "effects": {
+      "health": -3,
+      "happiness": -12,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.005,
+        "cause": "地震",
+        "note": "死者3,769人÷福井県人口約73万人≒0.5%（福井平野ではさらに高い）"
+      }
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1953-07-kishu-flood-child",
+    "key": "kishu-flood-1953",
+    "category": "pref",
+    "year": 1953,
+    "month": 7,
+    "prefs": [
+      30
+    ],
+    "ageMin": 8,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "紀州大水害",
+    "text": "7月18日前後の集中豪雨で、和歌山の川があふれ、山が崩れた。県内で1,000人あまりが亡くなった。学校はしばらく休みになり、泥のかき出しを手伝った。",
+    "effects": {
+      "happiness": -10,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.001,
+        "cause": "水害",
+        "note": "和歌山県の死者・行方不明者約1,015人÷県人口約100万人≒0.1%"
+      }
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1953-07-kishu-flood-youth",
+    "key": "kishu-flood-1953",
+    "category": "pref",
+    "year": 1953,
+    "month": 7,
+    "prefs": [
+      30
+    ],
+    "ageMin": 13,
+    "ageMax": 23,
+    "sex": "any",
+    "title": "紀州大水害",
+    "text": "7月の集中豪雨で紀州一帯が大水害になり、県内で1,000人あまりが亡くなった。働き手として、流された田畑や道の片づけに何日も出た。",
+    "effects": {
+      "health": -3,
+      "happiness": -10,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.001,
+        "cause": "水害",
+        "note": "和歌山県の死者・行方不明者約1,015人÷県人口約100万人≒0.1%"
+      }
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1954-09-toyamaru-typhoon-child",
+    "key": "toyamaru-typhoon-1954",
+    "category": "pref",
+    "year": 1954,
+    "month": 9,
+    "prefs": [
+      1
+    ],
+    "ageMin": 9,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "洞爺丸台風",
+    "text": "9月26日、台風で青函連絡船の洞爺丸が函館湾で沈み、1,000人あまりが亡くなった。ラジオの前で大人たちが黙りこみ、函館の方角の空を何度も気にしていた。",
+    "effects": {
+      "happiness": -6,
+      "death": {
+        "prob": 0.0002,
+        "cause": "台風",
+        "note": "全国の死者・行方不明者1,761人（うち青函連絡船洞爺丸で約1,155人）÷北海道人口約460万人で大まかに置いた"
+      }
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1954-09-toyamaru-typhoon-youth",
+    "key": "toyamaru-typhoon-1954",
+    "category": "pref",
+    "year": 1954,
+    "month": 9,
+    "prefs": [
+      1
+    ],
+    "ageMin": 13,
+    "ageMax": 24,
+    "sex": "any",
+    "title": "洞爺丸台風",
+    "text": "9月26日、洞爺丸台風が北海道を襲い、青函連絡船の洞爺丸が沈んで1,000人あまりが亡くなった。本州へ渡る船に乗る予定のあった知り合いもいて、しばらく落ち着かなかった。",
+    "effects": {
+      "happiness": -6,
+      "death": {
+        "prob": 0.0002,
+        "cause": "台風",
+        "note": "全国の死者・行方不明者1,761人（うち青函連絡船洞爺丸で約1,155人）÷北海道人口約460万人で大まかに置いた"
+      }
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1957-07-isahaya-flood-child",
+    "key": "isahaya-flood-1957",
+    "category": "pref",
+    "year": 1957,
+    "month": 7,
+    "prefs": [
+      42
+    ],
+    "ageMin": 12,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "諫早豪雨",
+    "text": "7月25日からの集中豪雨で、諫早の川があふれ、九州で700人あまりが亡くなった。町じゅうが泥に埋まり、学校は避難所になった。",
+    "effects": {
+      "happiness": -10,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.0004,
+        "cause": "水害",
+        "note": "死者・行方不明者722人÷長崎県人口約175万人≒0.04%"
+      }
+    },
+    "probability": 0.25,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1957-07-isahaya-flood-youth",
+    "key": "isahaya-flood-1957",
+    "category": "pref",
+    "year": 1957,
+    "month": 7,
+    "prefs": [
+      42
+    ],
+    "ageMin": 13,
+    "ageMax": 27,
+    "sex": "any",
+    "title": "諫早豪雨",
+    "text": "7月の諫早豪雨で、川があふれて町が泥に埋まり、700人あまりが亡くなった。勤め先も水につかり、しばらく片づけに通う日が続いた。",
+    "effects": {
+      "happiness": -10,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.0004,
+        "cause": "水害",
+        "note": "死者・行方不明者722人÷長崎県人口約175万人≒0.04%"
+      }
+    },
+    "probability": 0.25,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1958-09-kanogawa-typhoon-youth",
+    "key": "kanogawa-typhoon-1958",
+    "category": "pref",
+    "year": 1958,
+    "month": 9,
+    "prefs": [
+      22
+    ],
+    "ageMin": 13,
+    "ageMax": 28,
+    "sex": "any",
+    "title": "狩野川台風",
+    "text": "9月26日、狩野川台風で伊豆の狩野川があふれ、1,200人あまりが亡くなった。伊豆の親戚の家も流され、休みの日に片づけを手伝いに行った。",
+    "effects": {
+      "happiness": -8,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.0004,
+        "cause": "台風",
+        "note": "全国の死者・行方不明者1,269人（大半が静岡県伊豆地方）÷静岡県人口約270万人≒0.04%"
+      }
+    },
+    "probability": 0.2,
+    "probNote": "目安。被害が伊豆に集中したため",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1959-09-isewan-typhoon-youth",
+    "key": "isewan-typhoon-1959",
+    "category": "pref",
+    "year": 1959,
+    "month": 9,
+    "prefs": [
+      23,
+      24
+    ],
+    "ageMin": 14,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "伊勢湾台風",
+    "text": "9月26日の夜、伊勢湾台風の高潮で名古屋南部や三重の海沿いが水につかり、全国で5,000人あまりが亡くなった。町はひと月以上水が引かず、勤め先も休みになった。",
+    "effects": {
+      "happiness": -12,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.0009,
+        "cause": "台風・高潮",
+        "note": "愛知県3,351人÷県人口約400万人≒0.08%、三重県1,211人÷約148万人≒0.08%"
+      }
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1960-05-chile-tsunami-youth",
+    "key": "chile-tsunami-1960",
+    "category": "pref",
+    "year": 1960,
+    "month": 5,
+    "prefs": [
+      3,
+      4,
+      1
+    ],
+    "ageMin": 15,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "チリ地震津波",
+    "text": "5月24日の明け方、地球の反対側のチリで起きた地震の津波が三陸や北海道の海岸に届き、140人あまりが亡くなった。揺れもないのに海が来たことに、町じゅうが驚いた。",
+    "effects": {
+      "happiness": -5,
+      "death": {
+        "prob": 3e-05,
+        "cause": "津波",
+        "note": "全国の死者・行方不明者142人÷岩手・宮城・北海道の人口計約900万人で大まかに置いた"
+      }
+    },
+    "probability": 0.25,
+    "probNote": "目安。三陸沿岸・北海道南岸に住む割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1960-05-chile-tsunami-adult",
+    "key": "chile-tsunami-1960",
+    "category": "pref",
+    "year": 1960,
+    "month": 5,
+    "prefs": [
+      3,
+      4,
+      1
+    ],
+    "ageMin": 30,
+    "ageMax": 30,
+    "sex": "any",
+    "title": "チリ地震津波",
+    "text": "5月24日、チリ地震の津波が揺れもなく三陸の港を襲い、140人あまりが亡くなった。昭和の初めの津波を覚えている年寄りたちは、すぐ高台へ逃げろと言った。",
+    "effects": {
+      "happiness": -5,
+      "death": {
+        "prob": 3e-05,
+        "cause": "津波",
+        "note": "全国の死者・行方不明者142人÷岩手・宮城・北海道の人口計約900万人で大まかに置いた"
+      }
+    },
+    "probability": 0.25,
+    "probNote": "目安。三陸沿岸・北海道南岸に住む割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1964-06-niigata-eq-child",
+    "key": "niigata-eq-1964",
+    "category": "pref",
+    "year": 1964,
+    "month": 6,
+    "prefs": [
+      15,
+      6
+    ],
+    "ageMin": 0,
+    "ageMax": 4,
+    "sex": "any",
+    "title": "新潟地震",
+    "text": "6月16日のお昼すぎ、新潟で大きな地震があった。地面が水のようになって団地が傾き、石油タンクの火事は何日も燃え続けた。親に抱えられて外へ逃げたという。",
+    "effects": {
+      "happiness": -5,
+      "flags": [
+        "disaster_survivor"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1964-06-niigata-eq-youth",
+    "key": "niigata-eq-1964",
+    "category": "pref",
+    "year": 1964,
+    "month": 6,
+    "prefs": [
+      15,
+      6
+    ],
+    "ageMin": 19,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "新潟地震",
+    "text": "6月16日、新潟地震にあった。死者は26人だったが、地面が液状化して団地が倒れ、信濃川の昭和大橋も落ちた。勤め先までの道は、しばらく遠回りになった。",
+    "effects": {
+      "happiness": -6,
+      "flags": [
+        "disaster_survivor"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1964-06-niigata-eq-adult",
+    "key": "niigata-eq-1964",
+    "category": "pref",
+    "year": 1964,
+    "month": 6,
+    "prefs": [
+      15,
+      6
+    ],
+    "ageMin": 30,
+    "ageMax": 34,
+    "sex": "any",
+    "title": "新潟地震",
+    "text": "6月16日、新潟地震で家が傾き、港の石油タンクの火事は12日間燃え続けた。死者は26人。この地震をきっかけに、2年後に地震保険の制度ができた。",
+    "effects": {
+      "happiness": -6,
+      "flags": [
+        "disaster_survivor"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1978-06-miyagi-oki-eq-child",
+    "key": "miyagi-oki-eq-1978",
+    "category": "pref",
+    "year": 1978,
+    "month": 6,
+    "prefs": [
+      4
+    ],
+    "ageMin": 3,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "宮城県沖地震",
+    "text": "6月12日の夕方、宮城県沖地震で仙台の町が大きく揺れた。死者は28人で、倒れたブロック塀の下敷きになった子どももいた。それから通学路の塀が気になるようになった。",
+    "effects": {
+      "happiness": -4,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 1e-05,
+        "cause": "地震",
+        "note": "死者28人÷宮城県人口約200万人≒0.001%"
+      }
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1978-06-miyagi-oki-eq-youth",
+    "key": "miyagi-oki-eq-1978",
+    "category": "pref",
+    "year": 1978,
+    "month": 6,
+    "prefs": [
+      4
+    ],
+    "ageMin": 13,
+    "ageMax": 18,
+    "sex": "any",
+    "title": "宮城県沖地震",
+    "text": "6月12日の夕方、宮城県沖地震にあった。死者は28人。仙台の新しい住宅地でも家が壊れ、ガスはしばらく止まった。都市の地震とはこういうものかと思った。",
+    "effects": {
+      "happiness": -4,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 1e-05,
+        "cause": "地震",
+        "note": "死者28人÷宮城県人口約200万人≒0.001%"
+      }
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1978-06-miyagi-oki-eq-adult",
+    "key": "miyagi-oki-eq-1978",
+    "category": "pref",
+    "year": 1978,
+    "month": 6,
+    "prefs": [
+      4
+    ],
+    "ageMin": 33,
+    "ageMax": 48,
+    "sex": "any",
+    "title": "宮城県沖地震",
+    "text": "6月12日、宮城県沖地震で家の壁にひびが入り、ガスと水道が止まった。死者は28人で、その多くはブロック塀や門柱の倒壊によるものだった。",
+    "effects": {
+      "happiness": -4,
+      "money": -50000,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 1e-05,
+        "cause": "地震",
+        "note": "死者28人÷宮城県人口約200万人≒0.001%"
+      }
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1982-07-nagasaki-flood-child",
+    "key": "nagasaki-flood-1982",
+    "category": "pref",
+    "year": 1982,
+    "month": 7,
+    "prefs": [
+      42
+    ],
+    "ageMin": 7,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "長崎大水害",
+    "text": "7月23日の夜、長崎市を中心に集中豪雨があり、土砂崩れや川の氾濫で299人が亡くなった。眼鏡橋も一部が流された。夏休みの始まりは泥のかき出しになった。",
+    "effects": {
+      "happiness": -8,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.0002,
+        "cause": "水害",
+        "note": "死者・行方不明者299人÷長崎県人口約160万人≒0.02%"
+      }
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「長崎大水害」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%95%B7%E5%B4%8E%E5%A4%A7%E6%B0%B4%E5%AE%B3",
+      "verified": true,
+      "note": "1982年7月23日、死者・行方不明者299人"
+    }
+  },
+  {
+    "id": "pref-1982-07-nagasaki-flood-youth",
+    "key": "nagasaki-flood-1982",
+    "category": "pref",
+    "year": 1982,
+    "month": 7,
+    "prefs": [
+      42
+    ],
+    "ageMin": 13,
+    "ageMax": 22,
+    "sex": "any",
+    "title": "長崎大水害",
+    "text": "7月23日、長崎大水害にあった。帰宅の時間に雨が強まり、市内で多くの車が流された。死者・行方不明者は299人。職場の同僚の家も被害を受けた。",
+    "effects": {
+      "happiness": -8,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.0002,
+        "cause": "水害",
+        "note": "死者・行方不明者299人÷長崎県人口約160万人≒0.02%"
+      }
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「長崎大水害」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%95%B7%E5%B4%8E%E5%A4%A7%E6%B0%B4%E5%AE%B3",
+      "verified": true,
+      "note": "1982年7月23日、死者・行方不明者299人"
+    }
+  },
+  {
+    "id": "pref-1982-07-nagasaki-flood-adult",
+    "key": "nagasaki-flood-1982",
+    "category": "pref",
+    "year": 1982,
+    "month": 7,
+    "prefs": [
+      42
+    ],
+    "ageMin": 37,
+    "ageMax": 52,
+    "sex": "any",
+    "title": "長崎大水害",
+    "text": "7月23日の長崎大水害で、家の一階が水につかり、家財の多くがだめになった。斜面の町では土砂崩れが相次ぎ、死者・行方不明者は299人にのぼった。",
+    "effects": {
+      "happiness": -8,
+      "money": -300000,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.0002,
+        "cause": "水害",
+        "note": "死者・行方不明者299人÷長崎県人口約160万人≒0.02%"
+      }
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「長崎大水害」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%95%B7%E5%B4%8E%E5%A4%A7%E6%B0%B4%E5%AE%B3",
+      "verified": true,
+      "note": "1982年7月23日、死者・行方不明者299人"
+    }
+  },
+  {
+    "id": "pref-1983-05-nihonkai-chubu-eq-child",
+    "key": "nihonkai-chubu-eq-1983",
+    "category": "pref",
+    "year": 1983,
+    "month": 5,
+    "prefs": [
+      5,
+      2
+    ],
+    "ageMin": 8,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "日本海中部地震",
+    "text": "5月26日のお昼、日本海中部地震の津波が秋田や青森の海岸を襲い、104人が亡くなった。遠足で海岸に来ていた小学生も犠牲になり、学校で黙とうをした。",
+    "effects": {
+      "happiness": -6,
+      "death": {
+        "prob": 8e-05,
+        "cause": "津波",
+        "note": "死者104人（うち津波100人）÷秋田・青森の人口計約270万人≒0.004%"
+      }
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1983-05-nihonkai-chubu-eq-youth",
+    "key": "nihonkai-chubu-eq-1983",
+    "category": "pref",
+    "year": 1983,
+    "month": 5,
+    "prefs": [
+      5,
+      2
+    ],
+    "ageMin": 13,
+    "ageMax": 23,
+    "sex": "any",
+    "title": "日本海中部地震",
+    "text": "5月26日、日本海中部地震が起きた。日本海側には津波はあまり来ないと思われていたが、104人が亡くなり、その多くが津波によるものだった。",
+    "effects": {
+      "happiness": -5,
+      "death": {
+        "prob": 8e-05,
+        "cause": "津波",
+        "note": "死者104人（うち津波100人）÷秋田・青森の人口計約270万人≒0.004%"
+      }
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1983-05-nihonkai-chubu-eq-adult",
+    "key": "nihonkai-chubu-eq-1983",
+    "category": "pref",
+    "year": 1983,
+    "month": 5,
+    "prefs": [
+      5,
+      2
+    ],
+    "ageMin": 38,
+    "ageMax": 53,
+    "sex": "any",
+    "title": "日本海中部地震",
+    "text": "5月26日、日本海中部地震の津波で、港で働く人や釣り人などが流され、104人が亡くなった。県では戦後最大の災害になった。",
+    "effects": {
+      "happiness": -5,
+      "death": {
+        "prob": 8e-05,
+        "cause": "津波",
+        "note": "死者104人（うち津波100人）÷秋田・青森の人口計約270万人≒0.004%"
+      }
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1991-06-unzen-pyroclastic-youth",
+    "key": "unzen-1991",
+    "category": "pref",
+    "year": 1991,
+    "month": 6,
+    "prefs": [
+      42
+    ],
+    "ageMin": 16,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "雲仙普賢岳の火砕流",
+    "text": "6月3日の夕方、雲仙普賢岳で大きな火砕流が起き、取材の記者や消防団員など43人が亡くなった。島原の町には灰が降り、避難は何年も続いた。",
+    "effects": {
+      "happiness": -6,
+      "death": {
+        "prob": 3e-05,
+        "cause": "火砕流",
+        "note": "1991年6月3日の火砕流の死者43人÷長崎県人口約156万人"
+      }
+    },
+    "probability": 0.25,
+    "probNote": "目安。島原半島に住む割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1991-06-unzen-pyroclastic-adult",
+    "key": "unzen-1991",
+    "category": "pref",
+    "year": 1991,
+    "month": 6,
+    "prefs": [
+      42
+    ],
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "雲仙普賢岳の火砕流",
+    "text": "6月3日、雲仙普賢岳の火砕流で43人が亡くなった。島原では避難の暮らしが長く続き、農地や家を失った人も多かった。仕事も客足も戻らなかった。",
+    "effects": {
+      "happiness": -6,
+      "money": -200000,
+      "death": {
+        "prob": 3e-05,
+        "cause": "火砕流",
+        "note": "1991年6月3日の火砕流の死者43人÷長崎県人口約156万人"
+      }
+    },
+    "probability": 0.25,
+    "probNote": "目安。島原半島に住む割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1991-06-unzen-pyroclastic-elder",
+    "key": "unzen-1991",
+    "category": "pref",
+    "year": 1991,
+    "month": 6,
+    "prefs": [
+      42
+    ],
+    "ageMin": 60,
+    "ageMax": 61,
+    "sex": "any",
+    "title": "雲仙普賢岳の火砕流",
+    "text": "6月3日、雲仙普賢岳の火砕流で43人が亡くなった。198年ぶりの噴火だった。土石流も続き、長く住んだ集落を離れて避難する年寄りが多かった。",
+    "effects": {
+      "happiness": -6,
+      "death": {
+        "prob": 3e-05,
+        "cause": "火砕流",
+        "note": "1991年6月3日の火砕流の死者43人÷長崎県人口約156万人"
+      }
+    },
+    "probability": 0.25,
+    "probNote": "目安。島原半島に住む割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1993-07-nansei-oki-eq-child",
+    "key": "hokkaido-nansei-oki-eq-1993",
+    "category": "pref",
+    "year": 1993,
+    "month": 7,
+    "prefs": [
+      1
+    ],
+    "ageMin": 0,
+    "ageMax": 3,
+    "sex": "any",
+    "title": "北海道南西沖地震",
+    "text": "7月12日の夜、北海道南西沖地震が起き、津波と火事で奥尻島を中心に230人が亡くなった。テレビに映る島の様子を、家族は黙って見ていた。",
+    "effects": {
+      "happiness": -4,
+      "death": {
+        "prob": 4e-05,
+        "cause": "地震・津波",
+        "note": "死者・行方不明者230人÷北海道人口約570万人≒0.004%（奥尻島では島民の約4%）"
+      }
+    },
+    "probability": 0.1,
+    "probNote": "目安。被害が奥尻島と道南の日本海沿岸に集中したため",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1993-07-nansei-oki-eq-youth",
+    "key": "hokkaido-nansei-oki-eq-1993",
+    "category": "pref",
+    "year": 1993,
+    "month": 7,
+    "prefs": [
+      1
+    ],
+    "ageMin": 18,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "北海道南西沖地震",
+    "text": "7月12日の夜、北海道南西沖地震が起きた。地震から数分で津波が奥尻島に届き、火事も重なって230人が亡くなった。道内の知り合いの消息を何度も確かめた。",
+    "effects": {
+      "happiness": -5,
+      "death": {
+        "prob": 4e-05,
+        "cause": "地震・津波",
+        "note": "死者・行方不明者230人÷北海道人口約570万人≒0.004%（奥尻島では島民の約4%）"
+      }
+    },
+    "probability": 0.1,
+    "probNote": "目安。被害が奥尻島と道南の日本海沿岸に集中したため",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1993-07-nansei-oki-eq-adult",
+    "key": "hokkaido-nansei-oki-eq-1993",
+    "category": "pref",
+    "year": 1993,
+    "month": 7,
+    "prefs": [
+      1
+    ],
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "北海道南西沖地震",
+    "text": "7月12日、北海道南西沖地震で奥尻島が津波に襲われ、230人が亡くなった。島の人口の4%近くにあたった。職場で義援金を集めた。",
+    "effects": {
+      "happiness": -5,
+      "money": -10000,
+      "death": {
+        "prob": 4e-05,
+        "cause": "地震・津波",
+        "note": "死者・行方不明者230人÷北海道人口約570万人≒0.004%（奥尻島では島民の約4%）"
+      }
+    },
+    "probability": 0.1,
+    "probNote": "目安。被害が奥尻島と道南の日本海沿岸に集中したため",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1993-07-nansei-oki-eq-elder",
+    "key": "hokkaido-nansei-oki-eq-1993",
+    "category": "pref",
+    "year": 1993,
+    "month": 7,
+    "prefs": [
+      1
+    ],
+    "ageMin": 60,
+    "ageMax": 63,
+    "sex": "any",
+    "title": "北海道南西沖地震",
+    "text": "7月12日、北海道南西沖地震で、奥尻島など道南の海沿いの町が津波に襲われ、230人が亡くなった。10年前の日本海中部地震を思い出した人も多かった。",
+    "effects": {
+      "happiness": -5,
+      "death": {
+        "prob": 4e-05,
+        "cause": "地震・津波",
+        "note": "死者・行方不明者230人÷北海道人口約570万人≒0.004%（奥尻島では島民の約4%）"
+      }
+    },
+    "probability": 0.1,
+    "probNote": "目安。被害が奥尻島と道南の日本海沿岸に集中したため",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1995-01-hanshin-awaji-child",
+    "key": "hanshin-awaji-1995",
+    "category": "pref",
+    "year": 1995,
+    "month": 1,
+    "prefs": [
+      28
+    ],
+    "ageMin": 0,
+    "ageMax": 5,
+    "sex": "any",
+    "title": "阪神・淡路大震災",
+    "text": "1月17日の午前5時46分、大きな揺れで目がさめた。阪神・淡路大震災で、6,400人あまりが亡くなった。家族と避難所で寝泊まりし、学校はしばらく再開しなかった。",
+    "effects": {
+      "health": -3,
+      "happiness": -15,
+      "flags": [
+        "disaster_survivor",
+        "quake_1995"
+      ],
+      "death": {
+        "prob": 0.0012,
+        "cause": "地震",
+        "note": "兵庫県の死者6,402人・行方不明3人÷県人口約540万人≒0.12%（被害の大きかった地域ではこの数倍）"
+      }
+    },
+    "probability": 0.6,
+    "probNote": "目安。震度6以上の地域（神戸・阪神間・淡路島）に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1995-01-hanshin-awaji-youth",
+    "key": "hanshin-awaji-1995",
+    "category": "pref",
+    "year": 1995,
+    "month": 1,
+    "prefs": [
+      28
+    ],
+    "ageMin": 20,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "阪神・淡路大震災",
+    "text": "1月17日の明け方、阪神・淡路大震災にあった。6,400人あまりが亡くなり、鉄道も高速道路も止まった。ボランティアに集まった同世代の多さに驚いた。",
+    "effects": {
+      "happiness": -15,
+      "flags": [
+        "disaster_survivor",
+        "quake_1995",
+        "volunteer"
+      ],
+      "death": {
+        "prob": 0.0012,
+        "cause": "地震",
+        "note": "兵庫県の死者6,402人・行方不明3人÷県人口約540万人≒0.12%（被害の大きかった地域ではこの数倍）"
+      }
+    },
+    "probability": 0.6,
+    "probNote": "目安。震度6以上の地域（神戸・阪神間・淡路島）に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1995-01-hanshin-awaji-adult",
+    "key": "hanshin-awaji-1995",
+    "category": "pref",
+    "year": 1995,
+    "month": 1,
+    "prefs": [
+      28
+    ],
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "阪神・淡路大震災",
+    "text": "1月17日、阪神・淡路大震災で家が壊れた。6,400人あまりが亡くなった。仮設住宅に移り、職場の再建と家のローンを同時に抱えることになった。",
+    "effects": {
+      "happiness": -15,
+      "money": -3000000,
+      "flags": [
+        "disaster_survivor",
+        "quake_1995"
+      ],
+      "death": {
+        "prob": 0.0012,
+        "cause": "地震",
+        "note": "兵庫県の死者6,402人・行方不明3人÷県人口約540万人≒0.12%（被害の大きかった地域ではこの数倍）"
+      }
+    },
+    "probability": 0.6,
+    "probNote": "目安。震度6以上の地域（神戸・阪神間・淡路島）に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1995-01-hanshin-awaji-elder",
+    "key": "hanshin-awaji-1995",
+    "category": "pref",
+    "year": 1995,
+    "month": 1,
+    "prefs": [
+      28
+    ],
+    "ageMin": 60,
+    "ageMax": 65,
+    "sex": "any",
+    "title": "阪神・淡路大震災",
+    "text": "1月17日、阪神・淡路大震災にあった。6,400人あまりが亡くなり、神戸市では死者の6割近くが60歳以上だった。仮設住宅でひとり暮らしになった年寄りも多かった。",
+    "effects": {
+      "health": -5,
+      "happiness": -15,
+      "flags": [
+        "disaster_survivor",
+        "quake_1995"
+      ],
+      "death": {
+        "prob": 0.0012,
+        "cause": "地震",
+        "note": "兵庫県の死者6,402人・行方不明3人÷県人口約540万人≒0.12%（被害の大きかった地域ではこの数倍）"
+      }
+    },
+    "probability": 0.6,
+    "probNote": "目安。震度6以上の地域（神戸・阪神間・淡路島）に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2004-10-chuetsu-eq-child",
+    "key": "chuetsu-eq-2004",
+    "category": "pref",
+    "year": 2004,
+    "month": 10,
+    "prefs": [
+      15
+    ],
+    "ageMin": 0,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "新潟県中越地震",
+    "text": "10月23日の夕方、新潟県中越地震が起きた。最大震度7で、68人が亡くなった。山古志村では全員が村の外へ避難した。車の中で夜を過ごす家族も多かった。",
+    "effects": {
+      "happiness": -8,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 3e-05,
+        "cause": "地震",
+        "note": "死者68人（うち関連死52人）÷新潟県人口約245万人≒0.003%"
+      }
+    },
+    "probability": 0.35,
+    "probNote": "目安。中越地方に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2004-10-chuetsu-eq-youth",
+    "key": "chuetsu-eq-2004",
+    "category": "pref",
+    "year": 2004,
+    "month": 10,
+    "prefs": [
+      15
+    ],
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "新潟県中越地震",
+    "text": "10月23日、新潟県中越地震にあった。新幹線が脱線し、山あいの集落は道が崩れて孤立した。死者は68人で、その多くは避難生活の中で亡くなった。",
+    "effects": {
+      "happiness": -8,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 3e-05,
+        "cause": "地震",
+        "note": "死者68人（うち関連死52人）÷新潟県人口約245万人≒0.003%"
+      }
+    },
+    "probability": 0.35,
+    "probNote": "目安。中越地方に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2004-10-chuetsu-eq-adult",
+    "key": "chuetsu-eq-2004",
+    "category": "pref",
+    "year": 2004,
+    "month": 10,
+    "prefs": [
+      15
+    ],
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "新潟県中越地震",
+    "text": "10月23日、中越地震で家が傾いた。余震が怖くて、しばらく車の中で寝た。死者68人のうち52人は、避難の暮らしの中での関連死だった。",
+    "effects": {
+      "happiness": -8,
+      "money": -1000000,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 3e-05,
+        "cause": "地震",
+        "note": "死者68人（うち関連死52人）÷新潟県人口約245万人≒0.003%"
+      }
+    },
+    "probability": 0.35,
+    "probNote": "目安。中越地方に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2004-10-chuetsu-eq-elder",
+    "key": "chuetsu-eq-2004",
+    "category": "pref",
+    "year": 2004,
+    "month": 10,
+    "prefs": [
+      15
+    ],
+    "ageMin": 60,
+    "ageMax": 74,
+    "sex": "any",
+    "title": "新潟県中越地震",
+    "text": "10月23日、中越地震で山の集落が孤立し、ヘリコプターで避難した。死者は68人。長く暮らした家に戻れるまで、何年もかかった。",
+    "effects": {
+      "health": -4,
+      "happiness": -10,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 3e-05,
+        "cause": "地震",
+        "note": "死者68人（うち関連死52人）÷新潟県人口約245万人≒0.003%"
+      }
+    },
+    "probability": 0.35,
+    "probNote": "目安。中越地方に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2011-03-higashinihon-child",
+    "key": "higashinihon-2011-coast",
+    "category": "pref",
+    "year": 2011,
+    "month": 3,
+    "prefs": [
+      3,
+      4
+    ],
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "東日本大震災",
+    "text": "3月11日の午後、東日本大震災が起きた。大きな揺れのあと津波が沿岸の町をのみ込み、岩手と宮城で1万8,000人あまりが亡くなり、行方不明になった。家族と避難所で過ごした。",
+    "effects": {
+      "health": -3,
+      "happiness": -18,
+      "flags": [
+        "disaster_survivor",
+        "quake_2011"
+      ],
+      "death": {
+        "prob": 0.004,
+        "cause": "地震・津波",
+        "note": "岩手（死者5,146人・不明1,107人）と宮城（死者10,571人・不明1,215人）÷両県人口計約370万人≒0.5%。子どもはやや低めに置いた"
+      }
+    },
+    "probability": 0.5,
+    "probNote": "目安。県民のうち、揺れと津波の大きな被害を受けた地域の割合",
+    "heavy": true,
+    "source": {
+      "title": "消防庁『令和6年版 消防白書』資料I 東日本大震災における都道府県別死者数等（令和6年3月1日現在）",
+      "url": "https://www.fdma.go.jp/publication/hakusho/r6/document/67972.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2011-03-higashinihon-youth",
+    "key": "higashinihon-2011-coast",
+    "category": "pref",
+    "year": 2011,
+    "month": 3,
+    "prefs": [
+      3,
+      4
+    ],
+    "ageMin": 13,
+    "ageMax": 21,
+    "sex": "any",
+    "title": "東日本大震災",
+    "text": "3月11日、東日本大震災にあった。津波で沿岸の町が流され、岩手と宮城だけで1万8,000人あまりが亡くなり、行方不明になった。同級生や同僚の消息を探して回った。",
+    "effects": {
+      "happiness": -18,
+      "flags": [
+        "disaster_survivor",
+        "quake_2011"
+      ],
+      "death": {
+        "prob": 0.004,
+        "cause": "地震・津波",
+        "note": "岩手・宮城の死者・行方不明者計18,039人÷両県人口約370万人≒0.5%"
+      }
+    },
+    "probability": 0.5,
+    "probNote": "目安。県民のうち、揺れと津波の大きな被害を受けた地域の割合",
+    "heavy": true,
+    "source": {
+      "title": "消防庁『令和6年版 消防白書』資料I 東日本大震災における都道府県別死者数等（令和6年3月1日現在）",
+      "url": "https://www.fdma.go.jp/publication/hakusho/r6/document/67972.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2011-03-higashinihon-adult",
+    "key": "higashinihon-2011-coast",
+    "category": "pref",
+    "year": 2011,
+    "month": 3,
+    "prefs": [
+      3,
+      4
+    ],
+    "ageMin": 36,
+    "ageMax": 51,
+    "sex": "any",
+    "title": "東日本大震災",
+    "text": "3月11日、東日本大震災で家と職場が被害を受けた。岩手と宮城で1万8,000人あまりが亡くなり、行方不明になった。仮設住宅に移り、仕事をどう続けるかを考える日々になった。",
+    "effects": {
+      "happiness": -18,
+      "money": -3000000,
+      "flags": [
+        "disaster_survivor",
+        "quake_2011"
+      ],
+      "death": {
+        "prob": 0.005,
+        "cause": "地震・津波",
+        "note": "岩手・宮城の死者・行方不明者計18,039人÷両県人口約370万人≒0.5%"
+      }
+    },
+    "probability": 0.5,
+    "probNote": "目安。県民のうち、揺れと津波の大きな被害を受けた地域の割合",
+    "heavy": true,
+    "source": {
+      "title": "消防庁『令和6年版 消防白書』資料I 東日本大震災における都道府県別死者数等（令和6年3月1日現在）",
+      "url": "https://www.fdma.go.jp/publication/hakusho/r6/document/67972.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2011-03-higashinihon-elder",
+    "key": "higashinihon-2011-coast",
+    "category": "pref",
+    "year": 2011,
+    "month": 3,
+    "prefs": [
+      3,
+      4
+    ],
+    "ageMin": 66,
+    "ageMax": 81,
+    "sex": "any",
+    "title": "東日本大震災",
+    "text": "3月11日、東日本大震災が起きた。岩手と宮城で亡くなった人、行方不明の人は1万8,000人あまりで、その半数以上が60歳以上だった。避難所での暮らしは長く続いた。",
+    "effects": {
+      "health": -6,
+      "happiness": -18,
+      "flags": [
+        "disaster_survivor",
+        "quake_2011"
+      ],
+      "death": {
+        "prob": 0.009,
+        "cause": "地震・津波",
+        "note": "死者の過半が60歳以上とされるため、県平均約0.5%の倍近くに置いた（目安）"
+      }
+    },
+    "probability": 0.5,
+    "probNote": "目安。県民のうち、揺れと津波の大きな被害を受けた地域の割合",
+    "heavy": true,
+    "source": {
+      "title": "消防庁『令和6年版 消防白書』資料I 東日本大震災における都道府県別死者数等（令和6年3月1日現在）",
+      "url": "https://www.fdma.go.jp/publication/hakusho/r6/document/67972.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2011-03-higashinihon-fukushima-child",
+    "key": "higashinihon-2011-fukushima",
+    "category": "pref",
+    "year": 2011,
+    "month": 3,
+    "prefs": [
+      7
+    ],
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "東日本大震災と原発事故",
+    "text": "3月11日、東日本大震災が起き、そのあと福島第一原子力発電所で事故が起きた。県内では4,000人あまりが亡くなり、行方不明になった。家族で遠くの町へ避難し、転校した。",
+    "effects": {
+      "happiness": -18,
+      "flags": [
+        "disaster_survivor",
+        "quake_2011",
+        "evacuee_2011"
+      ],
+      "death": {
+        "prob": 0.001,
+        "cause": "地震・津波",
+        "note": "福島県の死者3,943人（関連死を含む）・不明224人÷県人口約203万人≒0.2%。子どもは低めに置いた"
+      }
+    },
+    "probability": 0.4,
+    "probNote": "目安。揺れ・津波・避難のいずれかで大きな影響を受けた県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "消防庁『令和6年版 消防白書』資料I 東日本大震災における都道府県別死者数等（令和6年3月1日現在）",
+      "url": "https://www.fdma.go.jp/publication/hakusho/r6/document/67972.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2011-03-higashinihon-fukushima-youth",
+    "key": "higashinihon-2011-fukushima",
+    "category": "pref",
+    "year": 2011,
+    "month": 3,
+    "prefs": [
+      7
+    ],
+    "ageMin": 13,
+    "ageMax": 21,
+    "sex": "any",
+    "title": "東日本大震災と原発事故",
+    "text": "3月11日、東日本大震災と原発事故が起きた。避難の指示が出た地域では、10万人以上がふるさとを離れた。進学や就職の予定は、ひとつずつ組み直しになった。",
+    "effects": {
+      "happiness": -18,
+      "flags": [
+        "disaster_survivor",
+        "quake_2011",
+        "evacuee_2011"
+      ],
+      "death": {
+        "prob": 0.001,
+        "cause": "地震・津波",
+        "note": "福島県の死者・行方不明者4,167人÷県人口約203万人≒0.2%。若い世代は低めに置いた"
+      }
+    },
+    "probability": 0.4,
+    "probNote": "目安。揺れ・津波・避難のいずれかで大きな影響を受けた県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "消防庁『令和6年版 消防白書』資料I 東日本大震災における都道府県別死者数等（令和6年3月1日現在）",
+      "url": "https://www.fdma.go.jp/publication/hakusho/r6/document/67972.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2011-03-higashinihon-fukushima-adult",
+    "key": "higashinihon-2011-fukushima",
+    "category": "pref",
+    "year": 2011,
+    "month": 3,
+    "prefs": [
+      7
+    ],
+    "ageMin": 36,
+    "ageMax": 51,
+    "sex": "any",
+    "title": "東日本大震災と原発事故",
+    "text": "3月11日、東日本大震災と原発事故で、暮らしが一変した。避難するか、とどまるか、家族で何度も話し合った。県内の死者・行方不明者は4,000人あまりで、その多くは避難中の関連死だった。",
+    "effects": {
+      "happiness": -18,
+      "money": -2000000,
+      "flags": [
+        "disaster_survivor",
+        "quake_2011",
+        "evacuee_2011"
+      ],
+      "death": {
+        "prob": 0.002,
+        "cause": "地震・津波",
+        "note": "福島県の死者・行方不明者4,167人÷県人口約203万人≒0.2%"
+      }
+    },
+    "probability": 0.4,
+    "probNote": "目安。揺れ・津波・避難のいずれかで大きな影響を受けた県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "消防庁『令和6年版 消防白書』資料I 東日本大震災における都道府県別死者数等（令和6年3月1日現在）",
+      "url": "https://www.fdma.go.jp/publication/hakusho/r6/document/67972.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2011-03-higashinihon-fukushima-elder",
+    "key": "higashinihon-2011-fukushima",
+    "category": "pref",
+    "year": 2011,
+    "month": 3,
+    "prefs": [
+      7
+    ],
+    "ageMin": 66,
+    "ageMax": 81,
+    "sex": "any",
+    "title": "東日本大震災と原発事故",
+    "text": "3月11日、東日本大震災と原発事故が起きた。避難を重ねるうちに体を壊す年寄りが多く、県内の死者の半数以上が、避難中などに亡くなる震災関連死だった。",
+    "effects": {
+      "health": -8,
+      "happiness": -18,
+      "flags": [
+        "disaster_survivor",
+        "quake_2011",
+        "evacuee_2011"
+      ],
+      "death": {
+        "prob": 0.005,
+        "cause": "震災関連死",
+        "note": "福島県の死者の多くが高齢者の関連死とされるため、県平均約0.2%の倍以上に置いた（目安）"
+      }
+    },
+    "probability": 0.4,
+    "probNote": "目安。揺れ・津波・避難のいずれかで大きな影響を受けた県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "消防庁『令和6年版 消防白書』資料I 東日本大震災における都道府県別死者数等（令和6年3月1日現在）",
+      "url": "https://www.fdma.go.jp/publication/hakusho/r6/document/67972.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2011-03-higashinihon-kanto-youth",
+    "key": "higashinihon-2011-kanto",
+    "category": "pref",
+    "year": 2011,
+    "month": 3,
+    "prefs": [
+      8,
+      12
+    ],
+    "ageMin": 13,
+    "ageMax": 21,
+    "sex": "any",
+    "title": "東日本大震災",
+    "text": "3月11日、東日本大震災で大きく揺れた。茨城や千葉の海沿いにも津波が来て、埋め立て地では液状化が起きた。計画停電で、夜の町が暗くなった。",
+    "effects": {
+      "happiness": -8,
+      "flags": [
+        "quake_2011"
+      ],
+      "death": {
+        "prob": 1e-05,
+        "cause": "地震・津波",
+        "note": "茨城（死者66人・不明1人）と千葉（死者22人・不明2人）÷両県人口約920万人≒0.001%"
+      }
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "消防庁『令和6年版 消防白書』資料I 東日本大震災における都道府県別死者数等（令和6年3月1日現在）",
+      "url": "https://www.fdma.go.jp/publication/hakusho/r6/document/67972.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2011-03-higashinihon-kanto-adult",
+    "key": "higashinihon-2011-kanto",
+    "category": "pref",
+    "year": 2011,
+    "month": 3,
+    "prefs": [
+      8,
+      12
+    ],
+    "ageMin": 36,
+    "ageMax": 51,
+    "sex": "any",
+    "title": "東日本大震災",
+    "text": "3月11日、東日本大震災で家の瓦が落ち、断水が続いた。茨城と千葉でも90人あまりが亡くなった。スーパーから水と電池が消え、計画停電の時間に合わせて暮らした。",
+    "effects": {
+      "happiness": -8,
+      "money": -200000,
+      "flags": [
+        "quake_2011"
+      ],
+      "death": {
+        "prob": 1e-05,
+        "cause": "地震・津波",
+        "note": "茨城（死者66人・不明1人）と千葉（死者22人・不明2人）÷両県人口約920万人≒0.001%"
+      }
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "消防庁『令和6年版 消防白書』資料I 東日本大震災における都道府県別死者数等（令和6年3月1日現在）",
+      "url": "https://www.fdma.go.jp/publication/hakusho/r6/document/67972.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2014-08-hiroshima-landslide-child",
+    "key": "hiroshima-landslide-2014",
+    "category": "pref",
+    "year": 2014,
+    "month": 8,
+    "prefs": [
+      34
+    ],
+    "ageMin": 9,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "広島の土砂災害",
+    "text": "8月20日の未明、広島市北部で激しい雨が降り、山すその住宅地で土石流が相次いだ。77人が亡くなった。夏休みの終わりに、学校から避難の話があった。",
+    "effects": {
+      "happiness": -6,
+      "death": {
+        "prob": 3e-05,
+        "cause": "土砂災害",
+        "note": "死者77人÷広島県人口約284万人≒0.003%"
+      }
+    },
+    "probability": 0.2,
+    "probNote": "目安。広島市北部の住宅地に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2014-08-hiroshima-landslide-youth",
+    "key": "hiroshima-landslide-2014",
+    "category": "pref",
+    "year": 2014,
+    "month": 8,
+    "prefs": [
+      34
+    ],
+    "ageMin": 13,
+    "ageMax": 24,
+    "sex": "any",
+    "title": "広島の土砂災害",
+    "text": "8月20日の未明、広島市の安佐南区・安佐北区で土砂災害が起き、77人が亡くなった。山を切りひらいた住宅地の危うさが、何度もニュースで取り上げられた。",
+    "effects": {
+      "happiness": -5,
+      "death": {
+        "prob": 3e-05,
+        "cause": "土砂災害",
+        "note": "死者77人÷広島県人口約284万人≒0.003%"
+      }
+    },
+    "probability": 0.2,
+    "probNote": "目安。広島市北部の住宅地に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2014-08-hiroshima-landslide-adult",
+    "key": "hiroshima-landslide-2014",
+    "category": "pref",
+    "year": 2014,
+    "month": 8,
+    "prefs": [
+      34
+    ],
+    "ageMin": 39,
+    "ageMax": 54,
+    "sex": "any",
+    "title": "広島の土砂災害",
+    "text": "8月20日、広島市北部の土砂災害で77人が亡くなった。自分の住む団地も山のすぐ下にあり、ハザードマップを初めて真剣に見た。",
+    "effects": {
+      "happiness": -5,
+      "death": {
+        "prob": 3e-05,
+        "cause": "土砂災害",
+        "note": "死者77人÷広島県人口約284万人≒0.003%"
+      }
+    },
+    "probability": 0.2,
+    "probNote": "目安。広島市北部の住宅地に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2014-08-hiroshima-landslide-elder",
+    "key": "hiroshima-landslide-2014",
+    "category": "pref",
+    "year": 2014,
+    "month": 8,
+    "prefs": [
+      34
+    ],
+    "ageMin": 69,
+    "ageMax": 84,
+    "sex": "any",
+    "title": "広島の土砂災害",
+    "text": "8月20日の未明、広島市北部の住宅地を土石流が襲い、77人が亡くなった。夜中の避難は年寄りには難しく、早めに逃げることの大切さが言われた。",
+    "effects": {
+      "happiness": -5,
+      "death": {
+        "prob": 3e-05,
+        "cause": "土砂災害",
+        "note": "死者77人÷広島県人口約284万人≒0.003%"
+      }
+    },
+    "probability": 0.2,
+    "probNote": "目安。広島市北部の住宅地に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2014-09-ontake-eruption-adult",
+    "key": "ontake-2014",
+    "category": "pref",
+    "year": 2014,
+    "month": 9,
+    "prefs": [
+      20,
+      21
+    ],
+    "ageMin": 39,
+    "ageMax": 54,
+    "sex": "any",
+    "title": "御嶽山の噴火",
+    "text": "9月27日のお昼前、紅葉の時期で登山客の多かった御嶽山が噴火し、死者・行方不明者は63人にのぼった。県内の山に登る人は、火山の情報を確かめるようになった。",
+    "effects": {
+      "happiness": -5
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2016-04-kumamoto-eq-child",
+    "key": "kumamoto-eq-2016",
+    "category": "pref",
+    "year": 2016,
+    "month": 4,
+    "prefs": [
+      43,
+      44
+    ],
+    "ageMin": 11,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "熊本地震",
+    "text": "4月14日の夜と16日の未明、2度にわたって震度7の揺れがあった。熊本地震で276人が亡くなった。熊本城の石垣が崩れ、しばらく車中泊や避難所で過ごした。",
+    "effects": {
+      "happiness": -10,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.00012,
+        "cause": "地震",
+        "note": "死者276人（関連死を含む）÷熊本・大分の人口計約295万人≒0.01%"
+      }
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2016-04-kumamoto-eq-youth",
+    "key": "kumamoto-eq-2016",
+    "category": "pref",
+    "year": 2016,
+    "month": 4,
+    "prefs": [
+      43,
+      44
+    ],
+    "ageMin": 13,
+    "ageMax": 26,
+    "sex": "any",
+    "title": "熊本地震",
+    "text": "4月、熊本地震にあった。最初の揺れのあと家に戻った人が、2日後のさらに大きな揺れで被害にあった。276人が亡くなり、その多くは避難中の関連死だった。",
+    "effects": {
+      "happiness": -10,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.00012,
+        "cause": "地震",
+        "note": "死者276人（関連死を含む）÷熊本・大分の人口計約295万人≒0.01%"
+      }
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2016-04-kumamoto-eq-adult",
+    "key": "kumamoto-eq-2016",
+    "category": "pref",
+    "year": 2016,
+    "month": 4,
+    "prefs": [
+      43,
+      44
+    ],
+    "ageMin": 41,
+    "ageMax": 56,
+    "sex": "any",
+    "title": "熊本地震",
+    "text": "4月の熊本地震で家が半壊した。震度7が2度来るとは誰も思っていなかった。死者は276人。罹災証明の手続きと片づけに、休みのたびに追われた。",
+    "effects": {
+      "happiness": -10,
+      "money": -1500000,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.00012,
+        "cause": "地震",
+        "note": "死者276人（関連死を含む）÷熊本・大分の人口計約295万人≒0.01%"
+      }
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2016-04-kumamoto-eq-elder",
+    "key": "kumamoto-eq-2016",
+    "category": "pref",
+    "year": 2016,
+    "month": 4,
+    "prefs": [
+      43,
+      44
+    ],
+    "ageMin": 71,
+    "ageMax": 86,
+    "sex": "any",
+    "title": "熊本地震",
+    "text": "4月の熊本地震で、長く住んだ家が住めなくなった。276人の死者の多くは、避難の暮らしで体を壊した年寄りだった。仮設住宅で何年か暮らした。",
+    "effects": {
+      "health": -5,
+      "happiness": -12,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.00012,
+        "cause": "地震",
+        "note": "死者276人（関連死を含む）÷熊本・大分の人口計約295万人≒0.01%"
+      }
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2018-07-nishinihon-flood-youth",
+    "key": "nishinihon-flood-2018",
+    "category": "pref",
+    "year": 2018,
+    "month": 7,
+    "prefs": [
+      34,
+      33,
+      38
+    ],
+    "ageMin": 13,
+    "ageMax": 28,
+    "sex": "any",
+    "title": "西日本豪雨",
+    "text": "7月の西日本豪雨で、広島・岡山・愛媛を中心に川の氾濫や土砂崩れが相次ぎ、全国で271人が亡くなった。倉敷の真備では広い範囲が水につかった。片づけのボランティアに通った。",
+    "effects": {
+      "happiness": -8,
+      "flags": [
+        "disaster_survivor",
+        "volunteer"
+      ],
+      "death": {
+        "prob": 4e-05,
+        "cause": "水害・土砂災害",
+        "note": "死者・行方不明者 広島114人・岡山64人・愛媛27人÷3県人口計約610万人≒0.003%"
+      }
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2018-07-nishinihon-flood-adult",
+    "key": "nishinihon-flood-2018",
+    "category": "pref",
+    "year": 2018,
+    "month": 7,
+    "prefs": [
+      34,
+      33,
+      38
+    ],
+    "ageMin": 43,
+    "ageMax": 58,
+    "sex": "any",
+    "title": "西日本豪雨",
+    "text": "7月の西日本豪雨で、自宅のまわりが水につかった。広島・岡山・愛媛で200人あまりが亡くなった。断水が続き、給水車の列に並んで仕事に向かった。",
+    "effects": {
+      "happiness": -8,
+      "money": -500000,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 4e-05,
+        "cause": "水害・土砂災害",
+        "note": "死者・行方不明者 広島114人・岡山64人・愛媛27人÷3県人口計約610万人≒0.003%"
+      }
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2018-07-nishinihon-flood-elder",
+    "key": "nishinihon-flood-2018",
+    "category": "pref",
+    "year": 2018,
+    "month": 7,
+    "prefs": [
+      34,
+      33,
+      38
+    ],
+    "ageMin": 73,
+    "ageMax": 88,
+    "sex": "any",
+    "title": "西日本豪雨",
+    "text": "7月の西日本豪雨では、広島・岡山・愛媛を中心に271人が亡くなり、その多くが年寄りだった。避難の呼びかけが出ても、夜の雨の中を逃げるのは難しかった。",
+    "effects": {
+      "health": -3,
+      "happiness": -8,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 4e-05,
+        "cause": "水害・土砂災害",
+        "note": "死者・行方不明者 広島114人・岡山64人・愛媛27人÷3県人口計約610万人≒0.003%"
+      }
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2018-09-iburi-eq-youth",
+    "key": "iburi-eq-2018",
+    "category": "pref",
+    "year": 2018,
+    "month": 9,
+    "prefs": [
+      1
+    ],
+    "ageMin": 13,
+    "ageMax": 28,
+    "sex": "any",
+    "title": "胆振東部地震と全道停電",
+    "text": "9月6日の未明、北海道胆振東部地震が起きた。厚真町の山崩れなどで43人が亡くなった。その直後、北海道のほぼ全域が停電し、信号も消えた。スマホの充電に列ができた。",
+    "effects": {
+      "happiness": -5
+    },
+    "probability": 0.9,
+    "probNote": "停電はほぼ全道約295万戸に及んだため高く置いた",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2018-09-iburi-eq-adult",
+    "key": "iburi-eq-2018",
+    "category": "pref",
+    "year": 2018,
+    "month": 9,
+    "prefs": [
+      1
+    ],
+    "ageMin": 43,
+    "ageMax": 58,
+    "sex": "any",
+    "title": "胆振東部地震と全道停電",
+    "text": "9月6日、胆振東部地震のあと北海道のほぼ全域が停電した。約295万戸の明かりが消え、冷蔵庫の中身をあきらめた。地震では43人が亡くなった。",
+    "effects": {
+      "happiness": -5,
+      "money": -20000
+    },
+    "probability": 0.9,
+    "probNote": "停電はほぼ全道約295万戸に及んだため高く置いた",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2018-09-iburi-eq-elder",
+    "key": "iburi-eq-2018",
+    "category": "pref",
+    "year": 2018,
+    "month": 9,
+    "prefs": [
+      1
+    ],
+    "ageMin": 73,
+    "ageMax": 88,
+    "sex": "any",
+    "title": "胆振東部地震と全道停電",
+    "text": "9月6日の地震のあと、北海道全体が停電した。暗い家で電池のラジオを頼りに、電気が戻るまでの不安な夜を過ごした。厚真町などで43人が亡くなった。",
+    "effects": {
+      "happiness": -5
+    },
+    "probability": 0.9,
+    "probNote": "停電はほぼ全道約295万戸に及んだため高く置いた",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2024-01-noto-eq-youth",
+    "key": "noto-eq-2024",
+    "category": "pref",
+    "year": 2024,
+    "month": 1,
+    "prefs": [
+      17
+    ],
+    "ageMin": 19,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "能登半島地震",
+    "text": "1月1日の夕方、能登半島地震が起きた。正月で家族が集まっていた家が倒れ、輪島の朝市通りは焼けた。道路が寸断され、帰省先から帰れなくなった人も多かった。",
+    "effects": {
+      "happiness": -12,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.0006,
+        "cause": "地震",
+        "note": "死者・行方不明者722人（関連死を含む、主に石川県）÷石川県人口約111万人≒0.065%"
+      }
+    },
+    "probability": 0.35,
+    "probNote": "目安。能登地方に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2024-01-noto-eq-adult",
+    "key": "noto-eq-2024",
+    "category": "pref",
+    "year": 2024,
+    "month": 1,
+    "prefs": [
+      17
+    ],
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "能登半島地震",
+    "text": "元日の夕方、能登半島地震にあった。最大震度7で、断水は何か月も続いた。死者・行方不明者は700人を超え、その半数以上が避難中の関連死だった。",
+    "effects": {
+      "happiness": -12,
+      "money": -2000000,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.0006,
+        "cause": "地震",
+        "note": "死者・行方不明者722人（関連死を含む、主に石川県）÷石川県人口約111万人≒0.065%"
+      }
+    },
+    "probability": 0.35,
+    "probNote": "目安。能登地方に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-2024-01-noto-eq-elder",
+    "key": "noto-eq-2024",
+    "category": "pref",
+    "year": 2024,
+    "month": 1,
+    "prefs": [
+      17
+    ],
+    "ageMin": 60,
+    "ageMax": 94,
+    "sex": "any",
+    "title": "能登半島地震",
+    "text": "元日の能登半島地震で家が倒れた。高齢の人が多い土地で、避難所や遠くの施設に移るうちに体を壊す人が多かった。死者・行方不明者は700人を超えた。",
+    "effects": {
+      "health": -8,
+      "happiness": -15,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.0012,
+        "cause": "地震・震災関連死",
+        "note": "亡くなった人の多くが高齢者のため、県平均約0.065%の約2倍に置いた（目安）"
+      }
+    },
+    "probability": 0.35,
+    "probNote": "目安。能登地方に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府『令和8年版 防災白書』附属資料1 我が国における昭和20年以降の主な自然災害の状況",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "pref-1960-01-miike-strike-youth",
+    "key": "miike-strike-1960",
+    "category": "pref",
+    "year": 1960,
+    "month": 1,
+    "prefs": [
+      40
+    ],
+    "ageMin": 15,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "三池争議",
+    "text": "1月、大牟田の三井三池炭鉱で、指名解雇に反対する無期限ストが始まった。組合が2つに分かれ、同じ町の知り合い同士がにらみ合った。争議は11月まで続いた。",
+    "effects": {
+      "happiness": -5,
+      "flags": [
+        "coal_town"
+      ]
+    },
+    "probability": 0.25,
+    "probNote": "目安。大牟田・荒尾周辺に住む県民の割合",
+    "source": {
+      "title": "Wikipedia日本語版「三井三池争議」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E4%BA%95%E4%B8%89%E6%B1%A0%E4%BA%89%E8%AD%B0",
+      "verified": true,
+      "note": "1960年1月25日に無期限スト、同年11月まで282日間"
+    }
+  },
+  {
+    "id": "pref-1960-01-miike-strike-adult",
+    "key": "miike-strike-1960",
+    "category": "pref",
+    "year": 1960,
+    "month": 1,
+    "prefs": [
+      40
+    ],
+    "ageMin": 30,
+    "ageMax": 30,
+    "sex": "any",
+    "title": "三池争議",
+    "text": "1月に始まった三池争議は、戦後最大の労働争議になった。炭鉱の町は、ストを続ける側と働きに戻る側に割れた。11月、会社の案をのむ形で終わった。",
+    "effects": {
+      "happiness": -5,
+      "relation": -3,
+      "flags": [
+        "coal_town"
+      ]
+    },
+    "probability": 0.25,
+    "probNote": "目安。大牟田・荒尾周辺に住む県民の割合",
+    "source": {
+      "title": "Wikipedia日本語版「三井三池争議」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E4%BA%95%E4%B8%89%E6%B1%A0%E4%BA%89%E8%AD%B0",
+      "verified": true,
+      "note": "1960年1月25日に無期限スト、同年11月まで282日間"
+    }
+  },
+  {
+    "id": "pref-1963-11-miike-explosion-youth",
+    "key": "miike-explosion-1963",
+    "category": "pref",
+    "year": 1963,
+    "month": 11,
+    "prefs": [
+      40
+    ],
+    "ageMin": 18,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "三池三川鉱の炭じん爆発",
+    "text": "11月9日、三池炭鉱の三川鉱で炭じん爆発が起き、458人が亡くなった。839人が一酸化炭素中毒になり、後遺症に長く苦しんだ。町の葬儀は何日も続いた。",
+    "effects": {
+      "happiness": -10,
+      "flags": [
+        "coal_town"
+      ]
+    },
+    "probability": 0.2,
+    "probNote": "目安。大牟田周辺に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「三井三池三川炭鉱炭じん爆発」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E4%BA%95%E4%B8%89%E6%B1%A0%E4%B8%89%E5%B7%9D%E7%82%AD%E9%89%B1%E7%82%AD%E3%81%98%E3%82%93%E7%88%86%E7%99%BA",
+      "verified": true,
+      "note": "1963年11月9日、死者458人、CO中毒患者839人"
+    }
+  },
+  {
+    "id": "pref-1963-11-miike-explosion-adult",
+    "key": "miike-explosion-1963",
+    "category": "pref",
+    "year": 1963,
+    "month": 11,
+    "prefs": [
+      40
+    ],
+    "ageMin": 30,
+    "ageMax": 33,
+    "sex": "any",
+    "title": "三池三川鉱の炭じん爆発",
+    "text": "11月9日、三川鉱の炭じん爆発で458人が亡くなった。戦後最悪の炭鉱事故だった。助かった人の多くも一酸化炭素中毒の後遺症を抱え、家族の暮らしが変わった。",
+    "effects": {
+      "happiness": -10,
+      "flags": [
+        "coal_town"
+      ]
+    },
+    "probability": 0.2,
+    "probNote": "目安。大牟田周辺に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「三井三池三川炭鉱炭じん爆発」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E4%BA%95%E4%B8%89%E6%B1%A0%E4%B8%89%E5%B7%9D%E7%82%AD%E9%89%B1%E7%82%AD%E3%81%98%E3%82%93%E7%88%86%E7%99%BA",
+      "verified": true,
+      "note": "1963年11月9日、死者458人、CO中毒患者839人"
+    }
+  },
+  {
+    "id": "pref-1962-chikuho-closures-child",
+    "key": "chikuho-closures",
+    "category": "pref",
+    "year": 1962,
+    "endYear": 1976,
+    "prefs": [
+      40
+    ],
+    "ageMin": 0,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "筑豊の炭鉱が次々閉山",
+    "text": "筑豊の炭鉱が次々に閉山し、同じクラスの友だちが一家で遠くの町へ引っ越していった。ボタ山の見える町から、子どもの数がどんどん減っていった。",
+    "effects": {
+      "happiness": -4,
+      "flags": [
+        "coal_town"
+      ]
+    },
+    "probability": 0.15,
+    "probNote": "目安。筑豊地方に住む県民の割合÷閉山が続いた年数",
+    "source": {
+      "title": "Wikipedia日本語版「筑豊炭田」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%AD%91%E8%B1%8A%E7%82%AD%E7%94%B0",
+      "verified": true,
+      "note": "1976年の貝島炭礦の閉山で筑豊の炭鉱はすべて閉山"
+    }
+  },
+  {
+    "id": "pref-1962-chikuho-closures-youth",
+    "key": "chikuho-closures",
+    "category": "pref",
+    "year": 1962,
+    "endYear": 1976,
+    "prefs": [
+      40
+    ],
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "筑豊の炭鉱が次々閉山",
+    "text": "筑豊では炭鉱の閉山が続き、中学や高校を出ると多くの同級生が関西や関東へ働きに出た。石炭から石油へ、エネルギーの主役が替わっていた。",
+    "effects": {
+      "happiness": -3,
+      "flags": [
+        "coal_town"
+      ]
+    },
+    "probability": 0.15,
+    "probNote": "目安。筑豊地方に住む県民の割合÷閉山が続いた年数",
+    "source": {
+      "title": "Wikipedia日本語版「筑豊炭田」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%AD%91%E8%B1%8A%E7%82%AD%E7%94%B0",
+      "verified": true,
+      "note": "1976年の貝島炭礦の閉山で筑豊の炭鉱はすべて閉山"
+    }
+  },
+  {
+    "id": "pref-1962-chikuho-closures-adult",
+    "key": "chikuho-closures",
+    "category": "pref",
+    "year": 1962,
+    "endYear": 1976,
+    "prefs": [
+      40
+    ],
+    "ageMin": 30,
+    "ageMax": 46,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "bigco",
+        "smallco"
+      ]
+    },
+    "title": "筑豊の炭鉱が次々閉山",
+    "text": "勤めていた炭鉱が閉山し、別の仕事を探すことになった。筑豊の炭鉱はこの頃から次々と閉じ、1976年にすべての炭鉱が閉山した。",
+    "effects": {
+      "happiness": -10,
+      "money": -100000,
+      "flags": [
+        "coal_town",
+        "job_lost"
+      ]
+    },
+    "probability": 0.15,
+    "probNote": "目安。筑豊地方に住む県民の割合÷閉山が続いた年数",
+    "source": {
+      "title": "Wikipedia日本語版「筑豊炭田」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%AD%91%E8%B1%8A%E7%82%AD%E7%94%B0",
+      "verified": true,
+      "note": "1976年の貝島炭礦の閉山で筑豊の炭鉱はすべて閉山"
+    }
+  },
+  {
+    "id": "pref-1997-03-miike-closure-child",
+    "key": "miike-closure-1997",
+    "category": "pref",
+    "year": 1997,
+    "month": 3,
+    "prefs": [
+      40
+    ],
+    "ageMin": 0,
+    "ageMax": 7,
+    "sex": "any",
+    "title": "三池炭鉱の閉山",
+    "text": "3月30日、大牟田の三池炭鉱が閉山した。100年以上続いた炭鉱だった。親の知り合いの家族が、仕事を探して県外へ引っ越していった。",
+    "effects": {
+      "happiness": -2,
+      "flags": [
+        "coal_town"
+      ]
+    },
+    "probability": 0.2,
+    "probNote": "目安。大牟田周辺に住む県民の割合",
+    "source": {
+      "title": "Wikipedia日本語版「三井三池炭鉱」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E4%BA%95%E4%B8%89%E6%B1%A0%E7%82%AD%E9%89%B1",
+      "verified": true,
+      "note": "1997年3月30日閉山"
+    }
+  },
+  {
+    "id": "pref-1997-03-miike-closure-youth",
+    "key": "miike-closure-1997",
+    "category": "pref",
+    "year": 1997,
+    "month": 3,
+    "prefs": [
+      40
+    ],
+    "ageMin": 22,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "三池炭鉱の閉山",
+    "text": "3月30日、三池炭鉱が閉山した。地元の大きな勤め先がなくなり、同級生の多くは福岡市や県外で仕事を探した。炭鉱の町で育ったことを、離れてから思い出すようになった。",
+    "effects": {
+      "happiness": -3,
+      "flags": [
+        "coal_town"
+      ]
+    },
+    "probability": 0.2,
+    "probNote": "目安。大牟田周辺に住む県民の割合",
+    "source": {
+      "title": "Wikipedia日本語版「三井三池炭鉱」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E4%BA%95%E4%B8%89%E6%B1%A0%E7%82%AD%E9%89%B1",
+      "verified": true,
+      "note": "1997年3月30日閉山"
+    }
+  },
+  {
+    "id": "pref-1997-03-miike-closure-adult",
+    "key": "miike-closure-1997",
+    "category": "pref",
+    "year": 1997,
+    "month": 3,
+    "prefs": [
+      40
+    ],
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "三池炭鉱の閉山",
+    "text": "3月30日、三池炭鉱が閉山した。三池争議や三川鉱の事故を見てきた町の大人たちは、閉山の日を静かに迎えた。商店街の客足はさらに減った。",
+    "effects": {
+      "happiness": -4,
+      "flags": [
+        "coal_town"
+      ]
+    },
+    "probability": 0.2,
+    "probNote": "目安。大牟田周辺に住む県民の割合",
+    "source": {
+      "title": "Wikipedia日本語版「三井三池炭鉱」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E4%BA%95%E4%B8%89%E6%B1%A0%E7%82%AD%E9%89%B1",
+      "verified": true,
+      "note": "1997年3月30日閉山"
+    }
+  },
+  {
+    "id": "pref-1997-03-miike-closure-elder",
+    "key": "miike-closure-1997",
+    "category": "pref",
+    "year": 1997,
+    "month": 3,
+    "prefs": [
+      40
+    ],
+    "ageMin": 60,
+    "ageMax": 67,
+    "sex": "any",
+    "title": "三池炭鉱の閉山",
+    "text": "3月30日、三池炭鉱が閉山した。若い頃の争議も、三川鉱の事故も覚えている。炭鉱とともに生きた町の、一つの時代が終わったと感じた。",
+    "effects": {
+      "happiness": -4,
+      "flags": [
+        "coal_town"
+      ]
+    },
+    "probability": 0.2,
+    "probNote": "目安。大牟田周辺に住む県民の割合",
+    "source": {
+      "title": "Wikipedia日本語版「三井三池炭鉱」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E4%BA%95%E4%B8%89%E6%B1%A0%E7%82%AD%E9%89%B1",
+      "verified": true,
+      "note": "1997年3月30日閉山"
+    }
+  },
+  {
+    "id": "pref-1966-01-joban-hawaiian-child",
+    "key": "joban-hawaiian-1966",
+    "category": "pref",
+    "year": 1966,
+    "month": 1,
+    "prefs": [
+      7
+    ],
+    "ageMin": 0,
+    "ageMax": 6,
+    "sex": "any",
+    "title": "常磐ハワイアンセンター開業",
+    "text": "いわきの炭鉱の温泉を使った常磐ハワイアンセンターができた。南国のような大きな温泉に、家族で出かけた。炭鉱の町に観光客が来るようになった。",
+    "effects": {
+      "happiness": 5
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「常磐炭田」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%B8%B8%E7%A3%90%E7%82%AD%E7%94%B0",
+      "verified": true,
+      "note": "常磐炭礦が1966年1月に常磐ハワイアンセンターを開業"
+    }
+  },
+  {
+    "id": "pref-1966-01-joban-hawaiian-youth",
+    "key": "joban-hawaiian-1966",
+    "category": "pref",
+    "year": 1966,
+    "month": 1,
+    "prefs": [
+      7
+    ],
+    "ageMin": 21,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "常磐ハワイアンセンター開業",
+    "text": "1月、炭鉱会社が坑内からわく温泉を使って常磐ハワイアンセンターを開いた。炭鉱の町に、南国をうたう大きな温泉施設ができたことが話題になった。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「常磐炭田」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%B8%B8%E7%A3%90%E7%82%AD%E7%94%B0",
+      "verified": true,
+      "note": "常磐炭礦が1966年1月に常磐ハワイアンセンターを開業"
+    }
+  },
+  {
+    "id": "pref-1966-01-joban-hawaiian-adult",
+    "key": "joban-hawaiian-1966",
+    "category": "pref",
+    "year": 1966,
+    "month": 1,
+    "prefs": [
+      7
+    ],
+    "ageMin": 30,
+    "ageMax": 36,
+    "sex": "any",
+    "title": "常磐ハワイアンセンター開業",
+    "text": "炭鉱が細っていくなか、会社は温泉を使った常磐ハワイアンセンターを開いた。炭鉱をやめた人の一部がそこで働くようになり、炭鉱の町は観光の町へと少しずつ変わっていった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「常磐炭田」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%B8%B8%E7%A3%90%E7%82%AD%E7%94%B0",
+      "verified": true,
+      "note": "常磐炭礦が1966年1月に常磐ハワイアンセンターを開業"
+    }
+  },
+  {
+    "id": "pref-1976-joban-closure-child",
+    "key": "joban-closure-1976",
+    "category": "pref",
+    "year": 1976,
+    "prefs": [
+      7,
+      8
+    ],
+    "ageMin": 1,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "常磐炭鉱の閉山",
+    "text": "いわきの常磐炭鉱が閉山した。ボタ山や炭住の並ぶ町の風景が、少しずつ変わっていった。炭鉱で働いていた家の友だちが転校していくのを見送った。",
+    "effects": {
+      "happiness": -2,
+      "flags": [
+        "coal_town"
+      ]
+    },
+    "probability": 0.2,
+    "probNote": "目安。いわき・北茨城周辺に住む県民の割合",
+    "source": {
+      "title": "Wikipedia日本語版「常磐炭田」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%B8%B8%E7%A3%90%E7%82%AD%E7%94%B0",
+      "verified": true,
+      "note": "最後まで残った常磐炭礦の鉱山も1976年に閉山"
+    }
+  },
+  {
+    "id": "pref-1976-joban-closure-youth",
+    "key": "joban-closure-1976",
+    "category": "pref",
+    "year": 1976,
+    "prefs": [
+      7,
+      8
+    ],
+    "ageMin": 13,
+    "ageMax": 16,
+    "sex": "any",
+    "title": "常磐炭鉱の閉山",
+    "text": "常磐炭田で最後まで残っていた炭鉱が閉山した。明治から続いた炭鉱の町は、観光や工場の町へと変わっていった。地元に残るか、外へ出るかを考えた。",
+    "effects": {
+      "happiness": -2,
+      "flags": [
+        "coal_town"
+      ]
+    },
+    "probability": 0.2,
+    "probNote": "目安。いわき・北茨城周辺に住む県民の割合",
+    "source": {
+      "title": "Wikipedia日本語版「常磐炭田」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%B8%B8%E7%A3%90%E7%82%AD%E7%94%B0",
+      "verified": true,
+      "note": "最後まで残った常磐炭礦の鉱山も1976年に閉山"
+    }
+  },
+  {
+    "id": "pref-1976-joban-closure-adult",
+    "key": "joban-closure-1976",
+    "category": "pref",
+    "year": 1976,
+    "prefs": [
+      7,
+      8
+    ],
+    "ageMin": 31,
+    "ageMax": 46,
+    "sex": "any",
+    "title": "常磐炭鉱の閉山",
+    "text": "常磐炭田で最後まで残っていた炭鉱が閉山した。炭鉱で働いていた知り合いは、温泉施設や工場へ移ったり、県外へ出たりした。地元の商店の客も目に見えて減った。",
+    "effects": {
+      "happiness": -3,
+      "flags": [
+        "coal_town"
+      ]
+    },
+    "probability": 0.2,
+    "probNote": "目安。いわき・北茨城周辺に住む県民の割合",
+    "source": {
+      "title": "Wikipedia日本語版「常磐炭田」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%B8%B8%E7%A3%90%E7%82%AD%E7%94%B0",
+      "verified": true,
+      "note": "最後まで残った常磐炭礦の鉱山も1976年に閉山"
+    }
+  },
+  {
+    "id": "pref-1981-10-yubari-gas-child",
+    "key": "yubari-gas-1981",
+    "category": "pref",
+    "year": 1981,
+    "month": 10,
+    "prefs": [
+      1
+    ],
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "夕張新炭鉱の事故",
+    "text": "10月16日、夕張新炭鉱でガス突出と坑内火災が起き、93人が亡くなった。学校の友だちの父親も坑内にいた。会社は翌年閉山し、町を出る家族が増えた。",
+    "effects": {
+      "happiness": -10,
+      "flags": [
+        "coal_town"
+      ]
+    },
+    "probability": 0.05,
+    "probNote": "目安。夕張とその周辺の炭鉱町に住む道民の割合",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「北炭夕張新炭鉱ガス突出事故」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8C%97%E7%82%AD%E5%A4%95%E5%BC%B5%E6%96%B0%E7%82%AD%E9%89%B1%E3%82%AC%E3%82%B9%E7%AA%81%E5%87%BA%E4%BA%8B%E6%95%85",
+      "verified": true,
+      "note": "1981年10月16日、死者93人"
+    }
+  },
+  {
+    "id": "pref-1981-10-yubari-gas-youth",
+    "key": "yubari-gas-1981",
+    "category": "pref",
+    "year": 1981,
+    "month": 10,
+    "prefs": [
+      1
+    ],
+    "ageMin": 13,
+    "ageMax": 21,
+    "sex": "any",
+    "title": "夕張新炭鉱の事故",
+    "text": "10月16日、北炭夕張新炭鉱の事故で93人が亡くなった。国の補助で開いたばかりの新しい炭鉱だった。会社は倒産し、多くの人が職を失った。",
+    "effects": {
+      "happiness": -10,
+      "flags": [
+        "coal_town"
+      ]
+    },
+    "probability": 0.05,
+    "probNote": "目安。夕張とその周辺の炭鉱町に住む道民の割合",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「北炭夕張新炭鉱ガス突出事故」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8C%97%E7%82%AD%E5%A4%95%E5%BC%B5%E6%96%B0%E7%82%AD%E9%89%B1%E3%82%AC%E3%82%B9%E7%AA%81%E5%87%BA%E4%BA%8B%E6%95%85",
+      "verified": true,
+      "note": "1981年10月16日、死者93人"
+    }
+  },
+  {
+    "id": "pref-1981-10-yubari-gas-adult",
+    "key": "yubari-gas-1981",
+    "category": "pref",
+    "year": 1981,
+    "month": 10,
+    "prefs": [
+      1
+    ],
+    "ageMin": 36,
+    "ageMax": 51,
+    "sex": "any",
+    "title": "夕張新炭鉱の事故",
+    "text": "10月16日、夕張新炭鉱でガス突出事故が起き、93人が亡くなった。会社は倒産して翌年閉山し、2,500人もが解雇された。残された未払いの賃金も多かった。",
+    "effects": {
+      "happiness": -10,
+      "flags": [
+        "coal_town"
+      ]
+    },
+    "probability": 0.05,
+    "probNote": "目安。夕張とその周辺の炭鉱町に住む道民の割合",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「北炭夕張新炭鉱ガス突出事故」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8C%97%E7%82%AD%E5%A4%95%E5%BC%B5%E6%96%B0%E7%82%AD%E9%89%B1%E3%82%AC%E3%82%B9%E7%AA%81%E5%87%BA%E4%BA%8B%E6%95%85",
+      "verified": true,
+      "note": "1981年10月16日、死者93人"
+    }
+  },
+  {
+    "id": "pref-1990-yubari-closure-youth",
+    "key": "yubari-closure-1990",
+    "category": "pref",
+    "year": 1990,
+    "prefs": [
+      1
+    ],
+    "ageMin": 15,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "夕張の炭鉱がすべて閉山",
+    "text": "夕張で最後に残っていた三菱南大夕張炭鉱が閉山した。かつて11万人が住んだ町は、炭鉱のない町になった。進学や就職で町を出る人がほとんどだった。",
+    "effects": {
+      "happiness": -3,
+      "flags": [
+        "coal_town"
+      ]
+    },
+    "probability": 0.05,
+    "probNote": "目安。夕張とその周辺に住む道民の割合",
+    "source": {
+      "title": "Wikipedia日本語版「夕張市」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%A4%95%E5%BC%B5%E5%B8%82",
+      "verified": true,
+      "note": "1990年に三菱南大夕張炭鉱が閉山し、市内の炭鉱はすべて閉山。人口は1960年の116,908人が最多"
+    }
+  },
+  {
+    "id": "pref-1990-yubari-closure-adult",
+    "key": "yubari-closure-1990",
+    "category": "pref",
+    "year": 1990,
+    "prefs": [
+      1
+    ],
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "夕張の炭鉱がすべて閉山",
+    "text": "夕張最後の炭鉱、南大夕張炭鉱が閉山した。市は炭鉱のあとを観光で立て直そうと、テーマパークやスキー場、映画祭に力を入れていた。うまくいくのか、町の誰もが気にしていた。",
+    "effects": {
+      "happiness": -3,
+      "flags": [
+        "coal_town"
+      ]
+    },
+    "probability": 0.05,
+    "probNote": "目安。夕張とその周辺に住む道民の割合",
+    "source": {
+      "title": "Wikipedia日本語版「夕張市」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%A4%95%E5%BC%B5%E5%B8%82",
+      "verified": true,
+      "note": "1990年に三菱南大夕張炭鉱が閉山し、市内の炭鉱はすべて閉山。人口は1960年の116,908人が最多"
+    }
+  },
+  {
+    "id": "pref-1990-yubari-closure-elder",
+    "key": "yubari-closure-1990",
+    "category": "pref",
+    "year": 1990,
+    "prefs": [
+      1
+    ],
+    "ageMin": 60,
+    "ageMax": 60,
+    "sex": "any",
+    "title": "夕張の炭鉱がすべて閉山",
+    "text": "南大夕張炭鉱が閉山し、夕張から炭鉱がなくなった。最盛期の1960年には11万人を超えた人口が、もう3分の1以下になっていた。",
+    "effects": {
+      "happiness": -4,
+      "flags": [
+        "coal_town"
+      ]
+    },
+    "probability": 0.05,
+    "probNote": "目安。夕張とその周辺に住む道民の割合",
+    "source": {
+      "title": "Wikipedia日本語版「夕張市」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%A4%95%E5%BC%B5%E5%B8%82",
+      "verified": true,
+      "note": "1990年に三菱南大夕張炭鉱が閉山し、市内の炭鉱はすべて閉山。人口は1960年の116,908人が最多"
+    }
+  },
+  {
+    "id": "pref-2007-03-yubari-bankrupt-child",
+    "key": "yubari-bankrupt-2007",
+    "category": "pref",
+    "year": 2007,
+    "month": 3,
+    "prefs": [
+      1
+    ],
+    "ageMin": 2,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "夕張市の財政破綻",
+    "text": "3月、夕張市が財政再建団体になった。市の借金が返せなくなったためだ。町から人が減り、学校や公共の施設が減らされていく話を大人たちがしていた。",
+    "effects": {
+      "happiness": -4
+    },
+    "probability": 0.05,
+    "probNote": "目安。夕張市と周辺に住む道民の割合",
+    "source": {
+      "title": "Wikipedia日本語版「夕張市」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%A4%95%E5%BC%B5%E5%B8%82",
+      "verified": true,
+      "note": "2007年3月6日に財政再建団体に指定"
+    }
+  },
+  {
+    "id": "pref-2007-03-yubari-bankrupt-youth",
+    "key": "yubari-bankrupt-2007",
+    "category": "pref",
+    "year": 2007,
+    "month": 3,
+    "prefs": [
+      1
+    ],
+    "ageMin": 13,
+    "ageMax": 17,
+    "sex": "any",
+    "title": "夕張市の財政破綻",
+    "text": "3月、夕張市が国の管理のもとで財政を立て直す財政再建団体になった。市の職員は大きく減らされ、若い人の流出がさらに進んだ。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.05,
+    "probNote": "目安。夕張市と周辺に住む道民の割合",
+    "source": {
+      "title": "Wikipedia日本語版「夕張市」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%A4%95%E5%BC%B5%E5%B8%82",
+      "verified": true,
+      "note": "2007年3月6日に財政再建団体に指定"
+    }
+  },
+  {
+    "id": "pref-2007-03-yubari-bankrupt-adult",
+    "key": "yubari-bankrupt-2007",
+    "category": "pref",
+    "year": 2007,
+    "month": 3,
+    "prefs": [
+      1
+    ],
+    "ageMin": 32,
+    "ageMax": 47,
+    "sex": "any",
+    "title": "夕張市の財政破綻",
+    "text": "3月、夕張市が財政再建団体になった。税金や水道代は上がり、公共サービスは減った。炭鉱のあとの観光への投資が、借金として残っていた。",
+    "effects": {
+      "happiness": -5,
+      "money": -50000
+    },
+    "probability": 0.05,
+    "probNote": "目安。夕張市と周辺に住む道民の割合",
+    "source": {
+      "title": "Wikipedia日本語版「夕張市」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%A4%95%E5%BC%B5%E5%B8%82",
+      "verified": true,
+      "note": "2007年3月6日に財政再建団体に指定"
+    }
+  },
+  {
+    "id": "pref-2007-03-yubari-bankrupt-elder",
+    "key": "yubari-bankrupt-2007",
+    "category": "pref",
+    "year": 2007,
+    "month": 3,
+    "prefs": [
+      1
+    ],
+    "ageMin": 62,
+    "ageMax": 77,
+    "sex": "any",
+    "title": "夕張市の財政破綻",
+    "text": "3月、夕張市が財政再建団体になった。市のサービスが削られ、年寄りの多い町の暮らしはいっそう不便になった。炭鉱の町の終わり方を見届けることになった。",
+    "effects": {
+      "health": -2,
+      "happiness": -5
+    },
+    "probability": 0.05,
+    "probNote": "目安。夕張市と周辺に住む道民の割合",
+    "source": {
+      "title": "Wikipedia日本語版「夕張市」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%A4%95%E5%BC%B5%E5%B8%82",
+      "verified": true,
+      "note": "2007年3月6日に財政再建団体に指定"
+    }
+  },
+  {
+    "id": "pref-1956-05-minamata-confirmed-child",
+    "key": "minamata-1956",
+    "category": "pref",
+    "year": 1956,
+    "month": 5,
+    "prefs": [
+      43,
+      46
+    ],
+    "ageMin": 11,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "水俣病の公式確認",
+    "text": "5月、水俣で原因の分からない病気の発生が保健所に届けられた。のちに水俣病と呼ばれた。海の魚を食べる浜の家では、家族で病気を心配するようになった。",
+    "effects": {
+      "happiness": -5
+    },
+    "probability": 0.1,
+    "probNote": "目安。不知火海沿岸に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「水俣病」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%B0%B4%E4%BF%A3%E7%97%85",
+      "verified": true,
+      "note": "1956年5月1日公式確認。熊本・鹿児島の八代海沿岸"
+    }
+  },
+  {
+    "id": "pref-1956-05-minamata-confirmed-youth",
+    "key": "minamata-1956",
+    "category": "pref",
+    "year": 1956,
+    "month": 5,
+    "prefs": [
+      43,
+      46
+    ],
+    "ageMin": 13,
+    "ageMax": 26,
+    "sex": "any",
+    "title": "水俣病の公式確認",
+    "text": "5月1日、水俣で「原因不明の病気」の発生が公式に確認された。工場の排水に含まれるメチル水銀が原因と国が認めるまで、12年かかった。",
+    "effects": {
+      "happiness": -5
+    },
+    "probability": 0.1,
+    "probNote": "目安。不知火海沿岸に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「水俣病」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%B0%B4%E4%BF%A3%E7%97%85",
+      "verified": true,
+      "note": "1956年5月1日公式確認。熊本・鹿児島の八代海沿岸"
+    }
+  },
+  {
+    "id": "pref-1968-09-minamata-recognition-child",
+    "key": "minamata-recognition-1968",
+    "category": "pref",
+    "year": 1968,
+    "month": 9,
+    "prefs": [
+      43,
+      46
+    ],
+    "ageMin": 0,
+    "ageMax": 8,
+    "sex": "any",
+    "title": "国が水俣病を公害と認定",
+    "text": "9月、国は水俣病の原因が工場の排水に含まれるメチル水銀だと認めた。病気の人やその家族が、いわれのない差別を受けていることも、大人の話から知った。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「水俣病」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%B0%B4%E4%BF%A3%E7%97%85",
+      "verified": true,
+      "note": "1968年9月26日、厚生省がチッソ水俣工場の排水中のメチル水銀化合物を原因と認定"
+    }
+  },
+  {
+    "id": "pref-1968-09-minamata-recognition-youth",
+    "key": "minamata-recognition-1968",
+    "category": "pref",
+    "year": 1968,
+    "month": 9,
+    "prefs": [
+      43,
+      46
+    ],
+    "ageMin": 23,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "国が水俣病を公害と認定",
+    "text": "9月26日、国は水俣病の原因がチッソ水俣工場の排水だと認めた。公式確認から12年。工場で働く人も、病気の人も、同じ町に暮らしていた。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「水俣病」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%B0%B4%E4%BF%A3%E7%97%85",
+      "verified": true,
+      "note": "1968年9月26日、厚生省がチッソ水俣工場の排水中のメチル水銀化合物を原因と認定"
+    }
+  },
+  {
+    "id": "pref-1968-09-minamata-recognition-adult",
+    "key": "minamata-recognition-1968",
+    "category": "pref",
+    "year": 1968,
+    "month": 9,
+    "prefs": [
+      43,
+      46
+    ],
+    "ageMin": 30,
+    "ageMax": 38,
+    "sex": "any",
+    "title": "国が水俣病を公害と認定",
+    "text": "9月、国が水俣病を工場排水による公害と認めた。その年まで排水は流され続けていた。患者と会社、町の人たちの間の溝は、その後も長く残った。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「水俣病」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%B0%B4%E4%BF%A3%E7%97%85",
+      "verified": true,
+      "note": "1968年9月26日、厚生省がチッソ水俣工場の排水中のメチル水銀化合物を原因と認定"
+    }
+  },
+  {
+    "id": "pref-1965-05-niigata-minamata-child",
+    "key": "niigata-minamata-1965",
+    "category": "pref",
+    "year": 1965,
+    "month": 5,
+    "prefs": [
+      15
+    ],
+    "ageMin": 0,
+    "ageMax": 5,
+    "sex": "any",
+    "title": "新潟水俣病の確認",
+    "text": "阿賀野川の下流で、水俣病と同じ症状の人がいることが分かった。新潟水俣病と呼ばれた。川の魚を食べないようにと、大人たちが言うようになった。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.1,
+    "probNote": "目安。阿賀野川下流域に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「第二水俣病」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%AC%AC%E4%BA%8C%E6%B0%B4%E4%BF%A3%E7%97%85",
+      "verified": true,
+      "note": "1965年に確認。阿賀野川下流域、昭和電工鹿瀬工場の廃液が原因"
+    }
+  },
+  {
+    "id": "pref-1965-05-niigata-minamata-youth",
+    "key": "niigata-minamata-1965",
+    "category": "pref",
+    "year": 1965,
+    "month": 5,
+    "prefs": [
+      15
+    ],
+    "ageMin": 20,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "新潟水俣病の確認",
+    "text": "5月、阿賀野川下流域で有機水銀中毒の患者が見つかったと発表された。上流の化学工場の廃液が原因だった。熊本の水俣病が、遠い話ではなくなった。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.1,
+    "probNote": "目安。阿賀野川下流域に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「第二水俣病」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%AC%AC%E4%BA%8C%E6%B0%B4%E4%BF%A3%E7%97%85",
+      "verified": true,
+      "note": "1965年に確認。阿賀野川下流域、昭和電工鹿瀬工場の廃液が原因"
+    }
+  },
+  {
+    "id": "pref-1965-05-niigata-minamata-adult",
+    "key": "niigata-minamata-1965",
+    "category": "pref",
+    "year": 1965,
+    "month": 5,
+    "prefs": [
+      15
+    ],
+    "ageMin": 30,
+    "ageMax": 35,
+    "sex": "any",
+    "title": "新潟水俣病の確認",
+    "text": "阿賀野川下流で新潟水俣病が確認された。川魚を食べてきた家では不安が広がった。患者側は会社を訴え、1971年の判決で全面的に勝った。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.1,
+    "probNote": "目安。阿賀野川下流域に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「第二水俣病」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%AC%AC%E4%BA%8C%E6%B0%B4%E4%BF%A3%E7%97%85",
+      "verified": true,
+      "note": "1965年に確認。阿賀野川下流域、昭和電工鹿瀬工場の廃液が原因"
+    }
+  },
+  {
+    "id": "pref-1968-05-itai-itai-child",
+    "key": "itai-itai-1968",
+    "category": "pref",
+    "year": 1968,
+    "month": 5,
+    "prefs": [
+      16
+    ],
+    "ageMin": 0,
+    "ageMax": 8,
+    "sex": "any",
+    "title": "イタイイタイ病が公害病に",
+    "text": "5月、国はイタイイタイ病の原因が、神通川の上流の鉱山から流れたカドミウムだと認めた。体の骨がもろくなり、少し動くだけで痛む病気だった。",
+    "effects": {
+      "happiness": -2
+    },
+    "probability": 0.2,
+    "probNote": "目安。神通川流域に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「イタイイタイ病」",
+      "url": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%82%BF%E3%82%A4%E3%82%A4%E3%82%BF%E3%82%A4%E7%97%85",
+      "verified": true,
+      "note": "1968年5月、厚生省が神岡鉱業所のカドミウムが原因と断定"
+    }
+  },
+  {
+    "id": "pref-1968-05-itai-itai-youth",
+    "key": "itai-itai-1968",
+    "category": "pref",
+    "year": 1968,
+    "month": 5,
+    "prefs": [
+      16
+    ],
+    "ageMin": 23,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "イタイイタイ病が公害病に",
+    "text": "5月、厚生省はイタイイタイ病を、神通川上流の神岡鉱山のカドミウムが原因の公害病だと発表した。骨がもろくなり、わずかな動きでも骨が折れる病気だった。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.2,
+    "probNote": "目安。神通川流域に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「イタイイタイ病」",
+      "url": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%82%BF%E3%82%A4%E3%82%A4%E3%82%BF%E3%82%A4%E7%97%85",
+      "verified": true,
+      "note": "1968年5月、厚生省が神岡鉱業所のカドミウムが原因と断定"
+    }
+  },
+  {
+    "id": "pref-1968-05-itai-itai-adult",
+    "key": "itai-itai-1968",
+    "category": "pref",
+    "year": 1968,
+    "month": 5,
+    "prefs": [
+      16
+    ],
+    "ageMin": 30,
+    "ageMax": 38,
+    "sex": "any",
+    "title": "イタイイタイ病が公害病に",
+    "text": "5月、イタイイタイ病が公害病と認められた。神通川の水で米をつくり、飲み水にもしてきた流域の家では、田んぼの土の入れ替えが長い課題になった。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.2,
+    "probNote": "目安。神通川流域に住む県民の割合",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「イタイイタイ病」",
+      "url": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%82%BF%E3%82%A4%E3%82%A4%E3%82%BF%E3%82%A4%E7%97%85",
+      "verified": true,
+      "note": "1968年5月、厚生省が神岡鉱業所のカドミウムが原因と断定"
+    }
+  },
+  {
+    "id": "pref-1960-yokkaichi-asthma-child",
+    "key": "yokkaichi-asthma",
+    "category": "pref",
+    "year": 1960,
+    "endYear": 1972,
+    "prefs": [
+      24
+    ],
+    "ageMin": 0,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "四日市ぜんそく",
+    "text": "家の近くの石油コンビナートの煙で、のどの調子が悪くなった。夜にせきが止まらず、同じ学校にもぜんそくで通院する子が多かった。窓を閉めて眠った。",
+    "effects": {
+      "health": -6,
+      "happiness": -4,
+      "flags": [
+        "pollution_asthma"
+      ]
+    },
+    "probability": 0.05,
+    "probNote": "目安。四日市市南部のコンビナート周辺に住む子どもの割合÷年数",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「四日市ぜんそく」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%9B%9B%E6%97%A5%E5%B8%82%E3%81%9C%E3%82%93%E3%81%9D%E3%81%8F",
+      "verified": true,
+      "note": "1959年から四日市コンビナート周辺で患者が急増"
+    }
+  },
+  {
+    "id": "pref-1972-07-yokkaichi-ruling-child",
+    "key": "yokkaichi-ruling-1972",
+    "category": "pref",
+    "year": 1972,
+    "month": 7,
+    "prefs": [
+      24
+    ],
+    "ageMin": 0,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "四日市公害裁判の判決",
+    "text": "7月24日、四日市ぜんそくの裁判で、患者の側が勝った。学校ではうがいの時間が毎日何度もあり、においのひどい日は窓を閉めて授業を受けた。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「四日市ぜんそく」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%9B%9B%E6%97%A5%E5%B8%82%E3%81%9C%E3%82%93%E3%81%9D%E3%81%8F",
+      "verified": true,
+      "note": "1972年7月24日に患者側勝訴"
+    }
+  },
+  {
+    "id": "pref-1972-07-yokkaichi-ruling-youth",
+    "key": "yokkaichi-ruling-1972",
+    "category": "pref",
+    "year": 1972,
+    "month": 7,
+    "prefs": [
+      24
+    ],
+    "ageMin": 27,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "四日市公害裁判の判決",
+    "text": "7月24日、四日市公害裁判で、コンビナートの6社に賠償を命じる判決が出た。工場が町を豊かにしたことと、空気を汚したことの両方を見て育った。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「四日市ぜんそく」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%9B%9B%E6%97%A5%E5%B8%82%E3%81%9C%E3%82%93%E3%81%9D%E3%81%8F",
+      "verified": true,
+      "note": "1972年7月24日に患者側勝訴"
+    }
+  },
+  {
+    "id": "pref-1972-07-yokkaichi-ruling-adult",
+    "key": "yokkaichi-ruling-1972",
+    "category": "pref",
+    "year": 1972,
+    "month": 7,
+    "prefs": [
+      24
+    ],
+    "ageMin": 30,
+    "ageMax": 42,
+    "sex": "any",
+    "title": "四日市公害裁判の判決",
+    "text": "7月24日、四日市公害裁判で患者側が勝った。これをきっかけに、工場の排煙の規制が強まり、公害の被害を補償する法律ができていった。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "Wikipedia日本語版「四日市ぜんそく」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%9B%9B%E6%97%A5%E5%B8%82%E3%81%9C%E3%82%93%E3%81%9D%E3%81%8F",
+      "verified": true,
+      "note": "1972年7月24日に患者側勝訴"
+    }
+  },
+  {
+    "id": "pref-1964-10-tokaido-shinkansen-child",
+    "key": "tokaido-shinkansen-1964",
+    "category": "pref",
+    "year": 1964,
+    "month": 10,
+    "prefs": [
+      13,
+      14,
+      22,
+      23,
+      25,
+      26,
+      27
+    ],
+    "ageMin": 0,
+    "ageMax": 4,
+    "sex": "any",
+    "title": "東海道新幹線が開業",
+    "text": "10月1日、東京と新大阪を結ぶ東海道新幹線が開業した。丸い鼻の夢の超特急を見に、親に連れられて線路のそばまで行った。あっという間に通り過ぎた。",
+    "effects": {
+      "happiness": 3,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「東海道新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E6%B5%B7%E9%81%93%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "1964年10月1日開業"
+    }
+  },
+  {
+    "id": "pref-1964-10-tokaido-shinkansen-youth",
+    "key": "tokaido-shinkansen-1964",
+    "category": "pref",
+    "year": 1964,
+    "month": 10,
+    "prefs": [
+      13,
+      14,
+      22,
+      23,
+      25,
+      26,
+      27
+    ],
+    "ageMin": 19,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "東海道新幹線が開業",
+    "text": "10月1日、東海道新幹線が開業し、東京と新大阪が4時間で結ばれた。東京オリンピックの開幕は9日後だった。初めて乗った日のことは長く覚えていた。",
+    "effects": {
+      "happiness": 3,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「東海道新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E6%B5%B7%E9%81%93%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "1964年10月1日開業"
+    }
+  },
+  {
+    "id": "pref-1964-10-tokaido-shinkansen-adult",
+    "key": "tokaido-shinkansen-1964",
+    "category": "pref",
+    "year": 1964,
+    "month": 10,
+    "prefs": [
+      13,
+      14,
+      22,
+      23,
+      25,
+      26,
+      27
+    ],
+    "ageMin": 30,
+    "ageMax": 34,
+    "sex": "any",
+    "title": "東海道新幹線が開業",
+    "text": "10月1日に東海道新幹線が開業した。東京と大阪の出張が日帰りでできるようになり、仕事の段取りが変わった。宿代がかからなくなったと会社は喜んだ。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「東海道新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E6%B5%B7%E9%81%93%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "1964年10月1日開業"
+    }
+  },
+  {
+    "id": "pref-1969-05-tomei-expressway-child",
+    "key": "tomei-expressway-1969",
+    "category": "pref",
+    "year": 1969,
+    "month": 5,
+    "prefs": [
+      13,
+      14,
+      22,
+      23
+    ],
+    "ageMin": 0,
+    "ageMax": 9,
+    "sex": "any",
+    "title": "東名高速道路が全通",
+    "text": "5月、東名高速道路が全線開通し、東京から名古屋、大阪まで高速道路でつながった。マイカーで出かける家が増え、夏休みの帰省は車になった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「東名高速道路」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E5%90%8D%E9%AB%98%E9%80%9F%E9%81%93%E8%B7%AF",
+      "verified": true,
+      "note": "1969年5月26日全線開通、名神と接続"
+    }
+  },
+  {
+    "id": "pref-1969-05-tomei-expressway-youth",
+    "key": "tomei-expressway-1969",
+    "category": "pref",
+    "year": 1969,
+    "month": 5,
+    "prefs": [
+      13,
+      14,
+      22,
+      23
+    ],
+    "ageMin": 24,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "東名高速道路が全通",
+    "text": "5月26日、東名高速道路が全線開通した。名神とつながり、東京から西宮まで高速道路で走れるようになった。トラック輸送の仕事が増えた。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「東名高速道路」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E5%90%8D%E9%AB%98%E9%80%9F%E9%81%93%E8%B7%AF",
+      "verified": true,
+      "note": "1969年5月26日全線開通、名神と接続"
+    }
+  },
+  {
+    "id": "pref-1969-05-tomei-expressway-adult",
+    "key": "tomei-expressway-1969",
+    "category": "pref",
+    "year": 1969,
+    "month": 5,
+    "prefs": [
+      13,
+      14,
+      22,
+      23
+    ],
+    "ageMin": 30,
+    "ageMax": 39,
+    "sex": "any",
+    "title": "東名高速道路が全通",
+    "text": "5月、東名高速が全通した。会社の配送はトラックが中心になり、鉄道で運んでいた荷物が道路へ移っていった。休日には家族を乗せて高速を走るのが楽しみになった。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「東名高速道路」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E5%90%8D%E9%AB%98%E9%80%9F%E9%81%93%E8%B7%AF",
+      "verified": true,
+      "note": "1969年5月26日全線開通、名神と接続"
+    }
+  },
+  {
+    "id": "pref-1972-03-sanyo-shinkansen-okayama-child",
+    "key": "sanyo-shinkansen-okayama-1972",
+    "category": "pref",
+    "year": 1972,
+    "month": 3,
+    "prefs": [
+      28,
+      33
+    ],
+    "ageMin": 0,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "山陽新幹線が岡山まで開業",
+    "text": "3月15日、山陽新幹線が新大阪から岡山まで開業した。岡山駅に新幹線が来た日、駅のまわりは見物の人でいっぱいだった。新しい駅の売店で記念の入場券を買ってもらった。",
+    "effects": {
+      "happiness": 3,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「山陽新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%B1%B1%E9%99%BD%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "1972年3月15日新大阪―岡山開業"
+    }
+  },
+  {
+    "id": "pref-1972-03-sanyo-shinkansen-okayama-youth",
+    "key": "sanyo-shinkansen-okayama-1972",
+    "category": "pref",
+    "year": 1972,
+    "month": 3,
+    "prefs": [
+      28,
+      33
+    ],
+    "ageMin": 27,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "山陽新幹線が岡山まで開業",
+    "text": "3月15日、山陽新幹線が岡山まで開業し、東京まで乗り換えなしで行けるようになった。都会に出た友だちが帰ってきやすくなった。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「山陽新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%B1%B1%E9%99%BD%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "1972年3月15日新大阪―岡山開業"
+    }
+  },
+  {
+    "id": "pref-1972-03-sanyo-shinkansen-okayama-adult",
+    "key": "sanyo-shinkansen-okayama-1972",
+    "category": "pref",
+    "year": 1972,
+    "month": 3,
+    "prefs": [
+      28,
+      33
+    ],
+    "ageMin": 30,
+    "ageMax": 42,
+    "sex": "any",
+    "title": "山陽新幹線が岡山まで開業",
+    "text": "3月、山陽新幹線が岡山まで開業した。大阪や東京への出張が楽になった一方、本社に人や仕事が吸い寄せられるとも言われた。駅の近くには新しいホテルやビルが建ちはじめた。",
+    "effects": {
+      "happiness": 1,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「山陽新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%B1%B1%E9%99%BD%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "1972年3月15日新大阪―岡山開業"
+    }
+  },
+  {
+    "id": "pref-1975-03-sanyo-shinkansen-hakata-child",
+    "key": "sanyo-shinkansen-hakata-1975",
+    "category": "pref",
+    "year": 1975,
+    "month": 3,
+    "prefs": [
+      34,
+      35,
+      40
+    ],
+    "ageMin": 0,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "新幹線が博多まで全通",
+    "text": "3月10日、山陽新幹線が博多まで開業した。関門トンネルを抜けて九州まで新幹線が来たと、学校でも話題になった。東京まで1本で行ける乗り物ができたことが、ふしぎに思えた。",
+    "effects": {
+      "happiness": 3,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「山陽新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%B1%B1%E9%99%BD%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "1975年3月10日博多まで全通"
+    }
+  },
+  {
+    "id": "pref-1975-03-sanyo-shinkansen-hakata-youth",
+    "key": "sanyo-shinkansen-hakata-1975",
+    "category": "pref",
+    "year": 1975,
+    "month": 3,
+    "prefs": [
+      34,
+      35,
+      40
+    ],
+    "ageMin": 13,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "新幹線が博多まで全通",
+    "text": "3月10日、山陽新幹線が博多まで全通し、東京と博多が新幹線1本でつながった。関西や東京で働く友だちが、前よりずっと近くなった。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「山陽新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%B1%B1%E9%99%BD%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "1975年3月10日博多まで全通"
+    }
+  },
+  {
+    "id": "pref-1975-03-sanyo-shinkansen-hakata-adult",
+    "key": "sanyo-shinkansen-hakata-1975",
+    "category": "pref",
+    "year": 1975,
+    "month": 3,
+    "prefs": [
+      34,
+      35,
+      40
+    ],
+    "ageMin": 30,
+    "ageMax": 45,
+    "sex": "any",
+    "title": "新幹線が博多まで全通",
+    "text": "3月10日、新幹線が博多まで延びた。東京まで7時間足らずで行けるようになり、出張や親せきの行き来の仕方が変わった。それまでの夜行の寝台列車は、少しずつ減っていった。",
+    "effects": {
+      "happiness": 1,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「山陽新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%B1%B1%E9%99%BD%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "1975年3月10日博多まで全通"
+    }
+  },
+  {
+    "id": "pref-1982-06-tohoku-shinkansen-child",
+    "key": "tohoku-shinkansen-1982",
+    "category": "pref",
+    "year": 1982,
+    "month": 6,
+    "prefs": [
+      11,
+      9,
+      7,
+      4,
+      3
+    ],
+    "ageMin": 7,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "東北新幹線が開業",
+    "text": "6月23日、東北新幹線が大宮から盛岡まで開業した。緑の帯の新幹線が田んぼの中の高架を走るのを、学校の帰りに眺めた。開業の日、駅の前には記念の旗がたくさん並んだ。",
+    "effects": {
+      "happiness": 3,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「東北新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E5%8C%97%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "1982年6月23日大宮―盛岡開業"
+    }
+  },
+  {
+    "id": "pref-1982-06-tohoku-shinkansen-youth",
+    "key": "tohoku-shinkansen-1982",
+    "category": "pref",
+    "year": 1982,
+    "month": 6,
+    "prefs": [
+      11,
+      9,
+      7,
+      4,
+      3
+    ],
+    "ageMin": 13,
+    "ageMax": 22,
+    "sex": "any",
+    "title": "東北新幹線が開業",
+    "text": "6月23日、東北新幹線が開業した。上野までは在来線への乗り継ぎが要ったが、東京が急に近くなった。進学や就職で上京する道が開けた気がした。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「東北新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E5%8C%97%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "1982年6月23日大宮―盛岡開業"
+    }
+  },
+  {
+    "id": "pref-1982-06-tohoku-shinkansen-adult",
+    "key": "tohoku-shinkansen-1982",
+    "category": "pref",
+    "year": 1982,
+    "month": 6,
+    "prefs": [
+      11,
+      9,
+      7,
+      4,
+      3
+    ],
+    "ageMin": 37,
+    "ageMax": 52,
+    "sex": "any",
+    "title": "東北新幹線が開業",
+    "text": "6月、東北新幹線が開業した。東京への出張が日帰りでできるようになった。夜行の急行で上京していた頃を思い出した。駅の周りも、新しい店やビルで少しずつ変わっていった。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「東北新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E5%8C%97%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "1982年6月23日大宮―盛岡開業"
+    }
+  },
+  {
+    "id": "pref-1982-11-joetsu-shinkansen-child",
+    "key": "joetsu-shinkansen-1982",
+    "category": "pref",
+    "year": 1982,
+    "month": 11,
+    "prefs": [
+      10,
+      15
+    ],
+    "ageMin": 7,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "上越新幹線が開業",
+    "text": "11月15日、上越新幹線が大宮から新潟まで開業した。長いトンネルで山を抜け、雪の多い新潟と関東を2時間足らずで結んだ。雪の中を走る新幹線の写真が新聞に載った。",
+    "effects": {
+      "happiness": 3,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「上越新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%8A%E8%B6%8A%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "1982年11月15日大宮―新潟開業"
+    }
+  },
+  {
+    "id": "pref-1982-11-joetsu-shinkansen-youth",
+    "key": "joetsu-shinkansen-1982",
+    "category": "pref",
+    "year": 1982,
+    "month": 11,
+    "prefs": [
+      10,
+      15
+    ],
+    "ageMin": 13,
+    "ageMax": 22,
+    "sex": "any",
+    "title": "上越新幹線が開業",
+    "text": "11月15日、上越新幹線が開業した。新潟と東京の行き来がずっと楽になり、冬の雪で列車が止まる心配も減った。東京の学校や会社を選ぶ同級生が、さらに増えた。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「上越新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%8A%E8%B6%8A%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "1982年11月15日大宮―新潟開業"
+    }
+  },
+  {
+    "id": "pref-1982-11-joetsu-shinkansen-adult",
+    "key": "joetsu-shinkansen-1982",
+    "category": "pref",
+    "year": 1982,
+    "month": 11,
+    "prefs": [
+      10,
+      15
+    ],
+    "ageMin": 37,
+    "ageMax": 52,
+    "sex": "any",
+    "title": "上越新幹線が開業",
+    "text": "11月、上越新幹線が開業した。三国山脈を長いトンネルで抜ける新幹線で、東京への出張が日帰りになった。開業を記念して、地元の商店街ではセールが開かれた。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「上越新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%8A%E8%B6%8A%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "1982年11月15日大宮―新潟開業"
+    }
+  },
+  {
+    "id": "pref-1988-03-seikan-tunnel-youth",
+    "key": "seikan-tunnel-1988",
+    "category": "pref",
+    "year": 1988,
+    "month": 3,
+    "prefs": [
+      1,
+      2
+    ],
+    "ageMin": 13,
+    "ageMax": 28,
+    "sex": "any",
+    "title": "青函トンネル開業",
+    "text": "3月13日、青函トンネルが開業し、北海道と本州が線路でつながった。同じ日、80年続いた青函連絡船が役目を終えた。最後の船を見送りに、函館や青森の港に大勢の人が集まった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「青函トンネル」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%9D%92%E5%87%BD%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB",
+      "verified": true,
+      "note": "1988年3月13日開業"
+    }
+  },
+  {
+    "id": "pref-1988-03-seikan-tunnel-adult",
+    "key": "seikan-tunnel-1988",
+    "category": "pref",
+    "year": 1988,
+    "month": 3,
+    "prefs": [
+      1,
+      2
+    ],
+    "ageMin": 43,
+    "ageMax": 58,
+    "sex": "any",
+    "title": "青函トンネル開業",
+    "text": "3月13日、青函トンネルが開業した。海の底を列車で渡れるようになり、青函連絡船は最後の運航を終えた。洞爺丸の事故を覚えている人も多かった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「青函トンネル」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%9D%92%E5%87%BD%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB",
+      "verified": true,
+      "note": "1988年3月13日開業"
+    }
+  },
+  {
+    "id": "pref-1988-04-seto-ohashi-youth",
+    "key": "seto-ohashi-1988",
+    "category": "pref",
+    "year": 1988,
+    "month": 4,
+    "prefs": [
+      33,
+      37
+    ],
+    "ageMin": 13,
+    "ageMax": 28,
+    "sex": "any",
+    "title": "瀬戸大橋が開通",
+    "text": "4月10日、瀬戸大橋が開通し、岡山と香川が鉄道と道路でつながった。四国から本州へ、船に乗らずに渡れるようになった。開通の記念行事で、橋の上を歩く催しに大勢が集まった。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「瀬戸大橋」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%80%AC%E6%88%B8%E5%A4%A7%E6%A9%8B",
+      "verified": true,
+      "note": "1988年4月10日開通"
+    }
+  },
+  {
+    "id": "pref-1988-04-seto-ohashi-adult",
+    "key": "seto-ohashi-1988",
+    "category": "pref",
+    "year": 1988,
+    "month": 4,
+    "prefs": [
+      33,
+      37
+    ],
+    "ageMin": 43,
+    "ageMax": 58,
+    "sex": "any",
+    "title": "瀬戸大橋が開通",
+    "text": "4月10日、瀬戸大橋が開通した。船で渡っていた海を、列車が橋で越えていく。見物の人で、橋のたもとはにぎわった。四国と本州を結ぶ初めての橋の鉄道だった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「瀬戸大橋」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%80%AC%E6%88%B8%E5%A4%A7%E6%A9%8B",
+      "verified": true,
+      "note": "1988年4月10日開通"
+    }
+  },
+  {
+    "id": "pref-1992-07-yamagata-shinkansen-child",
+    "key": "yamagata-shinkansen-1992",
+    "category": "pref",
+    "year": 1992,
+    "month": 7,
+    "prefs": [
+      6
+    ],
+    "ageMin": 0,
+    "ageMax": 2,
+    "sex": "any",
+    "title": "山形新幹線が開業",
+    "text": "7月1日、山形新幹線つばさが走り始めた。在来線の線路を広げて走る、初めてのミニ新幹線だった。銀色の車体を見に家族で駅へ行った。",
+    "effects": {
+      "happiness": 3,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「山形新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%B1%B1%E5%BD%A2%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "1992年7月1日東京―山形開業"
+    }
+  },
+  {
+    "id": "pref-1992-07-yamagata-shinkansen-youth",
+    "key": "yamagata-shinkansen-1992",
+    "category": "pref",
+    "year": 1992,
+    "month": 7,
+    "prefs": [
+      6
+    ],
+    "ageMin": 17,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "山形新幹線が開業",
+    "text": "7月1日、山形新幹線が開業し、東京まで乗り換えなしで行けるようになった。週末に東京へ遊びに行く同級生が増えた。進学先として東京を考える人も多くなった。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「山形新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%B1%B1%E5%BD%A2%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "1992年7月1日東京―山形開業"
+    }
+  },
+  {
+    "id": "pref-1992-07-yamagata-shinkansen-adult",
+    "key": "yamagata-shinkansen-1992",
+    "category": "pref",
+    "year": 1992,
+    "month": 7,
+    "prefs": [
+      6
+    ],
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "山形新幹線が開業",
+    "text": "7月1日、山形新幹線が開業した。福島での乗り換えがなくなり、東京への出張が楽になった。駅前の再開発も進んだ。新幹線の駅になったことで、町の人は少し誇らしげだった。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「山形新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%B1%B1%E5%BD%A2%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "1992年7月1日東京―山形開業"
+    }
+  },
+  {
+    "id": "pref-1997-03-akita-shinkansen-child",
+    "key": "akita-shinkansen-1997",
+    "category": "pref",
+    "year": 1997,
+    "month": 3,
+    "prefs": [
+      5
+    ],
+    "ageMin": 0,
+    "ageMax": 7,
+    "sex": "any",
+    "title": "秋田新幹線が開業",
+    "text": "3月22日、秋田新幹線こまちが走り始めた。東京まで乗り換えなしで行けるようになり、家族旅行で初めて乗った。新幹線のこまちに乗ったことは、学校でちょっとした自慢になった。",
+    "effects": {
+      "happiness": 3,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「秋田新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%A7%8B%E7%94%B0%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "1997年3月22日開業"
+    }
+  },
+  {
+    "id": "pref-1997-03-akita-shinkansen-youth",
+    "key": "akita-shinkansen-1997",
+    "category": "pref",
+    "year": 1997,
+    "month": 3,
+    "prefs": [
+      5
+    ],
+    "ageMin": 22,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "秋田新幹線が開業",
+    "text": "3月22日、秋田新幹線が開業し、東京まで約4時間で結ばれた。進学や就職で上京した友だちが、前より気軽に帰ってくるようになった。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「秋田新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%A7%8B%E7%94%B0%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "1997年3月22日開業"
+    }
+  },
+  {
+    "id": "pref-1997-03-akita-shinkansen-adult",
+    "key": "akita-shinkansen-1997",
+    "category": "pref",
+    "year": 1997,
+    "month": 3,
+    "prefs": [
+      5
+    ],
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "秋田新幹線が開業",
+    "text": "3月22日、秋田新幹線が開業した。盛岡での乗り換えがなくなり、東京が近くなった。そのぶん、若い人が出ていきやすくなったとも言われた。",
+    "effects": {
+      "happiness": 1,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「秋田新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%A7%8B%E7%94%B0%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "1997年3月22日開業"
+    }
+  },
+  {
+    "id": "pref-1997-10-nagano-shinkansen-child",
+    "key": "nagano-shinkansen-1997",
+    "category": "pref",
+    "year": 1997,
+    "month": 10,
+    "prefs": [
+      20,
+      10
+    ],
+    "ageMin": 0,
+    "ageMax": 7,
+    "sex": "any",
+    "title": "長野新幹線が開業",
+    "text": "10月1日、長野新幹線が開業した。翌年の冬季オリンピックに間に合わせるための開業だった。東京まで1時間半ほどになった。オリンピックの準備で、町じゅうが工事をしていた。",
+    "effects": {
+      "happiness": 3,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「北陸新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8C%97%E9%99%B8%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "1997年10月1日高崎―長野開業"
+    }
+  },
+  {
+    "id": "pref-1997-10-nagano-shinkansen-youth",
+    "key": "nagano-shinkansen-1997",
+    "category": "pref",
+    "year": 1997,
+    "month": 10,
+    "prefs": [
+      20,
+      10
+    ],
+    "ageMin": 22,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "長野新幹線が開業",
+    "text": "10月1日、高崎と長野を結ぶ新幹線が開業し、東京まで1時間半ほどで行けるようになった。同じ日に碓氷峠を越える在来線は廃止された。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「北陸新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8C%97%E9%99%B8%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "1997年10月1日高崎―長野開業"
+    }
+  },
+  {
+    "id": "pref-1997-10-nagano-shinkansen-adult",
+    "key": "nagano-shinkansen-1997",
+    "category": "pref",
+    "year": 1997,
+    "month": 10,
+    "prefs": [
+      20,
+      10
+    ],
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "長野新幹線が開業",
+    "text": "10月1日、長野新幹線が開業した。オリンピックを控えて、町には道路や新しい建物の工事があふれていた。仕事が増えて忙しい日々が続いた。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「北陸新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8C%97%E9%99%B8%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "1997年10月1日高崎―長野開業"
+    }
+  },
+  {
+    "id": "pref-1997-10-nagano-shinkansen-elder",
+    "key": "nagano-shinkansen-1997",
+    "category": "pref",
+    "year": 1997,
+    "month": 10,
+    "prefs": [
+      20,
+      10
+    ],
+    "ageMin": 60,
+    "ageMax": 67,
+    "sex": "any",
+    "title": "長野新幹線が開業",
+    "text": "10月1日、長野新幹線が開業した。東京への日帰りが楽になり、孫の顔を見に行く回数が増えた。昔は峠を越える在来線の特急で3時間ほどかかった道のりだった。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「北陸新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8C%97%E9%99%B8%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "1997年10月1日高崎―長野開業"
+    }
+  },
+  {
+    "id": "pref-1998-04-akashi-kaikyo-child",
+    "key": "akashi-kaikyo-1998",
+    "category": "pref",
+    "year": 1998,
+    "month": 4,
+    "prefs": [
+      28,
+      36
+    ],
+    "ageMin": 0,
+    "ageMax": 8,
+    "sex": "any",
+    "title": "明石海峡大橋が開通",
+    "text": "4月5日、明石海峡大橋が開通した。世界でいちばん長いつり橋だった。淡路島を通って、徳島と神戸が車でつながった。開通の日のニュースを家族で見て、すごい橋だと思った。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「明石海峡大橋」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%98%8E%E7%9F%B3%E6%B5%B7%E5%B3%A1%E5%A4%A7%E6%A9%8B",
+      "verified": true,
+      "note": "1998年4月5日開通"
+    }
+  },
+  {
+    "id": "pref-1998-04-akashi-kaikyo-youth",
+    "key": "akashi-kaikyo-1998",
+    "category": "pref",
+    "year": 1998,
+    "month": 4,
+    "prefs": [
+      28,
+      36
+    ],
+    "ageMin": 23,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "明石海峡大橋が開通",
+    "text": "4月5日、明石海峡大橋が開通し、徳島から神戸・大阪へ高速バスで行けるようになった。買い物や遊びに関西へ出る人が増えた。大きな町が急に近くなった気がした。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「明石海峡大橋」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%98%8E%E7%9F%B3%E6%B5%B7%E5%B3%A1%E5%A4%A7%E6%A9%8B",
+      "verified": true,
+      "note": "1998年4月5日開通"
+    }
+  },
+  {
+    "id": "pref-1998-04-akashi-kaikyo-adult",
+    "key": "akashi-kaikyo-1998",
+    "category": "pref",
+    "year": 1998,
+    "month": 4,
+    "prefs": [
+      28,
+      36
+    ],
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "明石海峡大橋が開通",
+    "text": "4月5日、明石海峡大橋が開通した。フェリーが減り、関西への買い物客が流れて、地元の商店街は打撃を受けた。便利さと引きかえに失うものもあると感じた。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「明石海峡大橋」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%98%8E%E7%9F%B3%E6%B5%B7%E5%B3%A1%E5%A4%A7%E6%A9%8B",
+      "verified": true,
+      "note": "1998年4月5日開通"
+    }
+  },
+  {
+    "id": "pref-1999-05-shimanami-child",
+    "key": "shimanami-1999",
+    "category": "pref",
+    "year": 1999,
+    "month": 5,
+    "prefs": [
+      34,
+      38
+    ],
+    "ageMin": 0,
+    "ageMax": 9,
+    "sex": "any",
+    "title": "しまなみ海道が開通",
+    "text": "5月1日、尾道と今治を島づたいに結ぶしまなみ海道の橋がすべてそろった。自転車や歩いても渡れる橋で、家族で走りに行った。海の上を渡る風が気持ちよかった。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「西瀬戸自動車道」",
+      "url": "https://ja.wikipedia.org/wiki/%E8%A5%BF%E7%80%AC%E6%88%B8%E8%87%AA%E5%8B%95%E8%BB%8A%E9%81%93",
+      "verified": true,
+      "note": "1999年5月1日に全橋完成"
+    }
+  },
+  {
+    "id": "pref-1999-05-shimanami-youth",
+    "key": "shimanami-1999",
+    "category": "pref",
+    "year": 1999,
+    "month": 5,
+    "prefs": [
+      34,
+      38
+    ],
+    "ageMin": 24,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "しまなみ海道が開通",
+    "text": "5月1日、しまなみ海道の橋がすべて完成し、広島と愛媛が島づたいにつながった。島の高校生の通学や、船の仕事にも変化があった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「西瀬戸自動車道」",
+      "url": "https://ja.wikipedia.org/wiki/%E8%A5%BF%E7%80%AC%E6%88%B8%E8%87%AA%E5%8B%95%E8%BB%8A%E9%81%93",
+      "verified": true,
+      "note": "1999年5月1日に全橋完成"
+    }
+  },
+  {
+    "id": "pref-1999-05-shimanami-adult",
+    "key": "shimanami-1999",
+    "category": "pref",
+    "year": 1999,
+    "month": 5,
+    "prefs": [
+      34,
+      38
+    ],
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "しまなみ海道が開通",
+    "text": "5月1日、しまなみ海道が開通した。船の便が減り、島の暮らしは車中心になった。瀬戸内の本州と四国を結ぶ3本目の橋だった。本州と四国を結ぶ3本目のルートだった。橋を見に来る観光客や、自転車の旅行者が増えた。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「西瀬戸自動車道」",
+      "url": "https://ja.wikipedia.org/wiki/%E8%A5%BF%E7%80%AC%E6%88%B8%E8%87%AA%E5%8B%95%E8%BB%8A%E9%81%93",
+      "verified": true,
+      "note": "1999年5月1日に全橋完成"
+    }
+  },
+  {
+    "id": "pref-2004-03-kyushu-shinkansen-child",
+    "key": "kyushu-shinkansen-2004",
+    "category": "pref",
+    "year": 2004,
+    "month": 3,
+    "prefs": [
+      46,
+      43
+    ],
+    "ageMin": 0,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "九州新幹線が部分開業",
+    "text": "3月13日、九州新幹線が新八代から鹿児島中央まで開業した。白い新幹線つばめが走り、鹿児島から熊本までがぐっと近くなった。",
+    "effects": {
+      "happiness": 3,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「九州新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B9%9D%E5%B7%9E%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "2004年3月13日新八代―鹿児島中央開業、2011年3月12日全線開業"
+    }
+  },
+  {
+    "id": "pref-2004-03-kyushu-shinkansen-youth",
+    "key": "kyushu-shinkansen-2004",
+    "category": "pref",
+    "year": 2004,
+    "month": 3,
+    "prefs": [
+      46,
+      43
+    ],
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "九州新幹線が部分開業",
+    "text": "3月13日、九州新幹線が鹿児島中央と新八代の間で開業した。博多までつながるのは7年後のことで、それまでは乗り換えが続いた。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「九州新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B9%9D%E5%B7%9E%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "2004年3月13日新八代―鹿児島中央開業、2011年3月12日全線開業"
+    }
+  },
+  {
+    "id": "pref-2004-03-kyushu-shinkansen-adult",
+    "key": "kyushu-shinkansen-2004",
+    "category": "pref",
+    "year": 2004,
+    "month": 3,
+    "prefs": [
+      46,
+      43
+    ],
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "九州新幹線が部分開業",
+    "text": "3月13日、九州新幹線が部分開業した。鹿児島から博多までの時間が大きく縮み、出張や通院の行き来が楽になった。博多までの全線開業が待ち遠しかった。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「九州新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B9%9D%E5%B7%9E%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "2004年3月13日新八代―鹿児島中央開業、2011年3月12日全線開業"
+    }
+  },
+  {
+    "id": "pref-2004-03-kyushu-shinkansen-elder",
+    "key": "kyushu-shinkansen-2004",
+    "category": "pref",
+    "year": 2004,
+    "month": 3,
+    "prefs": [
+      46,
+      43
+    ],
+    "ageMin": 60,
+    "ageMax": 74,
+    "sex": "any",
+    "title": "九州新幹線が部分開業",
+    "text": "3月13日、九州新幹線が部分開業した。若い頃、関西へ働きに出る人を夜行列車で見送った駅に、新幹線が入ってきた。時代が変わったと、しみじみ思った。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「九州新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B9%9D%E5%B7%9E%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "2004年3月13日新八代―鹿児島中央開業、2011年3月12日全線開業"
+    }
+  },
+  {
+    "id": "pref-2010-12-shin-aomori-child",
+    "key": "shin-aomori-2010",
+    "category": "pref",
+    "year": 2010,
+    "month": 12,
+    "prefs": [
+      2
+    ],
+    "ageMin": 5,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "東北新幹線が新青森まで",
+    "text": "12月4日、東北新幹線が新青森まで全線開業した。東京まで乗り換えなしで行けるようになり、駅は記念の人出でにぎわった。ホームで新幹線を背に写真をとってもらった。",
+    "effects": {
+      "happiness": 3,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「東北新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E5%8C%97%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "2010年12月4日新青森まで全通"
+    }
+  },
+  {
+    "id": "pref-2010-12-shin-aomori-adult",
+    "key": "shin-aomori-2010",
+    "category": "pref",
+    "year": 2010,
+    "month": 12,
+    "prefs": [
+      2
+    ],
+    "ageMin": 35,
+    "ageMax": 50,
+    "sex": "any",
+    "title": "東北新幹線が新青森まで",
+    "text": "12月4日、東北新幹線が新青森まで延びた。集団就職の列車で上野へ向かった頃とくらべて、東京はずっと近くなった。開業の日には、駅に見物の人が詰めかけた。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「東北新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E5%8C%97%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "2010年12月4日新青森まで全通"
+    }
+  },
+  {
+    "id": "pref-2010-12-shin-aomori-elder",
+    "key": "shin-aomori-2010",
+    "category": "pref",
+    "year": 2010,
+    "month": 12,
+    "prefs": [
+      2
+    ],
+    "ageMin": 65,
+    "ageMax": 80,
+    "sex": "any",
+    "title": "東北新幹線が新青森まで",
+    "text": "12月4日、新幹線が新青森まで来た。若い頃、夜行列車で半日かけて上野へ出た道のりが、3時間あまりになった。長生きはするものだと思った。",
+    "effects": {
+      "happiness": 3,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「東北新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E5%8C%97%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "2010年12月4日新青森まで全通"
+    }
+  },
+  {
+    "id": "pref-2015-03-hokuriku-shinkansen-child",
+    "key": "hokuriku-shinkansen-2015",
+    "category": "pref",
+    "year": 2015,
+    "month": 3,
+    "prefs": [
+      16,
+      17
+    ],
+    "ageMin": 10,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "北陸新幹線が金沢まで",
+    "text": "3月14日、北陸新幹線が金沢まで開業した。東京まで2時間半ほどになり、駅前には観光客がたくさん来るようになった。町が急に明るくにぎやかになった。",
+    "effects": {
+      "happiness": 3,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「北陸新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8C%97%E9%99%B8%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "2015年3月14日長野―金沢開業"
+    }
+  },
+  {
+    "id": "pref-2015-03-hokuriku-shinkansen-adult",
+    "key": "hokuriku-shinkansen-2015",
+    "category": "pref",
+    "year": 2015,
+    "month": 3,
+    "prefs": [
+      16,
+      17
+    ],
+    "ageMin": 40,
+    "ageMax": 55,
+    "sex": "any",
+    "title": "北陸新幹線が金沢まで",
+    "text": "3月14日、北陸新幹線が金沢まで延びた。観光客が増え、ホテルや店が次々にできた。東京が日帰り圏になった。観光地の混雑に、地元の人がとまどう場面もあった。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「北陸新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8C%97%E9%99%B8%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "2015年3月14日長野―金沢開業"
+    }
+  },
+  {
+    "id": "pref-2015-03-hokuriku-shinkansen-elder",
+    "key": "hokuriku-shinkansen-2015",
+    "category": "pref",
+    "year": 2015,
+    "month": 3,
+    "prefs": [
+      16,
+      17
+    ],
+    "ageMin": 70,
+    "ageMax": 85,
+    "sex": "any",
+    "title": "北陸新幹線が金沢まで",
+    "text": "3月14日、北陸新幹線が金沢まで開業した。若い頃は東京へ出るのに丸一日かかった。駅のにぎわいを見に出かけた。ホームに並ぶ見物の人の多さに驚いた。",
+    "effects": {
+      "happiness": 3,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「北陸新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8C%97%E9%99%B8%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "2015年3月14日長野―金沢開業"
+    }
+  },
+  {
+    "id": "pref-2016-03-hokkaido-shinkansen-youth",
+    "key": "hokkaido-shinkansen-2016",
+    "category": "pref",
+    "year": 2016,
+    "month": 3,
+    "prefs": [
+      1
+    ],
+    "ageMin": 13,
+    "ageMax": 26,
+    "sex": "any",
+    "title": "北海道新幹線が開業",
+    "text": "3月26日、北海道新幹線が新函館北斗まで開業した。青函トンネルを新幹線が走り、東京から函館まで4時間あまりになった。函館への旅行が、ぐっと身近なものになった。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「北海道新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8C%97%E6%B5%B7%E9%81%93%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "2016年3月26日新青森―新函館北斗開業"
+    }
+  },
+  {
+    "id": "pref-2016-03-hokkaido-shinkansen-adult",
+    "key": "hokkaido-shinkansen-2016",
+    "category": "pref",
+    "year": 2016,
+    "month": 3,
+    "prefs": [
+      1
+    ],
+    "ageMin": 41,
+    "ageMax": 56,
+    "sex": "any",
+    "title": "北海道新幹線が開業",
+    "text": "3月26日、北海道新幹線が開業した。札幌まで延びるのはまだ先だが、本州と新幹線でつながったことを道民は喜んだ。函館の駅には、記念の人出があった。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「北海道新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8C%97%E6%B5%B7%E9%81%93%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "2016年3月26日新青森―新函館北斗開業"
+    }
+  },
+  {
+    "id": "pref-2016-03-hokkaido-shinkansen-elder",
+    "key": "hokkaido-shinkansen-2016",
+    "category": "pref",
+    "year": 2016,
+    "month": 3,
+    "prefs": [
+      1
+    ],
+    "ageMin": 71,
+    "ageMax": 86,
+    "sex": "any",
+    "title": "北海道新幹線が開業",
+    "text": "3月26日、北海道新幹線が開業した。若い頃、青函連絡船で海を渡ったことを思い出した。洞爺丸の事故から60年あまりがたっていた。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「北海道新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8C%97%E6%B5%B7%E9%81%93%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "2016年3月26日新青森―新函館北斗開業"
+    }
+  },
+  {
+    "id": "pref-2022-09-nishi-kyushu-shinkansen-youth",
+    "key": "nishi-kyushu-shinkansen-2022",
+    "category": "pref",
+    "year": 2022,
+    "month": 9,
+    "prefs": [
+      41,
+      42
+    ],
+    "ageMin": 17,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "西九州新幹線が開業",
+    "text": "9月23日、西九州新幹線が武雄温泉と長崎の間で開業した。博多へは武雄温泉で特急に乗り換える形で、全線がつながる見通しはまだ立っていなかった。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「西九州新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E8%A5%BF%E4%B9%9D%E5%B7%9E%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "2022年9月23日武雄温泉―長崎開業"
+    }
+  },
+  {
+    "id": "pref-2022-09-nishi-kyushu-shinkansen-adult",
+    "key": "nishi-kyushu-shinkansen-2022",
+    "category": "pref",
+    "year": 2022,
+    "month": 9,
+    "prefs": [
+      41,
+      42
+    ],
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "西九州新幹線が開業",
+    "text": "9月23日、長崎と武雄温泉を結ぶ西九州新幹線が開業した。距離の短い新幹線だったが、長崎駅のまわりは大きく変わった。駅ビルや新しいホテルが建ち、観光客が増えた。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「西九州新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E8%A5%BF%E4%B9%9D%E5%B7%9E%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "2022年9月23日武雄温泉―長崎開業"
+    }
+  },
+  {
+    "id": "pref-2022-09-nishi-kyushu-shinkansen-elder",
+    "key": "nishi-kyushu-shinkansen-2022",
+    "category": "pref",
+    "year": 2022,
+    "month": 9,
+    "prefs": [
+      41,
+      42
+    ],
+    "ageMin": 60,
+    "ageMax": 92,
+    "sex": "any",
+    "title": "西九州新幹線が開業",
+    "text": "9月23日、西九州新幹線が開業した。長崎駅は建て替えられ、昔の駅舎の面影はなくなった。長崎大水害や雲仙の噴火を見てきた町に、新しい時代が来た。",
+    "effects": {
+      "happiness": 1,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「西九州新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E8%A5%BF%E4%B9%9D%E5%B7%9E%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "2022年9月23日武雄温泉―長崎開業"
+    }
+  },
+  {
+    "id": "pref-2024-03-hokuriku-tsuruga-youth",
+    "key": "hokuriku-tsuruga-2024",
+    "category": "pref",
+    "year": 2024,
+    "month": 3,
+    "prefs": [
+      18
+    ],
+    "ageMin": 19,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "北陸新幹線が敦賀まで",
+    "text": "3月16日、北陸新幹線が福井県の敦賀まで延びた。東京まで乗り換えなしで行けるようになったが、大阪や名古屋へは敦賀で乗り換えになった。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「北陸新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8C%97%E9%99%B8%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "2024年3月16日金沢―敦賀開業"
+    }
+  },
+  {
+    "id": "pref-2024-03-hokuriku-tsuruga-adult",
+    "key": "hokuriku-tsuruga-2024",
+    "category": "pref",
+    "year": 2024,
+    "month": 3,
+    "prefs": [
+      18
+    ],
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "北陸新幹線が敦賀まで",
+    "text": "3月16日、北陸新幹線が福井・敦賀まで開業した。県内の新しい駅に観光客が集まった。関西への特急が敦賀止まりになったことには不満も出た。",
+    "effects": {
+      "happiness": 1,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「北陸新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8C%97%E9%99%B8%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "2024年3月16日金沢―敦賀開業"
+    }
+  },
+  {
+    "id": "pref-2024-03-hokuriku-tsuruga-elder",
+    "key": "hokuriku-tsuruga-2024",
+    "category": "pref",
+    "year": 2024,
+    "month": 3,
+    "prefs": [
+      18
+    ],
+    "ageMin": 79,
+    "ageMax": 94,
+    "sex": "any",
+    "title": "北陸新幹線が敦賀まで",
+    "text": "3月16日、北陸新幹線が福井に来た。福井地震の焼け跡で育った世代には、駅に新幹線が入る日が来るとは思えなかった。孫に連れられて、開業の日の駅を見に行った。",
+    "effects": {
+      "happiness": 3,
+      "flags": [
+        "shinkansen_open"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "Wikipedia日本語版「北陸新幹線」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8C%97%E9%99%B8%E6%96%B0%E5%B9%B9%E7%B7%9A",
+      "verified": true,
+      "note": "2024年3月16日金沢―敦賀開業"
+    }
+  }
+]

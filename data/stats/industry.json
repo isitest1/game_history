@@ -1,0 +1,15 @@
+{
+  "meta": {
+    "source": [
+      {"title": "国立社会保障・人口問題研究所『人口統計資料集』表8-7 産業（3部門）別就業者数および割合（原資料：総務省統計局『国勢調査報告』）", "url": "https://www.ipss.go.jp/syoushika/tohkei/Data/Popular2023RE/T08-07.files/sheet001.htm", "license": "公共データ利用規約（PDL1.0）"},
+      {"title": "総務省統計局『労働力調査』従業上の地位別就業者（1965・1970・1980・1990・2000年の就業者計と雇用者数から計算）", "url": "https://www.stat.go.jp/data/roudou/longtime/03roudou.html", "license": "政府標準利用規約2.0"}
+    ],
+    "method": "primaryShare は表8-7の第1次産業の割合（%）をそのまま使う。employeeShare は労働力調査の雇用者数÷就業者数（%）。1965年より前の employeeShare は確認できなかったため、1950年の値を目安として置き、間を直線で補間する。largeShareOfEmployees と publicShareOfEmployees は目安（未確認）",
+    "interpolated": ["employeeShare 1930-1960・2020（目安）", "largeShareOfEmployees（目安）", "publicShareOfEmployees（目安）"],
+    "retrieved": "2026-10-14"
+  },
+  "primaryShare": {"1920": 53.8, "1930": 49.7, "1940": 44.3, "1950": 48.5, "1955": 41.1, "1960": 32.7, "1965": 24.7, "1970": 19.3, "1975": 13.8, "1980": 10.9, "1985": 9.3, "1990": 7.1, "1995": 6.0, "2000": 5.0, "2005": 4.8, "2010": 4.0, "2015": 3.8, "2020": 3.3},
+  "employeeShare": {"1930": 30.0, "1950": 39.0, "1965": 60.8, "1970": 64.9, "1980": 71.7, "1990": 77.4, "2000": 83.1, "2020": 89.0},
+  "largeShareOfEmployees": {"1930": 20.0, "1970": 30.0, "2020": 30.0},
+  "publicShareOfEmployees": {"1930": 8.0, "1970": 10.0, "2020": 8.0}
+}

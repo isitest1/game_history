@@ -1,0 +1,3182 @@
+[
+  {
+    "id": "life-1947-01-school-lunch-resume-child",
+    "key": "school-lunch-resume",
+    "category": "life",
+    "year": 1947,
+    "endYear": 1949,
+    "month": 1,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "school_lunch"
+      ]
+    },
+    "title": "給食が始まった",
+    "text": "学校で給食が始まった。アルミの器に入った脱脂粉乳は鼻をつく匂いがしたが、腹をすかせていたので残さず飲んだ。家では食べられない味だった。",
+    "effects": {
+      "health": 3,
+      "happiness": 3,
+      "flags": [
+        "school_lunch"
+      ]
+    },
+    "probability": 0.4,
+    "probNote": "1947年1月に主要都市の約300万人で開始。都市部以外は遅れたため目安",
+    "source": {
+      "title": "nippon.com 給食考(前編) 子供の命をつないだ歴史",
+      "url": "https://www.nippon.com/ja/japan-topics/g02481/",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1947-01-school-lunch-resume-adult",
+    "key": "school-lunch-resume",
+    "category": "life",
+    "year": 1947,
+    "endYear": 1949,
+    "month": 1,
+    "ageMin": 28,
+    "ageMax": 50,
+    "sex": "any",
+    "conditions": {
+      "married": true
+    },
+    "title": "子どもの給食",
+    "text": "子どもが学校で給食を食べてくるようになった。ララ物資の脱脂粉乳だという。一食ぶん家の米が浮くので、正直ありがたかった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "nippon.com 給食考(前編) 子供の命をつないだ歴史",
+      "url": "https://www.nippon.com/ja/japan-topics/g02481/",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1954-school-lunch-bread-child",
+    "key": "school-lunch-bread",
+    "category": "life",
+    "year": 1954,
+    "endYear": 1965,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "school_lunch"
+      ]
+    },
+    "title": "コッペパンと脱脂粉乳",
+    "text": "給食はコッペパンとおかずと脱脂粉乳だった。鯨の竜田揚げが出る日はうれしかった。パンを持ち帰って弟に食べさせる子もいた。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "school_lunch"
+      ]
+    },
+    "probability": 0.35,
+    "probNote": "1954年の学校給食法でパン・おかず・ミルクの給食が全国に広がった。年ごとの実施率は未確認のため目安",
+    "source": {
+      "title": "墨田区立菊川小学校 給食だより（学校給食の歴史）",
+      "url": "https://www.sumida.ed.jp/kikukawasho/kondatehyou.files/kyuushoku1gatu2.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1976-rice-lunch-child",
+    "key": "rice-lunch",
+    "category": "life",
+    "year": 1976,
+    "endYear": 1980,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "rice_lunch"
+      ]
+    },
+    "title": "給食にご飯が出た",
+    "text": "給食に初めてご飯が出た。いつもはパンなので、月に一、二度のご飯の日を指折り数えた。カレーの日は教室じゅうがそわそわした。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "rice_lunch"
+      ]
+    },
+    "probability": 0.35,
+    "probNote": "1976年に米飯給食が正式導入。当初は月1〜2回で自治体ごとに段階的なため目安",
+    "source": {
+      "title": "世田谷区 学校給食の歩み（昭和51年 米飯導入）",
+      "url": "https://www.city.setagaya.lg.jp:443/mokuji/kodomo/007/005/d00154723_d/fil/kuhonnbutu2.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1946-kamishibai-child",
+    "key": "kamishibai",
+    "category": "life",
+    "year": 1946,
+    "endYear": 1959,
+    "ageMin": 4,
+    "ageMax": 11,
+    "sex": "any",
+    "title": "紙芝居屋が来た",
+    "text": "拍子木の音がすると、路地に子どもが集まった。紙芝居屋から水あめを買った子だけが前に座れた。お金のない日は後ろから背伸びして見た。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.35,
+    "probNote": "戦後に街頭紙芝居が復活し、昭和30年代後半にテレビに座を譲った。人数の統計はないため目安",
+    "source": {
+      "title": "国立美術館 アートコモンズ 街頭紙芝居の解説",
+      "url": "https://www.nact.jp/artcommons/user/detail/21952",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1935-kamishibai-child-prewar",
+    "key": "kamishibai",
+    "category": "life",
+    "year": 1935,
+    "endYear": 1941,
+    "ageMin": 4,
+    "ageMax": 11,
+    "sex": "any",
+    "title": "黄金バットの紙芝居",
+    "text": "近所の空き地に紙芝居屋が来た。黄金バットの続きが気になって、次の日も一銭玉を握って走った。親には買い食いを叱られた。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.3,
+    "probNote": "街頭紙芝居は1930年ごろに現れたとされる。普及度は目安",
+    "source": {
+      "title": "コトバンク 紙芝居",
+      "url": "https://kotobank.jp/word/紙芝居",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1953-08-gaitou-tv-child",
+    "key": "gaitou-tv",
+    "category": "life",
+    "year": 1953,
+    "endYear": 1956,
+    "month": 8,
+    "ageMin": 5,
+    "ageMax": 12,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "saw_gaitou_tv"
+      ]
+    },
+    "title": "街頭テレビ",
+    "text": "駅前の広場に大きなテレビが置かれた。大人の肩車に乗せてもらって、遠くの小さな画面をのぞいた。相撲やプロレスの日は、黒山の人だかりだった。",
+    "effects": {
+      "happiness": 4,
+      "flags": [
+        "saw_gaitou_tv"
+      ]
+    },
+    "probability": 0.25,
+    "probNote": "1953年8月の日本テレビ開局とともに都市部に設置。都市以外ではまれなため目安",
+    "source": {
+      "title": "日本テレビ 街頭テレビ設置（1953年）/ テレビ放送記念日",
+      "url": "https://the-shashi.com/tse/9404/decisions/founding-street-tv-1953/",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1953-08-gaitou-tv-youth",
+    "key": "gaitou-tv",
+    "category": "life",
+    "year": 1953,
+    "endYear": 1956,
+    "month": 8,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "saw_gaitou_tv"
+      ]
+    },
+    "title": "街頭テレビ",
+    "text": "仕事帰りに新橋の街頭テレビへ寄った。力道山が外国人レスラーを空手チョップで倒すたび、見知らぬ人と肩をたたき合って叫んだ。",
+    "effects": {
+      "happiness": 5,
+      "flags": [
+        "saw_gaitou_tv"
+      ]
+    },
+    "probability": 0.2,
+    "probNote": "都市部の若者を想定した目安",
+    "source": {
+      "title": "日本テレビ 街頭テレビ設置（1953年）/ テレビ放送記念日",
+      "url": "https://the-shashi.com/tse/9404/decisions/founding-street-tv-1953/",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1953-08-gaitou-tv-adult",
+    "key": "gaitou-tv",
+    "category": "life",
+    "year": 1953,
+    "endYear": 1956,
+    "month": 8,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "saw_gaitou_tv"
+      ]
+    },
+    "title": "街頭テレビ",
+    "text": "テレビは一台17万円もすると聞いた。とても手が出ないので、駅前の街頭テレビの人だかりの後ろから、相撲の取組を眺めて帰った。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "saw_gaitou_tv"
+      ]
+    },
+    "probability": 0.12,
+    "probNote": "目安",
+    "source": {
+      "title": "テレビ放送記念日（1953年2月1日、受信契約866件、14型17万5000円）",
+      "url": "https://www.bestcalendar.jp/dates/kinenbi/1082",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1958-tv-home-child",
+    "key": "tv-home",
+    "category": "life",
+    "year": 1958,
+    "endYear": 1963,
+    "ageMin": 3,
+    "ageMax": 12,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "tv_home"
+      ]
+    },
+    "title": "家にテレビが来た",
+    "text": "家にテレビが来た。近所の子が夕方になると上がりこみ、みんなで畳に並んで見た。画面に布をかけて大事にする母の手つきを覚えている。",
+    "effects": {
+      "happiness": 6,
+      "knowledge": 2,
+      "flags": [
+        "tv_home"
+      ]
+    },
+    "probability": 0.275,
+    "probNote": "普及率の前年からの増え分÷未保有の世帯の割合（年平均）。1963年以前は調査対象が都市部中心とみられ、農村ではもっと遅い（この点は未確認）",
+    "source": {
+      "title": "内閣府 消費動向調査 主要耐久消費財等の普及率（全世帯）",
+      "url": "https://www.esri.cao.go.jp/jp/stat/shouhi/0403fukyuritsu.xls",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1958-tv-home-youth",
+    "key": "tv-home",
+    "category": "life",
+    "year": 1958,
+    "endYear": 1963,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "tv_home"
+      ]
+    },
+    "title": "テレビを買った",
+    "text": "月賦でテレビを買った。皇太子のご成婚パレードを見ようと、親戚が集まってきた。白黒の小さな画面でも、部屋の真ん中が急に明るくなった。",
+    "effects": {
+      "happiness": 5,
+      "money": -50000,
+      "flags": [
+        "tv_home"
+      ]
+    },
+    "probability": 0.275,
+    "probNote": "普及率の前年からの増え分÷未保有の世帯の割合（年平均）。1963年以前は調査対象が都市部中心とみられ、農村ではもっと遅い（この点は未確認）",
+    "source": {
+      "title": "内閣府 消費動向調査 主要耐久消費財等の普及率（全世帯）",
+      "url": "https://www.esri.cao.go.jp/jp/stat/shouhi/0403fukyuritsu.xls",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1958-tv-home-adult",
+    "key": "tv-home",
+    "category": "life",
+    "year": 1958,
+    "endYear": 1963,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "tv_home"
+      ]
+    },
+    "title": "テレビを買った",
+    "text": "思い切ってテレビを月賦で買った。子どもたちが画面の前から動かなくなり、夕飯の支度の声が届かなくなった。近所の人も見に来た。",
+    "effects": {
+      "happiness": 4,
+      "money": -50000,
+      "flags": [
+        "tv_home"
+      ]
+    },
+    "probability": 0.275,
+    "probNote": "普及率の前年からの増え分÷未保有の世帯の割合（年平均）。1963年以前は調査対象が都市部中心とみられ、農村ではもっと遅い（この点は未確認）",
+    "source": {
+      "title": "内閣府 消費動向調査 主要耐久消費財等の普及率（全世帯）",
+      "url": "https://www.esri.cao.go.jp/jp/stat/shouhi/0403fukyuritsu.xls",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1958-tv-home-senior",
+    "key": "tv-home",
+    "category": "life",
+    "year": 1958,
+    "endYear": 1963,
+    "ageMin": 60,
+    "ageMax": 100,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "tv_home"
+      ]
+    },
+    "title": "孫とテレビ",
+    "text": "息子の家にテレビが入った。最初は箱の中で人が動くのが気味悪かったが、そのうち相撲中継だけは欠かさず見るようになった。",
+    "effects": {
+      "happiness": 4,
+      "flags": [
+        "tv_home"
+      ]
+    },
+    "probability": 0.275,
+    "probNote": "普及率の前年からの増え分÷未保有の世帯の割合（年平均）。1963年以前は調査対象が都市部中心とみられ、農村ではもっと遅い（この点は未確認）",
+    "source": {
+      "title": "内閣府 消費動向調査 主要耐久消費財等の普及率（全世帯）",
+      "url": "https://www.esri.cao.go.jp/jp/stat/shouhi/0403fukyuritsu.xls",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1958-washer-home-child",
+    "key": "washer-home",
+    "category": "life",
+    "year": 1958,
+    "endYear": 1969,
+    "ageMin": 4,
+    "ageMax": 12,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "washer_home"
+      ]
+    },
+    "title": "洗濯機が来た",
+    "text": "家に電気洗濯機が来た。ローラーに洗濯物をはさんでハンドルを回すと、水がしぼれて面白かった。母が洗濯板で手を赤くすることが減った。",
+    "effects": {
+      "happiness": 3,
+      "flags": [
+        "washer_home"
+      ]
+    },
+    "probability": 0.172,
+    "probNote": "普及率の前年からの増え分÷未保有の世帯の割合（年平均）。1963年以前は調査対象が都市部中心とみられ、農村ではもっと遅い（この点は未確認）",
+    "source": {
+      "title": "内閣府 消費動向調査 主要耐久消費財等の普及率（全世帯）",
+      "url": "https://www.esri.cao.go.jp/jp/stat/shouhi/0403fukyuritsu.xls",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1958-washer-home-adult",
+    "key": "washer-home",
+    "category": "life",
+    "year": 1958,
+    "endYear": 1969,
+    "ageMin": 25,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "washer_home"
+      ]
+    },
+    "title": "洗濯機を買った",
+    "text": "電気洗濯機を買った。毎朝たらいと洗濯板で一時間かかっていた洗濯が、ずっと楽になった。浮いた時間で内職を始めた。",
+    "effects": {
+      "happiness": 5,
+      "health": 1,
+      "money": -20000,
+      "flags": [
+        "washer_home"
+      ]
+    },
+    "probability": 0.172,
+    "probNote": "普及率の前年からの増え分÷未保有の世帯の割合（年平均）。1963年以前は調査対象が都市部中心とみられ、農村ではもっと遅い（この点は未確認）",
+    "source": {
+      "title": "内閣府 消費動向調査 主要耐久消費財等の普及率（全世帯）",
+      "url": "https://www.esri.cao.go.jp/jp/stat/shouhi/0403fukyuritsu.xls",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1958-fridge-home-child",
+    "key": "fridge-home",
+    "category": "life",
+    "year": 1958,
+    "endYear": 1971,
+    "ageMin": 4,
+    "ageMax": 12,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "fridge_home"
+      ]
+    },
+    "title": "冷蔵庫が来た",
+    "text": "家に電気冷蔵庫が来た。氷屋さんが来なくなった。冷えた麦茶と、母が作った手作りのアイスキャンデーが夏の楽しみになった。",
+    "effects": {
+      "happiness": 4,
+      "health": 1,
+      "flags": [
+        "fridge_home"
+      ]
+    },
+    "probability": 0.155,
+    "probNote": "普及率の前年からの増え分÷未保有の世帯の割合（年平均）。1963年以前は調査対象が都市部中心とみられ、農村ではもっと遅い（この点は未確認）",
+    "source": {
+      "title": "内閣府 消費動向調査 主要耐久消費財等の普及率（全世帯）",
+      "url": "https://www.esri.cao.go.jp/jp/stat/shouhi/0403fukyuritsu.xls",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1958-fridge-home-adult",
+    "key": "fridge-home",
+    "category": "life",
+    "year": 1958,
+    "endYear": 1971,
+    "ageMin": 25,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "fridge_home"
+      ]
+    },
+    "title": "冷蔵庫を買った",
+    "text": "電気冷蔵庫を買った。毎日の買い物が一日おきで足りるようになった。残ったおかずを翌日に回せるので、家計も少し楽になった。",
+    "effects": {
+      "happiness": 4,
+      "money": -40000,
+      "flags": [
+        "fridge_home"
+      ]
+    },
+    "probability": 0.155,
+    "probNote": "普及率の前年からの増え分÷未保有の世帯の割合（年平均）。1963年以前は調査対象が都市部中心とみられ、農村ではもっと遅い（この点は未確認）",
+    "source": {
+      "title": "内閣府 消費動向調査 主要耐久消費財等の普及率（全世帯）",
+      "url": "https://www.esri.cao.go.jp/jp/stat/shouhi/0403fukyuritsu.xls",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1967-colortv-home-child",
+    "key": "colortv-home",
+    "category": "life",
+    "year": 1967,
+    "endYear": 1975,
+    "ageMin": 4,
+    "ageMax": 12,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "colortv_home"
+      ]
+    },
+    "title": "カラーテレビ",
+    "text": "家のテレビがカラーになった。アニメの色が本当はこうだったのかと驚いた。友だちに自慢したら、うちはまだ白黒だと言われた。",
+    "effects": {
+      "happiness": 5,
+      "flags": [
+        "colortv_home"
+      ]
+    },
+    "probability": 0.253,
+    "probNote": "普及率の前年からの増え分÷未保有の世帯の割合（年平均）。1963年以前は調査対象が都市部中心とみられ、農村ではもっと遅い（この点は未確認）",
+    "source": {
+      "title": "内閣府 消費動向調査 主要耐久消費財等の普及率（全世帯）",
+      "url": "https://www.esri.cao.go.jp/jp/stat/shouhi/0403fukyuritsu.xls",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1967-colortv-home-adult",
+    "key": "colortv-home",
+    "category": "life",
+    "year": 1967,
+    "endYear": 1975,
+    "ageMin": 25,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "colortv_home"
+      ]
+    },
+    "title": "カラーテレビを買った",
+    "text": "ボーナスでカラーテレビを買った。家族みんなで紅白歌合戦を見た。着物の柄まで色つきで見えて、母がしきりに感心していた。",
+    "effects": {
+      "happiness": 4,
+      "money": -150000,
+      "flags": [
+        "colortv_home"
+      ]
+    },
+    "probability": 0.253,
+    "probNote": "普及率の前年からの増え分÷未保有の世帯の割合（年平均）。1963年以前は調査対象が都市部中心とみられ、農村ではもっと遅い（この点は未確認）",
+    "source": {
+      "title": "内閣府 消費動向調査 主要耐久消費財等の普及率（全世帯）",
+      "url": "https://www.esri.cao.go.jp/jp/stat/shouhi/0403fukyuritsu.xls",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1966-mycar-child",
+    "key": "mycar",
+    "category": "life",
+    "year": 1966,
+    "endYear": 1980,
+    "ageMin": 3,
+    "ageMax": 12,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "mycar"
+      ]
+    },
+    "title": "マイカーが来た",
+    "text": "家に車が来た。日曜日には家族でドライブに出かけた。窓を開けて走ると、知らない町の景色がどんどん後ろへ流れていった。",
+    "effects": {
+      "happiness": 5,
+      "flags": [
+        "mycar"
+      ]
+    },
+    "probability": 0.05,
+    "probNote": "普及率の前年からの増え分÷未保有の世帯の割合（年平均）。1963年以前は調査対象が都市部中心とみられ、農村ではもっと遅い（この点は未確認）",
+    "source": {
+      "title": "内閣府 消費動向調査 主要耐久消費財等の普及率（全世帯）",
+      "url": "https://www.esri.cao.go.jp/jp/stat/shouhi/0403fukyuritsu.xls",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1966-mycar-adult",
+    "key": "mycar",
+    "category": "life",
+    "year": 1966,
+    "endYear": 1980,
+    "ageMin": 25,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "mycar"
+      ]
+    },
+    "title": "マイカーを買った",
+    "text": "教習所に通って免許を取り、車を買った。休みの日は家族を乗せて海へ出かけた。帰りは渋滞で、子どもたちは後ろの席で眠っていた。",
+    "effects": {
+      "happiness": 5,
+      "money": -400000,
+      "flags": [
+        "mycar"
+      ]
+    },
+    "probability": 0.05,
+    "probNote": "普及率の前年からの増え分÷未保有の世帯の割合（年平均）。1963年以前は調査対象が都市部中心とみられ、農村ではもっと遅い（この点は未確認）",
+    "source": {
+      "title": "内閣府 消費動向調査 主要耐久消費財等の普及率（全世帯）",
+      "url": "https://www.esri.cao.go.jp/jp/stat/shouhi/0403fukyuritsu.xls",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1975-aircon-child",
+    "key": "aircon",
+    "category": "life",
+    "year": 1975,
+    "endYear": 1995,
+    "ageMin": 4,
+    "ageMax": 12,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "aircon"
+      ]
+    },
+    "title": "クーラーが来た",
+    "text": "家にクーラーがついた。夏休み、閉めきった部屋で宿題をしていると、外の蝉の声が遠く聞こえた。電気代を気にする父に何度も消された。",
+    "effects": {
+      "happiness": 3,
+      "health": 1,
+      "flags": [
+        "aircon"
+      ]
+    },
+    "probability": 0.059,
+    "probNote": "普及率の前年からの増え分÷未保有の世帯の割合（年平均）。1963年以前は調査対象が都市部中心とみられ、農村ではもっと遅い（この点は未確認）",
+    "source": {
+      "title": "内閣府 消費動向調査 主要耐久消費財等の普及率（全世帯）",
+      "url": "https://www.esri.cao.go.jp/jp/stat/shouhi/0403fukyuritsu.xls",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1975-aircon-senior",
+    "key": "aircon",
+    "category": "life",
+    "year": 1975,
+    "endYear": 1995,
+    "ageMin": 60,
+    "ageMax": 100,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "aircon"
+      ]
+    },
+    "title": "クーラーをつけた",
+    "text": "息子がクーラーをつけてくれた。冷えすぎると体に悪いと思い、あまりつけなかったが、寝苦しい夏の夜だけはありがたかった。",
+    "effects": {
+      "happiness": 2,
+      "health": 2,
+      "flags": [
+        "aircon"
+      ]
+    },
+    "probability": 0.059,
+    "probNote": "普及率の前年からの増え分÷未保有の世帯の割合（年平均）。1963年以前は調査対象が都市部中心とみられ、農村ではもっと遅い（この点は未確認）",
+    "source": {
+      "title": "内閣府 消費動向調査 主要耐久消費財等の普及率（全世帯）",
+      "url": "https://www.esri.cao.go.jp/jp/stat/shouhi/0403fukyuritsu.xls",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1995-pc-home-youth",
+    "key": "pc-home",
+    "category": "life",
+    "year": 1995,
+    "endYear": 2003,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "pc_home"
+      ]
+    },
+    "title": "パソコンが来た",
+    "text": "家にパソコンが来た。電話回線でインターネットにつなぐと、ピーガーという音のあとに世界中のページが出てきた。電話代で親に怒られた。",
+    "effects": {
+      "happiness": 4,
+      "knowledge": 4,
+      "flags": [
+        "pc_home"
+      ]
+    },
+    "probability": 0.094,
+    "probNote": "消費動向調査のパソコン普及率（1995年15.6%→2004年65.7%）から算出",
+    "source": {
+      "title": "内閣府 消費動向調査 主要耐久消費財等の普及率（全世帯）",
+      "url": "https://www.esri.cao.go.jp/jp/stat/shouhi/0403fukyuritsu.xls",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1995-pc-home-adult",
+    "key": "pc-home",
+    "category": "life",
+    "year": 1995,
+    "endYear": 2003,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "pc_home"
+      ]
+    },
+    "title": "パソコンを買った",
+    "text": "家庭用のパソコンを買った。説明書と首っぴきで、メールを一通送るのに一晩かかった。子どものほうが先に使いこなしていた。",
+    "effects": {
+      "knowledge": 3,
+      "money": -250000,
+      "flags": [
+        "pc_home"
+      ]
+    },
+    "probability": 0.094,
+    "probNote": "消費動向調査のパソコン普及率から算出",
+    "source": {
+      "title": "内閣府 消費動向調査 主要耐久消費財等の普及率（全世帯）",
+      "url": "https://www.esri.cao.go.jp/jp/stat/shouhi/0403fukyuritsu.xls",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1970-piano-lesson-child",
+    "key": "piano-lesson",
+    "category": "life",
+    "year": 1970,
+    "endYear": 1990,
+    "ageMin": 5,
+    "ageMax": 10,
+    "sex": "any",
+    "conditions": {
+      "familyClass": [
+        3,
+        4,
+        5
+      ],
+      "notFlags": [
+        "piano"
+      ]
+    },
+    "title": "ピアノを習った",
+    "text": "家にピアノが来て、近所の先生のところへ習いに通った。発表会の前は毎日練習させられた。指が思うように動かず泣いた日もあった。",
+    "effects": {
+      "happiness": 2,
+      "knowledge": 2,
+      "flags": [
+        "piano"
+      ]
+    },
+    "probability": 0.02,
+    "probNote": "ピアノ普及率（1970年6.8%→1990年22.7%）の年平均増加から算出し、子どものいる中流以上の家庭に絞るため2倍にした",
+    "source": {
+      "title": "内閣府 消費動向調査 主要耐久消費財等の普及率（全世帯）",
+      "url": "https://www.esri.cao.go.jp/jp/stat/shouhi/0403fukyuritsu.xls",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1951-radio-taiso-child",
+    "key": "radio-taiso",
+    "category": "life",
+    "year": 1951,
+    "endYear": 2019,
+    "ageMin": 6,
+    "ageMax": 11,
+    "sex": "any",
+    "title": "夏休みのラジオ体操",
+    "text": "夏休みは毎朝、公園のラジオ体操に通った。首から下げたカードにはんこを押してもらい、全部たまると最終日にお菓子がもらえた。",
+    "effects": {
+      "health": 2,
+      "happiness": 1
+    },
+    "probability": 0.5,
+    "probNote": "地域の参加率の統計はないため目安",
+    "source": {
+      "title": "かんぽ生命 ラジオ体操の歴史（現行の第一は1951年制定）",
+      "url": "https://www.jp-life.japanpost.jp/radio/faq/abt_csr_rdo_faq_cat01.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1936-radio-taiso-child-prewar",
+    "key": "radio-taiso",
+    "category": "life",
+    "year": 1936,
+    "endYear": 1944,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "朝のラジオ体操",
+    "text": "朝、ラジオから号令が流れると、町内の子どもが広場に集まって体操をした。休むと班長に名前を控えられるので、眠くても起きた。",
+    "effects": {
+      "health": 2
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "かんぽ生命 ラジオ体操の歴史（1928年11月放送開始）",
+      "url": "https://www.jp-life.japanpost.jp/radio/faq/abt_csr_rdo_faq_cat01.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1948-beigoma-child",
+    "key": "beigoma",
+    "category": "life",
+    "year": 1948,
+    "endYear": 1965,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "male",
+    "title": "ベーゴマとメンコ",
+    "text": "路地でベーゴマとメンコに夢中になった。強い子に全部取られた日は、悔しくて、家でベーゴマの底をやすりで平らに削った。",
+    "effects": {
+      "happiness": 4,
+      "relation": 2
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "川口市 ベーゴマの資料（昭和20〜30年代に流行）",
+      "url": "https://www.city.kawaguchi.lg.jp/material/files/group/3/55687286.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1948-beigoma-child-girl",
+    "key": "beigoma",
+    "category": "life",
+    "year": 1948,
+    "endYear": 1965,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "female",
+    "title": "ゴム跳びとおはじき",
+    "text": "放課後は、女の子どうしでゴム跳びやおはじき、お手玉をした。日が暮れて母に呼ばれるまで、路地でいつまでも遊び続けた。",
+    "effects": {
+      "happiness": 4,
+      "relation": 2
+    },
+    "probability": 0.4,
+    "probNote": "目安。女の子の遊びの年代は資料で確かめていない",
+    "source": {
+      "title": "岐阜市歴史博物館 昭和の遊び",
+      "url": "https://www.rekihaku.gifu.gifu.jp/gmh/wp-content/uploads/2019/10/1-4asobiset.pdf",
+      "verified": false
+    }
+  },
+  {
+    "id": "life-1958-08-instant-ramen-child",
+    "key": "instant-ramen",
+    "category": "life",
+    "year": 1958,
+    "endYear": 1961,
+    "month": 8,
+    "ageMin": 5,
+    "ageMax": 12,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "ate_instant"
+      ]
+    },
+    "title": "インスタントラーメン",
+    "text": "お湯をかけるだけで食べられるラーメンが出た。一袋35円で、たまにしか買ってもらえなかった。湯気の匂いだけでおなかが鳴った。",
+    "effects": {
+      "happiness": 3,
+      "flags": [
+        "ate_instant"
+      ]
+    },
+    "probability": 0.25,
+    "probNote": "目安",
+    "source": {
+      "title": "日本食糧新聞 チキンラーメン発売（1958年8月25日）",
+      "url": "https://news.nissyoku.co.jp/today/584072",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1971-09-instant-ramen-youth-cup",
+    "key": "instant-ramen",
+    "category": "life",
+    "year": 1971,
+    "endYear": 1974,
+    "month": 9,
+    "ageMin": 13,
+    "ageMax": 25,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "ate_cupnoodle"
+      ]
+    },
+    "title": "カップヌードル",
+    "text": "カップに入ったラーメンが出た。フォークで立ったまま食べるのが新しかった。受験勉強の夜食は、しばらくこればかりになった。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "ate_cupnoodle"
+      ]
+    },
+    "probability": 0.25,
+    "probNote": "目安",
+    "source": {
+      "title": "日本食糧新聞 カップヌードル発売（1971年9月18日）",
+      "url": "https://news.nissyoku.co.jp/today/584072",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1971-07-mcdonalds-youth",
+    "key": "mcdonalds",
+    "category": "life",
+    "year": 1971,
+    "endYear": 1975,
+    "month": 7,
+    "prefs": [
+      11,
+      12,
+      13,
+      14
+    ],
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "ate_burger"
+      ]
+    },
+    "title": "ハンバーガー",
+    "text": "銀座にハンバーガーの店ができた。一個80円。歩行者天国で、立ったまま包み紙を開いて食べた。アメリカの味がする気がした。",
+    "effects": {
+      "happiness": 3,
+      "flags": [
+        "ate_burger"
+      ]
+    },
+    "probability": 0.08,
+    "probNote": "首都圏の若者のみ。目安",
+    "source": {
+      "title": "現代ビジネス 1971年マクドナルド銀座1号店",
+      "url": "https://gendai.media/articles/-/42795",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1979-07-walkman-youth",
+    "key": "walkman",
+    "category": "life",
+    "year": 1979,
+    "endYear": 1985,
+    "month": 7,
+    "ageMin": 13,
+    "ageMax": 25,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "walkman"
+      ]
+    },
+    "title": "ウォークマン",
+    "text": "ヘッドホンで音楽を聴きながら街を歩けるようになった。好きな曲を詰めたカセットを何本も作った。電車の中が自分だけの部屋になった。",
+    "effects": {
+      "happiness": 4,
+      "flags": [
+        "walkman"
+      ]
+    },
+    "probability": 0.12,
+    "probNote": "目安",
+    "source": {
+      "title": "All About ウォークマン発売（1979年7月1日、3万3000円）",
+      "url": "https://news.allabout.co.jp/articles/o/81583/",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1976-juku-child",
+    "key": "juku",
+    "category": "life",
+    "year": 1976,
+    "endYear": 1992,
+    "ageMin": 10,
+    "ageMax": 12,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "juku"
+      ]
+    },
+    "title": "塾に通い始めた",
+    "text": "クラスの何人かが塾に通い始め、自分も行くことになった。学校が終わると、駅前の塾へ自転車で通った。夜の帰り道が少し誇らしかった。",
+    "effects": {
+      "knowledge": 3,
+      "happiness": -1,
+      "flags": [
+        "juku"
+      ]
+    },
+    "probability": 0.1,
+    "probNote": "小6の通塾率 1976年26.6%、1985年29.6%。3年で約3割に達する年率として0.1",
+    "source": {
+      "title": "コトバンク 学習塾（文部省の通塾率調査 1976・85・93年）",
+      "url": "https://kotobank.jp/word/学習塾",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1993-juku-child-1993",
+    "key": "juku",
+    "category": "life",
+    "year": 1993,
+    "endYear": 2005,
+    "ageMin": 10,
+    "ageMax": 12,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "juku"
+      ]
+    },
+    "title": "塾に通い始めた",
+    "text": "中学受験をする子が増え、自分も塾に入った。カバンに弁当を詰めて、夜九時まで教室にいた。友だちと遊ぶ時間はほとんどなくなった。",
+    "effects": {
+      "knowledge": 3,
+      "happiness": -2,
+      "flags": [
+        "juku"
+      ]
+    },
+    "probability": 0.15,
+    "probNote": "小6の通塾率 1993年41.7%から算出",
+    "source": {
+      "title": "コトバンク 学習塾（文部省の通塾率調査 1976・85・93年）",
+      "url": "https://kotobank.jp/word/学習塾",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1976-juku-youth",
+    "key": "juku",
+    "category": "life",
+    "year": 1976,
+    "endYear": 1992,
+    "ageMin": 13,
+    "ageMax": 15,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "juku"
+      ]
+    },
+    "title": "高校受験の塾",
+    "text": "高校受験に向けて塾に入った。模試の偏差値が張り出され、志望校が数字で決まっていった。夏期講習の教室は冷房が効きすぎていた。",
+    "effects": {
+      "knowledge": 4,
+      "happiness": -2,
+      "flags": [
+        "juku"
+      ]
+    },
+    "probability": 0.18,
+    "probNote": "中3の通塾率 1976年37.4%、1985年47.3%から算出",
+    "source": {
+      "title": "コトバンク 学習塾（文部省の通塾率調査 1976・85・93年）",
+      "url": "https://kotobank.jp/word/学習塾",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1993-juku-youth-1993",
+    "key": "juku",
+    "category": "life",
+    "year": 1993,
+    "endYear": 2010,
+    "ageMin": 13,
+    "ageMax": 15,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "juku"
+      ]
+    },
+    "title": "高校受験の塾",
+    "text": "中学に入ると、ほとんどの友だちが塾に通っていた。行かないと置いていかれる気がして、親に頼みこんで入れてもらった。",
+    "effects": {
+      "knowledge": 4,
+      "happiness": -1,
+      "flags": [
+        "juku"
+      ]
+    },
+    "probability": 0.3,
+    "probNote": "中3の通塾率 1993年67.1%から算出",
+    "source": {
+      "title": "コトバンク 学習塾（文部省の通塾率調査 1976・85・93年）",
+      "url": "https://kotobank.jp/word/学習塾",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1985-juku-adult",
+    "key": "juku",
+    "category": "life",
+    "year": 1985,
+    "endYear": 2010,
+    "ageMin": 35,
+    "ageMax": 55,
+    "sex": "any",
+    "conditions": {
+      "married": true
+    },
+    "title": "塾代がかさむ",
+    "text": "子どもを塾に通わせることにした。月謝に夏期講習、模試の代金が重なり、家計簿の教育費の欄が年々ふくらんでいった。",
+    "effects": {
+      "money": -150000,
+      "happiness": -1
+    },
+    "probability": 0.15,
+    "probNote": "目安",
+    "source": {
+      "title": "コトバンク 学習塾（文部省の通塾率調査 1976・85・93年）",
+      "url": "https://kotobank.jp/word/学習塾",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1993-02-hensachi-ban-youth",
+    "key": "hensachi-ban",
+    "category": "life",
+    "year": 1993,
+    "month": 2,
+    "ageMin": 13,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "業者テストがなくなった",
+    "text": "中学で業者テストが取りやめになった。偏差値で志望校を決めないと言われたが、結局は塾の模試の数字を見て進路を決めた。",
+    "effects": {
+      "happiness": 0
+    },
+    "probability": 0.6,
+    "probNote": "1993年2月の文部事務次官通知の対象＝公立中学生。目安",
+    "source": {
+      "title": "文部省 1994年版教育白書（業者テストに依存しない進路指導）",
+      "url": "https://www.mext.go.jp/b_menu/hakusho/html/hpae199401/hpae199401_2_048.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1983-07-famicom-child",
+    "key": "famicom",
+    "category": "life",
+    "year": 1983,
+    "endYear": 1987,
+    "month": 7,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "conditions": {
+      "familyClass": [
+        3,
+        4,
+        5
+      ],
+      "notFlags": [
+        "famicom"
+      ]
+    },
+    "title": "ファミコンを買ってもらえた",
+    "text": "誕生日にファミコンを買ってもらった。テレビの前に座りこみ、夕飯の時間も忘れてコントローラーを握った。友だちが毎日家に来るようになった。",
+    "effects": {
+      "happiness": 8,
+      "relation": 3,
+      "flags": [
+        "famicom"
+      ]
+    },
+    "probability": 0.2,
+    "probNote": "国内約1,935万台。子どものいる世帯の多くに行き渡った。年率は目安",
+    "source": {
+      "title": "ファミコンの日（1983年7月15日、14,800円）",
+      "url": "https://bestcalendar.jp/dates/kinenbi/3003",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1983-07-famicom-child-no",
+    "key": "famicom",
+    "category": "life",
+    "year": 1983,
+    "endYear": 1987,
+    "month": 7,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "conditions": {
+      "familyClass": [
+        1,
+        2
+      ],
+      "notFlags": [
+        "famicom"
+      ]
+    },
+    "title": "ファミコンがなかった",
+    "text": "クラスの話題はファミコンばかりだったが、家では買ってもらえなかった。友だちの家で順番を待ち、見ているだけで夕方になった。",
+    "effects": {
+      "happiness": -3,
+      "flags": [
+        "no_famicom"
+      ]
+    },
+    "probability": 0.25,
+    "probNote": "目安",
+    "source": {
+      "title": "ファミコンの日（1983年7月15日、14,800円）",
+      "url": "https://bestcalendar.jp/dates/kinenbi/3003",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1983-07-famicom-youth",
+    "key": "famicom",
+    "category": "life",
+    "year": 1983,
+    "endYear": 1987,
+    "month": 7,
+    "ageMin": 13,
+    "ageMax": 18,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "famicom"
+      ]
+    },
+    "title": "ファミコンに夢中",
+    "text": "中学生になってもファミコンはやめられなかった。友だちと裏技を教え合い、ゲーム雑誌を回し読みした。成績が下がって親に隠された。",
+    "effects": {
+      "happiness": 5,
+      "knowledge": -1,
+      "flags": [
+        "famicom"
+      ]
+    },
+    "probability": 0.15,
+    "probNote": "目安",
+    "source": {
+      "title": "ファミコンの日（1983年7月15日、14,800円）",
+      "url": "https://bestcalendar.jp/dates/kinenbi/3003",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1983-07-famicom-adult",
+    "key": "famicom",
+    "category": "life",
+    "year": 1983,
+    "endYear": 1987,
+    "month": 7,
+    "ageMin": 30,
+    "ageMax": 50,
+    "sex": "any",
+    "conditions": {
+      "married": true
+    },
+    "title": "子どもにせがまれた",
+    "text": "子どもにファミコンをせがまれた。クラスで持っていないのはうちだけだと言う。14,800円は安くなかったが、根負けして買いに行った。",
+    "effects": {
+      "money": -14800,
+      "relation": 2
+    },
+    "probability": 0.2,
+    "probNote": "目安",
+    "source": {
+      "title": "ファミコンの日（1983年7月15日、14,800円）",
+      "url": "https://bestcalendar.jp/dates/kinenbi/3003",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1988-02-dq3-youth",
+    "key": "dq3",
+    "category": "life",
+    "year": 1988,
+    "month": 2,
+    "ageMin": 10,
+    "ageMax": 20,
+    "sex": "any",
+    "title": "ドラクエIIIの行列",
+    "text": "ドラゴンクエストIIIの発売日、夜明け前から店の前に並んだ。学校をさぼって補導された子もいたと、翌日のニュースで知った。",
+    "effects": {
+      "happiness": 5
+    },
+    "probability": 0.1,
+    "probNote": "国内出荷380万本。行列に並んだ割合は目安",
+    "source": {
+      "title": "GIGAZINE ドラゴンクエストIII（1988年2月10日発売、行列）",
+      "url": "https://gigazine.net/news/20090914_dq3/",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1989-04-gameboy-child",
+    "key": "gameboy",
+    "category": "life",
+    "year": 1989,
+    "endYear": 1995,
+    "month": 4,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "gameboy"
+      ]
+    },
+    "title": "ゲームボーイ",
+    "text": "ゲームボーイを買ってもらった。外にも持ち出せるので、車の後部座席でも布団の中でも遊んだ。電池がすぐ切れるのが悩みだった。",
+    "effects": {
+      "happiness": 5,
+      "flags": [
+        "gameboy"
+      ]
+    },
+    "probability": 0.15,
+    "probNote": "目安",
+    "source": {
+      "title": "ファミ通 1989年4月21日ゲームボーイ発売",
+      "url": "https://www.famitsu.com/news/202004/21196857.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1996-02-pokemon-child",
+    "key": "pokemon",
+    "category": "life",
+    "year": 1996,
+    "endYear": 1999,
+    "month": 2,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "pokemon"
+      ]
+    },
+    "title": "ポケモン交換",
+    "text": "ポケットモンスターに夢中になった。赤と緑で出るポケモンが違うので、通信ケーブルで友だちと交換した。図鑑を埋めるのが毎日の目標だった。",
+    "effects": {
+      "happiness": 6,
+      "relation": 3,
+      "flags": [
+        "pokemon"
+      ]
+    },
+    "probability": 0.25,
+    "probNote": "目安",
+    "source": {
+      "title": "ファミ通 1996年2月27日ポケットモンスター赤・緑発売",
+      "url": "https://www.famitsu.com/news/202002/27193330.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1996-02-pokemon-adult",
+    "key": "pokemon",
+    "category": "life",
+    "year": 1996,
+    "endYear": 1999,
+    "month": 2,
+    "ageMin": 30,
+    "ageMax": 50,
+    "sex": "any",
+    "conditions": {
+      "married": true
+    },
+    "title": "ポケモンの名前",
+    "text": "子どもがポケモンの名前を百以上そらで言えるようになった。何の話をしているのか分からなかったが、夕方のアニメは一緒に見た。",
+    "effects": {
+      "relation": 2
+    },
+    "probability": 0.2,
+    "probNote": "目安",
+    "source": {
+      "title": "ファミ通 1996年2月27日ポケットモンスター赤・緑発売",
+      "url": "https://www.famitsu.com/news/202002/27193330.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1985-bikkuriman-child",
+    "key": "bikkuriman",
+    "category": "life",
+    "year": 1985,
+    "endYear": 1988,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "ビックリマンシール",
+    "text": "ビックリマンチョコのシール集めに夢中になった。お目当てのキラキラのシールが出るまで買い続けた。チョコを捨てる子がいて、先生に叱られた。",
+    "effects": {
+      "happiness": 4,
+      "money": -1000
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "NTT東日本 BizDrive 懐かしのヒット商品の裏側（ビックリマン）",
+      "url": "https://business.ntt-east.co.jp/bizdrive/column/dr00049-001.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1996-11-tamagotchi-child",
+    "key": "tamagotchi",
+    "category": "life",
+    "year": 1996,
+    "endYear": 1997,
+    "month": 11,
+    "ageMin": 7,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "たまごっち",
+    "text": "たまごっちがどうしても欲しかった。店には行列ができていて、なかなか手に入らなかった。学校に持ちこんで取り上げられた子もいた。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.2,
+    "probNote": "1998年までに国内2000万個。目安",
+    "source": {
+      "title": "ITmedia たまごっち（1996年11月23日発売）",
+      "url": "https://www.itmedia.co.jp/news/article/0611/17/1061117120/",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1996-11-tamagotchi-youth",
+    "key": "tamagotchi",
+    "category": "life",
+    "year": 1996,
+    "endYear": 1997,
+    "month": 11,
+    "ageMin": 13,
+    "ageMax": 20,
+    "sex": "any",
+    "title": "たまごっち",
+    "text": "たまごっちを手に入れた。授業中もかばんの中でピーピー鳴り、休み時間に急いで世話をした。死なせてしまった日は本気で落ちこんだ。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.15,
+    "probNote": "目安",
+    "source": {
+      "title": "ITmedia たまごっち（1996年11月23日発売）",
+      "url": "https://www.itmedia.co.jp/news/article/0611/17/1061117120/",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1996-11-tamagotchi-adult",
+    "key": "tamagotchi",
+    "category": "life",
+    "year": 1996,
+    "endYear": 1997,
+    "month": 11,
+    "ageMin": 30,
+    "ageMax": 50,
+    "sex": "any",
+    "conditions": {
+      "married": true
+    },
+    "title": "たまごっち探し",
+    "text": "子どもにたまごっちを頼まれて、休みの日におもちゃ屋を何軒も回った。どこも売り切れで、朝から並んでいる大人の列に驚いた。",
+    "effects": {
+      "happiness": -1
+    },
+    "probability": 0.1,
+    "probNote": "目安",
+    "source": {
+      "title": "ITmedia たまごっち（1996年11月23日発売）",
+      "url": "https://www.itmedia.co.jp/news/article/0611/17/1061117120/",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1993-pager-youth",
+    "key": "pager",
+    "category": "life",
+    "year": 1993,
+    "endYear": 1997,
+    "ageMin": 15,
+    "ageMax": 22,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "pager"
+      ]
+    },
+    "title": "ポケベル",
+    "text": "ポケベルを持った。公衆電話から数字を打ちこんで、友だちと語呂合わせでやりとりした。休み時間の公衆電話には行列ができていた。",
+    "effects": {
+      "happiness": 4,
+      "relation": 3,
+      "flags": [
+        "pager"
+      ]
+    },
+    "probability": 0.2,
+    "probNote": "加入数は1996年の1077万がピーク、1995年は新規の約8割が高校生。年率は目安",
+    "source": {
+      "title": "Real Sound 90年代女子高生の必携ガジェット“ポケベル”の歴史",
+      "url": "https://realsound.jp/tech/2022/10/post-1159113_2.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1995-07-purikura-youth",
+    "key": "purikura",
+    "category": "life",
+    "year": 1995,
+    "endYear": 2005,
+    "month": 7,
+    "ageMin": 13,
+    "ageMax": 22,
+    "sex": "female",
+    "conditions": {
+      "notFlags": [
+        "purikura"
+      ]
+    },
+    "title": "プリクラ",
+    "text": "友だちとゲームセンターでプリクラを撮った。小さなシールを手帳いっぱいに貼り、交換し合った。何枚あるかが友だちの数のようだった。",
+    "effects": {
+      "happiness": 4,
+      "relation": 3,
+      "flags": [
+        "purikura"
+      ]
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "フリュー プリントシール機30周年（1995年7月25日 プリント倶楽部発売）",
+      "url": "https://www.puri.furyu.jp/wp-content/uploads/2025/07/FIX_0725_puri_30th.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-1999-02-imode-youth",
+    "key": "imode",
+    "category": "life",
+    "year": 1999,
+    "endYear": 2002,
+    "month": 2,
+    "ageMin": 15,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "keitai_mail"
+      ]
+    },
+    "title": "携帯でメール",
+    "text": "携帯電話でメールやネットができるようになった。絵文字を使い分けて、夜中まで友だちとメールを送り合った。月末の請求額を見て青くなった。",
+    "effects": {
+      "happiness": 4,
+      "relation": 3,
+      "money": -10000,
+      "flags": [
+        "keitai_mail"
+      ]
+    },
+    "probability": 0.25,
+    "probNote": "iモード開始日（1999年2月22日）は今回の検索では確かめられなかった。年率は目安",
+    "source": {
+      "title": "NTTドコモ iモード（1999年2月サービス開始）",
+      "url": "https://internet.watch.impress.co.jp/cda/news/2005/04/25/7428.html",
+      "verified": false
+    }
+  },
+  {
+    "id": "life-2001-keitai-youth",
+    "key": "keitai",
+    "category": "life",
+    "year": 2001,
+    "endYear": 2003,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "keitai"
+      ]
+    },
+    "title": "初めての携帯電話",
+    "text": "初めて自分の携帯電話を持った。家の電話で親に聞かれずに友だちと話せるようになった。カメラで撮った写真をメールで送ってみた。",
+    "effects": {
+      "happiness": 4,
+      "relation": 2,
+      "flags": [
+        "keitai"
+      ]
+    },
+    "probability": 0.3,
+    "probNote": "世帯の携帯電話普及率 2002年78.6%→2004年85.1%。個人の持ち始めの年率は目安",
+    "source": {
+      "title": "内閣府 消費動向調査 主要耐久消費財等の普及率（全世帯）",
+      "url": "https://www.esri.cao.go.jp/jp/stat/shouhi/0403fukyuritsu.xls",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-2001-keitai-senior",
+    "key": "keitai",
+    "category": "life",
+    "year": 2001,
+    "endYear": 2008,
+    "ageMin": 60,
+    "ageMax": 100,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "keitai"
+      ]
+    },
+    "title": "携帯電話を持たされた",
+    "text": "子どもに携帯電話を持たされた。ボタンの字が小さくて、電話を受けるのがやっとだった。メールの打ち方は孫に教わった。",
+    "effects": {
+      "relation": 2,
+      "flags": [
+        "keitai"
+      ]
+    },
+    "probability": 0.15,
+    "probNote": "目安",
+    "source": {
+      "title": "内閣府 消費動向調査 主要耐久消費財等の普及率（全世帯）",
+      "url": "https://www.esri.cao.go.jp/jp/stat/shouhi/0403fukyuritsu.xls",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-2010-smartphone-youth",
+    "key": "smartphone",
+    "category": "life",
+    "year": 2010,
+    "endYear": 2013,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "smartphone"
+      ]
+    },
+    "title": "スマホに替えた",
+    "text": "スマートフォンに替えた。指で画面をなでると地図も動画も出てきた。電車の中で、気がつくと周りの全員が画面を見ていた。",
+    "effects": {
+      "happiness": 3,
+      "knowledge": 2,
+      "flags": [
+        "smartphone"
+      ]
+    },
+    "probability": 0.33,
+    "probNote": "世帯保有率の年平均の増え方から算出し、若者は早いので1.3倍",
+    "source": {
+      "title": "総務省 情報通信白書（スマートフォン世帯保有率 2010年9.7%→2013年62.6%）",
+      "url": "https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/h26/html/nc253110.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-2010-smartphone-adult",
+    "key": "smartphone",
+    "category": "life",
+    "year": 2010,
+    "endYear": 2015,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "smartphone"
+      ]
+    },
+    "title": "スマホに替えた",
+    "text": "長く使った携帯電話をスマートフォンに替えた。仕事のメールが家でも追いかけてくるようになった。子どもに使い方を聞くのが少しくやしかった。",
+    "effects": {
+      "knowledge": 2,
+      "flags": [
+        "smartphone"
+      ]
+    },
+    "probability": 0.254,
+    "probNote": "世帯保有率の年平均の増え方から算出",
+    "source": {
+      "title": "総務省 情報通信白書（スマートフォン世帯保有率 2010年9.7%→2013年62.6%）",
+      "url": "https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/h26/html/nc253110.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-2014-smartphone-senior",
+    "key": "smartphone",
+    "category": "life",
+    "year": 2014,
+    "endYear": 2022,
+    "ageMin": 60,
+    "ageMax": 100,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "smartphone"
+      ]
+    },
+    "title": "スマホデビュー",
+    "text": "店員にすすめられてスマートフォンを持った。孫の写真が毎日届くようになった。文字を打つのは遅いが、声で調べものができると知った。",
+    "effects": {
+      "happiness": 3,
+      "relation": 2,
+      "flags": [
+        "smartphone"
+      ]
+    },
+    "probability": 0.12,
+    "probNote": "目安",
+    "source": {
+      "title": "総務省 情報通信白書（スマートフォン世帯保有率 2010年9.7%→2013年62.6%）",
+      "url": "https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/h26/html/nc253110.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-2011-06-line-youth",
+    "key": "line",
+    "category": "life",
+    "year": 2011,
+    "endYear": 2014,
+    "month": 6,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "smartphone"
+      ],
+      "notFlags": [
+        "line"
+      ]
+    },
+    "title": "LINEを始めた",
+    "text": "友だちに言われてLINEを入れた。クラスのグループができ、夜中まで通知が鳴りやまなかった。既読がついたのに返事がないと気になった。",
+    "effects": {
+      "relation": 3,
+      "happiness": 1,
+      "flags": [
+        "line"
+      ]
+    },
+    "probability": 0.35,
+    "probNote": "目安",
+    "source": {
+      "title": "プレジデント LINEをプロデュースした人（2011年6月23日サービス開始）",
+      "url": "https://president.jp/articles/-/14256",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-2015-line-senior",
+    "key": "line",
+    "category": "life",
+    "year": 2015,
+    "endYear": 2023,
+    "ageMin": 60,
+    "ageMax": 100,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "smartphone"
+      ],
+      "notFlags": [
+        "line"
+      ]
+    },
+    "title": "孫とLINE",
+    "text": "孫にLINEを入れてもらった。スタンプを一つ送ると、すぐに返事が来た。遠くに住む家族の顔が、前より近くなった気がした。",
+    "effects": {
+      "relation": 4,
+      "happiness": 3,
+      "flags": [
+        "line"
+      ]
+    },
+    "probability": 0.15,
+    "probNote": "目安",
+    "source": {
+      "title": "プレジデント LINEをプロデュースした人（2011年6月23日サービス開始）",
+      "url": "https://president.jp/articles/-/14256",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-2010-okozukai-child",
+    "key": "okozukai",
+    "category": "life",
+    "year": 2010,
+    "endYear": 2019,
+    "ageMin": 10,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "お小遣いは月千円",
+    "text": "お小遣いは月千円だった。カードゲームのパックを買うか、友だちと駄菓子を買うか、毎月悩んだ。足りない分はお年玉でまかなった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "金融広報中央委員会 子どものくらしとお金に関する調査（2015年度、高学年の中央値1,000円）の紹介記事",
+      "url": "https://financial-field.com/living/entry-213505",
+      "verified": true
+    }
+  },
+  {
+    "id": "life-2021-giga-school-child",
+    "key": "giga-school",
+    "category": "life",
+    "year": 2021,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "一人一台の端末",
+    "text": "学校で一人一台のタブレットが配られた。授業で調べものをしたり、休校の日に画面越しに先生と話したりした。家でも宿題が端末で届いた。",
+    "effects": {
+      "knowledge": 2
+    },
+    "probability": 0.9,
+    "probNote": "2022年3月時点で1台あたり0.9人。ほぼ全員",
+    "source": {
+      "title": "文部科学省 GIGAスクール構想（1人1台端末の前倒し整備）",
+      "url": "https://www.mext.go.jp/kaigisiryo/content/20210319-mxt_syoto01-000013552_02.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1945-omiai-youth",
+    "key": "omiai",
+    "category": "custom",
+    "year": 1945,
+    "endYear": 1964,
+    "ageMin": 19,
+    "ageMax": 28,
+    "sex": "any",
+    "conditions": {
+      "married": false
+    },
+    "title": "見合い話",
+    "text": "親戚が見合い写真を持ってきた。相手とは一度、親同士が同席した座敷で会っただけだった。断る理由は見つからなかった。",
+    "effects": {
+      "flags": [
+        "omiai_offer"
+      ]
+    },
+    "probability": 0.45,
+    "probNote": "戦前は結婚の約7割が見合い。1960年代末に恋愛結婚と逆転。年ごとの持ち込まれる確率は目安",
+    "source": {
+      "title": "国立社会保障・人口問題研究所 出生動向基本調査（見合い結婚と恋愛結婚の推移）",
+      "url": "https://www.mhlw.go.jp/shingi/2006/06/dl/s0630-4f2.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1965-omiai-youth-1965",
+    "key": "omiai",
+    "category": "custom",
+    "year": 1965,
+    "endYear": 1985,
+    "ageMin": 20,
+    "ageMax": 30,
+    "sex": "any",
+    "conditions": {
+      "married": false
+    },
+    "title": "見合いか恋愛か",
+    "text": "親が見合い話を持ってきた。職場の仲間はみな恋愛結婚だと言うので迷った。会うだけ会ってみなさい、と最後は押し切られた。",
+    "effects": {
+      "flags": [
+        "omiai_offer"
+      ]
+    },
+    "probability": 0.25,
+    "probNote": "1960年代末に恋愛結婚が見合いを上回った。目安",
+    "source": {
+      "title": "国立社会保障・人口問題研究所 出生動向基本調査（見合い結婚と恋愛結婚の推移）",
+      "url": "https://www.mhlw.go.jp/shingi/2006/06/dl/s0630-4f2.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1986-omiai-youth-1986",
+    "key": "omiai",
+    "category": "custom",
+    "year": 1986,
+    "endYear": 2007,
+    "ageMin": 22,
+    "ageMax": 32,
+    "sex": "any",
+    "conditions": {
+      "married": false
+    },
+    "title": "お見合いは少数派",
+    "text": "親戚の世話好きなおばが見合いをすすめてきた。周りで見合い結婚をした人はほとんどいない。やんわり断ると、時代ねえと笑われた。",
+    "probability": 0.06,
+    "probNote": "1990年代半ば以降、見合い結婚は1割を下回る。目安",
+    "source": {
+      "title": "国立社会保障・人口問題研究所 出生動向基本調査（見合い結婚と恋愛結婚の推移）",
+      "url": "https://www.mhlw.go.jp/shingi/2006/06/dl/s0630-4f2.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-2008-omiai-youth-2008",
+    "key": "omiai",
+    "category": "custom",
+    "year": 2008,
+    "endYear": 2025,
+    "ageMin": 25,
+    "ageMax": 39,
+    "sex": "any",
+    "conditions": {
+      "married": false
+    },
+    "title": "婚活",
+    "text": "結婚相談所やマッチングアプリの広告をよく見るようになった。周りでも、ネットで知り合って結婚した人が珍しくなくなった。",
+    "probability": 0.1,
+    "probNote": "目安",
+    "source": {
+      "title": "出生動向基本調査 第16回（2021年、見合い9.9%、ネットで知り合った選択肢を新設）の紹介",
+      "url": "https://www.j-cast.com/kaisha/2023/09/25469069.html?p=all",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1950-omiai-adult",
+    "key": "omiai",
+    "category": "custom",
+    "year": 1950,
+    "endYear": 1965,
+    "ageMin": 40,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "married": true
+    },
+    "title": "子どもの縁談",
+    "text": "年頃になった子の縁談を、仲人を通して進めた。家柄や勤め先を問い合わせ、釣書を何度も読み返した。本人の気持ちは二の次だった。",
+    "effects": {
+      "relation": 1
+    },
+    "probability": 0.25,
+    "probNote": "目安",
+    "source": {
+      "title": "国立社会保障・人口問題研究所 出生動向基本調査（見合い結婚と恋愛結婚の推移）",
+      "url": "https://www.mhlw.go.jp/shingi/2006/06/dl/s0630-4f2.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1955-kotobuki-taisha-youth",
+    "key": "kotobuki-taisha",
+    "category": "custom",
+    "year": 1955,
+    "endYear": 1985,
+    "ageMin": 20,
+    "ageMax": 29,
+    "sex": "female",
+    "conditions": {
+      "married": true,
+      "job": [
+        "bigco",
+        "smallco",
+        "public"
+      ],
+      "notFlags": [
+        "kotobuki"
+      ]
+    },
+    "title": "寿退社",
+    "text": "結婚が決まると、上司に退職の日を聞かれた。入社のときに、結婚したら辞めると一筆書かされていた。送別会で花束を渡された。",
+    "effects": {
+      "happiness": 0,
+      "flags": [
+        "kotobuki",
+        "quit_job"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "結婚退職の割合の統計は未確認。目安",
+    "source": {
+      "title": "早稲田大学 ダイバーシティ報告（住友セメント事件 1966年12月20日 東京地裁）",
+      "url": "https://www.waseda.jp/inst/diversity/assets/uploads/2017/01/2016_report_05_asakura.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1986-kotobuki-taisha-youth-1986",
+    "key": "kotobuki-taisha",
+    "category": "custom",
+    "year": 1986,
+    "endYear": 2005,
+    "ageMin": 22,
+    "ageMax": 32,
+    "sex": "female",
+    "conditions": {
+      "married": true,
+      "job": [
+        "bigco",
+        "smallco",
+        "public"
+      ],
+      "notFlags": [
+        "kotobuki"
+      ]
+    },
+    "title": "結婚しても働く",
+    "text": "結婚しても会社は辞めないと決めた。上司は少し驚いた顔をしたが、何も言わなかった。それでも子どもができたら辞める人がまだ多かった。",
+    "effects": {
+      "flags": [
+        "kept_job_after_marriage"
+      ]
+    },
+    "probability": 0.25,
+    "probNote": "目安",
+    "source": {
+      "title": "労働政策研究・研修機構 専業主婦世帯と共働き世帯（1997年以降は共働きが上回る）",
+      "url": "https://www.jil.go.jp/kokunai/statistics/timeseries/pdf/g0212.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1966-12-marriage-retire-case-youth",
+    "key": "marriage-retire-case",
+    "category": "custom",
+    "year": 1966,
+    "month": 12,
+    "ageMin": 18,
+    "ageMax": 29,
+    "sex": "female",
+    "conditions": {
+      "job": [
+        "bigco",
+        "smallco",
+        "public"
+      ]
+    },
+    "title": "結婚退職制は無効",
+    "text": "結婚したら辞めるという会社の決まりは無効だ、という判決が出たと新聞で読んだ。職場の先輩たちが、休み時間にその話ばかりしていた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "probability": 0.3,
+    "probNote": "ニュースに触れる確率の目安",
+    "source": {
+      "title": "早稲田大学 ダイバーシティ報告（住友セメント事件 1966年12月20日 東京地裁）",
+      "url": "https://www.waseda.jp/inst/diversity/assets/uploads/2017/01/2016_report_05_asakura.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1997-tomobataraki-adult",
+    "key": "tomobataraki",
+    "category": "custom",
+    "year": 1997,
+    "endYear": 2005,
+    "ageMin": 30,
+    "ageMax": 49,
+    "sex": "any",
+    "conditions": {
+      "married": true
+    },
+    "title": "共働きが当たり前に",
+    "text": "気がつくと、近所でも職場でも、共働きの家のほうが多くなっていた。保育園の送り迎えで、同じように走る父親の姿も見かけた。",
+    "probability": 0.15,
+    "probNote": "1997年以降、共働き世帯が専業主婦世帯を上回る。出会う確率は目安",
+    "source": {
+      "title": "労働政策研究・研修機構 専業主婦世帯と共働き世帯",
+      "url": "https://www.jil.go.jp/kokunai/statistics/timeseries/pdf/g0212.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1947-katoku-abolish-youth",
+    "key": "katoku-abolish",
+    "category": "custom",
+    "year": 1947,
+    "endYear": 1948,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "家督がなくなった",
+    "text": "法律が変わり、家は長男がすべて継ぐものではなくなったと聞いた。兄弟で財産を分けるのが筋になった。祖父は、家がつぶれると怒っていた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "probability": 0.6,
+    "probNote": "改正民法は1947年12月公布・1948年1月施行。知る確率は目安",
+    "source": {
+      "title": "国税庁 租税史料（家督相続の廃止と均分相続）",
+      "url": "https://www.nta.go.jp/about/organization/ntc/sozei/network/159.htm",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1947-katoku-abolish-adult",
+    "key": "katoku-abolish",
+    "category": "custom",
+    "year": 1947,
+    "endYear": 1948,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "家督相続の廃止",
+    "text": "新しい民法で戸主の制度がなくなった。田畑も子どもたちに等しく分けることになる。この家をどう残すか、親戚で話し合いが続いた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "国税庁 租税史料（家督相続の廃止と均分相続）",
+      "url": "https://www.nta.go.jp/about/organization/ntc/sozei/network/159.htm",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1947-katoku-abolish-senior",
+    "key": "katoku-abolish",
+    "category": "custom",
+    "year": 1947,
+    "endYear": 1948,
+    "ageMin": 60,
+    "ageMax": 100,
+    "sex": "any",
+    "title": "戸主ではなくなった",
+    "text": "長く戸主として家を背負ってきたが、法律の上ではその立場がなくなった。若い者は自由になったと喜んでいたが、さびしさが残った。",
+    "effects": {
+      "happiness": -2
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "国税庁 租税史料（家督相続の廃止と均分相続）",
+      "url": "https://www.nta.go.jp/about/organization/ntc/sozei/network/159.htm",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1950-chounan-youth",
+    "key": "chounan",
+    "category": "custom",
+    "year": 1950,
+    "endYear": 1970,
+    "ageMin": 15,
+    "ageMax": 25,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "eldest_son"
+      ],
+      "job": [
+        "farm",
+        "self",
+        "none"
+      ]
+    },
+    "title": "長男だから家を継ぐ",
+    "text": "長男なのだから家と田畑を継げ、と言われて育った。町に出たい気持ちはあったが、口には出せなかった。弟たちは都会へ出ていった。",
+    "effects": {
+      "happiness": -2,
+      "flags": [
+        "inherit_family"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "制度上の家督はないが慣習として残った。割合は未確認の目安",
+    "source": {
+      "title": "国税庁 租税史料（家督相続の廃止と均分相続）",
+      "url": "https://www.nta.go.jp/about/organization/ntc/sozei/network/159.htm",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1990-chounan-youth-1990",
+    "key": "chounan",
+    "category": "custom",
+    "year": 1990,
+    "endYear": 2015,
+    "ageMin": 18,
+    "ageMax": 29,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "eldest_son"
+      ]
+    },
+    "title": "家を継がなくていい",
+    "text": "親は、家のことは気にせず好きにしろと言った。継ぐ田畑もほとんど残っていなかった。墓を誰が守るのかだけが話題に残った。",
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "国税庁 租税史料（家督相続の廃止と均分相続）",
+      "url": "https://www.nta.go.jp/about/organization/ntc/sozei/network/159.htm",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1930-birthplace-child",
+    "key": "birthplace",
+    "category": "custom",
+    "year": 1930,
+    "endYear": 1955,
+    "ageMin": 0,
+    "ageMax": 0,
+    "sex": "any",
+    "title": "自宅で生まれた",
+    "text": "家の奥の部屋で、近所の産婆さんに取り上げられて生まれた。お湯をわかし、たらいを用意したのは祖母だったと、のちに聞かされた。",
+    "effects": {
+      "flags": [
+        "born_at_home"
+      ]
+    },
+    "probability": 0.95,
+    "probNote": "1950年の自宅などでの出生95.4%。1930〜40年代はそれ以上とみて0.95",
+    "source": {
+      "title": "長瀬悦子 論文（人口動態統計：家庭内出産 1950年95.4%→1960年49.9%→1970年3.9%）",
+      "url": "https://libkgc.repo.nii.ac.jp/record/80/files/Etsuko%20Nagase-2.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1956-birthplace-child-1956",
+    "key": "birthplace",
+    "category": "custom",
+    "year": 1956,
+    "endYear": 1964,
+    "ageMin": 0,
+    "ageMax": 0,
+    "sex": "any",
+    "title": "病院か自宅か",
+    "text": "生まれたのは町の産院だった。少し前までは、近所の子はみな自宅で産婆さんに取り上げられていたのだと、母はよく話していた。",
+    "effects": {
+      "flags": [
+        "born_in_hospital"
+      ]
+    },
+    "probability": 0.6,
+    "probNote": "1960年の施設内出生50.1%、1963年73.0%",
+    "source": {
+      "title": "長瀬悦子 論文（人口動態統計：家庭内出産 1950年95.4%→1960年49.9%→1970年3.9%）",
+      "url": "https://libkgc.repo.nii.ac.jp/record/80/files/Etsuko%20Nagase-2.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1965-birthplace-child-1965",
+    "key": "birthplace",
+    "category": "custom",
+    "year": 1965,
+    "endYear": 2005,
+    "ageMin": 0,
+    "ageMax": 0,
+    "sex": "any",
+    "title": "病院で生まれた",
+    "text": "病院の分娩室で生まれた。新生児室にずらりと並んだ小さなベッドの一つに、名札をつけて寝かされていたと、母子手帳に書いてあった。",
+    "effects": {
+      "flags": [
+        "born_in_hospital"
+      ]
+    },
+    "probability": 0.97,
+    "probNote": "1970年の施設内出生96.1%、その後ほぼ100%",
+    "source": {
+      "title": "長瀬悦子 論文（人口動態統計：家庭内出産 1950年95.4%→1960年49.9%→1970年3.9%）",
+      "url": "https://libkgc.repo.nii.ac.jp/record/80/files/Etsuko%20Nagase-2.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1950-birthplace-adult",
+    "key": "birthplace",
+    "category": "custom",
+    "year": 1950,
+    "endYear": 1956,
+    "ageMin": 20,
+    "ageMax": 40,
+    "sex": "female",
+    "conditions": {
+      "flags": [
+        "gave_birth"
+      ]
+    },
+    "title": "お産は家で",
+    "text": "お産は自宅で、近所の産婆さんに来てもらった。布団を敷いた座敷で産み、数日もすると、もう台所に立って家族の飯を炊いていた。",
+    "probability": 0.9,
+    "probNote": "gave_birth＝その年に出産したときにシミュレーションが立てるフラグ。1950年の自宅出産95.4%",
+    "source": {
+      "title": "長瀬悦子 論文（人口動態統計：家庭内出産 1950年95.4%→1960年49.9%→1970年3.9%）",
+      "url": "https://libkgc.repo.nii.ac.jp/record/80/files/Etsuko%20Nagase-2.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1960-birthplace-adult-1960",
+    "key": "birthplace",
+    "category": "custom",
+    "year": 1960,
+    "endYear": 1975,
+    "ageMin": 20,
+    "ageMax": 40,
+    "sex": "female",
+    "conditions": {
+      "flags": [
+        "gave_birth"
+      ]
+    },
+    "title": "病院でお産",
+    "text": "お産は病院でした。母の時代は家で産むのが当たり前だったが、今は病院のほうが安心だと、近所の誰もが口をそろえて言った。",
+    "probability": 0.75,
+    "probNote": "1960年50.1%→1970年96.1%の中間をとった",
+    "source": {
+      "title": "長瀬悦子 論文（人口動態統計：家庭内出産 1950年95.4%→1960年49.9%→1970年3.9%）",
+      "url": "https://libkgc.repo.nii.ac.jp/record/80/files/Etsuko%20Nagase-2.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1966-hinoeuma-child",
+    "key": "hinoeuma",
+    "category": "custom",
+    "year": 1966,
+    "ageMin": 0,
+    "ageMax": 0,
+    "sex": "any",
+    "title": "丙午の年に生まれた",
+    "text": "丙午の年に生まれた。この年は迷信のせいで生まれた子が前の年より四分の一も少なかった。学年の人数が少ないと、あとになって知った。",
+    "effects": {
+      "flags": [
+        "hinoeuma"
+      ]
+    },
+    "probability": 1.0,
+    "source": {
+      "title": "神戸新聞（1966年の出生数136万974人）/ 連合（前年比25%減）",
+      "url": "https://www.jtuc-rengo.or.jp/rengo_online/2026/01/20/8438/",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1966-hinoeuma-adult",
+    "key": "hinoeuma",
+    "category": "custom",
+    "year": 1966,
+    "ageMin": 20,
+    "ageMax": 39,
+    "sex": "any",
+    "conditions": {
+      "married": true
+    },
+    "title": "丙午の迷信",
+    "text": "今年は丙午だから子どもは来年にしなさい、と親に言われた。迷信だと思いつつ、周りでも出産を見送る夫婦が多かった。",
+    "effects": {
+      "happiness": -1
+    },
+    "probability": 0.4,
+    "probNote": "出生数が25%減ったことからの目安",
+    "source": {
+      "title": "連合 丙午（1965年約182万人、1966年約136万人）",
+      "url": "https://www.jtuc-rengo.or.jp/rengo_online/2026/01/20/8438/",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1935-dosou-child",
+    "key": "dosou",
+    "category": "custom",
+    "year": 1935,
+    "endYear": 1965,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "farm",
+        "none"
+      ]
+    },
+    "title": "村の土葬",
+    "text": "村で葬式があった。白い着物の行列が棺をかついで山の墓地へ向かい、穴を掘って埋めた。大人たちの後ろについて歩いた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "probability": 0.08,
+    "probNote": "1940年の火葬率55%＝半分近くが土葬。葬儀に立ち会う確率は目安",
+    "source": {
+      "title": "国立歴史民俗博物館 研究報告（土葬から火葬への移行）/ プレジデント（火葬率 1940年55%、1970年80%）",
+      "url": "https://rekihaku.repo.nii.ac.jp/record/2174/files/kenkyuhokoku_191_04.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1955-dosou-adult",
+    "key": "dosou",
+    "category": "custom",
+    "year": 1955,
+    "endYear": 1975,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "火葬になった",
+    "text": "村にも火葬場ができ、親の葬式は火葬で済ませた。土に還してやりたかったと言う年寄りもいたが、墓地はもういっぱいだった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "probability": 0.05,
+    "probNote": "高度成長期に火葬へ移行。目安",
+    "source": {
+      "title": "国立歴史民俗博物館 研究報告（土葬から火葬への移行）/ プレジデント（火葬率 1940年55%、1970年80%）",
+      "url": "https://rekihaku.repo.nii.ac.jp/record/2174/files/kenkyuhokoku_191_04.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-2010-kazokusou-senior",
+    "key": "kazokusou",
+    "category": "custom",
+    "year": 2010,
+    "endYear": 2025,
+    "ageMin": 60,
+    "ageMax": 100,
+    "sex": "any",
+    "title": "小さな葬式",
+    "text": "知人の葬儀は家族だけで済ませたと、後から葉書で知らされた。昔は村じゅうで手伝ったものだと思いながら、手を合わせた。",
+    "effects": {
+      "relation": -1
+    },
+    "probability": 0.2,
+    "probNote": "家族葬の割合は未確認。目安",
+    "source": {
+      "title": "Nippon.com Stripped-Down Funerals and Untended Graves",
+      "url": "https://www.nippon.com/en/currents/d00389/",
+      "verified": false
+    }
+  },
+  {
+    "id": "custom-1946-11-seijinshiki-youth-warabi",
+    "key": "seijinshiki",
+    "category": "custom",
+    "year": 1946,
+    "month": 11,
+    "prefs": [
+      11
+    ],
+    "ageMin": 20,
+    "ageMax": 20,
+    "sex": "any",
+    "title": "蕨の成年式",
+    "text": "町で青年祭が開かれ、その最初に二十歳を祝う式があった。焼け跡の暗い気分を吹き飛ばそうと、大人たちが企画したものだった。",
+    "probability": 0.8,
+    "source": {
+      "title": "成人の日（1948年制定 1月15日、2000年から1月第2月曜）/ 蕨市の成年式（1946年）",
+      "url": "https://zatsuneta.com/archives/101159.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1949-01-seijinshiki-youth",
+    "key": "seijinshiki",
+    "category": "custom",
+    "year": 1949,
+    "endYear": 1965,
+    "month": 1,
+    "ageMin": 20,
+    "ageMax": 20,
+    "sex": "any",
+    "title": "成人式",
+    "text": "1月15日、町の公会堂で成人式があった。晴れ着を用意できない子も多く、普段着で出た。来賓の長い話を聞き、記念品をもらって帰った。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.6,
+    "probNote": "出席率は目安",
+    "source": {
+      "title": "成人の日（1948年制定 1月15日、2000年から1月第2月曜）/ 蕨市の成年式（1946年）",
+      "url": "https://zatsuneta.com/archives/101159.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1966-01-seijinshiki-youth-furisode",
+    "key": "seijinshiki",
+    "category": "custom",
+    "year": 1966,
+    "endYear": 1999,
+    "month": 1,
+    "ageMin": 20,
+    "ageMax": 20,
+    "sex": "female",
+    "title": "成人式の振袖",
+    "text": "成人式に振袖を着た。母と何か月も前から呉服屋に通って選んだ。会場の前で中学の同級生と再会し、写真を撮り合った。",
+    "effects": {
+      "happiness": 3,
+      "money": -100000
+    },
+    "probability": 0.6,
+    "probNote": "振袖を着た割合は未確認の目安",
+    "source": {
+      "title": "成人の日（1948年制定 1月15日、2000年から1月第2月曜）/ 蕨市の成年式（1946年）",
+      "url": "https://zatsuneta.com/archives/101159.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1966-01-seijinshiki-youth-male",
+    "key": "seijinshiki",
+    "category": "custom",
+    "year": 1966,
+    "endYear": 1999,
+    "month": 1,
+    "ageMin": 20,
+    "ageMax": 20,
+    "sex": "male",
+    "title": "成人式",
+    "text": "成人式に出た。スーツを着て市民会館に行ったが、式の話はほとんど聞かず、ロビーで中学の同級生と近況を話しこんでいた。",
+    "effects": {
+      "happiness": 2,
+      "relation": 2
+    },
+    "probability": 0.55,
+    "probNote": "目安",
+    "source": {
+      "title": "成人の日（1948年制定 1月15日、2000年から1月第2月曜）/ 蕨市の成年式（1946年）",
+      "url": "https://zatsuneta.com/archives/101159.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-2000-01-seijinshiki-youth-2000",
+    "key": "seijinshiki",
+    "category": "custom",
+    "year": 2000,
+    "endYear": 2021,
+    "month": 1,
+    "ageMin": 20,
+    "ageMax": 20,
+    "sex": "any",
+    "title": "成人の日が月曜に",
+    "text": "成人の日が1月の第2月曜になり、三連休の真ん中に式があった。帰省してきた友だちと、そのまま朝まで飲み明かした。",
+    "effects": {
+      "happiness": 2,
+      "relation": 2
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "成人の日（1948年制定 1月15日、2000年から1月第2月曜）/ 蕨市の成年式（1946年）",
+      "url": "https://zatsuneta.com/archives/101159.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-2022-01-seijinshiki-youth-2022",
+    "key": "seijinshiki",
+    "category": "custom",
+    "year": 2022,
+    "endYear": 2025,
+    "month": 1,
+    "ageMin": 20,
+    "ageMax": 20,
+    "sex": "any",
+    "title": "二十歳のつどい",
+    "text": "成人年齢は18歳になったが、式は20歳のときに『二十歳のつどい』として開かれた。もう大人なのか、まだなのか、よく分からなかった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.6,
+    "probNote": "成人年齢は2022年4月1日から18歳。式を20歳で行う自治体がほとんど",
+    "source": {
+      "title": "成人の日（1948年制定 1月15日、2000年から1月第2月曜）/ 蕨市の成年式（1946年）",
+      "url": "https://zatsuneta.com/archives/101159.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1960-rush-youth",
+    "key": "rush",
+    "category": "custom",
+    "year": 1960,
+    "endYear": 1975,
+    "prefs": [
+      11,
+      12,
+      13,
+      14,
+      27,
+      28
+    ],
+    "ageMin": 18,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "bigco",
+        "smallco",
+        "public"
+      ]
+    },
+    "title": "通勤ラッシュ",
+    "text": "朝の電車は、駅員に背中を押されてやっと乗れるほどの混みようだった。降りる駅に着くころには、ボタンがひとつ取れていた。",
+    "effects": {
+      "health": -1,
+      "happiness": -2
+    },
+    "probability": 0.6,
+    "probNote": "大都市圏の勤め人。目安",
+    "source": {
+      "title": "楽天証券 トウシル（高度成長期の通勤ラッシュ 混雑率300%台）",
+      "url": "https://media.rakuten-sec.net/articles/print/53024",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1960-rush-adult",
+    "key": "rush",
+    "category": "custom",
+    "year": 1960,
+    "endYear": 1990,
+    "prefs": [
+      11,
+      12,
+      13,
+      14,
+      27,
+      28
+    ],
+    "ageMin": 30,
+    "ageMax": 55,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "bigco",
+        "smallco",
+        "public"
+      ]
+    },
+    "title": "通勤地獄",
+    "text": "郊外に家を建てたぶん、通勤は片道一時間半になった。満員電車で新聞を四つ折りにして読むのが、毎朝の小さな技になった。",
+    "effects": {
+      "health": -1,
+      "happiness": -2
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "楽天証券 トウシル（高度成長期の通勤ラッシュ 混雑率300%台）",
+      "url": "https://media.rakuten-sec.net/articles/print/53024",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1960-shain-ryokou-youth",
+    "key": "shain-ryokou",
+    "category": "custom",
+    "year": 1960,
+    "endYear": 1990,
+    "ageMin": 18,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "bigco",
+        "smallco",
+        "public"
+      ]
+    },
+    "title": "社員旅行",
+    "text": "会社の慰安旅行で温泉に行った。バスの中から酒が回り、夜の宴会では新人が出し物をさせられた。断れる空気ではなかった。",
+    "effects": {
+      "relation": 3,
+      "happiness": 1
+    },
+    "probability": 0.5,
+    "probNote": "1960〜80年代の実施率は未確認。目安",
+    "source": {
+      "title": "産労総合研究所 社内イベント・社員旅行等に関する調査（2014年 実施率46.0%）",
+      "url": "https://www.travelvoice.jp/20141212-33008",
+      "verified": false
+    }
+  },
+  {
+    "id": "custom-2000-shain-ryokou-youth-2000",
+    "key": "shain-ryokou",
+    "category": "custom",
+    "year": 2000,
+    "endYear": 2019,
+    "ageMin": 22,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "bigco",
+        "smallco",
+        "public"
+      ]
+    },
+    "title": "社員旅行は自由参加",
+    "text": "社員旅行の案内が回ってきたが、参加は自由だった。同期の半分は休日まで会社の人と過ごしたくないと言って行かなかった。",
+    "effects": {
+      "relation": 1
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "産労総合研究所 社内イベント・社員旅行等に関する調査（2014年 実施率46.0%、参加率60.5%）",
+      "url": "https://www.travelvoice.jp/20141212-33008",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1960-shuushin-koyou-youth",
+    "key": "shuushin-koyou",
+    "category": "custom",
+    "year": 1960,
+    "endYear": 1990,
+    "ageMin": 18,
+    "ageMax": 24,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "bigco",
+        "public"
+      ],
+      "notFlags": [
+        "lifetime_job"
+      ]
+    },
+    "title": "定年まで一つの会社",
+    "text": "入社式で社長が、諸君の一生は会社が預かると言った。同期の誰もが、定年までこの会社で働くものだと疑いもしなかった。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "lifetime_job"
+      ]
+    },
+    "probability": 0.6,
+    "probNote": "大企業・官公庁の新入社員。目安",
+    "source": {
+      "title": "労働政策研究・研修機構 日本的雇用慣行（終身雇用）",
+      "url": "https://www.jil.go.jp/institute/zassi/backnumber/2005/01/pdf/016-028.pdf",
+      "verified": false
+    }
+  },
+  {
+    "id": "custom-2000-shuushin-koyou-youth-2000",
+    "key": "shuushin-koyou",
+    "category": "custom",
+    "year": 2000,
+    "endYear": 2025,
+    "ageMin": 24,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "bigco",
+        "smallco"
+      ]
+    },
+    "title": "転職は当たり前",
+    "text": "入社三年目、同期の何人かが転職していった。一つの会社に一生いるという話は、もう親の世代の昔話のように聞こえた。",
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "労働政策研究・研修機構 日本的雇用慣行（終身雇用）",
+      "url": "https://www.jil.go.jp/institute/zassi/backnumber/2005/01/pdf/016-028.pdf",
+      "verified": false
+    }
+  },
+  {
+    "id": "custom-1955-smoking-youth",
+    "key": "smoking",
+    "category": "custom",
+    "year": 1955,
+    "endYear": 1975,
+    "ageMin": 18,
+    "ageMax": 25,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "smoker"
+      ]
+    },
+    "title": "たばこを覚えた",
+    "text": "職場では、たばこを吸わない男のほうが珍しかった。先輩にすすめられて一本吸い、むせた。ひと月もたたずに一日一箱になった。",
+    "effects": {
+      "health": -2,
+      "flags": [
+        "smoker"
+      ]
+    },
+    "probability": 0.25,
+    "probNote": "1966年の男性喫煙率83.7%から、20代前半で吸い始める年率として算出した目安",
+    "source": {
+      "title": "nippon.com 男性喫煙率（JT調査 1966年 男性83.7%）",
+      "url": "https://www.nippon.com/ja/features/h00198/",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-2005-smoking-youth-2005",
+    "key": "smoking",
+    "category": "custom",
+    "year": 2005,
+    "endYear": 2025,
+    "ageMin": 18,
+    "ageMax": 25,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "smoker"
+      ]
+    },
+    "title": "たばこは吸わない",
+    "text": "職場は全面禁煙で、吸う人は外の小さな喫煙所に肩を寄せて集まっていた。同期の男で、たばこを吸う人は数えるほどだった。",
+    "effects": {
+      "health": -2,
+      "flags": [
+        "smoker"
+      ]
+    },
+    "probability": 0.05,
+    "probNote": "吸い始める年率の目安。2018年値はJT原典を確かめていない",
+    "source": {
+      "title": "オリコン（2018年 男性喫煙率27.8%）",
+      "url": "https://www.oricon.co.jp/special/54484/",
+      "verified": false
+    }
+  },
+  {
+    "id": "custom-1980-nengajo-adult",
+    "key": "nengajo",
+    "category": "custom",
+    "year": 1980,
+    "endYear": 2005,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "bigco",
+        "smallco",
+        "public",
+        "self"
+      ]
+    },
+    "title": "年賀状書き",
+    "text": "年末は毎晩、年賀状を書いた。仕事関係だけで百枚を超えた。家族の分まで宛名を書き終えるころには、もう大みそかになっていた。",
+    "effects": {
+      "relation": 2
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "東洋経済 年賀はがき発行枚数（2003年 44億5936万枚がピーク）",
+      "url": "https://toyokeizai.net/articles/-/477220?display=b",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-2015-nengajo-senior",
+    "key": "nengajo",
+    "category": "custom",
+    "year": 2015,
+    "endYear": 2025,
+    "ageMin": 60,
+    "ageMax": 100,
+    "sex": "any",
+    "title": "年賀状じまい",
+    "text": "今年で年賀状は最後にします、と書き添えた。届く枚数も年々減っていた。代わりに孫からはスマホでお祝いの画像が届いた。",
+    "effects": {
+      "relation": -1
+    },
+    "probability": 0.1,
+    "probNote": "目安",
+    "source": {
+      "title": "北海道新聞（年賀はがき発行枚数の減少）",
+      "url": "https://www.hokkaido-np.co.jp/article/1243845/",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1975-sansedai-senior",
+    "key": "sansedai",
+    "category": "custom",
+    "year": 1975,
+    "endYear": 1985,
+    "ageMin": 65,
+    "ageMax": 100,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "sansedai"
+      ]
+    },
+    "title": "孫と同じ屋根の下",
+    "text": "長男夫婦と孫と同じ家で暮らした。朝は孫を学校へ送り出し、夕方は嫁と並んで台所に立った。気をつかうことも多かった。",
+    "effects": {
+      "relation": 3,
+      "flags": [
+        "sansedai"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "1980年の三世代世帯の割合（約5割）",
+    "source": {
+      "title": "厚生労働省 資料（昭和55年は65歳以上の者のいる世帯の半数が三世代世帯）",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/k-tyosa/k-tyosa10/4-1.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-2005-sansedai-senior-2005",
+    "key": "sansedai",
+    "category": "custom",
+    "year": 2005,
+    "endYear": 2025,
+    "ageMin": 65,
+    "ageMax": 100,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "sansedai"
+      ]
+    },
+    "title": "夫婦二人の暮らし",
+    "text": "子どもたちはみな家を出て、夫婦二人で暮らしていた。盆と正月に孫たちが来ると、静かな家が急ににぎやかになった。",
+    "effects": {
+      "relation": 0
+    },
+    "probability": 0.8,
+    "probNote": "三世代世帯18.3%（2007年）の残り",
+    "source": {
+      "title": "内閣府 高齢社会白書2009年版（三世代世帯 2007年18.3%）",
+      "url": "https://www8.cao.go.jp/kourei/whitepaper/w-2009/zenbun/pdf/1s2s_1.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1960-nakoudo-youth",
+    "key": "nakoudo",
+    "category": "custom",
+    "year": 1960,
+    "endYear": 1990,
+    "ageMin": 20,
+    "ageMax": 32,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "married_this_year"
+      ]
+    },
+    "title": "仲人を立てた",
+    "text": "結婚式は、会社の上司夫婦に仲人を頼んだ。結納の日には仲人が両家を行き来し、並べた品物を一つずつ読み上げていった。",
+    "effects": {
+      "relation": 2,
+      "money": -100000
+    },
+    "probability": 0.6,
+    "probNote": "married_this_year＝その年に結婚したときのフラグ。1960〜80年代の割合は未確認の目安",
+    "source": {
+      "title": "ゼクシィ結婚トレンド調査（仲人の減少）の紹介",
+      "url": "https://allabout.co.jp/gm/gc/290941",
+      "verified": false
+    }
+  },
+  {
+    "id": "custom-2005-nakoudo-youth-2005",
+    "key": "nakoudo",
+    "category": "custom",
+    "year": 2005,
+    "endYear": 2025,
+    "ageMin": 22,
+    "ageMax": 39,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "married_this_year"
+      ]
+    },
+    "title": "仲人はいない",
+    "text": "結婚式に仲人は立てなかった。結納もせず、両家の顔合わせの食事会で済ませた。親は少し寂しそうだったが、反対はしなかった。",
+    "probability": 0.95,
+    "source": {
+      "title": "All About ゼクシィ結婚トレンド調査2009（仲人を立てたのは1.1%）",
+      "url": "https://allabout.co.jp/gm/gc/290941",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1960-obon-kisei-youth",
+    "key": "obon-kisei",
+    "category": "custom",
+    "year": 1960,
+    "endYear": 1975,
+    "ageMin": 18,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "moved_to_city"
+      ]
+    },
+    "title": "盆の帰省",
+    "text": "盆休みに、夜行列車で田舎へ帰った。通路まで人があふれ、新聞紙を敷いて座った。駅に迎えに来た母が、少しやせて見えた。",
+    "effects": {
+      "relation": 3,
+      "happiness": 2
+    },
+    "probability": 0.5,
+    "probNote": "moved_to_city＝地元を出て都市に住んでいるフラグ。目安",
+    "source": {
+      "title": "（出典未確認）高度成長期の帰省ラッシュ",
+      "url": "https://www.toshiseibi.metro.tokyo.lg.jp/keikaku_chousa_singikai/pdf/tokyotoshizukuri/3_06.pdf",
+      "verified": false
+    }
+  },
+  {
+    "id": "custom-1976-obon-kisei-adult",
+    "key": "obon-kisei",
+    "category": "custom",
+    "year": 1976,
+    "endYear": 2019,
+    "ageMin": 30,
+    "ageMax": 55,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "moved_to_city"
+      ],
+      "married": true
+    },
+    "title": "帰省渋滞",
+    "text": "盆休み、子どもを乗せて車で実家へ向かった。高速道路は何十キロも渋滞し、着いたのは夜中だった。それでも毎年帰った。",
+    "effects": {
+      "relation": 3,
+      "happiness": 1
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "（出典未確認）お盆の帰省渋滞",
+      "url": "https://www.toshiseibi.metro.tokyo.lg.jp/keikaku_chousa_singikai/pdf/tokyotoshizukuri/3_06.pdf",
+      "verified": false
+    }
+  },
+  {
+    "id": "custom-1992-ikukyu-adult",
+    "key": "ikukyu",
+    "category": "custom",
+    "year": 1992,
+    "endYear": 2010,
+    "ageMin": 25,
+    "ageMax": 40,
+    "sex": "female",
+    "conditions": {
+      "flags": [
+        "gave_birth"
+      ],
+      "job": [
+        "bigco",
+        "public"
+      ]
+    },
+    "title": "育児休業を取った",
+    "text": "育児休業の法律ができ、出産後も一年休んでから職場に戻った。机は残っていたが、仕事の段取りはすっかり変わっていた。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.3,
+    "probNote": "施行は1992年4月とされるが今回確かめていない。取得率は目安",
+    "source": {
+      "title": "（施行日未確認）育児休業法",
+      "url": "https://www.jil.go.jp/kokunai/blt/backnumber/2024/10/kokunai_05.html",
+      "verified": false
+    }
+  },
+  {
+    "id": "custom-2023-papa-ikukyu-adult-male",
+    "key": "papa-ikukyu",
+    "category": "custom",
+    "year": 2023,
+    "endYear": 2025,
+    "ageMin": 25,
+    "ageMax": 45,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "gave_birth"
+      ]
+    },
+    "title": "男の育休",
+    "text": "子どもが生まれ、二か月の育児休業を取った。職場の男性で取るのはもう珍しくなかった。夜泣きの番を妻と交代でした。",
+    "effects": {
+      "relation": 4,
+      "happiness": 3
+    },
+    "probability": 0.3,
+    "probNote": "2023年度30.1%、2024年度40.5%。gave_birth は配偶者の出産でも立つ前提",
+    "source": {
+      "title": "nippon.com 男性の育休取得率3割超（2023年度 30.1%）",
+      "url": "https://www.nippon.com/ja/japan-data/h02079/",
+      "verified": true
+    }
+  },
+  {
+    "id": "custom-1995-papa-ikukyu-adult-1995",
+    "key": "papa-ikukyu",
+    "category": "custom",
+    "year": 1995,
+    "endYear": 2012,
+    "ageMin": 25,
+    "ageMax": 45,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "gave_birth"
+      ]
+    },
+    "title": "育休は取れなかった",
+    "text": "子どもが生まれたが、男が育休を取るなど考えられない職場だった。出産の翌日も出社し、夜遅く帰って寝顔だけを見た。",
+    "effects": {
+      "relation": -1
+    },
+    "probability": 0.9,
+    "probNote": "当時の男性取得率は数%以下（年ごとの値は未確認）",
+    "source": {
+      "title": "nippon.com 雇用均等基本調査（男性の育休取得率の推移）",
+      "url": "https://www.nippon.com/ja/japan-data/h02079/",
+      "verified": true
+    }
+  }
+]
