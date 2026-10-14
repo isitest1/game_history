@@ -5531,10 +5531,9 @@
     "probability": 0.25,
     "probNote": "目安。中学卒業後すぐ県外に就職した人の割合",
     "source": {
-      "title": "Wikipedia日本語版「集団就職」",
-      "url": "https://ja.wikipedia.org/wiki/%E9%9B%86%E5%9B%A3%E5%B0%B1%E8%81%B7",
-      "verified": false,
-      "note": "九州から関西・中京への集団就職の行き先と時期は個別に未確認"
+      "title": "文春オンライン 澤宮優『集団就職』紹介（昭和30年前後〜50年代前半、九州・沖縄から京阪神・名古屋へ）",
+      "url": "https://bunshun.jp/articles/-/3136",
+      "verified": true
     }
   },
   {
@@ -7305,10 +7304,10 @@
     "probNote": "目安",
     "heavy": true,
     "source": {
-      "title": "内閣府『令和8年版 防災白書』附属資料1（平成25年の大雪等、特に山梨）",
-      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
-      "verified": false,
-      "note": "白書は期間を平成25年11月〜26年3月、死者・行方不明者95人とする。2月の大雪の日付と積雪量は未確認"
+      "title": "気象庁 甲府地方気象台 大雪に関する山梨県気象速報（2014年2月14〜15日、甲府114cm、鉄道運休・道路通行止め）",
+      "url": "https://www.data.jma.go.jp/kofu/image/bsdb/20140217_h26_yuki.pdf",
+      "verified": true,
+      "note": "県内の孤立集落は内閣府 平成26年豪雪の被害状況（https://www.bousai.go.jp/updates/h26_02ooyuki/pdf/h26_02ooyuki_20.pdf）で確認"
     }
   },
   {
@@ -7333,10 +7332,9 @@
     "probNote": "目安",
     "heavy": true,
     "source": {
-      "title": "内閣府『令和8年版 防災白書』附属資料1（平成25年の大雪等、特に山梨）",
-      "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
-      "verified": false,
-      "note": "白書は期間を平成25年11月〜26年3月、死者・行方不明者95人とする。2月の大雪の日付と積雪量は未確認"
+      "title": "気象庁 甲府地方気象台 大雪に関する山梨県気象速報（2014年2月14〜15日、甲府114cm、鉄道運休・道路通行止め）",
+      "url": "https://www.data.jma.go.jp/kofu/image/bsdb/20140217_h26_yuki.pdf",
+      "verified": true
     }
   },
   {
@@ -7352,7 +7350,7 @@
     "ageMax": 84,
     "sex": "any",
     "title": "山梨の記録的大雪",
-    "text": "2月、山梨に記録的な大雪が降り、何日も家から出られなかった。この冬の大雪で、全国で95人が亡くなった。近所の人が雪かきに来てくれた。",
+    "text": "2月、山梨に記録的な大雪が降り、何日も家から出られなかった。この冬の大雪で、全国の死者・行方不明者は95人にのぼった。近所の人が雪かきに来てくれた。",
     "effects": {
       "health": -2,
       "happiness": -4
@@ -7361,10 +7359,10 @@
     "probNote": "目安",
     "heavy": true,
     "source": {
-      "title": "内閣府『令和8年版 防災白書』附属資料1（平成25年の大雪等、特に山梨）",
+      "title": "内閣府『令和8年版 防災白書』附属資料1（平成25年11月〜26年3月の大雪等、死者・行方不明者95人）",
       "url": "https://www.bousai.go.jp/kaigirep/hakusho/pdf/r8_appendix.pdf",
-      "verified": false,
-      "note": "白書は期間を平成25年11月〜26年3月、死者・行方不明者95人とする。2月の大雪の日付と積雪量は未確認"
+      "verified": true,
+      "note": "2月14〜15日の甲府114cmは気象庁 甲府地方気象台の山梨県気象速報で確認"
     }
   }
 ]

@@ -4097,9 +4097,9 @@
   },
   "probability": 0.05,
   "source": {
-   "title": "コトバンク 復員（陸海軍の動員規模）",
+   "title": "コトバンク 復員（ブリタニカ：700万人に上る陸海軍部隊の復員、世界大百科：終戦時陸軍約547万・海軍約242万）",
    "url": "https://kotobank.jp/word/復員",
-   "verified": false
+   "verified": true
   },
   "probNote": "終戦時に陸海軍に約700万人がいたことから、父親が召集される割合を1年あたり5%と置いた目安"
  },
@@ -4122,9 +4122,9 @@
   },
   "probability": 0.05,
   "source": {
-   "title": "コトバンク 復員（陸海軍の動員規模）",
+   "title": "コトバンク 復員（ブリタニカ：700万人に上る陸海軍部隊の復員、世界大百科：終戦時陸軍約547万・海軍約242万）",
    "url": "https://kotobank.jp/word/復員",
-   "verified": false
+   "verified": true
   },
   "probNote": "1年あたり5%の目安"
  },
@@ -4908,11 +4908,11 @@
   "probability": 0.95,
   "heavy": true,
   "source": {
-   "title": "コトバンク 中国残留孤児（ブリタニカ：在満日本人約150万）",
+   "title": "コトバンク 中国残留孤児（1945年8月9日ソ連軍の満州侵攻、在満日本人約150万）",
    "url": "https://kotobank.jp/word/中国残留孤児",
-   "verified": false
+   "verified": true
   },
-  "probNote": "開拓団の死者数は確かめられず、死亡確率は目安"
+  "probNote": "在満民間人約155万人のうち約24万5千人（約16%）、開拓団関係では約8万人（約30%）が亡くなったとの推計（滋賀大学『彦根論叢』438号 https://shiga-u.repo.nii.ac.jp/record/2000196/files/hikoron438_p.27_furumi.pdf）から0.15と置いた目安"
  },
  {
   "id": "war-1945-08-manchuria-soviet-youth",
@@ -4941,11 +4941,11 @@
   "probability": 0.95,
   "heavy": true,
   "source": {
-   "title": "コトバンク 中国残留孤児（ブリタニカ：在満日本人約150万）",
+   "title": "コトバンク 中国残留孤児（1945年8月9日ソ連軍の満州侵攻、在満日本人約150万）",
    "url": "https://kotobank.jp/word/中国残留孤児",
-   "verified": false
+   "verified": true
   },
-  "probNote": "死亡確率は目安"
+  "probNote": "在満民間人約155万人のうち約24万5千人（約16%）、開拓団関係では約8万人（約30%）が亡くなったとの推計（滋賀大学『彦根論叢』438号 https://shiga-u.repo.nii.ac.jp/record/2000196/files/hikoron438_p.27_furumi.pdf）から0.15と置いた目安"
  },
  {
   "id": "war-1945-zanryu-koji-child",
@@ -5139,9 +5139,9 @@
   "probability": 0.7,
   "heavy": true,
   "source": {
-   "title": "コトバンク 引揚げ（満州からの引揚げ開始時期は未確認）",
-   "url": "https://kotobank.jp/word/引揚げ",
-   "verified": false
+   "title": "平和祈念展示資料館 常設展示「海外からの引揚げ」（1946年の満州の収容所日誌、長春から葫蘆島への引揚げなど）",
+   "url": "https://www.heiwakinen.go.jp/about/josetsu-kaigai/",
+   "verified": true
   },
   "probNote": "目安"
  },
@@ -5174,9 +5174,9 @@
   "probability": 0.7,
   "heavy": true,
   "source": {
-   "title": "コトバンク 引揚げ（満州からの引揚げ開始時期は未確認）",
-   "url": "https://kotobank.jp/word/引揚げ",
-   "verified": false
+   "title": "平和祈念展示資料館 常設展示「海外からの引揚げ」（1946年の満州の収容所日誌、長春から葫蘆島への引揚げなど）",
+   "url": "https://www.heiwakinen.go.jp/about/josetsu-kaigai/",
+   "verified": true
   },
   "probNote": "目安"
  },
@@ -5248,11 +5248,11 @@
   "text": "1945年の秋、町に進駐軍の兵士がやって来た。怖いものと思っていたが、子どもたちに菓子をくれる兵士もいて、後を追いかける子もいた。",
   "probability": 0.5,
   "source": {
-   "title": "コトバンク 復員（敗戦と占領の経過）",
-   "url": "https://kotobank.jp/word/復員",
-   "verified": false
+   "title": "横浜市 年表（都市再生）：1945年8月28日 占領軍の第1次本土進駐、8月30日 マッカーサー厚木到着",
+   "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/gaiyo/shishiryo/showa/digital-archives/saisei/ks-nenpyou4.html",
+   "verified": true
   },
-  "probNote": "目安。進駐の時期と地域は確かめていない"
+  "probNote": "目安。進駐の開始（1945年8月末）は確認済み、地域ごとの進駐時期は確かめていない"
  },
  {
   "id": "war-1945-09-occupation-youth",
@@ -5268,9 +5268,9 @@
   "text": "1945年の秋、町に進駐軍の兵士がやって来た。昨日まで敵と呼んでいた相手だった。大人たちの態度ががらりと変わったことが忘れられなかった。",
   "probability": 0.5,
   "source": {
-   "title": "コトバンク 復員（敗戦と占領の経過）",
-   "url": "https://kotobank.jp/word/復員",
-   "verified": false
+   "title": "横浜市 年表（都市再生）：1945年8月28日 占領軍の第1次本土進駐、8月30日 マッカーサー厚木到着",
+   "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/gaiyo/shishiryo/showa/digital-archives/saisei/ks-nenpyou4.html",
+   "verified": true
   },
   "probNote": "目安"
  },
@@ -5380,9 +5380,9 @@
   },
   "probability": 0.6,
   "source": {
-   "title": "コトバンク 闇市（配給の不足と食糧難）",
+   "title": "コトバンク 闇市（敗戦後の配給の滞り、1946年の遅配の常態化、買出し）",
    "url": "https://kotobank.jp/word/闇市",
-   "verified": false
+   "verified": true
   },
   "probNote": "目安。戦後の米の収穫量などの数字は確かめていない"
  },
@@ -5404,9 +5404,9 @@
   },
   "probability": 0.6,
   "source": {
-   "title": "コトバンク 闇市（配給の不足と食糧難）",
+   "title": "コトバンク 闇市（敗戦後の配給の滞り、1946年の遅配の常態化、買出し）",
    "url": "https://kotobank.jp/word/闇市",
-   "verified": false
+   "verified": true
   },
   "probNote": "目安"
  },
@@ -5428,9 +5428,9 @@
   },
   "probability": 0.6,
   "source": {
-   "title": "コトバンク 闇市（配給の不足と食糧難）",
+   "title": "コトバンク 闇市（敗戦後の配給の滞り、1946年の遅配の常態化、買出し）",
    "url": "https://kotobank.jp/word/闇市",
-   "verified": false
+   "verified": true
   },
   "probNote": "目安"
  },
@@ -6190,9 +6190,10 @@
   },
   "probability": 0.8,
   "source": {
-   "title": "広島市 原爆被害の概要（登校日の慣習は未確認）",
+   "title": "広島市 死者数（1945年12月末までに約14万人）",
    "url": "https://www.city.hiroshima.lg.jp/soshiki/48/9400.html",
-   "verified": false
+   "verified": false,
+   "note": "約14万人は広島市の公式ページで確認。8月6日が夏休みの登校日になる慣習は、個人の記述しか見つからず公的資料で確認できなかった"
   },
   "probNote": "目安"
  },
@@ -6216,9 +6217,10 @@
   },
   "probability": 0.8,
   "source": {
-   "title": "長崎原爆資料館（登校日の慣習・投下時刻は未確認）",
+   "title": "長崎原爆資料館 Damage Caused by the Atomic Bombing（1945年12月末までに73,884人）",
    "url": "https://nagasakipeace.jp/en/reference/materials/kids/higai.html",
-   "verified": false
+   "verified": false,
+   "note": "73,884人は確認。8月9日が夏休みの登校日になる慣習は公的資料で確認できなかった（投下時刻11時2分は今回のページには記載なし）"
   },
   "probNote": "目安"
  },
