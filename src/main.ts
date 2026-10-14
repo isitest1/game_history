@@ -7,7 +7,10 @@ import { esc, wareki, yen, shortYen, html, sleep, reducedMotion } from './ui/for
 import { drawShareCard, shareText } from './ui/sharecard';
 import { HELP_LINES, SOURCES } from './ui/content';
 import { sound } from './ui/sound';
-import { loadEvents } from './sim/events';
+import { loadEvents, eventStats } from './sim/events';
+import { DAILY } from './sim/daily';
+import { playToEnd } from './sim/lab';
+import { DECISIONS } from './sim/decisions';
 import { sceneSvg } from './ui/scene';
 
 const app = document.getElementById('app')!;
@@ -24,7 +27,7 @@ const BREATH_AGES = [6, 15, 22, 40, 65];
 
 interface UiPrefs {
   playerBirthYear: number | null;
-  minutes: 10 | 15 | 30;
+  minutes: number;
   theme: 'auto' | 'light' | 'dark';
   sound: boolean;
   answers: Record<string, string>;
@@ -56,7 +59,10 @@ const store = {
   },
 };
 
-const ui: UiPrefs = { playerBirthYear: null, minutes: 15, theme: 'auto', sound: false, answers: {}, ...(store.get<UiPrefs>(PREF_KEY) ?? {}) };
+const ui: UiPrefs = { playerBirthYear: null, minutes: 25, theme: 'auto', sound: false, answers: {}, ...(store.get<UiPrefs>(PREF_KEY) ?? {}) };
+/** 遊ぶ長さ（分）。1倍の速さで、決断やひと息を含めた目安 */
+const LENGTHS = [15, 25, 40];
+if (!LENGTHS.includes(ui.minutes)) ui.minutes = 25;
 applyTheme();
 
 function savePrefs(): void {
@@ -130,7 +136,7 @@ function showTitle(): void {
             <div>
               <span id="lenlbl" style="font-size:14px;font-weight:700;display:block;margin-bottom:6px">遊ぶ長さ</span>
               <div class="seg" role="group" aria-labelledby="lenlbl">
-                ${[10, 15, 30].map((m) => `<button type="button" data-min="${m}" aria-pressed="${ui.minutes === m}">${m}分</button>`)}
+                ${LENGTHS.map((m) => `<button type="button" data-min="${m}" aria-pressed="${ui.minutes === m}">${m}分</button>`)}
               </div>
             </div>
           </div>
@@ -146,7 +152,9 @@ function showTitle(): void {
       </div>
       <div class="hero-art" aria-hidden="true">${[0, 1, 2].map((i) => `<div class="art-card ${ERA_CLASS[i]}" data-art="${i}"></div>`).join('')}</div>
       </div>
-    </main>`;
+      <div class="hero-bg" aria-hidden="true">${[1940, 1972, 2030].map((y, i) => `<div class="${ERA_CLASS[i]}">${sceneSvg(y)}</div>`).join('')}</div>
+    </main>
+    ${titleSections()}`;
   bindCommon(app);
   // 年号がくるくる回る。右の札には、その年に生まれた人の数字を出す
   const els = app.querySelectorAll<HTMLElement>('[data-roll]');
@@ -170,15 +178,17 @@ function showTitle(): void {
       if (!document.body.contains(els[0])) return clearInterval(iv);
       n++;
       paint(1960 + ((5 + n * 7) % 16));
-    }, 2600);
+    }, 6000);
   }
   app.querySelectorAll<HTMLButtonElement>('[data-min]').forEach((b) =>
     b.addEventListener('click', () => {
-      ui.minutes = Number(b.dataset.min) as 10 | 15 | 30;
+      ui.minutes = Number(b.dataset.min);
       app.querySelectorAll('[data-min]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
       savePrefs();
     }),
   );
+  startCounter();
+  fillSample();
   app.querySelector('[data-act="resume"]')?.addEventListener('click', () => {
     state = saved;
     if (state) showLife();
@@ -197,6 +207,123 @@ function showTitle(): void {
     store.set(SAVE_KEY, state);
     showGacha();
   });
+}
+
+// ---------- トップページの情報 ----------
+
+/** 令和7（2025）年 人口動態統計（確定数）。厚生労働省、2026年9月30日公表 */
+const VITAL_2025 = { births: 671270, deaths: 1589533, marriages: 489158 };
+const SEC_PER_YEAR = 365 * 24 * 3600;
+
+function titleSections(): string {
+  const ex = [1940, 1970, 2000];
+  const avg = (f: (sx: 'male' | 'female') => number) => (f('male') + f('female')) / 2;
+  const cell = (v: string) => `<td>${v}</td>`;
+  const rows: [string, (y: number) => string][] = [
+    ['生まれた赤ちゃん', (y) => `${Math.round(S.nationalBirths(y) / 10000)}万人`],
+    ['1歳になる前に亡くなる', (y) => `${Math.round(1 / Math.max(0.0003, avg((sx) => S.qx(y, 0, sx))))}人に1人`],
+    ['高校へ進む（15歳）', (y) => `${Math.round(avg((sx) => S.eduRate('highSchool', y + 15, sx)))}%`],
+    ['大学・短大へ進む（18歳）', (y) => `${Math.round(avg((sx) => S.eduRate('university', y + 18, sx) + S.eduRate('juniorCollege', y + 18, sx)))}%`],
+    ['見込みの寿命', (y) => `${Math.round(avg((sx) => cohortLifeExpectancy(y, sx)))}歳`],
+    ['年金をもらい始める（男性）', (y) => `${S.pensionStartAge(y, 4, 'male')}歳`],
+  ];
+  const daily = DAILY.filter((d) => d.kind === 'daily').length;
+  const think = DAILY.length - daily;
+  const hist = store.get<HistRec[]>(HIST_KEY) ?? [];
+  return html`<section class="tsec counter-band" aria-label="いまの日本">
+      <div class="wrap">
+        <p class="kicker">今日、0時から今までに、日本では</p>
+        <div class="counters">
+          <div><b id="cBirth">0</b><span>人が生まれ</span></div>
+          <div><b id="cDeath">0</b><span>人が亡くなり</span></div>
+          <div><b id="cMarry">0</b><span>組が結婚しました</span></div>
+        </div>
+        <p class="muted small">1日に約${Math.round(VITAL_2025.births / 365).toLocaleString('ja-JP')}人が生まれ、約${Math.round(VITAL_2025.deaths / 365).toLocaleString('ja-JP')}人が亡くなっています。1949年には、1日に約${Math.round(S.nationalBirths(1949) / 365).toLocaleString('ja-JP')}人が生まれていました。<br />令和7（2025）年 人口動態統計（確定数）の年間の数を、1秒あたりにならした目安です。</p>
+      </div>
+    </section>
+    <section class="tsec">
+      <div class="wrap">
+        <h2>生まれた年で、こんなに違う</h2>
+        <p class="lead2">同じ日本、同じ家に生まれても、30年ずれるだけで、一生の前提が変わります。</p>
+        <div class="cmp-wrap"><table class="cmp3">
+          <thead><tr><th></th>${ex.map((y, i) => `<th class="${ERA_CLASS[i]}"><b>${y}</b><small>${wareki(y)}生まれ</small></th>`).join('')}</tr></thead>
+          <tbody>${rows.map(([k, f]) => `<tr><th>${k}</th>${ex.map((y) => cell(f(y))).join('')}</tr>`).join('')}</tbody>
+        </table></div>
+        <p class="muted small">人口動態統計・生命表・学校基本調査・年金制度の資料から。2000年生まれの寿命は、国の将来推計の死亡率を使った見込みです。</p>
+      </div>
+    </section>
+    <section class="tsec">
+      <div class="wrap">
+        <h2>たとえば、今日のこんな3人</h2>
+        <p class="lead2">同じ一人が、三つの時代に生まれたら。このゲームで、今日いちどだけ回した結果です。</p>
+        <div class="sample3" id="sample3"><p class="muted">人生を計算しています…</p></div>
+      </div>
+    </section>
+    <section class="tsec">
+      <div class="wrap">
+        <h2>このゲームの中にあるもの</h2>
+        <div class="nums">
+          <div><b id="nEvents">…</b><span>実際にあった出来事</span></div>
+          <div><b>${daily.toLocaleString('ja-JP')}</b><span>時代ごとの日々の場面</span></div>
+          <div><b>${think.toLocaleString('ja-JP')}</b><span>その人の心の声</span></div>
+          <div><b>${DECISIONS.length}</b><span>人生の決断</span></div>
+        </div>
+        <ul class="features">
+          <li><b>3人に同じ決断</b>あなたが選んだことは3人全員に当てはまります。けれど、叶うかどうかは時代が決めます。</li>
+          <li><b>日本の実際の統計</b>寿命・進学・就職・結婚・賃金・物価・年金を、政府の統計で動かしています。</li>
+          <li><b>日々の暮らし</b>銭湯、ファミコン、ポケベル、スマホ。時代ごとの暮らしの手ざわりと、その人が思ったことが毎年出てきます。</li>
+          <li><b>最後に見比べる</b>享年、生涯年収、年金、叶わなかった望み、そして3人がそれぞれ思ったことを並べます。</li>
+        </ul>
+      </div>
+    </section>
+    ${hist.length
+      ? `<section class="tsec"><div class="wrap"><h2>あなたの前世</h2><ul class="hist3">${hist
+          .slice(0, 3)
+          .map((r) => `<li><small>${esc(r.at)}・${S.PREFS[r.pref - 1]}・${r.sex === 'male' ? '男' : '女'}</small>${r.years.map((y, k) => `<span>${y}年生まれ ${esc(r.names[k]?.split(' ')[1] ?? '')}：享年${r.deaths[k] ?? '−'}</span>`).join('')}${r.okuri ? `<em>「${esc(r.okuri.slice(0, 60))}」</em>` : ''}</li>`)
+          .join('')}</ul></div></section>`
+      : ''}`;
+}
+
+/** 今日0時からの出生・死亡・婚姻の目安（年間の数を1秒あたりにならす） */
+function startCounter(): void {
+  const els = ['#cBirth', '#cDeath', '#cMarry'].map((q) => app.querySelector(q) as HTMLElement | null);
+  const per = [VITAL_2025.births, VITAL_2025.deaths, VITAL_2025.marriages].map((n) => n / SEC_PER_YEAR);
+  const tick = () => {
+    if (!els[0] || !document.body.contains(els[0])) return;
+    const now = new Date();
+    const sec = now.getHours() * 3600 + now.getMinutes() * 60 + now.getSeconds();
+    els.forEach((el, k) => el && (el.textContent = Math.floor(sec * per[k]).toLocaleString('ja-JP')));
+    setTimeout(tick, 1000);
+  };
+  tick();
+}
+
+/** 今日の日付で決まる、見本の3人 */
+async function fillSample(): Promise<void> {
+  await loadEvents();
+  const ne = app.querySelector('#nEvents');
+  if (ne) ne.textContent = eventStats().total.toLocaleString('ja-JP');
+  const box = app.querySelector('#sample3');
+  if (!box) return;
+  const day = Math.floor(Date.now() / 86400000);
+  const st = playToEnd(createGame({ seed: 100000 + day }));
+  const usedT = new Set<string>();
+  box.innerHTML = st.persons
+    .map((p, i) => {
+      const kids = p.children.length;
+      const fam = p.marriageAge !== undefined ? `${p.marriageAge}歳で結婚${kids ? `、子ども${kids}人` : ''}` : '結婚しなかった';
+      const job = p.jobTitle || (p.age < 15 ? '' : '仕事に就かなかった');
+      const ts = p.log.filter((e) => e.kind === 'think' && e.age >= 15 && !usedT.has(e.text));
+      const t = ts[Math.floor(ts.length / 2)];
+      if (t) usedT.add(t.text);
+      return `<article class="s3 ${ERA_CLASS[i]}">
+        <header><b>${p.birthYear}</b><span>${esc(p.name)}・${S.PREFS[p.pref - 1]}</span></header>
+        <p class="s3-k">享年${p.deathAge}<small>${esc(p.deathCause ?? '')}</small></p>
+        <p>${p.deathAge !== undefined && p.deathAge < 15 ? `${p.deathAge}歳で亡くなった。` : `${EDU_LABEL[p.edu]}。${esc(job)}。${fam}。`}</p>
+        ${t ? `<p class="s3-t">${esc(t.text)}<small>${t.age}歳</small></p>` : ''}
+      </article>`;
+    })
+    .join('');
 }
 
 // ---------- ガチャ ----------
@@ -355,7 +482,7 @@ const FOCUS: { id: Focus; label: string; minAge: number; maxAge: number }[] = [
 ];
 
 /** 進む速さ。0.5倍・0.8倍でゆっくり読める。選んだ速さはこの端末に覚えておく */
-const SPEEDS = [0.5, 0.8, 1, 2, 4, 8];
+const SPEEDS = [0.5, 0.75, 1, 1.5, 2, 4, 8];
 let speed = SPEEDS.includes(Number(ui.speed)) ? Number(ui.speed) : 1;
 let paused = false;
 let untilDecision = false;
@@ -390,6 +517,8 @@ async function showLife(): Promise<void> {
       <div class="yearprog"><i id="prog"></i></div>
     </div>
     <main class="life" id="main">
+      <aside class="side side-l" id="sideL" aria-label="この年の日本"></aside>
+      <aside class="side side-r" id="sideR" aria-label="3人のいま"></aside>
       <div class="cols">
         ${st.persons.map((p, i) => `<section class="col ${ERA_CLASS[i]}" id="col${i}" aria-label="${p.birthYear}年生まれの人生"></section>`)}
       </div>
@@ -404,7 +533,10 @@ async function showLife(): Promise<void> {
         <div class="row1">
           <div class="grp">
             <button class="iconbtn" id="pp" aria-pressed="false" aria-label="一時停止">❚❚</button>
-            <button class="iconbtn" id="spd">×1</button>
+            <span class="spdwrap">
+              <button class="iconbtn" id="spd" aria-haspopup="true" aria-expanded="false">×1</button>
+              <span class="spdmenu" id="spdmenu" role="radiogroup" aria-label="速さ" hidden>${SPEEDS.map((v) => `<button type="button" role="radio" data-spd="${v}" aria-checked="false">×${v}</button>`).join('')}</span>
+            </span>
             <button class="iconbtn" id="kurashi" aria-label="家族とお金、思いを残す">暮らし</button>
           </div>
           <div class="grp">
@@ -446,16 +578,50 @@ async function showLife(): Promise<void> {
     pp.textContent = paused ? '▶' : '❚❚';
     pp.setAttribute('aria-label', paused ? '再生' : '一時停止');
   });
+  // 速さ：押すと一覧が開き、一度で選べる
   const spd = app.querySelector('#spd') as HTMLButtonElement;
-  spd.textContent = `×${speed}`;
-  spd.setAttribute('aria-label', `速さ ×${speed}（押すと切り替わる）`);
-  spd.addEventListener('click', () => {
-    speed = SPEEDS[(SPEEDS.indexOf(speed) + 1) % SPEEDS.length];
+  const menu = app.querySelector('#spdmenu') as HTMLElement;
+  const showSpeed = () => {
     spd.textContent = `×${speed}`;
-    spd.setAttribute('aria-label', `速さ ×${speed}（押すと切り替わる）`);
+    spd.setAttribute('aria-label', `速さ ×${speed}（押すと選べる）`);
+    menu.querySelectorAll<HTMLButtonElement>('[data-spd]').forEach((b) => b.setAttribute('aria-checked', String(Number(b.dataset.spd) === speed)));
+  };
+  const openMenu = (open: boolean) => {
+    menu.hidden = !open;
+    spd.setAttribute('aria-expanded', String(open));
+    if (open) (menu.querySelector('[aria-checked="true"]') as HTMLButtonElement | null)?.focus();
+  };
+  showSpeed();
+  spd.addEventListener('click', (e) => {
+    e.stopPropagation();
+    openMenu(menu.hidden);
+  });
+  menu.addEventListener('click', (e) => {
+    const b = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-spd]');
+    if (!b) return;
+    e.stopPropagation();
+    speed = Number(b.dataset.spd);
     ui.speed = speed;
     savePrefs();
+    showSpeed();
+    openMenu(false);
+    spd.focus();
   });
+  menu.addEventListener('keydown', (e) => {
+    const bs = Array.from(menu.querySelectorAll<HTMLButtonElement>('[data-spd]'));
+    const k = bs.indexOf(document.activeElement as HTMLButtonElement);
+    if (e.key === 'Escape') {
+      openMenu(false);
+      spd.focus();
+    } else if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+      e.preventDefault();
+      bs[Math.min(bs.length - 1, k + 1)]?.focus();
+    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      bs[Math.max(0, k - 1)]?.focus();
+    }
+  });
+  document.addEventListener('click', () => !menu.hidden && openMenu(false));
   app.querySelector('#next')!.addEventListener('click', () => {
     untilDecision = true;
     paused = false;
@@ -516,6 +682,55 @@ function deathPending(p: Person): boolean {
   return !!d && hiddenEntries.has(d);
 }
 
+// ---------- 画面の差分更新 ----------
+// 毎回 innerHTML で作り直すと、すべての行が描き直されてチカチカする。
+// 中身が変わった行だけを入れ替え、初めて出る行だけを一度だけふわっと出す。
+
+const htmlOf = new WeakMap<Element, string>();
+const tpl = document.createElement('template');
+
+function toEl(h: string): HTMLElement {
+  tpl.innerHTML = h.trim();
+  return tpl.content.firstElementChild as HTMLElement;
+}
+
+/** box の子を items の並びにそろえる。key が同じで html も同じ行は、そのまま残す */
+function patch(box: Element, items: { key: string; html: string }[]): HTMLElement[] {
+  const old = new Map<string, HTMLElement>();
+  for (const c of Array.from(box.children)) old.set((c as HTMLElement).dataset.k ?? '', c as HTMLElement);
+  const added: HTMLElement[] = [];
+  let prev: Element | null = null;
+  for (const it of items) {
+    let el = old.get(it.key);
+    old.delete(it.key);
+    if (!el || htmlOf.get(el) !== it.html) {
+      const n = toEl(it.html);
+      n.dataset.k = it.key;
+      htmlOf.set(n, it.html);
+      if (el) el.replaceWith(n);
+      else added.push(n);
+      el = n;
+    }
+    const want: Element | null = prev ? prev.nextElementSibling : box.firstElementChild;
+    if (want !== el) box.insertBefore(el, want);
+    prev = el;
+  }
+  old.forEach((el) => el.remove());
+  return added;
+}
+
+/** その年に初めて画面に出た記録（一度だけ、ふわっと出す） */
+const entered = new WeakSet<LogEntry>();
+function markEnter(root: Element, list: { el: Element | null; e: LogEntry }[]): void {
+  if (reducedMotion()) return;
+  for (const { el, e } of list) {
+    if (!el || entered.has(e)) continue;
+    entered.add(e);
+    el.classList.add('enter');
+  }
+  void root;
+}
+
 function renderCol(i: number): void {
   if (!state) return;
   const p = state.persons[i];
@@ -524,31 +739,47 @@ function renderCol(i: number): void {
   const alive = p.alive || deathPending(p);
   const age = alive ? shownAge : p.deathAge ?? shownAge;
   const year = p.birthYear + age;
-  const entries = isMobile() ? [] : p.log.filter(isShown).slice(-6).reverse();
   const s = p.stats;
   col.classList.toggle('dead', !alive);
-  if (col.dataset.year !== String(year) || !col.querySelector('.scene')) {
-    col.dataset.year = String(year);
-    col.innerHTML = `${sceneSvg(year)}<div class="col-body"></div>`;
+  if (!col.querySelector('.col-body')) col.innerHTML = `<div class="scene-slot"></div><div class="col-body"><div class="col-top"></div><ul class="feed"></ul></div>`;
+  // 町並みは、絵が変わるときだけ入れ替える
+  const scene = sceneSvg(year);
+  const slot = col.querySelector('.scene-slot') as HTMLElement;
+  if (htmlOf.get(slot) !== scene) {
+    slot.innerHTML = scene;
+    htmlOf.set(slot, scene);
   }
-  const body = col.querySelector('.col-body') as HTMLElement;
-  body.innerHTML = html`
-    <div class="col-head"><span class="yr-num">${year}</span><span class="wa">${wareki(year)}</span></div>
-    <div class="who"><span class="nm">${esc(p.name)}</span><span class="st">${esc(statusLine(p))}</span></div>
-    ${!alive
-      ? `<div class="tomb"><div class="line">${p.birthYear}–${p.deathYear}</div><div class="kyonen">享年${p.deathAge}</div><div class="line">${esc(p.deathCause ?? '')}</div></div><div class="mini" aria-hidden="true"><b>${esc(p.name.split(' ')[1] ?? p.name)}</b><span>${esc(p.deathCause ?? '')}</span></div>`
-      : html`<div class="bars" role="img" aria-label="健康${Math.round(s.health)}、幸福${Math.round(s.happiness)}、知識${Math.round(s.knowledge)}、人間関係${Math.round(s.relation)}">
-          <span class="b" title="健康"><em>健康</em><span class="bar"><i style="width:${s.health}%"></i></span></span>
-          <span class="b" title="幸福"><em>幸福</em><span class="bar"><i style="width:${s.happiness}%"></i></span></span>
-          <span class="b" title="知識"><em>知識</em><span class="bar"><i style="width:${s.knowledge}%"></i></span></span>
-          <span class="b" title="人間関係"><em>関係</em><span class="bar"><i style="width:${s.relation}%"></i></span></span>
-        </div>
-        <div class="money"><span>${p.money < 0 ? 'ローン' : '貯え'}</span><b>${yen(Math.abs(p.money))}</b></div>
-        ${p.income > 0 && !p.retired ? `<div class="money inc"><span>年収</span><b>${yen(p.income)}</b></div>` : p.pensionMonthly ? `<div class="money inc"><span>年金</span><b>月${yen(p.pensionMonthly)}</b></div>` : ''}
-        <div class="mini" aria-hidden="true"><b>${esc(p.name.split(' ')[1] ?? p.name)}</b><span>${p.money < 0 ? '借金' : '貯え'}${shortYen(Math.abs(p.money))}</span></div>`}
-    <ul class="feed">
-      ${entries.map((e, k) => feedItem(e, k > 0 && !freshEntries.has(e)))}
-    </ul>`;
+  const nm1 = esc(p.name.split(' ')[1] ?? p.name);
+  const slots: Record<string, string> = {
+    head: `<div class="col-head"><span class="yr-num">${year}</span><span class="wa">${wareki(year)}</span></div>`,
+    who: `<div class="who"><span class="nm">${esc(p.name)}</span><span class="st">${esc(statusLine(p))}</span></div>`,
+    state: !alive
+      ? `<div class="tomb"><div class="line">${p.birthYear}–${p.deathYear}</div><div class="kyonen">享年${p.deathAge}</div><div class="line">${esc(p.deathCause ?? '')}</div></div>`
+      : `<div class="bars" role="img"><span class="b" title="健康"><em>健康</em><span class="bar"><i></i></span></span><span class="b" title="幸福"><em>幸福</em><span class="bar"><i></i></span></span><span class="b" title="知識"><em>知識</em><span class="bar"><i></i></span></span><span class="b" title="人間関係"><em>関係</em><span class="bar"><i></i></span></span></div>`,
+    money: alive ? `<div class="money"><span>${p.money < 0 ? 'ローン' : '貯え'}</span><b>${yen(Math.abs(p.money))}</b></div>` : '',
+    inc: alive ? (p.income > 0 && !p.retired ? `<div class="money inc"><span>年収</span><b>${yen(p.income)}</b></div>` : p.pensionMonthly ? `<div class="money inc"><span>年金</span><b>月${yen(p.pensionMonthly)}</b></div>` : '') : '',
+    mini: `<div class="mini" aria-hidden="true"><b>${nm1}</b><span>${alive ? `${p.money < 0 ? '借金' : '貯え'}${shortYen(Math.abs(p.money))}` : esc(p.deathCause ?? '')}</span></div>`,
+  };
+  const topEl = col.querySelector('.col-top') as HTMLElement;
+  if (!topEl.children.length) topEl.innerHTML = Object.keys(slots).map((k) => `<div class="slot" data-slot="${k}"></div>`).join('');
+  for (const [k, h] of Object.entries(slots)) {
+    const el = topEl.querySelector(`[data-slot="${k}"]`) as HTMLElement;
+    if (htmlOf.get(el) !== h) {
+      el.innerHTML = h;
+      htmlOf.set(el, h);
+    }
+  }
+  // 棒は作り直さず、長さだけを変える（なめらかに伸び縮みする）
+  const bars = topEl.querySelectorAll<HTMLElement>('.bar i');
+  if (bars.length === 4) {
+    [s.health, s.happiness, s.knowledge, s.relation].forEach((v, k) => (bars[k].style.width = `${v}%`));
+    topEl.querySelector('.bars')?.setAttribute('aria-label', `健康${Math.round(s.health)}、幸福${Math.round(s.happiness)}、知識${Math.round(s.knowledge)}、人間関係${Math.round(s.relation)}`);
+  }
+  const feed = col.querySelector('.feed') as HTMLElement;
+  const entries = isMobile() ? [] : p.log.filter(isShown).slice(-6).reverse();
+  const keyOf = (e: LogEntry) => `e${p.log.indexOf(e)}`;
+  patch(feed, entries.map((e) => ({ key: keyOf(e), html: feedItem(e, false) })));
+  markEnter(feed, entries.map((e) => ({ el: feed.querySelector(`[data-k="${keyOf(e)}"]`), e })));
 }
 
 /** スマホ：3列の下に、同い年の出来事を横幅いっぱいで読めるように並べる */
@@ -557,68 +788,84 @@ function renderMFeed(): void {
   const box = app.querySelector('#mfeed') as HTMLElement | null;
   if (!box) return;
   if (!isMobile()) {
-    if (box.innerHTML) box.innerHTML = '';
+    if (box.firstChild) box.replaceChildren();
     return;
   }
   const st = state;
   const rows: { e: LogEntry; i: number }[] = [];
   st.persons.forEach((p, i) => p.log.filter(isShown).forEach((e) => rows.push({ e, i })));
   const ages = [...new Set(rows.map((r) => r.e.age))].sort((a, b) => b - a).slice(0, 4);
-  // 同い年の3人を、横にめくらずに縦に並べて見比べる。本文は2行まで、押すと全文
-  box.innerHTML = ages
-    .map((age) => {
-      const lines = st.persons.map((p, i) => {
-        const es = rows.filter((r) => r.i === i && r.e.age === age).map((r) => r.e);
-        const year = p.birthYear + age;
-        const whoOf = (more = '') => `<span class="mwho"><b>${year}</b><small>${esc(p.name.split(' ')[1] ?? '')}</small>${more}</span>`;
-        const who = whoOf();
-        if (!es.length) {
-          const dead = p.deathAge !== undefined && p.deathAge < age && !deathPending(p);
-          if (dead) return '';
-          return `<div class="mline ${ERA_CLASS[i]} empty">${who}<div class="mbody"><p class="d">特に記録なし</p></div></div>`;
-        }
-        const moreKey = `${i}:${age}:more`;
-        // 3人を一度に見られるよう、1人につき大事な1件と、心の声1つだけを出す。残りは「ほか○件」で開く
-        const rank = (e: LogEntry) => KIND_RANK[e.kind] ?? 5;
-        const sorted = [...es].sort((x, y) => rank(x) - rank(y));
-        const main = sorted.find((e) => e.kind !== 'think') ?? sorted[0];
-        // 2行目は心の声。なければ日々のこと（出来事だけでは、その人の暮らしが見えないため）
-        const second = sorted.find((e) => e.kind === 'think' && e !== main) ?? (main.kind !== 'daily' ? sorted.find((e) => e.kind === 'daily') : undefined);
-        const top = [main, second].filter(Boolean) as LogEntry[];
-        const showAll = openKeys.has(moreKey) || es.length <= top.length;
-        const visible = showAll ? [...top, ...sorted.filter((e) => !top.includes(e))] : top;
-        const inner = visible
-          .map((e) => {
-            const key = `${i}:${age}:${p.log.indexOf(e)}`;
-            const cls = [`k-${e.kind}`, e.kind === 'wish' ? 'wish' : '', e.kind === 'decision' || e.kind === 'wish' ? 'dec' : '', e.kind === 'death' ? 'death' : '', e.heavy ? 'heavy' : '', freshEntries.has(e) ? 'fresh' : '', openKeys.has(key) ? 'open' : ''].join(' ');
-            const plain = e.kind === 'daily' || e.kind === 'think';
-            return `<button type="button" class="ment ${cls}" data-key="${key}" aria-expanded="${openKeys.has(key)}">${plain ? '' : `<b class="t">${esc(e.title)}</b>`}<span class="d">${esc(e.text)}</span></button>${e.heavy ? '<button class="help-note" data-act="helpnote">つらいときの相談先</button>' : ''}`;
-          })
-          .join('');
-        const more = showAll ? '' : `<button type="button" class="mmore" data-more="${moreKey}">ほか${es.length - top.length}件</button>`;
-        return `<div class="mline ${ERA_CLASS[i]}">${whoOf(more)}<div class="mbody">${inner}</div></div>`;
-      });
-      const gone = st.persons.filter((p) => p.deathAge !== undefined && p.deathAge < age && !deathPending(p)).map((p) => `${esc(p.name.split(' ')[1] ?? '')}は${p.deathAge}歳で死去`);
-      return `<section class="mrow"><h3 class="mage">${age}歳${gone.length ? `<small>${gone.join('・')}</small>` : ''}</h3>${lines.join('')}</section>`;
-    })
-    .join('');
-  box.querySelectorAll<HTMLButtonElement>('[data-more]').forEach((b) =>
-    b.addEventListener('click', (ev) => {
-      ev.stopPropagation();
-      openKeys.add(b.dataset.more!);
-      renderMFeed();
-    }),
-  );
-  box.querySelectorAll<HTMLButtonElement>('.ment[data-key]').forEach((b) =>
-    b.addEventListener('click', (ev) => {
-      ev.stopPropagation();
-      const k = b.dataset.key!;
-      if (openKeys.has(k)) openKeys.delete(k);
-      else openKeys.add(k);
-      b.classList.toggle('open', openKeys.has(k));
-      b.setAttribute('aria-expanded', String(openKeys.has(k)));
-    }),
-  );
+  const shownNow: { key: string; e: LogEntry }[] = [];
+  // 年齢ごとの段（section）は残したまま、中の行だけを入れ替える
+  const sections = ages.map((age) => {
+    const gone = st.persons.filter((p) => p.deathAge !== undefined && p.deathAge < age && !deathPending(p)).map((p) => `${esc(p.name.split(' ')[1] ?? '')}は${p.deathAge}歳で死去`);
+    const head = `<h3 class="mage">${age}歳${gone.length ? `<small>${gone.join('・')}</small>` : ''}</h3>`;
+    const lines = st.persons.map((p, i) => {
+      const es = rows.filter((r) => r.i === i && r.e.age === age).map((r) => r.e);
+      const year = p.birthYear + age;
+      const whoOf = (more = '') => `<span class="mwho"><b>${year}</b><small>${esc(p.name.split(' ')[1] ?? '')}</small>${more}</span>`;
+      if (!es.length) {
+        const dead = p.deathAge !== undefined && p.deathAge < age && !deathPending(p);
+        if (dead) return null;
+        return { key: `p${i}`, html: `<div class="mline ${ERA_CLASS[i]} empty">${whoOf()}<div class="mbody"><p class="d">特に記録なし</p></div></div>` };
+      }
+      const moreKey = `${i}:${age}:more`;
+      // 3人を一度に見られるよう、1人につき大事な1件と、心の声1つだけを出す。残りは「ほか○件」で開く
+      const rank = (e: LogEntry) => KIND_RANK[e.kind] ?? 5;
+      const sorted = [...es].sort((x, y) => rank(x) - rank(y));
+      const main = sorted.find((e) => e.kind !== 'think') ?? sorted[0];
+      // 2行目は心の声。なければ日々のこと（出来事だけでは、その人の暮らしが見えないため）
+      const second = sorted.find((e) => e.kind === 'think' && e !== main) ?? (main.kind !== 'daily' ? sorted.find((e) => e.kind === 'daily') : undefined);
+      const top = [main, second].filter(Boolean) as LogEntry[];
+      const showAll = openKeys.has(moreKey) || es.length <= top.length;
+      const visible = showAll ? [...top, ...sorted.filter((e) => !top.includes(e))] : top;
+      const inner = visible
+        .map((e) => {
+          const key = `${i}:${age}:${p.log.indexOf(e)}`;
+          shownNow.push({ key, e });
+          const cls = [`k-${e.kind}`, e.kind === 'wish' ? 'wish' : '', e.kind === 'decision' || e.kind === 'wish' ? 'dec' : '', e.kind === 'death' ? 'death' : '', e.heavy ? 'heavy' : '', openKeys.has(key) ? 'open' : ''].join(' ');
+          const plain = e.kind === 'daily' || e.kind === 'think';
+          return `<button type="button" class="ment ${cls}" data-key="${key}" aria-expanded="${openKeys.has(key)}">${plain ? '' : `<b class="t">${esc(e.title)}</b>`}<span class="d">${esc(e.text)}</span></button>${e.heavy ? '<button class="help-note" data-act="helpnote">つらいときの相談先</button>' : ''}`;
+        })
+        .join('');
+      const more = showAll ? '' : `<button type="button" class="mmore" data-more="${moreKey}">ほか${es.length - top.length}件</button>`;
+      return { key: `p${i}`, html: `<div class="mline ${ERA_CLASS[i]}">${whoOf(more)}<div class="mbody">${inner}</div></div>` };
+    });
+    return { age, head, lines: lines.filter(Boolean) as { key: string; html: string }[] };
+  });
+  patch(box, sections.map((sec) => ({ key: `a${sec.age}`, html: `<section class="mrow"><div class="mhead"></div><div class="mlines"></div></section>` })));
+  for (const sec of sections) {
+    const el = box.querySelector(`[data-k="a${sec.age}"]`)!;
+    const h = el.querySelector('.mhead')!;
+    if (htmlOf.get(h) !== sec.head) {
+      h.innerHTML = sec.head;
+      htmlOf.set(h, sec.head);
+    }
+    patch(el.querySelector('.mlines')!, sec.lines);
+  }
+  markEnter(box, shownNow.map(({ key, e }) => ({ el: box.querySelector(`.ment[data-key="${key}"]`), e })));
+  if (!box.dataset.bound) {
+    box.dataset.bound = '1';
+    box.addEventListener('click', (ev) => {
+      const t = ev.target as HTMLElement;
+      const more = t.closest<HTMLElement>('[data-more]');
+      if (more) {
+        ev.stopPropagation();
+        openKeys.add(more.dataset.more!);
+        renderMFeed();
+        return;
+      }
+      const m = t.closest<HTMLElement>('.ment[data-key]');
+      if (m) {
+        ev.stopPropagation();
+        const k = m.dataset.key!;
+        if (openKeys.has(k)) openKeys.delete(k);
+        else openKeys.add(k);
+        m.classList.toggle('open', openKeys.has(k));
+        m.setAttribute('aria-expanded', String(openKeys.has(k)));
+      }
+    });
+  }
 }
 
 /** スマホで全文を開いている出来事 */
@@ -627,6 +874,83 @@ const openKeys = new Set<string>();
 function renderAll(): void {
   state?.persons.forEach((_, i) => renderCol(i));
   renderMFeed();
+  renderSides();
+}
+
+// ---------- 広い画面の左右（この年の日本／3人のいま） ----------
+
+const wideMq = typeof matchMedia !== 'undefined' ? matchMedia('(min-width: 1360px)') : null;
+wideMq?.addEventListener?.('change', () => renderSides());
+
+function setIfChanged(el: Element | null, h: string): void {
+  if (el && htmlOf.get(el) !== h) {
+    el.innerHTML = h;
+    htmlOf.set(el, h);
+  }
+}
+
+/** その年の日本の数字。統計のない未来の年は、出さずにそう書く */
+function yearFacts(p: Person, year: number): string {
+  const sx = p.sex;
+  const pct = (v: number) => `${v.toFixed(v < 10 ? 1 : 0)}%`;
+  const rows: [string, string][] = [];
+  if (year <= 2005) rows.push(['生まれた赤ちゃん', `${Math.round(S.nationalBirths(year) / 10000)}万人`]);
+  // 2025年：人口動態統計（確定数）671,270人（厚生労働省、2026年9月30日公表）
+  if (year === 2025) rows.push(['生まれた赤ちゃん', '67万人']);
+  if (year <= 2025) {
+    rows.push(['大学へ進む割合', `${pct(S.eduRate('university', year, sx))}（${sx === 'male' ? '男' : '女'}）`]);
+    rows.push(['完全失業率', pct(S.unemployment(year))]);
+    rows.push(['有効求人倍率', `${S.jobOpenings(year).toFixed(2)}倍`]);
+    rows.push(['平均初婚年齢', `${S.meanMarriageAge(year, sx).toFixed(1)}歳（${sx === 'male' ? '男' : '女'}）`]);
+    rows.push(['当時の1万円は、2020年の', `${(Math.round((10000 * S.toReal2020(year)) / 100) * 100).toLocaleString('ja-JP')}円`]);
+  }
+  const future = year > 2025;
+  return html`<section class="yfact ${ERA_CLASS[p.era]}">
+    <h4><b>${year}</b><span>${wareki(year)}</span>${future ? '<em>この先は推計</em>' : ''}</h4>
+    ${future
+      ? '<p class="muted">2026年より先の統計はまだありません。ゲームでは、2025年ごろの値や、国の推計の前提を使っています。</p>'
+      : `<dl>${rows.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('')}</dl>`}
+  </section>`;
+}
+
+function personNow(p: Person, i: number, age: number): string {
+  const year = p.birthYear + age;
+  const alive = p.alive || deathPending(p);
+  const nm = esc(p.name.split(' ')[1] ?? p.name);
+  if (!alive) {
+    return `<section class="pnow ${ERA_CLASS[i]} dead"><h4>${nm}<span>${p.birthYear}–${p.deathYear}</span></h4><p>享年${p.deathAge}。${esc(p.deathCause ?? '')}。</p></section>`;
+  }
+  const fam: string[] = [];
+  const pa = (by: number) => year - by;
+  fam.push(`父：${p.fatherAlive ? `${pa(p.fatherBirthYear)}歳` : '亡くなった'}`);
+  fam.push(`母：${p.motherAlive ? `${pa(p.motherBirthYear)}歳` : '亡くなった'}`);
+  if (p.married) fam.push(`${p.sex === 'male' ? '妻' : '夫'}：${p.spouseAlive ? esc(p.spouseName ?? 'いる') : '先に亡くなった'}`);
+  const kids = p.children.filter((c) => c.alive && c.birthYear <= year);
+  if (kids.length) fam.push(`子：${kids.map((c) => `${esc(c.name ?? '')}（${year - c.birthYear}歳）`).join('、')}`);
+  if (p.friendName && (p.friendSince ?? 99) <= age) fam.push(`親友：${esc(p.friendName)}${p.friendLost ? '（疎遠）' : ''}`);
+  if (p.pet && p.pet.since <= age) fam.push(`${p.pet.kind === 'dog' ? '犬' : '猫'}：${esc(p.pet.name)}${p.pet.alive ? '' : '（見送った）'}`);
+  const thought = [...p.log].reverse().find((e) => e.kind === 'think' && isShown(e));
+  return html`<section class="pnow ${ERA_CLASS[i]}">
+    <h4>${nm}<span>${esc(statusLine(p))}</span></h4>
+    <ul class="fam">${fam.map((f) => `<li>${f}</li>`).join('')}</ul>
+    ${thought ? `<p class="lastthink">${esc(thought.text)}<small>${thought.age}歳</small></p>` : ''}
+    <div class="lifemap"><small>人生地図（1マス1年、濃いほど幸せだった年）</small>${lifeMapRow(p, i)}</div>
+  </section>`;
+}
+
+function renderSides(): void {
+  const L = app.querySelector('#sideL');
+  const R = app.querySelector('#sideR');
+  if (!state || !L || !R) return;
+  if (!wideMq?.matches) {
+    setIfChanged(L, '');
+    setIfChanged(R, '');
+    return;
+  }
+  const st = state;
+  const ages = st.persons.map((p) => (p.alive || deathPending(p) ? shownAge : p.deathAge ?? shownAge));
+  setIfChanged(L, `<h3>この年の日本</h3>${st.persons.map((p, i) => yearFacts(p, p.birthYear + ages[i])).join('')}<p class="src-note">人口動態統計・学校基本調査・労働力調査・消費者物価指数ほか（出典は「使った統計と出典」）</p>`);
+  setIfChanged(R, `<h3>3人のいま</h3>${st.persons.map((p, i) => personNow(p, i, ages[i])).join('')}`);
 }
 
 /** スマホで1人につき1件だけ出すときの、大事さの順（小さいほど先） */
@@ -705,20 +1029,19 @@ async function playYear(st: GameState, entries: YearEntry[], me: { stop: boolean
   const prog = app.querySelector('#prog') as HTMLElement | null;
   shownAge = st.age - 1;
   if (ageEl) ageEl.textContent = String(shownAge);
-  const fast = untilDecision || autoMode;
-  const dur = fast ? 120 : yearMs();
+  // 速さや「次の決断」は、年の途中でもすぐに効くように、毎回の長さで進み具合を足していく
+  const durNow = () => (untilDecision || autoMode ? 120 : yearMs());
   let idx = 0;
   // その年の出来事は、表示が始まるまで隠しておく
   hiddenEntries = new Set(entries.map((x) => x.entry));
   freshEntries = new Set();
   renderAll();
-  let elapsed = 0;
+  let t = 0;
   let last = performance.now();
   while (!me.stop) {
     const now = performance.now();
-    if (!paused) elapsed += now - last;
+    if (!paused) t = Math.min(1, t + (now - last) / durNow());
     last = now;
-    const t = Math.min(1, elapsed / dur);
     if (prog) prog.style.transform = `scaleX(${t})`;
     let changed = false;
     while (idx < entries.length && entries[idx].t <= t) {
@@ -731,7 +1054,7 @@ async function playYear(st: GameState, entries: YearEntry[], me: { stop: boolean
     }
     if (changed) renderAll();
     if (t >= 1) break;
-    await sleep(fast ? 16 : 50);
+    await sleep(untilDecision || autoMode ? 16 : 50);
   }
   hiddenEntries = new Set();
   renderAll();
