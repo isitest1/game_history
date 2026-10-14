@@ -1532,3 +1532,106 @@ button {
     grid-template-columns: 44px 1fr;
   }
 }
+
+.ledger {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  width: min(420px, 100%);
+  display: grid;
+  gap: 6px;
+}
+.ledger li {
+  display: grid;
+  grid-template-columns: 7.5em 1fr auto;
+  align-items: baseline;
+  gap: 8px;
+  text-align: left;
+  border-bottom: 1px dashed var(--line);
+  padding: 6px 2px;
+  animation: rise 0.45s var(--ease) both;
+}
+.ledger .k {
+  font-size: 12px;
+  color: var(--ink-3);
+}
+.ledger b {
+  font-family: var(--serif);
+  font-size: 18px;
+}
+.ledger .p {
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  color: var(--accent);
+  font-weight: 700;
+}
+.gyears {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  width: min(520px, 100%);
+}
+.gyears .yr {
+  border-radius: 12px;
+  padding: 14px 6px;
+  text-align: center;
+  animation: rise 0.6s var(--ease) both;
+}
+.gyears .yr:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.gyears .yr:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.gyears .yr b {
+  display: block;
+  font-size: clamp(28px, 8vw, 46px);
+  line-height: 1;
+}
+.gyears .yr span {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.res3 > div {
+  position: relative;
+}
+.hanko {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid var(--c-acc);
+  color: var(--c-acc);
+  display: grid;
+  place-items: center;
+  font-family: var(--serif);
+  font-weight: 800;
+  font-size: 16px;
+  transform: rotate(-12deg);
+  opacity: 0.9;
+  animation: stamp 0.5s var(--ease) both;
+  animation-delay: inherit;
+}
+.res3 .ng .hanko {
+  border-style: double;
+  border-width: 3px;
+}
+.res3 .mark {
+  padding-right: 40px;
+}
+@keyframes stamp {
+  0% {
+    transform: scale(1.8) rotate(-12deg);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(0.94) rotate(-12deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(-12deg);
+  }
+}

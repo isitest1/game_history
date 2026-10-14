@@ -13,6 +13,10 @@ const pages = [
   ['04_decision', '?demo=decision&seed=12345&age=18'],
   ['05_result', '?demo=decision&seed=12345&age=18', 'result'],
   ['06_end', '?demo=end&seed=12345'],
+  ['07_gacha', '?demo=gacha&seed=12345', 'wait'],
+  ['08_breath', '?demo=decision&seed=12345&age=6'],
+  ['09_log', '?demo=life&seed=12345&age=30', 'log'],
+  ['10_help', '', 'help'],
 ];
 const browser = await chromium.launch({ executablePath: process.env.CHROME || '/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell' });
 for (const [vw, vh, tag] of [[390, 844, 'sp'], [1440, 900, 'pc']]) {
@@ -26,6 +30,15 @@ for (const [vw, vh, tag] of [[390, 844, 'sp'], [1440, 900, 'pc']]) {
       if (scheme === 'dark' && !['01_title', '03_life', '06_end'].includes(name)) continue;
       await page.goto(base + q, { waitUntil: 'networkidle' });
       await page.waitForTimeout(name === '03_life' ? 1500 : 900);
+      if (action === 'wait') await page.waitForTimeout(1600);
+      if (action === 'log') {
+        await page.click('#col1');
+        await page.waitForTimeout(600);
+      }
+      if (action === 'help') {
+        await page.click('[data-act="help"]');
+        await page.waitForTimeout(600);
+      }
       if (action === 'result') {
         await page.locator('.opt:not([disabled])').first().click();
         await page.waitForTimeout(1200);

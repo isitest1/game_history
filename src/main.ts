@@ -205,11 +205,13 @@ async function showGacha(): Promise<void> {
   window.scrollTo(0, 0);
   const steps = ['生まれる県', '性別', '家の暮らし向き', '生まれる年'];
   app.innerHTML = html`${topbar()}
-    <main class="wrap gacha" id="main" aria-live="polite">
-      <div class="gacha-steps">${steps.map((s, i) => `<span class="chip" data-step="${i}">${s}</span>`)}</div>
+    <main class="wrap gacha" id="main">
+      <div class="gacha-steps" aria-hidden="true">${steps.map((s, i) => `<span class="chip" data-step="${i}">${s}</span>`)}</div>
       <div class="label" id="glabel">生まれる県</div>
-      <div class="reel" id="reel">　</div>
+      <div class="reel" id="reel" aria-live="polite">　</div>
       <div class="prob" id="gprob"></div>
+      <ol class="ledger" id="ledger" aria-label="引いた結果"></ol>
+      <div class="gyears" id="gyears" aria-hidden="true"></div>
       <button class="btn ghost small" id="skip">とばす</button>
     </main>`;
   bindCommon(app);
@@ -218,6 +220,7 @@ async function showGacha(): Promise<void> {
   const reel = app.querySelector('#reel') as HTMLElement;
   const label = app.querySelector('#glabel') as HTMLElement;
   const prob = app.querySelector('#gprob') as HTMLElement;
+  const ledger = app.querySelector('#ledger') as HTMLElement;
   const spin = async (candidates: string[], final: string, ms = 1300) => {
     reel.classList.remove('stop');
     reel.classList.add('spin');
@@ -232,36 +235,48 @@ async function showGacha(): Promise<void> {
     reel.classList.add('stop');
     sound.ding();
   };
+  const addRow = (k: string, v: string, pr: string) => {
+    const li = document.createElement('li');
+    li.innerHTML = `<span class="k">${esc(k)}</span><b>${esc(v)}</b><span class="p">${esc(pr)}</span>`;
+    ledger.appendChild(li);
+  };
   const mark = (i: number) => app.querySelectorAll('[data-step]').forEach((c, k) => c.classList.toggle('on', k <= i));
   const g = st.gacha;
+  const fam = ['苦しい', 'やや苦しい', 'ふつう', 'やや豊か', '豊か'];
   mark(0);
   await spin([...S.PREFS], S.PREFS[st.shared.pref - 1]);
-  prob.textContent = `この県に生まれる確率は${(g.prefProb * 100).toFixed(1)}%（真ん中の年の出生数から）`;
-  await sleep(skip ? 0 : 1100);
+  prob.textContent = '真ん中の年の都道府県別の出生数で重み付け';
+  addRow('生まれる県', S.PREFS[st.shared.pref - 1], `${(g.prefProb * 100).toFixed(1)}%`);
+  await sleep(skip ? 0 : 900);
   mark(1);
   label.textContent = '性別';
   prob.textContent = '';
   await spin(['男', '女'], st.shared.sex === 'male' ? '男' : '女', 900);
-  prob.textContent = `${(g.sexProb * 100).toFixed(1)}%（出生の男女比）`;
-  await sleep(skip ? 0 : 1000);
+  prob.textContent = '出生の男女比から';
+  addRow('性別', st.shared.sex === 'male' ? '男' : '女', `${(g.sexProb * 100).toFixed(1)}%`);
+  await sleep(skip ? 0 : 800);
   mark(2);
   label.textContent = '家の暮らし向き';
   prob.textContent = '';
-  const fam = ['苦しい', 'やや苦しい', 'ふつう', 'やや豊か', '豊か'];
   await spin(fam, fam[st.shared.familyClass - 1], 900);
-  prob.textContent = '5段階。どれも20%';
-  await sleep(skip ? 0 : 1000);
+  prob.textContent = '5段階。どれも同じ確率';
+  addRow('家の暮らし向き', fam[st.shared.familyClass - 1], '20.0%');
+  await sleep(skip ? 0 : 800);
   mark(3);
   label.textContent = '生まれる年（真ん中）';
   prob.textContent = '';
   const ys = Array.from({ length: 16 }, (_, i) => String(1960 + i));
   await spin(ys, String(g.years[1]), 1500);
-  prob.textContent = `${g.years[1]}年に生まれたのは${(g.birthsInYear[1] / 10000).toFixed(0)}万人。確率${(g.middleYearProb * 100).toFixed(1)}%`;
-  await sleep(skip ? 200 : 1200);
-  reel.textContent = `${g.years[0]}・${g.years[1]}・${g.years[2]}`;
+  prob.textContent = `${g.years[1]}年に生まれたのは${(g.birthsInYear[1] / 10000).toFixed(0)}万人`;
+  addRow('生まれる年', `${g.years[1]}年`, `${(g.middleYearProb * 100).toFixed(1)}%`);
+  await sleep(skip ? 150 : 900);
   label.textContent = '30年ずつ離れた、3つの生まれ年';
+  reel.textContent = '';
   prob.textContent = '';
-  await sleep(skip ? 200 : 1400);
+  const gy = app.querySelector('#gyears') as HTMLElement;
+  gy.innerHTML = g.years.map((y, i) => `<div class="yr ${ERA_CLASS[i]}"><b class="yr-num">${y}</b><span>${wareki(y)}</span></div>`).join('');
+  gy.classList.add('show');
+  await sleep(skip ? 300 : 1800);
   showBirth();
 }
 
@@ -663,7 +678,7 @@ function showResult(v: DecisionView, r: DecisionResult): Promise<void> {
           ${r.results.map((x, i) => {
             const p = st.persons[i];
             if (!x) return `<div class="${ERA_CLASS[i]}"><span class="mark">${p.birthYear + v.age}年</span>${p.alive ? '関係なし' : '（亡くなっている）'}</div>`;
-            return `<div class="${ERA_CLASS[i]} ${x.ok ? 'ok' : 'ng'}"><span class="mark">${p.birthYear + v.age}年　${x.ok ? '叶った' : '叶わなかった'}</span>${esc(x.text)}</div>`;
+            return `<div class="${ERA_CLASS[i]} ${x.ok ? 'ok' : 'ng'}"><span class="hanko" aria-hidden="true">${x.ok ? '叶' : '否'}</span><span class="mark">${p.birthYear + v.age}年　${x.ok ? '叶った' : '叶わなかった'}</span>${esc(x.text)}</div>`;
           })}
         </div>
         <button class="btn" id="cont">続ける</button>`,
@@ -692,9 +707,9 @@ function showBreather(age: number): Promise<void> {
     const { el, close } = sheet(
       html`<p class="kicker">ひと息　${age}歳</p>
         <h2>${age}歳の3人と、あなた</h2>
-        <div class="cmp">
+        <div class="cmp" style="${ui.playerBirthYear ? '' : 'grid-template-columns:repeat(3,minmax(0,1fr))'}">
           ${st.persons.map((p, i) => `<div class="${ERA_CLASS[i]}"><b>${p.birthYear + age}年</b>${p.alive ? esc(statusLine(p) || `${age}歳`) : `享年${p.deathAge}`}<br /><span style="font-size:11px">高校進学率 ${Math.round(S.eduRate('highSchool', p.birthYear + 15, p.sex))}%</span></div>`)}
-          <div class="you"><b>${yourYear ?? '−'}年</b>${yourYear ? (yourYear > 2026 ? 'あなたのこれから' : 'あなた') : '生まれ年が未入力'}<br /><span style="font-size:11px">${py ? `高校進学率 ${Math.round(S.eduRate('highSchool', py + 15, st.shared.sex))}%` : ''}</span></div>
+          ${yourYear ? `<div class="you"><b>${yourYear}年</b>${yourYear > 2026 ? 'あなたのこれから' : 'あなた'}<br /><span style="font-size:11px">高校進学率 ${Math.round(S.eduRate('highSchool', py! + 15, st.shared.sex))}%</span></div>` : ''}
         </div>
         <div class="breather">
           <label for="ans" style="font-weight:700;display:block;margin-bottom:6px">${esc(BREATH_Q[age])}</label>

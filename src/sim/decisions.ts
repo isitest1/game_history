@@ -275,13 +275,18 @@ export const DECISIONS: DecisionDef[] = [
       }
       if (opt === 'phone') {
         if (y < 1985) return { ok: false, text: '自分専用の電話など、なかった。電話は家に1台、または近所で借りるものだった。' };
-        if (y < 1995) return { ok: rich && rng.chance(0.4), text: 'ポケットベルを持った。数字の語呂合わせでやりとりした。' };
+        if (y < 1995) {
+          const ok = rich && rng.chance(0.4);
+          return { ok, text: ok ? 'ポケットベルを持った。数字の語呂合わせでやりとりした。' : 'ポケットベルがほしかったが、買ってもらえなかった。家の電話の子機を部屋に持ちこんだ。' };
+        }
         if (y < 2008) return { ok: true, text: '携帯電話を手に入れた。メールを打つのが速くなった。' };
         return { ok: true, text: 'スマートフォンを手に入れた。友だちとはいつもつながっていた。' };
       }
       if (opt === 'game') {
         if (y < 1983) return { ok: false, text: '家でできるテレビゲームは、まだ普及していなかった。' };
-        return { ok: rich || rng.chance(0.5), text: y < 2000 ? '家庭用ゲーム機を手に入れた。' : 'ゲームを買って、友だちとオンラインで遊んだ。' };
+        const ok = rich || rng.chance(0.5);
+        if (!ok) return { ok, text: 'ゲームは買ってもらえなかった。友だちの家で遊ばせてもらった。' };
+        return { ok, text: y < 2000 ? '家庭用ゲーム機を手に入れた。' : 'ゲームを買って、友だちとオンラインで遊んだ。' };
       }
       if (y < 1960) return { ok: rich, text: rich ? '中古の自転車を手に入れた。' : '自転車は家の仕事に使う大事な道具だった。' };
       return { ok: true, text: y < 1990 ? 'オートバイの免許をとった。' : '自転車で、遠くの町まで出かけた。' };
@@ -575,7 +580,8 @@ export const DECISIONS: DecisionDef[] = [
       if (p.sex === 'male') {
         if (opt === 'home') {
           if (y < 2010) return { ok: false, text: '家庭を大事にしたかったが、職場では「男は仕事」が当たり前で、帰りはいつも遅かった。' };
-          return { ok: rng.chance(0.5), text: '育児休業をとって、子どもと過ごす時間をつくった。男性の育休はまだ少数派だった。' };
+          const ok = rng.chance(y < 2020 ? 0.25 : 0.5);
+          return { ok, text: ok ? '育児休業をとって、子どもと過ごす時間をつくった。男性の育休はまだ少数派だった。' : '育児休業をとりたかったが、職場で言い出せなかった。' };
         }
         return { ok: true, text: y < 1990 ? 'モーレツに働いた。' : '仕事を続けた。' };
       }
