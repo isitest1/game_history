@@ -1635,3 +1635,31 @@ button {
     transform: scale(1) rotate(-12deg);
   }
 }
+
+.sheet {
+  position: relative;
+}
+.sheet-x {
+  position: sticky;
+  top: 0;
+  float: right;
+  margin: -6px -4px 0 8px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--card);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 2;
+}
+.logfull li > span:nth-child(2) {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.logfull .muted {
+  line-height: 1.5;
+  display: inline-block;
+  margin-top: 4px;
+}

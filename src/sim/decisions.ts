@@ -409,7 +409,11 @@ export const DECISIONS: DecisionDef[] = [
         const never = S.neverMarried50(Math.min(y + 30, 2020), p.sex);
         return { ok: true, text: never < 5 ? `結婚しないと決めた。ただ、この世代は50歳までに${pct(100 - never)}が結婚する。周りの目は厳しかった。` : '結婚しなくてもいいと思った。' };
       }
-      return { ok: true, text: opt === 'arranged' ? '見合いでもいいと思った。' : '好きな人と結婚したいと思った。' };
+      const share = pct(arrShare(y) * 100);
+      if (opt === 'arranged') {
+        return { ok: true, text: y < 1965 ? `見合いでもいいと思った。見合い結婚が当たり前の時代だった（見合い${share}）。` : y < 1995 ? `見合いでもいいと思った。周りでは恋愛結婚が増えていた（見合い${share}）。` : `見合いでもいいと思った。見合い結婚は${share}まで減り、結婚相談所やアプリで相手を探す人もいた。` };
+      }
+      return { ok: true, text: y < 1965 ? `好きな人と結婚したいと思った。ただ、この時代は${share}が見合い結婚で、親の意向も強かった。` : y < 1995 ? '好きな人と結婚したいと思った。恋愛結婚が多数派になっていた。' : '好きな人と結婚したいと思った。職場や学校のほか、ネットで知り合う人も増えていた。' };
     },
     auto: (_st, rng) => (rng.chance(0.5) ? 'arranged' : 'love'),
   },
@@ -555,8 +559,9 @@ export const DECISIONS: DecisionDef[] = [
       st.prefs.childrenWish = n;
       p.wantChildren = Math.max(n, p.children.length);
       const y = yearOf(p);
-      if (n === 0 && y < 1970) return { ok: true, text: '子どもはいなくてもいいと思った。ただ、周りからは「まだか」と何度も聞かれた。' };
-      return { ok: true, text: n === 0 ? '子どもはいなくてもいいと思った。' : `子どもは${n === 4 ? '3人以上' : `${n}人`}ほしいと思った。` };
+      if (n === 0) return { ok: true, text: y < 1970 ? '子どもはいなくてもいいと思った。ただ、周りからは「まだか」と何度も聞かれた。' : y < 2000 ? '子どもはいなくてもいいと思った。まだ少数派の考えだった。' : '子どもはいなくてもいいと思った。子どもを持たない夫婦も増えていた。' };
+      if (n === 4) return { ok: true, text: y < 1960 ? '子どもは3人以上ほしいと思った。きょうだいが多いのは珍しくなかった。' : y < 2000 ? '子どもは3人以上ほしいと思った。2人が当たり前と言われる中では、多いほうだった。' : '子どもは3人以上ほしいと思った。教育費を考えると、思い切った望みだった。' };
+      return { ok: true, text: `子どもは${n}人ほしいと思った。${y >= 2000 && n >= 2 ? '保育園に入れるかが心配だった。' : ''}` };
     },
     auto: (_st, rng) => rng.pick(['1', '2', '2', '3']),
   },
@@ -699,10 +704,13 @@ export const DECISIONS: DecisionDef[] = [
       if (opt === 'spend') {
         p.stats.happiness = Math.min(100, p.stats.happiness + 8);
         p.money *= 0.8;
-        return { ok: true, text: '家族旅行に出かけ、趣味にもお金を使った。' };
+        return { ok: true, text: y < 1985 ? '家族で温泉旅行に出かけ、趣味にもお金を使った。' : y >= 2020 && y <= 2022 ? '旅行には行けず、家で過ごす時間のための趣味にお金を使った。' : y < 2020 ? '家族で海外旅行に出かけ、趣味にもお金を使った。' : '旅行や趣味にお金を使った。' };
       }
-      if (opt === 'save') return { ok: true, text: y < 1990 ? '定期預金に預けた。利息だけで、少しずつ増えていった。' : '銀行に預けた。利息はほとんどつかなかった。' };
-      return { ok: true, text: y >= 1986 && y <= 1989 ? 'バブルのさなかに株を買った。' : '株を買った。' };
+      if (opt === 'save') return { ok: true, text: y < 1991 ? '定期預金に預けた。利息だけで、少しずつ増えていった。' : y < 2026 ? '銀行に預けた。利息はほとんどつかなかった。' : '銀行に預けた（この先の金利は見通しが立たない）。' };
+      return {
+        ok: true,
+        text: y >= 1986 && y <= 1989 ? 'バブルのさなかに株を買った。値上がりが続いていた。' : y >= 1990 && y <= 2002 ? '株を買った。バブルがはじけたあとで、値下がりが続いていた。' : y >= 2024 && y <= 2026 ? '新しいNISAの口座で、投資信託を買い始めた。' : y > 2026 ? '株や投資信託を買った（この先の値動きは見通し）。' : '株を買った。',
+      };
     },
     auto: (_st, rng) => rng.pick(['save', 'stock', 'spend']),
   },
@@ -734,7 +742,9 @@ export const DECISIONS: DecisionDef[] = [
       p.stats.health = Math.max(0, p.stats.health - 5);
       p.stats.relation = Math.min(100, p.stats.relation + 5);
       if (p.sex === 'male' && y < 2000 && p.married) return { ok: true, text: '親を家で看た。実際に世話をしたのは、ほとんど妻だった。' };
-      return { ok: true, text: '親を家で看た。仕事との両立は大変だった。' };
+      if (y < 2000) return { ok: true, text: '親を家で看た。頼れる制度はほとんどなく、家族だけで支えた。' };
+      if (y <= 2026) return { ok: true, text: '親を家で看た。ヘルパーやデイサービスを使いながら、仕事と両立した。' };
+      return { ok: true, text: '親を家で看た。介護の担い手は足りないと言われ続けていた（この先は見通し）。' };
     },
     auto: (_st, rng) => rng.pick(['home', 'facility', 'sibling']),
   },
@@ -755,8 +765,8 @@ export const DECISIONS: DecisionDef[] = [
     resolve: (p, opt, st) => {
       st.prefs.retireAt = opt === 'continue' ? 65 : 55;
       const y = yearOf(p);
-      if (opt === 'continue') return { ok: true, text: y < 2006 ? '定年後も、嘱託として働くつもりだった。' : '65歳まで、再雇用で働くつもりだった。' };
-      return { ok: true, text: '定年で辞めると決めた。' };
+      if (opt === 'continue') return { ok: true, text: y < 1986 ? '55歳の定年のあとも、関連会社で働くつもりだった。' : y < 2006 ? '60歳の定年のあとも、嘱託として働くつもりだった。' : y <= 2026 ? '65歳まで、再雇用で働くつもりだった。' : '70歳まで働くつもりだった。そうする人は珍しくなくなっていた（見通し）。' };
+      return { ok: true, text: y < 1986 ? '55歳の定年で辞め、のんびり暮らすと決めた。年金が出るまでの数年は、貯金で暮らす。' : y < 2006 ? '60歳の定年で辞めると決めた。' : '定年で辞めると決めた。年金が出るまでの暮らし方を考えた。' };
     },
     auto: (_st, rng) => (rng.chance(0.5) ? 'continue' : 'retire'),
   },

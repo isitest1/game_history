@@ -617,7 +617,7 @@ async function playYear(st: GameState, entries: YearEntry[], me: { stop: boolean
 function sheet(inner: string, opts: { label: string; dismiss?: boolean } = { label: '' }): { el: HTMLElement; close: () => void } {
   const back = document.createElement('div');
   back.className = 'sheet-back';
-  back.innerHTML = `<div class="sheet" role="dialog" aria-modal="true" aria-label="${esc(opts.label)}">${inner}</div>`;
+  back.innerHTML = `<div class="sheet" role="dialog" aria-modal="true" aria-label="${esc(opts.label)}">${opts.dismiss ? '<button class="sheet-x" data-x aria-label="閉じる">×</button>' : ''}${inner}</div>`;
   document.body.appendChild(back);
   const prevFocus = document.activeElement as HTMLElement | null;
   const close = () => {
@@ -629,7 +629,10 @@ function sheet(inner: string, opts: { label: string; dismiss?: boolean } = { lab
     if (e.key === 'Escape' && opts.dismiss) close();
   };
   document.addEventListener('keydown', onKey);
-  if (opts.dismiss) back.addEventListener('click', (e) => e.target === back && close());
+  if (opts.dismiss) {
+    back.addEventListener('click', (e) => e.target === back && close());
+    back.addEventListener('click', (e) => (e.target as HTMLElement).closest('[data-x]') && close());
+  }
   const first = back.querySelector<HTMLElement>('button, a, textarea, select');
   setTimeout(() => first?.focus(), 30);
   return { el: back, close };
@@ -748,7 +751,7 @@ function showLog(i: number): void {
   const { el, close } = sheet(render(i), { label: '人生の記録', dismiss: true });
   const bind = (k: number) => {
     const box = el.querySelector('.sheet')!;
-    box.innerHTML = render(k);
+    box.innerHTML = '<button class="sheet-x" data-x aria-label="閉じる">×</button>' + render(k);
     box.querySelectorAll<HTMLButtonElement>('[data-tab]').forEach((b) => b.addEventListener('click', () => bind(Number(b.dataset.tab))));
     box.querySelectorAll<HTMLButtonElement>('[data-star]').forEach((b) =>
       b.addEventListener('click', () => {
