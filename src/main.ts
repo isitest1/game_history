@@ -211,7 +211,7 @@ async function showGacha(): Promise<void> {
       <div class="label" id="glabel">生まれる県</div>
       <div class="reel" id="reel" aria-live="polite">　</div>
       <div class="prob" id="gprob"></div>
-      <div class="gyears" id="gyears" aria-hidden="true"></div>
+      <div class="gyears" id="gyears" aria-hidden="true">${['活版と紙', 'ブラウン管', 'フラット'].map((t, i) => `<div class="yr ${ERA_CLASS[i]} wait"><b class="yr-num">？</b><span>${t}</span></div>`).join('')}</div>
       <button class="btn ghost small" id="skip">とばす</button>
     </main>`;
   bindCommon(app);
@@ -282,7 +282,7 @@ async function showGacha(): Promise<void> {
   reel.textContent = '';
   prob.textContent = '';
   const gy = app.querySelector('#gyears') as HTMLElement;
-  gy.innerHTML = g.years.map((y, i) => `<div class="yr ${ERA_CLASS[i]}"><b class="yr-num">${y}</b><span>${wareki(y)}</span></div>`).join('');
+  gy.innerHTML = g.years.map((y, i) => `<div class="yr ${ERA_CLASS[i]} flip" style="animation-delay:${i * 0.15}s"><b class="yr-num">${y}</b><span>${wareki(y)}</span></div>`).join('');
   gy.classList.add('show');
   await sleep(skip ? 300 : 1800);
   showBirth();
@@ -769,6 +769,17 @@ function showResult(v: DecisionView, r: DecisionResult): Promise<void> {
   });
 }
 
+/** ひと息で並べる数字。年齢ごとに、その年齢で意味のある統計を出す */
+function breathStat(birthYear: number, sex: 'male' | 'female', age: number): string {
+  const y = birthYear + age;
+  if (age === 6) return `同い年の子は約${Math.round(S.nationalBirths(birthYear) / 10000)}万人`;
+  if (age === 15) return `高校進学率 ${Math.round(S.eduRate('highSchool', y, sex))}%`;
+  if (age === 22) return `大学進学率 ${Math.round(S.eduRate('university', birthYear + 18, sex))}%`;
+  if (age === 40) return y > 2026 ? `平均初婚年齢 ${S.meanMarriageAge(Math.min(y - 12, 2025), sex).toFixed(1)}歳` : `完全失業率 ${S.unemployment(y).toFixed(1)}%`;
+  if (age === 65) return `厚生年金の支給開始 ${S.pensionStartAge(birthYear, 6, sex)}歳`;
+  return '';
+}
+
 const BREATH_Q: Record<number, string> = {
   6: '6歳のころ、いちばん覚えていることは何ですか。',
   15: '15歳のとき、何になりたかったですか。',
@@ -786,8 +797,8 @@ function showBreather(age: number): Promise<void> {
       html`<p class="kicker">ひと息　${age}歳</p>
         <h2>${age}歳の3人と、あなた</h2>
         <div class="cmp" style="${ui.playerBirthYear ? '' : 'grid-template-columns:repeat(3,minmax(0,1fr))'}">
-          ${st.persons.map((p, i) => `<div class="${ERA_CLASS[i]}"><b>${p.birthYear + age}年</b>${p.alive ? esc(statusLine(p) || `${age}歳`) : `享年${p.deathAge}`}<br /><span style="font-size:11px">高校進学率 ${Math.round(S.eduRate('highSchool', p.birthYear + 15, p.sex))}%</span></div>`)}
-          ${yourYear ? `<div class="you"><b>${yourYear}年</b>${yourYear > 2026 ? 'あなたのこれから' : 'あなた'}<br /><span style="font-size:11px">高校進学率 ${Math.round(S.eduRate('highSchool', py! + 15, st.shared.sex))}%</span></div>` : ''}
+          ${st.persons.map((p, i) => `<div class="${ERA_CLASS[i]}"><b>${p.birthYear + age}年</b>${p.alive ? esc(statusLine(p) || `${age}歳`) : `享年${p.deathAge}`}<br /><span class="bstat">${esc(breathStat(p.birthYear, p.sex, age))}</span></div>`)}
+          ${yourYear ? `<div class="you"><b>${yourYear}年</b>${yourYear > 2026 ? 'あなたのこれから' : 'あなた'}<br /><span class="bstat">${esc(breathStat(py!, st.shared.sex, age))}</span></div>` : ''}
         </div>
         <div class="breather">
           <label for="ans" style="font-weight:700;display:block;margin-bottom:6px">${esc(BREATH_Q[age])}</label>
@@ -908,7 +919,8 @@ async function showEnd(skipSlides = false): Promise<void> {
         <div class="compare-bars">
           ${st.persons.map((p, i) => {
             const v = p.pensionMonthlyReal ?? 0;
-            const label = p.pensionStartAge !== undefined ? `${p.pensionStartAge}歳から 月${yen(v)}${p.pensionRange ? `（${yen(p.pensionRange[0])}〜${yen(p.pensionRange[1])}）` : ''}` : '受け取る前に亡くなった';
+            const rng = p.pensionRange ? `（${Math.round(p.pensionRange[0] / 1e4)}〜${Math.round(p.pensionRange[1] / 1e4)}万）` : '';
+            const label = p.pensionStartAge !== undefined ? `${p.pensionStartAge}歳から 月${yen(v)}${rng}` : '受け取る前に亡くなった';
             return `<div class="r"><span class="yr">${p.birthYear}年</span><span class="vals">${label}</span><div class="track"><i class="${ERA_CLASS[i]}" style="width:${(v / maxPen) * 100}%;background:var(--c-acc)"></i></div></div>`;
           })}
         </div>
@@ -1010,7 +1022,7 @@ function recordTable(st: GameState): string {
     ['死因', (p) => esc(p.deathCause ?? '')],
     ['学歴', (p) => EDU_LABEL[p.edu]],
     ['仕事', (p) => esc(p.jobTitle || 'なし')],
-    ['家族', (p) => `${p.married ? `${p.marriageType ?? ''}結婚` : '独身'}${p.children.length ? `・子${p.children.length}人` : ''}`],
+    ['家族', (p) => `${p.married ? `${p.marriageType ?? ''}結婚` : '独身'}${p.children.length ? `・<wbr><span class="nw">子${p.children.length}人</span>` : ''}`],
     ['最良の年', (p) => `${p.bestYear.age}歳`],
     ['遺産', (p) => yen(Math.max(0, p.money) * S.toReal2020(p.deathYear ?? 2020))],
     ['長生き', (p) => `${survivalPercentile(p)}%より長く`],

@@ -2313,7 +2313,7 @@ button {
     opacity: 0;
   }
   70% {
-    transform: translateY(2px) scale(1.04);
+    transform: translateY(2px);
     opacity: 1;
   }
   100% {
@@ -2656,5 +2656,62 @@ button {
     display: block;
     margin: 0 0 2px;
     padding-right: 36px;
+  }
+}
+
+/* ---------- 9周目（仕上げ） ---------- */
+.gyears .yr.wait {
+  animation: none;
+  opacity: 0.55;
+}
+.gyears .yr.wait b {
+  text-shadow: none;
+}
+.gyears .yr.flip {
+  animation: flip 0.7s var(--ease) both;
+}
+.gyears:empty {
+  display: none;
+}
+.gyears {
+  margin-top: 8px;
+}
+@media (min-width: 760px) {
+  .compare-bars .r {
+    grid-template-columns: 4.5em 1fr 20em;
+  }
+  .compare-bars .r .vals {
+    white-space: nowrap;
+  }
+}
+@media (max-width: 640px) {
+  .cols.is-compact {
+    box-shadow: 0 8px 12px -10px rgba(0, 0, 0, 0.3);
+  }
+  .cols.is-compact::after {
+    height: 16px;
+    bottom: -16px;
+  }
+}
+.sheet {
+  padding-bottom: calc(32px + env(safe-area-inset-bottom));
+}
+.bstat {
+  font-size: 12px;
+  display: block;
+  margin-top: 2px;
+}
+@media (min-width: 900px) {
+  .bstat {
+    font-size: 13px;
+  }
+}
+.end-acts {
+  margin-inline: auto;
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .end-acts {
+    max-width: 720px;
   }
 }

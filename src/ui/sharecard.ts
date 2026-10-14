@@ -55,7 +55,7 @@ export async function drawShareCard(c: HTMLCanvasElement, st: GameState, portrai
     g.fillText(`享年${p.deathAge ?? '−'}`, x + 20, y + 48);
     g.font = `700 20px ${e.font}`;
     g.fillText(p.name, x + 22, y + 128);
-    g.font = `400 17px ${e.font}`;
+    g.font = `400 20px ${e.font}`;
     const lines = [
       `死因：${p.deathCause ?? ''}`,
       `学歴：${EDU_LABEL[p.edu]}`,
@@ -65,7 +65,7 @@ export async function drawShareCard(c: HTMLCanvasElement, st: GameState, portrai
     ];
     lines.forEach((t, k) => {
       g.fillStyle = k === 0 ? e.acc : e.ink;
-      wrap(g, t, x + 22, y + 172 + k * 34, colW - 44);
+      wrap(g, t, x + 22, y + 176 + k * 44, colW - 44);
     });
     const miss = p.wishes.filter((w) => !w.ok).length;
     g.fillStyle = e.sub;
