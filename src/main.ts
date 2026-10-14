@@ -140,6 +140,7 @@ function showTitle(): void {
           <button data-act="sources">使った統計と出典</button>
           <button data-act="help2">つらいときの相談先</button>
           <button data-act="about">このゲームについて</button>
+          <button data-act="dex">前世の記録と図鑑</button>
         </div>
       </div>
       <div class="hero-art" aria-hidden="true">${[0, 1, 2].map((i) => `<div class="art-card ${ERA_CLASS[i]}" data-art="${i}"></div>`).join('')}</div>
@@ -184,6 +185,7 @@ function showTitle(): void {
   app.querySelector('[data-act="sources"]')?.addEventListener('click', showSources);
   app.querySelector('[data-act="help2"]')?.addEventListener('click', () => showHelp());
   app.querySelector('[data-act="about"]')?.addEventListener('click', showAbout);
+  app.querySelector('[data-act="dex"]')?.addEventListener('click', showDex);
   (app.querySelector('#startform') as HTMLFormElement).addEventListener('submit', (e) => {
     e.preventDefault();
     const v = (app.querySelector('#pby') as HTMLSelectElement).value;
@@ -400,10 +402,11 @@ async function showLife(): Promise<void> {
           <div class="grp">
             <button class="iconbtn" id="pp" aria-pressed="false" aria-label="一時停止">❚❚</button>
             <button class="iconbtn" id="spd">×1</button>
+            <button class="iconbtn" id="kurashi" aria-label="家族とお金、思いを残す">暮らし</button>
           </div>
           <div class="grp">
             <button class="iconbtn" id="auto" aria-pressed="${autoMode}" aria-label="決断をおまかせにする">おまかせ</button>
-            <button class="iconbtn" id="next" aria-label="次の決断まで進める">次の決断まで ▸▸</button>
+            <button class="iconbtn" id="next" aria-label="次の決断まで進める">次の決断 ▸▸</button>
           </div>
         </div>
       </div>
@@ -440,6 +443,7 @@ async function showLife(): Promise<void> {
     pp.setAttribute('aria-pressed', 'false');
     pp.textContent = '❚❚';
   });
+  app.querySelector('#kurashi')!.addEventListener('click', () => showKurashi());
   const auto = app.querySelector('#auto') as HTMLButtonElement;
   auto.addEventListener('click', () => {
     autoMode = !autoMode;
@@ -520,8 +524,9 @@ function renderCol(i: number): void {
           <span class="b" title="知識"><em>知識</em><span class="bar"><i style="width:${s.knowledge}%"></i></span></span>
           <span class="b" title="人間関係"><em>関係</em><span class="bar"><i style="width:${s.relation}%"></i></span></span>
         </div>
-        <div class="money"><span>貯え</span><b>${yen(p.money)}</b></div>
-        <div class="mini" aria-hidden="true">${esc(p.name.split(' ')[1] ?? '')}・${yen(p.money)}</div>`}
+        <div class="money"><span>${p.money < 0 ? 'ローン' : '貯え'}</span><b>${yen(Math.abs(p.money))}</b></div>
+        ${p.income > 0 && !p.retired ? `<div class="money inc"><span>年収</span><b>${yen(p.income)}</b></div>` : p.pensionMonthly ? `<div class="money inc"><span>年金</span><b>月${yen(p.pensionMonthly)}</b></div>` : ''}
+        <div class="mini" aria-hidden="true">${esc(p.name.split(' ')[1] ?? '')}・${p.money < 0 ? 'ローン' : ''}${yen(Math.abs(p.money))}</div>`}
     <ul class="feed">
       ${entries.map((e, k) => feedItem(e, k > 0 && !freshEntries.has(e)))}
     </ul>`;
@@ -540,40 +545,56 @@ function renderMFeed(): void {
   const rows: { e: LogEntry; i: number }[] = [];
   st.persons.forEach((p, i) => p.log.filter(isShown).forEach((e) => rows.push({ e, i })));
   const ages = [...new Set(rows.map((r) => r.e.age))].sort((a, b) => b - a).slice(0, 4);
+  // 同い年の3人を、横にめくらずに縦に並べて見比べる。本文は2行まで、押すと全文
   box.innerHTML = ages
-    .map((age, ai) => {
-      // 1人につき1枚。並び順は3人で固定し、記録のない人には薄いカードを置く
-      const cards = st.persons.map((p, i) => {
+    .map((age) => {
+      const lines = st.persons.map((p, i) => {
         const es = rows.filter((r) => r.i === i && r.e.age === age).map((r) => r.e);
         const year = p.birthYear + age;
+        const who = `<span class="mwho"><b>${year}</b><small>${esc(p.name.split(' ')[1] ?? '')}</small></span>`;
         if (!es.length) {
           const dead = p.deathAge !== undefined && p.deathAge < age && !deathPending(p);
-          return `<article class="mcard ${ERA_CLASS[i]} empty"><span class="meta">${year}年・${esc(p.name.split(' ')[1] ?? '')}</span><p class="d">${dead ? `${p.deathAge}歳で亡くなっている` : 'この年は記録なし'}</p></article>`;
+          if (dead) return '';
+          return `<div class="mline ${ERA_CLASS[i]} empty">${who}<div class="mbody"><p class="d">特に記録なし</p></div></div>`;
         }
-        const inner = es
+        const moreKey = `${i}:${age}:more`;
+        const showAll = openKeys.has(moreKey) || es.length <= 2;
+        const visible = showAll ? es : es.slice(0, 2);
+        const inner = visible
           .map((e) => {
-            const cls = [e.kind === 'wish' ? 'wish' : '', e.kind === 'decision' || e.kind === 'wish' ? 'dec' : '', e.kind === 'death' ? 'death' : '', e.heavy ? 'heavy' : '', freshEntries.has(e) ? 'fresh' : ''].join(' ');
-            return `<div class="ment ${cls}"><b class="t">${esc(e.title)}</b><p class="d">${esc(e.text)}</p>${e.heavy ? '<button class="help-note" data-act="helpnote">つらいときの相談先</button>' : ''}</div>`;
+            const key = `${i}:${age}:${p.log.indexOf(e)}`;
+            const cls = [e.kind === 'wish' ? 'wish' : '', e.kind === 'decision' || e.kind === 'wish' ? 'dec' : '', e.kind === 'death' ? 'death' : '', e.heavy ? 'heavy' : '', freshEntries.has(e) ? 'fresh' : '', openKeys.has(key) ? 'open' : ''].join(' ');
+            return `<button type="button" class="ment ${cls}" data-key="${key}" aria-expanded="${openKeys.has(key)}"><b class="t">${esc(e.title)}</b><span class="d">${esc(e.text)}</span></button>${e.heavy ? '<button class="help-note" data-act="helpnote">つらいときの相談先</button>' : ''}`;
           })
           .join('');
-        return `<article class="mcard ${ERA_CLASS[i]}"><span class="meta">${year}年・${esc(p.name.split(' ')[1] ?? '')}${es.length > 1 ? `　${es.length}件` : ''}</span>${inner}</article>`;
+        const more = showAll ? '' : `<button type="button" class="mmore" data-more="${moreKey}">ほか${es.length - 2}件</button>`;
+        return `<div class="mline ${ERA_CLASS[i]}">${who}<div class="mbody">${inner}${more}</div></div>`;
       });
-      return `<section class="mrow"><h3 class="mage">${age}歳<small>${ai === 0 ? '横にめくって見比べる' : ''}</small></h3><div class="mswipe">${cards.join('')}</div><div class="mdots" aria-hidden="true">${st.persons.map((_, k) => `<i class="${ERA_CLASS[k]} ${k === 0 ? 'on' : ''}"></i>`).join('')}</div></section>`;
+      const gone = st.persons.filter((p) => p.deathAge !== undefined && p.deathAge < age && !deathPending(p)).map((p) => `${esc(p.name.split(' ')[1] ?? '')}は${p.deathAge}歳で死去`);
+      return `<section class="mrow"><h3 class="mage">${age}歳${gone.length ? `<small>${gone.join('・')}</small>` : ''}</h3>${lines.join('')}</section>`;
     })
     .join('');
-  box.querySelectorAll<HTMLElement>('.mswipe').forEach((sw) => {
-    const dots = sw.nextElementSibling?.querySelectorAll('i');
-    if (!dots) return;
-    sw.addEventListener(
-      'scroll',
-      () => {
-        const k = Math.round(sw.scrollLeft / Math.max(1, (sw.firstElementChild as HTMLElement).offsetWidth + 8));
-        dots.forEach((d, j) => d.classList.toggle('on', j === k));
-      },
-      { passive: true },
-    );
-  });
+  box.querySelectorAll<HTMLButtonElement>('[data-more]').forEach((b) =>
+    b.addEventListener('click', (ev) => {
+      ev.stopPropagation();
+      openKeys.add(b.dataset.more!);
+      renderMFeed();
+    }),
+  );
+  box.querySelectorAll<HTMLButtonElement>('.ment[data-key]').forEach((b) =>
+    b.addEventListener('click', (ev) => {
+      ev.stopPropagation();
+      const k = b.dataset.key!;
+      if (openKeys.has(k)) openKeys.delete(k);
+      else openKeys.add(k);
+      b.classList.toggle('open', openKeys.has(k));
+      b.setAttribute('aria-expanded', String(openKeys.has(k)));
+    }),
+  );
 }
+
+/** スマホで全文を開いている出来事 */
+const openKeys = new Set<string>();
 
 function renderAll(): void {
   state?.persons.forEach((_, i) => renderCol(i));
@@ -890,6 +911,174 @@ function showAbout(): void {
   el.querySelector('[data-close]')!.addEventListener('click', close);
 }
 
+
+// ---------- 暮らし（家族とお金、思いを残す） ----------
+
+function showKurashi(): void {
+  const st = state!;
+  const wasPaused = paused;
+  paused = true;
+  const render = (k: number) => {
+    const p = st.persons[k];
+    const age = p.alive ? shownAge : p.deathAge ?? shownAge;
+    const year = p.birthYear + age;
+    const fa = p.fatherAlive ? `${year - p.fatherBirthYear}歳` : '亡くなった';
+    const mo = p.motherAlive ? `${year - p.motherBirthYear}歳` : '亡くなった';
+    const kids = p.children.length ? p.children.map((c) => (c.alive ? `${c.sex === 'male' ? '男' : '女'}・${Math.max(0, year - c.birthYear)}歳` : '幼くして死去')).join('、') : 'いない';
+    return html`<div class="logwrap ${ERA_CLASS[k]}">
+      <div class="tabs" role="tablist">${st.persons.map((q, j) => `<button class="btn small ${j === k ? '' : 'ghost'}" role="tab" aria-selected="${j === k}" data-tab="${j}">${q.birthYear}年</button>`)}</div>
+      <h2>${esc(p.name)}の暮らし</h2>
+      <p class="muted" style="margin-top:0">${year}年・${p.alive ? `${age}歳` : `${p.deathAge}歳で死去`}</p>
+      <dl class="kv">
+        <dt>父</dt><dd>${fa}</dd>
+        <dt>母</dt><dd>${mo}</dd>
+        <dt>きょうだい</dt><dd>${p.siblings === 1 ? 'ひとりっ子' : `${p.siblings}人の${p.birthOrder}番目`}</dd>
+        <dt>配偶者</dt><dd>${p.married ? (p.spouseAlive ? `${p.marriageType ?? ''}結婚（${p.marriageAge}歳で）` : '亡くなった') : 'いない'}</dd>
+        <dt>子ども</dt><dd>${kids}</dd>
+        <dt>${p.money < 0 ? 'ローン・借金' : '貯え'}</dt><dd>${yen(Math.abs(p.money))}（今の価値で${yen(Math.abs(p.money) * S.toReal2020(year))}）</dd>
+        <dt>${p.pensionMonthly ? '年金' : '年収'}</dt><dd>${p.pensionMonthly ? `月${yen(p.pensionMonthly)}` : p.income > 0 ? yen(p.income) : 'なし'}</dd>
+        <dt>お金の置き場所</dt><dd>${st.prefs.invest === 'stock' ? '株' : st.prefs.invest === 'spend' ? '使う' : '銀行（定期預金）'}</dd>
+      </dl>
+    </div>
+    <h3 class="sub">3人のお金（全員に当てはまる）</h3>
+    <div class="acts3">
+      <button class="btn small" data-money="spend" ${st.done.includes(`spend${shownAge}`) ? 'disabled' : ''}>旅行や趣味に使う</button>
+      <button class="btn small ghost" data-money="save" aria-pressed="${st.prefs.invest !== 'stock'}">銀行に預ける</button>
+      <button class="btn small ghost" data-money="stock" aria-pressed="${st.prefs.invest === 'stock'}">株を買う</button>
+    </div>
+    <h3 class="sub">思いを残す</h3>
+    <div class="note-row">
+      <label for="note" class="sr-only">いまの気持ち</label>
+      <input id="note" maxlength="60" placeholder="いまの気持ちを一行で（3人の記録に残ります）" />
+      <button class="btn small" data-note>残す</button>
+    </div>
+    <div style="margin-top:14px"><button class="btn" data-close>閉じる</button></div>`;
+  };
+  const { el, close } = sheet(render(0), { label: '暮らし', dismiss: true });
+  const done = () => {
+    paused = wasPaused;
+    renderAll();
+  };
+  const bind = (k: number) => {
+    const box = el.querySelector('.sheet')!;
+    box.innerHTML = '<button class="sheet-x" data-x aria-label="閉じる">×</button>' + render(k);
+    box.querySelectorAll<HTMLButtonElement>('[data-tab]').forEach((b) => b.addEventListener('click', () => bind(Number(b.dataset.tab))));
+    box.querySelector('[data-close]')!.addEventListener('click', () => {
+      close();
+      done();
+    });
+    box.querySelector('[data-x]')!.addEventListener('click', done);
+    box.querySelectorAll<HTMLButtonElement>('[data-money]').forEach((b) =>
+      b.addEventListener('click', () => {
+        const m = b.dataset.money!;
+        if (m === 'spend') {
+          st.done.push(`spend${shownAge}`);
+          st.persons.forEach((p) => {
+            if (!p.alive || p.money <= 0) return;
+            const y = p.birthYear + shownAge;
+            const spent = p.money * 0.15;
+            p.money -= spent;
+            p.stats.happiness = Math.min(100, p.stats.happiness + 6);
+            const where = y < 1965 ? '近くの温泉へ一泊の旅行に出かけた' : y < 1990 ? '家族で旅行に出かけた' : y >= 2020 && y <= 2021 ? '遠出はできず、家で過ごす趣味にお金を使った' : '週末に旅行に出かけた';
+            p.log.push({ age: shownAge, year: y, kind: 'money', title: 'お金を使った', text: `${where}。約${yen(spent)}を使った。` });
+          });
+          toast('3人とも、お金を使いました');
+        } else {
+          st.prefs.invest = m as 'save' | 'stock';
+          toast(m === 'stock' ? 'これから貯えは株で持ちます' : 'これから貯えは銀行に預けます');
+        }
+        bind(k);
+      }),
+    );
+    box.querySelector('[data-note]')!.addEventListener('click', () => {
+      const v = (box.querySelector('#note') as HTMLInputElement).value.trim().slice(0, 60);
+      if (!v) return;
+      st.persons.forEach((p) => {
+        if (p.alive) p.log.push({ age: shownAge, year: p.birthYear + shownAge, kind: 'note', title: '思いを残した', text: v, star: true });
+      });
+      toast('3人の記録に残しました');
+      (box.querySelector('#note') as HTMLInputElement).value = '';
+    });
+  };
+  bind(0);
+}
+
+// ---------- 前世の記録と図鑑 ----------
+
+const HIST_KEY = 'umaredoshi.history.v1';
+const DEX_KEY = 'umaredoshi.dex.v1';
+
+interface HistRec {
+  at: string;
+  seed: number;
+  pref: number;
+  sex: 'male' | 'female';
+  years: number[];
+  deaths: (number | undefined)[];
+  names: string[];
+  okuri: string;
+}
+
+function saveHistory(st: GameState, okuri: string): void {
+  const list = store.get<HistRec[]>(HIST_KEY) ?? [];
+  const rec: HistRec = {
+    at: new Date().toISOString().slice(0, 10),
+    seed: st.seed,
+    pref: st.shared.pref,
+    sex: st.shared.sex,
+    years: st.persons.map((p) => p.birthYear),
+    deaths: st.persons.map((p) => p.deathAge),
+    names: st.persons.map((p) => p.name),
+    okuri,
+  };
+  const rest = list.filter((r) => r.seed !== st.seed);
+  store.set(HIST_KEY, [rec, ...rest].slice(0, 10));
+  const dex = new Set(store.get<string[]>(DEX_KEY) ?? []);
+  dex.add(`${st.shared.pref}-${st.shared.sex}-${st.gacha.years[1]}`);
+  store.set(DEX_KEY, [...dex]);
+}
+
+/** 珍しい組み合わせ。真ん中の生まれ年と県・性別で決まる */
+const RARE: { id: string; label: string; test: (pref: number, sex: string, mid: number) => boolean }[] = [
+  { id: 'hinoe', label: '丙午（1966年）に生まれた', test: (_p, _s, m) => m === 1966 },
+  { id: 'shusen', label: '終戦の年（1945年）に生まれた人がいる', test: (_p, _s, m) => m === 1975 },
+  { id: 'okinawa', label: '本土復帰の前の沖縄に生まれた', test: (p, _s, m) => p === 47 && m <= 1971 },
+  { id: 'tokyo64', label: '東京オリンピックの年（1964年）に生まれた', test: (_p, _s, m) => m === 1964 },
+  { id: 'genbaku', label: '広島か長崎で、戦時中に生まれた人がいる', test: (p, _s, m) => (p === 34 || p === 42) && m <= 1975 && m >= 1971 },
+  { id: 'babyboom2', label: '第2次ベビーブーム（1971〜74年）の真ん中', test: (_p, _s, m) => m >= 1971 && m <= 1974 },
+];
+
+function showDex(): void {
+  const list = store.get<HistRec[]>(HIST_KEY) ?? [];
+  const dex = new Set(store.get<string[]>(DEX_KEY) ?? []);
+  const total = 47 * 2 * 16;
+  const prefsHit = new Set([...dex].map((k) => Number(k.split('-')[0])));
+  const rareHit = RARE.filter((r) => [...dex].some((k) => {
+    const [p, s, m] = k.split('-');
+    return r.test(Number(p), s, Number(m));
+  }));
+  const { el, close } = sheet(
+    html`<p class="kicker">前世の記録と図鑑</p>
+      <h2>これまでの人生</h2>
+      ${list.length
+        ? `<ol class="hist">${list
+            .map(
+              (r) =>
+                `<li><span class="muted">${r.at}・${esc(S.PREFS[r.pref - 1])}・${r.sex === 'male' ? '男' : '女'}</span><b>${r.years.map((y, i) => `${y}年生まれ 享年${r.deaths[i] ?? '−'}`).join('　')}</b>${r.okuri ? `<q>${esc(r.okuri)}</q>` : ''}</li>`,
+            )
+            .join('')}</ol>`
+        : '<p class="muted">まだ記録はありません。最後まで生きると、ここに残ります（直近10回まで）。</p>'}
+      <h3 class="sub">図鑑　${dex.size} / ${total}</h3>
+      <p class="muted" style="font-size:13px;margin-top:0">都道府県 × 性別 × 真ん中の生まれ年（1960〜75年）の組み合わせ。生まれた県が塗られていきます。</p>
+      <div class="dexmap" aria-label="生まれた都道府県">${S.PREFS.map((n, i) => `<span class="${prefsHit.has(i + 1) ? 'on' : ''}" title="${n}">${n === '北海道' ? n : n.replace(/[都府県]$/, '')}</span>`).join('')}</div>
+      <h3 class="sub">珍しい組み合わせ</h3>
+      <ul class="rare">${RARE.map((r) => `<li class="${rareHit.includes(r) ? 'on' : ''}">${rareHit.includes(r) ? '◆' : '◇'} ${esc(r.label)}</li>`).join('')}</ul>
+      <button class="btn" data-close style="margin-top:12px">閉じる</button>`,
+    { label: '前世の記録と図鑑', dismiss: true },
+  );
+  el.querySelector('[data-close]')!.addEventListener('click', close);
+}
+
 // ---------- 最後の画面 ----------
 
 async function showEnd(skipSlides = false): Promise<void> {
@@ -941,6 +1130,12 @@ async function showEnd(skipSlides = false): Promise<void> {
 
       ${wishesPanel(st)}
 
+      <section class="panel">
+        <h3>贈ることば</h3>
+        <label for="okuri" class="muted" style="display:block;margin-bottom:6px;font-size:13px">次に、同じ県に生まれる誰かへ。共有する文章と、前世の記録に残ります。</label>
+        <textarea id="okuri" maxlength="140" rows="3" class="okuri" placeholder="例：生まれた年は選べない。でも、望むことはやめなかった。"></textarea>
+      </section>
+
       <section class="panel share">
         <h3>共有カード</h3>
         <canvas id="card" width="1200" height="630" role="img" aria-label="3人の人生をまとめた共有用の画像"></canvas>
@@ -957,6 +1152,9 @@ async function showEnd(skipSlides = false): Promise<void> {
     </main>`;
   bindCommon(app);
   store.del(SAVE_KEY);
+  saveHistory(st, '');
+  const okuri = app.querySelector('#okuri') as HTMLTextAreaElement;
+  okuri.addEventListener('change', () => saveHistory(st, okuri.value.slice(0, 140)));
   const canvas = app.querySelector('#card') as HTMLCanvasElement;
   await drawShareCard(canvas, st, isMobile());
   app.querySelector('#save')!.addEventListener('click', () => {
@@ -967,14 +1165,14 @@ async function showEnd(skipSlides = false): Promise<void> {
   });
   app.querySelector('#copy')!.addEventListener('click', async () => {
     try {
-      await navigator.clipboard.writeText(shareText(st));
+      await navigator.clipboard.writeText(shareText(st, (app.querySelector('#okuri') as HTMLTextAreaElement)?.value));
       toast('文章をコピーしました');
     } catch {
       toast('コピーできませんでした');
     }
   });
   app.querySelector('#shareb')!.addEventListener('click', async () => {
-    const text = shareText(st);
+    const text = shareText(st, (app.querySelector('#okuri') as HTMLTextAreaElement)?.value);
     try {
       const blob: Blob | null = await new Promise((r) => canvas.toBlob(r, 'image/png'));
       const file = blob ? new File([blob], 'umaredoshi.png', { type: 'image/png' }) : null;
