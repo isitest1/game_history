@@ -1,0 +1,1796 @@
+[
+  {
+    "id": "system-1947-04-rokusan-child",
+    "key": "rokusan-1947",
+    "category": "system",
+    "year": 1947,
+    "month": 4,
+    "ageMin": 6,
+    "ageMax": 11,
+    "sex": "any",
+    "title": "国民学校が小学校に",
+    "text": "4月、国民学校の名前が小学校に戻った。新しい学制で、義務教育は小学校6年と中学校3年の9年になった。墨で塗った教科書から新しい教科書に変わった。",
+    "effects": {
+      "knowledge": 2
+    },
+    "probability": 1.0,
+    "source": {
+      "title": "文部科学省 我が国の義務教育制度の変遷",
+      "url": "https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo0/toushin/attach/1419881.htm",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1947-04-rokusan-youth",
+    "key": "rokusan-1947",
+    "category": "system",
+    "year": 1947,
+    "month": 4,
+    "ageMin": 12,
+    "ageMax": 14,
+    "sex": "any",
+    "title": "新制中学校ができた",
+    "text": "4月、新しい中学校ができ、中学までが義務教育になった。校舎が足りず、小学校の教室を借りたり、二部授業をしたりした。先生も教科書も足りなかった。",
+    "effects": {
+      "knowledge": 3
+    },
+    "probability": 1.0,
+    "source": {
+      "title": "コトバンク 六三制・学校教育法",
+      "url": "https://kotobank.jp/word/学校教育法",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1948-shinseikoko-youth",
+    "key": "shinsei-koko-1948",
+    "category": "system",
+    "year": 1948,
+    "ageMin": 15,
+    "ageMax": 17,
+    "sex": "any",
+    "conditions": {
+      "education": [
+        "high",
+        "junior",
+        "univ"
+      ]
+    },
+    "title": "新制高校ができた",
+    "text": "新しい学制で、旧制の中学校や女学校が新制の高等学校に切り替わった。男女共学になった学校もあり、教室の顔ぶれががらりと変わった。",
+    "effects": {
+      "knowledge": 2
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "コトバンク 六三制・学校教育法",
+      "url": "https://kotobank.jp/word/学校教育法",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1949-shinseidai-youth",
+    "key": "shinsei-daigaku-1949",
+    "category": "system",
+    "year": 1949,
+    "ageMin": 18,
+    "ageMax": 19,
+    "sex": "any",
+    "conditions": {
+      "education": [
+        "univ"
+      ]
+    },
+    "title": "新制大学の始まり",
+    "text": "この年、新制の大学が発足した。旧制の高校や専門学校が大学に生まれ変わり、女子にも大学の門が広く開かれた。入試の仕組みも変わった。",
+    "effects": {
+      "knowledge": 3
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "コトバンク 六三制・学校教育法",
+      "url": "https://kotobank.jp/word/学校教育法",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1948-01-minpo-child",
+    "key": "minpo-1948",
+    "category": "system",
+    "year": 1948,
+    "month": 1,
+    "ageMin": 3,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "家制度がなくなった",
+    "text": "1月、新しい民法が施行され、戸主の制度や家督相続がなくなった。大人たちは、これからは長男だけが家を継ぐわけではないと話していた。",
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "改正民法公布記念日（1947年12月22日公布、1948年1月1日施行）",
+      "url": "https://bestcalendar.jp/dates/kinenbi/5118",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1948-01-minpo-youth",
+    "key": "minpo-1948",
+    "category": "system",
+    "year": 1948,
+    "month": 1,
+    "ageMin": 13,
+    "ageMax": 18,
+    "sex": "any",
+    "title": "新しい民法",
+    "text": "1月、改正民法が施行された。結婚は本人同士の合意で決められるようになり、相続は兄弟姉妹で均等に分けることになった。家のしきたりは急には変わらなかった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "改正民法公布記念日（1947年12月22日公布、1948年1月1日施行）",
+      "url": "https://bestcalendar.jp/dates/kinenbi/5118",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1961-04-kaihoken-youth",
+    "key": "kaihoken-1961",
+    "category": "system",
+    "year": 1961,
+    "month": 4,
+    "ageMin": 16,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "国民皆保険",
+    "text": "4月、すべての人が何らかの医療保険に入る国民皆保険が実現した。保険証を持って病院へ行けるようになり、病気になっても医療費を全額払わずに済んだ。",
+    "effects": {
+      "health": 3
+    },
+    "probability": 1.0,
+    "source": {
+      "title": "厚生労働省 年金制度の仕組みと考え方（国民皆年金）",
+      "url": "https://www.mhlw.go.jp/stf/nenkin_shikumi_04.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1961-04-kaihoken-adult",
+    "key": "kaihoken-1961",
+    "category": "system",
+    "year": 1961,
+    "month": 4,
+    "ageMin": 30,
+    "ageMax": 31,
+    "sex": "any",
+    "title": "保険証が届いた",
+    "text": "4月から国民健康保険がすべての市町村で始まった。それまで保険のなかった農家や商店の人も保険証を持てるようになり、医者にかかりやすくなった。",
+    "effects": {
+      "health": 3
+    },
+    "probability": 1.0,
+    "source": {
+      "title": "厚生労働省 年金制度の仕組みと考え方（国民皆年金）",
+      "url": "https://www.mhlw.go.jp/stf/nenkin_shikumi_04.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1961-04-kainenkin-youth",
+    "key": "kainenkin-1961",
+    "category": "system",
+    "year": 1961,
+    "month": 4,
+    "ageMin": 20,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "farm",
+        "self",
+        "none"
+      ]
+    },
+    "title": "国民年金に加入",
+    "text": "4月、国民年金の保険料の徴収が全国で始まった。会社勤めでない人も年金に入る国民皆年金だ。老後のことなど遠い先の話に思えた。",
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "厚生労働省 年金制度の仕組みと考え方（国民皆年金）",
+      "url": "https://www.mhlw.go.jp/stf/nenkin_shikumi_04.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1973-fukushi-adult",
+    "key": "fukushi-gannen-1973",
+    "category": "system",
+    "year": 1973,
+    "ageMin": 28,
+    "ageMax": 43,
+    "sex": "any",
+    "title": "福祉元年",
+    "text": "年金が大きく引き上げられて「5万円年金」と言われ、物価に合わせて年金額を改める仕組みもできた。親の老後は国が支えてくれるのだと思えた。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "厚生労働省 厚生白書（昭和48年版）年金制度の改正",
+      "url": "https://www.mhlw.go.jp/toukei_hakusho/hakusho/kousei/1973/dl/10.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1973-01-roujinmuryo-child",
+    "key": "roujin-muryo-1973",
+    "category": "system",
+    "year": 1973,
+    "month": 1,
+    "ageMin": 3,
+    "ageMax": 13,
+    "sex": "any",
+    "title": "祖父母の病院代が無料に",
+    "text": "1月から、70歳以上のお年寄りの医療費が無料になった。祖母は前より気軽に病院へ通うようになり、待合室はお年寄りで混み合った。",
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "厚生労働省 老人医療費の無料化と老人保健法",
+      "url": "https://www.mhlw.go.jp/seisaku/dl/07b.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1973-01-roujinmuryo-adult",
+    "key": "roujin-muryo-1973",
+    "category": "system",
+    "year": 1973,
+    "month": 1,
+    "ageMin": 28,
+    "ageMax": 43,
+    "sex": "any",
+    "title": "老人医療費の無料化",
+    "text": "1月、国の制度として70歳以上の医療費が無料になった。親の通院の費用を心配しなくてよくなった。のちに病院がお年寄りのサロンのようだと言われた。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "厚生労働省 老人医療費の無料化と老人保健法",
+      "url": "https://www.mhlw.go.jp/seisaku/dl/07b.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1983-roujinhoken-adult",
+    "key": "roujin-hoken-1983",
+    "category": "system",
+    "year": 1983,
+    "ageMin": 38,
+    "ageMax": 53,
+    "sex": "any",
+    "title": "老人医療が有料に",
+    "text": "老人保健法ができ、無料だったお年寄りの医療費に一部負担が戻った。外来は月400円、入院は1日300円。親は小銭入れを持って病院へ行くようになった。",
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "厚生労働省 老人保健法による一部負担の導入",
+      "url": "https://www.mhlw.go.jp/seisaku/dl/07b.pdf",
+      "verified": false,
+      "note": "負担額は確認済み、施行の月は未確認"
+    }
+  },
+  {
+    "id": "system-1983-roujinhoken-youth",
+    "key": "roujin-hoken-1983",
+    "category": "system",
+    "year": 1983,
+    "ageMin": 8,
+    "ageMax": 23,
+    "sex": "any",
+    "title": "祖父母の病院代",
+    "text": "お年寄りの病院代が、また少しかかるようになった。祖父は「タダのうちに行っておけばよかった」と冗談を言い、通院の回数を少し減らした。",
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "厚生労働省 老人保健法による一部負担の導入",
+      "url": "https://www.mhlw.go.jp/seisaku/dl/07b.pdf",
+      "verified": false,
+      "note": "施行の月は未確認"
+    }
+  },
+  {
+    "id": "system-1984-kenpo1-adult",
+    "key": "kenpo-1wari-1984",
+    "category": "system",
+    "year": 1984,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco",
+        "public"
+      ]
+    },
+    "title": "健保の本人負担1割",
+    "text": "会社の健康保険で、それまで定額だった本人の窓口負担が医療費の1割になった。給料から引かれる保険料も上がり、病院代の明細を気にするようになった。",
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "国立社会保障・人口問題研究所 医療保険制度の変遷（被用者本人の負担割合）",
+      "url": "https://www.ipss.go.jp/publication/j/shiryou/no.13/data/kaidai/03.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1997-kenpo2-young",
+    "key": "kenpo-2wari-1997",
+    "category": "system",
+    "year": 1997,
+    "ageMin": 22,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco",
+        "public"
+      ]
+    },
+    "title": "医療費が2割負担に",
+    "text": "会社の健康保険の本人負担が1割から2割に上がった。風邪くらいで病院へ行くのはやめようと思った。同じ年に消費税も5%になった。",
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "国立社会保障・人口問題研究所 医療保険制度の変遷（被用者本人の負担割合）",
+      "url": "https://www.ipss.go.jp/publication/j/shiryou/no.13/data/kaidai/03.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1997-kenpo2-adult",
+    "key": "kenpo-2wari-1997",
+    "category": "system",
+    "year": 1997,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco",
+        "public"
+      ]
+    },
+    "title": "医療費が2割負担に",
+    "text": "健康保険の本人負担が2割に引き上げられた。持病で通院していると、毎月の負担がはっきり増えた。社会保障の負担は上がる一方だと感じた。",
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "国立社会保障・人口問題研究所 医療保険制度の変遷（被用者本人の負担割合）",
+      "url": "https://www.ipss.go.jp/publication/j/shiryou/no.13/data/kaidai/03.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2003-04-kenpo3-young",
+    "key": "kenpo-3wari-2003",
+    "category": "system",
+    "year": 2003,
+    "month": 4,
+    "ageMin": 25,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco",
+        "public"
+      ]
+    },
+    "title": "医療費が3割負担に",
+    "text": "4月、会社員の医療費の窓口負担が3割になった。親の世代は若いころ1割で済んでいたと聞き、同じ会社員でもずいぶん違うものだと思った。",
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "国立社会保障・人口問題研究所 医療保険制度の変遷（被用者本人の負担割合）",
+      "url": "https://www.ipss.go.jp/publication/j/shiryou/no.13/data/kaidai/03.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2003-04-kenpo3-adult",
+    "key": "kenpo-3wari-2003",
+    "category": "system",
+    "year": 2003,
+    "month": 4,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco",
+        "public"
+      ]
+    },
+    "title": "医療費が3割負担に",
+    "text": "4月から健康保険の本人負担が3割になり、家族と同じ負担割合になった。反対の声は大きかったが実施された。歯医者に通うのを先延ばしにした。",
+    "effects": {
+      "health": -1
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "国立社会保障・人口問題研究所 医療保険制度の変遷（被用者本人の負担割合）",
+      "url": "https://www.ipss.go.jp/publication/j/shiryou/no.13/data/kaidai/03.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2008-04-kouki-senior",
+    "key": "kouki-koureisha-2008",
+    "category": "system",
+    "year": 2008,
+    "month": 4,
+    "ageMin": 75,
+    "ageMax": 78,
+    "sex": "any",
+    "title": "後期高齢者医療制度",
+    "text": "4月、75歳以上はみな後期高齢者医療制度に移ることになった。「後期高齢者」という呼び名に腹を立てる人も多く、保険料は年金から引かれるようになった。",
+    "effects": {
+      "happiness": -2
+    },
+    "probability": 1.0,
+    "source": {
+      "title": "船橋市 後期高齢者医療制度",
+      "url": "https://www.city.funabashi.lg.jp/kenkou/kokuho/005/p140729.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2008-04-kouki-adult",
+    "key": "kouki-koureisha-2008",
+    "category": "system",
+    "year": 2008,
+    "month": 4,
+    "ageMin": 33,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "親の保険が変わった",
+    "text": "4月、親が75歳以上の後期高齢者医療制度に移った。保険料が年金から天引きされるようになり、制度の名前の評判も悪かった。手続きを手伝った。",
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "船橋市 後期高齢者医療制度",
+      "url": "https://www.city.funabashi.lg.jp/kenkou/kokuho/005/p140729.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2014-04-iryo7074-senior",
+    "key": "iryo-7074-2014",
+    "category": "system",
+    "year": 2014,
+    "endYear": 2019,
+    "month": 4,
+    "ageMin": 70,
+    "ageMax": 70,
+    "sex": "any",
+    "title": "70歳から2割負担",
+    "text": "4月以降に70歳になった人から、医療費の窓口負担が2割になった。少し上の人たちは1割のままで、生まれ月の違いで負担が変わるのは妙な気がした。",
+    "probability": 1.0,
+    "source": {
+      "title": "厚生労働省 医療費の動向（70-74歳の負担割合）",
+      "url": "https://www.mhlw.go.jp/content/r03_doukou_teisei.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2022-10-iryo75-senior",
+    "key": "iryo-75-2wari-2022",
+    "category": "system",
+    "year": 2022,
+    "month": 10,
+    "ageMin": 75,
+    "ageMax": 95,
+    "sex": "any",
+    "title": "75歳以上も2割に",
+    "text": "10月から、75歳以上でも一定以上の所得がある人は医療費の窓口負担が2割になった。対象は2割ほどだった。通知を見て、病院代を計算し直した。",
+    "probability": 0.2,
+    "source": {
+      "title": "船橋市 後期高齢者医療制度",
+      "url": "https://www.city.funabashi.lg.jp/kenkou/kokuho/005/p140729.html",
+      "verified": true,
+      "note": "対象は被保険者の約20%"
+    }
+  },
+  {
+    "id": "system-1979-01-kyotsu1-youth",
+    "key": "kyotsu-ichiji-1979",
+    "category": "system",
+    "year": 1979,
+    "endYear": 1989,
+    "month": 1,
+    "ageMin": 18,
+    "ageMax": 19,
+    "sex": "any",
+    "conditions": {
+      "education": [
+        "univ"
+      ]
+    },
+    "title": "共通一次試験",
+    "text": "国公立大学を受けるため、1月の共通一次試験を受けた。5教科7科目、1000点満点のマークシートだった。自己採点で志望校を決め直した。",
+    "effects": {
+      "knowledge": 3
+    },
+    "probability": 0.9,
+    "probNote": "国公立志望者のみ・目安",
+    "source": {
+      "title": "nippon.com 今日は何の日 1月13日（共通一次試験）",
+      "url": "https://www.nippon.com/ja/japan-topics/today0113/",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1990-01-center-youth",
+    "key": "center-shiken-1990",
+    "category": "system",
+    "year": 1990,
+    "endYear": 2020,
+    "month": 1,
+    "ageMin": 18,
+    "ageMax": 19,
+    "sex": "any",
+    "conditions": {
+      "education": [
+        "univ"
+      ]
+    },
+    "title": "センター試験",
+    "text": "1月、大学入試センター試験を受けた。私立大学も成績を使えるようになり、国公立を受けない友だちも受けていた。雪で開始が遅れる会場もあった。",
+    "effects": {
+      "knowledge": 3
+    },
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "nippon.com 今日は何の日 1月13日（共通一次試験）",
+      "url": "https://www.nippon.com/ja/japan-topics/today0113/",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2021-01-kyotsutest-youth",
+    "key": "kyotsu-test-2021",
+    "category": "system",
+    "year": 2021,
+    "endYear": 2025,
+    "month": 1,
+    "ageMin": 18,
+    "ageMax": 19,
+    "sex": "any",
+    "conditions": {
+      "education": [
+        "univ"
+      ]
+    },
+    "title": "大学入学共通テスト",
+    "text": "1月、センター試験に代わる大学入学共通テストを受けた。初めての問題形式で、過去問がほとんどなかった。会場では全員がマスクをしていた。",
+    "effects": {
+      "knowledge": 3
+    },
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "東京大学 学位論文要旨（大学入学共通テスト 2021年〜）",
+      "url": "https://repository.dl.itc.u-tokyo.ac.jp/record/2008892/files/A38915_abstract.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1986-04-kinto-young",
+    "key": "kinto-1986",
+    "category": "system",
+    "year": 1986,
+    "month": 4,
+    "ageMin": 18,
+    "ageMax": 29,
+    "sex": "female",
+    "title": "男女雇用機会均等法",
+    "text": "4月、男女雇用機会均等法が施行された。女性にも総合職の道が開かれ、男性と同じ採用試験を受けられるようになった。それでも「腰かけ」と見る目は残っていた。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "大和総研 男女雇用機会均等法",
+      "url": "https://www.dir.co.jp/report/research/capital-mkt/esg/keyword/20130107_006641.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1986-04-kinto-adult",
+    "key": "kinto-1986",
+    "category": "system",
+    "year": 1986,
+    "month": 4,
+    "ageMin": 30,
+    "ageMax": 56,
+    "sex": "female",
+    "title": "均等法の時代",
+    "text": "4月、男女雇用機会均等法が施行された。自分が若いころは、女性は結婚したら辞めるものとされていた。職場に入ってくる若い女性の働き方が変わり始めた。",
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "大和総研 男女雇用機会均等法",
+      "url": "https://www.dir.co.jp/report/research/capital-mkt/esg/keyword/20130107_006641.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1999-04-kinto99-young",
+    "key": "kinto-kaisei-1999",
+    "category": "system",
+    "year": 1999,
+    "month": 4,
+    "ageMin": 20,
+    "ageMax": 39,
+    "sex": "female",
+    "title": "均等法の改正",
+    "text": "4月、改正均等法が施行され、募集や採用、昇進で女性を差別することが禁止になった。努力目標ではなく禁止になったことで、求人票の書き方も変わった。",
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "大和総研 男女雇用機会均等法",
+      "url": "https://www.dir.co.jp/report/research/capital-mkt/esg/keyword/20130107_006641.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1988-shu40-young",
+    "key": "shu40-1988",
+    "category": "system",
+    "year": 1988,
+    "ageMin": 18,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco",
+        "public"
+      ]
+    },
+    "title": "土曜が休みになった",
+    "text": "改正労働基準法で、法定の労働時間は週48時間から40時間へと段階的に縮まり、有給休暇も増えた。週休2日の会社が増え、土曜の過ごし方が変わった。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "日本労働研究雑誌 2008年10月号（1987年改正労働基準法）",
+      "url": "https://www.jil.go.jp/institute/zassi/backnumber/2008/10/pdf/053-065.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1988-04-shu40-adult",
+    "key": "shu40-1988",
+    "category": "system",
+    "year": 1988,
+    "month": 4,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco",
+        "public"
+      ]
+    },
+    "title": "週40時間へ",
+    "text": "4月、労働時間を週40時間にする改正労働基準法が施行された。すぐには変わらなかったが、数年かけて土曜日が休みの職場が当たり前になっていった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "日本労働研究雑誌 2008年10月号（1987年改正労働基準法）",
+      "url": "https://www.jil.go.jp/institute/zassi/backnumber/2008/10/pdf/053-065.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1992-05-koumuin-adult",
+    "key": "koumuin-shukyu2-1992",
+    "category": "system",
+    "year": 1992,
+    "month": 5,
+    "ageMin": 17,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "public"
+      ]
+    },
+    "title": "役所も土曜休みに",
+    "text": "5月から国家公務員が完全週休2日制になった。役所の窓口も土曜は閉まるようになった。民間で完全週休2日の会社は、まだ少数だった。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.9,
+    "probNote": "目安",
+    "source": {
+      "title": "日本郵政 社史（国家公務員の完全週休2日制）",
+      "url": "https://www.japanpost.jp/corporate/milestone/chronicle/pdf/main_3_6_01.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1992-09-shu5a-youth",
+    "key": "gakko-shu5-1992",
+    "category": "system",
+    "year": 1992,
+    "month": 9,
+    "ageMin": 15,
+    "ageMax": 18,
+    "sex": "any",
+    "conditions": {
+      "education": [
+        "high",
+        "junior",
+        "univ"
+      ]
+    },
+    "title": "第2土曜が休みに",
+    "text": "9月から、毎月第2土曜日が学校の休みになった。月に1回だけの土曜休みは、何をしていいか分からず、結局は部活や塾で埋まった。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 1.0,
+    "source": {
+      "title": "文部科学省 学校週5日制の経緯",
+      "url": "https://www.mext.go.jp/component/b_menu/other/__icsFiles/afieldfile/2014/12/02/1353780_001.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1995-04-shu5b-child",
+    "key": "gakko-shu5-1995",
+    "category": "system",
+    "year": 1995,
+    "endYear": 2001,
+    "month": 4,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "土曜休みが月2回",
+    "text": "学校は第2と第4の土曜日が休みだった。休みでない土曜は午前中だけ授業があり、給食はなかった。休みの土曜は家族と出かけたり友だちと遊んだりした。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 1.0,
+    "source": {
+      "title": "文部科学省 学校週5日制の経緯",
+      "url": "https://www.mext.go.jp/component/b_menu/other/__icsFiles/afieldfile/2014/12/02/1353780_001.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2002-04-shu5c-child",
+    "key": "gakko-shu5-2002",
+    "category": "system",
+    "year": 2002,
+    "endYear": 2025,
+    "month": 4,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "学校が完全週5日に",
+    "text": "4月から、土曜日の授業がすべてなくなった。学校は月曜から金曜まで。土曜は家で過ごしたり、習い事に通ったりする日になった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 1.0,
+    "source": {
+      "title": "文部科学省 学校週5日制の経緯",
+      "url": "https://www.mext.go.jp/component/b_menu/other/__icsFiles/afieldfile/2014/12/02/1353780_001.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2002-04-shu5c-youth",
+    "key": "gakko-shu5-2002",
+    "category": "system",
+    "year": 2002,
+    "endYear": 2025,
+    "month": 4,
+    "ageMin": 13,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "土曜の授業がなくなった",
+    "text": "4月から完全学校週5日制になり、中学校も土曜が休みになった。そのぶん平日の授業がぎっしり詰まり、土曜に塾へ通う友だちが増えた。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 1.0,
+    "source": {
+      "title": "文部科学省 学校週5日制の経緯",
+      "url": "https://www.mext.go.jp/component/b_menu/other/__icsFiles/afieldfile/2014/12/02/1353780_001.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1980-yutori80-child",
+    "key": "yutori-1980",
+    "category": "system",
+    "year": 1980,
+    "endYear": 1991,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "ゆとりの時間",
+    "text": "新しい学習指導要領で、授業の時間が少し減り、「ゆとりの時間」ができた。何をするかは学校任せで、ドッジボールをしたり花壇の世話をしたりした。",
+    "probability": 1.0,
+    "source": {
+      "title": "文部科学省 学習指導要領の変遷",
+      "url": "https://www.mext.go.jp/",
+      "verified": false
+    }
+  },
+  {
+    "id": "system-2002-04-yutori02-child",
+    "key": "yutori-2002",
+    "category": "system",
+    "year": 2002,
+    "endYear": 2010,
+    "month": 4,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "ゆとり教育",
+    "text": "新しい学習指導要領で教える内容が減り、「総合的な学習の時間」が始まった。円周率は3になるとテレビで騒がれ、学力が下がると心配する大人がいた。",
+    "probability": 1.0,
+    "source": {
+      "title": "コトバンク ゆとり教育",
+      "url": "https://kotobank.jp/word/ゆとり教育",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2002-04-yutori02-youth",
+    "key": "yutori-2002",
+    "category": "system",
+    "year": 2002,
+    "endYear": 2011,
+    "month": 4,
+    "ageMin": 13,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "総合学習の時間",
+    "text": "中学校でも教える内容が減り、総合的な学習の時間で職場体験や調べ学習をした。のちに自分たちの世代は「ゆとり世代」とひとくくりにされた。",
+    "effects": {
+      "flags": [
+        "yutori"
+      ]
+    },
+    "probability": 1.0,
+    "source": {
+      "title": "コトバンク ゆとり教育",
+      "url": "https://kotobank.jp/word/ゆとり教育",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2011-04-datsuyutori-child",
+    "key": "datsu-yutori-2011",
+    "category": "system",
+    "year": 2011,
+    "endYear": 2019,
+    "month": 4,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "授業が増えた",
+    "text": "新しい学習指導要領で、授業の時間と教える内容が増えた。教科書はひと回り厚くなり、5・6年生では外国語活動の時間が新しく始まった。",
+    "effects": {
+      "knowledge": 2
+    },
+    "probability": 1.0,
+    "source": {
+      "title": "ベネッセ教育総合研究所 学習指導要領の変遷",
+      "url": "https://benesse.jp/berd/up_images/research/Sido_KOKO_09.pdf",
+      "verified": false
+    }
+  },
+  {
+    "id": "system-1994-kateika-youth",
+    "key": "kateika-1994",
+    "category": "system",
+    "year": 1994,
+    "endYear": 2025,
+    "ageMin": 15,
+    "ageMax": 18,
+    "sex": "male",
+    "conditions": {
+      "education": [
+        "high",
+        "junior",
+        "univ"
+      ]
+    },
+    "title": "男子も家庭科",
+    "text": "高校の家庭科は男女とも必修だった。調理実習や保育の授業を男女いっしょに受けた。親の世代では、家庭科は女子だけの授業だったと聞いて驚いた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "probability": 1.0,
+    "source": {
+      "title": "外務省 女子差別撤廃条約 報告（家庭科の男女必修）",
+      "url": "https://www.mofa.go.jp/mofaj/gaiko/josi/3c_014.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2007-04-gakute-child",
+    "key": "gakuryoku-test-2007",
+    "category": "system",
+    "year": 2007,
+    "endYear": 2025,
+    "month": 4,
+    "ageMin": 12,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "全国学力テスト",
+    "text": "4月、小学6年生の全員が受ける全国学力テストがあった。43年ぶりの全国一斉の学力調査だった。結果の都道府県順位がニュースになった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "probability": 1.0,
+    "source": {
+      "title": "しんぶん赤旗 2013年7月20日（全国学力テスト）",
+      "url": "https://www.jcp.or.jp/akahata/aik13/2013-07-20/2013072006_01_1.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2010-04-mushoka-youth",
+    "key": "koko-mushoka-2010",
+    "category": "system",
+    "year": 2010,
+    "endYear": 2025,
+    "month": 4,
+    "ageMin": 15,
+    "ageMax": 18,
+    "sex": "any",
+    "conditions": {
+      "education": [
+        "high",
+        "junior",
+        "univ"
+      ]
+    },
+    "title": "高校授業料が無償に",
+    "text": "4月から、公立高校の授業料がかからなくなった。私立に通う生徒にも支援金が出た。家計を気にして進学先を選ぶ同級生には、少し気が楽になった。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 1.0,
+    "source": {
+      "title": "imidas 高校授業料無償化",
+      "url": "https://imidas.jp/genre/detail/F-101-0009.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1989-04-tax3-youth",
+    "key": "shohizei-1989",
+    "category": "system",
+    "year": 1989,
+    "month": 4,
+    "ageMin": 14,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "消費税3%",
+    "text": "4月、消費税が導入され、買い物のたびに3%が上乗せされるようになった。1円玉が急に必要になり、財布の小銭が増えた。自動販売機の値段も変わった。",
+    "probability": 1.0,
+    "source": {
+      "title": "東京財団政策研究所 消費増税を巡る経緯",
+      "url": "https://www.tkfd.or.jp/programs/detail.php?u_id=15",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1989-04-tax3-adult",
+    "key": "shohizei-1989",
+    "category": "system",
+    "year": 1989,
+    "month": 4,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "消費税の導入",
+    "text": "4月、税率3%の消費税が始まった。家計の負担が増えると反対の声が強かった。税込みか税抜きか、店によって値札の書き方もばらばらで、レジで戸惑った。",
+    "probability": 1.0,
+    "source": {
+      "title": "東京財団政策研究所 消費増税を巡る経緯",
+      "url": "https://www.tkfd.or.jp/programs/detail.php?u_id=15",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1997-04-tax5-young",
+    "key": "shohizei-1997",
+    "category": "system",
+    "year": 1997,
+    "month": 4,
+    "ageMin": 20,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "消費税5%",
+    "text": "4月、消費税が5%に上がった。3月には駆け込みで買い物をする人が多かった。同じ年の秋には大きな金融機関の破綻が続き、景気は冷え込んだ。",
+    "probability": 1.0,
+    "source": {
+      "title": "東京財団政策研究所 消費増税を巡る経緯",
+      "url": "https://www.tkfd.or.jp/programs/detail.php?u_id=15",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1997-04-tax5-adult",
+    "key": "shohizei-1997",
+    "category": "system",
+    "year": 1997,
+    "month": 4,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "消費税5%",
+    "text": "4月、消費税が3%から5%に上がり、地方消費税も始まった。同じ年には会社員の医療費の負担も2割に増え、家族で相談して財布のひもを締めた。",
+    "probability": 1.0,
+    "source": {
+      "title": "東京財団政策研究所 消費増税を巡る経緯",
+      "url": "https://www.tkfd.or.jp/programs/detail.php?u_id=15",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1997-04-tax5-senior",
+    "key": "shohizei-1997",
+    "category": "system",
+    "year": 1997,
+    "month": 4,
+    "ageMin": 60,
+    "ageMax": 69,
+    "sex": "any",
+    "title": "消費税5%",
+    "text": "4月、消費税が5%になった。年金暮らしには2%の差がこたえた。駆け込みで買いだめした洗剤やトイレットペーパーが押し入れに積まれた。",
+    "probability": 1.0,
+    "source": {
+      "title": "東京財団政策研究所 消費増税を巡る経緯",
+      "url": "https://www.tkfd.or.jp/programs/detail.php?u_id=15",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2014-04-tax8-youth",
+    "key": "shohizei-2014",
+    "category": "system",
+    "year": 2014,
+    "month": 4,
+    "ageMin": 13,
+    "ageMax": 24,
+    "sex": "any",
+    "title": "消費税8%",
+    "text": "4月、消費税が8%になった。お菓子や飲み物の値段が中途半端な数字になった。3月の駆け込み需要のニュースを、どこか遠い話として見ていた。",
+    "probability": 1.0,
+    "source": {
+      "title": "東京財団政策研究所 消費増税を巡る経緯",
+      "url": "https://www.tkfd.or.jp/programs/detail.php?u_id=15",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2014-04-tax8-adult",
+    "key": "shohizei-2014",
+    "category": "system",
+    "year": 2014,
+    "month": 4,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "消費税8%",
+    "text": "4月、消費税が5%から8%に上がった。17年ぶりの引き上げだった。家や車など大きな買い物の前倒しを考えた人も多く、増税後は消費が落ち込んだ。",
+    "probability": 1.0,
+    "source": {
+      "title": "東京財団政策研究所 消費増税を巡る経緯",
+      "url": "https://www.tkfd.or.jp/programs/detail.php?u_id=15",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2014-04-tax8-senior",
+    "key": "shohizei-2014",
+    "category": "system",
+    "year": 2014,
+    "month": 4,
+    "ageMin": 60,
+    "ageMax": 89,
+    "sex": "any",
+    "title": "消費税8%",
+    "text": "4月、消費税が8%になった。年金は物価ほどは増えず、増税分は日々の買い物にそのままのしかかった。社会保障のためと言われても実感はなかった。",
+    "probability": 1.0,
+    "source": {
+      "title": "東京財団政策研究所 消費増税を巡る経緯",
+      "url": "https://www.tkfd.or.jp/programs/detail.php?u_id=15",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2019-10-tax10-youth",
+    "key": "shohizei-2019",
+    "category": "system",
+    "year": 2019,
+    "month": 10,
+    "ageMin": 14,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "消費税10%",
+    "text": "10月、消費税が10%になった。食べ物は8%のままの軽減税率で、店で食べるか持ち帰るかで税率が変わった。キャッシュレス払いのポイント還元もあった。",
+    "probability": 1.0,
+    "source": {
+      "title": "東京財団政策研究所 消費増税を巡る経緯",
+      "url": "https://www.tkfd.or.jp/programs/detail.php?u_id=15",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2019-10-tax10-adult",
+    "key": "shohizei-2019",
+    "category": "system",
+    "year": 2019,
+    "month": 10,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "消費税10%と軽減税率",
+    "text": "10月、消費税が10%に上がり、食料品などには8%の軽減税率が導入された。レシートに二つの税率が並ぶようになり、店のレジや値札の付け替えも大変そうだった。",
+    "probability": 1.0,
+    "source": {
+      "title": "東京財団政策研究所 消費増税を巡る経緯",
+      "url": "https://www.tkfd.or.jp/programs/detail.php?u_id=15",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2019-10-tax10-senior",
+    "key": "shohizei-2019",
+    "category": "system",
+    "year": 2019,
+    "month": 10,
+    "ageMin": 60,
+    "ageMax": 95,
+    "sex": "any",
+    "title": "消費税10%",
+    "text": "10月、消費税が10%になった。3%で始まったころを思い出した。食料品が8%に据え置かれたのはありがたかったが、仕組みは分かりにくかった。",
+    "probability": 1.0,
+    "source": {
+      "title": "東京財団政策研究所 消費増税を巡る経緯",
+      "url": "https://www.tkfd.or.jp/programs/detail.php?u_id=15",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2019-10-muryohoiku-adult",
+    "key": "muryo-hoiku-2019",
+    "category": "system",
+    "year": 2019,
+    "month": 10,
+    "ageMin": 25,
+    "ageMax": 45,
+    "sex": "any",
+    "conditions": {
+      "married": true
+    },
+    "title": "幼児教育の無償化",
+    "text": "10月から、3〜5歳の子どもの幼稚園や保育所の利用料が原則無料になった。消費税の引き上げ分が財源だった。子育ての家計が少し楽になった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "内閣府 幼児教育・保育の無償化",
+      "url": "https://www.cao.go.jp/",
+      "verified": false
+    }
+  },
+  {
+    "id": "system-1986-teinen60-adult",
+    "key": "teinen60-1986",
+    "category": "system",
+    "year": 1986,
+    "ageMin": 41,
+    "ageMax": 56,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco"
+      ]
+    },
+    "title": "60歳定年が努力義務に",
+    "text": "高年齢者雇用安定法ができ、企業は定年を60歳以上にするよう努めることになった。うちの会社の定年は55歳か60歳か、職場で話題になった。",
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "マイナビエージェント 定年制の歴史",
+      "url": "https://mynavi-agent.jp/dainishinsotsu/canvas/2020/08/post-381.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1998-04-teinen60g-adult",
+    "key": "teinen60-1998",
+    "category": "system",
+    "year": 1998,
+    "month": 4,
+    "ageMin": 53,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco"
+      ]
+    },
+    "title": "60歳定年の義務化",
+    "text": "この年から、定年を60歳より前に定めることが法律で禁止された。55歳で定年を迎えた先輩たちより、長く働けることになった。",
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "マイナビエージェント 定年制の歴史（1994年改正、施行年は未確認）",
+      "url": "https://mynavi-agent.jp/dainishinsotsu/canvas/2020/08/post-381.html",
+      "verified": false
+    }
+  },
+  {
+    "id": "system-2006-04-koyou65-senior",
+    "key": "koyou65-2006",
+    "category": "system",
+    "year": 2006,
+    "endYear": 2012,
+    "month": 4,
+    "ageMin": 60,
+    "ageMax": 64,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco"
+      ]
+    },
+    "title": "65歳まで働ける",
+    "text": "4月から、会社は65歳までの雇用を確保する措置を取ることが義務になった。定年後も再雇用で働き続けたが、給料は大きく下がった。",
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "厚生労働省 福岡労働局 高年齢者雇用安定法の改正",
+      "url": "https://jsite.mhlw.go.jp/fukuoka-roudoukyoku/content/contents/001246949.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2013-04-koyou65all-adult",
+    "key": "koyou65-2013",
+    "category": "system",
+    "year": 2013,
+    "month": 4,
+    "ageMin": 50,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco"
+      ]
+    },
+    "title": "希望者全員65歳まで",
+    "text": "4月から、会社は希望する人全員を65歳まで雇うことになった。年金の支給開始が遅れる分、自分も65歳まで働くことになるのだろうと思った。",
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "厚生労働省 福岡労働局 高年齢者雇用安定法の改正",
+      "url": "https://jsite.mhlw.go.jp/fukuoka-roudoukyoku/content/contents/001246949.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2021-04-shugyo70-adult",
+    "key": "shugyo70-2021",
+    "category": "system",
+    "year": 2021,
+    "month": 4,
+    "ageMin": 46,
+    "ageMax": 61,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco",
+        "public"
+      ]
+    },
+    "title": "70歳まで働く時代",
+    "text": "4月から、会社は70歳までの就業機会を確保するよう努めることになった。定年は60歳、再雇用は65歳まで、その先もあるのかと複雑な気持ちになった。",
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "厚生労働省 福岡労働局 高年齢者雇用安定法の改正",
+      "url": "https://jsite.mhlw.go.jp/fukuoka-roudoukyoku/content/contents/001246949.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2001-nenkinteigaku-senior",
+    "key": "nenkin-teigaku-2001",
+    "category": "system",
+    "year": 2001,
+    "endYear": 2005,
+    "ageMin": 60,
+    "ageMax": 64,
+    "sex": "male",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco",
+        "public"
+      ]
+    },
+    "title": "年金の一部が65歳から",
+    "text": "60歳になったが、厚生年金の定額部分の支給開始は引き上げられていた。60歳から受け取れるのは報酬比例部分だけで、働き続けるかどうか考えた。",
+    "effects": {
+      "happiness": -2
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "日本年金機構 特別支給の老齢厚生年金の支給開始年齢",
+      "url": "https://www.nenkin.go.jp/oshirase/taisetu/2012.files/kaishi.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2020-nenkinhirei-senior",
+    "key": "nenkin-hirei-2020",
+    "category": "system",
+    "year": 2020,
+    "endYear": 2035,
+    "ageMin": 60,
+    "ageMax": 64,
+    "sex": "male",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco",
+        "public"
+      ]
+    },
+    "title": "60歳では年金が出ない",
+    "text": "60歳になったが、厚生年金はまだ受け取れなかった。昭和36年4月2日以降生まれの男性は、年金はすべて65歳からだ。再雇用で働くしかなかった。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.9,
+    "probNote": "目安",
+    "source": {
+      "title": "日本年金機構 特別支給の老齢厚生年金の支給開始年齢",
+      "url": "https://www.nenkin.go.jp/oshirase/taisetu/2012.files/kaishi.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2020-nenkinhirei-senior-f",
+    "key": "nenkin-hirei-2020",
+    "category": "system",
+    "year": 2020,
+    "endYear": 2035,
+    "ageMin": 60,
+    "ageMax": 64,
+    "sex": "female",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco",
+        "public"
+      ]
+    },
+    "title": "年金の開始が遅くなる",
+    "text": "60歳になったが、厚生年金はまだ受け取れなかった。女性の支給開始年齢は男性より5年遅れで引き上げられ、自分の生まれ年では60代前半はほぼ空白だった。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.9,
+    "probNote": "目安",
+    "source": {
+      "title": "日本年金機構 支給開始年齢（女性は男性の5年遅れ）",
+      "url": "https://www.nenkin.go.jp/oshirase/taisetu/2012.files/kaishi.pdf",
+      "verified": false
+    }
+  },
+  {
+    "id": "system-1986-04-kiso-adult",
+    "key": "kiso-nenkin-1986",
+    "category": "system",
+    "year": 1986,
+    "month": 4,
+    "ageMin": 30,
+    "ageMax": 56,
+    "sex": "female",
+    "conditions": {
+      "married": true
+    },
+    "title": "基礎年金と第3号",
+    "text": "4月から年金制度が組み替えられ、全員が入る基礎年金ができた。会社員の妻も自分名義の年金を持てるようになり、保険料を払わない第3号被保険者になった。",
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "厚生労働省 1985年年金改正（基礎年金・第3号被保険者）",
+      "url": "https://www.mhlw.go.jp/",
+      "verified": false
+    }
+  },
+  {
+    "id": "system-2004-macro-adult",
+    "key": "macro-slide-2004",
+    "category": "system",
+    "year": 2004,
+    "ageMin": 29,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "年金の給付抑制",
+    "text": "年金の改正で、保険料を段階的に上げる一方、給付を少しずつ抑えるマクロ経済スライドが入った。将来の年金は親の世代より目減りすると覚悟した。",
+    "effects": {
+      "happiness": -2
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "ニッセイ基礎研究所 マクロ経済スライド",
+      "url": "https://www.nli-research.co.jp/files/topics/37624_ext_18_0.pdf?site=nli",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2017-08-nenkin10-senior",
+    "key": "nenkin10-2017",
+    "category": "system",
+    "year": 2017,
+    "month": 8,
+    "ageMin": 65,
+    "ageMax": 87,
+    "sex": "any",
+    "title": "年金の資格が10年に",
+    "text": "8月から、年金を受け取るのに必要な加入期間が25年から10年に短くなった。これまで無年金だった知り合いが、初めて年金を受け取れることになった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "港区 老齢基礎年金（受給資格期間10年）",
+      "url": "https://www.city.minato.tokyo.jp/kokuminnenkin/kurashi/hoken/nenkin/kyufu/roureikiso.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2022-04-kurisage-senior",
+    "key": "kurisage75-2022",
+    "category": "system",
+    "year": 2022,
+    "endYear": 2035,
+    "month": 4,
+    "ageMin": 60,
+    "ageMax": 64,
+    "sex": "any",
+    "title": "年金を75歳まで繰下げ",
+    "text": "4月から、年金を受け取り始める時期を75歳まで遅らせられるようになった。遅らせれば最大84%増える。何歳まで生きるかの賭けのようだった。",
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "ファイナンシャルフィールド 年金の繰下げ受給（75歳まで）",
+      "url": "https://financial-field.com/pension/entry-198732",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2015-10-ichigenka-adult",
+    "key": "ichigenka-2015",
+    "category": "system",
+    "year": 2015,
+    "month": 10,
+    "ageMin": 40,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "public"
+      ]
+    },
+    "title": "共済年金が厚生年金に",
+    "text": "10月、公務員の共済年金が厚生年金にまとめられた。職域加算はなくなり、新しい仕組みに切り替わった。将来の年金額の通知を読み直した。",
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "日本年金機構 被用者年金一元化",
+      "url": "https://www.nenkin.go.jp/",
+      "verified": false
+    }
+  },
+  {
+    "id": "system-2000-04-kaigo-adult",
+    "key": "kaigo-hoken-2000",
+    "category": "system",
+    "year": 2000,
+    "month": 4,
+    "ageMin": 40,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "介護保険が始まった",
+    "text": "4月、介護保険制度が始まり、40歳以上は保険料を払うことになった。親の介護をサービスで支えられるようになり、ケアマネジャーという仕事を初めて知った。",
+    "probability": 1.0,
+    "source": {
+      "title": "厚生労働省 医療費の動向（2000年 介護保険制度施行）",
+      "url": "https://www.mhlw.go.jp/content/r03_doukou_teisei.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2000-04-kaigo-senior",
+    "key": "kaigo-hoken-2000",
+    "category": "system",
+    "year": 2000,
+    "month": 4,
+    "ageMin": 65,
+    "ageMax": 79,
+    "sex": "any",
+    "title": "要介護認定",
+    "text": "4月に介護保険が始まった。介護が必要になれば認定を受け、少ない負担でヘルパーやデイサービスを使える。家族だけで抱え込まなくていいのだと思った。",
+    "probability": 1.0,
+    "source": {
+      "title": "厚生労働省 医療費の動向（2000年 介護保険制度施行）",
+      "url": "https://www.mhlw.go.jp/content/r03_doukou_teisei.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1992-04-ikukyu-young",
+    "key": "ikukyu-1992",
+    "category": "system",
+    "year": 1992,
+    "month": 4,
+    "ageMin": 20,
+    "ageMax": 34,
+    "sex": "female",
+    "conditions": {
+      "married": true
+    },
+    "title": "育児休業法",
+    "text": "4月、育児休業法が施行され、子どもが1歳になるまで休みを取れるようになった。ただ、職場で実際に取った人はまだ少なく、辞める同僚も多かった。",
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "全国労働基準関係団体連合会 年表（育児休業法施行 1992年4月）",
+      "url": "https://www.jaaww.or.jp/history/data/02641.pdf",
+      "verified": true,
+      "note": "1歳までという期間は未確認"
+    }
+  },
+  {
+    "id": "system-2022-10-papaikukyu-young",
+    "key": "papa-ikukyu-2022",
+    "category": "system",
+    "year": 2022,
+    "month": 10,
+    "ageMin": 20,
+    "ageMax": 39,
+    "sex": "male",
+    "conditions": {
+      "married": true
+    },
+    "title": "産後パパ育休",
+    "text": "10月、父親が子どもの生まれた直後に最大4週間休める産後パパ育休ができた。父親の世代では考えられなかった育休が、自分たちには選べるものになった。",
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "厚生労働省 育児休業制度 特設サイト（産後パパ育休）",
+      "url": "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu/ikuji/point.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2016-07-senkyo18-youth",
+    "key": "senkyo18-2016",
+    "category": "system",
+    "year": 2016,
+    "month": 7,
+    "ageMin": 18,
+    "ageMax": 19,
+    "sex": "any",
+    "title": "18歳で選挙",
+    "text": "選挙権の年齢が18歳に下がり、夏の参議院選挙で初めて投票できた。高校では模擬投票の授業があった。親が初めて投票したのは20歳を過ぎてからだった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "政治山 成年年齢と選挙権年齢",
+      "url": "https://seijiyama.jp/research/click/cr2022008.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2022-04-seinen18-youth",
+    "key": "seinen18-2022",
+    "category": "system",
+    "year": 2022,
+    "month": 4,
+    "ageMin": 18,
+    "ageMax": 20,
+    "sex": "any",
+    "title": "18歳で成人",
+    "text": "4月1日、成人年齢が20歳から18歳に下がった。親の同意なしで携帯電話やローンの契約ができるようになった。お酒とたばこは20歳からのままだった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "probability": 1.0,
+    "source": {
+      "title": "大和総研 成年年齢引下げ（2022年4月1日施行）",
+      "url": "https://www.dir.co.jp/report/research/law-research/law-others/20180711_020198.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1994-04-urikiri-young",
+    "key": "keitai-urikiri-1994",
+    "category": "system",
+    "year": 1994,
+    "month": 4,
+    "ageMin": 19,
+    "ageMax": 34,
+    "sex": "any",
+    "title": "携帯電話が買えるように",
+    "text": "4月、携帯電話の端末を買い取れる売り切り制が始まった。それまではレンタルしかなかった。値段が下がり、周りで持つ人が急に増えた。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "総務省 平成27年版情報通信白書（端末売り切り制）",
+      "url": "https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/h27/html/nc111130.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-1999-02-imode-young",
+    "key": "imode-1999",
+    "category": "system",
+    "year": 1999,
+    "month": 2,
+    "ageMin": 15,
+    "ageMax": 34,
+    "sex": "any",
+    "title": "携帯でネット",
+    "text": "2月、携帯電話でメールやインターネットが使えるサービスが始まった。小さな画面で天気や乗り換えを調べ、友だちとのやりとりはメールが中心になった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "NTTドコモ iモードの開始",
+      "url": "https://www.docomo.ne.jp/",
+      "verified": false
+    }
+  },
+  {
+    "id": "system-1986-07-haken-young",
+    "key": "haken-1986",
+    "category": "system",
+    "year": 1986,
+    "month": 7,
+    "ageMin": 18,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "派遣という働き方",
+    "text": "7月、労働者派遣法が施行された。通訳や事務処理など専門的な仕事に限られていた。人材派遣会社の広告を見かけるようになった。",
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "コトバンク 労働者派遣法",
+      "url": "https://kotobank.jp/word/労働者派遣法",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2004-03-haken04-young",
+    "key": "haken-seizo-2004",
+    "category": "system",
+    "year": 2004,
+    "month": 3,
+    "ageMin": 18,
+    "ageMax": 34,
+    "sex": "any",
+    "title": "製造業派遣の解禁",
+    "text": "3月、工場の製造ラインにも派遣労働者を送れるようになった。正社員の求人が少ない中、派遣で工場を転々とする働き方が広がった。",
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "日本経団連 経済くりっぷ（製造業派遣の解禁）",
+      "url": "https://www.keidanren.or.jp/japanese/journal/CLIP/2003/0708/08.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2019-04-zangyo-adult",
+    "key": "zangyo-2019",
+    "category": "system",
+    "year": 2019,
+    "month": 4,
+    "ageMin": 25,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "bigco"
+      ]
+    },
+    "title": "残業に上限ができた",
+    "text": "4月、大企業で残業時間の上限規制が始まり、原則月45時間・年360時間までとなった。夜遅くまで残る人は減ったが、仕事を持ち帰る人もいた。",
+    "effects": {
+      "health": 1
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "愛知労働局 時間外労働の上限規制",
+      "url": "https://jsite.mhlw.go.jp/aichi-roudoukyoku/jirei_toukei/koyou_kintou/hatarakikata/newpage_01128.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "system-2024-01-nisa-adult",
+    "key": "shin-nisa-2024",
+    "category": "system",
+    "year": 2024,
+    "month": 1,
+    "ageMin": 25,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "新NISAを始める",
+    "text": "1月から新しいNISAが始まり、投資の利益に税金がかからない枠が大きく広がった。貯金だけでは足りないと言われ、積み立てを始める同僚が多かった。",
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "金融庁 新しいNISA",
+      "url": "https://www.fsa.go.jp/policy/nisa2/",
+      "verified": false
+    }
+  }
+]

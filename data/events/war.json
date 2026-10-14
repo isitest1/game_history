@@ -1,0 +1,6281 @@
+[
+ {
+  "id": "war-1945-03-tokyo-airraid-infant",
+  "key": "tokyo-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 3,
+  "prefs": [
+   13
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "東京大空襲",
+  "text": "1945年3月10日の未明、東京の下町が空襲を受けた。一晩で約26万7千戸が焼け、死者は約8万4千人とされる。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.08,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.15,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（東京都）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_11.html",
+   "verified": true
+  },
+  "probNote": "罹災者約100万人（総務省・台東区のページ）÷疎開後の都の人口（推定600万人前後、未確認）。死亡は死者約8万4千人÷罹災者約100万人。目安"
+ },
+ {
+  "id": "war-1945-03-tokyo-airraid-child",
+  "key": "tokyo-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 3,
+  "prefs": [
+   13
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "東京大空襲",
+  "text": "1945年3月10日の未明、東京の下町が空襲を受けた。一晩で約26万7千戸が焼け、死者は約8万4千人とされる。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.08,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.15,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（東京都）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_11.html",
+   "verified": true
+  },
+  "probNote": "罹災者約100万人（総務省・台東区のページ）÷疎開後の都の人口（推定600万人前後、未確認）。死亡は死者約8万4千人÷罹災者約100万人。目安"
+ },
+ {
+  "id": "war-1945-03-tokyo-airraid-youth",
+  "key": "tokyo-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 3,
+  "prefs": [
+   13
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "東京大空襲",
+  "text": "1945年3月10日の未明、東京の下町が空襲を受けた。一晩で約26万7千戸が焼け、死者は約8万4千人とされる。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.08,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.15,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（東京都）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_11.html",
+   "verified": true
+  },
+  "probNote": "罹災者約100万人（総務省・台東区のページ）÷疎開後の都の人口（推定600万人前後、未確認）。死亡は死者約8万4千人÷罹災者約100万人。目安"
+ },
+ {
+  "id": "war-1945-03-osaka-airraid-infant",
+  "key": "osaka-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 3,
+  "prefs": [
+   27
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "第1次大阪大空襲",
+  "text": "1945年3月13日の深夜から14日未明、大阪が空襲を受けた。B29約270機が来て市の中心部約21平方キロが焼け、死者・行方不明は4千人を超えた。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.009,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.12,
+  "heavy": true,
+  "source": {
+   "title": "ピースおおさか 学習ガイド（第1次大阪大空襲）",
+   "url": "https://www.peace-osaka.or.jp/sys/wp-content/themes/peaceosaka/assets/images/education/worksheet/guide_english.pdf",
+   "verified": true
+  },
+  "probNote": "罹災者約50万人（米側資料、未確認）÷府の人口約400万人（未確認）。死亡は死者3,987人＋行方不明678人÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-03-osaka-airraid-child",
+  "key": "osaka-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 3,
+  "prefs": [
+   27
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "第1次大阪大空襲",
+  "text": "1945年3月13日の深夜から14日未明、大阪が空襲を受けた。B29約270機が来て市の中心部約21平方キロが焼け、死者・行方不明は4千人を超えた。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.009,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.12,
+  "heavy": true,
+  "source": {
+   "title": "ピースおおさか 学習ガイド（第1次大阪大空襲）",
+   "url": "https://www.peace-osaka.or.jp/sys/wp-content/themes/peaceosaka/assets/images/education/worksheet/guide_english.pdf",
+   "verified": true
+  },
+  "probNote": "罹災者約50万人（米側資料、未確認）÷府の人口約400万人（未確認）。死亡は死者3,987人＋行方不明678人÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-03-osaka-airraid-youth",
+  "key": "osaka-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 3,
+  "prefs": [
+   27
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "第1次大阪大空襲",
+  "text": "1945年3月13日の深夜から14日未明、大阪が空襲を受けた。B29約270機が来て市の中心部約21平方キロが焼け、死者・行方不明は4千人を超えた。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.009,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.12,
+  "heavy": true,
+  "source": {
+   "title": "ピースおおさか 学習ガイド（第1次大阪大空襲）",
+   "url": "https://www.peace-osaka.or.jp/sys/wp-content/themes/peaceosaka/assets/images/education/worksheet/guide_english.pdf",
+   "verified": true
+  },
+  "probNote": "罹災者約50万人（米側資料、未確認）÷府の人口約400万人（未確認）。死亡は死者3,987人＋行方不明678人÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-03-nagoya-airraid-infant",
+  "key": "nagoya-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 3,
+  "prefs": [
+   23
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "名古屋大空襲",
+  "text": "1945年3月19日、名古屋が空襲を受けた。この日だけで約4万戸が被害を受け、約14万3千人が焼け出された。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.006,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.045,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（名古屋市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/tokai_06.html",
+   "verified": true
+  },
+  "probNote": "罹災者142,887人÷県の人口約317万人（1940年頃、未確認）。死亡は死者826人÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-03-nagoya-airraid-child",
+  "key": "nagoya-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 3,
+  "prefs": [
+   23
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "名古屋大空襲",
+  "text": "1945年3月19日、名古屋が空襲を受けた。この日だけで約4万戸が被害を受け、約14万3千人が焼け出された。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.006,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.045,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（名古屋市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/tokai_06.html",
+   "verified": true
+  },
+  "probNote": "罹災者142,887人÷県の人口約317万人（1940年頃、未確認）。死亡は死者826人÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-03-nagoya-airraid-youth",
+  "key": "nagoya-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 3,
+  "prefs": [
+   23
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "名古屋大空襲",
+  "text": "1945年3月19日、名古屋が空襲を受けた。この日だけで約4万戸が被害を受け、約14万3千人が焼け出された。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.006,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.045,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（名古屋市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/tokai_06.html",
+   "verified": true
+  },
+  "probNote": "罹災者142,887人÷県の人口約317万人（1940年頃、未確認）。死亡は死者826人÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-03-kobe-airraid-infant",
+  "key": "kobe-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 3,
+  "prefs": [
+   28
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "神戸大空襲",
+  "text": "1945年3月17日の未明、神戸が空襲を受けた。市の西半分が焼け、6月までの空襲で死者は7千人を超えた。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.014,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.15,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（神戸市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kinki_07.html",
+   "verified": true
+  },
+  "probNote": "罹災者530,858人÷県の人口約320万人（未確認）。死亡は死者7,491人÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-03-kobe-airraid-child",
+  "key": "kobe-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 3,
+  "prefs": [
+   28
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "神戸大空襲",
+  "text": "1945年3月17日の未明、神戸が空襲を受けた。市の西半分が焼け、6月までの空襲で死者は7千人を超えた。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.014,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.15,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（神戸市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kinki_07.html",
+   "verified": true
+  },
+  "probNote": "罹災者530,858人÷県の人口約320万人（未確認）。死亡は死者7,491人÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-03-kobe-airraid-youth",
+  "key": "kobe-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 3,
+  "prefs": [
+   28
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "神戸大空襲",
+  "text": "1945年3月17日の未明、神戸が空襲を受けた。市の西半分が焼け、6月までの空襲で死者は7千人を超えた。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.014,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.15,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（神戸市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kinki_07.html",
+   "verified": true
+  },
+  "probNote": "罹災者530,858人÷県の人口約320万人（未確認）。死亡は死者7,491人÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-04-kawasaki-airraid-infant",
+  "key": "kawasaki-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 4,
+  "prefs": [
+   14
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "川崎大空襲",
+  "text": "1945年4月15日、川崎が空襲を受けた。200機余りのB29が来て、10万人を超える人が焼け出された。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.007,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.05,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（川崎市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_22.html",
+   "verified": true
+  },
+  "probNote": "罹災者約10万人÷県の人口約220万人（未確認）。死亡は死者768〜1,520人÷罹災者154,426人。目安"
+ },
+ {
+  "id": "war-1945-04-kawasaki-airraid-child",
+  "key": "kawasaki-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 4,
+  "prefs": [
+   14
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "川崎大空襲",
+  "text": "1945年4月15日、川崎が空襲を受けた。200機余りのB29が来て、10万人を超える人が焼け出された。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.007,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.05,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（川崎市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_22.html",
+   "verified": true
+  },
+  "probNote": "罹災者約10万人÷県の人口約220万人（未確認）。死亡は死者768〜1,520人÷罹災者154,426人。目安"
+ },
+ {
+  "id": "war-1945-04-kawasaki-airraid-youth",
+  "key": "kawasaki-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 4,
+  "prefs": [
+   14
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "川崎大空襲",
+  "text": "1945年4月15日、川崎が空襲を受けた。200機余りのB29が来て、10万人を超える人が焼け出された。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.007,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.05,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（川崎市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_22.html",
+   "verified": true
+  },
+  "probNote": "罹災者約10万人÷県の人口約220万人（未確認）。死亡は死者768〜1,520人÷罹災者154,426人。目安"
+ },
+ {
+  "id": "war-1945-05-yokohama-airraid-infant",
+  "key": "yokohama-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 5,
+  "prefs": [
+   14
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "横浜大空襲",
+  "text": "1945年5月29日、横浜が空襲を受けた。死者は3,650人、焼け出された人は30万人を超えた。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.012,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.14,
+  "heavy": true,
+  "source": {
+   "title": "横浜市 国際広報（横浜大空襲）",
+   "url": "https://cn.city.yokohama.lg.jp/city-info/yokohamashi/org/kokusai/sonota/international-digest/digest-2021.files/digest210622.pdf",
+   "verified": true
+  },
+  "probNote": "罹災者311,218人÷県の人口約220万人（未確認）。死亡は死者3,650人÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-05-yokohama-airraid-child",
+  "key": "yokohama-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 5,
+  "prefs": [
+   14
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "横浜大空襲",
+  "text": "1945年5月29日、横浜が空襲を受けた。死者は3,650人、焼け出された人は30万人を超えた。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.012,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.14,
+  "heavy": true,
+  "source": {
+   "title": "横浜市 国際広報（横浜大空襲）",
+   "url": "https://cn.city.yokohama.lg.jp/city-info/yokohamashi/org/kokusai/sonota/international-digest/digest-2021.files/digest210622.pdf",
+   "verified": true
+  },
+  "probNote": "罹災者311,218人÷県の人口約220万人（未確認）。死亡は死者3,650人÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-05-yokohama-airraid-youth",
+  "key": "yokohama-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 5,
+  "prefs": [
+   14
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "横浜大空襲",
+  "text": "1945年5月29日、横浜が空襲を受けた。死者は3,650人、焼け出された人は30万人を超えた。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.012,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.14,
+  "heavy": true,
+  "source": {
+   "title": "横浜市 国際広報（横浜大空襲）",
+   "url": "https://cn.city.yokohama.lg.jp/city-info/yokohamashi/org/kokusai/sonota/international-digest/digest-2021.files/digest210622.pdf",
+   "verified": true
+  },
+  "probNote": "罹災者311,218人÷県の人口約220万人（未確認）。死亡は死者3,650人÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-06-hamamatsu-airraid-infant",
+  "key": "hamamatsu-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 6,
+  "prefs": [
+   22
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "浜松の空襲",
+  "text": "1945年6月18日、浜松が空襲を受けた。27回に及んだ空襲と艦砲射撃で約12万人が焼け出され、死者は3千人を超えた。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.025,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.06,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（浜松市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/tokai_03.html",
+   "verified": true
+  },
+  "probNote": "罹災者約12万人÷県の人口約200万人（未確認）。死亡は死者3,000人余÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-06-hamamatsu-airraid-child",
+  "key": "hamamatsu-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 6,
+  "prefs": [
+   22
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "浜松の空襲",
+  "text": "1945年6月18日、浜松が空襲を受けた。27回に及んだ空襲と艦砲射撃で約12万人が焼け出され、死者は3千人を超えた。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.025,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.06,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（浜松市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/tokai_03.html",
+   "verified": true
+  },
+  "probNote": "罹災者約12万人÷県の人口約200万人（未確認）。死亡は死者3,000人余÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-06-hamamatsu-airraid-youth",
+  "key": "hamamatsu-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 6,
+  "prefs": [
+   22
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "浜松の空襲",
+  "text": "1945年6月18日、浜松が空襲を受けた。27回に及んだ空襲と艦砲射撃で約12万人が焼け出され、死者は3千人を超えた。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.025,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.06,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（浜松市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/tokai_03.html",
+   "verified": true
+  },
+  "probNote": "罹災者約12万人÷県の人口約200万人（未確認）。死亡は死者3,000人余÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-06-kagoshima-airraid-infant",
+  "key": "kagoshima-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 6,
+  "prefs": [
+   46
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "鹿児島の空襲",
+  "text": "1945年6月17日の深夜、鹿児島が空襲を受けた。8回の空襲のうち最大のもので、約6万6千人が焼け出され、死者は2,316人。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.035,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.04,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（鹿児島市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kyushu_11.html",
+   "verified": true
+  },
+  "probNote": "被災人口66,134人÷県の人口約160万人（未確認）。死亡は死者2,316人÷被災人口。目安"
+ },
+ {
+  "id": "war-1945-06-kagoshima-airraid-child",
+  "key": "kagoshima-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 6,
+  "prefs": [
+   46
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "鹿児島の空襲",
+  "text": "1945年6月17日の深夜、鹿児島が空襲を受けた。8回の空襲のうち最大のもので、約6万6千人が焼け出され、死者は2,316人。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.035,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.04,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（鹿児島市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kyushu_11.html",
+   "verified": true
+  },
+  "probNote": "被災人口66,134人÷県の人口約160万人（未確認）。死亡は死者2,316人÷被災人口。目安"
+ },
+ {
+  "id": "war-1945-06-kagoshima-airraid-youth",
+  "key": "kagoshima-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 6,
+  "prefs": [
+   46
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "鹿児島の空襲",
+  "text": "1945年6月17日の深夜、鹿児島が空襲を受けた。8回の空襲のうち最大のもので、約6万6千人が焼け出され、死者は2,316人。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.035,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.04,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（鹿児島市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kyushu_11.html",
+   "verified": true
+  },
+  "probNote": "被災人口66,134人÷県の人口約160万人（未確認）。死亡は死者2,316人÷被災人口。目安"
+ },
+ {
+  "id": "war-1945-06-fukuoka-airraid-infant",
+  "key": "fukuoka-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 6,
+  "prefs": [
+   40
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "福岡大空襲",
+  "text": "1945年6月19日の夜、福岡が空襲を受けた。市の中心部が焼け、約6万人が焼け出され、死者は902人、行方不明は244人。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.019,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.02,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（福岡市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kyushu_01.html",
+   "verified": true
+  },
+  "probNote": "被災人口60,599人÷県の人口約310万人（未確認）。死亡は（死者902人＋行方不明244人）÷被災人口。目安"
+ },
+ {
+  "id": "war-1945-06-fukuoka-airraid-child",
+  "key": "fukuoka-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 6,
+  "prefs": [
+   40
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "福岡大空襲",
+  "text": "1945年6月19日の夜、福岡が空襲を受けた。市の中心部が焼け、約6万人が焼け出され、死者は902人、行方不明は244人。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.019,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.02,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（福岡市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kyushu_01.html",
+   "verified": true
+  },
+  "probNote": "被災人口60,599人÷県の人口約310万人（未確認）。死亡は（死者902人＋行方不明244人）÷被災人口。目安"
+ },
+ {
+  "id": "war-1945-06-fukuoka-airraid-youth",
+  "key": "fukuoka-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 6,
+  "prefs": [
+   40
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "福岡大空襲",
+  "text": "1945年6月19日の夜、福岡が空襲を受けた。市の中心部が焼け、約6万人が焼け出され、死者は902人、行方不明は244人。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.019,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.02,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（福岡市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kyushu_01.html",
+   "verified": true
+  },
+  "probNote": "被災人口60,599人÷県の人口約310万人（未確認）。死亡は（死者902人＋行方不明244人）÷被災人口。目安"
+ },
+ {
+  "id": "war-1945-06-shizuoka-airraid-infant",
+  "key": "shizuoka-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 6,
+  "prefs": [
+   22
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "静岡大空襲",
+  "text": "1945年6月19日の深夜から20日未明、静岡が空襲を受けた。B29約120機が来て、約11万9千人が焼け出され、死者は2千人を超えた。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.017,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.06,
+  "heavy": true,
+  "source": {
+   "title": "総務省 追悼施設（静岡市の空襲犠牲者の碑）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/virtual/memorialsite/shizuoka_shizuoka_005/index.html",
+   "verified": true
+  },
+  "probNote": "罹災者118,700人余÷県の人口約200万人（未確認）。死亡は死者2,000人余÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-06-shizuoka-airraid-child",
+  "key": "shizuoka-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 6,
+  "prefs": [
+   22
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "静岡大空襲",
+  "text": "1945年6月19日の深夜から20日未明、静岡が空襲を受けた。B29約120機が来て、約11万9千人が焼け出され、死者は2千人を超えた。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.017,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.06,
+  "heavy": true,
+  "source": {
+   "title": "総務省 追悼施設（静岡市の空襲犠牲者の碑）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/virtual/memorialsite/shizuoka_shizuoka_005/index.html",
+   "verified": true
+  },
+  "probNote": "罹災者118,700人余÷県の人口約200万人（未確認）。死亡は死者2,000人余÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-06-shizuoka-airraid-youth",
+  "key": "shizuoka-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 6,
+  "prefs": [
+   22
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "静岡大空襲",
+  "text": "1945年6月19日の深夜から20日未明、静岡が空襲を受けた。B29約120機が来て、約11万9千人が焼け出され、死者は2千人を超えた。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.017,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.06,
+  "heavy": true,
+  "source": {
+   "title": "総務省 追悼施設（静岡市の空襲犠牲者の碑）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/virtual/memorialsite/shizuoka_shizuoka_005/index.html",
+   "verified": true
+  },
+  "probNote": "罹災者118,700人余÷県の人口約200万人（未確認）。死亡は死者2,000人余÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-06-okayama-airraid-infant",
+  "key": "okayama-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 6,
+  "prefs": [
+   33
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "岡山の空襲",
+  "text": "1945年6月29日、岡山が空襲を受けた。市街地の大半が焼け、焼け出された人は10万人を超えた。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.017,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.075,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（岡山市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/chugoku_02.html",
+   "verified": true
+  },
+  "probNote": "被災者10万人超÷県の人口約133万人（未確認）。死者数は総務省のページで確かめられず、死亡確率は目安"
+ },
+ {
+  "id": "war-1945-06-okayama-airraid-child",
+  "key": "okayama-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 6,
+  "prefs": [
+   33
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "岡山の空襲",
+  "text": "1945年6月29日、岡山が空襲を受けた。市街地の大半が焼け、焼け出された人は10万人を超えた。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.017,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.075,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（岡山市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/chugoku_02.html",
+   "verified": true
+  },
+  "probNote": "被災者10万人超÷県の人口約133万人（未確認）。死者数は総務省のページで確かめられず、死亡確率は目安"
+ },
+ {
+  "id": "war-1945-06-okayama-airraid-youth",
+  "key": "okayama-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 6,
+  "prefs": [
+   33
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "岡山の空襲",
+  "text": "1945年6月29日、岡山が空襲を受けた。市街地の大半が焼け、焼け出された人は10万人を超えた。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.017,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.075,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（岡山市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/chugoku_02.html",
+   "verified": true
+  },
+  "probNote": "被災者10万人超÷県の人口約133万人（未確認）。死者数は総務省のページで確かめられず、死亡確率は目安"
+ },
+ {
+  "id": "war-1945-07-kumamoto-airraid-infant",
+  "key": "kumamoto-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   43
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "熊本大空襲",
+  "text": "1945年7月1日の深夜、熊本が空襲を受けた。市街の大部分が焼け、約4万8千人が被災し、死者は617人とされる。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.013,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.035,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（熊本市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kyushu_05.html",
+   "verified": true
+  },
+  "probNote": "被災者47,598人÷県の人口約137万人（未確認）。死亡は死者617人÷被災者。目安"
+ },
+ {
+  "id": "war-1945-07-kumamoto-airraid-child",
+  "key": "kumamoto-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   43
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "熊本大空襲",
+  "text": "1945年7月1日の深夜、熊本が空襲を受けた。市街の大部分が焼け、約4万8千人が被災し、死者は617人とされる。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.013,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.035,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（熊本市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kyushu_05.html",
+   "verified": true
+  },
+  "probNote": "被災者47,598人÷県の人口約137万人（未確認）。死亡は死者617人÷被災者。目安"
+ },
+ {
+  "id": "war-1945-07-kumamoto-airraid-youth",
+  "key": "kumamoto-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   43
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "熊本大空襲",
+  "text": "1945年7月1日の深夜、熊本が空襲を受けた。市街の大部分が焼け、約4万8千人が被災し、死者は617人とされる。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.013,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.035,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（熊本市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kyushu_05.html",
+   "verified": true
+  },
+  "probNote": "被災者47,598人÷県の人口約137万人（未確認）。死亡は死者617人÷被災者。目安"
+ },
+ {
+  "id": "war-1945-07-himeji-airraid-infant",
+  "key": "himeji-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   28
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "姫路の空襲",
+  "text": "1945年7月3日、姫路が空襲を受けた。約1万300戸が焼け、焼け出された人は4万5千人を超えた。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.004,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.014,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（姫路市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kinki_08.html",
+   "verified": true
+  },
+  "probNote": "被災者45,000人余÷県の人口約320万人（未確認）。死亡は死者約170人÷被災者。目安"
+ },
+ {
+  "id": "war-1945-07-himeji-airraid-child",
+  "key": "himeji-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   28
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "姫路の空襲",
+  "text": "1945年7月3日、姫路が空襲を受けた。約1万300戸が焼け、焼け出された人は4万5千人を超えた。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.004,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.014,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（姫路市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kinki_08.html",
+   "verified": true
+  },
+  "probNote": "被災者45,000人余÷県の人口約320万人（未確認）。死亡は死者約170人÷被災者。目安"
+ },
+ {
+  "id": "war-1945-07-himeji-airraid-youth",
+  "key": "himeji-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   28
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "姫路の空襲",
+  "text": "1945年7月3日、姫路が空襲を受けた。約1万300戸が焼け、焼け出された人は4万5千人を超えた。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.004,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.014,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（姫路市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kinki_08.html",
+   "verified": true
+  },
+  "probNote": "被災者45,000人余÷県の人口約320万人（未確認）。死亡は死者約170人÷被災者。目安"
+ },
+ {
+  "id": "war-1945-07-takamatsu-airraid-infant",
+  "key": "takamatsu-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   37
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "高松の空襲",
+  "text": "1945年7月4日の未明、高松が空襲を受けた。市街地の約8割が焼け、焼け出された人は8万6千人を超えた。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.016,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.12,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（高松市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/shikoku_02.html",
+   "verified": true
+  },
+  "probNote": "罹災者約86,400人÷県の人口約73万人（未確認）。死亡は死者1,359人÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-07-takamatsu-airraid-child",
+  "key": "takamatsu-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   37
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "高松の空襲",
+  "text": "1945年7月4日の未明、高松が空襲を受けた。市街地の約8割が焼け、焼け出された人は8万6千人を超えた。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.016,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.12,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（高松市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/shikoku_02.html",
+   "verified": true
+  },
+  "probNote": "罹災者約86,400人÷県の人口約73万人（未確認）。死亡は死者1,359人÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-07-takamatsu-airraid-youth",
+  "key": "takamatsu-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   37
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "高松の空襲",
+  "text": "1945年7月4日の未明、高松が空襲を受けた。市街地の約8割が焼け、焼け出された人は8万6千人を超えた。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.016,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.12,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（高松市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/shikoku_02.html",
+   "verified": true
+  },
+  "probNote": "罹災者約86,400人÷県の人口約73万人（未確認）。死亡は死者1,359人÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-07-kochi-airraid-infant",
+  "key": "kochi-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   39
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "高知の空襲",
+  "text": "1945年7月4日の未明、高知が空襲を受けた。市街地の大部分が焼け、約4万1千人が罹災し、死者は401人。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.01,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.057,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（高知市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/shikoku_05.html",
+   "verified": true
+  },
+  "probNote": "罹災人口40,737人÷県の人口約71万人（未確認）。死亡は死者401人÷罹災人口。目安"
+ },
+ {
+  "id": "war-1945-07-kochi-airraid-child",
+  "key": "kochi-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   39
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "高知の空襲",
+  "text": "1945年7月4日の未明、高知が空襲を受けた。市街地の大部分が焼け、約4万1千人が罹災し、死者は401人。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.01,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.057,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（高知市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/shikoku_05.html",
+   "verified": true
+  },
+  "probNote": "罹災人口40,737人÷県の人口約71万人（未確認）。死亡は死者401人÷罹災人口。目安"
+ },
+ {
+  "id": "war-1945-07-kochi-airraid-youth",
+  "key": "kochi-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   39
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "高知の空襲",
+  "text": "1945年7月4日の未明、高知が空襲を受けた。市街地の大部分が焼け、約4万1千人が罹災し、死者は401人。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.01,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.057,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（高知市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/shikoku_05.html",
+   "verified": true
+  },
+  "probNote": "罹災人口40,737人÷県の人口約71万人（未確認）。死亡は死者401人÷罹災人口。目安"
+ },
+ {
+  "id": "war-1945-07-kofu-airraid-infant",
+  "key": "kofu-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   19
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "甲府の空襲",
+  "text": "1945年7月6日、甲府が空襲を受けた。約8万7千人が被害を受け、のちの調べで死者は1,127人とされた。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.013,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.13,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（甲府市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_24.html",
+   "verified": true
+  },
+  "probNote": "被害人口86,913人÷県の人口約66万人（未確認）。死亡は死者1,127人÷被害人口。目安"
+ },
+ {
+  "id": "war-1945-07-kofu-airraid-child",
+  "key": "kofu-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   19
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "甲府の空襲",
+  "text": "1945年7月6日、甲府が空襲を受けた。約8万7千人が被害を受け、のちの調べで死者は1,127人とされた。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.013,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.13,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（甲府市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_24.html",
+   "verified": true
+  },
+  "probNote": "被害人口86,913人÷県の人口約66万人（未確認）。死亡は死者1,127人÷被害人口。目安"
+ },
+ {
+  "id": "war-1945-07-kofu-airraid-youth",
+  "key": "kofu-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   19
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "甲府の空襲",
+  "text": "1945年7月6日、甲府が空襲を受けた。約8万7千人が被害を受け、のちの調べで死者は1,127人とされた。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.013,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.13,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（甲府市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_24.html",
+   "verified": true
+  },
+  "probNote": "被害人口86,913人÷県の人口約66万人（未確認）。死亡は死者1,127人÷被害人口。目安"
+ },
+ {
+  "id": "war-1945-07-gifu-airraid-infant",
+  "key": "gifu-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   21
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "岐阜の空襲",
+  "text": "1945年7月9日、岐阜が空襲を受けた。約2万戸以上が焼け、死者は約900人、罹災者は最大10万人とされる。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.009,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.08,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（岐阜市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/tokai_01.html",
+   "verified": true
+  },
+  "probNote": "罹災者約10万人÷県の人口約127万人（未確認）。死亡は死者約900人÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-07-gifu-airraid-child",
+  "key": "gifu-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   21
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "岐阜の空襲",
+  "text": "1945年7月9日、岐阜が空襲を受けた。約2万戸以上が焼け、死者は約900人、罹災者は最大10万人とされる。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.009,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.08,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（岐阜市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/tokai_01.html",
+   "verified": true
+  },
+  "probNote": "罹災者約10万人÷県の人口約127万人（未確認）。死亡は死者約900人÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-07-gifu-airraid-youth",
+  "key": "gifu-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   21
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "岐阜の空襲",
+  "text": "1945年7月9日、岐阜が空襲を受けた。約2万戸以上が焼け、死者は約900人、罹災者は最大10万人とされる。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.009,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.08,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（岐阜市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/tokai_01.html",
+   "verified": true
+  },
+  "probNote": "罹災者約10万人÷県の人口約127万人（未確認）。死亡は死者約900人÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-07-wakayama-airraid-infant",
+  "key": "wakayama-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   30
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "和歌山の空襲",
+  "text": "1945年7月9日、和歌山が空襲を受けた。全焼は2万7千戸を超え、死者は1,101人とされる。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.01,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.1,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（和歌山市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kinki_14.html",
+   "verified": true
+  },
+  "probNote": "罹災者数は確かめられず、全焼27,402戸×1戸4人程度÷県の人口約87万人（未確認）。死亡も目安"
+ },
+ {
+  "id": "war-1945-07-wakayama-airraid-child",
+  "key": "wakayama-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   30
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "和歌山の空襲",
+  "text": "1945年7月9日、和歌山が空襲を受けた。全焼は2万7千戸を超え、死者は1,101人とされる。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.01,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.1,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（和歌山市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kinki_14.html",
+   "verified": true
+  },
+  "probNote": "罹災者数は確かめられず、全焼27,402戸×1戸4人程度÷県の人口約87万人（未確認）。死亡も目安"
+ },
+ {
+  "id": "war-1945-07-wakayama-airraid-youth",
+  "key": "wakayama-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   30
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "和歌山の空襲",
+  "text": "1945年7月9日、和歌山が空襲を受けた。全焼は2万7千戸を超え、死者は1,101人とされる。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.01,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.1,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（和歌山市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kinki_14.html",
+   "verified": true
+  },
+  "probNote": "罹災者数は確かめられず、全焼27,402戸×1戸4人程度÷県の人口約87万人（未確認）。死亡も目安"
+ },
+ {
+  "id": "war-1945-07-sendai-airraid-infant",
+  "key": "sendai-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   4
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "仙台空襲",
+  "text": "1945年7月10日の未明、仙台が空襲を受けた。B29約120機が来て、市民のおよそ5分の1にあたる約5万7千人が被災した。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.015,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.045,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（仙台市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/tohoku_05.html",
+   "verified": true
+  },
+  "probNote": "被災人口57,321人÷県の人口約127万人（未確認）。死者数は総務省のページになく、死亡確率は目安"
+ },
+ {
+  "id": "war-1945-07-sendai-airraid-child",
+  "key": "sendai-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   4
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "仙台空襲",
+  "text": "1945年7月10日の未明、仙台が空襲を受けた。B29約120機が来て、市民のおよそ5分の1にあたる約5万7千人が被災した。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.015,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.045,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（仙台市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/tohoku_05.html",
+   "verified": true
+  },
+  "probNote": "被災人口57,321人÷県の人口約127万人（未確認）。死者数は総務省のページになく、死亡確率は目安"
+ },
+ {
+  "id": "war-1945-07-sendai-airraid-youth",
+  "key": "sendai-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   4
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "仙台空襲",
+  "text": "1945年7月10日の未明、仙台が空襲を受けた。B29約120機が来て、市民のおよそ5分の1にあたる約5万7千人が被災した。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.015,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.045,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（仙台市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/tohoku_05.html",
+   "verified": true
+  },
+  "probNote": "被災人口57,321人÷県の人口約127万人（未確認）。死者数は総務省のページになく、死亡確率は目安"
+ },
+ {
+  "id": "war-1945-07-sakai-airraid-infant",
+  "key": "sakai-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   27
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "堺大空襲",
+  "text": "1945年7月10日、堺が空襲を受けた。旧市域の6割余りが焼け、1,860人が亡くなり、約7万人が焼け出された。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.027,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.015,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（堺市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kinki_01.html",
+   "verified": true
+  },
+  "probNote": "罹災者約7万人÷府の人口約400万人（未確認）。死亡は死者1,860人÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-07-sakai-airraid-child",
+  "key": "sakai-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   27
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "堺大空襲",
+  "text": "1945年7月10日、堺が空襲を受けた。旧市域の6割余りが焼け、1,860人が亡くなり、約7万人が焼け出された。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.027,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.015,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（堺市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kinki_01.html",
+   "verified": true
+  },
+  "probNote": "罹災者約7万人÷府の人口約400万人（未確認）。死亡は死者1,860人÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-07-sakai-airraid-youth",
+  "key": "sakai-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   27
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "堺大空襲",
+  "text": "1945年7月10日、堺が空襲を受けた。旧市域の6割余りが焼け、1,860人が亡くなり、約7万人が焼け出された。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.027,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.015,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（堺市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kinki_01.html",
+   "verified": true
+  },
+  "probNote": "罹災者約7万人÷府の人口約400万人（未確認）。死亡は死者1,860人÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-07-utsunomiya-airraid-infant",
+  "key": "utsunomiya-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   9
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "宇都宮の空襲",
+  "text": "1945年7月12日、宇都宮が空襲を受けた。駅の周りの市街地がほぼ焼け、620人以上が亡くなった。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.01,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.04,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（宇都宮市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_26.html",
+   "verified": true
+  },
+  "probNote": "罹災者数は確かめられず、県の人口約121万人（未確認）から目安で置いた"
+ },
+ {
+  "id": "war-1945-07-utsunomiya-airraid-child",
+  "key": "utsunomiya-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   9
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "宇都宮の空襲",
+  "text": "1945年7月12日、宇都宮が空襲を受けた。駅の周りの市街地がほぼ焼け、620人以上が亡くなった。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.01,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.04,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（宇都宮市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_26.html",
+   "verified": true
+  },
+  "probNote": "罹災者数は確かめられず、県の人口約121万人（未確認）から目安で置いた"
+ },
+ {
+  "id": "war-1945-07-utsunomiya-airraid-youth",
+  "key": "utsunomiya-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   9
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "宇都宮の空襲",
+  "text": "1945年7月12日、宇都宮が空襲を受けた。駅の周りの市街地がほぼ焼け、620人以上が亡くなった。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.01,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.04,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（宇都宮市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_26.html",
+   "verified": true
+  },
+  "probNote": "罹災者数は確かめられず、県の人口約121万人（未確認）から目安で置いた"
+ },
+ {
+  "id": "war-1945-07-kamaishi-airraid-infant",
+  "key": "kamaishi-bombard-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   3
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "釜石の艦砲射撃",
+  "text": "1945年7月14日と8月9日、釜石が空襲を受けた。海からの艦砲射撃で市街地のほとんどが被災し、750人余りが亡くなった。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.044,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.015,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（釜石市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/tohoku_03.html",
+   "verified": true
+  },
+  "probNote": "被災人員16,992人÷県の人口約110万人（未確認）。死亡は死者750人余÷被災人員。目安"
+ },
+ {
+  "id": "war-1945-07-kamaishi-airraid-child",
+  "key": "kamaishi-bombard-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   3
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "釜石の艦砲射撃",
+  "text": "1945年7月14日と8月9日、釜石が空襲を受けた。海からの艦砲射撃で市街地のほとんどが被災し、750人余りが亡くなった。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.044,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.015,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（釜石市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/tohoku_03.html",
+   "verified": true
+  },
+  "probNote": "被災人員16,992人÷県の人口約110万人（未確認）。死亡は死者750人余÷被災人員。目安"
+ },
+ {
+  "id": "war-1945-07-kamaishi-airraid-youth",
+  "key": "kamaishi-bombard-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   3
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "釜石の艦砲射撃",
+  "text": "1945年7月14日と8月9日、釜石が空襲を受けた。海からの艦砲射撃で市街地のほとんどが被災し、750人余りが亡くなった。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.044,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.015,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（釜石市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/tohoku_03.html",
+   "verified": true
+  },
+  "probNote": "被災人員16,992人÷県の人口約110万人（未確認）。死亡は死者750人余÷被災人員。目安"
+ },
+ {
+  "id": "war-1945-07-fukui-airraid-infant",
+  "key": "fukui-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   18
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "福井の空襲",
+  "text": "1945年7月19日、福井が空襲を受けた。市街地の8割以上が焼け、約8万6千人が罹災し、死者は1,576人。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.018,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.13,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（福井市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/shinetsu_03.html",
+   "verified": true
+  },
+  "probNote": "罹災人口85,603人÷県の人口約64万人（未確認）。死亡は死者1,576人÷罹災人口。目安"
+ },
+ {
+  "id": "war-1945-07-fukui-airraid-child",
+  "key": "fukui-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   18
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "福井の空襲",
+  "text": "1945年7月19日、福井が空襲を受けた。市街地の8割以上が焼け、約8万6千人が罹災し、死者は1,576人。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.018,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.13,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（福井市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/shinetsu_03.html",
+   "verified": true
+  },
+  "probNote": "罹災人口85,603人÷県の人口約64万人（未確認）。死亡は死者1,576人÷罹災人口。目安"
+ },
+ {
+  "id": "war-1945-07-fukui-airraid-youth",
+  "key": "fukui-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   18
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "福井の空襲",
+  "text": "1945年7月19日、福井が空襲を受けた。市街地の8割以上が焼け、約8万6千人が罹災し、死者は1,576人。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.018,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.13,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（福井市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/shinetsu_03.html",
+   "verified": true
+  },
+  "probNote": "罹災人口85,603人÷県の人口約64万人（未確認）。死亡は死者1,576人÷罹災人口。目安"
+ },
+ {
+  "id": "war-1945-07-matsuyama-airraid-infant",
+  "key": "matsuyama-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   38
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "松山の空襲",
+  "text": "1945年7月26日、松山が空襲を受けた。市民の半分を超える約6万2千人が被災し、死者は251人、行方不明は8人。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.004,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.053,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（松山市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/shikoku_03.html",
+   "verified": true
+  },
+  "probNote": "被災人口62,200人÷県の人口約118万人（未確認）。死亡は（死者251人＋行方不明8人）÷被災人口。目安"
+ },
+ {
+  "id": "war-1945-07-matsuyama-airraid-child",
+  "key": "matsuyama-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   38
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "松山の空襲",
+  "text": "1945年7月26日、松山が空襲を受けた。市民の半分を超える約6万2千人が被災し、死者は251人、行方不明は8人。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.004,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.053,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（松山市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/shikoku_03.html",
+   "verified": true
+  },
+  "probNote": "被災人口62,200人÷県の人口約118万人（未確認）。死亡は（死者251人＋行方不明8人）÷被災人口。目安"
+ },
+ {
+  "id": "war-1945-07-matsuyama-airraid-youth",
+  "key": "matsuyama-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   38
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "松山の空襲",
+  "text": "1945年7月26日、松山が空襲を受けた。市民の半分を超える約6万2千人が被災し、死者は251人、行方不明は8人。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.004,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.053,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（松山市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/shikoku_03.html",
+   "verified": true
+  },
+  "probNote": "被災人口62,200人÷県の人口約118万人（未確認）。死亡は（死者251人＋行方不明8人）÷被災人口。目安"
+ },
+ {
+  "id": "war-1945-07-aomori-airraid-infant",
+  "key": "aomori-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   2
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "青森大空襲",
+  "text": "1945年7月28日の夜、青森が空襲を受けた。市街地の約9割が焼け、1,018人が亡くなった。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.015,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.07,
+  "heavy": true,
+  "source": {
+   "title": "総務省 追悼施設（「空襲・戦災都市 青森」の碑）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/virtual/memorialsite/aomori_aomori_city002/index.html",
+   "verified": true
+  },
+  "probNote": "罹災者数が確かめられず、県の人口約100万人（未確認）と市街地の焼失割合から目安で置いた"
+ },
+ {
+  "id": "war-1945-07-aomori-airraid-child",
+  "key": "aomori-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   2
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "青森大空襲",
+  "text": "1945年7月28日の夜、青森が空襲を受けた。市街地の約9割が焼け、1,018人が亡くなった。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.015,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.07,
+  "heavy": true,
+  "source": {
+   "title": "総務省 追悼施設（「空襲・戦災都市 青森」の碑）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/virtual/memorialsite/aomori_aomori_city002/index.html",
+   "verified": true
+  },
+  "probNote": "罹災者数が確かめられず、県の人口約100万人（未確認）と市街地の焼失割合から目安で置いた"
+ },
+ {
+  "id": "war-1945-07-aomori-airraid-youth",
+  "key": "aomori-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 7,
+  "prefs": [
+   2
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "青森大空襲",
+  "text": "1945年7月28日の夜、青森が空襲を受けた。市街地の約9割が焼け、1,018人が亡くなった。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.015,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.07,
+  "heavy": true,
+  "source": {
+   "title": "総務省 追悼施設（「空襲・戦災都市 青森」の碑）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/virtual/memorialsite/aomori_aomori_city002/index.html",
+   "verified": true
+  },
+  "probNote": "罹災者数が確かめられず、県の人口約100万人（未確認）と市街地の焼失割合から目安で置いた"
+ },
+ {
+  "id": "war-1945-08-nagaoka-airraid-infant",
+  "key": "nagaoka-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 8,
+  "prefs": [
+   15
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "長岡空襲",
+  "text": "1945年8月1日の夜、長岡が空襲を受けた。市街地の約8割が焼け、学童約300人を含む1,470人余りが亡くなった。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.025,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.03,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（長岡市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/shinetsu_02.html",
+   "verified": true
+  },
+  "probNote": "人口74,508人の約8割÷県の人口約206万人（未確認）。死亡は死者1,470人余÷罹災者推計約6万人。目安"
+ },
+ {
+  "id": "war-1945-08-nagaoka-airraid-child",
+  "key": "nagaoka-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 8,
+  "prefs": [
+   15
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "長岡空襲",
+  "text": "1945年8月1日の夜、長岡が空襲を受けた。市街地の約8割が焼け、学童約300人を含む1,470人余りが亡くなった。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.025,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.03,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（長岡市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/shinetsu_02.html",
+   "verified": true
+  },
+  "probNote": "人口74,508人の約8割÷県の人口約206万人（未確認）。死亡は死者1,470人余÷罹災者推計約6万人。目安"
+ },
+ {
+  "id": "war-1945-08-nagaoka-airraid-youth",
+  "key": "nagaoka-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 8,
+  "prefs": [
+   15
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "長岡空襲",
+  "text": "1945年8月1日の夜、長岡が空襲を受けた。市街地の約8割が焼け、学童約300人を含む1,470人余りが亡くなった。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.025,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.03,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（長岡市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/shinetsu_02.html",
+   "verified": true
+  },
+  "probNote": "人口74,508人の約8割÷県の人口約206万人（未確認）。死亡は死者1,470人余÷罹災者推計約6万人。目安"
+ },
+ {
+  "id": "war-1945-08-toyama-airraid-infant",
+  "key": "toyama-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 8,
+  "prefs": [
+   16
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "富山大空襲",
+  "text": "1945年8月2日の未明、富山が空襲を受けた。市街地はほぼ焼き尽くされ、約11万人が罹災し、2,700人余りが亡くなった。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.022,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.13,
+  "heavy": true,
+  "source": {
+   "title": "総務省 追悼施設（富山市 戦災復興記念像の碑文と説明板）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/virtual/memorialsite/toyama_toyama_003/index.html",
+   "verified": true
+  },
+  "probNote": "罹災者約11万人÷県の人口約82万人（未確認）。死亡は死者2,275〜2,700人余（碑文と説明板で異なる）÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-08-toyama-airraid-child",
+  "key": "toyama-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 8,
+  "prefs": [
+   16
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "富山大空襲",
+  "text": "1945年8月2日の未明、富山が空襲を受けた。市街地はほぼ焼き尽くされ、約11万人が罹災し、2,700人余りが亡くなった。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.022,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.13,
+  "heavy": true,
+  "source": {
+   "title": "総務省 追悼施設（富山市 戦災復興記念像の碑文と説明板）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/virtual/memorialsite/toyama_toyama_003/index.html",
+   "verified": true
+  },
+  "probNote": "罹災者約11万人÷県の人口約82万人（未確認）。死亡は死者2,275〜2,700人余（碑文と説明板で異なる）÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-08-toyama-airraid-youth",
+  "key": "toyama-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 8,
+  "prefs": [
+   16
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "富山大空襲",
+  "text": "1945年8月2日の未明、富山が空襲を受けた。市街地はほぼ焼き尽くされ、約11万人が罹災し、2,700人余りが亡くなった。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.022,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.13,
+  "heavy": true,
+  "source": {
+   "title": "総務省 追悼施設（富山市 戦災復興記念像の碑文と説明板）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/virtual/memorialsite/toyama_toyama_003/index.html",
+   "verified": true
+  },
+  "probNote": "罹災者約11万人÷県の人口約82万人（未確認）。死亡は死者2,275〜2,700人余（碑文と説明板で異なる）÷罹災者。目安"
+ },
+ {
+  "id": "war-1945-08-mito-airraid-infant",
+  "key": "mito-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 8,
+  "prefs": [
+   8
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "水戸の空襲",
+  "text": "1945年8月2日、水戸が空襲を受けた。市民の約8割にあたる約5万人が罹災し、死者は300人を上回った。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.005,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.03,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（水戸市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_01.html",
+   "verified": true
+  },
+  "probNote": "罹災人員50,605人÷県の人口約162万人（未確認）。死亡は死者242人÷罹災人員。目安"
+ },
+ {
+  "id": "war-1945-08-mito-airraid-child",
+  "key": "mito-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 8,
+  "prefs": [
+   8
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "水戸の空襲",
+  "text": "1945年8月2日、水戸が空襲を受けた。市民の約8割にあたる約5万人が罹災し、死者は300人を上回った。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.005,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.03,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（水戸市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_01.html",
+   "verified": true
+  },
+  "probNote": "罹災人員50,605人÷県の人口約162万人（未確認）。死亡は死者242人÷罹災人員。目安"
+ },
+ {
+  "id": "war-1945-08-mito-airraid-youth",
+  "key": "mito-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 8,
+  "prefs": [
+   8
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "水戸の空襲",
+  "text": "1945年8月2日、水戸が空襲を受けた。市民の約8割にあたる約5万人が罹災し、死者は300人を上回った。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.005,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.03,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（水戸市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_01.html",
+   "verified": true
+  },
+  "probNote": "罹災人員50,605人÷県の人口約162万人（未確認）。死亡は死者242人÷罹災人員。目安"
+ },
+ {
+  "id": "war-1945-08-hachioji-airraid-infant",
+  "key": "hachioji-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 8,
+  "prefs": [
+   13
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "八王子の空襲",
+  "text": "1945年8月2日、八王子が空襲を受けた。市街地の8割が焼け、396人が亡くなった。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.006,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.01,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（八王子市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_20.html",
+   "verified": true
+  },
+  "probNote": "罹災者数が確かめられず、都の人口に占める多摩の割合から目安で置いた"
+ },
+ {
+  "id": "war-1945-08-hachioji-airraid-child",
+  "key": "hachioji-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 8,
+  "prefs": [
+   13
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "八王子の空襲",
+  "text": "1945年8月2日、八王子が空襲を受けた。市街地の8割が焼け、396人が亡くなった。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.006,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.01,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（八王子市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_20.html",
+   "verified": true
+  },
+  "probNote": "罹災者数が確かめられず、都の人口に占める多摩の割合から目安で置いた"
+ },
+ {
+  "id": "war-1945-08-hachioji-airraid-youth",
+  "key": "hachioji-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 8,
+  "prefs": [
+   13
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "八王子の空襲",
+  "text": "1945年8月2日、八王子が空襲を受けた。市街地の8割が焼け、396人が亡くなった。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.006,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.01,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（八王子市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_20.html",
+   "verified": true
+  },
+  "probNote": "罹災者数が確かめられず、都の人口に占める多摩の割合から目安で置いた"
+ },
+ {
+  "id": "war-1945-06-chiba-airraid-infant",
+  "key": "chiba-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 6,
+  "prefs": [
+   12
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "千葉の空襲",
+  "text": "1945年6月10日と7月7日、千葉が空襲を受けた。2度の空襲で約4万1千人が被災し、死傷者は1,595人に及んだ。まだ幼くて覚えていないが、家は焼け、家族に抱えられて逃げたと後で聞いた。",
+  "effects": {
+   "health": -5,
+   "happiness": -8,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.01,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.026,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（千葉市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_07.html",
+   "verified": true
+  },
+  "probNote": "被災者41,212人÷県の人口約159万人（未確認）。死者だけの数は確かめられず、死亡確率は目安"
+ },
+ {
+  "id": "war-1945-06-chiba-airraid-child",
+  "key": "chiba-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 6,
+  "prefs": [
+   12
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "千葉の空襲",
+  "text": "1945年6月10日と7月7日、千葉が空襲を受けた。2度の空襲で約4万1千人が被災し、死傷者は1,595人に及んだ。住んでいた家が焼け、家族と焼け残った親類の家に身を寄せた。",
+  "effects": {
+   "health": -5,
+   "happiness": -15,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.01,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.026,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（千葉市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_07.html",
+   "verified": true
+  },
+  "probNote": "被災者41,212人÷県の人口約159万人（未確認）。死者だけの数は確かめられず、死亡確率は目安"
+ },
+ {
+  "id": "war-1945-06-chiba-airraid-youth",
+  "key": "chiba-airraid-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 6,
+  "prefs": [
+   12
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "千葉の空襲",
+  "text": "1945年6月10日と7月7日、千葉が空襲を受けた。2度の空襲で約4万1千人が被災し、死傷者は1,595人に及んだ。家が焼け、動員先の工場にも通えなくなった。焼け跡の片付けに加わった。",
+  "effects": {
+   "health": -5,
+   "happiness": -18,
+   "flags": [
+    "airraid_survivor",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.01,
+    "cause": "空襲"
+   }
+  },
+  "probability": 0.026,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（千葉市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_07.html",
+   "verified": true
+  },
+  "probNote": "被災者41,212人÷県の人口約159万人（未確認）。死者だけの数は確かめられず、死亡確率は目安"
+ },
+ {
+  "id": "war-1945-08-hiroshima-abomb-infant",
+  "key": "hiroshima-abomb-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 8,
+  "prefs": [
+   34
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "広島に原爆",
+  "text": "1945年8月6日午前8時15分、広島市に原子爆弾が落とされた。まだ幼く、自分では覚えていない。その年の末までに約14万人が亡くなったとされる。",
+  "effects": {
+   "health": -20,
+   "happiness": -10,
+   "flags": [
+    "hibakusha",
+    "airraid_survivor"
+   ],
+   "death": {
+    "prob": 0.4,
+    "cause": "原子爆弾"
+   }
+  },
+  "probability": 0.15,
+  "heavy": true,
+  "source": {
+   "title": "広島市 原爆被害の概要",
+   "url": "https://www.city.hiroshima.lg.jp/soshiki/48/9400.html",
+   "verified": true
+  },
+  "probNote": "原爆投下時に市内にいた約35万人÷県の人口約187万人（未確認）。死亡は1945年12月末までの死者約14万人÷約35万人"
+ },
+ {
+  "id": "war-1945-08-hiroshima-abomb-child",
+  "key": "hiroshima-abomb-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 8,
+  "prefs": [
+   34
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "広島に原爆",
+  "text": "1945年8月6日午前8時15分、広島市に原子爆弾が落とされた。市内で被爆した。その年の末までに約14万人が亡くなったとされる。のちに被爆者と呼ばれる一人になった。",
+  "effects": {
+   "health": -20,
+   "happiness": -20,
+   "flags": [
+    "hibakusha",
+    "airraid_survivor"
+   ],
+   "death": {
+    "prob": 0.4,
+    "cause": "原子爆弾"
+   }
+  },
+  "probability": 0.15,
+  "heavy": true,
+  "source": {
+   "title": "広島市 原爆被害の概要",
+   "url": "https://www.city.hiroshima.lg.jp/soshiki/48/9400.html",
+   "verified": true
+  },
+  "probNote": "原爆投下時に市内にいた約35万人÷県の人口約187万人（未確認）。死亡は1945年12月末までの死者約14万人÷約35万人"
+ },
+ {
+  "id": "war-1945-08-hiroshima-abomb-youth",
+  "key": "hiroshima-abomb-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 8,
+  "prefs": [
+   34
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "広島に原爆",
+  "text": "1945年8月6日午前8時15分、広島市に原子爆弾が落とされた。中学生や女学生の多くが建物疎開の作業に動員されていた。市内で被爆し、のちに被爆者と呼ばれる一人になった。",
+  "effects": {
+   "health": -20,
+   "happiness": -22,
+   "flags": [
+    "hibakusha",
+    "airraid_survivor"
+   ],
+   "death": {
+    "prob": 0.4,
+    "cause": "原子爆弾"
+   }
+  },
+  "probability": 0.15,
+  "heavy": true,
+  "source": {
+   "title": "広島市 原爆被害の概要",
+   "url": "https://www.city.hiroshima.lg.jp/soshiki/48/9400.html",
+   "verified": true
+  },
+  "probNote": "原爆投下時に市内にいた約35万人÷県の人口約187万人（未確認）。死亡は1945年12月末までの死者約14万人÷約35万人"
+ },
+ {
+  "id": "war-1945-08-nagasaki-abomb-infant",
+  "key": "nagasaki-abomb-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 8,
+  "prefs": [
+   42
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "長崎に原爆",
+  "text": "1945年8月9日、長崎市に原子爆弾が落とされた。まだ幼く、覚えていない。その年の末までに7万3千人余りが亡くなったとされる。",
+  "effects": {
+   "health": -20,
+   "happiness": -10,
+   "flags": [
+    "hibakusha",
+    "airraid_survivor"
+   ],
+   "death": {
+    "prob": 0.31,
+    "cause": "原子爆弾"
+   }
+  },
+  "probability": 0.17,
+  "heavy": true,
+  "source": {
+   "title": "長崎原爆資料館 原爆による被害（1945年12月末までの推定）",
+   "url": "https://nagasakipeace.jp/en/reference/materials/kids/higai.html",
+   "verified": true
+  },
+  "probNote": "当時の人口約24万人÷県の人口約137万人（未確認）。死亡は1945年12月末までの死者73,884人÷約24万人"
+ },
+ {
+  "id": "war-1945-08-nagasaki-abomb-child",
+  "key": "nagasaki-abomb-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 8,
+  "prefs": [
+   42
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "長崎に原爆",
+  "text": "1945年8月9日、長崎市に原子爆弾が落とされた。市内で被爆した。その年の末までに7万3千人余りが亡くなったとされる。のちに被爆者と呼ばれる一人になった。",
+  "effects": {
+   "health": -20,
+   "happiness": -20,
+   "flags": [
+    "hibakusha",
+    "airraid_survivor"
+   ],
+   "death": {
+    "prob": 0.31,
+    "cause": "原子爆弾"
+   }
+  },
+  "probability": 0.17,
+  "heavy": true,
+  "source": {
+   "title": "長崎原爆資料館 原爆による被害（1945年12月末までの推定）",
+   "url": "https://nagasakipeace.jp/en/reference/materials/kids/higai.html",
+   "verified": true
+  },
+  "probNote": "当時の人口約24万人÷県の人口約137万人（未確認）。死亡は1945年12月末までの死者73,884人÷約24万人"
+ },
+ {
+  "id": "war-1945-08-nagasaki-abomb-youth",
+  "key": "nagasaki-abomb-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 8,
+  "prefs": [
+   42
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "長崎に原爆",
+  "text": "1945年8月9日、長崎市に原子爆弾が落とされた。動員先の工場で被爆した。その年の末までに7万3千人余りが亡くなったとされる。",
+  "effects": {
+   "health": -20,
+   "happiness": -22,
+   "flags": [
+    "hibakusha",
+    "airraid_survivor"
+   ],
+   "death": {
+    "prob": 0.31,
+    "cause": "原子爆弾"
+   }
+  },
+  "probability": 0.17,
+  "heavy": true,
+  "source": {
+   "title": "長崎原爆資料館 原爆による被害（1945年12月末までの推定）",
+   "url": "https://nagasakipeace.jp/en/reference/materials/kids/higai.html",
+   "verified": true
+  },
+  "probNote": "当時の人口約24万人÷県の人口約137万人（未確認）。死亡は1945年12月末までの死者73,884人÷約24万人"
+ },
+ {
+  "id": "war-1945-04-okinawa-battle-infant",
+  "key": "okinawa-battle-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 4,
+  "prefs": [
+   47
+  ],
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "沖縄戦",
+  "text": "1945年3月末から、米軍が沖縄に上陸し、地上戦になった。まだ幼く覚えていない。家族と壕や山の中を移り、収容所で戦争の終わりを迎えたと後で聞いた。",
+  "effects": {
+   "health": -15,
+   "happiness": -10,
+   "flags": [
+    "okinawa_battle",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.18,
+    "cause": "沖縄戦"
+   }
+  },
+  "probability": 0.85,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（沖縄県）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/okinawa_04.html",
+   "verified": true
+  },
+  "probNote": "一般県民の戦没者約9万4千人÷県外に疎開しなかった県民（推定約50万人、未確認）。疎開しなかった人の割合は約7万人の県外疎開から目安で置いた"
+ },
+ {
+  "id": "war-1945-04-okinawa-battle-child",
+  "key": "okinawa-battle-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 4,
+  "prefs": [
+   47
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated"
+   ]
+  },
+  "title": "沖縄戦",
+  "text": "1945年4月1日、米軍が沖縄本島に上陸し、約3か月の地上戦になった。軍民あわせて20万人余りが亡くなった。家族と避難を続け、収容所に入った。",
+  "effects": {
+   "health": -15,
+   "happiness": -25,
+   "flags": [
+    "okinawa_battle",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.18,
+    "cause": "沖縄戦"
+   }
+  },
+  "probability": 0.85,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（沖縄県）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/okinawa_04.html",
+   "verified": true
+  },
+  "probNote": "一般県民の戦没者約9万4千人÷県外に疎開しなかった県民（推定約50万人、未確認）。疎開しなかった人の割合は約7万人の県外疎開から目安で置いた"
+ },
+ {
+  "id": "war-1945-04-okinawa-battle-youth",
+  "key": "okinawa-battle-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 4,
+  "prefs": [
+   47
+  ],
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "evacuated",
+    "gakutotai"
+   ]
+  },
+  "title": "沖縄戦",
+  "text": "1945年4月1日、米軍が沖縄本島に上陸し、約3か月の地上戦になった。県民の戦没者は一般の人だけで約9万4千人と推計されている。家族と避難を続けた。",
+  "effects": {
+   "health": -15,
+   "happiness": -25,
+   "flags": [
+    "okinawa_battle",
+    "lost_home_war"
+   ],
+   "death": {
+    "prob": 0.18,
+    "cause": "沖縄戦"
+   }
+  },
+  "probability": 0.85,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（沖縄県）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/okinawa_04.html",
+   "verified": true
+  },
+  "probNote": "一般県民の戦没者約9万4千人÷県外に疎開しなかった県民（推定約50万人、未確認）。疎開しなかった人の割合は約7万人の県外疎開から目安で置いた"
+ },
+ {
+  "id": "war-1945-okinawa-tekketsu-youth",
+  "key": "okinawa-gakutotai-1945",
+  "category": "war",
+  "year": 1945,
+  "prefs": [
+   47
+  ],
+  "ageMin": 14,
+  "ageMax": 15,
+  "sex": "male",
+  "title": "鉄血勤皇隊",
+  "text": "1945年、通っていた学校の生徒として鉄血勤皇隊に組み込まれ、陣地づくりや運搬にあたった。男子学徒約1,500人のうち約800人が亡くなった。",
+  "effects": {
+   "health": -15,
+   "happiness": -25,
+   "flags": [
+    "gakutotai",
+    "okinawa_battle"
+   ],
+   "death": {
+    "prob": 0.53,
+    "cause": "沖縄戦"
+   }
+  },
+  "probability": 0.15,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（沖縄県）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/okinawa_04.html",
+   "verified": true
+  },
+  "probNote": "中等学校に通っていた割合は未確認のため目安。死亡は男子学徒の死者約800人÷動員約1,500人"
+ },
+ {
+  "id": "war-1945-okinawa-joshigakuto-youth",
+  "key": "okinawa-gakutotai-1945",
+  "category": "war",
+  "year": 1945,
+  "prefs": [
+   47
+  ],
+  "ageMin": 15,
+  "ageMax": 15,
+  "sex": "female",
+  "title": "女子学徒隊",
+  "text": "1945年、通っていた女学校の生徒として学徒隊に動員され、陸軍病院で負傷兵の看護にあたった。女子学徒約500人のうち約200人が亡くなった。",
+  "effects": {
+   "health": -15,
+   "happiness": -25,
+   "flags": [
+    "gakutotai",
+    "okinawa_battle"
+   ],
+   "death": {
+    "prob": 0.4,
+    "cause": "沖縄戦"
+   }
+  },
+  "probability": 0.15,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（沖縄県）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/okinawa_04.html",
+   "verified": true
+  },
+  "probNote": "女学校に通っていた割合は未確認のため目安。死亡は女子学徒の死者約200人÷動員約500人"
+ },
+ {
+  "id": "war-1944-10-okinawa-1010-child",
+  "key": "okinawa-1010-airraid-1944",
+  "category": "war",
+  "year": 1944,
+  "month": 10,
+  "prefs": [
+   47
+  ],
+  "ageMin": 4,
+  "ageMax": 12,
+  "sex": "any",
+  "title": "10・10空襲",
+  "text": "1944年10月10日、米軍の機動部隊が南西諸島を空襲し、那覇の街の大部分が焼けた。軍民あわせて668人が亡くなった。家族と郊外へ逃げた。",
+  "effects": {
+   "happiness": -10,
+   "flags": [
+    "airraid_survivor"
+   ]
+  },
+  "probability": 0.3,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（沖縄県）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/okinawa_04.html",
+   "verified": true
+  },
+  "probNote": "那覇とその周辺に住んでいた割合を目安で置いた"
+ },
+ {
+  "id": "war-1944-10-okinawa-1010-youth",
+  "key": "okinawa-1010-airraid-1944",
+  "category": "war",
+  "year": 1944,
+  "month": 10,
+  "prefs": [
+   47
+  ],
+  "ageMin": 13,
+  "ageMax": 14,
+  "sex": "any",
+  "title": "10・10空襲",
+  "text": "1944年10月10日、米軍の機動部隊が南西諸島を空襲し、那覇の街の大部分が焼けた。軍民あわせて668人が亡くなった。戦場が近いことを知った。",
+  "effects": {
+   "happiness": -10,
+   "flags": [
+    "airraid_survivor"
+   ]
+  },
+  "probability": 0.3,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（沖縄県）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/okinawa_04.html",
+   "verified": true
+  },
+  "probNote": "那覇とその周辺に住んでいた割合を目安で置いた"
+ },
+ {
+  "id": "war-1944-08-okinawa-sokai-child",
+  "key": "okinawa-sokai-1944",
+  "category": "war",
+  "year": 1944,
+  "month": 8,
+  "prefs": [
+   47
+  ],
+  "ageMin": 8,
+  "ageMax": 11,
+  "sex": "any",
+  "title": "疎開船で九州へ",
+  "text": "1944年8月、学童疎開で船に乗り、九州へ向かった。同じ月、疎開船の対馬丸が沈められ、学童784人が亡くなった。疎開先の生活は2年余り続いた。",
+  "effects": {
+   "happiness": -15,
+   "relation": -5,
+   "flags": [
+    "evacuated"
+   ],
+   "death": {
+    "prob": 0.1,
+    "cause": "疎開船の沈没"
+   }
+  },
+  "probability": 0.12,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（沖縄県）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/okinawa_04.html",
+   "verified": true
+  },
+  "probNote": "疎開できた学童と関係者約6,565人＋対馬丸の学童784人から、死亡は約1割。疎開した割合は目安"
+ },
+ {
+  "id": "war-1945-yaeyama-malaria-child",
+  "key": "yaeyama-malaria-1945",
+  "category": "war",
+  "year": 1945,
+  "prefs": [
+   47
+  ],
+  "ageMin": 0,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "戦争マラリア",
+  "text": "1945年、空襲や戦火を避けて山の中へ避難し、そこでマラリアにかかった。八重山では人口約3万1,700人の半数以上がかかり、3,647人が亡くなった。",
+  "effects": {
+   "health": -20,
+   "happiness": -15,
+   "death": {
+    "prob": 0.115,
+    "cause": "マラリア"
+   }
+  },
+  "probability": 0.05,
+  "heavy": true,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（沖縄県）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/okinawa_04.html",
+   "verified": true
+  },
+  "probNote": "八重山に住む県民の割合を目安で置いた。死亡は死者3,647人÷人口約3万1,700人"
+ },
+ {
+  "id": "war-1931-09-manchurian-infant",
+  "key": "manchurian-incident-1931",
+  "category": "war",
+  "year": 1931,
+  "month": 9,
+  "ageMin": 0,
+  "ageMax": 1,
+  "sex": "any",
+  "title": "満州事変",
+  "text": "生まれて間もない1931年9月、満州事変が起きた。もちろん覚えていない。あとになって、自分の生まれた頃から戦争の時代が始まっていたと知った。",
+  "probability": 0.5,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（宇都宮市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_26.html",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1937-07-sino-war-infant",
+  "key": "sino-japanese-war-1937",
+  "category": "war",
+  "year": 1937,
+  "month": 7,
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "日中戦争が始まる",
+  "text": "1937年7月、盧溝橋事件をきっかけに中国との戦争が始まった。まだ小さく覚えていないが、この頃から父や近所の男の人が兵隊に取られていったと聞いた。",
+  "probability": 0.6,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（名古屋市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/tokai_06.html",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1937-07-sino-war-child",
+  "key": "sino-japanese-war-1937",
+  "category": "war",
+  "year": 1937,
+  "month": 7,
+  "ageMin": 6,
+  "ageMax": 7,
+  "sex": "any",
+  "title": "日中戦争が始まる",
+  "text": "1937年7月、盧溝橋事件をきっかけに中国との戦争が始まった。町では出征する兵士を送る行列があり、日の丸の小旗を振って見送った。",
+  "probability": 0.8,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（名古屋市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/tokai_06.html",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1938-04-mobilization-child",
+  "key": "national-mobilization-1938",
+  "category": "war",
+  "year": 1938,
+  "month": 4,
+  "ageMin": 5,
+  "ageMax": 8,
+  "sex": "any",
+  "title": "国家総動員法",
+  "text": "1938年4月、国家総動員法が公布され、人も物も戦争のために使えるようになった。店から品物が少しずつ消え、大人たちは節約、節約と言うようになった。",
+  "effects": {
+   "happiness": -2
+  },
+  "probability": 0.5,
+  "source": {
+   "title": "コトバンク 国家総動員法",
+   "url": "https://kotobank.jp/word/国家総動員法",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1941-04-kokumin-gakko-child",
+  "key": "kokumin-gakko-entry",
+  "category": "war",
+  "year": 1941,
+  "endYear": 1946,
+  "month": 4,
+  "ageMin": 6,
+  "ageMax": 6,
+  "sex": "any",
+  "title": "国民学校に入学",
+  "text": "国民学校に入学した。1941年4月に小学校は国民学校と名前を変え、授業には体を鍛える時間や、戦争に協力する心構えを教える時間が多かった。",
+  "effects": {
+   "knowledge": 2
+  },
+  "probability": 0.95,
+  "source": {
+   "title": "中央区立京橋図書館 企画展示（国民学校）",
+   "url": "https://www.city.chuo.lg.jp/virtualmuseum/heiwazigyo/shiryoshitu/kikakutenjishitsu/h26.html",
+   "verified": true
+  },
+  "probNote": "就学率から目安"
+ },
+ {
+  "id": "war-1941-04-rationing-child",
+  "key": "rice-ration-1941",
+  "category": "war",
+  "year": 1941,
+  "month": 4,
+  "prefs": [
+   13,
+   14,
+   23,
+   26,
+   27,
+   28
+  ],
+  "ageMin": 3,
+  "ageMax": 11,
+  "sex": "any",
+  "title": "米が配給制に",
+  "text": "1941年4月、六大都市で米が通帳による配給制になった。決まった量しか買えず、母は米に麦や芋を混ぜて、少しでも量を増やそうとしていた。",
+  "effects": {
+   "happiness": -3
+  },
+  "probability": 0.9,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（名古屋市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/tokai_06.html",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1941-12-pacific-war-infant",
+  "key": "pacific-war-1941",
+  "category": "war",
+  "year": 1941,
+  "month": 12,
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "太平洋戦争が始まる",
+  "text": "1941年12月8日、ハワイの真珠湾攻撃で米英との戦争が始まった。まだ小さく覚えていない。物心がついた頃には、戦争をしているのが当たり前だった。",
+  "probability": 0.6,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（宇都宮市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_26.html",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1941-12-pacific-war-child",
+  "key": "pacific-war-1941",
+  "category": "war",
+  "year": 1941,
+  "month": 12,
+  "ageMin": 6,
+  "ageMax": 11,
+  "sex": "any",
+  "title": "太平洋戦争が始まる",
+  "text": "1941年12月8日、ハワイの真珠湾攻撃で米英との戦争が始まった。ラジオが勝った勝ったと伝え、学校では先生が戦果を話してくれた。",
+  "probability": 0.9,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（宇都宮市）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_26.html",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1942-04-doolittle-child",
+  "key": "doolittle-raid-1942",
+  "category": "war",
+  "year": 1942,
+  "month": 4,
+  "prefs": [
+   13,
+   14,
+   23,
+   24,
+   28
+  ],
+  "ageMin": 4,
+  "ageMax": 12,
+  "sex": "any",
+  "title": "初めての本土空襲",
+  "text": "1942年4月18日、米軍機が東京などを初めて空襲した。日本の空に敵の飛行機が来ることはないと聞いていたので、大人たちも驚いていた。",
+  "effects": {
+   "happiness": -3
+  },
+  "probability": 0.3,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（東京都）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_11.html",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1944-11-air-defense-child",
+  "key": "air-defense-life-1944",
+  "category": "war",
+  "year": 1944,
+  "endYear": 1945,
+  "month": 11,
+  "ageMin": 4,
+  "ageMax": 12,
+  "sex": "any",
+  "title": "防空頭巾と防空壕",
+  "text": "1944年11月から、B29による本土空襲が本格的に始まった。防空頭巾を持ち歩き、警報が鳴るたびに防空壕へ入った。夜もゆっくり眠れなかった。",
+  "effects": {
+   "health": -2,
+   "happiness": -5
+  },
+  "probability": 0.6,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（東京都）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_11.html",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1944-11-air-defense-youth",
+  "key": "air-defense-life-1944",
+  "category": "war",
+  "year": 1944,
+  "endYear": 1945,
+  "month": 11,
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "防空頭巾と防空壕",
+  "text": "1944年11月から、B29による本土空襲が本格的に始まった。警報が鳴れば防空壕へ走り、隣組のバケツリレーの訓練にも加わった。",
+  "effects": {
+   "health": -2,
+   "happiness": -5
+  },
+  "probability": 0.6,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（東京都）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_11.html",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1937-father-drafted-child",
+  "key": "father-drafted",
+  "category": "war",
+  "year": 1937,
+  "endYear": 1945,
+  "ageMin": 0,
+  "ageMax": 12,
+  "sex": "any",
+  "title": "父に召集令状",
+  "text": "父に召集令状が届き、兵隊として出征していった。駅まで見送りに行った。父のいない家を、母が一人で切り盛りするようになった。",
+  "effects": {
+   "happiness": -10,
+   "relation": -3,
+   "flags": [
+    "father_soldier"
+   ]
+  },
+  "probability": 0.05,
+  "source": {
+   "title": "コトバンク 復員（陸海軍の動員規模）",
+   "url": "https://kotobank.jp/word/復員",
+   "verified": false
+  },
+  "probNote": "終戦時に陸海軍に約700万人がいたことから、父親が召集される割合を1年あたり5%と置いた目安"
+ },
+ {
+  "id": "war-1937-father-drafted-youth",
+  "key": "father-drafted",
+  "category": "war",
+  "year": 1937,
+  "endYear": 1945,
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "父に召集令状",
+  "text": "父に召集令状が届き、兵隊として出征していった。家の働き手がいなくなり、学校から帰ると、母を助けて畑や店の仕事を手伝うようになった。",
+  "effects": {
+   "happiness": -10,
+   "flags": [
+    "father_soldier"
+   ]
+  },
+  "probability": 0.05,
+  "source": {
+   "title": "コトバンク 復員（陸海軍の動員規模）",
+   "url": "https://kotobank.jp/word/復員",
+   "verified": false
+  },
+  "probNote": "1年あたり5%の目安"
+ },
+ {
+  "id": "war-1942-father-killed-child",
+  "key": "father-killed-in-war",
+  "category": "war",
+  "year": 1942,
+  "endYear": 1946,
+  "ageMin": 0,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "flags": [
+    "father_soldier"
+   ],
+   "notFlags": [
+    "father_war_dead"
+   ]
+  },
+  "title": "父の戦死公報",
+  "text": "出征していた父の戦死の知らせが届いた。日中戦争以降、軍人・軍属の戦没者は約230万人とされる。遺族として、母と暮らしを立て直すことになった。",
+  "effects": {
+   "happiness": -25,
+   "relation": -5,
+   "flags": [
+    "father_war_dead",
+    "war_bereaved"
+   ]
+  },
+  "probability": 0.08,
+  "heavy": true,
+  "source": {
+   "title": "戦没者約310万人（うち軍人・軍属約230万人）：厚生労働省の推計（報道で確認）",
+   "url": "https://www.sakigake.jp/news/article/20250716AK0005/",
+   "verified": true
+  },
+  "probNote": "召集された父が戦没する割合を、約230万人÷動員総数（未確認）から1年あたり8%と置いた目安"
+ },
+ {
+  "id": "war-1942-father-killed-youth",
+  "key": "father-killed-in-war",
+  "category": "war",
+  "year": 1942,
+  "endYear": 1946,
+  "ageMin": 13,
+  "ageMax": 17,
+  "sex": "any",
+  "conditions": {
+   "flags": [
+    "father_soldier"
+   ],
+   "notFlags": [
+    "father_war_dead"
+   ]
+  },
+  "title": "父の戦死公報",
+  "text": "出征していた父の戦死の知らせが届いた。日中戦争以降、軍人・軍属の戦没者は約230万人とされる。長男や長女として、家計を支える立場になった。",
+  "effects": {
+   "happiness": -25,
+   "money": 0,
+   "flags": [
+    "father_war_dead",
+    "war_bereaved"
+   ]
+  },
+  "probability": 0.08,
+  "heavy": true,
+  "source": {
+   "title": "戦没者約310万人（うち軍人・軍属約230万人）：厚生労働省の推計（報道で確認）",
+   "url": "https://www.sakigake.jp/news/article/20250716AK0005/",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1945-father-returned-child",
+  "key": "father-demobilized",
+  "category": "war",
+  "year": 1945,
+  "endYear": 1948,
+  "month": 9,
+  "ageMin": 0,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "flags": [
+    "father_soldier"
+   ],
+   "notFlags": [
+    "father_war_dead",
+    "father_siberia"
+   ]
+  },
+  "title": "父が復員した",
+  "text": "戦争が終わり、出征していた父が復員して帰ってきた。やせて別人のようで、最初は誰か分からなかった。海外からの復員は1948年までにほぼ終わった。",
+  "effects": {
+   "happiness": 12,
+   "relation": 5,
+   "flags": [
+    "father_returned"
+   ]
+  },
+  "probability": 0.5,
+  "source": {
+   "title": "コトバンク 復員",
+   "url": "https://kotobank.jp/word/復員",
+   "verified": true
+  },
+  "probNote": "海外に陸海軍約354万人が残っていたことから、1年あたり50%の目安"
+ },
+ {
+  "id": "war-1945-father-returned-youth",
+  "key": "father-demobilized",
+  "category": "war",
+  "year": 1945,
+  "endYear": 1948,
+  "month": 9,
+  "ageMin": 13,
+  "ageMax": 18,
+  "sex": "any",
+  "conditions": {
+   "flags": [
+    "father_soldier"
+   ],
+   "notFlags": [
+    "father_war_dead",
+    "father_siberia"
+   ]
+  },
+  "title": "父が復員した",
+  "text": "戦争が終わり、出征していた父が復員して帰ってきた。仕事はなく、家族で食べていく道を一緒に探した。海外からの復員は1948年までにほぼ終わった。",
+  "effects": {
+   "happiness": 10,
+   "flags": [
+    "father_returned"
+   ]
+  },
+  "probability": 0.5,
+  "source": {
+   "title": "コトバンク 復員",
+   "url": "https://kotobank.jp/word/復員",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1945-father-siberia-child",
+  "key": "father-siberia",
+  "category": "war",
+  "year": 1945,
+  "month": 9,
+  "ageMin": 0,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "flags": [
+    "father_soldier"
+   ],
+   "notFlags": [
+    "father_war_dead"
+   ]
+  },
+  "title": "父がシベリアに抑留",
+  "text": "満州にいた父は、終戦後にソ連軍に連れて行かれ、シベリアに抑留された。抑留された日本人は約57万5千人とされる。帰りを待つ日が続いた。",
+  "effects": {
+   "happiness": -15,
+   "flags": [
+    "father_siberia"
+   ]
+  },
+  "probability": 0.08,
+  "heavy": true,
+  "source": {
+   "title": "厚生労働省 シベリア抑留中死亡者に関する資料",
+   "url": "https://www.mhlw.go.jp/seisaku/2009/11/01.html",
+   "verified": true
+  },
+  "probNote": "抑留者約57万5千人÷動員総数約700万人（未確認）で約8%。目安"
+ },
+ {
+  "id": "war-1945-father-siberia-youth",
+  "key": "father-siberia",
+  "category": "war",
+  "year": 1945,
+  "month": 9,
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "conditions": {
+   "flags": [
+    "father_soldier"
+   ],
+   "notFlags": [
+    "father_war_dead"
+   ]
+  },
+  "title": "父がシベリアに抑留",
+  "text": "満州にいた父は、終戦後にソ連軍に連れて行かれ、シベリアに抑留された。抑留された日本人は約57万5千人とされる。父の代わりに働き始めた。",
+  "effects": {
+   "happiness": -15,
+   "flags": [
+    "father_siberia"
+   ]
+  },
+  "probability": 0.08,
+  "heavy": true,
+  "source": {
+   "title": "厚生労働省 シベリア抑留中死亡者に関する資料",
+   "url": "https://www.mhlw.go.jp/seisaku/2009/11/01.html",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1947-siberia-return-child",
+  "key": "father-siberia-return",
+  "category": "war",
+  "year": 1947,
+  "endYear": 1950,
+  "ageMin": 2,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "flags": [
+    "father_siberia"
+   ],
+   "notFlags": [
+    "father_war_dead"
+   ]
+  },
+  "title": "父がシベリアから帰る",
+  "text": "シベリアに抑留されていた父が、引揚げ船で帰ってきた。抑留者の帰国は1946年12月に始まり、1950年4月までにほぼ終わった。",
+  "effects": {
+   "happiness": 15,
+   "relation": 5,
+   "flags": [
+    "father_returned"
+   ]
+  },
+  "probability": 0.35,
+  "source": {
+   "title": "コトバンク シベリア抑留",
+   "url": "https://kotobank.jp/word/シベリア抑留",
+   "verified": true
+  },
+  "probNote": "1946年12月〜1950年4月に大半が帰国したことから1年あたり35%の目安"
+ },
+ {
+  "id": "war-1947-siberia-return-youth",
+  "key": "father-siberia-return",
+  "category": "war",
+  "year": 1947,
+  "endYear": 1950,
+  "ageMin": 13,
+  "ageMax": 20,
+  "sex": "any",
+  "conditions": {
+   "flags": [
+    "father_siberia"
+   ],
+   "notFlags": [
+    "father_war_dead"
+   ]
+  },
+  "title": "父がシベリアから帰る",
+  "text": "シベリアに抑留されていた父が、引揚げ船で帰ってきた。抑留者の帰国は1946年12月に始まり、1950年4月までにほぼ終わった。",
+  "effects": {
+   "happiness": 12,
+   "flags": [
+    "father_returned"
+   ]
+  },
+  "probability": 0.35,
+  "source": {
+   "title": "コトバンク シベリア抑留",
+   "url": "https://kotobank.jp/word/シベリア抑留",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1946-siberia-death-child",
+  "key": "father-siberia-death",
+  "category": "war",
+  "year": 1946,
+  "endYear": 1949,
+  "ageMin": 1,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "flags": [
+    "father_siberia"
+   ],
+   "notFlags": [
+    "father_returned"
+   ]
+  },
+  "title": "父が抑留先で死去",
+  "text": "シベリアに抑留されていた父が、向こうで亡くなったと、何年もたってから知らされた。抑留中に亡くなったと認められる人は約5万5千人とされる。",
+  "effects": {
+   "happiness": -25,
+   "flags": [
+    "father_war_dead",
+    "war_bereaved"
+   ]
+  },
+  "probability": 0.04,
+  "heavy": true,
+  "source": {
+   "title": "厚生労働省 シベリア抑留中死亡者に関する資料",
+   "url": "https://www.mhlw.go.jp/seisaku/2009/11/01.html",
+   "verified": true
+  },
+  "probNote": "死亡約5万5千人÷抑留約57万5千人で約1割を4年に分けた目安"
+ },
+ {
+  "id": "war-1946-siberia-death-youth",
+  "key": "father-siberia-death",
+  "category": "war",
+  "year": 1946,
+  "endYear": 1949,
+  "ageMin": 13,
+  "ageMax": 19,
+  "sex": "any",
+  "conditions": {
+   "flags": [
+    "father_siberia"
+   ],
+   "notFlags": [
+    "father_returned"
+   ]
+  },
+  "title": "父が抑留先で死去",
+  "text": "シベリアに抑留されていた父が、向こうで亡くなったと、何年もたってから知らされた。抑留中に亡くなったと認められる人は約5万5千人とされる。",
+  "effects": {
+   "happiness": -25,
+   "flags": [
+    "father_war_dead",
+    "war_bereaved"
+   ]
+  },
+  "probability": 0.04,
+  "heavy": true,
+  "source": {
+   "title": "厚生労働省 シベリア抑留中死亡者に関する資料",
+   "url": "https://www.mhlw.go.jp/seisaku/2009/11/01.html",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1943-10-gakuto-child",
+  "key": "gakuto-shutsujin-1943",
+  "category": "war",
+  "year": 1943,
+  "month": 10,
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "title": "学徒出陣",
+  "text": "1943年10月、大学生の徴兵猶予がなくなり、学徒出陣が始まった。親類の大学生のお兄さんが学生服のまま壮行会に出て、12月に入営していった。",
+  "probability": 0.08,
+  "source": {
+   "title": "コトバンク 学徒出陣",
+   "url": "https://kotobank.jp/word/学徒出陣-460620",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1943-10-gakuto-youth",
+  "key": "gakuto-shutsujin-1943",
+  "category": "war",
+  "year": 1943,
+  "month": 10,
+  "ageMin": 13,
+  "ageMax": 13,
+  "sex": "any",
+  "title": "学徒出陣",
+  "text": "1943年10月、大学生の徴兵猶予がなくなり、学徒出陣が始まった。勉強を続けたい人も戦地へ行く時代なのだと、自分の数年後を考えた。",
+  "probability": 0.1,
+  "source": {
+   "title": "コトバンク 学徒出陣",
+   "url": "https://kotobank.jp/word/学徒出陣-460620",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1945-08-conscription-age-youth",
+  "key": "conscription-age-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 8,
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "male",
+  "title": "あと数年で徴兵だった",
+  "text": "戦争が終わった。徴兵の年齢は1943年の末に20歳から19歳に引き下げられていて、あと数年で自分の番だと、ひそかに覚悟していた。",
+  "effects": {
+   "happiness": 3
+  },
+  "probability": 0.9,
+  "source": {
+   "title": "コトバンク 兵役法（世界大百科事典・山川日本史小辞典）",
+   "url": "https://kotobank.jp/word/兵役法-867511",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1944-yokaren-youth",
+  "key": "yokaren",
+  "category": "war",
+  "year": 1944,
+  "endYear": 1945,
+  "ageMin": 14,
+  "ageMax": 15,
+  "sex": "male",
+  "title": "予科練に志願",
+  "text": "海軍の飛行予科練習生、予科練に志願して入隊した。予科練には終戦までに約24万人が入隊し、戦地に送られた約2万4千人のうち約1万9千人が戦死した。",
+  "effects": {
+   "health": 3,
+   "happiness": -5,
+   "flags": [
+    "yokaren"
+   ],
+   "death": {
+    "prob": 0.02,
+    "cause": "戦死"
+   }
+  },
+  "probability": 0.02,
+  "heavy": true,
+  "source": {
+   "title": "コトバンク 予科練",
+   "url": "https://kotobank.jp/word/予科練",
+   "verified": true
+  },
+  "probNote": "志願の割合は目安。1944〜45年入隊の多くは戦地に出る前に終戦を迎えたため、死亡確率は全体（約8%）より低い目安"
+ },
+ {
+  "id": "war-1944-giyugun-youth",
+  "key": "manmo-giyugun",
+  "category": "war",
+  "year": 1944,
+  "endYear": 1945,
+  "ageMin": 14,
+  "ageMax": 15,
+  "sex": "male",
+  "title": "満蒙開拓青少年義勇軍",
+  "text": "満蒙開拓青少年義勇軍に応募し、満州へ渡った。1938年から送り出された少年は約8万6千人で、満州移民約27万人の約3割を占めた。",
+  "effects": {
+   "happiness": -10,
+   "relation": -10,
+   "flags": [
+    "in_manchuria",
+    "giyugun"
+   ],
+   "death": {
+    "prob": 0.1,
+    "cause": "戦争（満州）"
+   }
+  },
+  "probability": 0.01,
+  "heavy": true,
+  "source": {
+   "title": "imidas 満蒙開拓青少年義勇軍の解説",
+   "url": "https://imidas.jp/jijikaitai/t-02-009-25-08-g241",
+   "verified": true
+  },
+  "probNote": "応募の割合、死亡確率とも目安（ソ連参戦後の死者数は未確認）"
+ },
+ {
+  "id": "war-1945-06-giyuheieki-youth",
+  "key": "giyuheieki-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 6,
+  "ageMin": 15,
+  "ageMax": 15,
+  "sex": "male",
+  "title": "義勇兵役法",
+  "text": "1945年6月、義勇兵役法ができ、15歳以上の男子も国民義勇戦闘隊に組み込まれることになった。学校の校庭で竹やりの訓練をした。",
+  "effects": {
+   "happiness": -5
+  },
+  "probability": 0.5,
+  "source": {
+   "title": "アジア歴史資料センター 用語解説（国民義勇隊）",
+   "url": "https://www.jacar.archives.go.jp/das/term-en/00002125",
+   "verified": true
+  },
+  "probNote": "15歳という年齢区分は二次資料による。目安"
+ },
+ {
+  "id": "war-1944-08-group-evacuation-child",
+  "key": "gakudo-sokai-1944",
+  "category": "war",
+  "year": 1944,
+  "month": 8,
+  "prefs": [
+   13,
+   14,
+   23,
+   27,
+   28,
+   40
+  ],
+  "ageMin": 8,
+  "ageMax": 11,
+  "sex": "any",
+  "title": "学童集団疎開",
+  "text": "1944年8月、学校ごとの集団疎開で、親元を離れて地方の寺や旅館で暮らし始めた。食べ物は少なく、夜になると家が恋しくて泣く子もいた。",
+  "effects": {
+   "health": -3,
+   "happiness": -15,
+   "relation": -5,
+   "flags": [
+    "evacuated"
+   ]
+  },
+  "probability": 0.35,
+  "source": {
+   "title": "コトバンク 学童疎開",
+   "url": "https://kotobank.jp/word/学童疎開",
+   "verified": true
+  },
+  "probNote": "対象県は1944年の疎開対象都市（東京・横浜・川崎・名古屋・大阪・神戸・北九州など）の記憶によるもので一部未確認。東京では国民学校児童約47万4千人のうち3〜6年生約20万3千人が集団疎開（横浜市の資料）。対象県の都市部以外も含むため目安"
+ },
+ {
+  "id": "war-1944-relative-evacuation-child",
+  "key": "enko-sokai-1944",
+  "category": "war",
+  "year": 1944,
+  "endYear": 1945,
+  "prefs": [
+   13,
+   14,
+   23,
+   27,
+   28,
+   40
+  ],
+  "ageMin": 3,
+  "ageMax": 12,
+  "sex": "any",
+  "title": "田舎へ縁故疎開",
+  "text": "空襲を避けるため、田舎の親類の家に預けられた。言葉や習慣の違う学校になじめず、よそ者と言われて、つらい思いをしたこともあった。",
+  "effects": {
+   "happiness": -10,
+   "relation": -3,
+   "flags": [
+    "evacuated"
+   ]
+  },
+  "probability": 0.2,
+  "source": {
+   "title": "コトバンク 学童疎開",
+   "url": "https://kotobank.jp/word/学童疎開",
+   "verified": true
+  },
+  "probNote": "縁故疎開の人数は資料になく目安"
+ },
+ {
+  "id": "war-1945-04-evacuation-expand-child",
+  "key": "gakudo-sokai-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 4,
+  "prefs": [
+   26,
+   34
+  ],
+  "ageMin": 8,
+  "ageMax": 11,
+  "sex": "any",
+  "title": "疎開する都市が広がる",
+  "text": "1945年3月に学童疎開強化要綱が決まり、4月からは京都、舞鶴、広島、呉も疎開の対象になった。学校の友だちと一緒に、郊外の村へ移った。",
+  "effects": {
+   "happiness": -12,
+   "relation": -5,
+   "flags": [
+    "evacuated"
+   ]
+  },
+  "probability": 0.3,
+  "source": {
+   "title": "コトバンク 学童疎開",
+   "url": "https://kotobank.jp/word/学童疎開",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1945-10-evacuation-return-child",
+  "key": "sokai-return-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 10,
+  "ageMin": 8,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "flags": [
+    "evacuated"
+   ]
+  },
+  "title": "疎開から帰る",
+  "text": "戦争が終わり、疎開先から家族のもとへ帰った。集団疎開からの帰還は11月までに終わった。帰ってみると、町は焼け跡になっていた。",
+  "effects": {
+   "happiness": 8,
+   "relation": 5
+  },
+  "probability": 0.9,
+  "source": {
+   "title": "コトバンク 学童疎開",
+   "url": "https://kotobank.jp/word/学童疎開",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1944-kinro-doin-child",
+  "key": "kinro-doin-1944",
+  "category": "war",
+  "year": 1944,
+  "endYear": 1945,
+  "ageMin": 12,
+  "ageMax": 12,
+  "sex": "any",
+  "title": "勤労動員",
+  "text": "国民学校の高等科に進むと、授業の代わりに農家の手伝いや工場での作業に出るようになった。1944年から学徒の動員は1年中続くようになった。",
+  "effects": {
+   "health": -3,
+   "knowledge": -3,
+   "flags": [
+    "mobilized"
+   ]
+  },
+  "probability": 0.5,
+  "source": {
+   "title": "コトバンク 学徒動員",
+   "url": "https://kotobank.jp/word/学徒動員",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1944-kinro-doin-youth-m",
+  "key": "kinro-doin-1944",
+  "category": "war",
+  "year": 1944,
+  "endYear": 1945,
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "male",
+  "title": "勤労動員",
+  "text": "1944年から学徒の動員は1年中続くようになり、中学校に通う代わりに軍需工場で働いた。動員学徒は1945年7月には340万人余りに達した。",
+  "effects": {
+   "health": -5,
+   "knowledge": -5,
+   "flags": [
+    "mobilized"
+   ],
+   "death": {
+    "prob": 0.003,
+    "cause": "勤労動員中の空襲"
+   }
+  },
+  "probability": 0.7,
+  "source": {
+   "title": "コトバンク 学徒動員",
+   "url": "https://kotobank.jp/word/学徒動員",
+   "verified": true
+  },
+  "probNote": "動員学徒の死者10,966人÷動員約340万人で約0.3%（多くは原爆による）。動員される割合は目安"
+ },
+ {
+  "id": "war-1944-kinro-doin-youth-f",
+  "key": "kinro-doin-1944",
+  "category": "war",
+  "year": 1944,
+  "endYear": 1945,
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "female",
+  "title": "勤労動員",
+  "text": "1944年8月に女子挺身勤労令が出され、女学校に通う代わりに工場で部品づくりをした。動員学徒は1945年7月には340万人余りに達した。",
+  "effects": {
+   "health": -5,
+   "knowledge": -5,
+   "flags": [
+    "mobilized"
+   ],
+   "death": {
+    "prob": 0.003,
+    "cause": "勤労動員中の空襲"
+   }
+  },
+  "probability": 0.7,
+  "source": {
+   "title": "コトバンク 学徒動員",
+   "url": "https://kotobank.jp/word/学徒動員",
+   "verified": true
+  },
+  "probNote": "死亡は動員学徒の死者10,966人÷約340万人。動員される割合は目安"
+ },
+ {
+  "id": "war-1945-04-class-halt-youth",
+  "key": "class-halt-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 4,
+  "ageMin": 12,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "授業が止まる",
+  "text": "1945年3月の閣議決定で、4月から1年間、国民学校初等科を除くすべての学校の授業が止められることになった。学校は名前だけになった。",
+  "effects": {
+   "knowledge": -5
+  },
+  "probability": 0.8,
+  "source": {
+   "title": "文部科学省 学制百年史（第二次世界大戦下の教育）",
+   "url": "https://www.mext.go.jp/b_menu/hakusho/html/others/detail/1318240.htm",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1939-manchuria-move-child",
+  "key": "manchuria-emigrate",
+  "category": "war",
+  "year": 1939,
+  "endYear": 1944,
+  "ageMin": 0,
+  "ageMax": 12,
+  "sex": "any",
+  "title": "家族で満州へ",
+  "text": "家族で満州へ渡り、開拓団の村で暮らし始めた。見渡すかぎりの広い畑が、地平線まで続いていた。満州への移民は約27万人にのぼった。",
+  "effects": {
+   "happiness": 2,
+   "flags": [
+    "in_manchuria"
+   ]
+  },
+  "probability": 0.004,
+  "source": {
+   "title": "imidas 満蒙開拓青少年義勇軍の解説",
+   "url": "https://imidas.jp/jijikaitai/t-02-009-25-08-g241",
+   "verified": true
+  },
+  "probNote": "満州移民約27万人÷人口約7千万人を6年に分けた目安"
+ },
+ {
+  "id": "war-1945-08-manchuria-soviet-child",
+  "key": "manchuria-soviet-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 8,
+  "ageMin": 0,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "flags": [
+    "in_manchuria"
+   ]
+  },
+  "title": "ソ連軍の侵攻",
+  "text": "1945年8月、ソ連軍が満州に攻め込んだ。開拓団の村を捨て、家族と歩いて逃げた。終戦時に満州にいた日本人は約150万人で、帰国の途中で多くが亡くなった。",
+  "effects": {
+   "health": -15,
+   "happiness": -25,
+   "death": {
+    "prob": 0.15,
+    "cause": "戦争（満州からの避難）"
+   }
+  },
+  "probability": 0.95,
+  "heavy": true,
+  "source": {
+   "title": "コトバンク 中国残留孤児（ブリタニカ：在満日本人約150万）",
+   "url": "https://kotobank.jp/word/中国残留孤児",
+   "verified": false
+  },
+  "probNote": "開拓団の死者数は確かめられず、死亡確率は目安"
+ },
+ {
+  "id": "war-1945-08-manchuria-soviet-youth",
+  "key": "manchuria-soviet-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 8,
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "conditions": {
+   "flags": [
+    "in_manchuria"
+   ]
+  },
+  "title": "ソ連軍の侵攻",
+  "text": "1945年8月、ソ連軍が満州に攻め込んだ。開拓団の村を捨て、年下のきょうだいの手を引いて逃げた。終戦時に満州にいた日本人は約150万人だった。",
+  "effects": {
+   "health": -15,
+   "happiness": -25,
+   "death": {
+    "prob": 0.15,
+    "cause": "戦争（満州からの避難）"
+   }
+  },
+  "probability": 0.95,
+  "heavy": true,
+  "source": {
+   "title": "コトバンク 中国残留孤児（ブリタニカ：在満日本人約150万）",
+   "url": "https://kotobank.jp/word/中国残留孤児",
+   "verified": false
+  },
+  "probNote": "死亡確率は目安"
+ },
+ {
+  "id": "war-1945-zanryu-koji-child",
+  "key": "zanryu-koji",
+  "category": "war",
+  "year": 1945,
+  "endYear": 1946,
+  "month": 9,
+  "ageMin": 0,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "flags": [
+    "in_manchuria"
+   ]
+  },
+  "title": "中国に残された",
+  "text": "逃げる途中で家族とはぐれ、中国人の養父母に引き取られて育てられた。日本語も家族の顔も忘れていき、のちに中国残留孤児と呼ばれる一人になった。",
+  "effects": {
+   "relation": -20,
+   "happiness": -20,
+   "flags": [
+    "zanryu_koji"
+   ]
+  },
+  "probability": 0.05,
+  "heavy": true,
+  "source": {
+   "title": "コトバンク 中国残留孤児",
+   "url": "https://kotobank.jp/word/中国残留孤児",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1981-zanryu-koji-search-adult",
+  "key": "zanryu-koji-search",
+  "category": "war",
+  "year": 1981,
+  "endYear": 1999,
+  "ageMin": 36,
+  "ageMax": 60,
+  "sex": "any",
+  "conditions": {
+   "flags": [
+    "zanryu_koji"
+   ]
+  },
+  "title": "肉親捜しで日本へ",
+  "text": "1981年から始まった肉親捜しの調査で、生まれた国の日本を訪れた。永住帰国した残留孤児は2020年11月時点で2,557人とされる。",
+  "effects": {
+   "happiness": 10,
+   "relation": 5
+  },
+  "probability": 0.3,
+  "source": {
+   "title": "コトバンク 中国残留孤児",
+   "url": "https://kotobank.jp/word/中国残留孤児",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1946-repatriation-infant",
+  "key": "repatriation",
+  "category": "war",
+  "year": 1945,
+  "endYear": 1947,
+  "month": 10,
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "airraid_survivor",
+    "evacuated"
+   ]
+  },
+  "title": "引揚げ船で日本へ",
+  "text": "敗戦のとき、家族は海の向こうの外地で暮らしていた。引揚げ船で日本に戻ったが、まだ幼くて覚えていない。持ち帰れたのは身の回りの物だけだった。",
+  "effects": {
+   "health": -5,
+   "happiness": -5,
+   "money": 0,
+   "flags": [
+    "repatriated"
+   ]
+  },
+  "probability": 0.02,
+  "source": {
+   "title": "コトバンク 引揚げ",
+   "url": "https://kotobank.jp/word/引揚げ",
+   "verified": true
+  },
+  "probNote": "海外にいた一般邦人（軍人と合わせ660万人以上）の割合から、3年に分けた目安"
+ },
+ {
+  "id": "war-1946-repatriation-child",
+  "key": "repatriation",
+  "category": "war",
+  "year": 1945,
+  "endYear": 1947,
+  "month": 10,
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "airraid_survivor",
+    "evacuated"
+   ]
+  },
+  "title": "引揚げ船で日本へ",
+  "text": "敗戦のとき、家族は海の向こうの外地で暮らしていた。家も財産も置いて引揚げ船に乗り、日本に戻った。1946年末までに500万人を超える人が引き揚げた。",
+  "effects": {
+   "health": -8,
+   "happiness": -12,
+   "flags": [
+    "repatriated"
+   ]
+  },
+  "probability": 0.02,
+  "heavy": true,
+  "source": {
+   "title": "コトバンク 引揚げ",
+   "url": "https://kotobank.jp/word/引揚げ",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1946-repatriation-youth",
+  "key": "repatriation",
+  "category": "war",
+  "year": 1945,
+  "endYear": 1947,
+  "month": 10,
+  "ageMin": 13,
+  "ageMax": 17,
+  "sex": "any",
+  "conditions": {
+   "notFlags": [
+    "airraid_survivor",
+    "evacuated"
+   ]
+  },
+  "title": "引揚げ船で日本へ",
+  "text": "敗戦のとき、家族は海の向こうの外地で暮らしていた。家も財産も置いて引揚げ船に乗り、日本に戻った。親類を頼り、一から暮らしを始めた。",
+  "effects": {
+   "health": -8,
+   "happiness": -12,
+   "flags": [
+    "repatriated"
+   ]
+  },
+  "probability": 0.02,
+  "heavy": true,
+  "source": {
+   "title": "コトバンク 引揚げ",
+   "url": "https://kotobank.jp/word/引揚げ",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1946-manchuria-repatriation-child",
+  "key": "manchuria-repatriation",
+  "category": "war",
+  "year": 1946,
+  "endYear": 1948,
+  "ageMin": 1,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "flags": [
+    "in_manchuria"
+   ],
+   "notFlags": [
+    "zanryu_koji"
+   ]
+  },
+  "title": "満州から引揚げ",
+  "text": "満州の収容所で冬を越し、1946年になってようやく引揚げ船に乗れた。日本の港に着いたとき、一緒に逃げた人の何人かはもういなかった。",
+  "effects": {
+   "health": -10,
+   "happiness": -10,
+   "flags": [
+    "repatriated"
+   ]
+  },
+  "probability": 0.7,
+  "heavy": true,
+  "source": {
+   "title": "コトバンク 引揚げ（満州からの引揚げ開始時期は未確認）",
+   "url": "https://kotobank.jp/word/引揚げ",
+   "verified": false
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1946-manchuria-repatriation-youth",
+  "key": "manchuria-repatriation",
+  "category": "war",
+  "year": 1946,
+  "endYear": 1948,
+  "ageMin": 13,
+  "ageMax": 18,
+  "sex": "any",
+  "conditions": {
+   "flags": [
+    "in_manchuria"
+   ],
+   "notFlags": [
+    "zanryu_koji"
+   ]
+  },
+  "title": "満州から引揚げ",
+  "text": "満州の収容所で冬を越し、1946年になってようやく引揚げ船に乗れた。日本に着いても家はなく、親類の家の物置を借りて暮らした。",
+  "effects": {
+   "health": -10,
+   "happiness": -10,
+   "flags": [
+    "repatriated"
+   ]
+  },
+  "probability": 0.7,
+  "heavy": true,
+  "source": {
+   "title": "コトバンク 引揚げ（満州からの引揚げ開始時期は未確認）",
+   "url": "https://kotobank.jp/word/引揚げ",
+   "verified": false
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1945-08-end-infant",
+  "key": "war-end-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 8,
+  "ageMin": 0,
+  "ageMax": 3,
+  "sex": "any",
+  "title": "戦争が終わる",
+  "text": "1945年8月15日正午、ラジオで天皇の声による終戦の放送が流れた。まだ幼く、その日のことは覚えていない。物心がついたのは戦後だった。",
+  "probability": 1.0,
+  "source": {
+   "title": "コトバンク 玉音放送",
+   "url": "https://kotobank.jp/word/玉音放送",
+   "verified": true
+  }
+ },
+ {
+  "id": "war-1945-08-end-child",
+  "key": "war-end-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 8,
+  "ageMin": 4,
+  "ageMax": 12,
+  "sex": "any",
+  "title": "戦争が終わる",
+  "text": "1945年8月15日正午、ラジオで天皇の声による終戦の放送を聞いた。言葉は難しくて分からなかったが、大人たちの様子で戦争に負けたと分かった。",
+  "probability": 1.0,
+  "source": {
+   "title": "コトバンク 玉音放送",
+   "url": "https://kotobank.jp/word/玉音放送",
+   "verified": true
+  }
+ },
+ {
+  "id": "war-1945-08-end-youth",
+  "key": "war-end-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 8,
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "戦争が終わる",
+  "text": "1945年8月15日正午、動員先で終戦の放送を聞いた。勝つと教えられてきたので、負けたことがすぐには信じられなかった。これから何が起きるのか、誰にも分からなかった。",
+  "probability": 1.0,
+  "source": {
+   "title": "コトバンク 玉音放送",
+   "url": "https://kotobank.jp/word/玉音放送",
+   "verified": true
+  }
+ },
+ {
+  "id": "war-1945-09-occupation-child",
+  "key": "occupation-1945",
+  "category": "war",
+  "year": 1945,
+  "endYear": 1946,
+  "month": 9,
+  "ageMin": 4,
+  "ageMax": 12,
+  "sex": "any",
+  "title": "進駐軍が来た",
+  "text": "1945年の秋、町に進駐軍の兵士がやって来た。怖いものと思っていたが、子どもたちに菓子をくれる兵士もいて、後を追いかける子もいた。",
+  "probability": 0.5,
+  "source": {
+   "title": "コトバンク 復員（敗戦と占領の経過）",
+   "url": "https://kotobank.jp/word/復員",
+   "verified": false
+  },
+  "probNote": "目安。進駐の時期と地域は確かめていない"
+ },
+ {
+  "id": "war-1945-09-occupation-youth",
+  "key": "occupation-1945",
+  "category": "war",
+  "year": 1945,
+  "endYear": 1946,
+  "month": 9,
+  "ageMin": 13,
+  "ageMax": 17,
+  "sex": "any",
+  "title": "進駐軍が来た",
+  "text": "1945年の秋、町に進駐軍の兵士がやって来た。昨日まで敵と呼んでいた相手だった。大人たちの態度ががらりと変わったことが忘れられなかった。",
+  "probability": 0.5,
+  "source": {
+   "title": "コトバンク 復員（敗戦と占領の経過）",
+   "url": "https://kotobank.jp/word/復員",
+   "verified": false
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1945-09-suminuri-child",
+  "key": "suminuri-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 9,
+  "ageMin": 7,
+  "ageMax": 12,
+  "sex": "any",
+  "title": "教科書の墨塗り",
+  "text": "1945年9月、文部省の指示で、教科書の戦争に関わるところを墨で塗りつぶした。昨日まで正しいと教わったことが、黒く消されていった。",
+  "effects": {
+   "knowledge": 1
+  },
+  "probability": 0.8,
+  "source": {
+   "title": "青森市民図書館 歴史トリビア（教科書の墨塗り）",
+   "url": "https://www.library.city.aomori.aomori.jp/aomoricity_history/trivia/201-/269.pdf",
+   "verified": true
+  },
+  "probNote": "就学していた割合から目安"
+ },
+ {
+  "id": "war-1945-09-suminuri-youth",
+  "key": "suminuri-1945",
+  "category": "war",
+  "year": 1945,
+  "month": 9,
+  "ageMin": 13,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "教科書の墨塗り",
+  "text": "1945年9月、文部省の指示で、教科書の戦争に関わるところを墨で塗りつぶした。先生の言うことが一夜で変わり、大人を信じられなくなった。",
+  "effects": {
+   "knowledge": 1,
+   "happiness": -2
+  },
+  "probability": 0.7,
+  "source": {
+   "title": "青森市民図書館 歴史トリビア（教科書の墨塗り）",
+   "url": "https://www.library.city.aomori.aomori.jp/aomoricity_history/trivia/201-/269.pdf",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1945-yamiichi-child",
+  "key": "yamiichi",
+  "category": "war",
+  "year": 1945,
+  "endYear": 1949,
+  "month": 10,
+  "ageMin": 4,
+  "ageMax": 12,
+  "sex": "any",
+  "title": "闇市",
+  "text": "駅前の焼け跡に闇市ができ、配給では手に入らない食べ物が高い値段で売られていた。母に連れられて行き、湯気の立つ雑炊を眺めた。",
+  "probability": 0.4,
+  "source": {
+   "title": "コトバンク 闇市",
+   "url": "https://kotobank.jp/word/闇市",
+   "verified": true
+  },
+  "probNote": "都市部に住む割合から目安"
+ },
+ {
+  "id": "war-1945-yamiichi-youth",
+  "key": "yamiichi",
+  "category": "war",
+  "year": 1945,
+  "endYear": 1949,
+  "month": 10,
+  "ageMin": 13,
+  "ageMax": 19,
+  "sex": "any",
+  "title": "闇市",
+  "text": "駅前の焼け跡に闇市ができた。家の着物を持って行って食べ物と換えた。闇市は1946〜48年が最も盛んで、49年頃から消えていった。",
+  "effects": {
+   "money": 0
+  },
+  "probability": 0.4,
+  "source": {
+   "title": "コトバンク 闇市",
+   "url": "https://kotobank.jp/word/闇市",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1945-food-shortage-infant",
+  "key": "food-shortage-1945",
+  "category": "war",
+  "year": 1945,
+  "endYear": 1946,
+  "month": 10,
+  "ageMin": 0,
+  "ageMax": 5,
+  "sex": "any",
+  "title": "食糧難",
+  "text": "戦争が終わっても食べ物は足りず、配給は遅れがちだった。小さな体はやせ、いつもおなかをすかせて泣いていたと、後になって母から聞いた。",
+  "effects": {
+   "health": -6,
+   "happiness": -5
+  },
+  "probability": 0.6,
+  "source": {
+   "title": "コトバンク 闇市（配給の不足と食糧難）",
+   "url": "https://kotobank.jp/word/闇市",
+   "verified": false
+  },
+  "probNote": "目安。戦後の米の収穫量などの数字は確かめていない"
+ },
+ {
+  "id": "war-1945-food-shortage-child",
+  "key": "food-shortage-1945",
+  "category": "war",
+  "year": 1945,
+  "endYear": 1946,
+  "month": 10,
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "title": "食糧難",
+  "text": "戦争が終わっても食べ物は足りなかった。芋のつるやすいとんで飢えをしのぎ、学校の校庭も畑になった。いつもおなかがすいていた。",
+  "effects": {
+   "health": -6,
+   "happiness": -6
+  },
+  "probability": 0.6,
+  "source": {
+   "title": "コトバンク 闇市（配給の不足と食糧難）",
+   "url": "https://kotobank.jp/word/闇市",
+   "verified": false
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1945-food-shortage-youth",
+  "key": "food-shortage-1945",
+  "category": "war",
+  "year": 1945,
+  "endYear": 1946,
+  "month": 10,
+  "ageMin": 13,
+  "ageMax": 19,
+  "sex": "any",
+  "title": "食糧難",
+  "text": "戦争が終わっても食べ物は足りなかった。満員の買い出し列車に乗って農村へ行き、着物と米を換えた。取り締まりで米を取り上げられたこともあった。",
+  "effects": {
+   "health": -5,
+   "happiness": -6
+  },
+  "probability": 0.6,
+  "source": {
+   "title": "コトバンク 闇市（配給の不足と食糧難）",
+   "url": "https://kotobank.jp/word/闇市",
+   "verified": false
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1945-war-orphan-child",
+  "key": "war-orphan",
+  "category": "war",
+  "year": 1945,
+  "endYear": 1946,
+  "month": 8,
+  "ageMin": 0,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "flags": [
+    "airraid_survivor"
+   ]
+  },
+  "title": "戦争孤児になった",
+  "text": "戦争で両親を失い、孤児になった。1948年の厚生省の調査では、全国の孤児は12万3,511人とされた。施設や親類の家で暮らすことになった。",
+  "effects": {
+   "happiness": -30,
+   "relation": -15,
+   "flags": [
+    "war_orphan",
+    "war_bereaved"
+   ]
+  },
+  "probability": 0.005,
+  "heavy": true,
+  "source": {
+   "title": "神戸新聞（1948年 厚生省 全国孤児一斉調査）",
+   "url": "https://www.kobe-np.co.jp/news/kobe/202108/0014614584.shtml",
+   "verified": true
+  },
+  "probNote": "空襲で家を失った人のうち孤児になる割合を、孤児12万人÷子どもの人口（未確認）から引き上げた目安"
+ },
+ {
+  "id": "war-1945-war-orphan-youth",
+  "key": "war-orphan",
+  "category": "war",
+  "year": 1945,
+  "endYear": 1946,
+  "month": 8,
+  "ageMin": 13,
+  "ageMax": 17,
+  "sex": "any",
+  "conditions": {
+   "flags": [
+    "airraid_survivor"
+   ]
+  },
+  "title": "戦争孤児になった",
+  "text": "戦争で両親を失い、孤児になった。1948年の厚生省の調査では、全国の孤児は12万3,511人とされた。年下のきょうだいを抱え、働きに出た。",
+  "effects": {
+   "happiness": -30,
+   "relation": -10,
+   "flags": [
+    "war_orphan",
+    "war_bereaved"
+   ]
+  },
+  "probability": 0.005,
+  "heavy": true,
+  "source": {
+   "title": "神戸新聞（1948年 厚生省 全国孤児一斉調査）",
+   "url": "https://www.kobe-np.co.jp/news/kobe/202108/0014614584.shtml",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1946-04-women-vote-child",
+  "key": "women-suffrage-1946",
+  "category": "war",
+  "year": 1946,
+  "month": 4,
+  "ageMin": 4,
+  "ageMax": 12,
+  "sex": "any",
+  "title": "母が初めて投票",
+  "text": "1946年4月10日、戦後初めての総選挙で、女性が初めて投票した。母はよそ行きの着物を着て投票所へ出かけた。女性の議員が39人生まれた。",
+  "probability": 0.6,
+  "source": {
+   "title": "国立国会図書館 史料にみる日本の近代（戦後初の総選挙）",
+   "url": "https://www.ndl.go.jp/modern/cha5/description05.html",
+   "verified": true
+  },
+  "probNote": "母が投票した割合（投票率）を目安で置いた"
+ },
+ {
+  "id": "war-1946-04-women-vote-youth",
+  "key": "women-suffrage-1946",
+  "category": "war",
+  "year": 1946,
+  "month": 4,
+  "ageMin": 13,
+  "ageMax": 16,
+  "sex": "any",
+  "title": "女性が初めて投票",
+  "text": "1946年4月10日、戦後初めての総選挙で、20歳以上の男女が投票できるようになった。女性の議員が39人生まれた。自分も20歳になったら投票できると思った。",
+  "probability": 0.6,
+  "source": {
+   "title": "国立国会図書館 史料にみる日本の近代（戦後初の総選挙）",
+   "url": "https://www.ndl.go.jp/modern/cha5/description05.html",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1947-land-reform-tenant-child",
+  "key": "land-reform-1947",
+  "category": "war",
+  "year": 1947,
+  "endYear": 1950,
+  "ageMin": 4,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "familyClass": [
+    1,
+    2,
+    3
+   ]
+  },
+  "title": "農地改革で自作農に",
+  "text": "1946年10月の法律にもとづく農地改革で、小作をしていた田畑が安く払い下げられ、家の土地になった。父は自分の田だと言って、うれしそうだった。",
+  "effects": {
+   "happiness": 6,
+   "flags": [
+    "land_reform_gain"
+   ]
+  },
+  "probability": 0.15,
+  "source": {
+   "title": "国立公文書館 農地改革（自作農創設特別措置法）",
+   "url": "https://www.archives.go.jp/learning/archive_collection_6/collection_5/",
+   "verified": true
+  },
+  "probNote": "農家で小作をしていた割合を目安で置いた"
+ },
+ {
+  "id": "war-1947-land-reform-tenant-youth",
+  "key": "land-reform-1947",
+  "category": "war",
+  "year": 1947,
+  "endYear": 1950,
+  "ageMin": 13,
+  "ageMax": 22,
+  "sex": "any",
+  "conditions": {
+   "familyClass": [
+    1,
+    2,
+    3
+   ]
+  },
+  "title": "農地改革で自作農に",
+  "text": "1946年10月の法律にもとづく農地改革で、小作をしていた田畑が家のものになった。作った米を地主に納めなくてよくなり、働く気持ちが変わった。",
+  "effects": {
+   "happiness": 6,
+   "flags": [
+    "land_reform_gain"
+   ]
+  },
+  "probability": 0.15,
+  "source": {
+   "title": "国立公文書館 農地改革（自作農創設特別措置法）",
+   "url": "https://www.archives.go.jp/learning/archive_collection_6/collection_5/",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1947-land-reform-landlord-child",
+  "key": "land-reform-1947",
+  "category": "war",
+  "year": 1947,
+  "endYear": 1950,
+  "ageMin": 4,
+  "ageMax": 12,
+  "sex": "any",
+  "conditions": {
+   "familyClass": [
+    4,
+    5
+   ]
+  },
+  "title": "農地改革で土地を失う",
+  "text": "農地改革で、家が持っていた小作地のほとんどを国に買い上げられた。都府県では在村地主の小作地は平均1町歩までしか残せなかった。",
+  "effects": {
+   "happiness": -4,
+   "flags": [
+    "land_reform_loss"
+   ]
+  },
+  "probability": 0.2,
+  "source": {
+   "title": "国立公文書館 農地改革（自作農創設特別措置法）",
+   "url": "https://www.archives.go.jp/learning/archive_collection_6/collection_5/",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1947-land-reform-landlord-youth",
+  "key": "land-reform-1947",
+  "category": "war",
+  "year": 1947,
+  "endYear": 1950,
+  "ageMin": 13,
+  "ageMax": 22,
+  "sex": "any",
+  "conditions": {
+   "familyClass": [
+    4,
+    5
+   ]
+  },
+  "title": "農地改革で土地を失う",
+  "text": "農地改革で、家が持っていた小作地のほとんどを国に買い上げられた。家の暮らし向きは傾き、自分で身を立てる道を考えるようになった。",
+  "effects": {
+   "happiness": -4,
+   "flags": [
+    "land_reform_loss"
+   ]
+  },
+  "probability": 0.2,
+  "source": {
+   "title": "国立公文書館 農地改革（自作農創設特別措置法）",
+   "url": "https://www.archives.go.jp/learning/archive_collection_6/collection_5/",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1947-04-new-junior-high-child",
+  "key": "new-school-system-1947",
+  "category": "war",
+  "year": 1947,
+  "month": 4,
+  "ageMin": 12,
+  "ageMax": 12,
+  "sex": "any",
+  "title": "新制中学校ができた",
+  "text": "1947年4月、6・3制が始まり、新しくできた中学校に入った。義務教育が9年になった。校舎が足りず、小学校の教室を借りて授業を受けた。",
+  "effects": {
+   "knowledge": 3,
+   "flags": [
+    "new_school_system"
+   ]
+  },
+  "probability": 0.9,
+  "source": {
+   "title": "文部科学省 学制百年史（新制中学校の発足と義務教育年限の延長）",
+   "url": "https://www.mext.go.jp/b_menu/hakusho/html/others/detail/1317744.htm",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1947-04-new-junior-high-youth",
+  "key": "new-school-system-1947",
+  "category": "war",
+  "year": 1947,
+  "month": 4,
+  "ageMin": 13,
+  "ageMax": 14,
+  "sex": "any",
+  "title": "6・3制が始まった",
+  "text": "1947年4月、6・3制が始まった。国民学校の高等科や旧制の学校に通っていたが、学年が進むと新しい中学校や高校に移ることになった。",
+  "effects": {
+   "knowledge": 2,
+   "flags": [
+    "new_school_system"
+   ]
+  },
+  "probability": 0.8,
+  "source": {
+   "title": "文部科学省 学制百年史（新制中学校の発足と義務教育年限の延長）",
+   "url": "https://www.mext.go.jp/b_menu/hakusho/html/others/detail/1317744.htm",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1947-04-new-elementary-child",
+  "key": "new-school-system-1947",
+  "category": "war",
+  "year": 1947,
+  "month": 4,
+  "ageMin": 7,
+  "ageMax": 11,
+  "sex": "any",
+  "title": "国民学校が小学校に",
+  "text": "1947年4月、6・3制が始まり、国民学校は小学校に名前が戻った。墨で塗った教科書に代わって、新しい教科書で民主主義を習った。",
+  "effects": {
+   "knowledge": 2
+  },
+  "probability": 0.9,
+  "source": {
+   "title": "文部科学省 学制百年史（新制中学校の発足と義務教育年限の延長）",
+   "url": "https://www.mext.go.jp/b_menu/hakusho/html/others/detail/1317744.htm",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1952-04-independence-child",
+  "key": "independence-1952",
+  "category": "war",
+  "year": 1952,
+  "month": 4,
+  "ageMin": 7,
+  "ageMax": 12,
+  "sex": "any",
+  "title": "占領が終わる",
+  "text": "1952年4月28日、サンフランシスコ平和条約が発効し、日本は独立を回復した。学校で先生がその意味を話してくれたが、よく分からなかった。",
+  "probability": 0.5,
+  "source": {
+   "title": "コトバンク サンフランシスコ平和条約",
+   "url": "https://kotobank.jp/word/サンフランシスコ平和条約",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1952-04-independence-youth",
+  "key": "independence-1952",
+  "category": "war",
+  "year": 1952,
+  "month": 4,
+  "ageMin": 13,
+  "ageMax": 22,
+  "sex": "any",
+  "title": "占領が終わる",
+  "text": "1952年4月28日、サンフランシスコ平和条約が発効し、7年近く続いた占領が終わった。ただ、沖縄はその後もアメリカの施政下に置かれた。",
+  "probability": 0.5,
+  "source": {
+   "title": "コトバンク サンフランシスコ平和条約",
+   "url": "https://kotobank.jp/word/サンフランシスコ平和条約",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1952-04-okinawa-separated-youth",
+  "key": "independence-1952",
+  "category": "war",
+  "year": 1952,
+  "month": 4,
+  "prefs": [
+   47
+  ],
+  "ageMin": 7,
+  "ageMax": 22,
+  "sex": "any",
+  "title": "沖縄は残された",
+  "text": "1952年4月28日、平和条約が発効して日本は独立を回復したが、沖縄はアメリカの施政下に残された。本土復帰は1972年まで待つことになった。",
+  "effects": {
+   "happiness": -3
+  },
+  "probability": 0.8,
+  "source": {
+   "title": "コトバンク サンフランシスコ平和条約",
+   "url": "https://kotobank.jp/word/サンフランシスコ平和条約",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1995-08-sengo50-youth",
+  "key": "sengo50-1995",
+  "category": "war",
+  "year": 1995,
+  "month": 8,
+  "ageMin": 13,
+  "ageMax": 29,
+  "sex": "any",
+  "title": "戦後50年",
+  "text": "1995年8月15日、戦後50年の節目に、首相が植民地支配と侵略への反省とおわびを述べる談話を出した。テレビでは戦争を振り返る番組が続いた。",
+  "probability": 0.4,
+  "source": {
+   "title": "imidas 村山談話の解説",
+   "url": "https://imidas.jp/topic/detail/C-00-101-15-09-G221.html",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1995-08-sengo50-adult",
+  "key": "sengo50-1995",
+  "category": "war",
+  "year": 1995,
+  "month": 8,
+  "ageMin": 30,
+  "ageMax": 59,
+  "sex": "any",
+  "title": "戦後50年",
+  "text": "1995年8月15日、戦後50年を迎えた。戦争を知る親の世代が少なくなっていくことを思い、親の昔話をもっと聞いておこうと思った。",
+  "probability": 0.4,
+  "source": {
+   "title": "imidas 村山談話の解説",
+   "url": "https://imidas.jp/topic/detail/C-00-101-15-09-G221.html",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1995-08-sengo50-elder",
+  "key": "sengo50-1995",
+  "category": "war",
+  "year": 1995,
+  "month": 8,
+  "ageMin": 60,
+  "ageMax": 65,
+  "sex": "any",
+  "title": "戦後50年",
+  "text": "1995年8月15日、戦後50年を迎えた。子どもの頃の空襲や疎開、ひもじかった日々を思い出し、孫に少しだけ話して聞かせた。",
+  "effects": {
+   "relation": 2
+  },
+  "probability": 0.5,
+  "source": {
+   "title": "imidas 村山談話の解説",
+   "url": "https://imidas.jp/topic/detail/C-00-101-15-09-G221.html",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-2015-08-sengo70-child",
+  "key": "sengo70-2015",
+  "category": "war",
+  "year": 2015,
+  "month": 8,
+  "ageMin": 10,
+  "ageMax": 12,
+  "sex": "any",
+  "title": "戦後70年",
+  "text": "2015年8月、戦後70年の夏だった。学校の授業で、戦争で日本人だけで約310万人が亡くなったと習い、その数の大きさに驚いた。",
+  "effects": {
+   "knowledge": 1
+  },
+  "probability": 0.4,
+  "source": {
+   "title": "戦没者約310万人（うち軍人・軍属約230万人）：厚生労働省の推計（報道で確認）",
+   "url": "https://www.sakigake.jp/news/article/20250716AK0005/",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-2015-08-sengo70-youth",
+  "key": "sengo70-2015",
+  "category": "war",
+  "year": 2015,
+  "month": 8,
+  "ageMin": 13,
+  "ageMax": 29,
+  "sex": "any",
+  "title": "戦後70年",
+  "text": "2015年8月、戦後70年を迎え、首相の談話がニュースになった。戦争を体験した人の話を直接聞ける時間は、もう長くないと感じた。",
+  "probability": 0.35,
+  "source": {
+   "title": "imidas 戦後70年談話の解説",
+   "url": "https://imidas.jp/topic/detail/C-00-101-15-09-G221.html",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-2015-08-sengo70-adult",
+  "key": "sengo70-2015",
+  "category": "war",
+  "year": 2015,
+  "month": 8,
+  "ageMin": 30,
+  "ageMax": 59,
+  "sex": "any",
+  "title": "戦後70年",
+  "text": "2015年8月、戦後70年を迎えた。戦争を体験した親はもう高齢で、聞きそびれていた話を、帰省した夏にようやく聞くことができた。",
+  "effects": {
+   "relation": 2
+  },
+  "probability": 0.35,
+  "source": {
+   "title": "imidas 戦後70年談話の解説",
+   "url": "https://imidas.jp/topic/detail/C-00-101-15-09-G221.html",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-2015-08-sengo70-elder",
+  "key": "sengo70-2015",
+  "category": "war",
+  "year": 2015,
+  "month": 8,
+  "ageMin": 70,
+  "ageMax": 85,
+  "sex": "any",
+  "title": "戦後70年",
+  "text": "2015年8月、戦後70年を迎えた。あの頃の子どもで生きている者も少なくなった。地元の学校に頼まれ、子どもたちに戦争中の暮らしを話した。",
+  "effects": {
+   "relation": 3,
+   "happiness": 2
+  },
+  "probability": 0.15,
+  "source": {
+   "title": "imidas 戦後70年談話の解説",
+   "url": "https://imidas.jp/topic/detail/C-00-101-15-09-G221.html",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-2025-08-sengo80-youth",
+  "key": "sengo80-2025",
+  "category": "war",
+  "year": 2025,
+  "month": 8,
+  "ageMin": 20,
+  "ageMax": 35,
+  "sex": "any",
+  "title": "戦後80年",
+  "text": "2025年8月、戦後80年を迎えた。日中戦争以降の日本人の戦没者は約310万人とされる。体験者から直接話を聞ける最後の世代かもしれないと思った。",
+  "probability": 0.3,
+  "source": {
+   "title": "戦没者約310万人（うち軍人・軍属約230万人）：厚生労働省の推計（報道で確認）",
+   "url": "https://www.sakigake.jp/news/article/20250716AK0005/",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-2025-08-sengo80-adult",
+  "key": "sengo80-2025",
+  "category": "war",
+  "year": 2025,
+  "month": 8,
+  "ageMin": 50,
+  "ageMax": 65,
+  "sex": "any",
+  "title": "戦後80年",
+  "text": "2025年8月、戦後80年を迎えた。戦争を体験した親の世代はほとんどいなくなり、聞いた話を子どもに伝えるのは自分の番だと思った。",
+  "probability": 0.3,
+  "source": {
+   "title": "戦没者約310万人（うち軍人・軍属約230万人）：厚生労働省の推計（報道で確認）",
+   "url": "https://www.sakigake.jp/news/article/20250716AK0005/",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-2025-08-sengo80-elder",
+  "key": "sengo80-2025",
+  "category": "war",
+  "year": 2025,
+  "month": 8,
+  "ageMin": 80,
+  "ageMax": 95,
+  "sex": "any",
+  "title": "戦後80年",
+  "text": "2025年8月、戦後80年を迎えた。戦争を子どもとして生き延びた最後の世代の一人として、テレビの追悼式を見ながら、静かに8月15日を迎えた。",
+  "probability": 0.5,
+  "source": {
+   "title": "戦没者約310万人（うち軍人・軍属約230万人）：厚生労働省の推計（報道で確認）",
+   "url": "https://www.sakigake.jp/news/article/20250716AK0005/",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1968-family-story-child",
+  "key": "family-war-story",
+  "category": "war",
+  "year": 1968,
+  "endYear": 1987,
+  "ageMin": 8,
+  "ageMax": 12,
+  "sex": "any",
+  "title": "父の戦争の話",
+  "text": "お盆に親類が集まった夜、父が兵隊だった頃の話をぽつりとした。いつもは何も言わない父だった。戦争は自分の家にもつながっているのだと知った。",
+  "effects": {
+   "knowledge": 1,
+   "relation": 2
+  },
+  "probability": 0.15,
+  "source": {
+   "title": "戦没者約310万人（うち軍人・軍属約230万人）：厚生労働省の推計（報道で確認）",
+   "url": "https://www.sakigake.jp/news/article/20250716AK0005/",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1973-family-story-youth",
+  "key": "family-war-story",
+  "category": "war",
+  "year": 1973,
+  "endYear": 1990,
+  "ageMin": 13,
+  "ageMax": 18,
+  "sex": "any",
+  "title": "祖父母の戦争の話",
+  "text": "夏休みの宿題で、祖母に戦争中の暮らしを聞き取りした。配給や空襲の話を、祖母は遠くを見るようにして、思い出しながら少しずつ話してくれた。",
+  "effects": {
+   "knowledge": 2,
+   "relation": 2
+  },
+  "probability": 0.15,
+  "source": {
+   "title": "戦没者約310万人（うち軍人・軍属約230万人）：厚生労働省の推計（報道で確認）",
+   "url": "https://www.sakigake.jp/news/article/20250716AK0005/",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1998-grandparent-story-child",
+  "key": "family-war-story",
+  "category": "war",
+  "year": 1998,
+  "endYear": 2017,
+  "ageMin": 8,
+  "ageMax": 12,
+  "sex": "any",
+  "title": "祖父の戦争の話",
+  "text": "祖父の家で、祖父が子どもの頃に体験した戦争の話を聞いた。食べ物がなく、空襲におびえた話だった。教科書の中の出来事が急に近く感じられた。",
+  "effects": {
+   "knowledge": 1,
+   "relation": 2
+  },
+  "probability": 0.2,
+  "source": {
+   "title": "戦没者約310万人（うち軍人・軍属約230万人）：厚生労働省の推計（報道で確認）",
+   "url": "https://www.sakigake.jp/news/article/20250716AK0005/",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-2003-grandparent-story-youth",
+  "key": "family-war-story",
+  "category": "war",
+  "year": 2003,
+  "endYear": 2020,
+  "ageMin": 13,
+  "ageMax": 18,
+  "sex": "any",
+  "title": "祖父母の戦争の話",
+  "text": "平和学習の宿題で、祖母に戦争の頃の話を聞いた。祖母は疎開先でのひもじさを話してくれた。話せる人がいるうちに聞いておいてよかったと思った。",
+  "effects": {
+   "knowledge": 2,
+   "relation": 2
+  },
+  "probability": 0.15,
+  "source": {
+   "title": "戦没者約310万人（うち軍人・軍属約230万人）：厚生労働省の推計（報道で確認）",
+   "url": "https://www.sakigake.jp/news/article/20250716AK0005/",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1972-peace-trip-youth",
+  "key": "peace-school-trip",
+  "category": "war",
+  "year": 1972,
+  "endYear": 2020,
+  "ageMin": 11,
+  "ageMax": 15,
+  "sex": "any",
+  "title": "修学旅行で広島へ",
+  "text": "修学旅行で広島の平和記念資料館を訪れた。原爆でその年の末までに約14万人が亡くなったと知り、帰りのバスはいつもより静かだった。",
+  "effects": {
+   "knowledge": 2
+  },
+  "probability": 0.12,
+  "source": {
+   "title": "広島市 原爆被害の概要",
+   "url": "https://www.city.hiroshima.lg.jp/soshiki/48/9400.html",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1996-06-irei-day-child",
+  "key": "okinawa-irei-day",
+  "category": "war",
+  "year": 1996,
+  "endYear": 2020,
+  "month": 6,
+  "prefs": [
+   47
+  ],
+  "ageMin": 6,
+  "ageMax": 12,
+  "sex": "any",
+  "title": "慰霊の日",
+  "text": "6月23日は沖縄の慰霊の日だ。その日が近づくと、学校で平和学習の時間があり、沖縄戦で軍民20万人余りが亡くなったことを習った。",
+  "effects": {
+   "knowledge": 1
+  },
+  "probability": 0.8,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（沖縄県）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/okinawa_04.html",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1996-06-irei-day-youth",
+  "key": "okinawa-irei-day",
+  "category": "war",
+  "year": 1996,
+  "endYear": 2020,
+  "month": 6,
+  "prefs": [
+   47
+  ],
+  "ageMin": 13,
+  "ageMax": 18,
+  "sex": "any",
+  "title": "慰霊の日",
+  "text": "6月23日の慰霊の日、平和祈念公園での追悼式の様子をテレビで見た。祖父母から聞いた沖縄戦の話を思い出し、家族で黙とうをした。",
+  "effects": {
+   "knowledge": 1
+  },
+  "probability": 0.6,
+  "source": {
+   "title": "総務省 国内各都市の戦災の状況（沖縄県）",
+   "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/okinawa_04.html",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1970-08-hiroshima-peace-day-child",
+  "key": "hiroshima-peace-day",
+  "category": "war",
+  "year": 1970,
+  "endYear": 2017,
+  "month": 8,
+  "prefs": [
+   34
+  ],
+  "ageMin": 7,
+  "ageMax": 12,
+  "sex": "any",
+  "title": "8月6日の登校日",
+  "text": "広島では8月6日は夏休みの登校日で、午前8時15分に黙とうをした。被爆した人の話を体育館で聞いた。原爆でその年の末までに約14万人が亡くなったと習った。",
+  "effects": {
+   "knowledge": 1
+  },
+  "probability": 0.8,
+  "source": {
+   "title": "広島市 原爆被害の概要（登校日の慣習は未確認）",
+   "url": "https://www.city.hiroshima.lg.jp/soshiki/48/9400.html",
+   "verified": false
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1970-08-nagasaki-peace-day-child",
+  "key": "nagasaki-peace-day",
+  "category": "war",
+  "year": 1970,
+  "endYear": 2017,
+  "month": 8,
+  "prefs": [
+   42
+  ],
+  "ageMin": 7,
+  "ageMax": 12,
+  "sex": "any",
+  "title": "8月9日の登校日",
+  "text": "長崎では8月9日は夏休みの登校日で、午前11時2分に黙とうをした。原爆でその年の末までに7万3千人余りが亡くなったと習った。",
+  "effects": {
+   "knowledge": 1
+  },
+  "probability": 0.8,
+  "source": {
+   "title": "長崎原爆資料館（登校日の慣習・投下時刻は未確認）",
+   "url": "https://nagasakipeace.jp/en/reference/materials/kids/higai.html",
+   "verified": false
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-2000-kataribe-elder",
+  "key": "war-kataribe",
+  "category": "war",
+  "year": 2000,
+  "endYear": 2025,
+  "ageMin": 60,
+  "ageMax": 90,
+  "sex": "any",
+  "conditions": {
+   "flags": [
+    "airraid_survivor"
+   ]
+  },
+  "title": "戦争の語り部に",
+  "text": "頼まれて、地元の学校や公民館で子どもの頃の戦争体験を話すようになった。思い出したくないことも多かったが、伝えておくことにした。",
+  "effects": {
+   "relation": 3,
+   "happiness": 2
+  },
+  "probability": 0.02,
+  "source": {
+   "title": "戦没者約310万人（うち軍人・軍属約230万人）：厚生労働省の推計（報道で確認）",
+   "url": "https://www.sakigake.jp/news/article/20250716AK0005/",
+   "verified": true
+  },
+  "probNote": "目安"
+ },
+ {
+  "id": "war-1995-hibakusha-elder",
+  "key": "hibakusha-testimony",
+  "category": "war",
+  "year": 1995,
+  "endYear": 2015,
+  "ageMin": 50,
+  "ageMax": 85,
+  "sex": "any",
+  "conditions": {
+   "flags": [
+    "hibakusha"
+   ]
+  },
+  "title": "被爆体験を語る",
+  "text": "被爆から50年。それまで家族にもあまり話さなかった被爆の体験を、初めて人前で話した。同じ被爆者の仲間も、みな年をとっていた。",
+  "effects": {
+   "relation": 3
+  },
+  "probability": 0.1,
+  "heavy": true,
+  "source": {
+   "title": "広島市 原爆被害の概要",
+   "url": "https://www.city.hiroshima.lg.jp/soshiki/48/9400.html",
+   "verified": true
+  },
+  "probNote": "目安"
+ }
+]

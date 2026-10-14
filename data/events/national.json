@@ -1,0 +1,2108 @@
+[
+  {
+    "id": "national-1946-02-shinen-child",
+    "key": "shinen-kirikae-1946",
+    "category": "national",
+    "year": 1946,
+    "month": 2,
+    "ageMin": 3,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "新円切替",
+    "text": "ある日、家のお金が使えなくなると大人たちが騒いでいた。預金は引き出せる額が決められ、母は新しいお札を大事そうに数えていた。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.9,
+    "probNote": "目安",
+    "source": {
+      "title": "群馬県 史料解説（金融緊急措置令・新円切替）",
+      "url": "https://www.pref.gunma.jp/uploaded/attachment/642899.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1946-02-shinen-youth",
+    "key": "shinen-kirikae-1946",
+    "category": "national",
+    "year": 1946,
+    "month": 2,
+    "ageMin": 13,
+    "ageMax": 16,
+    "sex": "any",
+    "title": "新円切替と預金封鎖",
+    "text": "2月、預金が封鎖され、古いお札は3月はじめで使えなくなった。月に引き出せる額は限られ、物価だけがどんどん上がっていった。",
+    "effects": {
+      "happiness": -5
+    },
+    "probability": 0.9,
+    "probNote": "目安",
+    "source": {
+      "title": "群馬県 史料解説（金融緊急措置令・新円切替）",
+      "url": "https://www.pref.gunma.jp/uploaded/attachment/642899.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1947-kenpo-child",
+    "key": "new-constitution-1947",
+    "category": "national",
+    "year": 1947,
+    "ageMin": 6,
+    "ageMax": 17,
+    "sex": "any",
+    "title": "新しい憲法",
+    "text": "5月、新しい憲法が施行された。先生は、戦争をしないこと、だれもが等しく大切にされることを話した。教科書の中身も変わっていった。",
+    "effects": {
+      "knowledge": 3
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "国立公文書館 日本国憲法の公布・施行",
+      "url": "https://www.archives.go.jp/",
+      "verified": false
+    }
+  },
+  {
+    "id": "national-1949-04-dodge-child",
+    "key": "dodge-line-1949",
+    "category": "national",
+    "year": 1949,
+    "month": 4,
+    "ageMin": 4,
+    "ageMax": 19,
+    "sex": "any",
+    "title": "1ドル360円",
+    "text": "4月、1ドルが360円に決まった。物価の上がり方はおさまったが、町では会社の倒れる話や人員整理の話が増え、家の暮らしは苦しくなった。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "nippon.com 今日は何の日 4月25日（1ドル360円の単一為替レート）",
+      "url": "https://www.nippon.com/ja/japan-topics/today0425/",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1950-06-tokuju-child",
+    "key": "korea-boom-1950",
+    "category": "national",
+    "year": 1950,
+    "month": 6,
+    "ageMin": 5,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "朝鮮特需",
+    "text": "隣の国で戦争が始まると、町の工場がにわかに忙しくなった。鉄くずを拾って売る子もいた。大人たちは「特需」という言葉をよく口にした。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "大和証券 金融・証券用語解説 ドッジ・ライン",
+      "url": "https://www.daiwa.jp/glossary/YST3597.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1950-06-tokuju-youth",
+    "key": "korea-boom-1950",
+    "category": "national",
+    "year": 1950,
+    "month": 6,
+    "ageMin": 13,
+    "ageMax": 20,
+    "sex": "any",
+    "title": "特需景気",
+    "text": "6月に朝鮮戦争が始まり、米軍からの注文で工場の仕事が一気に増えた。働き口が見つかりやすくなり、日本の景気はここから持ち直していった。",
+    "effects": {
+      "happiness": 2,
+      "money": 0
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "大和証券 金融・証券用語解説 ドッジ・ライン",
+      "url": "https://www.daiwa.jp/glossary/YST3597.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1953-02-tv-child",
+    "key": "tv-start-1953",
+    "category": "national",
+    "year": 1953,
+    "month": 2,
+    "ageMin": 8,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "街頭テレビ",
+    "text": "2月、テレビの放送が始まった。家にテレビはなく、駅前や電器屋の前に人だかりができた。大人の肩ごしに、小さな画面のプロレスを見た。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "現代ビジネス 2月1日 NHKが東京地区でテレビ本放送開始（1953年）",
+      "url": "https://gendai.media/articles/-/59568",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1953-02-tv-youth",
+    "key": "tv-start-1953",
+    "category": "national",
+    "year": 1953,
+    "month": 2,
+    "ageMin": 13,
+    "ageMax": 23,
+    "sex": "any",
+    "title": "テレビ放送が始まる",
+    "text": "2月にテレビの本放送が始まった。受信料は月200円、受像機は給料の何か月分もした。人の集まる店先で、映る番組を立ったまま見た。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "現代ビジネス 2月1日 NHKが東京地区でテレビ本放送開始（1953年）",
+      "url": "https://gendai.media/articles/-/59568",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1956-07-mohaya-youth",
+    "key": "mohaya-sengo-1956",
+    "category": "national",
+    "year": 1956,
+    "month": 7,
+    "ageMin": 11,
+    "ageMax": 26,
+    "sex": "any",
+    "title": "もはや戦後ではない",
+    "text": "7月の経済白書の「もはや戦後ではない」という言葉が流行った。暮らしは戦前の水準に戻ったと言われ、町には新しい品物が並び始めた。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "ピクテ 金融経済史 高度成長期（もはや戦後ではない）",
+      "url": "https://www.pictet.co.jp/basics-of-asset-management/practical-basic-knowledge/financial-economic-history/20200612.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1958-sanshu-youth",
+    "key": "sanshu-jingi-1958",
+    "category": "national",
+    "year": 1958,
+    "endYear": 1964,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "三種の神器",
+    "text": "白黒テレビ、洗濯機、冷蔵庫が「三種の神器」と呼ばれた。近所に1台ずつ増えていき、わが家にもテレビが来た日は家族で夜遅くまで見た。",
+    "effects": {
+      "happiness": 5
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "国立公文書館 国民所得倍増計画・三種の神器",
+      "url": "https://www.archives.go.jp/learning/quiz_8/",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1958-sanshu-adult",
+    "key": "sanshu-jingi-1958",
+    "category": "national",
+    "year": 1958,
+    "endYear": 1964,
+    "ageMin": 30,
+    "ageMax": 34,
+    "sex": "any",
+    "title": "三種の神器を買う",
+    "text": "洗濯機や冷蔵庫が手の届く値段になり、月賦で少しずつそろえた。たらいと洗濯板の仕事が減り、家の中の時間の使い方が変わった。",
+    "effects": {
+      "happiness": 5
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "国立公文書館 国民所得倍増計画・三種の神器",
+      "url": "https://www.archives.go.jp/learning/quiz_8/",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1959-04-goseikon-youth",
+    "key": "royal-wedding-1959",
+    "category": "national",
+    "year": 1959,
+    "month": 4,
+    "ageMin": 14,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "ご成婚パレード",
+    "text": "4月、皇太子のご成婚パレードがテレビで中継された。これを見るためにテレビを買う家が多く、受信契約は200万件を超えたと言われた。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "現代ビジネス 2月1日 NHKが東京地区でテレビ本放送開始（1953年）",
+      "url": "https://gendai.media/articles/-/59568",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1960-12-shotoku-jobhunt",
+    "key": "income-doubling-1960",
+    "category": "national",
+    "year": 1960,
+    "endYear": 1965,
+    "month": 12,
+    "ageMin": 15,
+    "ageMax": 24,
+    "sex": "any",
+    "title": "所得倍増計画",
+    "text": "12月、10年で国民の所得を2倍にする計画が決まった。求人は多く、選ばなければ仕事はいくらでもあった。給料は毎年のように上がった。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "国立公文書館 国民所得倍増計画・三種の神器",
+      "url": "https://www.archives.go.jp/learning/quiz_8/",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1960-12-shotoku-adult",
+    "key": "income-doubling-1960",
+    "category": "national",
+    "year": 1960,
+    "endYear": 1965,
+    "month": 12,
+    "ageMin": 25,
+    "ageMax": 34,
+    "sex": "any",
+    "title": "給料が上がり続ける",
+    "text": "所得倍増が政府の目標になった。物価も上がったが、それ以上に給料が増えた。来年はもっと良くなると、だれもが疑わずに働いていた。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "国立公文書館 国民所得倍増計画・三種の神器",
+      "url": "https://www.archives.go.jp/learning/quiz_8/",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1964-10-shinkansen-youth",
+    "key": "shinkansen-1964",
+    "category": "national",
+    "year": 1964,
+    "month": 10,
+    "ageMin": 19,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "東海道新幹線が開業",
+    "text": "10月1日、東海道新幹線が開業した。東京と新大阪が4時間で結ばれた。運賃は高く、乗るのは特別なことだったが、写真を見て胸が躍った。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "乗りものニュース 日本の高速鉄道 第13回「新幹線開業」",
+      "url": "https://trafficnews.jp/post/36093",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1964-10-shinkansen-adult",
+    "key": "shinkansen-1964",
+    "category": "national",
+    "year": 1964,
+    "month": 10,
+    "ageMin": 30,
+    "ageMax": 34,
+    "sex": "any",
+    "title": "夢の超特急",
+    "text": "10月、東海道新幹線が走り始めた。出張が日帰りになると職場で話題になった。街では五輪に向けた道路や高速道路の工事がやっと終わった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "乗りものニュース 日本の高速鉄道 第13回「新幹線開業」",
+      "url": "https://trafficnews.jp/post/36093",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1964-10-olympic-youth",
+    "key": "tokyo-olympic-1964",
+    "category": "national",
+    "year": 1964,
+    "month": 10,
+    "ageMin": 19,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "東京オリンピック",
+    "text": "10月10日、東京オリンピックが開幕した。職場や家のテレビの前に人が集まった。女子バレーボールの決勝の夜は、街から人が消えたようだった。",
+    "effects": {
+      "happiness": 6
+    },
+    "probability": 0.9,
+    "probNote": "目安",
+    "source": {
+      "title": "乗りものニュース 日本の高速鉄道 第13回「新幹線開業」",
+      "url": "https://trafficnews.jp/post/36093",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1964-10-olympic-adult",
+    "key": "tokyo-olympic-1964",
+    "category": "national",
+    "year": 1964,
+    "month": 10,
+    "ageMin": 30,
+    "ageMax": 34,
+    "sex": "any",
+    "title": "東京オリンピック",
+    "text": "10月、東京オリンピックが開かれた。家族そろってカラーではない画面で開会式を見た。日本がここまで来たのだと、年配の人ほど涙ぐんでいた。",
+    "effects": {
+      "happiness": 6
+    },
+    "probability": 0.9,
+    "probNote": "目安",
+    "source": {
+      "title": "乗りものニュース 日本の高速鉄道 第13回「新幹線開業」",
+      "url": "https://trafficnews.jp/post/36093",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1964-10-olympic-child",
+    "key": "tokyo-olympic-1964",
+    "category": "national",
+    "year": 1964,
+    "month": 10,
+    "ageMin": 1,
+    "ageMax": 4,
+    "sex": "any",
+    "title": "オリンピックの年に",
+    "text": "物心つく前、東京でオリンピックが開かれた。家にはその年に買ったテレビがあり、親はあとあとまで「あの年は」と話して聞かせた。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "乗りものニュース 日本の高速鉄道 第13回「新幹線開業」",
+      "url": "https://trafficnews.jp/post/36093",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1964-04-kaigai-youth",
+    "key": "overseas-travel-1964",
+    "category": "national",
+    "year": 1964,
+    "month": 4,
+    "ageMin": 19,
+    "ageMax": 34,
+    "sex": "any",
+    "title": "海外旅行が自由に",
+    "text": "4月、観光で海外へ行けるようになった。ただし年1回、持ち出せるのは500ドルまで。ハワイ9日間のツアーは大卒初任給の19倍もした。",
+    "effects": {
+      "knowledge": 1
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "トラベルボイス 海外渡航自由化50周年の歴史",
+      "url": "https://www.travelvoice.jp/20140120-14994",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1965-izanagi-youth",
+    "key": "izanagi-1965",
+    "category": "national",
+    "year": 1965,
+    "endYear": 1970,
+    "ageMin": 20,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "いざなぎ景気",
+    "text": "好景気が4年以上続いた。毎年の昇給とボーナスで、カラーテレビやクーラー、車の「3C」が手の届くものになった。残業も多かった。",
+    "effects": {
+      "happiness": 5
+    },
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "内閣府 過去の主な景気循環のパターン",
+      "url": "https://www5.cao.go.jp/keizai3/2007/1214nk/07-00403-01n.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1965-izanagi-adult",
+    "key": "izanagi-1965",
+    "category": "national",
+    "year": 1965,
+    "endYear": 1970,
+    "ageMin": 30,
+    "ageMax": 40,
+    "sex": "any",
+    "title": "マイカーを買う",
+    "text": "好景気が長く続き、休みの日に家族を車に乗せて出かけるようになった。道路は渋滞し、空気は汚れたが、暮らしは年ごとに豊かになった。",
+    "effects": {
+      "happiness": 5
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "内閣府 過去の主な景気循環のパターン",
+      "url": "https://www5.cao.go.jp/keizai3/2007/1214nk/07-00403-01n.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1965-izanagi-child",
+    "key": "izanagi-1965",
+    "category": "national",
+    "year": 1965,
+    "endYear": 1970,
+    "ageMin": 3,
+    "ageMax": 10,
+    "sex": "any",
+    "title": "家に車が来た",
+    "text": "ある日、家に車がやって来た。父は日曜ごとに車を洗い、家族で遠くの海や山へ出かけた。近所の家の前にも、次々と車が並ぶようになっていった。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "内閣府 過去の主な景気循環のパターン",
+      "url": "https://www5.cao.go.jp/keizai3/2007/1214nk/07-00403-01n.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1968-gnp-adult",
+    "key": "gnp-second-1968",
+    "category": "national",
+    "year": 1968,
+    "ageMin": 23,
+    "ageMax": 38,
+    "sex": "any",
+    "title": "GNP世界第2位",
+    "text": "日本のGNPが西ドイツを抜き、資本主義の国で世界第2位になったと報じられた。誇らしかったが、身の回りでは公害やインフレも目立ってきた。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "Hamada, Japan 1968: A Reflection Point During the Era of the Economic Miracle",
+      "url": "https://ideas.repec.org/p/fth/yalegr/764.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1970-03-banpaku-child",
+    "key": "expo-1970",
+    "category": "national",
+    "year": 1970,
+    "month": 3,
+    "ageMin": 4,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "大阪万博",
+    "text": "3月から大阪で万国博覧会が開かれた。外国のパビリオンには長い行列ができ、月の石を見ようと何時間も並んだ。テレビでも毎日のように映っていた。",
+    "effects": {
+      "happiness": 6,
+      "knowledge": 2
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "大阪府 万博関係資料（1970年日本万国博覧会）",
+      "url": "https://www.pref.osaka.lg.jp/documents/26540/05_banpakusiryo_touroku.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1970-03-banpaku-youth",
+    "key": "expo-1970",
+    "category": "national",
+    "year": 1970,
+    "month": 3,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "大阪万博",
+    "text": "大阪で万国博覧会が開かれ、183日間で6421万人が訪れた。人ごみで何も見られなかったという話も、未来を見た気がしたという話も聞いた。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "大阪府 万博関係資料（1970年日本万国博覧会）",
+      "url": "https://www.pref.osaka.lg.jp/documents/26540/05_banpakusiryo_touroku.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1970-03-banpaku-adult",
+    "key": "expo-1970",
+    "category": "national",
+    "year": 1970,
+    "month": 3,
+    "ageMin": 30,
+    "ageMax": 40,
+    "sex": "any",
+    "title": "万博へ家族旅行",
+    "text": "大阪万博に家族を連れて行こうと、何か月も前から計画した。会場は人であふれ、子どもが迷子にならないよう手を離さずに歩いた。",
+    "effects": {
+      "happiness": 4,
+      "relation": 2
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "大阪府 万博関係資料（1970年日本万国博覧会）",
+      "url": "https://www.pref.osaka.lg.jp/documents/26540/05_banpakusiryo_touroku.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1971-08-nixon-adult",
+    "key": "nixon-shock-1971",
+    "category": "national",
+    "year": 1971,
+    "month": 8,
+    "ageMin": 26,
+    "ageMax": 41,
+    "sex": "any",
+    "title": "ニクソン・ショック",
+    "text": "8月、アメリカがドルと金の交換をやめると発表した。1ドル360円の時代が終わり、年末には308円になった。輸出の仕事の人は先行きを心配した。",
+    "effects": {
+      "happiness": -1
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "nippon.com ニクソン・ショックと変動相場制",
+      "url": "https://www.nippon.com/ja/in-depth/d00743/",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1973-11-oilshock-child",
+    "key": "oil-shock-1973",
+    "category": "national",
+    "year": 1973,
+    "month": 11,
+    "ageMin": 3,
+    "ageMax": 13,
+    "sex": "any",
+    "title": "トイレットペーパー騒ぎ",
+    "text": "11月、トイレットペーパーがなくなるといううわさが広がり、母に連れられてスーパーの列に並んだ。棚はすぐ空になり、大人たちは殺気立っていた。",
+    "effects": {
+      "happiness": -2
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "世界史の窓 第1次石油危機",
+      "url": "https://y-history.net/appendix/wh1604-038.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1973-10-oilshock-adult",
+    "key": "oil-shock-1973",
+    "category": "national",
+    "year": 1973,
+    "month": 10,
+    "ageMin": 28,
+    "ageMax": 43,
+    "sex": "any",
+    "title": "オイルショック",
+    "text": "中東の戦争で石油の値段が跳ね上がった。11月からトイレットペーパーや洗剤の買いだめ騒ぎが起き、ネオンが消え、深夜のテレビ放送も止まった。",
+    "effects": {
+      "happiness": -4
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "世界史の窓 第1次石油危機",
+      "url": "https://y-history.net/appendix/wh1604-038.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1974-kyoran-adult",
+    "key": "kyoran-bukka-1974",
+    "category": "national",
+    "year": 1974,
+    "ageMin": 29,
+    "ageMax": 44,
+    "sex": "any",
+    "title": "狂乱物価",
+    "text": "物の値段が見る間に上がり、戦後最大級のインフレは「狂乱物価」と呼ばれた。家計簿をつけても追いつかなかった。高度成長は終わり、景気は冷え込んだ。",
+    "effects": {
+      "happiness": -4
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "世界史の窓 第1次石油危機",
+      "url": "https://y-history.net/appendix/wh1604-038.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1974-kyoran-child",
+    "key": "kyoran-bukka-1974",
+    "category": "national",
+    "year": 1974,
+    "ageMin": 4,
+    "ageMax": 14,
+    "sex": "any",
+    "title": "物が高くなった年",
+    "text": "お菓子やノートの値段が急に上がった。母は買い物のたびにため息をつき、夕食のおかずが一品減った。節約という言葉を何度も聞いた。",
+    "effects": {
+      "happiness": -2
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "世界史の窓 第1次石油危機",
+      "url": "https://y-history.net/appendix/wh1604-038.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1979-oilshock2-adult",
+    "key": "oil-shock-1979",
+    "category": "national",
+    "year": 1979,
+    "ageMin": 34,
+    "ageMax": 49,
+    "sex": "any",
+    "title": "第2次オイルショック",
+    "text": "イラン革命をきっかけに、また石油の値段が上がった。前回の経験から買いだめ騒ぎは小さかったが、会社では省エネと経費の節約が厳しく言われた。",
+    "effects": {
+      "happiness": -2
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "内閣府 経済白書（第2次石油危機）",
+      "url": "https://www5.cao.go.jp/",
+      "verified": false
+    }
+  },
+  {
+    "id": "national-1979-oilshock2-youth",
+    "key": "oil-shock-1979",
+    "category": "national",
+    "year": 1979,
+    "ageMin": 13,
+    "ageMax": 19,
+    "sex": "any",
+    "title": "省エネの夏",
+    "text": "石油の値段がまた上がり、「省エネ」が合言葉になった。首相が半袖の背広を着てみせ、学校でも電気をこまめに消すよう言われた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "内閣府 経済白書（第2次石油危機）",
+      "url": "https://www5.cao.go.jp/",
+      "verified": false
+    }
+  },
+  {
+    "id": "national-1986-plaza-jobhunt",
+    "key": "plaza-1985",
+    "category": "national",
+    "year": 1986,
+    "ageMin": 15,
+    "ageMax": 24,
+    "sex": "any",
+    "title": "円高不況",
+    "text": "前の年のプラザ合意で急に円高が進み、1ドル240円台だったのが150円台になった。輸出の会社は採用を絞り、就職先選びは思ったより厳しかった。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "世界史の窓 プラザ合意",
+      "url": "https://y-history.net/appendix/wh1701-090.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1985-09-plaza-adult",
+    "key": "plaza-1985",
+    "category": "national",
+    "year": 1985,
+    "month": 9,
+    "ageMin": 40,
+    "ageMax": 55,
+    "sex": "any",
+    "title": "プラザ合意",
+    "text": "9月のプラザ合意のあと、円高が一気に進んだ。輸出の注文が減り、取引先の工場は海外へ移ると言い出した。職場には重い空気が流れた。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "世界史の窓 プラザ合意",
+      "url": "https://y-history.net/appendix/wh1701-090.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1985-08-jal123-any",
+    "key": "jal123-1985",
+    "category": "national",
+    "year": 1985,
+    "month": 8,
+    "ageMin": 10,
+    "ageMax": 55,
+    "sex": "any",
+    "title": "日航機墜落事故",
+    "text": "8月12日、日航機が群馬県の山中に墜落し、520人が亡くなった。単独の航空機事故として世界最悪の犠牲者数だった。連日、その報道が続いた。",
+    "effects": {
+      "happiness": -2
+    },
+    "probability": 0.9,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "nippon.com 今日は何の日 8月12日（日航機墜落事故）",
+      "url": "https://www.nippon.com/ja/japan-topics/today0812/",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1987-04-jr-adult",
+    "key": "jr-1987",
+    "category": "national",
+    "year": 1987,
+    "month": 4,
+    "ageMin": 30,
+    "ageMax": 57,
+    "sex": "any",
+    "title": "国鉄がJRになった",
+    "text": "4月1日、国鉄が分割・民営化され、JRの7社が生まれた。115年続いた国鉄の名前が消え、駅の看板や切符の文字が変わっていった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "乗りものニュース 国鉄からJR",
+      "url": "https://trafficnews.jp/post/67452",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1988-bubble-jobhunt",
+    "key": "bubble-1986",
+    "category": "national",
+    "year": 1988,
+    "endYear": 1991,
+    "ageMin": 18,
+    "ageMax": 24,
+    "sex": "any",
+    "conditions": {
+      "education": [
+        "high",
+        "junior",
+        "univ"
+      ]
+    },
+    "title": "売り手市場の就職",
+    "text": "景気が良く、会社が学生を取り合った。いくつも内定が出て、拘束と称して旅行に連れていかれた話も聞いた。大卒の求人倍率は2倍を超えていた。",
+    "effects": {
+      "happiness": 6
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "リクルートワークス研究所 大卒求人倍率調査",
+      "url": "https://works-i.com/surveys/item/190424_kyujin.pdf",
+      "verified": true,
+      "note": "1991年3月卒の大卒求人倍率は2.86倍"
+    }
+  },
+  {
+    "id": "national-1987-bubble-young",
+    "key": "bubble-1986",
+    "category": "national",
+    "year": 1987,
+    "endYear": 1991,
+    "ageMin": 25,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "バブルの頃",
+    "text": "ボーナスは毎年増え、週末は夜通し遊んだ。タクシーは深夜につかまらず、一万円札を振って止めた。地価と株は上がり続けると思っていた。",
+    "effects": {
+      "happiness": 5
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "内閣府 過去の主な景気循環のパターン",
+      "url": "https://www5.cao.go.jp/keizai3/2007/1214nk/07-00403-01n.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1987-bubble-adult",
+    "key": "bubble-1986",
+    "category": "national",
+    "year": 1987,
+    "endYear": 1991,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "地価と株が上がる",
+    "text": "土地の値段と株価が毎年のように上がった。同僚は財テクの話ばかりしていた。家を買おうにも値段が上がりすぎ、通勤時間はどんどん延びた。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "内閣府 過去の主な景気循環のパターン",
+      "url": "https://www5.cao.go.jp/keizai3/2007/1214nk/07-00403-01n.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1988-bubble-senior",
+    "key": "bubble-1986",
+    "category": "national",
+    "year": 1988,
+    "endYear": 1991,
+    "ageMin": 60,
+    "ageMax": 64,
+    "sex": "any",
+    "title": "バブルの頃の退職",
+    "text": "定年を迎えるころ、世の中は好景気に沸いていた。退職金の一部で株を買う人も多かった。持っている小さな土地の値段を聞いて、思わず聞き返した。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "内閣府 過去の主な景気循環のパターン",
+      "url": "https://www5.cao.go.jp/keizai3/2007/1214nk/07-00403-01n.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1989-12-nikkei-adult",
+    "key": "nikkei-peak-1989",
+    "category": "national",
+    "year": 1989,
+    "month": 12,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "株価が史上最高値",
+    "text": "12月29日の大納会で、日経平均は3万8915円の最高値をつけた。年が明ければ4万円も超えると言われていた。この値は34年間破られなかった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "日経平均プロフィル 日経平均70周年",
+      "url": "https://indexes.nikkei.co.jp/atoz/2021/02/70thanniv4.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1989-01-heisei-any",
+    "key": "heisei-1989",
+    "category": "national",
+    "year": 1989,
+    "month": 1,
+    "ageMin": 6,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "平成が始まる",
+    "text": "1月7日、昭和天皇が亡くなり、翌日から元号が平成になった。テレビは何日も特別番組ばかりで、店のネオンは消え、街は静かだった。",
+    "probability": 0.9,
+    "probNote": "目安",
+    "source": {
+      "title": "首相官邸 新元号の公表（平成・令和）",
+      "url": "https://www.kantei.go.jp/",
+      "verified": false
+    }
+  },
+  {
+    "id": "national-1993-bubcol-jobhunt",
+    "key": "bubble-collapse-1991",
+    "category": "national",
+    "year": 1993,
+    "endYear": 1994,
+    "ageMin": 18,
+    "ageMax": 24,
+    "sex": "any",
+    "title": "求人が急に減った",
+    "text": "数年前までの売り手市場がうそのように、求人が減っていた。先輩の話は通じず、資料請求のはがきを何十枚出しても、返事はほとんど来なかった。",
+    "effects": {
+      "happiness": -5
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "リクルートワークス研究所 大卒求人倍率調査",
+      "url": "https://works-i.com/surveys/item/190424_kyujin.pdf",
+      "verified": true,
+      "note": "大卒求人倍率は1991年2.86倍→1993年1.91倍"
+    }
+  },
+  {
+    "id": "national-1991-bubcol-young",
+    "key": "bubble-collapse-1991",
+    "category": "national",
+    "year": 1991,
+    "endYear": 1993,
+    "ageMin": 25,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "バブルがはじけた",
+    "text": "株価と地価が下がり始め、景気の良い話は聞かなくなった。入社したときの華やかさはなく、経費の削減と残業の規制が言われるようになった。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "幻冬舎ゴールドオンライン 総量規制とバブル崩壊",
+      "url": "https://gentosha-go.com/articles/-/63333?page=2",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1991-bubcol-adult",
+    "key": "bubble-collapse-1991",
+    "category": "national",
+    "year": 1991,
+    "endYear": 1993,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "バブル崩壊",
+    "text": "1990年3月の総量規制のあと、株と土地の値段が下がり続けた。高値で買った家のローンだけが残った人もいた。会社は先行きの不安を口にし始めた。",
+    "effects": {
+      "happiness": -4
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "幻冬舎ゴールドオンライン 総量規制とバブル崩壊",
+      "url": "https://gentosha-go.com/articles/-/63333?page=2",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1991-bubcol-senior",
+    "key": "bubble-collapse-1991",
+    "category": "national",
+    "year": 1991,
+    "endYear": 1993,
+    "ageMin": 60,
+    "ageMax": 64,
+    "sex": "any",
+    "title": "退職金で買った株",
+    "text": "退職金で買った株の値段が、気がつくと半分ほどになっていた。銀行の預金金利も下がり始め、老後の計算が少しずつ狂っていった。",
+    "effects": {
+      "happiness": -4
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "幻冬舎ゴールドオンライン 総量規制とバブル崩壊",
+      "url": "https://gentosha-go.com/articles/-/63333?page=2",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1994-hyogaki-jobhunt",
+    "key": "hyogaki-1993",
+    "category": "national",
+    "year": 1994,
+    "endYear": 2004,
+    "ageMin": 18,
+    "ageMax": 24,
+    "sex": "any",
+    "title": "就職氷河期",
+    "text": "どこを受けても不採用の通知ばかりだった。何十社も受けて、内定はひとつも出なかった。「就職氷河期」という言葉が新聞に載っていた。",
+    "effects": {
+      "happiness": -8,
+      "flags": [
+        "hyogaki"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "リクルートワークス研究所 大卒求人倍率調査",
+      "url": "https://works-i.com/surveys/item/190424_kyujin.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1996-hyogaki-young",
+    "key": "hyogaki-1993",
+    "category": "national",
+    "year": 1996,
+    "endYear": 2005,
+    "ageMin": 25,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "hyogaki"
+      ]
+    },
+    "title": "正社員になれない",
+    "text": "卒業後、アルバイトや派遣の仕事を続けていた。正社員の求人は新卒向けばかりで、年齢が上がるほど応募できる会社は減っていった。",
+    "effects": {
+      "happiness": -6
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "リクルートワークス研究所 大卒求人倍率調査",
+      "url": "https://works-i.com/surveys/item/190424_kyujin.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1996-hyogaki-adult",
+    "key": "hyogaki-1993",
+    "category": "national",
+    "year": 1996,
+    "endYear": 2005,
+    "ageMin": 50,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "married": true
+    },
+    "title": "子どもの就職が決まらない",
+    "text": "子どもが就職活動をしていたが、なかなか決まらなかった。自分のころは仕事がいくらでもあったのにと思い、かける言葉が見つからなかった。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "リクルートワークス研究所 大卒求人倍率調査",
+      "url": "https://works-i.com/surveys/item/190424_kyujin.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2000-hyogaki2000-jobhunt",
+    "key": "hyogaki-bottom-2000",
+    "category": "national",
+    "year": 2000,
+    "ageMin": 21,
+    "ageMax": 24,
+    "sex": "any",
+    "conditions": {
+      "education": [
+        "univ"
+      ]
+    },
+    "title": "求人倍率が1を割る",
+    "text": "この春卒業の大卒求人倍率は0.99倍で、学生の数より求人のほうが少なくなった。説明会はすぐ満席になり、エントリーシートを何十枚も書いた。",
+    "effects": {
+      "happiness": -6,
+      "flags": [
+        "hyogaki"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "リクルートワークス研究所 大卒求人倍率調査",
+      "url": "https://works-i.com/surveys/item/190424_kyujin.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1995-01-hanshin-child",
+    "key": "hanshin-1995",
+    "category": "national",
+    "year": 1995,
+    "month": 1,
+    "ageMin": 3,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "阪神・淡路大震災",
+    "text": "1月17日の早朝、兵庫県南部で大きな地震が起きた。テレビには燃える街が映り続けた。亡くなった人は6434人と伝えられた。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.7,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "nippon.com 阪神大震災から25年：大都市直下型地震の衝撃",
+      "url": "https://www.nippon.com/ja/japan-data/h00629/",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1995-01-hanshin-youth",
+    "key": "hanshin-1995",
+    "category": "national",
+    "year": 1995,
+    "month": 1,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "阪神・淡路大震災",
+    "text": "1月17日、兵庫県南部で震度7の地震が起き、6434人が亡くなった。全国から多くの若者が被災地へボランティアに向かい、ボランティア元年と言われた。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "nippon.com 阪神大震災から25年：大都市直下型地震の衝撃",
+      "url": "https://www.nippon.com/ja/japan-data/h00629/",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1995-01-hanshin-adult",
+    "key": "hanshin-1995",
+    "category": "national",
+    "year": 1995,
+    "month": 1,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "阪神・淡路大震災",
+    "text": "1月17日、兵庫県南部で震度7の地震が起き、6434人が亡くなった。取引先や知人の安否を確かめる電話はつながらず、義援金を職場で集めた。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "nippon.com 阪神大震災から25年：大都市直下型地震の衝撃",
+      "url": "https://www.nippon.com/ja/japan-data/h00629/",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1995-01-hanshin-senior",
+    "key": "hanshin-1995",
+    "category": "national",
+    "year": 1995,
+    "month": 1,
+    "ageMin": 60,
+    "ageMax": 69,
+    "sex": "any",
+    "title": "阪神・淡路大震災",
+    "text": "1月17日、兵庫県南部で大地震が起き、6434人が亡くなった。亡くなった人の多くは倒れた家の下敷きになった高齢者で、自分の家の古さが気になった。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "nippon.com 阪神大震災から25年：大都市直下型地震の衝撃",
+      "url": "https://www.nippon.com/ja/japan-data/h00629/",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1995-03-sarin-youth",
+    "key": "sarin-1995",
+    "category": "national",
+    "year": 1995,
+    "month": 3,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "地下鉄サリン事件",
+    "text": "3月20日の朝、東京の地下鉄でオウム真理教による毒ガス事件が起き、乗客や駅員が亡くなり、5800人以上が被害を受けた。いつもの電車が怖くなった。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "公安調査庁 地下鉄サリン事件から24年",
+      "url": "https://www.moj.go.jp/psia/aum-24nen.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1995-03-sarin-adult",
+    "key": "sarin-1995",
+    "category": "national",
+    "year": 1995,
+    "month": 3,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "地下鉄サリン事件",
+    "text": "3月20日、通勤時間の地下鉄で毒ガスがまかれ、多くの死傷者が出た。同じ時間に同じような電車に乗っている身として、人ごとではなかった。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "公安調査庁 地下鉄サリン事件から24年",
+      "url": "https://www.moj.go.jp/psia/aum-24nen.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1995-03-sarin-child",
+    "key": "sarin-1995",
+    "category": "national",
+    "year": 1995,
+    "month": 3,
+    "ageMin": 3,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "地下鉄サリン事件",
+    "text": "3月、東京の地下鉄で毒ガス事件が起きた。テレビは毎日その話をしていて、大人たちは不安そうだった。駅のごみ箱がふさがれた。",
+    "effects": {
+      "happiness": -2
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "公安調査庁 地下鉄サリン事件から24年",
+      "url": "https://www.moj.go.jp/psia/aum-24nen.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1997-11-kinyu97-jobhunt",
+    "key": "finance-crisis-1997",
+    "category": "national",
+    "year": 1997,
+    "month": 11,
+    "ageMin": 22,
+    "ageMax": 24,
+    "sex": "any",
+    "title": "山一證券が廃業",
+    "text": "11月、拓銀が破綻し、山一證券が自主廃業を発表した。大きな会社でもつぶれるのだと知った。安定した就職先という考え方が揺らいだ。",
+    "effects": {
+      "happiness": -4
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "日本経済研究センター コラム（1997年11月の金融危機）",
+      "url": "https://www.jcer.or.jp/column/kojima/print54.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1997-11-kinyu97-young",
+    "key": "finance-crisis-1997",
+    "category": "national",
+    "year": 1997,
+    "month": 11,
+    "ageMin": 25,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "金融危機",
+    "text": "11月、三洋証券、北海道拓殖銀行、山一證券が相次いで破綻した。社長が泣きながら会見する姿がテレビに流れ、自分の会社の先行きを考えた。",
+    "effects": {
+      "happiness": -4
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "日本経済研究センター コラム（1997年11月の金融危機）",
+      "url": "https://www.jcer.or.jp/column/kojima/print54.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1997-11-kinyu97-adult",
+    "key": "finance-crisis-1997",
+    "category": "national",
+    "year": 1997,
+    "month": 11,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "大手の破綻が続く",
+    "text": "11月、北海道拓殖銀行と山一證券が破綻し、翌年には長銀と日債銀が国有化された。会社では人員削減の話が出始め、自分の年齢が気になった。",
+    "effects": {
+      "happiness": -5
+    },
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "日本経済研究センター コラム（1997年11月の金融危機）",
+      "url": "https://www.jcer.or.jp/column/kojima/print54.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1997-11-kinyu97-senior",
+    "key": "finance-crisis-1997",
+    "category": "national",
+    "year": 1997,
+    "month": 11,
+    "ageMin": 60,
+    "ageMax": 69,
+    "sex": "any",
+    "title": "預金は大丈夫か",
+    "text": "11月、銀行や証券会社の破綻が相次いだ。預けているお金は戻ってくるのかと心配になり、銀行の窓口に問い合わせた。金利はほとんどつかなくなっていた。",
+    "effects": {
+      "happiness": -4
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "金融庁 金融危機の経緯資料（長銀・日債銀の国有化）",
+      "url": "https://www.fsa.go.jp/frtc/kenkyu/event/20080404-1/05j.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-1998-restra-adult",
+    "key": "restructuring-1998",
+    "category": "national",
+    "year": 1998,
+    "endYear": 2002,
+    "ageMin": 40,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco"
+      ]
+    },
+    "title": "リストラ",
+    "text": "会社が早期退職の募集を始めた。同期の何人かが手を挙げて辞めていった。中高年の再就職は難しいと聞き、残るべきか辞めるべきか何日も迷った。",
+    "effects": {
+      "happiness": -6,
+      "flags": [
+        "restructuring_era"
+      ]
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "総務省統計局 労働力調査（完全失業率の推移）",
+      "url": "https://www.stat.go.jp/info/kenkyu/roudou/r5/pdf/20siryou2.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2002-unemp-young",
+    "key": "unemployment-2002",
+    "category": "national",
+    "year": 2002,
+    "ageMin": 20,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "失業率が過去最悪",
+    "text": "完全失業率が年平均で5.4%と、統計が始まって以来最も高くなった。正社員の口は少なく、フリーターや派遣で働く同世代が周りに多かった。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "総務省統計局 労働力調査（完全失業率の推移）",
+      "url": "https://www.stat.go.jp/info/kenkyu/roudou/r5/pdf/20siryou2.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2002-izanami-adult",
+    "key": "izanami-2002",
+    "category": "national",
+    "year": 2002,
+    "endYear": 2008,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "実感のない好景気",
+    "text": "2002年から景気の拡大が73か月続き、記録の上では戦後最長になった。だが給料はほとんど上がらず、好景気だと感じることはなかった。",
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "内閣府 年次経済財政報告（平成30年度）第1章",
+      "url": "https://www5.cao.go.jp/j-j/wp/wp-je18/h01-00.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2002-izanami-senior",
+    "key": "izanami-2002",
+    "category": "national",
+    "year": 2002,
+    "endYear": 2008,
+    "ageMin": 60,
+    "ageMax": 74,
+    "sex": "any",
+    "title": "低金利の老後",
+    "text": "景気は回復していると言われたが、預金の利息はほとんどつかなかった。年金と貯金を取り崩す暮らしで、物の値段が上がらないのが救いだった。",
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "内閣府 年次経済財政報告（平成30年度）第1章",
+      "url": "https://www5.cao.go.jp/j-j/wp/wp-je18/h01-00.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2007-kieta-senior",
+    "key": "kieta-nenkin-2007",
+    "category": "national",
+    "year": 2007,
+    "ageMin": 60,
+    "ageMax": 79,
+    "sex": "any",
+    "title": "消えた年金記録",
+    "text": "年金の記録が約5000万件、だれのものか分からなくなっていると発覚した。自分の記録は大丈夫かと、昔の勤め先を思い出しながら確認した。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "高山憲之 年金記録問題（一橋大学経済研究所）",
+      "url": "https://www.ier.hit-u.ac.jp/~takayama/keikyo0807.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2007-kieta-adult",
+    "key": "kieta-nenkin-2007",
+    "category": "national",
+    "year": 2007,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "年金記録の問題",
+    "text": "社会保険庁の年金記録が約5000万件も宙に浮いていると報じられた。将来もらえる年金は本当にあるのかと、職場で話題になった。",
+    "effects": {
+      "happiness": -2
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "高山憲之 年金記録問題（一橋大学経済研究所）",
+      "url": "https://www.ier.hit-u.ac.jp/~takayama/keikyo0807.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2009-lehman-jobhunt",
+    "key": "lehman-2008",
+    "category": "national",
+    "year": 2009,
+    "endYear": 2012,
+    "ageMin": 15,
+    "ageMax": 24,
+    "sex": "any",
+    "title": "内定が取り消された",
+    "text": "前の年の秋のリーマン・ショックで、求人が急に減った。決まっていた内定を取り消された先輩もいた。就職活動は一気に厳しくなった。",
+    "effects": {
+      "happiness": -5
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "ニッセイ基礎研究所 2008年10-12月期GDP速報",
+      "url": "https://www.nli-research.co.jp/files/topics/38069_ext_18_0.pdf?site=nli",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2008-09-lehman-adult",
+    "key": "lehman-2008",
+    "category": "national",
+    "year": 2008,
+    "month": 9,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "リーマン・ショック",
+    "text": "9月、アメリカの証券会社が破綻し、世界中の景気が冷え込んだ。年末には派遣切りが相次ぎ、日比谷公園に年越し派遣村ができた。",
+    "effects": {
+      "happiness": -4
+    },
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "Business Insider Japan 年越し派遣村から10年",
+      "url": "https://www.businessinsider.jp/article/211260/",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2008-09-lehman-senior",
+    "key": "lehman-2008",
+    "category": "national",
+    "year": 2008,
+    "month": 9,
+    "ageMin": 60,
+    "ageMax": 79,
+    "sex": "any",
+    "title": "株価の急落",
+    "text": "9月のリーマン・ショックで株価が急落した。老後のために持っていた株や投資信託の値段が大きく下がり、新聞の株価欄を見るのがつらかった。",
+    "effects": {
+      "happiness": -4
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "ニッセイ基礎研究所 2008年10-12月期GDP速報",
+      "url": "https://www.nli-research.co.jp/files/topics/38069_ext_18_0.pdf?site=nli",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2008-12-hakengiri-adult",
+    "key": "haken-giri-2008",
+    "category": "national",
+    "year": 2008,
+    "month": 12,
+    "ageMin": 20,
+    "ageMax": 49,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco"
+      ]
+    },
+    "title": "派遣切り",
+    "text": "年末、工場の派遣の契約が途中で打ち切られた。寮も出なければならなくなった。東京の日比谷公園では、年越し派遣村が開かれていた。",
+    "effects": {
+      "happiness": -10,
+      "flags": [
+        "haken_giri"
+      ]
+    },
+    "probability": 0.05,
+    "probNote": "目安",
+    "source": {
+      "title": "Business Insider Japan 年越し派遣村から10年",
+      "url": "https://www.businessinsider.jp/article/211260/",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2011-03-tohoku-child",
+    "key": "tohoku-2011",
+    "category": "national",
+    "year": 2011,
+    "month": 3,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "東日本大震災",
+    "text": "3月11日の午後、東北の沖で巨大な地震が起き、大きな津波が来た。テレビの映像を家族で黙って見た。節電で街の明かりが減った。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "秋田魁新報 行方不明者2519人に 東日本大震災15年、警察庁",
+      "url": "https://www.sakigake.jp/news/article/20260309CO0073/",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2011-03-tohoku-youth",
+    "key": "tohoku-2011",
+    "category": "national",
+    "year": 2011,
+    "month": 3,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "東日本大震災",
+    "text": "3月11日、東日本大震災が起きた。死者は1万5900人を超え、2500人余りが行方不明となった。原子力発電所の事故も起き、節電の夏を過ごした。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "秋田魁新報 行方不明者2519人に 東日本大震災15年、警察庁",
+      "url": "https://www.sakigake.jp/news/article/20260309CO0073/",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2011-03-tohoku-adult",
+    "key": "tohoku-2011",
+    "category": "national",
+    "year": 2011,
+    "month": 3,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "東日本大震災",
+    "text": "3月11日、東日本大震災が起きた。首都圏では電車が止まり、歩いて帰る人があふれた。原発事故のあと、食べ物の産地や計画停電の情報を追う日が続いた。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "秋田魁新報 行方不明者2519人に 東日本大震災15年、警察庁",
+      "url": "https://www.sakigake.jp/news/article/20260309CO0073/",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2011-03-tohoku-senior",
+    "key": "tohoku-2011",
+    "category": "national",
+    "year": 2011,
+    "month": 3,
+    "ageMin": 60,
+    "ageMax": 89,
+    "sex": "any",
+    "title": "東日本大震災",
+    "text": "3月11日、東日本大震災が起きた。亡くなった人の多くは高齢者だった。津波の映像を見ながら、自分が逃げられるかどうかを考えた。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "秋田魁新報 行方不明者2519人に 東日本大震災15年、警察庁",
+      "url": "https://www.sakigake.jp/news/article/20260309CO0073/",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2013-abenomics-adult",
+    "key": "abenomics-2013",
+    "category": "national",
+    "year": 2013,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "円安と株高",
+    "text": "政権が代わり、大胆な金融緩和が始まった。円安が進み株価は上がったが、給料はあまり変わらなかった。輸入品の値段はじわじわ上がった。",
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "内閣府 年次経済財政報告（アベノミクス）",
+      "url": "https://www5.cao.go.jp/",
+      "verified": false
+    }
+  },
+  {
+    "id": "national-2019-05-reiwa-any",
+    "key": "reiwa-2019",
+    "category": "national",
+    "year": 2019,
+    "month": 5,
+    "ageMin": 10,
+    "ageMax": 89,
+    "sex": "any",
+    "title": "令和が始まる",
+    "text": "5月1日、元号が令和に変わった。天皇の退位による改元で、街はお祝いの雰囲気だった。10連休になり、旅行に出かける人も多かった。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.9,
+    "probNote": "目安",
+    "source": {
+      "title": "首相官邸 新元号の公表（平成・令和）",
+      "url": "https://www.kantei.go.jp/",
+      "verified": false
+    }
+  },
+  {
+    "id": "national-2020-03-covidschool-youth",
+    "key": "covid-school-2020",
+    "category": "national",
+    "year": 2020,
+    "month": 3,
+    "ageMin": 15,
+    "ageMax": 18,
+    "sex": "any",
+    "title": "一斉休校",
+    "text": "3月、新型コロナウイルスのため、全国の学校が突然休みになった。卒業式は短くなり、友だちとゆっくり話せないまま、長い春休みに入った。",
+    "effects": {
+      "happiness": -5,
+      "relation": -3
+    },
+    "probability": 0.9,
+    "probNote": "目安",
+    "source": {
+      "title": "文部科学省 新型コロナウイルス感染症対策のための臨時休業",
+      "url": "https://www.mext.go.jp/",
+      "verified": false
+    }
+  },
+  {
+    "id": "national-2020-03-covidschool-child",
+    "key": "covid-school-2020",
+    "category": "national",
+    "year": 2020,
+    "month": 3,
+    "ageMin": 6,
+    "ageMax": 14,
+    "sex": "any",
+    "title": "学校が休みになった",
+    "text": "3月から学校が休みになり、家で過ごす日が続いた。外で遊ぶのも控えるように言われた。6月にやっと学校が始まると、みんなマスクをしていた。",
+    "effects": {
+      "happiness": -4,
+      "relation": -2
+    },
+    "probability": 0.9,
+    "probNote": "目安",
+    "source": {
+      "title": "文部科学省 新型コロナウイルス感染症対策のための臨時休業",
+      "url": "https://www.mext.go.jp/",
+      "verified": false
+    }
+  },
+  {
+    "id": "national-2020-04-covid-youth",
+    "key": "covid-2020",
+    "category": "national",
+    "year": 2020,
+    "month": 4,
+    "ageMin": 19,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "コロナ禍の始まり",
+    "text": "4月、緊急事態宣言が出た。大学の授業はオンラインになり、アルバイトのシフトは減った。就職活動の説明会や面接も、すべて画面越しになった。",
+    "effects": {
+      "happiness": -5,
+      "relation": -3
+    },
+    "probability": 0.9,
+    "probNote": "目安",
+    "source": {
+      "title": "訪日ラボ 緊急事態宣言 全都道府県に拡大・全国民一律10万円",
+      "url": "https://honichi.com/news/2020/04/16/kinkyuujitaisengen",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2020-04-covid-adult",
+    "key": "covid-2020",
+    "category": "national",
+    "year": 2020,
+    "month": 4,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "緊急事態宣言",
+    "text": "4月7日に7都府県へ、16日には全国へ緊急事態宣言が広がった。在宅勤務が始まった職場もあれば、休業で収入が減った店もあった。",
+    "effects": {
+      "happiness": -4
+    },
+    "probability": 0.9,
+    "probNote": "目安",
+    "source": {
+      "title": "訪日ラボ 緊急事態宣言 全都道府県に拡大・全国民一律10万円",
+      "url": "https://honichi.com/news/2020/04/16/kinkyuujitaisengen",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2020-04-covid-senior",
+    "key": "covid-2020",
+    "category": "national",
+    "year": 2020,
+    "month": 4,
+    "ageMin": 60,
+    "ageMax": 95,
+    "sex": "any",
+    "title": "外出を控える日々",
+    "text": "新型コロナは高齢者ほど重くなると言われ、外出を控えた。施設や病院では家族の面会ができなくなり、孫にも会えない日が続いた。",
+    "effects": {
+      "happiness": -5,
+      "relation": -4
+    },
+    "probability": 0.9,
+    "probNote": "目安",
+    "source": {
+      "title": "訪日ラボ 緊急事態宣言 全都道府県に拡大・全国民一律10万円",
+      "url": "https://honichi.com/news/2020/04/16/kinkyuujitaisengen",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2020-04-kyufu-any",
+    "key": "covid-kyufu-2020",
+    "category": "national",
+    "year": 2020,
+    "month": 4,
+    "ageMin": 15,
+    "ageMax": 95,
+    "sex": "any",
+    "title": "一律10万円の給付",
+    "text": "4月、国民一人あたり10万円を配ることが決まった。所得の制限はなく、申請書が郵便で届いた。生活費の足しにした人も、貯金に回した人もいた。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.95,
+    "probNote": "目安",
+    "source": {
+      "title": "訪日ラボ 緊急事態宣言 全都道府県に拡大・全国民一律10万円",
+      "url": "https://honichi.com/news/2020/04/16/kinkyuujitaisengen",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2021-07-tokyo2021-youth",
+    "key": "tokyo-olympic-2021",
+    "category": "national",
+    "year": 2021,
+    "month": 7,
+    "ageMin": 16,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "無観客の東京五輪",
+    "text": "1年延びた東京オリンピックが7月23日に開幕した。緊急事態宣言の中、会場に観客はいなかった。結果は画面とスマホで追った。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "Business Insider Japan 東京五輪 無観客開催",
+      "url": "https://www.businessinsider.jp/article/239215/",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2021-07-tokyo2021-adult",
+    "key": "tokyo-olympic-2021",
+    "category": "national",
+    "year": 2021,
+    "month": 7,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "二度目の東京五輪",
+    "text": "7月、東京オリンピックが無観客で開かれた。開くべきか延期すべきか意見が割れたまま始まった。日本選手のメダルの知らせが毎日のように続いた。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "Business Insider Japan 東京五輪 無観客開催",
+      "url": "https://www.businessinsider.jp/article/239215/",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2021-07-tokyo2021-senior",
+    "key": "tokyo-olympic-2021",
+    "category": "national",
+    "year": 2021,
+    "month": 7,
+    "ageMin": 76,
+    "ageMax": 91,
+    "sex": "any",
+    "title": "57年ぶりの東京五輪",
+    "text": "東京でまたオリンピックが開かれた。若いころに見た1964年の大会を思い出したが、今度は観客のいない会場をテレビで見ることになった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "Business Insider Japan 東京五輪 無観客開催",
+      "url": "https://www.businessinsider.jp/article/239215/",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2023-05-covid5-any",
+    "key": "covid5-2023",
+    "category": "national",
+    "year": 2023,
+    "month": 5,
+    "ageMin": 18,
+    "ageMax": 95,
+    "sex": "any",
+    "title": "コロナが5類に",
+    "text": "5月8日、新型コロナは季節性インフルエンザと同じ5類の扱いになった。マスクを外す人が増え、止まっていた行事や旅行が少しずつ戻ってきた。",
+    "effects": {
+      "happiness": 2,
+      "relation": 2
+    },
+    "probability": 0.9,
+    "probNote": "目安",
+    "source": {
+      "title": "厚生労働省 広報誌 新型コロナの5類感染症への移行",
+      "url": "https://www.mhlw.go.jp/stf/houdou_kouhou/kouhou_shuppan/magazine/202305_00001.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2022-inflation-youth",
+    "key": "inflation-2022",
+    "category": "national",
+    "year": 2022,
+    "endYear": 2025,
+    "ageMin": 17,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "物価が上がる",
+    "text": "電気代や食べ物の値段が次々と上がった。生まれてからずっと物の値段は変わらないものだったので、値上げのニュースが毎月続くのに戸惑った。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "時事通信 23年の消費者物価、3.1%上昇 41年ぶり伸び",
+      "url": "https://sp.m.jiji.com/english/show/30786",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2022-inflation-adult",
+    "key": "inflation-2022",
+    "category": "national",
+    "year": 2022,
+    "endYear": 2025,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "41年ぶりの物価高",
+    "text": "物価の上昇率は2022年に2.3%、2023年は3.1%と41年ぶりの高さになった。給料の上がり方は物価に追いつかず、家計のやりくりが苦しくなった。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "時事通信 23年の消費者物価、3.1%上昇 41年ぶり伸び",
+      "url": "https://sp.m.jiji.com/english/show/30786",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2022-inflation-senior",
+    "key": "inflation-2022",
+    "category": "national",
+    "year": 2022,
+    "endYear": 2025,
+    "ageMin": 60,
+    "ageMax": 95,
+    "sex": "any",
+    "title": "年金と物価高",
+    "text": "スーパーの値札が毎月のように書き換えられた。年金も少しは増えたが、物価の上がり方には届かなかった。若いころの狂乱物価を思い出した。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "時事通信 23年の消費者物価、3.1%上昇 41年ぶり伸び",
+      "url": "https://sp.m.jiji.com/english/show/30786",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2024-02-nikkei2024-adult",
+    "key": "nikkei-2024",
+    "category": "national",
+    "year": 2024,
+    "month": 2,
+    "ageMin": 30,
+    "ageMax": 64,
+    "sex": "any",
+    "title": "株価が34年ぶりに最高値",
+    "text": "2月22日、日経平均がバブル期の最高値を34年ぶりに上回った。新NISAで投資を始めた人も多かったが、給料の実感とはかけ離れていた。",
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "日経平均プロフィル 日経平均70周年",
+      "url": "https://indexes.nikkei.co.jp/atoz/2021/02/70thanniv4.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "national-2024-02-nikkei2024-senior",
+    "key": "nikkei-2024",
+    "category": "national",
+    "year": 2024,
+    "month": 2,
+    "ageMin": 79,
+    "ageMax": 94,
+    "sex": "any",
+    "title": "バブル超えの株価",
+    "text": "株価がバブル期の最高値を超えたと報じられた。1989年の大納会のころを覚えている身には、34年という長さがそのまま自分の後半生と重なった。",
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "日経平均プロフィル 日経平均70周年",
+      "url": "https://indexes.nikkei.co.jp/atoz/2021/02/70thanniv4.html",
+      "verified": true
+    }
+  }
+]

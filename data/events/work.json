@@ -1,0 +1,1367 @@
+[
+  {
+    "id": "work-1946-coal-miner-youth",
+    "key": "coal-miner",
+    "category": "work",
+    "year": 1946,
+    "endYear": 1957,
+    "prefs": [
+      1,
+      7,
+      8,
+      35,
+      40,
+      41,
+      42
+    ],
+    "ageMin": 15,
+    "ageMax": 29,
+    "sex": "male",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco"
+      ],
+      "notFlags": [
+        "coal_miner"
+      ]
+    },
+    "title": "炭鉱で働いた",
+    "text": "炭鉱に入った。石炭は黒いダイヤと呼ばれ、給料は町のどこよりもよかった。坑内は暗く暑く、上がると顔まで真っ黒だった。",
+    "effects": {
+      "money": 30000,
+      "health": -2,
+      "flags": [
+        "coal_miner"
+      ]
+    },
+    "probability": 0.15,
+    "probNote": "産炭県の勤め人の男性。割合は目安",
+    "source": {
+      "title": "清水拓 論文（石炭産業はピーク時45万人、2002年に太平洋炭砿が閉山）",
+      "url": "https://waseda.repo.nii.ac.jp/record/42784/files/RILAS_6_19.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-1946-coal-miner-adult",
+    "key": "coal-miner",
+    "category": "work",
+    "year": 1946,
+    "endYear": 1957,
+    "prefs": [
+      1,
+      7,
+      8,
+      35,
+      40,
+      41,
+      42
+    ],
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "male",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco"
+      ],
+      "notFlags": [
+        "coal_miner"
+      ]
+    },
+    "title": "炭鉱の暮らし",
+    "text": "炭住と呼ばれる長屋に住み、坑内で働いた。会社の風呂も病院も映画館もあった。落盤の知らせのサイレンが鳴るたび、家族は走った。",
+    "effects": {
+      "money": 30000,
+      "health": -2,
+      "flags": [
+        "coal_miner"
+      ]
+    },
+    "probability": 0.1,
+    "probNote": "目安",
+    "source": {
+      "title": "清水拓 論文（石炭産業はピーク時45万人、2002年に太平洋炭砿が閉山）",
+      "url": "https://waseda.repo.nii.ac.jp/record/42784/files/RILAS_6_19.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-1958-coal-closure-adult",
+    "key": "coal-closure",
+    "category": "work",
+    "year": 1958,
+    "endYear": 1975,
+    "prefs": [
+      1,
+      7,
+      8,
+      35,
+      40,
+      41,
+      42
+    ],
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "coal_miner"
+      ]
+    },
+    "title": "閉山",
+    "text": "石油の時代になり、勤めていた炭鉱の閉山が決まった。退職金を手に、仲間たちは都会の工場や別の炭鉱へ散っていった。",
+    "effects": {
+      "happiness": -10,
+      "money": -50000,
+      "flags": [
+        "lost_job"
+      ]
+    },
+    "probability": 0.12,
+    "probNote": "1955年の合理化法以降、閉山が相次いだ。年率は目安",
+    "source": {
+      "title": "立教大学 論文（石炭鉱業合理化臨時措置法 1955年、スクラップ・アンド・ビルド）",
+      "url": "https://economics.rikkyo.ac.jp/research/paper/pudcar00000002ed-att/p001-022_77-3.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-1958-coal-closure-youth",
+    "key": "coal-closure",
+    "category": "work",
+    "year": 1958,
+    "endYear": 1975,
+    "prefs": [
+      1,
+      7,
+      8,
+      35,
+      40,
+      41,
+      42
+    ],
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "coal_miner"
+      ]
+    },
+    "title": "閉山",
+    "text": "炭鉱の閉山が決まり、若い者から先に職を探せと言われた。職業安定所の紹介で、遠く離れた町の工場へ移ることになった。",
+    "effects": {
+      "happiness": -8,
+      "flags": [
+        "lost_job"
+      ]
+    },
+    "probability": 0.12,
+    "probNote": "目安",
+    "source": {
+      "title": "立教大学 論文（石炭鉱業合理化臨時措置法 1955年、スクラップ・アンド・ビルド）",
+      "url": "https://economics.rikkyo.ac.jp/research/paper/pudcar00000002ed-att/p001-022_77-3.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-1958-coal-closure-child",
+    "key": "coal-closure",
+    "category": "work",
+    "year": 1958,
+    "endYear": 1975,
+    "prefs": [
+      1,
+      7,
+      8,
+      35,
+      40,
+      41,
+      42
+    ],
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "炭鉱町を出た",
+    "text": "父の勤める炭鉱が閉山になった。級友が一人、また一人と転校していき、やがて自分の家も町を出た。学校は空き教室ばかりになった。",
+    "effects": {
+      "happiness": -6,
+      "relation": -3
+    },
+    "probability": 0.05,
+    "probNote": "産炭県の子ども全体に対する目安",
+    "source": {
+      "title": "立教大学 論文（石炭鉱業合理化臨時措置法 1955年、スクラップ・アンド・ビルド）",
+      "url": "https://economics.rikkyo.ac.jp/research/paper/pudcar00000002ed-att/p001-022_77-3.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-1959-coal-closure-adult-miike",
+    "key": "coal-closure",
+    "category": "work",
+    "year": 1959,
+    "endYear": 1960,
+    "prefs": [
+      40,
+      43
+    ],
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "coal_miner"
+      ]
+    },
+    "title": "三池の争議",
+    "text": "三池炭鉱で大量の人員整理をめぐる争議が起きた。組合は二つに割れ、昨日までの仲間が敵味方になった。長いストライキが続いた。",
+    "effects": {
+      "happiness": -8,
+      "relation": -5
+    },
+    "probability": 0.4,
+    "probNote": "三池炭鉱は福岡県大牟田・熊本県荒尾。目安",
+    "source": {
+      "title": "清水拓 論文（石炭産業はピーク時45万人、2002年に太平洋炭砿が閉山）",
+      "url": "https://waseda.repo.nii.ac.jp/record/42784/files/RILAS_6_19.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-2002-01-coal-closure-senior-last",
+    "key": "coal-closure",
+    "category": "work",
+    "year": 2002,
+    "month": 1,
+    "ageMin": 60,
+    "ageMax": 100,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "coal_miner"
+      ]
+    },
+    "title": "最後の炭鉱",
+    "text": "最後まで残っていた釧路の炭鉱も閉山したと、ニュースで知った。若いころ働いた坑道の暗さと、仲間の顔を思い出した。",
+    "effects": {
+      "happiness": -2
+    },
+    "probability": 0.8,
+    "probNote": "元炭鉱員がニュースに触れる確率",
+    "source": {
+      "title": "清水拓 論文（石炭産業はピーク時45万人、2002年に太平洋炭砿が閉山）",
+      "url": "https://waseda.repo.nii.ac.jp/record/42784/files/RILAS_6_19.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-1950-telephone-operator-youth",
+    "key": "telephone-operator",
+    "category": "work",
+    "year": 1950,
+    "endYear": 1970,
+    "ageMin": 15,
+    "ageMax": 25,
+    "sex": "female",
+    "conditions": {
+      "job": [
+        "public"
+      ],
+      "notFlags": [
+        "tel_operator"
+      ]
+    },
+    "title": "電話交換手",
+    "text": "電話局に交換手として勤めた。ヘッドホンをつけ、ランプがつくたびにプラグを差しかえて回線をつないだ。市外通話は何時間も待たせた。",
+    "effects": {
+      "money": 10000,
+      "flags": [
+        "tel_operator"
+      ]
+    },
+    "probability": 0.04,
+    "probNote": "目安",
+    "source": {
+      "title": "総務省 令和4年版情報通信白書（1979年に全国自動即時化を達成）",
+      "url": "https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/r04/html/nd111200.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-1971-telephone-operator-adult",
+    "key": "telephone-operator",
+    "category": "work",
+    "year": 1971,
+    "endYear": 1979,
+    "ageMin": 25,
+    "ageMax": 59,
+    "sex": "female",
+    "conditions": {
+      "flags": [
+        "tel_operator"
+      ]
+    },
+    "title": "交換台がなくなる",
+    "text": "ダイヤルで市外にもかけられるようになり、交換台は次々に閉じられた。1979年に全国が自動になり、別の部署へ移った。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.15,
+    "probNote": "目安",
+    "source": {
+      "title": "総務省 令和4年版情報通信白書（1979年に全国自動即時化を達成）",
+      "url": "https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/r04/html/nd111200.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-1950-typist-youth",
+    "key": "typist",
+    "category": "work",
+    "year": 1950,
+    "endYear": 1980,
+    "ageMin": 17,
+    "ageMax": 25,
+    "sex": "female",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco"
+      ],
+      "notFlags": [
+        "typist"
+      ]
+    },
+    "title": "和文タイピスト",
+    "text": "タイピストとして会社に入った。二千を超える活字の並んだ盤から一字ずつ拾って打つ。速く正確に打てる人は、男より給料がよかった。",
+    "effects": {
+      "knowledge": 1,
+      "flags": [
+        "typist"
+      ]
+    },
+    "probability": 0.05,
+    "probNote": "目安。給料の比較は未確認",
+    "source": {
+      "title": "（未確認）和文タイプライターとタイピストの職業",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "work-1985-typist-adult",
+    "key": "typist",
+    "category": "work",
+    "year": 1985,
+    "endYear": 1992,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "typist"
+      ]
+    },
+    "title": "ワープロが来た",
+    "text": "職場にワープロが入った。最初の機械は一台数百万円もしたというが、今では十数万円だという。タイプ室はまもなくなくなった。",
+    "effects": {
+      "happiness": -3,
+      "knowledge": 2
+    },
+    "probability": 0.3,
+    "probNote": "1985年に平均単価16.4万円まで下がったとの記述あり。目安",
+    "source": {
+      "title": "現代ビジネス 初の日本語ワープロ完成（1978年 東芝JW-10、630万円）",
+      "url": "https://gendai.media/articles/-/57588",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-1960-keypuncher-youth",
+    "key": "keypuncher",
+    "category": "work",
+    "year": 1960,
+    "endYear": 1980,
+    "ageMin": 17,
+    "ageMax": 25,
+    "sex": "female",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco"
+      ]
+    },
+    "title": "キーパンチャー",
+    "text": "コンピューターに入れるデータを、カードに穴をあけて打ちこむ仕事に就いた。一日中同じ動きを続け、肩と腕の痛みが取れなくなった。",
+    "effects": {
+      "health": -4,
+      "money": 10000
+    },
+    "probability": 0.04,
+    "probNote": "目安",
+    "source": {
+      "title": "医学書院 1979年の論文（キーパンチャーの頸肩腕障害、1969年に労働省通達）",
+      "url": "https://webview.isho.jp/journal/detail/abs/10.11477/mf.1402215979",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-1950-elevator-girl-youth",
+    "key": "elevator-girl",
+    "category": "work",
+    "year": 1950,
+    "endYear": 1990,
+    "ageMin": 18,
+    "ageMax": 25,
+    "sex": "female",
+    "conditions": {
+      "job": [
+        "bigco"
+      ]
+    },
+    "title": "エレベーターガール",
+    "text": "デパートのエレベーターガールになった。白い手袋で、上へまいります、と一日に何百回も言った。制服姿は女の子のあこがれだった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.02,
+    "probNote": "目安",
+    "source": {
+      "title": "GO TOKYO 松坂屋上野店（日本初のエレベーターガールを導入、1929年）",
+      "url": "https://www.gotokyo.org/jp/spot/611/index.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-1991-elevator-girl-youth",
+    "key": "elevator-girl",
+    "category": "work",
+    "year": 1991,
+    "endYear": 2000,
+    "ageMin": 18,
+    "ageMax": 29,
+    "sex": "female",
+    "conditions": {
+      "job": [
+        "bigco"
+      ]
+    },
+    "title": "エレベーターが自動に",
+    "text": "デパートのエレベーターが自動運転に変わり、エレベーターガールの募集はなくなった。案内係として売り場に回された。",
+    "effects": {
+      "happiness": -2
+    },
+    "probability": 0.02,
+    "probNote": "目安",
+    "source": {
+      "title": "文春オンライン エレベーターガールの歴史（平成不況でほとんど自動運転に）",
+      "url": "https://bunshun.jp/articles/-/45201?page=7",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-1955-bus-guide-youth",
+    "key": "bus-guide",
+    "category": "work",
+    "year": 1955,
+    "endYear": 1975,
+    "ageMin": 16,
+    "ageMax": 22,
+    "sex": "female",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco"
+      ]
+    },
+    "title": "バスガイド",
+    "text": "観光バスのガイドになった。名所の由来を覚え、車内で歌も歌った。修学旅行の子どもたちに手を振られて、誇らしかった。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.03,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）バスガイドの職業（高度成長期）",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "work-1963-ol-youth",
+    "key": "ol",
+    "category": "work",
+    "year": 1963,
+    "endYear": 1985,
+    "ageMin": 18,
+    "ageMax": 29,
+    "sex": "female",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco",
+        "public"
+      ]
+    },
+    "title": "OLと呼ばれた",
+    "text": "会社で働く女性は、BGに代わってOLと呼ばれるようになった。仕事はお茶くみとコピーと伝票整理。男性社員の補助が役目だった。",
+    "effects": {
+      "happiness": 0
+    },
+    "probability": 0.4,
+    "probNote": "公募の年を1964年とする資料もある。目安",
+    "source": {
+      "title": "bestcalendar OLの日（1963年『女性自身』の公募で誕生）",
+      "url": "https://bestcalendar.jp/articles/4902",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-1989-sekuhara-youth",
+    "key": "sekuhara",
+    "category": "work",
+    "year": 1989,
+    "endYear": 1990,
+    "ageMin": 18,
+    "ageMax": 29,
+    "sex": "female",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco",
+        "public"
+      ]
+    },
+    "title": "セクハラという言葉",
+    "text": "セクシャル・ハラスメントという言葉が広まった。上司の冗談に笑ってみせてきたことに、名前があったのだと初めて知った。",
+    "effects": {
+      "knowledge": 2
+    },
+    "probability": 0.4,
+    "probNote": "1989年 新語部門金賞『セクシャル・ハラスメント』",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第6回（1989年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00006",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-1955-kin-no-tamago-youth",
+    "key": "kin-no-tamago",
+    "category": "work",
+    "year": 1955,
+    "endYear": 1970,
+    "ageMin": 15,
+    "ageMax": 16,
+    "sex": "any",
+    "conditions": {
+      "education": [
+        "middle"
+      ],
+      "job": [
+        "smallco",
+        "bigco"
+      ],
+      "notFlags": [
+        "kin_no_tamago"
+      ]
+    },
+    "title": "金の卵",
+    "text": "中学を出て、集団就職で都会の町工場に入った。人手不足で、中卒の若者は金の卵と呼ばれた。住み込みで、朝から晩まで働いた。",
+    "effects": {
+      "happiness": -2,
+      "money": 5000,
+      "flags": [
+        "kin_no_tamago",
+        "moved_to_city"
+      ]
+    },
+    "probability": 0.2,
+    "probNote": "中卒で就職した人のうち、県外の都市へ出た割合の目安",
+    "source": {
+      "title": "三井住友トラスト不動産 このまちアーカイブス 上野（1964年に『金の卵』が流行語）",
+      "url": "https://smtrc.jp/town-archives/city/ueno/p03.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-1955-kin-no-tamago-adult",
+    "key": "kin-no-tamago",
+    "category": "work",
+    "year": 1955,
+    "endYear": 1970,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "self",
+        "smallco"
+      ]
+    },
+    "title": "金の卵を雇う",
+    "text": "人手が足りず、地方の中学へ求人に回った。春になると、集団就職の子どもたちが上野駅に着いた。親代わりのつもりで面倒をみた。",
+    "effects": {
+      "money": 20000
+    },
+    "probability": 0.15,
+    "probNote": "目安",
+    "source": {
+      "title": "三井住友トラスト不動産 このまちアーカイブス 上野",
+      "url": "https://smtrc.jp/town-archives/city/ueno/p03.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-1985-04-minei-ntt-adult",
+    "key": "minei-ntt",
+    "category": "work",
+    "year": 1985,
+    "month": 4,
+    "ageMin": 25,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "public"
+      ]
+    },
+    "title": "電電公社がNTTに",
+    "text": "勤めていた電電公社が民営化され、NTTになった。公務員に近い身分から会社員になった。営業成績を問われるようになり、戸惑った。",
+    "effects": {
+      "happiness": -1
+    },
+    "probability": 0.05,
+    "probNote": "公務の勤め人のうち電電公社・専売公社の職員の割合として目安",
+    "source": {
+      "title": "楽天証券 トウシル（三公社民営化：電電公社・専売公社 1985年、国鉄 1987年）",
+      "url": "https://media.rakuten-sec.net/articles/-/53023",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-1987-04-minei-jnr-adult",
+    "key": "minei-jnr",
+    "category": "work",
+    "year": 1987,
+    "month": 4,
+    "ageMin": 25,
+    "ageMax": 59,
+    "sex": "male",
+    "conditions": {
+      "job": [
+        "public"
+      ]
+    },
+    "title": "国鉄の分割民営化",
+    "text": "国鉄が分割民営化されJRになった。新会社に採用されなかった仲間もいた。最後の日、駅で同僚と制服の帽子を取って頭を下げた。",
+    "effects": {
+      "happiness": -4
+    },
+    "probability": 0.06,
+    "probNote": "公務の勤め人のうち国鉄職員の割合として目安",
+    "source": {
+      "title": "楽天証券 トウシル（三公社民営化：電電公社・専売公社 1985年、国鉄 1987年）",
+      "url": "https://media.rakuten-sec.net/articles/-/53023",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-1987-04-minei-jnr-youth",
+    "key": "minei-jnr",
+    "category": "work",
+    "year": 1987,
+    "month": 4,
+    "ageMin": 18,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "public",
+        "bigco"
+      ]
+    },
+    "title": "JRに入った",
+    "text": "国鉄がJRに変わった年に入社した。先輩たちは民営化の騒ぎで疲れていたが、駅では新しい制服と愛想のよい接客が求められた。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.04,
+    "probNote": "目安",
+    "source": {
+      "title": "楽天証券 トウシル（三公社民営化：電電公社・専売公社 1985年、国鉄 1987年）",
+      "url": "https://media.rakuten-sec.net/articles/-/53023",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-1989-moretsu-adult",
+    "key": "moretsu",
+    "category": "work",
+    "year": 1989,
+    "endYear": 1991,
+    "ageMin": 25,
+    "ageMax": 55,
+    "sex": "male",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco"
+      ]
+    },
+    "title": "24時間タタカエマスカ",
+    "text": "栄養ドリンクのCMが、24時間戦えますかと歌っていた。終電で帰り、朝は満員電車に揺られた。笑えない冗談だと思った。",
+    "effects": {
+      "health": -2
+    },
+    "probability": 0.4,
+    "probNote": "1989年 流行語部門銅賞『24時間タタカエマスカ』",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第6回（1989年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00006",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-1986-haken-youth",
+    "key": "haken",
+    "category": "work",
+    "year": 1986,
+    "endYear": 1999,
+    "ageMin": 20,
+    "ageMax": 29,
+    "sex": "female",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco"
+      ]
+    },
+    "title": "派遣社員として働く",
+    "text": "派遣会社に登録し、商社でワープロを打つ仕事に就いた。正社員より時給は高く、残業もなかった。ただ契約が切れれば終わりだった。",
+    "effects": {
+      "money": 10000,
+      "flags": [
+        "haken"
+      ]
+    },
+    "probability": 0.06,
+    "probNote": "施行日と対象業務は今回確かめていない。目安",
+    "source": {
+      "title": "（未確認）労働者派遣法 1986年施行（対象業務を限定）",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "work-2004-haken-youth-2004",
+    "key": "haken",
+    "category": "work",
+    "year": 2004,
+    "endYear": 2008,
+    "ageMin": 18,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco"
+      ],
+      "education": [
+        "middle",
+        "high"
+      ]
+    },
+    "title": "派遣で工場へ",
+    "text": "工場で派遣社員として働いた。正社員と同じラインに立っても、給料も保障も違った。三か月ごとの契約更新が近づくと眠れなかった。",
+    "effects": {
+      "happiness": -3,
+      "flags": [
+        "haken"
+      ]
+    },
+    "probability": 0.08,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）製造業への労働者派遣の解禁（2004年）",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "work-1987-freeter-youth",
+    "key": "freeter",
+    "category": "work",
+    "year": 1987,
+    "endYear": 1992,
+    "ageMin": 18,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "none",
+        "smallco"
+      ],
+      "notFlags": [
+        "freeter"
+      ]
+    },
+    "title": "フリーター",
+    "text": "就職せず、アルバイトをかけもちして暮らした。フリーターという言葉ができ、夢を追う自由な生き方だと言われた。景気はよかった。",
+    "effects": {
+      "happiness": 2,
+      "flags": [
+        "freeter"
+      ]
+    },
+    "probability": 0.08,
+    "probNote": "目安",
+    "source": {
+      "title": "拓殖大学 論集（『フリーター』は1987年に『フロム・エー』編集長が使い始めた）",
+      "url": "https://keiho.repo.nii.ac.jp/record/1955/files/daigakuronshu_80_02.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-1993-freeter-youth-1993",
+    "key": "freeter",
+    "category": "work",
+    "year": 1993,
+    "endYear": 2005,
+    "ageMin": 18,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "none",
+        "smallco"
+      ],
+      "notFlags": [
+        "freeter"
+      ]
+    },
+    "title": "正社員になれない",
+    "text": "就職先が見つからず、アルバイトで食いつないだ。フリーターと呼ばれたが、自分で選んだわけではなかった。履歴書を何十通も書いた。",
+    "effects": {
+      "happiness": -5,
+      "flags": [
+        "freeter"
+      ]
+    },
+    "probability": 0.15,
+    "probNote": "目安",
+    "source": {
+      "title": "拓殖大学 論集（フリーターの意味の変化）",
+      "url": "https://keiho.repo.nii.ac.jp/record/1955/files/daigakuronshu_80_02.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-1999-12-y2k-adult",
+    "key": "y2k",
+    "category": "work",
+    "year": 1999,
+    "month": 12,
+    "ageMin": 25,
+    "ageMax": 55,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "bigco",
+        "public"
+      ]
+    },
+    "title": "2000年問題",
+    "text": "コンピューターが西暦2000年を正しく扱えないかもしれないという2000年問題で、大みそかは会社で待機した。年が明けても何も起きなかった。",
+    "effects": {
+      "happiness": -1
+    },
+    "probability": 0.15,
+    "probNote": "1999年トップテン『西暦2000年問題』。目安",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第16回（1999年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00016",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-1996-it-engineer-youth",
+    "key": "it-engineer",
+    "category": "work",
+    "year": 1996,
+    "endYear": 2010,
+    "ageMin": 22,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "education": [
+        "univ"
+      ],
+      "job": [
+        "smallco",
+        "bigco"
+      ]
+    },
+    "title": "システムエンジニア",
+    "text": "大学を出て、システム会社にエンジニアとして入った。インターネットの仕事は次々に舞いこんだが、徹夜で納期に間に合わせる日が続いた。",
+    "effects": {
+      "money": 20000,
+      "health": -2,
+      "knowledge": 3
+    },
+    "probability": 0.06,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）ITエンジニアの増加（1990年代後半〜）",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "work-2013-black-kigyou-youth",
+    "key": "black-kigyou",
+    "category": "work",
+    "year": 2013,
+    "endYear": 2014,
+    "ageMin": 22,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco"
+      ]
+    },
+    "title": "ブラック企業",
+    "text": "ブラック企業という言葉が広まった。毎月百時間近い残業が当たり前だった自分の職場がまさにそうだと、ようやく気づいた。",
+    "effects": {
+      "knowledge": 1,
+      "happiness": -1
+    },
+    "probability": 0.15,
+    "probNote": "目安",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第30回（2013年トップテン『ブラック企業』）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00030",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-2017-premium-friday-adult",
+    "key": "premium-friday",
+    "category": "work",
+    "year": 2017,
+    "ageMin": 25,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco",
+        "public"
+      ]
+    },
+    "title": "プレミアムフライデー",
+    "text": "月末の金曜は早く帰ろう、というプレミアムフライデーが始まった。会社のポスターは目にしたが、実際に早く帰れたのは一度きりだった。",
+    "effects": {
+      "happiness": 0
+    },
+    "probability": 0.3,
+    "probNote": "2017年トップテン『プレミアムフライデー』",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第34回（2017年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00034",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-2011-03-kitaku-nanmin-adult",
+    "key": "kitaku-nanmin",
+    "category": "work",
+    "year": 2011,
+    "month": 3,
+    "prefs": [
+      11,
+      12,
+      13,
+      14
+    ],
+    "ageMin": 25,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco",
+        "public"
+      ]
+    },
+    "title": "歩いて帰った",
+    "text": "震災の日、首都圏の電車がすべて止まった。会社から何時間も歩いて家に帰った。家族と連絡がついたのは夜遅くだった。",
+    "effects": {
+      "health": -1,
+      "happiness": -3
+    },
+    "probability": 0.5,
+    "probNote": "2011年トップテン『帰宅難民』。首都圏の勤め人の目安",
+    "heavy": true,
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第28回（2011年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00028",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-2000-kaigo-youth",
+    "key": "kaigo",
+    "category": "work",
+    "year": 2000,
+    "endYear": 2025,
+    "ageMin": 18,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco",
+        "none"
+      ],
+      "notFlags": [
+        "kaigo_worker"
+      ]
+    },
+    "title": "介護の仕事に就いた",
+    "text": "介護保険が始まり、介護の仕事の求人が急に増えた。資格を取って施設で働き始めた。感謝される仕事だが、給料は安く夜勤はきつかった。",
+    "effects": {
+      "happiness": 1,
+      "health": -2,
+      "flags": [
+        "kaigo_worker"
+      ]
+    },
+    "probability": 0.04,
+    "probNote": "目安",
+    "source": {
+      "title": "厚生労働省 資料（介護保険制度創設以後、介護職員数は倍以上。2007年 約124.2万人）",
+      "url": "https://www.mhlw.go.jp/shingi/2010/03/dl/s0329-7c_0010.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-2000-kaigo-adult",
+    "key": "kaigo",
+    "category": "work",
+    "year": 2000,
+    "endYear": 2025,
+    "ageMin": 35,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "none",
+        "smallco"
+      ],
+      "notFlags": [
+        "kaigo_worker"
+      ]
+    },
+    "title": "介護の仕事に転職",
+    "text": "子育てが一段落し、ヘルパーの資格を取って訪問介護の仕事を始めた。お年寄りの家を自転車で回り、食事や入浴を手伝った。",
+    "effects": {
+      "happiness": 2,
+      "money": 5000,
+      "flags": [
+        "kaigo_worker"
+      ]
+    },
+    "probability": 0.04,
+    "probNote": "目安",
+    "source": {
+      "title": "厚生労働省 資料（介護保険制度創設以後、介護職員数は倍以上。2007年 約124.2万人）",
+      "url": "https://www.mhlw.go.jp/shingi/2010/03/dl/s0329-7c_0010.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-1988-kaigo-youth-1988",
+    "key": "kaigo",
+    "category": "work",
+    "year": 1988,
+    "endYear": 1999,
+    "ageMin": 18,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "kaigo_worker"
+      ]
+    },
+    "title": "介護福祉士",
+    "text": "介護福祉士という国家資格ができた。家族が担うものとされてきた介護が、仕事として認められ始めた。専門学校に新しい学科ができた。",
+    "effects": {
+      "knowledge": 1,
+      "flags": [
+        "kaigo_worker"
+      ]
+    },
+    "probability": 0.02,
+    "probNote": "登録者は1989年2,631人→1998年13万1,636人。目安",
+    "source": {
+      "title": "厚生労働省（社会福祉士及び介護福祉士法 1987年成立、1988年施行）",
+      "url": "https://www.mhlw.go.jp/file/05-Shingikai-12601000-Seisakutoukatsukan-Sanjikanshitsu_Shakaihoshoutantou/0000075028.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-2020-04-telework-youth",
+    "key": "telework",
+    "category": "work",
+    "year": 2020,
+    "endYear": 2021,
+    "month": 4,
+    "ageMin": 22,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "bigco",
+        "smallco"
+      ]
+    },
+    "title": "在宅勤務",
+    "text": "感染症の流行で、会社から在宅勤務を命じられた。ワンルームの部屋で画面越しの会議に出た。通勤がなくなった代わりに、誰とも話さない日が増えた。",
+    "effects": {
+      "happiness": 0,
+      "relation": -2
+    },
+    "probability": 0.28,
+    "probNote": "全国の正社員27.9%（東京49.1%）",
+    "source": {
+      "title": "Web担当者Forum パーソル総合研究所調査（2020年4月 テレワーク実施率 全国27.9%、東京49.1%）",
+      "url": "https://webtan.impress.co.jp/n/2020/04/23/35860",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-2020-04-telework-adult",
+    "key": "telework",
+    "category": "work",
+    "year": 2020,
+    "endYear": 2021,
+    "month": 4,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "bigco",
+        "smallco"
+      ]
+    },
+    "title": "在宅勤務",
+    "text": "在宅勤務が始まった。台所のテーブルで仕事をし、横では休校中の子どもがオンライン授業を受けていた。会議中に子どもが映りこんだ。",
+    "effects": {
+      "happiness": 0,
+      "relation": 1
+    },
+    "probability": 0.28,
+    "probNote": "全国の正社員27.9%（東京49.1%）",
+    "source": {
+      "title": "Web担当者Forum パーソル総合研究所調査（2020年4月 テレワーク実施率 全国27.9%、東京49.1%）",
+      "url": "https://webtan.impress.co.jp/n/2020/04/23/35860",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-2020-04-telework-senior",
+    "key": "telework",
+    "category": "work",
+    "year": 2020,
+    "endYear": 2021,
+    "month": 4,
+    "ageMin": 60,
+    "ageMax": 70,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "smallco",
+        "self",
+        "public"
+      ]
+    },
+    "title": "出社が続いた",
+    "text": "まわりで在宅勤務が増えても、自分の仕事は現場に出るしかなかった。人の少ない電車で、マスク越しに同じ顔ぶれと乗り合わせた。",
+    "effects": {
+      "health": -1
+    },
+    "probability": 0.5,
+    "probNote": "テレワークをしなかった約7割。目安",
+    "source": {
+      "title": "Web担当者Forum パーソル総合研究所調査（2020年4月 テレワーク実施率 全国27.9%、東京49.1%）",
+      "url": "https://webtan.impress.co.jp/n/2020/04/23/35860",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-2020-delivery-youth",
+    "key": "delivery",
+    "category": "work",
+    "year": 2020,
+    "endYear": 2025,
+    "ageMin": 18,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "none",
+        "smallco"
+      ],
+      "flags": [
+        "smartphone"
+      ]
+    },
+    "title": "料理の配達員",
+    "text": "スマホのアプリに登録し、自転車で料理を運ぶ配達員になった。好きな時間に働けるが、けがをしても補償はなにもなかった。",
+    "effects": {
+      "money": 5000,
+      "health": -1
+    },
+    "probability": 0.04,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）フードデリバリー配達員の増加（2020年）",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "work-2019-youtuber-child",
+    "key": "youtuber",
+    "category": "work",
+    "year": 2019,
+    "endYear": 2022,
+    "ageMin": 8,
+    "ageMax": 12,
+    "sex": "male",
+    "title": "夢はユーチューバー",
+    "text": "将来の夢を聞かれて、ユーチューバーと答えた。クラスの男子の多くも同じだった。毎日、好きな配信者の動画を見てから寝た。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "J-CAST 学研 小学生白書（2019年 男子の将来つきたい職業1位がYouTuberなど）",
+      "url": "https://www.j-cast.com/trend/2019/12/24375914.html?p=all",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-2019-youtuber-adult",
+    "key": "youtuber",
+    "category": "work",
+    "year": 2019,
+    "endYear": 2022,
+    "ageMin": 30,
+    "ageMax": 50,
+    "sex": "any",
+    "conditions": {
+      "married": true
+    },
+    "title": "子どもの夢",
+    "text": "息子の将来の夢はユーチューバーだという。それは仕事なのかと聞き返しそうになった。自分の子どものころはプロ野球選手だった。",
+    "effects": {
+      "happiness": 0
+    },
+    "probability": 0.2,
+    "probNote": "目安",
+    "source": {
+      "title": "J-CAST 学研 小学生白書（2019年）",
+      "url": "https://www.j-cast.com/trend/2019/12/24375914.html?p=all",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-2023-seisei-ai-work-adult",
+    "key": "seisei-ai-work",
+    "category": "work",
+    "year": 2023,
+    "endYear": 2025,
+    "ageMin": 25,
+    "ageMax": 59,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "bigco",
+        "smallco",
+        "public"
+      ]
+    },
+    "title": "AIと働く",
+    "text": "会社で生成AIを使うようになった。議事録や資料の下書きはあっという間にできる。自分の仕事のどこまでが残るのか、ふと考えた。",
+    "effects": {
+      "knowledge": 2
+    },
+    "probability": 0.25,
+    "probNote": "2023年トップテン『生成AI』。目安",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第40回（2023年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00040",
+      "verified": true
+    }
+  },
+  {
+    "id": "work-1960-dekasegi-adult",
+    "key": "dekasegi",
+    "category": "work",
+    "year": 1960,
+    "endYear": 1975,
+    "ageMin": 25,
+    "ageMax": 55,
+    "sex": "male",
+    "conditions": {
+      "job": [
+        "farm"
+      ]
+    },
+    "title": "冬の出稼ぎ",
+    "text": "稲刈りが終わると、冬の間は都会の工事現場へ出稼ぎに出た。仕送りで家族を養った。春に戻ると、子どもは少し大きくなっていた。",
+    "effects": {
+      "money": 50000,
+      "relation": -2,
+      "health": -1
+    },
+    "probability": 0.1,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）農家の出稼ぎ（高度成長期）",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "work-1980-konbini-baito-youth",
+    "key": "konbini-baito",
+    "category": "work",
+    "year": 1980,
+    "endYear": 2010,
+    "ageMin": 16,
+    "ageMax": 25,
+    "sex": "any",
+    "title": "コンビニのアルバイト",
+    "text": "家の近くにできたコンビニで、深夜のアルバイトをした。夜中に来る客は少ないが、弁当の入れかえと棚の補充で休む暇はなかった。",
+    "effects": {
+      "money": 3000
+    },
+    "probability": 0.1,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）コンビニエンスストアの普及（1974年セブン-イレブン1号店）",
+      "url": "",
+      "verified": false
+    }
+  }
+]

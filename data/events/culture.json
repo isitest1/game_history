@@ -1,0 +1,2068 @@
+[
+  {
+    "id": "culture-1945-10-ringo-no-uta-child",
+    "key": "ringo-no-uta",
+    "category": "culture",
+    "year": 1945,
+    "endYear": 1946,
+    "month": 10,
+    "ageMin": 4,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "リンゴの唄",
+    "text": "焼け跡の町に、ラジオから並木路子の『リンゴの唄』が流れていた。大人たちが口ずさむのを聞いて、意味も分からず一緒に歌った。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）映画『そよかぜ』主題歌、1945年10月公開",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1945-10-ringo-no-uta-youth",
+    "key": "ringo-no-uta",
+    "category": "culture",
+    "year": 1945,
+    "endYear": 1946,
+    "month": 10,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "リンゴの唄",
+    "text": "復員して戻った町で、『リンゴの唄』をよく耳にした。明るすぎる歌声に戸惑ったが、そのうち自分も鼻歌で歌っていた。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）映画『そよかぜ』主題歌、1945年10月公開",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1946-04-sazae-san-child",
+    "key": "sazae-san",
+    "category": "culture",
+    "year": 1946,
+    "endYear": 1974,
+    "month": 4,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "サザエさん",
+    "text": "新聞の四コマ漫画『サザエさん』を、毎朝いちばんに読んだ。そそっかしいサザエさんの失敗に、家族で声を出して笑った。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "長谷川町子美術館 プロフィール（1946年4月22日『夕刊フクニチ』で連載開始）",
+      "url": "https://www.hasegawamachiko.jp/profile/",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-1949-08-fujiyama-tobiuo-youth",
+    "key": "fujiyama-tobiuo",
+    "category": "culture",
+    "year": 1949,
+    "month": 8,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "フジヤマのトビウオ",
+    "text": "ラジオで、古橋広之進が水泳で世界記録を出したと聞いた。負けた国の選手がアメリカで勝ったのだ。胸のすく思いがした。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）古橋広之進 1949年全米選手権",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1949-aoi-sanmyaku-youth",
+    "key": "aoi-sanmyaku",
+    "category": "culture",
+    "year": 1949,
+    "endYear": 1950,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "青い山脈",
+    "text": "映画『青い山脈』を見た。男女の学生が自転車で並んで走る場面がまぶしかった。帰り道、友だちと主題歌を大きな声で歌った。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）映画『青い山脈』1949年公開",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1953-kimi-no-na-wa-1953-youth",
+    "key": "kimi-no-na-wa-1953",
+    "category": "culture",
+    "year": 1953,
+    "endYear": 1954,
+    "ageMin": 15,
+    "ageMax": 29,
+    "sex": "female",
+    "title": "真知子巻き",
+    "text": "映画『君の名は』が大当たりし、女たちの間でストールを頭からぐるりと巻く真知子巻きがはやった。自分も母のショールで真似した。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）映画『君の名は』1953年公開、真知子巻きの流行",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1954-02-rikidozan-child",
+    "key": "rikidozan",
+    "category": "culture",
+    "year": 1954,
+    "endYear": 1958,
+    "month": 2,
+    "ageMin": 5,
+    "ageMax": 12,
+    "sex": "male",
+    "title": "力道山",
+    "text": "近所の家のテレビの前に子どもが集まり、力道山のプロレスを見た。空手チョップが決まるたび、みんなで飛び上がった。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "bestcalendar プロレスの日（1954年2月19日 力道山・木村政彦組対シャープ兄弟）",
+      "url": "https://www.bestcalendar.jp/dates/kinenbi/1296",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-1954-02-rikidozan-adult",
+    "key": "rikidozan",
+    "category": "culture",
+    "year": 1954,
+    "endYear": 1958,
+    "month": 2,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "male",
+    "title": "力道山",
+    "text": "力道山が大きな外国人レスラーを投げ飛ばすのを見て、戦争に負けた悔しさが少し晴れた気がした。酒の席はその話でもちきりだった。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "bestcalendar プロレスの日（1954年2月19日、新橋の街頭テレビに約2万人）",
+      "url": "https://www.bestcalendar.jp/dates/kinenbi/1296",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-1954-11-godzilla-youth",
+    "key": "godzilla",
+    "category": "culture",
+    "year": 1954,
+    "endYear": 1955,
+    "month": 11,
+    "ageMin": 10,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "ゴジラ",
+    "text": "映画館で『ゴジラ』を見た。怪獣が東京の街を焼きはらう場面で、客席は静まりかえった。空襲を思い出したと言う人もいた。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.25,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）東宝『ゴジラ』1954年11月公開",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1955-eiga-golden-youth",
+    "key": "eiga-golden",
+    "category": "culture",
+    "year": 1955,
+    "endYear": 1960,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "映画館に通った",
+    "text": "休みの日は映画館へ行った。立ち見が出るほどの満員で、二本立てを続けて見た。スクリーンの中のスターに夢中になった。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.5,
+    "probNote": "映画館の入場者は1958年に11億2745万人で過去最高（国民一人あたり年12回ほど）。高い出会い率とした",
+    "source": {
+      "title": "日本映画製作者連盟 映画産業統計 過去データ一覧（入場者数 1958年 11億2745万人がピーク）",
+      "url": "https://www.eiren.org/toukei/data.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-1963-eiga-golden-youth-decline",
+    "key": "eiga-golden",
+    "category": "culture",
+    "year": 1963,
+    "endYear": 1972,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "映画館がさびれた",
+    "text": "町の映画館が一つ、また一つと閉まっていった。みんな家でテレビを見るようになったのだ。閉館の日、最後の上映を見に行った。",
+    "effects": {
+      "happiness": -1
+    },
+    "probability": 0.2,
+    "probNote": "入場者は1958年11億人→1972年1億9千万人",
+    "source": {
+      "title": "日本映画製作者連盟 映画産業統計 過去データ一覧（入場者数 1958年 11億2745万人がピーク）",
+      "url": "https://www.eiren.org/toukei/data.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-1956-taiyouzoku-youth",
+    "key": "taiyouzoku",
+    "category": "culture",
+    "year": 1956,
+    "endYear": 1957,
+    "ageMin": 15,
+    "ageMax": 25,
+    "sex": "any",
+    "title": "太陽族",
+    "text": "『太陽の季節』が話題になり、アロハシャツにサングラスで海辺に集まる太陽族が新聞をにぎわせた。大人たちは眉をひそめた。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.2,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）石原慎太郎『太陽の季節』芥川賞（1956年）",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1958-04-nagashima-debut-youth",
+    "key": "nagashima-debut",
+    "category": "culture",
+    "year": 1958,
+    "month": 4,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "male",
+    "title": "長嶋茂雄の入団",
+    "text": "立教大学の長嶋茂雄が巨人に入った。開幕戦で金田に四打席連続で三振したと聞いたが、その年のうちにスターになっていた。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）長嶋茂雄 1958年巨人入団",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1958-gekkou-kamen-child",
+    "key": "gekkou-kamen",
+    "category": "culture",
+    "year": 1958,
+    "endYear": 1959,
+    "ageMin": 4,
+    "ageMax": 12,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "tv_home"
+      ]
+    },
+    "title": "月光仮面",
+    "text": "テレビの『月光仮面』に夢中になった。風呂敷をマントにして、塀から飛びおりて遊んだ。けがをする子が出て、先生に禁止された。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）テレビ『月光仮面』1958年放送開始",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1959-03-shounen-shi-child",
+    "key": "shounen-shi",
+    "category": "culture",
+    "year": 1959,
+    "endYear": 1962,
+    "month": 3,
+    "ageMin": 7,
+    "ageMax": 14,
+    "sex": "any",
+    "title": "週刊少年誌",
+    "text": "週刊の少年漫画雑誌が出た。発売日になると本屋に走り、友だちと回し読みした。読み終わると表紙はぼろぼろになっていた。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）週刊少年マガジン・週刊少年サンデー 1959年創刊",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1960-dakkochan-child",
+    "key": "dakkochan",
+    "category": "culture",
+    "year": 1960,
+    "ageMin": 5,
+    "ageMax": 14,
+    "sex": "any",
+    "title": "ダッコちゃん",
+    "text": "腕にしがみつく黒いビニール人形が大はやりした。お姉さんたちが腕につけて歩いていて、自分もほしくてたまらなかった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.2,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）ダッコちゃんブーム（1960年）",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1961-ue-wo-muite-youth",
+    "key": "ue-wo-muite",
+    "category": "culture",
+    "year": 1961,
+    "endYear": 1963,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "上を向いて歩こう",
+    "text": "坂本九の『上を向いて歩こう』がラジオから毎日のように流れていた。のちにアメリカでも一位になったと聞いて驚いた。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）坂本九『上を向いて歩こう』1961年発売、1963年米ビルボード1位",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1961-kyojin-taihou-child",
+    "key": "kyojin-taihou",
+    "category": "culture",
+    "year": 1961,
+    "endYear": 1965,
+    "ageMin": 5,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "巨人・大鵬・卵焼き",
+    "text": "子どもの好きなものは、巨人、大鵬、卵焼きと言われた。自分もそのとおりで、夕方は野球と相撲の中継に、夕飯は卵焼きに夢中だった。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）流行語『巨人・大鵬・卵焼き』（1960年代前半）",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1961-kyojin-taihou-adult",
+    "key": "kyojin-taihou",
+    "category": "culture",
+    "year": 1961,
+    "endYear": 1965,
+    "ageMin": 30,
+    "ageMax": 50,
+    "sex": "any",
+    "conditions": {
+      "married": true
+    },
+    "title": "巨人・大鵬・卵焼き",
+    "text": "子どもたちは巨人と大鵬に夢中だった。好物を聞けば卵焼きだと言う。卵が毎日食べられるようになったのだと、ふと思った。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）流行語『巨人・大鵬・卵焼き』（1960年代前半）",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1963-01-astro-boy-child",
+    "key": "astro-boy",
+    "category": "culture",
+    "year": 1963,
+    "endYear": 1966,
+    "month": 1,
+    "ageMin": 4,
+    "ageMax": 12,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "tv_home"
+      ]
+    },
+    "title": "鉄腕アトム",
+    "text": "元日からテレビで『鉄腕アトム』が始まった。毎週夕方になるとテレビの前に座った。おまけのシール欲しさに、お菓子をねだった。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "手塚治虫公式サイト 鉄腕アトム（1963年1月1日 フジテレビ系、全193話）",
+      "url": "https://tezukaosamu.net/jp/anime/30.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-1964-10-touyou-no-majo-youth",
+    "key": "touyou-no-majo",
+    "category": "culture",
+    "year": 1964,
+    "month": 10,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "東洋の魔女",
+    "text": "東京オリンピックの女子バレー決勝をテレビで見た。日本がソ連を破って金メダルを取ると、家じゅうで飛び上がって歓声を上げた。",
+    "effects": {
+      "happiness": 5
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）東京オリンピック 女子バレーボール金メダル（1964年10月23日）",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1964-10-touyou-no-majo-adult",
+    "key": "touyou-no-majo",
+    "category": "culture",
+    "year": 1964,
+    "month": 10,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "東洋の魔女",
+    "text": "工場の仲間とテレビの前に集まり、女子バレーの決勝を見た。勝った瞬間、普段は無口な工場長まで立ち上がって手をたたいた。",
+    "effects": {
+      "happiness": 5
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）東京オリンピック 女子バレーボール金メダル（1964年10月23日）",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1966-06-beatles-youth",
+    "key": "beatles",
+    "category": "culture",
+    "year": 1966,
+    "month": 6,
+    "ageMin": 13,
+    "ageMax": 25,
+    "sex": "any",
+    "title": "ビートルズ来日",
+    "text": "ビートルズが来日し、武道館で公演した。チケットは手に入らず、テレビ中継にかじりついた。親は不良の音楽だと渋い顔をした。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）ビートルズ日本武道館公演（1966年6月30日〜7月2日）",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1966-07-ultraman-child",
+    "key": "ultraman",
+    "category": "culture",
+    "year": 1966,
+    "endYear": 1967,
+    "month": 7,
+    "ageMin": 4,
+    "ageMax": 12,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "tv_home"
+      ]
+    },
+    "title": "ウルトラマン",
+    "text": "日曜の夜、『ウルトラマン』が始まった。三分間しか戦えないと知って、毎回胸のランプが点滅するたびに手に汗をにぎった。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）テレビ『ウルトラマン』1966年7月放送開始",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1967-miniskirt-youth",
+    "key": "miniskirt",
+    "category": "culture",
+    "year": 1967,
+    "endYear": 1970,
+    "ageMin": 15,
+    "ageMax": 29,
+    "sex": "female",
+    "title": "ミニスカート",
+    "text": "ミニスカートが大流行した。膝上の丈のスカートで街を歩くと、年配の人にじろじろ見られた。母は最後まであきれていた。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）ツイッギー来日（1967年）とミニスカートの流行",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1969-08-torasan-youth",
+    "key": "torasan",
+    "category": "culture",
+    "year": 1969,
+    "endYear": 1975,
+    "month": 8,
+    "ageMin": 15,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "男はつらいよ",
+    "text": "映画『男はつらいよ』を見た。ふらりと帰ってきては騒ぎを起こす寅さんに、客席は笑いっぱなしだった。盆と正月の楽しみになった。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.25,
+    "probNote": "目安",
+    "source": {
+      "title": "松竹 男はつらいよ 作品一覧（第1作 1969年8月27日公開、全50作）",
+      "url": "https://www.cinemaclassics.jp/tora-san/movie/1/",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-1995-12-torasan-senior",
+    "key": "torasan",
+    "category": "culture",
+    "year": 1995,
+    "month": 12,
+    "ageMin": 60,
+    "ageMax": 100,
+    "sex": "any",
+    "title": "最後の寅さん",
+    "text": "正月に『男はつらいよ』の新作を見に行った。寅さんは少し年を取っていた。これが渥美清の最後の出演作になると、そのときは知らなかった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.15,
+    "probNote": "目安",
+    "source": {
+      "title": "松竹 男はつらいよ 第48作（1995年12月23日公開）",
+      "url": "https://www.cinemaclassics.jp/tora-san/movie/48/",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-1969-10-sazae-anime-child",
+    "key": "sazae-anime",
+    "category": "culture",
+    "year": 1969,
+    "endYear": 2005,
+    "month": 10,
+    "ageMin": 4,
+    "ageMax": 12,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "tv_home"
+      ]
+    },
+    "title": "日曜夕方のサザエさん",
+    "text": "日曜の夕方、テレビで『サザエさん』のアニメが始まった。見終わると、ああ明日はまた学校かと、毎週少し憂うつになった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "長谷川町子美術館 プロフィール（アニメ 1969年10月5日 フジテレビ）",
+      "url": "https://www.hasegawamachiko.jp/profile/",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-1969-10-zenin-shuugou-child",
+    "key": "zenin-shuugou",
+    "category": "culture",
+    "year": 1969,
+    "endYear": 1985,
+    "month": 10,
+    "ageMin": 5,
+    "ageMax": 12,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "tv_home"
+      ]
+    },
+    "title": "土曜八時のお笑い",
+    "text": "土曜の夜八時はドリフターズのお笑い番組を見た。翌週の月曜、教室ではギャグの真似が飛びかった。PTAには評判が悪かった。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）TBS『8時だョ!全員集合』1969年10月放送開始",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1971-04-kamen-rider-child",
+    "key": "kamen-rider",
+    "category": "culture",
+    "year": 1971,
+    "endYear": 1973,
+    "month": 4,
+    "ageMin": 4,
+    "ageMax": 12,
+    "sex": "male",
+    "title": "仮面ライダー",
+    "text": "『仮面ライダー』が始まり、変身のポーズを真似した。スナック菓子のおまけのカードを集め、お菓子だけ捨てる子が問題になった。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）テレビ『仮面ライダー』1971年4月放送開始",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1972-11-panda-child",
+    "key": "panda",
+    "category": "culture",
+    "year": 1972,
+    "endYear": 1973,
+    "month": 11,
+    "ageMin": 3,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "パンダが来た",
+    "text": "上野動物園にパンダが来た。何時間も並んで、見られたのはほんの数十秒だった。笹を食べる白黒の背中だけを覚えている。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.15,
+    "probNote": "首都圏中心の目安",
+    "source": {
+      "title": "（未確認）ランラン・カンカン 1972年10月来日、11月公開",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1974-10-nagashima-retire-child",
+    "key": "nagashima-retire",
+    "category": "culture",
+    "year": 1974,
+    "month": 10,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "male",
+    "title": "長嶋の引退",
+    "text": "テレビで長嶋茂雄の引退セレモニーを見た。巨人軍は永久に不滅です、という言葉を、翌日は男子みんなで真似していた。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）長嶋茂雄 引退試合（1974年10月14日）",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1974-10-nagashima-retire-youth",
+    "key": "nagashima-retire",
+    "category": "culture",
+    "year": 1974,
+    "month": 10,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "male",
+    "title": "長嶋の引退",
+    "text": "長嶋茂雄が引退した。後楽園球場で場内を一周する姿をテレビで見ていたら、涙が出た。自分の青春も一緒に終わる気がした。",
+    "effects": {
+      "happiness": -1
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）長嶋茂雄 引退試合（1974年10月14日）",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1974-10-nagashima-retire-adult",
+    "key": "nagashima-retire",
+    "category": "culture",
+    "year": 1974,
+    "month": 10,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "male",
+    "title": "長嶋の引退",
+    "text": "長嶋の引退を職場のテレビで見た。入団からずっと見てきた選手だった。その夜は同僚と、昔の名場面を語りながら飲んだ。",
+    "effects": {
+      "happiness": 0
+    },
+    "probability": 0.35,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）長嶋茂雄 引退試合（1974年10月14日）",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1974-yamato-child",
+    "key": "yamato",
+    "category": "culture",
+    "year": 1974,
+    "endYear": 1978,
+    "ageMin": 8,
+    "ageMax": 18,
+    "sex": "any",
+    "title": "宇宙戦艦ヤマト",
+    "text": "テレビの『宇宙戦艦ヤマト』は最初は人気がなかったが、再放送で火がついた。映画になると、映画館の前に徹夜の行列ができた。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.25,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）テレビ『宇宙戦艦ヤマト』1974年放送、1977年劇場版",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1977-09-oh-756-child",
+    "key": "oh-756",
+    "category": "culture",
+    "year": 1977,
+    "month": 9,
+    "ageMin": 5,
+    "ageMax": 12,
+    "sex": "male",
+    "title": "王の756号",
+    "text": "王貞治が世界最多の756本目のホームランを打った。テレビの前で一本足打法を真似していた。国民栄誉賞という賞ができた。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）王貞治 756号本塁打（1977年9月3日）、国民栄誉賞第1号",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1978-invader-youth",
+    "key": "invader",
+    "category": "culture",
+    "year": 1978,
+    "endYear": 1979,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "インベーダーゲーム",
+    "text": "喫茶店のテーブルがゲーム機になり、インベーダーゲームが大流行した。百円玉を積み上げて、夜遅くまで夢中で撃ち続けた。",
+    "effects": {
+      "happiness": 3,
+      "money": -5000
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）スペースインベーダー 1978年（タイトー）",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1979-gundam-child",
+    "key": "gundam",
+    "category": "culture",
+    "year": 1979,
+    "endYear": 1982,
+    "ageMin": 8,
+    "ageMax": 15,
+    "sex": "male",
+    "title": "ガンダム",
+    "text": "アニメの『機動戦士ガンダム』は放送中は目立たなかったが、再放送でとりこになった。プラモデルを買いに、朝からおもちゃ屋に並んだ。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.2,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）『機動戦士ガンダム』1979年放送、ガンプラブーム（1980年代初め）",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1980-takenokozoku-youth",
+    "key": "takenokozoku",
+    "category": "culture",
+    "year": 1980,
+    "endYear": 1981,
+    "prefs": [
+      11,
+      12,
+      13,
+      14
+    ],
+    "ageMin": 13,
+    "ageMax": 22,
+    "sex": "any",
+    "title": "竹の子族",
+    "text": "日曜の原宿の歩行者天国に、派手な衣装でラジカセを囲んで踊る若者たちが集まっていた。遠巻きに眺めるだけで、なんだか胸が躍った。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.15,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）竹の子族（1980年前後）",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1983-04-oshin-adult",
+    "key": "oshin",
+    "category": "culture",
+    "year": 1983,
+    "endYear": 1984,
+    "month": 4,
+    "ageMin": 30,
+    "ageMax": 80,
+    "sex": "any",
+    "title": "おしん",
+    "text": "朝の連続テレビ小説『おしん』を毎朝見た。貧しさに耐える少女の姿に、自分の子どものころを重ねて泣いた。世界中で放送されたという。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.5,
+    "probNote": "1984年の新語部門金賞『オシンドローム』。視聴の割合は目安",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第1回（1984年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00001",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-1983-04-tdl-child",
+    "key": "tdl",
+    "category": "culture",
+    "year": 1983,
+    "endYear": 1990,
+    "month": 4,
+    "ageMin": 4,
+    "ageMax": 12,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "tdl"
+      ]
+    },
+    "title": "ディズニーランド",
+    "text": "千葉に東京ディズニーランドができた。家族で行き、ミッキーと写真を撮った。帰りの車で、もう次はいつ行けるかと聞いた。",
+    "effects": {
+      "happiness": 5,
+      "flags": [
+        "tdl"
+      ]
+    },
+    "probability": 0.15,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）東京ディズニーランド開園（1983年4月15日）",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1983-04-tdl-youth",
+    "key": "tdl",
+    "category": "culture",
+    "year": 1983,
+    "endYear": 1995,
+    "month": 4,
+    "ageMin": 16,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "tdl"
+      ]
+    },
+    "title": "ディズニーランドでデート",
+    "text": "東京ディズニーランドでデートをした。アトラクションの行列で二時間も待ったが、話題が尽きず、待つ時間さえ楽しかった。",
+    "effects": {
+      "happiness": 5,
+      "flags": [
+        "tdl"
+      ]
+    },
+    "probability": 0.15,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）東京ディズニーランド開園（1983年4月15日）",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1985-10-hanshin-1985-adult",
+    "key": "hanshin-1985",
+    "category": "culture",
+    "year": 1985,
+    "month": 10,
+    "prefs": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "ageMin": 18,
+    "ageMax": 70,
+    "sex": "any",
+    "title": "阪神優勝",
+    "text": "阪神タイガースが二十一年ぶりに優勝し、日本一にもなった。大阪の町はどこもお祭り騒ぎで、道頓堀の川に飛びこむ人まで出た。",
+    "effects": {
+      "happiness": 5
+    },
+    "probability": 0.5,
+    "probNote": "関西の人の目安",
+    "source": {
+      "title": "（未確認）阪神タイガース 1985年リーグ優勝・日本一",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-1986-shinjinrui-youth",
+    "key": "shinjinrui",
+    "category": "culture",
+    "year": 1986,
+    "endYear": 1987,
+    "ageMin": 18,
+    "ageMax": 26,
+    "sex": "any",
+    "title": "新人類",
+    "text": "上の世代から新人類と呼ばれた。何を考えているか分からない若者という意味らしい。テレビでは、おニャン子クラブの歌が流れていた。",
+    "effects": {
+      "happiness": 0
+    },
+    "probability": 0.4,
+    "probNote": "1986年 流行語部門金賞『新人類』、大衆賞『おニャン子』",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第3回（1986年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00003",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-1988-04-totoro-child",
+    "key": "totoro",
+    "category": "culture",
+    "year": 1988,
+    "endYear": 1989,
+    "month": 4,
+    "ageMin": 3,
+    "ageMax": 10,
+    "sex": "any",
+    "title": "となりのトトロ",
+    "text": "映画館で『となりのトトロ』を見た。まっくろくろすけを探して、家の暗いすみをのぞきこんだ。のちにテレビで何度も放送された。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.25,
+    "probNote": "目安",
+    "source": {
+      "title": "スタジオジブリ となりのトトロ（1988年4月16日公開）",
+      "url": "https://www.ghibli.jp/works/totoro/",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-1989-ikaten-youth",
+    "key": "ikaten",
+    "category": "culture",
+    "year": 1989,
+    "endYear": 1990,
+    "ageMin": 15,
+    "ageMax": 25,
+    "sex": "any",
+    "title": "イカ天とバンドブーム",
+    "text": "深夜のテレビでアマチュアバンドの勝ち抜き番組が人気になった。同級生とバンドを組み、貸しスタジオで音を鳴らした。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.2,
+    "probNote": "1989年 流行語部門大衆賞『イカ天』。目安",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第6回（1989年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00006",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-1989-obatarian-adult",
+    "key": "obatarian",
+    "category": "culture",
+    "year": 1989,
+    "ageMin": 35,
+    "ageMax": 59,
+    "sex": "female",
+    "title": "オバタリアン",
+    "text": "図々しいおばさんをからかうオバタリアンという言葉がはやった。スーパーの特売で人を押しのけたあと、自分のことかと苦笑いした。",
+    "effects": {
+      "happiness": 0
+    },
+    "probability": 0.3,
+    "probNote": "1989年 流行語部門金賞。目安",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第6回（1989年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00006",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-1991-wakataka-child",
+    "key": "wakataka",
+    "category": "culture",
+    "year": 1991,
+    "endYear": 1994,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "若貴ブーム",
+    "text": "相撲の若花田と貴花田の兄弟が大人気になった。学校から帰ると、テレビで夕方の取組を見た。女の子にもファンが多かった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.3,
+    "probNote": "1991年 流行語部門金賞『若貴』。目安",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第8回（1991年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00008",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-1991-wakataka-senior",
+    "key": "wakataka",
+    "category": "culture",
+    "year": 1991,
+    "endYear": 1994,
+    "ageMin": 60,
+    "ageMax": 100,
+    "sex": "any",
+    "title": "若貴ブーム",
+    "text": "若貴兄弟の取組を見るのが毎日の楽しみになった。場所の十五日間、夕方になるとテレビの前に座り、手を合わせて応援した。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第8回（1991年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00008",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-1993-05-jleague-child",
+    "key": "jleague",
+    "category": "culture",
+    "year": 1993,
+    "endYear": 1994,
+    "month": 5,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "Jリーグ開幕",
+    "text": "Jリーグが開幕し、クラスの男子は野球よりサッカーの話ばかりになった。好きなチームのタオルを首にかけて登校した。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.4,
+    "probNote": "Jリーグ公式：1993年5月15日開幕。1993年の年間大賞『Jリーグ』",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第10回（1993年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00010",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-1993-05-jleague-youth",
+    "key": "jleague",
+    "category": "culture",
+    "year": 1993,
+    "endYear": 1994,
+    "month": 5,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "Jリーグ開幕",
+    "text": "Jリーグが開幕した。チケットは発売と同時に売り切れ、サポーターという言葉が流行語になった。スタジアムの歓声に鳥肌が立った。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.3,
+    "probNote": "1993年 新語部門金賞『サポーター』",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第10回（1993年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00010",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-1993-05-jleague-adult",
+    "key": "jleague",
+    "category": "culture",
+    "year": 1993,
+    "endYear": 1994,
+    "month": 5,
+    "ageMin": 30,
+    "ageMax": 55,
+    "sex": "any",
+    "conditions": {
+      "married": true
+    },
+    "title": "Jリーグ開幕",
+    "text": "息子にせがまれて、Jリーグの試合を見に行った。サッカーのルールはよく分からなかったが、スタジアムの熱気に圧倒された。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.2,
+    "probNote": "目安",
+    "source": {
+      "title": "Jリーグ公式 Jリーグについて（1993年5月15日開幕）",
+      "url": "https://www.jleague.jp/aboutj/history/",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-1995-nomo-youth",
+    "key": "nomo",
+    "category": "culture",
+    "year": 1995,
+    "endYear": 1996,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "野茂の大リーグ",
+    "text": "野茂英雄が大リーグで投げていた。体を大きくひねるトルネード投法で三振を取るたび、朝のニュースで何度もその場面が流れた。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.4,
+    "probNote": "1995年の年間大賞『NOMO』",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第12回（1995年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00012",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-1996-amura-youth",
+    "key": "amura",
+    "category": "culture",
+    "year": 1996,
+    "endYear": 1997,
+    "ageMin": 13,
+    "ageMax": 25,
+    "sex": "female",
+    "title": "アムラー",
+    "text": "安室奈美恵を真似て、茶色の髪に細い眉、厚底のブーツで渋谷へ出かけた。街には同じような格好の女の子があふれていた。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.3,
+    "probNote": "1996年トップテン『アムラー』。目安",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第13回（1996年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00013",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-1996-loose-socks-youth",
+    "key": "loose-socks",
+    "category": "culture",
+    "year": 1996,
+    "endYear": 1998,
+    "ageMin": 15,
+    "ageMax": 18,
+    "sex": "female",
+    "title": "ルーズソックス",
+    "text": "通学のときはルーズソックスをはいた。学校の門の手前でずり下げ、先生に見つかると引き上げた。チョベリバが口ぐせだった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.4,
+    "probNote": "1996年トップテン『ルーズソックス』『チョベリバ／チョベリグ』",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第13回（1996年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00013",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-1997-07-mononoke-youth",
+    "key": "mononoke",
+    "category": "culture",
+    "year": 1997,
+    "endYear": 1998,
+    "month": 7,
+    "ageMin": 10,
+    "ageMax": 40,
+    "sex": "any",
+    "title": "もののけ姫",
+    "text": "映画館で『もののけ姫』を見た。森と人間の争いは、子ども向けのおとぎ話ではなかった。帰り道、友だちと言葉少なに歩いた。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "スタジオジブリ もののけ姫（1997年7月12日公開）",
+      "url": "https://www.ghibli.jp/works/mononoke/",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-1999-dango-child",
+    "key": "dango",
+    "category": "culture",
+    "year": 1999,
+    "ageMin": 3,
+    "ageMax": 10,
+    "sex": "any",
+    "title": "だんご3兄弟",
+    "text": "教育番組から生まれた『だんご3兄弟』の歌が大ヒットした。幼稚園でも小学校でも、休み時間にみんなが口ずさんでいた。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.4,
+    "probNote": "1999年トップテン。目安",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第16回（1999年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00016",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-1999-matsuzaka-youth",
+    "key": "matsuzaka",
+    "category": "culture",
+    "year": 1999,
+    "ageMin": 13,
+    "ageMax": 22,
+    "sex": "male",
+    "title": "リベンジ",
+    "text": "西武に入った松坂大輔が、高卒一年目から勝ちまくった。彼の口にしたリベンジという言葉が、クラスでもはやりになった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.25,
+    "probNote": "1999年 年間大賞『リベンジ』。目安",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第16回（1999年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00016",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2001-07-chihiro-child",
+    "key": "chihiro",
+    "category": "culture",
+    "year": 2001,
+    "endYear": 2002,
+    "month": 7,
+    "ageMin": 4,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "千と千尋の神隠し",
+    "text": "映画館で『千と千尋の神隠し』を見た。夏休みの映画館は満席だった。家に帰ってから、カオナシの真似をして家族を笑わせた。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "スタジオジブリ 千と千尋の神隠し（2001年7月20日公開）",
+      "url": "https://www.ghibli.jp/works/chihiro/",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2001-07-chihiro-adult",
+    "key": "chihiro",
+    "category": "culture",
+    "year": 2001,
+    "endYear": 2002,
+    "month": 7,
+    "ageMin": 30,
+    "ageMax": 55,
+    "sex": "any",
+    "title": "千と千尋の神隠し",
+    "text": "子どもに連れられて『千と千尋の神隠し』を見た。働かないと豚にされてしまう話に、自分の毎日の仕事を重ねて苦笑いした。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.3,
+    "probNote": "興行記録の部分は今回の出典で確かめていない",
+    "source": {
+      "title": "スタジオジブリ 千と千尋の神隠し（2001年7月20日公開）",
+      "url": "https://www.ghibli.jp/works/chihiro/",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2002-06-worldcup-2002-youth",
+    "key": "worldcup-2002",
+    "category": "culture",
+    "year": 2002,
+    "month": 6,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "日韓ワールドカップ",
+    "text": "日本と韓国でサッカーのワールドカップが開かれた。青いユニフォームを着て、夜の渋谷で知らない人とハイタッチをした。",
+    "effects": {
+      "happiness": 5
+    },
+    "probability": 0.4,
+    "probNote": "2002年の年間大賞『W杯（中津江村）』、トップテン『ベッカム様』",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第19回（2002年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00019",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2002-06-worldcup-2002-adult",
+    "key": "worldcup-2002",
+    "category": "culture",
+    "year": 2002,
+    "month": 6,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "日韓ワールドカップ",
+    "text": "ワールドカップの日本戦の日は、職場の同僚が早く帰っていった。自分も家のテレビで見て、勝った瞬間に思わず声が出た。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第19回（2002年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00019",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2004-fuyusona-adult",
+    "key": "fuyusona",
+    "category": "culture",
+    "year": 2004,
+    "endYear": 2005,
+    "ageMin": 35,
+    "ageMax": 65,
+    "sex": "female",
+    "title": "冬のソナタ",
+    "text": "韓国ドラマ『冬のソナタ』にすっかりはまった。主演俳優をひと目見ようと、韓国旅行のツアーに申しこむ友だちまでいた。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.25,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）NHK『冬のソナタ』2003〜2004年放送と韓流ブーム",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-2006-02-inabauer-youth",
+    "key": "inabauer",
+    "category": "culture",
+    "year": 2006,
+    "month": 2,
+    "ageMin": 10,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "イナバウアー",
+    "text": "トリノ五輪で荒川静香が金メダルを取った。体を大きく反らす技イナバウアーを、みんなが教室で真似して腰を痛めていた。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.4,
+    "probNote": "2006年の年間大賞『イナバウアー』",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第23回（2006年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00023",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2006-mixi-youth",
+    "key": "mixi",
+    "category": "culture",
+    "year": 2006,
+    "endYear": 2008,
+    "ageMin": 18,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "pc_home"
+      ]
+    },
+    "title": "mixi",
+    "text": "友だちの招待でmixiに登録した。日記を書くと足あとが残り、誰が読みに来たかが分かった。毎晩、寝る前に確かめた。",
+    "effects": {
+      "relation": 2
+    },
+    "probability": 0.25,
+    "probNote": "2006年トップテン『mixi』。目安",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第23回（2006年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00023",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2006-03-wbc-2006-adult",
+    "key": "wbc-2006",
+    "category": "culture",
+    "year": 2006,
+    "month": 3,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "WBC優勝",
+    "text": "野球の国別対抗戦WBCで日本が優勝した。昼間の試合だったので、職場ではワンセグ携帯のまわりに人だかりができていた。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "（未確認）第1回ワールド・ベースボール・クラシック 日本優勝（2006年3月）",
+      "url": "",
+      "verified": false
+    }
+  },
+  {
+    "id": "culture-2010-gegege-senior",
+    "key": "gegege",
+    "category": "culture",
+    "year": 2010,
+    "ageMin": 60,
+    "ageMax": 100,
+    "sex": "any",
+    "title": "ゲゲゲの女房",
+    "text": "朝の連続テレビ小説『ゲゲゲの女房』を毎朝見た。売れない漫画家を支える妻の姿に、自分の若いころの暮らしを思い出した。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.4,
+    "probNote": "2010年の年間大賞『ゲゲゲの～』",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第27回（2010年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00027",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2010-akb-youth",
+    "key": "akb",
+    "category": "culture",
+    "year": 2010,
+    "endYear": 2012,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "AKB48",
+    "text": "テレビをつけると、いつもAKB48が出ていた。CDについてくる投票券のために同じCDを何枚も買う人がいると聞いて驚いた。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.3,
+    "probNote": "2010年トップテン『AKB48』。目安",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第27回（2010年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00027",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2011-07-nadeshiko-youth",
+    "key": "nadeshiko",
+    "category": "culture",
+    "year": 2011,
+    "month": 7,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "なでしこジャパン",
+    "text": "震災の年の夏、女子サッカーのなでしこジャパンがワールドカップで優勝した。明け方、テレビの前で思わず泣いてしまった。",
+    "effects": {
+      "happiness": 5
+    },
+    "probability": 0.4,
+    "probNote": "2011年の年間大賞『なでしこジャパン』",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第28回（2011年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00028",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2011-07-nadeshiko-senior",
+    "key": "nadeshiko",
+    "category": "culture",
+    "year": 2011,
+    "month": 7,
+    "ageMin": 60,
+    "ageMax": 100,
+    "sex": "any",
+    "title": "なでしこジャパン",
+    "text": "女子サッカーが世界一になったと朝のニュースで知った。暗いことの多い年だったが、その日はうれしい話で持ちきりだった。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第28回（2011年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00028",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2013-amachan-adult",
+    "key": "amachan",
+    "category": "culture",
+    "year": 2013,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "じぇじぇじぇ",
+    "text": "朝ドラ『あまちゃん』の驚きの言葉じぇじぇじぇを、職場でもつい口にした。夜はドラマ『半沢直樹』の倍返しで盛り上がった。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.4,
+    "probNote": "2013年の年間大賞『じぇじぇじぇ』『倍返し』",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第30回（2013年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00030",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2016-07-pokemongo-youth",
+    "key": "pokemongo",
+    "category": "culture",
+    "year": 2016,
+    "month": 7,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "smartphone"
+      ]
+    },
+    "title": "ポケモンGO",
+    "text": "スマホでポケモンを捕まえるゲームが始まった。近所の公園には、夜中まで画面を見つめながら歩きまわる人があふれていた。",
+    "effects": {
+      "happiness": 3,
+      "health": 1
+    },
+    "probability": 0.4,
+    "probNote": "2016年トップテン『ポケモンGO』",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第33回（2016年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00033",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2016-07-pokemongo-senior",
+    "key": "pokemongo",
+    "category": "culture",
+    "year": 2016,
+    "month": 7,
+    "ageMin": 60,
+    "ageMax": 100,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "smartphone"
+      ]
+    },
+    "title": "ポケモンGO",
+    "text": "孫に教わってポケモンGOを始めた。毎朝の散歩の距離がのびた。公園で同じ年ごろの人と、捕まえたポケモンを見せ合った。",
+    "effects": {
+      "happiness": 3,
+      "health": 2
+    },
+    "probability": 0.1,
+    "probNote": "目安",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第33回（2016年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00033",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2016-08-kimi-no-na-wa-2016-youth",
+    "key": "kimi-no-na-wa-2016",
+    "category": "culture",
+    "year": 2016,
+    "endYear": 2017,
+    "month": 8,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "君の名は。",
+    "text": "アニメ映画『君の名は。』が大ヒットした。舞台になった町を訪ねる聖地巡礼がはやり、自分も友だちと電車で出かけた。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.3,
+    "probNote": "2016年トップテン『聖地巡礼』。映画の公開日は未確認",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第33回（2016年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00033",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2017-instabae-youth",
+    "key": "instabae",
+    "category": "culture",
+    "year": 2017,
+    "endYear": 2018,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "female",
+    "conditions": {
+      "flags": [
+        "smartphone"
+      ]
+    },
+    "title": "インスタ映え",
+    "text": "インスタ映えする店を探して出かけた。料理が運ばれてくると、まずはスマホで写真を撮った。食べるのはそのあとだった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.4,
+    "probNote": "2017年の年間大賞『インスタ映え』",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第34回（2017年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00034",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2018-02-sodane-adult",
+    "key": "sodane",
+    "category": "culture",
+    "year": 2018,
+    "month": 2,
+    "ageMin": 30,
+    "ageMax": 59,
+    "sex": "any",
+    "title": "そだねー",
+    "text": "平昌五輪の女子カーリングで、選手たちのそだねーという声がはやった。もぐもぐタイムの話題で、職場の昼休みがなごんだ。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.3,
+    "probNote": "2018年の年間大賞『そだねー』",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第35回（2018年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00035",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2019-10-one-team-youth",
+    "key": "one-team",
+    "category": "culture",
+    "year": 2019,
+    "month": 10,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "ONE TEAM",
+    "text": "日本で開かれたラグビーのワールドカップで、日本代表が初めて決勝トーナメントに進んだ。ルールを知らなかった友だちまで夢中になった。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.4,
+    "probNote": "2019年の年間大賞『ONE TEAM』",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第36回（2019年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00036",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2019-tapioca-youth",
+    "key": "tapioca",
+    "category": "culture",
+    "year": 2019,
+    "ageMin": 13,
+    "ageMax": 25,
+    "sex": "female",
+    "title": "タピオカ",
+    "text": "タピオカのミルクティーの店に長い行列ができた。並んで買ったカップを手に写真を撮り、タピるという言葉まで生まれた。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.35,
+    "probNote": "2019年トップテン『タピる』",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第36回（2019年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00036",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2020-kimetsu-child",
+    "key": "kimetsu",
+    "category": "culture",
+    "year": 2020,
+    "endYear": 2021,
+    "ageMin": 5,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "鬼滅の刃",
+    "text": "『鬼滅の刃』に夢中になった。市松模様のマスクをつけ、休み時間は全集中の呼吸ごっこをした。映画にも家族で行った。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.5,
+    "probNote": "2020年トップテン『鬼滅の刃』",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第37回（2020年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00037",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2020-kimetsu-adult",
+    "key": "kimetsu",
+    "category": "culture",
+    "year": 2020,
+    "endYear": 2021,
+    "ageMin": 30,
+    "ageMax": 55,
+    "sex": "any",
+    "conditions": {
+      "married": true
+    },
+    "title": "鬼滅の刃",
+    "text": "子どもにせがまれて『鬼滅の刃』の映画を見に行った。外出を控える年だったが、映画館は満席だった。思わず泣いてしまった。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第37回（2020年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00037",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2020-atsumori-youth",
+    "key": "atsumori",
+    "category": "culture",
+    "year": 2020,
+    "ageMin": 10,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "あつ森",
+    "text": "外に出られない春、ゲームの中の無人島で友だちと会った。画面越しに一緒に釣りをし、島に花を植え、夜までおしゃべりをした。",
+    "effects": {
+      "happiness": 3,
+      "relation": 2
+    },
+    "probability": 0.3,
+    "probNote": "2020年トップテン『あつ森』。目安",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第37回（2020年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00037",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2021-ohtani-youth",
+    "key": "ohtani",
+    "category": "culture",
+    "year": 2021,
+    "endYear": 2025,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "リアル二刀流",
+    "text": "大谷翔平が大リーグで投げて打って大活躍した。朝のニュースで本塁打の映像を見てから出かけるのが、毎日の楽しみになった。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.5,
+    "probNote": "2021年の年間大賞『リアル二刀流／ショータイム』",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第38回（2021年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00038",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2021-ohtani-senior",
+    "key": "ohtani",
+    "category": "culture",
+    "year": 2021,
+    "endYear": 2025,
+    "ageMin": 60,
+    "ageMax": 100,
+    "sex": "any",
+    "title": "大谷翔平",
+    "text": "大谷翔平の試合が中継される朝は、早起きしてテレビをつけた。孫のような若者の活躍が、何よりの元気のもとになった。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第38回（2021年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00038",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2021-oyagacha-youth",
+    "key": "oyagacha",
+    "category": "culture",
+    "year": 2021,
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "親ガチャ",
+    "text": "親ガチャという言葉がはやった。生まれる家は選べない、という意味だ。冗談めかして使いながら、どこか本気でもあった。",
+    "effects": {
+      "happiness": -1
+    },
+    "probability": 0.3,
+    "probNote": "2021年トップテン『親ガチャ』",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第38回（2021年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00038",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2023-are-2023-adult",
+    "key": "are-2023",
+    "category": "culture",
+    "year": 2023,
+    "prefs": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "ageMin": 18,
+    "ageMax": 80,
+    "sex": "any",
+    "title": "アレ",
+    "text": "阪神が十八年ぶりに優勝した。監督が優勝のことをアレと呼んでいたので、関西の職場でも家でもその言葉が飛びかった。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.5,
+    "probNote": "2023年の年間大賞『アレ（A.R.E.）』",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第40回（2023年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00040",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2023-seisei-ai-youth",
+    "key": "seisei-ai",
+    "category": "culture",
+    "year": 2023,
+    "endYear": 2025,
+    "ageMin": 15,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "生成AI",
+    "text": "質問すると文章を書いてくれるAIが話題になった。レポートを手伝わせる学生もいて、大学は使い方の決まりを作った。",
+    "effects": {
+      "knowledge": 2
+    },
+    "probability": 0.4,
+    "probNote": "2023年トップテン『生成AI』",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第40回（2023年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00040",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2024-futehodo-adult",
+    "key": "futehodo",
+    "category": "culture",
+    "year": 2024,
+    "ageMin": 35,
+    "ageMax": 70,
+    "sex": "any",
+    "title": "ふてほど",
+    "text": "昭和の男が令和にタイムスリップするドラマ『不適切にもほどがある！』を見た。昔は当たり前だったことに、苦笑いが止まらなかった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.3,
+    "probNote": "2024年の年間大賞『ふてほど』",
+    "source": {
+      "title": "ユーキャン新語・流行語大賞 第41回（2024年）",
+      "url": "https://www.jiyu.co.jp/singo/index.php?eid=00041",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2025-kokuho-2025-senior",
+    "key": "kokuho-2025",
+    "category": "culture",
+    "year": 2025,
+    "ageMin": 60,
+    "ageMax": 100,
+    "sex": "any",
+    "title": "映画『国宝』",
+    "text": "歌舞伎役者の一生を描いた映画『国宝』を、古い友人と見に行った。三時間近い長さだったが、少しも長くは感じなかった。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.2,
+    "probNote": "2025年の邦画興収2位（195.5億円）。目安",
+    "source": {
+      "title": "日本映画製作者連盟 2025年 全国映画概況",
+      "url": "https://www.eiren.org/toukei/index.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "culture-2025-kimetsu-2025-youth",
+    "key": "kimetsu-2025",
+    "category": "culture",
+    "year": 2025,
+    "ageMin": 10,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "鬼滅の刃 無限城編",
+    "text": "『鬼滅の刃』の新しい映画を、公開初日に友だちと見に行った。映画館はどの回も満席で、その年の興行収入の一位になった。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.35,
+    "probNote": "2025年の邦画興収1位（391.4億円）。目安",
+    "source": {
+      "title": "日本映画製作者連盟 2025年 全国映画概況",
+      "url": "https://www.eiren.org/toukei/index.html",
+      "verified": true
+    }
+  }
+]
