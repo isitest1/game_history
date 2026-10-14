@@ -579,14 +579,19 @@ function birthPlaceText(year: number): string {
   return '病院で生まれた。';
 }
 
-/** 定期預金の金利の目安（%）。data/stats に預金金利がまだないため、目安（未確認） */
+/**
+ * 定期預金の金利の目安（%）。1985年より前は日本銀行の時系列統計に見つからず未確認。
+ * 1991年以降は日本銀行の店頭定期預金の金利（1991年10月の1年もの5.79%など。docs/03 の F-5）に大まかに合わせた
+ */
 export function depositRate(year: number): number {
   if (year < 1945) return 3.5;
   if (year < 1950) return 2;
   if (year < 1973) return 5.5;
   if (year < 1981) return 6.5;
   if (year < 1991) return 4.5;
-  if (year < 1995) return 3;
+  if (year < 1993) return 5;
+  if (year < 1994) return 3;
+  if (year < 1995) return 2;
   if (year < 2000) return 0.5;
   return 0.05;
 }
@@ -678,8 +683,10 @@ function quit(p: Person, title: string, text: string): void {
 }
 
 function maybeQuitForChild(state: GameState, p: Person, rng: Rng, year: number): void {
-  // 第1子を産む前後に仕事を続けた割合：1985〜89年 約4分の1 → 2015〜19年 約半分（出生動向基本調査）。
-  const keep = year < 1985 ? 0.2 : year < 1995 ? 0.25 : year < 2005 ? 0.3 : year < 2015 ? 0.4 : 0.55;
+  // 第1子を産む前に働いていた女性のうち、出産後も仕事を続けた割合。
+  // 1985〜89年は約4割（就業継続24.1%÷（24.1%＋出産退職37.3%）、男女共同参画白書）。
+  // 2015〜19年は69.9%、2020〜24年は80.5%（出生動向基本調査 第17回。紹介記事で確認、元の報告書は未確認）。間の年は目安
+  const keep = year < 1985 ? 0.3 : year < 1995 ? 0.39 : year < 2005 ? 0.42 : year < 2015 ? 0.55 : year < 2020 ? 0.7 : 0.8;
   const wantKeep = state.prefs.keepWorking !== false;
   const pKeep = wantKeep ? Math.min(0.95, keep * 1.4) : keep * 0.3;
   if (!rng.chance(pKeep)) {
@@ -726,7 +733,8 @@ function work(p: Person, rng: Rng, year: number): void {
 
 function pensionAndRetire(state: GameState, p: Person, rng: Rng, year: number): void {
   const a = p.age;
-  // 定年：1986年より前は55歳が多かった（未確認の目安）。1998年から60歳未満の定年は禁止
+  // 定年の目安（未確認）：1980年ごろまでは55歳が多く、その後60歳へ移った（ここでは1980〜97年を58歳とした）。
+  // 1998年から60歳未満の定年は禁止。2013年からは65歳までの雇用確保が実質的に義務になったので65歳とした
   const teinen = year < 1980 ? 55 : year < 1998 ? 58 : year < 2013 ? 60 : 65;
   const employee = p.job === 'bigco' || p.job === 'smallco' || p.job === 'public';
   if (employee && !p.retired && a >= Math.max(teinen, Math.min(state.prefs.retireAt, 75)) && a >= teinen) {

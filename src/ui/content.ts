@@ -17,7 +17,7 @@ export const SOURCES: { what: string; title: string; url?: string }[] = [
   { what: '完全失業率・有効求人倍率', title: '総務省「労働力調査」、厚生労働省「職業安定業務統計」', url: 'https://www.stat.go.jp/data/roudou/longtime/03roudou.html' },
   { what: '大卒求人倍率', title: 'リクルートワークス研究所「ワークス大卒求人倍率調査」', url: 'https://www.works-i.com/surveys/' },
   { what: '結婚', title: '社人研「人口統計資料集」（平均初婚年齢・50歳時未婚割合）、「出生動向基本調査」（見合い結婚と恋愛結婚）', url: 'https://www.ipss.go.jp/ps-doukou/j/db_17/db_17GaiyoBaseData.html' },
-  { what: '賃金', title: '厚生労働省「賃金構造基本統計調査」ほか', url: 'https://www.mhlw.go.jp/toukei/list/chinginkouzou.html' },
+  { what: '賃金', title: '厚生労働省「賃金構造基本統計調査」（年齢・学歴別の年収）、「毎月勤労統計調査」（賃金の水準の推移）', url: 'https://www.mhlw.go.jp/toukei/list/chinginkouzou.html' },
   { what: '年金', title: '日本年金機構「年金給付の経過措置一覧」、厚生労働省「2024年財政検証」「厚生年金保険・国民年金事業の概況」', url: 'https://www.mhlw.go.jp/content/001270476.pdf' },
   { what: '物価', title: '総務省「消費者物価指数」', url: 'https://www.stat.go.jp/data/cpi/' },
   { what: '親の職業（産業別就業者）', title: '社人研「人口統計資料集」表8-7（原資料：国勢調査）', url: 'https://www.ipss.go.jp/syoushika/tohkei/Popular/Popular2023RE.asp' },
