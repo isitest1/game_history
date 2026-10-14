@@ -2457,11 +2457,7 @@ button {
   gap: 10px;
   flex-wrap: wrap;
 }
-@media (min-width: 900px) {
-  .birth-acts {
-    justify-content: center;
-  }
-}
+
 
 .share canvas {
   max-height: 80dvh;
@@ -2550,4 +2546,115 @@ button {
   min-height: calc(100dvh - 72px);
   justify-content: center;
   padding-top: 0;
+}
+
+/* ---------- 8周目の改善 ---------- */
+.gacha-steps {
+  flex-wrap: nowrap;
+  gap: 6px;
+}
+.gacha-steps .chip {
+  font-size: 12px;
+  padding: 4px 9px;
+  white-space: nowrap;
+}
+@media (min-width: 760px) {
+  .compare-bars .r {
+    grid-template-columns: 4.5em 1fr 17em;
+  }
+}
+.compare-bars .track {
+  background: color-mix(in srgb, var(--ink) 9%, transparent);
+}
+.mcard .ment + .ment {
+  border-top: 1px dashed color-mix(in srgb, var(--c-ink) 20%, transparent);
+  margin-top: 8px;
+  padding-top: 8px;
+}
+.mcard.empty {
+  opacity: 0.55;
+}
+.mcard.empty .d {
+  font-size: 13px;
+}
+.ment.wish .t::before {
+  content: '叶わなかった';
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--c-acc);
+}
+.feed li.wish .t::before {
+  font-size: 12px;
+}
+@media (max-width: 640px) {
+  .mcard.wish {
+    outline: none;
+  }
+  .ment.wish {
+    outline: 2px dashed var(--c-acc);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+  .cols.is-compact::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -12px;
+    height: 12px;
+    background: linear-gradient(var(--bg), transparent);
+    pointer-events: none;
+  }
+}
+@media (max-width: 480px) {
+  .ev3,
+  .res3 {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  .ev3 > div,
+  .res3 > div {
+    font-size: 14px;
+    padding: 9px 12px;
+  }
+  .ev3 b {
+    display: inline;
+    margin-right: 8px;
+  }
+  .res3 .mark {
+    display: inline-block;
+    margin-right: 6px;
+  }
+  .hanko {
+    width: 28px;
+    height: 28px;
+    font-size: 13px;
+    top: 6px;
+  }
+}
+.helplist .tel {
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 17px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.helplist .hours {
+  display: inline-block;
+}
+.panel .muted,
+.rt-note {
+  color: var(--ink-2);
+  font-size: max(12px, 0.8125rem);
+}
+.art-card .art-k {
+  font-size: 12px;
+}
+@media (max-width: 480px) {
+  .res3 .mark {
+    display: block;
+    margin: 0 0 2px;
+    padding-right: 36px;
+  }
 }

@@ -542,13 +542,23 @@ function renderMFeed(): void {
   const ages = [...new Set(rows.map((r) => r.e.age))].sort((a, b) => b - a).slice(0, 4);
   box.innerHTML = ages
     .map((age, ai) => {
-      const items = rows.filter((r) => r.e.age === age).sort((a, b) => a.i - b.i);
-      return `<section class="mrow"><h3 class="mage">${age}歳<small>${items.length > 1 && ai === 0 ? '横にめくって見比べる' : ''}</small></h3><div class="mswipe">${items
-        .map(({ e, i }) => {
-          const cls = [ERA_CLASS[i], e.kind === 'wish' ? 'wish' : '', e.kind === 'decision' || e.kind === 'wish' ? 'dec' : '', e.kind === 'death' ? 'death' : '', e.heavy ? 'heavy' : '', freshEntries.has(e) ? 'fresh' : ''].join(' ');
-          return `<article class="mcard ${cls}"><span class="meta">${e.year}年・${esc(st.persons[i].name.split(' ')[1] ?? '')}</span><b class="t">${esc(e.title)}</b><p class="d">${esc(e.text)}</p>${e.heavy ? '<button class="help-note" data-act="helpnote">つらいときの相談先</button>' : ''}</article>`;
-        })
-        .join('')}</div>${items.length > 1 ? `<div class="mdots" aria-hidden="true">${items.map((it, k) => `<i class="${ERA_CLASS[it.i]} ${k === 0 ? 'on' : ''}"></i>`).join('')}</div>` : ''}</section>`;
+      // 1人につき1枚。並び順は3人で固定し、記録のない人には薄いカードを置く
+      const cards = st.persons.map((p, i) => {
+        const es = rows.filter((r) => r.i === i && r.e.age === age).map((r) => r.e);
+        const year = p.birthYear + age;
+        if (!es.length) {
+          const dead = p.deathAge !== undefined && p.deathAge < age && !deathPending(p);
+          return `<article class="mcard ${ERA_CLASS[i]} empty"><span class="meta">${year}年・${esc(p.name.split(' ')[1] ?? '')}</span><p class="d">${dead ? `${p.deathAge}歳で亡くなっている` : 'この年は記録なし'}</p></article>`;
+        }
+        const inner = es
+          .map((e) => {
+            const cls = [e.kind === 'wish' ? 'wish' : '', e.kind === 'decision' || e.kind === 'wish' ? 'dec' : '', e.kind === 'death' ? 'death' : '', e.heavy ? 'heavy' : '', freshEntries.has(e) ? 'fresh' : ''].join(' ');
+            return `<div class="ment ${cls}"><b class="t">${esc(e.title)}</b><p class="d">${esc(e.text)}</p>${e.heavy ? '<button class="help-note" data-act="helpnote">つらいときの相談先</button>' : ''}</div>`;
+          })
+          .join('');
+        return `<article class="mcard ${ERA_CLASS[i]}"><span class="meta">${year}年・${esc(p.name.split(' ')[1] ?? '')}${es.length > 1 ? `　${es.length}件` : ''}</span>${inner}</article>`;
+      });
+      return `<section class="mrow"><h3 class="mage">${age}歳<small>${ai === 0 ? '横にめくって見比べる' : ''}</small></h3><div class="mswipe">${cards.join('')}</div><div class="mdots" aria-hidden="true">${st.persons.map((_, k) => `<i class="${ERA_CLASS[k]} ${k === 0 ? 'on' : ''}"></i>`).join('')}</div></section>`;
     })
     .join('');
   box.querySelectorAll<HTMLElement>('.mswipe').forEach((sw) => {
@@ -836,7 +846,7 @@ function showHelp(): void {
     html`<p class="kicker">相談窓口</p>
       <h2>つらい気持ちになったら</h2>
       <p class="prompt">このゲームには、戦争・災害・病気・自殺など、重い出来事が出てきます。読んでいて苦しくなったら、ひとりで抱えずに話してください。</p>
-      <ul class="helplist">${HELP_LINES.map((h) => `<li><b>${esc(h.name)}</b>${h.tel ? `<a href="tel:${h.tel.replace(/-/g, '')}">${esc(h.tel)}</a>　` : ''}${esc(h.hours)}${h.url ? `<br /><a href="${h.url}" target="_blank" rel="noopener">${esc(h.url)}</a>` : ''}</li>`)}</ul>
+      <ul class="helplist">${HELP_LINES.map((h) => `<li><b>${esc(h.name)}</b>${h.tel ? `<a class="tel" href="tel:${h.tel.replace(/-/g, '')}">${esc(h.tel)}</a>` : ''}<span class="hours">${esc(h.hours)}</span>${h.url ? `<br /><a href="${h.url}" target="_blank" rel="noopener">${esc(h.url)}</a>` : ''}</li>`)}</ul>
       <p class="muted" style="font-size:13px">厚生労働省「まもろうよ こころ」に掲載の窓口（2026年10月14日に確認）。受付時間は変わることがあります。</p>
       <button class="btn" data-close>閉じる</button>`,
     { label: '相談窓口', dismiss: true },

@@ -72,7 +72,7 @@ export async function drawShareCard(c: HTMLCanvasElement, st: GameState, portrai
     g.font = `400 15px ${e.font}`;
     g.fillText(miss ? `叶わなかった望み：${miss}つ` : '望みはおおむね叶った', x + 22, y + h - 40);
   });
-  g.fillStyle = '#8a7f6d';
+  g.fillStyle = 'rgba(255,255,255,0.62)';
   g.font = '400 14px "Zen Kaku Gothic New", sans-serif';
   g.fillText('日本の統計（人口動態統計・生命表・学校基本調査ほか）でシミュレーション。2026年より先は推計。', 48, 596);
 }
@@ -124,7 +124,7 @@ function drawPortrait(c: HTMLCanvasElement, st: GameState): void {
       wrap(g, t, x + 32, y + 184 + k * 40, w - 64);
     });
   });
-  g.fillStyle = '#8a7f6d';
+  g.fillStyle = 'rgba(255,255,255,0.62)';
   g.font = '400 22px "Zen Kaku Gothic New", sans-serif';
   g.fillText('日本の統計でシミュレーション。2026年より先は推計。', 60, 1300);
 }

@@ -3,7 +3,7 @@
 export const HELP_LINES: { name: string; tel?: string; hours: string; url?: string }[] = [
   { name: 'まもろうよ こころ（厚生労働省）', hours: '電話・SNSの相談窓口の一覧', url: 'https://www.mhlw.go.jp/mamorouyokokoro/' },
   { name: '#いのちSOS', tel: '0120-061-338', hours: '24時間' },
-  { name: 'よりそいホットライン', tel: '0120-279-338', hours: '24時間（福島県からは0120-279-226）' },
+  { name: 'よりそいホットライン', tel: '0120-279-338', hours: '24時間。福島県からは 0120-279-226' },
   { name: 'いのちの電話', tel: '0120-783-556', hours: '毎日16〜21時（毎月10日は8時〜翌日8時）' },
   { name: 'こころの健康相談統一ダイヤル', tel: '0570-064-556', hours: '受付時間は地域によって違います' },
   { name: 'チャイルドライン（18歳まで）', tel: '0120-99-7777', hours: '毎日16〜21時' },
