@@ -3647,3 +3647,38 @@ button {
     font-size: 10px;
   }
 }
+
+/* X で共有 */
+.xbtn {
+  background: #0f1419;
+  color: #fff;
+  border-color: #0f1419;
+}
+:root[data-theme='dark'] .xbtn {
+  background: #fff;
+  color: #0f1419;
+  border-color: #fff;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .xbtn {
+    background: #fff;
+    color: #0f1419;
+    border-color: #fff;
+  }
+}
+.xbtn span,
+.xbtn-g span {
+  font-weight: 700;
+  margin-right: 2px;
+}
+
+/* JavaScript が動く前の中身（検索エンジン向け）。ゲームが始まると置き換わる */
+.prerender {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  line-height: 1.8;
+}
+.prerender h1 {
+  font-family: var(--serif);
+  font-size: clamp(26px, 5vw, 40px);
+}
