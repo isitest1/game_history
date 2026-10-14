@@ -5,6 +5,7 @@ import * as S from './sim/stats';
 import type { Person, DecisionView, DecisionResult, LogEntry } from './sim/types';
 import { esc, wareki, yen, shortYen, html, sleep, reducedMotion } from './ui/format';
 import { drawShareCard, shareText } from './ui/sharecard';
+import { openX, birthXText, endXText, TITLE_X_TEXT } from './ui/share';
 import { HELP_LINES, SOURCES } from './ui/content';
 import { sound } from './ui/sound';
 import { loadEvents, eventStats } from './sim/events';
@@ -148,6 +149,7 @@ function showTitle(): void {
           <button data-act="help2">つらいときの相談先</button>
           <button data-act="about">このゲームについて</button>
           <button data-act="dex">前世の記録と図鑑</button>
+          <button data-act="xtitle">Xで紹介する</button>
         </div>
       </div>
       <div class="hero-art" aria-hidden="true">${[0, 1, 2].map((i) => `<div class="art-card ${ERA_CLASS[i]}" data-art="${i}"></div>`).join('')}</div>
@@ -197,6 +199,7 @@ function showTitle(): void {
   app.querySelector('[data-act="help2"]')?.addEventListener('click', () => showHelp());
   app.querySelector('[data-act="about"]')?.addEventListener('click', showAbout);
   app.querySelector('[data-act="dex"]')?.addEventListener('click', showDex);
+  app.querySelector('[data-act="xtitle"]')?.addEventListener('click', () => openX(TITLE_X_TEXT));
   (app.querySelector('#startform') as HTMLFormElement).addEventListener('submit', (e) => {
     e.preventDefault();
     const v = (app.querySelector('#pby') as HTMLSelectElement).value;
@@ -437,10 +440,12 @@ function showBirth(): void {
       <div class="birth-acts">
         <button class="btn" id="go">人生を始める</button>
         <button class="btn ghost" id="again">引き直す</button>
+        <button class="btn ghost xbtn-g" id="xbirth"><span aria-hidden="true">𝕏</span> 生まれた3人をXで共有</button>
       </div>
     </main>`;
   bindCommon(app);
   app.querySelector('#go')!.addEventListener('click', () => showLife());
+  app.querySelector('#xbirth')!.addEventListener('click', () => openX(birthXText(st)));
   app.querySelector('#again')!.addEventListener('click', () => {
     state = createGame({ playerBirthYear: ui.playerBirthYear });
     store.set(SAVE_KEY, state);
@@ -1495,8 +1500,9 @@ async function showEnd(skipSlides = false): Promise<void> {
         <h3>共有カード</h3>
         <canvas id="card" width="1200" height="630" role="img" aria-label="3人の人生をまとめた共有用の画像"></canvas>
         <div class="acts">
-          <button class="btn small" id="save">画像を保存</button>
-          <button class="btn small ghost" id="shareb">共有する</button>
+          <button class="btn small xbtn" id="xshare"><span aria-hidden="true">𝕏</span> Xで共有</button>
+          <button class="btn small ghost" id="save">画像を保存</button>
+          <button class="btn small ghost" id="shareb">ほかのアプリで共有</button>
           <button class="btn small ghost" id="copy">文章をコピー</button>
         </div>
       </section>
@@ -1518,6 +1524,7 @@ async function showEnd(skipSlides = false): Promise<void> {
     a.download = `umaredoshi-${st.gacha.years.join('-')}.png`;
     a.click();
   });
+  app.querySelector('#xshare')!.addEventListener('click', () => openX(endXText(st, (app.querySelector('#okuri') as HTMLTextAreaElement)?.value)));
   app.querySelector('#copy')!.addEventListener('click', async () => {
     try {
       await navigator.clipboard.writeText(shareText(st, (app.querySelector('#okuri') as HTMLTextAreaElement)?.value));
