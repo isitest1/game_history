@@ -7,6 +7,7 @@ import { Rng, randomSeed } from './rng';
 import * as S from './stats';
 import { pickGivenName, pickSurname } from './names';
 import { allEvents } from './events';
+import { dailyLife, nameChild, nameSpouse, triggersOf } from './daily';
 import type { Edu, EraId, GameEvent, Job, LogEntry, LogKind, Person, Sex, Shared } from './types';
 
 export const ERA_LABEL = ['昭和の初め', '昭和の後半', '平成'] as const;
@@ -98,6 +99,8 @@ export function createGame(opts: { seed?: number; playerBirthYear?: number | nul
   };
 
   const persons = years.map((y, i) => makePerson(rng, i as EraId, y, shared, surname));
+  const given = persons.map((q) => q.name.split(' ')[1]);
+  persons.forEach((q) => (q.reservedNames = given));
 
   const state: GameState = {
     version: 1,
@@ -388,10 +391,21 @@ export function runYear(state: GameState): YearEntry[] {
     p.age = state.age;
     const year = yearOf(p);
     p.flags = p.flags.filter((f) => f !== 'gave_birth' && f !== 'married_this_year');
+    const was = { retired: p.retired, moved: p.movedToCity };
     lifecycle(state, p, rng, year);
     if (p.movedToCity && !S.METRO.has(p.pref) && !p.flags.includes('moved_to_city')) p.flags.push('moved_to_city');
     pickEvents(p, rng, year);
     growth(state, p, rng);
+    // 日々のことと心の声（docs/07）
+    if (p.alive) {
+      const thisYear = p.log.filter((e) => e.age === p.age);
+      dailyLife(p, rng, {
+        year,
+        triggers: triggersOf(p, thisYear, was),
+        log: (kind, title, text, extra) => log(p, kind, title, text, extra),
+        applyEffects: (eff) => applyEffects(p, eff),
+      });
+    }
     // 死亡判定
     const q = Math.min(1, S.qx(year, p.age, p.sex) * mortalityMultiplier(p));
     const extra = p.log.slice(before).find((e) => e.kind === 'death');
@@ -528,11 +542,11 @@ function lifecycle(state: GameState, p: Person, rng: Rng, year: number): void {
       const prob = fertileAge < 35 ? 0.3 : 0.12;
       if (rng.chance(prob)) {
         const csex: Sex = rng.chance(0.513) ? 'male' : 'female';
-        const child = { birthYear: year, sex: csex, alive: true };
+        const child = { birthYear: year, sex: csex, alive: true, name: nameChild(p, rng, year, csex) };
         p.children.push(child);
         p.flags.push('gave_birth');
         const n = p.children.length;
-        log(p, 'family', `${n === 1 ? '第1子' : `第${n}子`}が生まれた`, `${year}年、${csex === 'male' ? '男の子' : '女の子'}が生まれた。${birthPlaceText(year)}`);
+        log(p, 'family', `${n === 1 ? '第1子' : `第${n}子`}が生まれた`, `${year}年、${csex === 'male' ? '男の子' : '女の子'}が生まれた。名前は${child.name}。${birthPlaceText(year)}`);
         applyEffects(p, { happiness: 12, relation: 6, money: -S.annualWage(year, 30, 'male', 'high') * 0.1 });
         if (rng.chance(S.qx(year, 0, csex))) {
           child.alive = false;
@@ -661,6 +675,7 @@ function marry(state: GameState, p: Person, rng: Rng, year: number): void {
     type = rng.chance(Math.min(0.95, arr * 1.6 + 0.05)) ? '見合い' : '恋愛';
   }
   p.marriageType = type;
+  const spouse = nameSpouse(p, rng);
   p.wantChildren = state.prefs.childrenWish;
   const wantedLove = wish === 'love' && type === '見合い';
   if (wantedLove) p.wishes.push({ age: p.age, wish: '恋愛結婚', result: '見合いで結婚', ok: false });
@@ -668,7 +683,7 @@ function marry(state: GameState, p: Person, rng: Rng, year: number): void {
     p,
     'family',
     `${p.age}歳で結婚`,
-    `${year}年、${type === '見合い' ? '見合いで' : type === 'ネット' ? 'ネットで知り合った相手と' : '恋愛で'}結婚した。${wantedLove ? 'ほんとうは恋愛で結婚したかったが、この時代は' + Math.round(arr * 100) + '%が見合い結婚だった。' : ''}`,
+    `${year}年、${type === '見合い' ? '見合いで' : type === 'ネット' ? 'ネットで知り合った相手と' : '恋愛で'}結婚した。相手は${spouse}。${wantedLove ? 'ほんとうは恋愛で結婚したかったが、この時代は' + Math.round(arr * 100) + '%が見合い結婚だった。' : ''}`,
   );
   applyEffects(p, { happiness: 15, relation: 10 });
   // 寿退社

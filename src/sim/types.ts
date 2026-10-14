@@ -57,7 +57,9 @@ export type LogKind =
   | 'death'
   | 'wish' // 望んだが叶わなかった
   | 'pension'
-  | 'note'; // プレイヤーが残した思い
+  | 'note' // プレイヤーが残した思い
+  | 'daily' // 日々のこと（docs/07）
+  | 'think'; // 心の声
 
 export interface LogEntry {
   age: number;
@@ -75,6 +77,9 @@ export interface Child {
   birthYear: number;
   sex: Sex;
   alive: boolean;
+  name?: string;
+  married?: boolean;
+  grandchild?: boolean;
 }
 
 export interface Stats4 {
@@ -146,6 +151,16 @@ export interface Person {
 
   flags: string[];
   usedKeys: string[];
+
+  // 日常（docs/07）
+  friendName?: string;
+  friendSince?: number;
+  friendLost?: number; // 疎遠になった年齢
+  spouseName?: string;
+  pet?: { name: string; kind: 'dog' | 'cat'; since: number; alive: boolean };
+  sibLabel?: string;
+  reservedNames?: string[]; // 3人の主人公の名。身近な人の名前に使わない
+  dailyUsed?: Record<string, number>;
   log: LogEntry[];
   bestYear: { age: number; year: number; happiness: number };
   happinessByAge: number[];

@@ -1,0 +1,4143 @@
+[
+ {
+  "id": "d3-001",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 24,
+  "when": {
+   "working": true,
+   "mother": true
+  },
+  "text": "初めての給料で、母に薄紫のカーディガンを買った。包みを開けた{mAge}歳の母は、しばらく黙ってから「もったいない」と言った。",
+  "effects": {
+   "happiness": 2,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-002",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 26,
+  "when": {
+   "working": true
+  },
+  "text": "仕事の帰りに、職場の先輩に駅前のラーメン屋でおごってもらった。湯気の向こうで、先輩は自分の新人のころの失敗を笑いながら話した。",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-003",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 28,
+  "when": {
+   "working": true
+  },
+  "text": "書類の数字を一けた間違えて、課長に呼ばれた。机の前に立っているあいだ、壁の時計の秒針の音がやけに大きく聞こえた。",
+  "effects": {
+   "happiness": -1,
+   "knowledge": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-004",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "working": true
+  },
+  "text": "残業の帰り道、駅前の店はどこもシャッターが下りていた。自動販売機の明かりだけが、ぼんやりと道に落ちていた。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "repeatGap": 6
+ },
+ {
+  "id": "d3-005",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {},
+  "text": "日曜日、昼過ぎまで寝ていた。起きて窓を開けると、どこかの家からカレーのにおいが流れてきた。",
+  "effects": {
+   "happiness": 1,
+   "health": 1
+  },
+  "weight": 1,
+  "repeatGap": 8
+ },
+ {
+  "id": "d3-006",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {},
+  "text": "{friend}の結婚式に呼ばれた。友人代表のスピーチの途中で声が詰まり、会場から温かい笑いが起きた。",
+  "effects": {
+   "happiness": 2,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-007",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {},
+  "text": "引っ越しの日、段ボールの最後の一箱を運び入れると、部屋ががらんと広く見えた。畳の上に寝転んで、天井の木目を数えた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-008",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 30,
+  "when": {
+   "married": false
+  },
+  "text": "月末、財布の中に千円札が一枚しか残っていなかった。給料日まで、朝も夜も卵かけご飯で通した。",
+  "effects": {
+   "happiness": -1,
+   "health": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-009",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "mother": true
+  },
+  "text": "実家に電話をすると、{mAge}歳の母が、近所の誰それが結婚したという話を長々とした。受話器を耳から少し離して聞いた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "repeatGap": 8
+ },
+ {
+  "id": "d3-010",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "married": true
+  },
+  "text": "結婚して最初の給料日の夜、{spouse}と小さなケーキを買って帰った。皿が足りず、一枚の皿を二人で分けて使った。",
+  "effects": {
+   "happiness": 2,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-011",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "childAge": [
+    0,
+    1
+   ]
+  },
+  "text": "{child}が夜中に泣きやまず、抱いたまま部屋の中を何十往復もした。窓の外がうっすら白くなるころ、やっと寝息が聞こえた。",
+  "effects": {
+   "health": -1,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-012",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "married": true,
+   "childAge": [
+    0,
+    2
+   ]
+  },
+  "text": "{child}が初めて「まんま」と言った。{spouse}と顔を見合わせ、どちらに向かって言ったのかで言い合いになった。",
+  "effects": {
+   "happiness": 2,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-013",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {},
+  "text": "家計簿をつけ始めたが、三週間で白いページが続くようになった。レシートだけが、菓子の空き缶の中にたまっていった。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-014",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "married": true
+  },
+  "text": "休みの日に、{spouse}と川沿いの土手を歩いた。草のにおいがして、子どものころの夏休みを思い出した。",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1,
+  "repeatGap": 6
+ },
+ {
+  "id": "d3-015",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 30,
+  "when": {
+   "hasSibling": true
+  },
+  "text": "{sib}から久しぶりに手紙が届いた。読みながら、昔同じ部屋で寝ていたころの{sib}の寝言を思い出した。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-016",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 24,
+  "when": {
+   "working": true
+  },
+  "text": "職場の歓迎会で、慣れない酒を勧められるままに飲んだ。翌朝、頭が割れるように痛く、水ばかり飲んでいた。",
+  "effects": {
+   "health": -1,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-017",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "flags": [
+    "moved_to_city"
+   ]
+  },
+  "text": "帰省の列車の窓から、見覚えのある山が見えてきた。急に、実家の台所のにおいが恋しくなった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "repeatGap": 5
+ },
+ {
+  "id": "d3-018",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 30,
+  "when": {
+   "flags": [
+    "moved_to_city"
+   ],
+   "married": false
+  },
+  "text": "都会の部屋で、一人で風邪をひいて寝込んだ。誰も来ない部屋で、冷蔵庫のうなる音だけを聞いていた。",
+  "effects": {
+   "health": -1,
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-019",
+  "kind": "daily",
+  "ageMin": 21,
+  "ageMax": 34,
+  "when": {
+   "childAge": [
+    1,
+    3
+   ]
+  },
+  "text": "{child}の小さな靴を、玄関の自分の靴の横にそろえた。並べてみると、おもちゃのように見えた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-020",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "married": true
+  },
+  "text": "{spouse}とささいなことで言い合いになり、夕飯のあいだ一言も話さなかった。寝る前に、どちらからともなく「ごめん」と言った。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "repeatGap": 5
+ },
+ {
+  "id": "d3-021",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {},
+  "text": "{friend}と夜通し話した。仕事のこと、好きな人のこと、十年後のこと。気づくと、コーヒーカップが空のまま冷えていた。",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-022",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 30,
+  "when": {
+   "working": true
+  },
+  "text": "初めて一人で任された仕事を終えた。誰にもほめられなかったが、帰りの足取りは軽かった。",
+  "effects": {
+   "happiness": 2,
+   "knowledge": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-023",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "urban": true,
+   "working": true
+  },
+  "text": "朝の満員電車で、知らない人の肩に押されながら、窓の外の空だけを見ていた。つり革を握る手が、じっとりと汗ばんだ。",
+  "effects": {
+   "happiness": -1,
+   "health": -1
+  },
+  "weight": 1,
+  "repeatGap": 8
+ },
+ {
+  "id": "d3-024",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "married": true
+  },
+  "text": "結婚して初めての正月、{spouse}の実家で親せきに囲まれた。名前と顔がなかなか覚えられず、笑ってごまかした。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-025",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 28,
+  "when": {
+   "married": false
+  },
+  "text": "好きな人に電話をかけようとして、番号を最後まで回せずに受話器を置いた。三日目に、やっとつながった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-026",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "working": true
+  },
+  "text": "給料日に、ずっと欲しかった腕時計を買った。帰りの電車で、何度も袖をまくって眺めた。",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-027",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "childAge": [
+    0,
+    0
+   ]
+  },
+  "text": "{child}を初めて風呂に入れた。小さな体が湯の中で、ふにゃりと力を抜いた。",
+  "effects": {
+   "happiness": 2,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-028",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "childAge": [
+    0,
+    5
+   ]
+  },
+  "text": "{child}が熱を出し、夜中に病院の待合室で順番を待った。長いすに座ったまま、小さな額に何度も手を当てた。",
+  "effects": {
+   "health": -1,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-029",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "childAge": [
+    0,
+    1
+   ]
+  },
+  "text": "{child}が初めて一人で立った。二歩目で尻もちをつき、自分でも驚いたように笑い出した。",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-030",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "childAge": [
+    0,
+    6
+   ]
+  },
+  "text": "近所の人に、{child}の顔が自分にそっくりだと言われた。うれしいような、申し訳ないような気持ちになった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-031",
+  "kind": "daily",
+  "ageMin": 23,
+  "ageMax": 34,
+  "when": {
+   "working": true,
+   "job": [
+    "smallco",
+    "bigco"
+   ]
+  },
+  "text": "大きな契約が決まり、課の皆で乾杯した。グラスがぶつかる音が、事務所の天井に響いた。",
+  "effects": {
+   "happiness": 2,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-032",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "working": true,
+   "sex": "male",
+   "job": [
+    "smallco",
+    "bigco"
+   ]
+  },
+  "text": "取引先で、頭を下げ続けた一日だった。帰りの電車で、ネクタイをゆるめる指が少し震えていた。",
+  "effects": {
+   "happiness": -2
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-033",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "married": true
+  },
+  "text": "朝早く起きて、{spouse}の分まで弁当を詰めた。卵焼きは少し焦げたが、そのまま入れた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "repeatGap": 6
+ },
+ {
+  "id": "d3-034",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "job": [
+    "farm"
+   ],
+   "urban": false
+  },
+  "text": "田んぼの仕事を終えて、縁側で冷えた麦茶を飲んだ。遠くでカエルが一斉に鳴き始めた。",
+  "effects": {
+   "happiness": 1,
+   "health": 1
+  },
+  "weight": 1,
+  "repeatGap": 6
+ },
+ {
+  "id": "d3-035",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "job": [
+    "self"
+   ]
+  },
+  "text": "朝、店のシャッターを開けると、冷たい空気が入ってきた。父の代から使っている帳面を、帳場の机に広げた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "repeatGap": 6
+ },
+ {
+  "id": "d3-036",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "job": [
+    "public"
+   ]
+  },
+  "text": "役所の窓口で、声を荒らげる客に何度も同じ説明をした。昼休み、弁当の味がしなかった。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-037",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "job": [
+    "smallco"
+   ]
+  },
+  "text": "小さな工場で、油のにおいのする作業着のまま昼飯を食べた。社長が自分でやかんの湯を沸かし、皆にお茶を配った。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-038",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 23,
+  "when": {
+   "job": [
+    "bigco"
+   ],
+   "sex": "male"
+  },
+  "text": "入社式で、何百人もの同期と同じ紺色の背広を着て座った。自分がどこにいるのか、分からなくなった。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-039",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "working": true,
+   "urban": true,
+   "sex": "male"
+  },
+  "text": "昼休みに会社の屋上へ上がり、遠くのビルを眺めながらパンをかじった。風がネクタイや髪を持ち上げた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "repeatGap": 8
+ },
+ {
+  "id": "d3-040",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 30,
+  "when": {
+   "flags": [
+    "moved_to_city"
+   ],
+   "mother": true
+  },
+  "text": "母から、米と野菜が詰まった段ボールが届いた。新聞紙に包まれた大根に、まだ土が付いていた。",
+  "effects": {
+   "happiness": 2,
+   "relation": 1
+  },
+  "weight": 1,
+  "repeatGap": 4
+ },
+ {
+  "id": "d3-041",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 30,
+  "when": {
+   "working": true
+  },
+  "text": "給料から少しずつ貯めて、自分の名前の通帳の残高が初めて十万円を超えた。数字を何度も指でなぞった。",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-042",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "married": true
+  },
+  "text": "{spouse}が作ったみそ汁が、自分の家の味と少し違った。黙って飲み干したら、「おかわりは」と聞かれた。",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-043",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "married": true,
+   "sex": "female",
+   "hasChildren": false
+  },
+  "text": "子どもができたと分かった日、帰り道の景色がいつもと違って見えた。八百屋の店先の果物の色まで、鮮やかだった。",
+  "effects": {
+   "happiness": 3
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-044",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "married": true,
+   "sex": "male",
+   "hasChildren": false
+  },
+  "text": "{spouse}のおなかに耳を当てると、中で何かがぐっと動いた。思わず「おっ」と声が出た。",
+  "effects": {
+   "happiness": 2,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-045",
+  "kind": "daily",
+  "ageMin": 21,
+  "ageMax": 34,
+  "when": {
+   "working": true,
+   "childAge": [
+    1,
+    3
+   ]
+  },
+  "text": "{child}が保育園の門で泣いて、足にしがみついた。手を離して背を向けると、角を曲がるまで泣き声が聞こえた。",
+  "effects": {
+   "happiness": -1,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-046",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "childAge": [
+    0,
+    6
+   ]
+  },
+  "text": "{child}の寝顔を見ながら、自分も小さいころ、こうして親に見られていたのだろうかと思った。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-047",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "childAge": [
+    3,
+    3
+   ]
+  },
+  "text": "{child}の三歳の誕生日に、ケーキにろうそくを三本立てた。{child}は一息では吹き消せず、四回目でやっと消した。",
+  "effects": {
+   "happiness": 2,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-048",
+  "kind": "daily",
+  "ageMin": 23,
+  "ageMax": 34,
+  "when": {
+   "married": false
+  },
+  "text": "親せきの集まりで、「いい人はいないのか」と三人から続けて聞かれた。お茶を何杯もおかわりして、やり過ごした。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "repeatGap": 4
+ },
+ {
+  "id": "d3-049",
+  "kind": "daily",
+  "ageMin": 24,
+  "ageMax": 34,
+  "when": {
+   "married": false
+  },
+  "text": "{friend}と久しぶりに会うと、子どもの写真を見せられた。自分にはまだ見せるものが何もない気がした。",
+  "effects": {
+   "happiness": -1,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-050",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 30,
+  "when": {
+   "married": false
+  },
+  "text": "失恋した夜、部屋の明かりを消したまま、窓の外を通る電車の音を数えていた。最終電車が過ぎると、部屋は急に静かになった。",
+  "effects": {
+   "happiness": -2
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-051",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 28,
+  "when": {
+   "married": false
+  },
+  "text": "好きな人と、初めて二人で映画を見に行った。話の筋はほとんど覚えていないが、隣の肩が近かったことは覚えている。",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-052",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 26,
+  "when": {
+   "working": true
+  },
+  "text": "初めて有給休暇を取った。平日の昼間の町が、こんなに静かだとは知らなかった。公園のベンチで、鳩にパンくずをやった。",
+  "effects": {
+   "happiness": 1,
+   "health": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-053",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 30,
+  "when": {
+   "working": true
+  },
+  "text": "職場に後輩ができた。教えるつもりが、自分も分かっていなかったことに気づき、夜に一人で調べ直した。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-054",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "married": true
+  },
+  "text": "{spouse}と二人で家計簿を広げ、来月の出費を書き出した。「旅行はまた今度」と同時に言って、笑った。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-055",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "childAge": [
+    2,
+    5
+   ]
+  },
+  "text": "{child}の手を引いて公園へ行った。{child}は砂場で作った山を、自分で踏みつぶしては声を上げて喜んだ。",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1,
+  "repeatGap": 3
+ },
+ {
+  "id": "d3-056",
+  "kind": "daily",
+  "ageMin": 21,
+  "ageMax": 34,
+  "when": {
+   "working": true,
+   "childAge": [
+    0,
+    6
+   ]
+  },
+  "text": "{child}が熱を出して、職場に休みの電話をかけた。受話器の向こうの上司の声が、少し冷たく聞こえた。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-057",
+  "kind": "daily",
+  "ageMin": 21,
+  "ageMax": 34,
+  "when": {
+   "mother": true,
+   "childAge": [
+    0,
+    0
+   ]
+  },
+  "text": "母が初孫の顔を見に来た。{mAge}歳の母は{child}を抱いたまま、一時間も離そうとしなかった。",
+  "effects": {
+   "happiness": 2,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-058",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "father": true
+  },
+  "text": "父から珍しく電話があった。用件を言わないまま天気の話だけをして、「じゃあ」と切れた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-059",
+  "kind": "daily",
+  "ageMin": 23,
+  "ageMax": 34,
+  "when": {
+   "married": true
+  },
+  "text": "年末の大掃除で、{spouse}と押し入れの奥から、互いの学生時代の写真を見つけた。掃除はそこで止まった。",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-060",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "working": true
+  },
+  "text": "仕事帰りに一人で入った定食屋で、店の主人に「いつものでいい？」と聞かれた。いつの間にか常連になっていた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-061",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {},
+  "text": "雨の日、傘を持っていなかった。駅の軒下で、同じように空を見上げる人たちと並んで、小降りになるのを待った。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "repeatGap": 10
+ },
+ {
+  "id": "d3-062",
+  "kind": "daily",
+  "ageMin": 23,
+  "ageMax": 34,
+  "when": {
+   "childAge": [
+    3,
+    5
+   ]
+  },
+  "text": "{child}が保育園で作った紙の首飾りを、首にかけてもらった。そのまま外さずに夕飯を食べた。",
+  "effects": {
+   "happiness": 2,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-063",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 30,
+  "when": {
+   "urban": true
+  },
+  "text": "隣の部屋の夫婦げんかが、薄い壁ごしに聞こえた。翌朝、廊下で会うと、二人とも笑顔であいさつしてきた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-064",
+  "kind": "daily",
+  "ageMin": 23,
+  "ageMax": 34,
+  "when": {
+   "married": true
+  },
+  "text": "初めての結婚記念日に、{spouse}と式の写真を見返した。一年で、二人とも少し顔が丸くなっていた。",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-065",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "working": true
+  },
+  "text": "会社の健康診断で、体重が学生のころより五キロ増えていた。その日の昼は、ご飯を少なめにした。",
+  "effects": {
+   "health": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-066",
+  "kind": "daily",
+  "ageMin": 26,
+  "ageMax": 34,
+  "when": {},
+  "text": "重い荷物を持ち上げたとき、腰を痛めた。三日のあいだ、靴下をはくたびに声が出た。",
+  "effects": {
+   "health": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-067",
+  "kind": "daily",
+  "ageMin": 27,
+  "ageMax": 34,
+  "when": {},
+  "text": "鏡を見ていて、初めて白髪を一本見つけた。抜こうとして、少し迷ってからやめた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-068",
+  "kind": "daily",
+  "ageMin": 21,
+  "ageMax": 34,
+  "when": {
+   "married": true,
+   "childAge": [
+    0,
+    6
+   ]
+  },
+  "text": "{child}を寝かしつけているうちに、自分のほうが先に寝てしまった。目を覚ますと、肩に毛布がかかっていた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-069",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {},
+  "text": "{friend}から突然電話があり、近くまで来ているという。夜の喫茶店で、学生のころと同じように笑い合った。",
+  "effects": {
+   "happiness": 2,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-070",
+  "kind": "daily",
+  "ageMin": 21,
+  "ageMax": 34,
+  "when": {
+   "working": true
+  },
+  "text": "{friend}との約束を、仕事で二度続けて断った。三度目の誘いは来なかった。",
+  "effects": {
+   "relation": -1,
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-071",
+  "kind": "daily",
+  "ageMin": 23,
+  "ageMax": 34,
+  "when": {},
+  "text": "疎遠になっていた{friend}に、思い切って年賀状を出した。正月三日、返事が届いた。",
+  "effects": {
+   "happiness": 1,
+   "relation": 2
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-072",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "married": true
+  },
+  "text": "{spouse}が熱を出して寝込み、慣れない台所に立った。おかゆが鍋の底に焦げついた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-073",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "working": true
+  },
+  "text": "冬の朝、布団から出られず、目覚まし時計を三回止めた。駅まで走ったとき、吐く息が白かった。",
+  "effects": {
+   "health": 0
+  },
+  "weight": 1,
+  "repeatGap": 8
+ },
+ {
+  "id": "d3-074",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {},
+  "text": "夏の夜、部屋の窓を開けて寝た。遠くの盆踊りの太鼓が、夜中まで聞こえていた。網戸に止まった虫が、ときどき羽を鳴らした。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "repeatGap": 8
+ },
+ {
+  "id": "d3-075",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 23,
+  "when": {
+   "school": "univ"
+  },
+  "text": "大学の図書館で、閉館の音楽が鳴るまで本を読んだ。外に出ると、街灯に虫が集まっていた。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-076",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 23,
+  "when": {
+   "school": "univ"
+  },
+  "text": "下宿の隣の部屋の学生と、夜中まで将来の話をした。最後には二人とも黙って、天井を見ていた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-077",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 23,
+  "when": {
+   "school": "univ"
+  },
+  "text": "試験の前の晩、友だちのノートを借りて書き写した。字がくせ字で、半分は読めなかった。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-078",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 23,
+  "when": {
+   "school": "univ"
+  },
+  "text": "アルバイト先の店長に、「若いのに、よく気がつくね」と言われた。帰り道、その言葉を何度も思い出した。",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-079",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "married": true
+  },
+  "text": "{spouse}と二人で、新しい家具を一つ選ぶのに半日かかった。結局、一番安い棚を買って帰った。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-080",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "childAge": [
+    0,
+    3
+   ]
+  },
+  "text": "{child}が昼寝をしているあいだに、急いで洗濯物を干した。部屋に戻ると、もう目を覚ましてこちらを見ていた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-081",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "childAge": [
+    0,
+    1
+   ]
+  },
+  "text": "{child}の小さな爪を切るあいだ、息を止めていた。終わると、肩がすっかりこっていた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-082",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "childAge": [
+    2,
+    5
+   ]
+  },
+  "text": "{child}がおもちゃを取り合って、よその子を泣かせてしまった。その子の母親に、何度も頭を下げた。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-083",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "married": true,
+   "poor": true
+  },
+  "text": "給料日の前、{spouse}と家じゅうの小銭を集めて数えた。台所の机に、十円玉の塔がいくつもできた。",
+  "effects": {
+   "happiness": 0,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-084",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "married": true
+  },
+  "text": "{spouse}の誕生日に、花屋の前を三回行き来してから、小さな花束を買った。",
+  "effects": {
+   "relation": 2
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-085",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "urban": false
+  },
+  "text": "地元の祭りに、久しぶりに顔を出した。法被を着た同級生が、もう父親の顔になっていた。",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-086",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "flags": [
+    "moved_to_city"
+   ]
+  },
+  "text": "地元に残った同級生と、駅前の居酒屋で飲んだ。都会の話をすると、少し遠い目をされた。",
+  "effects": {
+   "relation": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-087",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "working": true
+  },
+  "text": "仕事でくたくたになった夜、銭湯の大きな湯船に首までつかった。壁のタイルの富士山を、ぼんやり眺めた。",
+  "effects": {
+   "health": 1,
+   "happiness": 1
+  },
+  "weight": 1,
+  "repeatGap": 6
+ },
+ {
+  "id": "d3-088",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "working": true
+  },
+  "text": "職場の同僚の送別会で、色紙に何を書くか迷い、結局「お元気で」とだけ書いた。文字が、思ったより小さくなった。",
+  "effects": {
+   "relation": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-089",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 26,
+  "yearMin": 1960,
+  "yearMax": 2026,
+  "when": {
+   "married": false
+  },
+  "text": "初めて自分で洗濯機を回し、白いシャツを赤い靴下と一緒に洗ってしまった。シャツは薄い桃色になった。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "確認済み：内閣府経済社会総合研究所の資料（三種の神器は1950年代後半、3Cは1960年代後半）"
+ },
+ {
+  "id": "d3-090",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 30,
+  "when": {
+   "poor": true
+  },
+  "text": "雨漏りのする古いアパートで、天井の染みの下にバケツを置いた。ぽたん、ぽたんという音を聞きながら眠った。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-091",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 30,
+  "when": {},
+  "text": "大家さんが、作りすぎたという煮物を小鉢に入れて持ってきてくれた。小鉢を洗って返すとき、みかんを二つ添えた。",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-092",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "married": true
+  },
+  "text": "朝、{spouse}より先に起きて湯を沸かした。やかんが鳴る前に、そっと火を止めた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-093",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "married": true,
+   "childAge": [
+    1,
+    3
+   ]
+  },
+  "text": "子どもが生まれてから一年ぶりに、{spouse}と二人で出かけた。喫茶店で、気づくと子どもの話ばかりしていた。",
+  "effects": {
+   "happiness": 2,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-094",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "working": true
+  },
+  "text": "仕事で失敗した帰り、駅のホームのベンチで電車を二本見送った。三本目に、やっと乗った。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-095",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "married": true
+  },
+  "text": "{spouse}と暮らし始めて、歯みがき粉のチューブの絞り方が違うことに気づいた。そのうち、どちらも何も言わなくなった。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-096",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "married": true,
+   "father": true,
+   "mother": true
+  },
+  "text": "結婚の報告に行くと、父は「そうか」とだけ言って庭へ出てしまった。あとで母が、父の目が赤かったと教えてくれた。",
+  "effects": {
+   "happiness": 2,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-097",
+  "kind": "daily",
+  "ageMin": 27,
+  "ageMax": 34,
+  "when": {
+   "working": true
+  },
+  "text": "職場に、自分より若い上司がやってきた。最初の打ち合わせで、何と呼べばいいか迷った。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-098",
+  "kind": "daily",
+  "ageMin": 23,
+  "ageMax": 34,
+  "when": {
+   "working": true
+  },
+  "text": "給料が少し上がった。誰にも言わず、帰りにいつもより高いビールを一本買った。冷蔵庫の前に立ったまま、半分飲んだ。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-099",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {},
+  "text": "夜更けに、昔の日記を読み返した。高校生の自分の字は、思っていたより幼かった。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-100",
+  "kind": "daily",
+  "ageMin": 23,
+  "ageMax": 34,
+  "when": {
+   "married": true,
+   "childAge": [
+    2,
+    6
+   ]
+  },
+  "text": "{child}が自分の口ぐせをまねした。{spouse}に「あなたにそっくり」と言われ、何も言い返せなかった。",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-101",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {},
+  "text": "引っ越した先の町で、近所の人の顔と名前がなかなか覚えられなかった。ごみ出しの朝が、少し気づまりだった。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-102",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 30,
+  "when": {
+   "working": true
+  },
+  "text": "スーツを新調した。店の人に採寸されながら、いつもより背筋をのばした。鏡の中の自分が、少しだけ大人に見えた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-103",
+  "kind": "daily",
+  "ageMin": 26,
+  "ageMax": 34,
+  "when": {
+   "childAge": [
+    5,
+    8
+   ]
+  },
+  "text": "{child}の自転車の荷台を支えて走った。手を離したことに気づかず、{child}は通りの端まで一人でこいでいった。",
+  "effects": {
+   "happiness": 2,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-104",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 34,
+  "when": {
+   "childAge": [
+    4,
+    9
+   ]
+  },
+  "text": "{child}の運動会の場所取りのために、朝五時に起きた。ゴザを敷いた校庭で、白い息を吐きながら開門を待った。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-105",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 34,
+  "when": {
+   "childAge": [
+    6,
+    6
+   ]
+  },
+  "text": "{child}が大きなランドセルを背負って家を出た。後ろ姿がランドセルに隠れて、ほとんど見えなかった。",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-106",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "working": true
+  },
+  "text": "奨学金の返済の通知が届いた。残りの年数を数えて、しばらく黙って封筒を眺めた。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "d3-107",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 34,
+  "yearMin": 1949,
+  "yearMax": 1972,
+  "when": {
+   "working": true,
+   "sex": "male"
+  },
+  "text": "給料日、茶色の給料袋を受け取った。中の札を指で数えてから、背広の内ポケットにそっとしまった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-108",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 30,
+  "yearMin": 1949,
+  "yearMax": 1968,
+  "when": {},
+  "text": "近所の家に電話がかかってきて、「呼び出しですよ」と呼ばれた。サンダルをつっかけて走り、よその家の玄関で受話器を握った。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-109",
+  "kind": "daily",
+  "ageMin": 21,
+  "ageMax": 30,
+  "yearMin": 1949,
+  "yearMax": 1975,
+  "when": {
+   "married": false
+  },
+  "text": "お見合いの席で、相手の顔をまともに見られなかった。帰り道、仲人に「どうだった」と聞かれ、「はあ」としか言えなかった。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-110",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 22,
+  "yearMin": 1955,
+  "yearMax": 1974,
+  "when": {
+   "working": true,
+   "flags": [
+    "moved_to_city"
+   ]
+  },
+  "text": "会社の寮の大部屋で、同じ年ごろの若者たちと布団を並べて寝た。夜中、誰かの寝言で皆が笑った。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "確認済み：集団就職は1950年代半ばから70年代半ばが目安（法政大学・関西学院大学の研究論文）"
+ },
+ {
+  "id": "d3-111",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 25,
+  "yearMin": 1955,
+  "yearMax": 1974,
+  "when": {
+   "working": true,
+   "flags": [
+    "moved_to_city"
+   ]
+  },
+  "text": "集団就職で来た年下の子たちを、駅まで迎えに行った。大きな風呂敷包みを抱えた顔が、昔の自分に見えた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "確認済み：集団就職は1950年代半ばから70年代半ばが目安（法政大学・関西学院大学の研究論文）"
+ },
+ {
+  "id": "d3-112",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "yearMin": 1955,
+  "yearMax": 1964,
+  "when": {
+   "working": true
+  },
+  "text": "ボーナスと月賦で、白黒テレビを買った。夕方になると、近所の子どもたちが窓の外からのぞきに来た。",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1,
+  "check": "確認済み：内閣府経済社会総合研究所の資料（三種の神器は1950年代後半、3Cは1960年代後半）"
+ },
+ {
+  "id": "d3-113",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "yearMin": 1955,
+  "yearMax": 1965,
+  "when": {
+   "married": true
+  },
+  "text": "{spouse}と相談して、電気洗濯機を買った。たらいと洗濯板は、物置の奥にしまわれた。",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1,
+  "check": "確認済み：内閣府経済社会総合研究所の資料（三種の神器は1950年代後半、3Cは1960年代後半）"
+ },
+ {
+  "id": "d3-114",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "yearMin": 1955,
+  "yearMax": 1965,
+  "when": {
+   "married": true
+  },
+  "text": "電気冷蔵庫が家に来た日、{spouse}と中をのぞき込んだ。氷ができたか、何度も扉を開けては確かめた。",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1,
+  "check": "確認済み：内閣府経済社会総合研究所の資料（三種の神器は1950年代後半、3Cは1960年代後半）"
+ },
+ {
+  "id": "d3-115",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "yearMin": 1956,
+  "yearMax": 1975,
+  "when": {
+   "married": true,
+   "urban": true
+  },
+  "text": "公団の団地の抽選に当たった。ダイニングキッチンの部屋で、初めていすに座って朝ご飯を食べた。",
+  "effects": {
+   "happiness": 3
+  },
+  "weight": 1,
+  "check": "確認済み：UR都市機構の資料（日本住宅公団は1955年発足、DKの間取りを広めた。初期の団地は1956年）"
+ },
+ {
+  "id": "d3-116",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "yearMin": 1956,
+  "yearMax": 1979,
+  "when": {
+   "married": true,
+   "sex": "female",
+   "urban": true
+  },
+  "text": "団地の同じ階段の奥さんたちと、物干しのついでに話すのが毎朝の習いになった。夕飯の献立まで、自然とうわさになった。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "確認済み：UR都市機構の資料（日本住宅公団は1955年発足、DKの間取りを広めた。初期の団地は1956年）"
+ },
+ {
+  "id": "d3-117",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "yearMin": 1958,
+  "yearMax": 1975,
+  "when": {
+   "working": true,
+   "job": [
+    "smallco",
+    "bigco",
+    "public"
+   ]
+  },
+  "text": "社員旅行で熱海の温泉旅館に泊まった。大広間の宴会で、課長が浴衣姿で歌い、皆で手拍子をした。",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "確認済み：社員旅行は高度成長期に一般化しバブル期に最盛、熱海は1960年代に栄えた温泉街（東洋経済・デイリーの記事）"
+ },
+ {
+  "id": "d3-118",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "yearMin": 1964,
+  "yearMax": 1979,
+  "when": {},
+  "text": "初めて新幹線に乗った。窓の外の景色が流れる速さに、ずっと座席のひじ掛けをつかんでいた。",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1,
+  "check": "確認済み：東海道新幹線は1964年開業（社員旅行の記事）"
+ },
+ {
+  "id": "d3-119",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 32,
+  "yearMin": 1966,
+  "yearMax": 1979,
+  "when": {
+   "married": true,
+   "hasChildren": false
+  },
+  "text": "新婚旅行で宮崎へ行った。南国の並木道の下で、同じような新婚の夫婦が何組も写真を撮り合っていた。",
+  "effects": {
+   "happiness": 2,
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "確認済み：宮崎の新婚旅行ブームは1960年代後半から70年代後半（一橋大学の論文、photoguide.jp）"
+ },
+ {
+  "id": "d3-120",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "yearMin": 1965,
+  "yearMax": 1975,
+  "when": {
+   "married": true
+  },
+  "text": "カラーテレビが家に来た。初めて見る野球中継の芝生の緑に、{spouse}と声を上げた。",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1,
+  "check": "確認済み：内閣府経済社会総合研究所の資料（三種の神器は1950年代後半、3Cは1960年代後半）"
+ },
+ {
+  "id": "d3-121",
+  "kind": "daily",
+  "ageMin": 24,
+  "ageMax": 34,
+  "yearMin": 1965,
+  "yearMax": 1979,
+  "when": {
+   "married": true,
+   "childAge": [
+    0,
+    10
+   ]
+  },
+  "text": "月賦で車を買った。休みの日、{spouse}と{child}を乗せて、海まで走った。",
+  "effects": {
+   "happiness": 2,
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "確認済み：内閣府経済社会総合研究所の資料（三種の神器は1950年代後半、3Cは1960年代後半）"
+ },
+ {
+  "id": "d3-122",
+  "kind": "daily",
+  "ageMin": 24,
+  "ageMax": 34,
+  "yearMin": 1966,
+  "yearMax": 1979,
+  "when": {
+   "childAge": [
+    0,
+    6
+   ]
+  },
+  "text": "クーラーを付けた夏、窓を閉め切った部屋で、{child}が汗もかかずに昼寝をした。電気代の請求書は見ないようにした。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：内閣府経済社会総合研究所の資料（三種の神器は1950年代後半、3Cは1960年代後半）"
+ },
+ {
+  "id": "d3-123",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 30,
+  "yearMin": 1955,
+  "yearMax": 1975,
+  "when": {
+   "job": [
+    "smallco",
+    "bigco"
+   ]
+  },
+  "text": "工場の三交代の夜勤を終えて、夜明けに寮へ帰った。朝日がまぶしくて、目を細めながら歩いた。",
+  "effects": {
+   "health": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-124",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 30,
+  "yearMin": 1949,
+  "yearMax": 1979,
+  "when": {
+   "flags": [
+    "moved_to_city"
+   ],
+   "mother": true
+  },
+  "text": "田舎の母へ、毎月の仕送りを現金書留で送った。封筒の裏に小さく「元気です」と書き添えた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "repeatGap": 4,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-125",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 30,
+  "yearMin": 1955,
+  "yearMax": 1985,
+  "when": {
+   "sex": "female",
+   "married": true
+  },
+  "text": "結婚を機に会社を辞める日、花束を抱えて職場の皆に頭を下げた。机の引き出しは、もう空になっていた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-126",
+  "kind": "daily",
+  "ageMin": 21,
+  "ageMax": 34,
+  "yearMin": 1949,
+  "yearMax": 1980,
+  "when": {
+   "married": true,
+   "childAge": [
+    0,
+    1
+   ]
+  },
+  "text": "物干しざおに、布おむつがずらりと並んだ。風に揺れるのを見て、{spouse}と「旗みたいだ」と笑った。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-127",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "yearMin": 1958,
+  "yearMax": 1979,
+  "when": {
+   "urban": true,
+   "childAge": [
+    0,
+    2
+   ]
+  },
+  "text": "{child}を乗せた乳母車を押して、団地の中の公園まで歩いた。同じように乳母車を押す母親たちと、自然に会釈をした。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：UR都市機構の資料（日本住宅公団は1955年発足、DKの間取りを広めた。初期の団地は1956年）"
+ },
+ {
+  "id": "d3-128",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 23,
+  "yearMin": 1965,
+  "yearMax": 1972,
+  "when": {
+   "school": "univ"
+  },
+  "text": "大学の門の前に立て看板が並び、昼休みも拡声器の声が響いていた。その脇を、本を抱えて足早に通り過ぎた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-129",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 26,
+  "yearMin": 1956,
+  "yearMax": 1970,
+  "when": {
+   "working": true
+  },
+  "text": "給料をためて、トランジスタラジオを買った。夜、寮の布団の中でイヤホンを耳に入れて聴いた。",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-130",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 26,
+  "yearMin": 1950,
+  "yearMax": 1965,
+  "when": {
+   "working": true
+  },
+  "text": "貸本屋で借りた漫画を、寮の仲間と回し読みした。返す日が来ても、まだ半分の人が読み終わっていなかった。",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-131",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 30,
+  "yearMin": 1949,
+  "yearMax": 1975,
+  "when": {},
+  "text": "銭湯の帰り、洗面器を抱えて夜道を歩いた。中のせっけん箱が、歩くたびにカタカタ鳴った。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "repeatGap": 6,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-132",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 30,
+  "yearMin": 1949,
+  "yearMax": 1975,
+  "when": {
+   "working": true,
+   "job": [
+    "smallco",
+    "bigco",
+    "public"
+   ]
+  },
+  "text": "事務所では、一日じゅうそろばんをはじく音が響いていた。月末の帳尻が合うまで、誰も帰らなかった。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-133",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 30,
+  "yearMin": 1960,
+  "yearMax": 1990,
+  "when": {
+   "flags": [
+    "moved_to_city"
+   ],
+   "mother": true
+  },
+  "text": "遠くの実家への電話は料金がかさむので、母との話を三分で切り上げた。切ったあとで、言い忘れたことを思い出した。",
+  "effects": {
+   "relation": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-134",
+  "kind": "daily",
+  "ageMin": 23,
+  "ageMax": 34,
+  "yearMin": 1955,
+  "yearMax": 1979,
+  "when": {
+   "married": true,
+   "childAge": [
+    2,
+    7
+   ],
+   "urban": true
+  },
+  "text": "日曜日、{spouse}と{child}を連れてデパートの屋上へ行った。{child}は小さな乗り物に、何度も乗りたがった。",
+  "effects": {
+   "happiness": 2,
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-135",
+  "kind": "daily",
+  "ageMin": 26,
+  "ageMax": 34,
+  "yearMin": 1973,
+  "yearMax": 1974,
+  "when": {
+   "married": true
+  },
+  "text": "トイレットペーパーがなくなるといううわさで、近所の店に長い列ができた。{spouse}と顔を見合わせ、とりあえず列に並んだ。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-136",
+  "kind": "daily",
+  "ageMin": 23,
+  "ageMax": 34,
+  "yearMin": 1955,
+  "yearMax": 1985,
+  "when": {
+   "married": true,
+   "sex": "female"
+  },
+  "text": "社宅に引っ越した。隣も向かいも同じ会社の家族で、夫の役職が奥さんたちの会話ににじんだ。",
+  "effects": {
+   "happiness": -1,
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-137",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 30,
+  "yearMin": 1979,
+  "yearMax": 1990,
+  "when": {},
+  "text": "ウォークマンを買い、通勤の電車でずっとカセットを聴いた。車内の音が遠のいて、自分だけの部屋にいるようだった。",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1,
+  "check": "確認済み：ソニーのウォークマン1号機は1979年7月1日発売（nippon.com）"
+ },
+ {
+  "id": "d3-138",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "yearMin": 1987,
+  "yearMax": 1991,
+  "when": {
+   "working": true,
+   "job": [
+    "smallco",
+    "bigco"
+   ]
+  },
+  "text": "ボーナスの明細を見て、思わず二度見した。その夜、同期と回らない寿司屋に入った。",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1,
+  "check": "確認済み：内閣府の景気基準日付（バブル景気は1986年11月〜1991年2月）"
+ },
+ {
+  "id": "d3-139",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "yearMin": 1987,
+  "yearMax": 1991,
+  "when": {
+   "urban": true,
+   "working": true
+  },
+  "text": "終電を逃し、タクシー乗り場の長い列に並んだ。一時間たっても、列は半分しか進まなかった。",
+  "effects": {
+   "health": -1
+  },
+  "weight": 1,
+  "check": "確認済み：バブル期のタクシー待ちの体験談（マイナビニュースのアンケート記事）、景気の期間は内閣府の景気基準日付"
+ },
+ {
+  "id": "d3-140",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 28,
+  "yearMin": 1979,
+  "yearMax": 1992,
+  "when": {
+   "urban": true,
+   "married": false
+  },
+  "text": "週末、{friend}とディスコへ行った。大きな音と光の渦の中で、明け方近くまで踊った。",
+  "effects": {
+   "happiness": 2,
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-141",
+  "kind": "daily",
+  "ageMin": 21,
+  "ageMax": 23,
+  "yearMin": 1987,
+  "yearMax": 1991,
+  "when": {
+   "school": "univ"
+  },
+  "text": "内定が早々に出ると、会社から豪華な食事会に招かれた。先輩たちは「どこも人が足りない」と笑っていた。",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1,
+  "check": "一部確認：バブル景気の期間は内閣府の景気基準日付。内定者の接待の様子は未確認"
+ },
+ {
+  "id": "d3-142",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 24,
+  "yearMin": 1993,
+  "yearMax": 2005,
+  "when": {},
+  "text": "就職活動で、四十社に履歴書を送った。届くのは、薄い封筒の「残念ながら」ばかりだった。",
+  "effects": {
+   "happiness": -2
+  },
+  "weight": 1,
+  "check": "確認済み：就職氷河期は1993〜2005年卒（政府の就職氷河期世代支援プログラムの定義、イミダス）"
+ },
+ {
+  "id": "d3-143",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 24,
+  "yearMin": 1993,
+  "yearMax": 2005,
+  "when": {},
+  "text": "面接の帰り、公園のベンチでリクルートスーツのまま缶コーヒーを飲んだ。隣のベンチにも、同じ紺色のスーツが座っていた。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "確認済み：就職氷河期は1993〜2005年卒（政府の就職氷河期世代支援プログラムの定義、イミダス）"
+ },
+ {
+  "id": "d3-144",
+  "kind": "daily",
+  "ageMin": 21,
+  "ageMax": 23,
+  "yearMin": 1993,
+  "yearMax": 2005,
+  "when": {
+   "school": "univ"
+  },
+  "text": "大学の就職課の掲示板を見に行った。貼られた求人票は、先輩たちの年の半分もなかった。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "確認済み：就職氷河期は1993〜2005年卒（政府の就職氷河期世代支援プログラムの定義、イミダス）"
+ },
+ {
+  "id": "d3-145",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 28,
+  "yearMin": 1993,
+  "yearMax": 1997,
+  "when": {
+   "married": false
+  },
+  "text": "ポケベルに数字の並びが届いた。公衆電話へ走り、テレホンカードを差し込んだ。度数の数字が、話すうちにみるみる減っていった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "一部確認：1995年ごろ若者がポケベルを使っていたことはY!mobile「PHS25年史」で確認。広まり始めた年は未確認"
+ },
+ {
+  "id": "d3-146",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 28,
+  "yearMin": 1995,
+  "yearMax": 2000,
+  "when": {},
+  "text": "PHSを買った。通話料が安いので、毎晩、布団の中で{friend}と長電話をした。",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "確認済み：Y!mobile「PHS25年史」（PHSは1995年開始、安い料金で若者に支持された）"
+ },
+ {
+  "id": "d3-147",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 30,
+  "yearMin": 1999,
+  "yearMax": 2004,
+  "when": {},
+  "text": "iモードの携帯電話で、初めて小さな画面にメールを打った。親指で何度もボタンを押して、やっと一行書けた。",
+  "effects": {
+   "happiness": 1,
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "確認済み：iモードは1999年2月22日開始（INTERNET Watch）"
+ },
+ {
+  "id": "d3-148",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 30,
+  "yearMin": 1999,
+  "yearMax": 2009,
+  "when": {
+   "married": false
+  },
+  "text": "好きな人にメールを送ったあと、返事が来ていないか、何度も携帯電話を開いては閉じた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "確認済み：iモードは1999年2月22日開始（INTERNET Watch）"
+ },
+ {
+  "id": "d3-149",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "yearMin": 1995,
+  "yearMax": 2002,
+  "when": {
+   "working": true,
+   "job": [
+    "smallco",
+    "bigco",
+    "public"
+   ]
+  },
+  "text": "職場の机に、一人一台のパソコンが並んだ。ワープロで作っていた書類の作り方を、一から覚え直した。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-150",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "yearMin": 1995,
+  "yearMax": 2009,
+  "when": {
+   "working": true
+  },
+  "text": "契約社員として働きながら、正社員の求人を探し続けた。履歴書の職歴の欄が、少しずつ長くなった。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "一部確認：就職氷河期の時期は政府の定義（イミダス）。契約社員の広がりの時期は未確認"
+ },
+ {
+  "id": "d3-151",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 30,
+  "yearMin": 1985,
+  "yearMax": 2005,
+  "when": {},
+  "text": "週末にレンタルビデオ店でビデオを三本借りた。返す日の朝、巻き戻しを忘れていたことに気づいて慌てた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-152",
+  "kind": "daily",
+  "ageMin": 24,
+  "ageMax": 34,
+  "yearMin": 1992,
+  "yearMax": 2003,
+  "when": {
+   "married": true,
+   "working": true,
+   "job": [
+    "smallco",
+    "bigco"
+   ]
+  },
+  "text": "会社の業績が落ち、ボーナスが前の年の半分になった。{spouse}と家計簿を前に、しばらく黙り込んだ。",
+  "effects": {
+   "happiness": -2
+  },
+  "weight": 1,
+  "check": "一部確認：バブル景気が1991年2月に終わったことは内閣府の景気基準日付。その後のボーナスの減り方は未確認"
+ },
+ {
+  "id": "d3-153",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 30,
+  "yearMin": 1986,
+  "yearMax": 1991,
+  "when": {
+   "working": true,
+   "job": [
+    "smallco",
+    "bigco"
+   ]
+  },
+  "text": "社員旅行で、バスを何台も連ねてスキー場へ行った。夜の宴会では、新人が出し物をさせられた。",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "確認済み：社員旅行は高度成長期に一般化しバブル期に最盛、熱海は1960年代に栄えた温泉街（東洋経済・デイリーの記事）"
+ },
+ {
+  "id": "d3-154",
+  "kind": "daily",
+  "ageMin": 23,
+  "ageMax": 34,
+  "yearMin": 1975,
+  "yearMax": 2026,
+  "when": {
+   "married": true,
+   "hasChildren": false
+  },
+  "text": "新婚旅行で、{spouse}と初めて海外へ行った。機内食のトレーを前に、二人とも妙にかしこまっていた。",
+  "effects": {
+   "happiness": 2,
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "一部確認：海外旅行の自由化は1964年（新婚旅行の研究資料）。新婚旅行先として広まった時期は未確認"
+ },
+ {
+  "id": "d3-155",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 34,
+  "yearMin": 1960,
+  "yearMax": 2005,
+  "when": {},
+  "text": "フィルムを写真屋に出して、三日後に受け取った。袋を開けると、半分は誰かが目をつぶっていた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-156",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "yearMin": 1990,
+  "yearMax": 2026,
+  "when": {
+   "working": true
+  },
+  "text": "年末、職場の皆とカラオケボックスへ行った。部長が同じ曲を三回入れ、誰も止められなかった。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-157",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "yearMin": 1985,
+  "yearMax": 2005,
+  "when": {
+   "working": true
+  },
+  "text": "ファクスで届いた注文書の文字がかすれて読めず、取引先に電話をかけて一つずつ確かめた。",
+  "effects": {
+   "knowledge": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-158",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 30,
+  "yearMin": 1996,
+  "yearMax": 2003,
+  "when": {},
+  "text": "インターネットにつながるまで、パソコンのモデムがピーヒョロロと鳴るのを、じっと待った。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-159",
+  "kind": "daily",
+  "ageMin": 23,
+  "ageMax": 34,
+  "yearMin": 2000,
+  "yearMax": 2010,
+  "when": {
+   "childAge": [
+    0,
+    5
+   ]
+  },
+  "text": "デジタルカメラを買って、{child}の写真を何十枚も撮った。パソコンの中に、同じような寝顔ばかりがたまっていった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-160",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 30,
+  "yearMin": 2000,
+  "yearMax": 2009,
+  "when": {
+   "working": true
+  },
+  "text": "派遣の仕事の契約が、三か月ごとに更新された。更新の月が近づくたびに、胃のあたりが重くなった。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-161",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 30,
+  "yearMin": 1985,
+  "yearMax": 2026,
+  "when": {
+   "married": false,
+   "working": true
+  },
+  "text": "コンビニの弁当を電子レンジで温めて、深夜のアパートで一人で食べた。テレビの音だけが部屋に響いていた。",
+  "effects": {
+   "happiness": -1,
+   "health": -1
+  },
+  "weight": 1,
+  "repeatGap": 8,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-162",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 30,
+  "yearMin": 2012,
+  "yearMax": 2026,
+  "when": {
+   "working": true
+  },
+  "text": "LINEのグループに、職場の同期から「今日飲みに行ける人」と届いた。返事の代わりに、スタンプが次々に並んだ。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "確認済み：LINE株式会社の沿革（2011年6月23日開始、スタンプなどは同年10月以降）"
+ },
+ {
+  "id": "d3-163",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "yearMin": 2012,
+  "yearMax": 2026,
+  "when": {},
+  "text": "スマホの家計簿アプリをつけ始めた。グラフの「食費」の色が、毎月一番大きかった。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "一部確認：LINEは2011年開始（LINE株式会社の沿革）。スマホが広く使われ始めた年は未確認"
+ },
+ {
+  "id": "d3-164",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 32,
+  "yearMin": 2012,
+  "yearMax": 2026,
+  "when": {
+   "married": false
+  },
+  "text": "SNSに流れてきた同級生の結婚式の写真に、親指で「いいね」を押した。そのまま画面を伏せて、天井を見た。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-165",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "yearMin": 2020,
+  "yearMax": 2023,
+  "when": {
+   "working": true,
+   "urban": true
+  },
+  "text": "在宅勤務になり、台所の机がそのまま仕事場になった。オンライン会議の画面の端に、干した洗濯物が映り込んでいた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "確認済み：2020年4月の緊急事態宣言後にテレワーク実施率が倍増し、ZoomやTeamsが使われた（パーソル総合研究所・JILPTの調査）"
+ },
+ {
+  "id": "d3-166",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "yearMin": 2020,
+  "yearMax": 2026,
+  "when": {
+   "working": true
+  },
+  "text": "オンライン会議で、自分の声だけが途切れていた。皆が口を動かすのを、黙って見ていた。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "確認済み：2020年4月の緊急事態宣言後にテレワーク実施率が倍増し、ZoomやTeamsが使われた（パーソル総合研究所・JILPTの調査）"
+ },
+ {
+  "id": "d3-167",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 32,
+  "yearMin": 2018,
+  "yearMax": 2026,
+  "when": {
+   "married": false
+  },
+  "text": "マッチングアプリで知り合った人と、駅の改札で待ち合わせた。写真より、少し背が高かった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：明治安田生命の調査（2022年に結婚した夫婦の出会いのきっかけはマッチングアプリが22.6%で最多）"
+ },
+ {
+  "id": "d3-168",
+  "kind": "daily",
+  "ageMin": 23,
+  "ageMax": 34,
+  "yearMin": 2013,
+  "yearMax": 2019,
+  "when": {
+   "married": true,
+   "childAge": [
+    0,
+    2
+   ],
+   "urban": true
+  },
+  "text": "保育園の入園の結果が届いた。封を切る前に、{spouse}と二人で深呼吸をした。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "確認済み：待機児童は2017年がピーク（こども家庭庁の発表を報じた記事）"
+ },
+ {
+  "id": "d3-169",
+  "kind": "daily",
+  "ageMin": 23,
+  "ageMax": 34,
+  "yearMin": 2013,
+  "yearMax": 2019,
+  "when": {
+   "childAge": [
+    0,
+    1
+   ],
+   "urban": true
+  },
+  "text": "{child}を抱いて、一日に三か所の保育園を見学した。どこでも「申し込みが多くて」と言われた。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "確認済み：待機児童は2017年がピーク（こども家庭庁の発表を報じた記事）"
+ },
+ {
+  "id": "d3-170",
+  "kind": "daily",
+  "ageMin": 23,
+  "ageMax": 34,
+  "yearMin": 2012,
+  "yearMax": 2026,
+  "when": {
+   "married": true,
+   "working": true,
+   "childAge": [
+    1,
+    5
+   ]
+  },
+  "text": "{spouse}と共働きで、朝は分刻みで動いた。保育園の送りと迎えを、スマホのカレンダーで分け合った。",
+  "effects": {
+   "relation": 1,
+   "health": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-171",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 23,
+  "yearMin": 2020,
+  "yearMax": 2021,
+  "when": {
+   "working": true
+  },
+  "text": "マスクをしたまま入社式に出た。同期の顔を目元しか知らないまま、一年が過ぎた。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "一部確認：2020年4月の緊急事態宣言（パーソル総合研究所の調査）。入社式の様子は未確認"
+ },
+ {
+  "id": "d3-172",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 30,
+  "yearMin": 2014,
+  "yearMax": 2026,
+  "when": {},
+  "text": "フリマアプリで、着なくなった服を売った。知らない誰かから「大切に着ます」と届き、少しうれしかった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-173",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 23,
+  "yearMin": 2020,
+  "yearMax": 2023,
+  "when": {},
+  "text": "就職活動でオンライン面接を受けた。画面の向こうの面接官のうしろに、本棚と観葉植物が見えた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "確認済み：2020年4月の緊急事態宣言後にテレワーク実施率が倍増し、ZoomやTeamsが使われた（パーソル総合研究所・JILPTの調査）"
+ },
+ {
+  "id": "d3-174",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "yearMin": 2012,
+  "yearMax": 2026,
+  "when": {
+   "mother": true,
+   "childAge": [
+    0,
+    3
+   ]
+  },
+  "text": "{child}の寝顔をスマホで撮って、離れて住む母に送った。すぐに「かわいい」のスタンプが三つ届いた。",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "確認済み：LINE株式会社の沿革（2011年6月23日開始、スタンプなどは同年10月以降）"
+ },
+ {
+  "id": "d3-175",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 30,
+  "yearMin": 2015,
+  "yearMax": 2026,
+  "when": {},
+  "text": "動画配信サービスで、夜中までドラマを続けて見た。気づくと、窓の外で鳥が鳴いていた。",
+  "effects": {
+   "happiness": 1,
+   "health": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-176",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "yearMin": 2010,
+  "yearMax": 2026,
+  "when": {
+   "childAge": [
+    0,
+    2
+   ]
+  },
+  "text": "ネット通販で頼んだおむつの箱が、玄関に積み重なった。宅配の人とは、すっかり顔なじみになった。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-177",
+  "kind": "daily",
+  "ageMin": 24,
+  "ageMax": 34,
+  "yearMin": 2010,
+  "yearMax": 2026,
+  "when": {
+   "working": true
+  },
+  "text": "転職サイトに登録すると、知らない会社からの連絡が毎日のように届くようになった。開かずに消す日が続いた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "d3-178",
+  "kind": "daily",
+  "ageMin": 22,
+  "ageMax": 34,
+  "yearMin": 1992,
+  "yearMax": 2026,
+  "when": {
+   "sex": "female",
+   "working": true,
+   "childAge": [
+    1,
+    2
+   ]
+  },
+  "text": "育児休業から職場に戻った初日、机の上に書類が積まれていた。昼休み、{child}の写真をこっそり眺めた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "確認済み：育児休業の法制化は1991年（厚生労働省の資料）"
+ },
+ {
+  "id": "d3-179",
+  "kind": "daily",
+  "ageMin": 23,
+  "ageMax": 34,
+  "yearMin": 2020,
+  "yearMax": 2023,
+  "when": {
+   "working": true,
+   "childAge": [
+    1,
+    6
+   ]
+  },
+  "text": "在宅勤務の会議中に、{child}が画面の前に顔を出した。画面の向こうの皆が、笑って手を振った。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：2020年4月の緊急事態宣言後にテレワーク実施率が倍増し、ZoomやTeamsが使われた（パーソル総合研究所・JILPTの調査）"
+ },
+ {
+  "id": "d3-180",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "yearMin": 2012,
+  "yearMax": 2026,
+  "when": {},
+  "text": "休みの日、スマホの通知を切ってみた。昼を過ぎると、何度も画面に手が伸びそうになった。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "t3-001",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 30,
+  "when": {
+   "trigger": "job"
+  },
+  "text": "「明日から、毎朝この駅で降りるのか。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-002",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 30,
+  "when": {
+   "trigger": "job"
+  },
+  "text": "「給料をもらうって、こういうことか。思っていたより、ずっと重い。」",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-003",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 26,
+  "when": {
+   "trigger": "job"
+  },
+  "text": "「この会社で、定年まで働くのだろうか。そんな先のこと、想像もつかない。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-004",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 30,
+  "when": {
+   "trigger": "job",
+   "job": [
+    "smallco",
+    "bigco",
+    "public"
+   ]
+  },
+  "text": "「新しい名刺に、自分の名前が刷ってある。なんだか他人の名前みたいだ。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-005",
+  "kind": "think",
+  "ageMin": 24,
+  "ageMax": 34,
+  "when": {
+   "trigger": "job"
+  },
+  "text": "「前の職場のほうがよかったかもしれない。いや、まだ一か月だ。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-006",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 26,
+  "when": {
+   "trigger": "job"
+  },
+  "text": "「同期はみんな、自分より仕事ができる気がする。」",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-007",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "trigger": "job",
+   "job": [
+    "farm",
+    "self"
+   ]
+  },
+  "text": "「家の仕事を継ぐと決めた。決めたら、少し気が楽になった。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-008",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "trigger": "married",
+   "married": true
+  },
+  "text": "「今日から、帰る家に{spouse}がいる。」",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-009",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "trigger": "married",
+   "sex": "female"
+  },
+  "text": "「名字が変わった。窓口で呼ばれても、しばらく自分のことだと気づかなかった。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-010",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "trigger": "married"
+  },
+  "text": "「この人と、何十年も一緒に暮らすのか。うれしいような、こわいような。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-011",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "trigger": "married",
+   "mother": true
+  },
+  "text": "「親に、やっと少し安心してもらえた気がする。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-012",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "trigger": "married"
+  },
+  "text": "「結婚したからといって、急に大人になれるわけではないらしい。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-013",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 34,
+  "yearMin": 1949,
+  "yearMax": 1975,
+  "when": {
+   "trigger": "married"
+  },
+  "text": "「お見合いで会ってから半年。この人のことを、まだ半分も知らない。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "t3-014",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "trigger": "child"
+  },
+  "text": "「こんなに小さいのに、ちゃんと爪がある。」",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-015",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "trigger": "child"
+  },
+  "text": "「この子のために、もう少しちゃんとしなければ。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-016",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "trigger": "child"
+  },
+  "text": "「自分が親になるなんて。母も、こんな気持ちだったのだろうか。」",
+  "effects": {
+   "happiness": 1,
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-017",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "trigger": "child"
+  },
+  "text": "「眠い。でも、この寝顔を見ていると、文句が出てこない。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-018",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "trigger": "child"
+  },
+  "text": "「名前を呼び続けたら、この子はいつか返事をするようになるのだ。」",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-019",
+  "kind": "think",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "trigger": "child",
+   "childAge": [
+    1,
+    10
+   ]
+  },
+  "text": "「二人目は、一人目のときより落ち着いていられた。たぶん。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-020",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "trigger": "child",
+   "working": true
+  },
+  "text": "「仕事を続けながら、この子を育てられるだろうか。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-021",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 30,
+  "when": {
+   "trigger": "moved"
+  },
+  "text": "「この街には、自分のことを知っている人が一人もいない。」",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-022",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 30,
+  "when": {
+   "trigger": "moved"
+  },
+  "text": "「田舎では夜が暗かった。ここは、夜でも空が明るい。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-023",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 30,
+  "when": {
+   "trigger": "moved"
+  },
+  "text": "「帰りたいと思ったら、負けだ。」",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-024",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "trigger": "moved"
+  },
+  "text": "「ビルのすきまから見上げた空は、故郷の空と同じ色だった。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-025",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "trigger": "moved",
+   "mother": true
+  },
+  "text": "「母の声が、電話だと急に年を取ったように聞こえる。」",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-026",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 22,
+  "yearMin": 1955,
+  "yearMax": 1974,
+  "when": {
+   "trigger": "moved",
+   "working": true
+  },
+  "text": "「金の卵だなんて言われても、毎日が油まみれだ。」",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "一部確認：集団就職の時期は研究論文で確認。「金の卵」という言葉がはやった年は未確認"
+ },
+ {
+  "id": "t3-027",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "trigger": "wish_fail"
+  },
+  "text": "「何がいけなかったのだろう。考えても、答えは出なかった。」",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-028",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "trigger": "wish_fail"
+  },
+  "text": "「あきらめたのではない。今は、別の道を歩いているだけだ。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-029",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 30,
+  "when": {
+   "trigger": "wish_fail"
+  },
+  "text": "「努力すれば叶う、と言った先生を、少しだけうらむ。」",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-030",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "trigger": "wish_fail"
+  },
+  "text": "「あのとき、もう一度だけ挑んでいたら。」",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-031",
+  "kind": "think",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "trigger": "wish_fail"
+  },
+  "text": "「みんなが当たり前に手に入れるものが、自分には遠い。」",
+  "effects": {
+   "happiness": -2
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-032",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 24,
+  "yearMin": 1993,
+  "yearMax": 2005,
+  "when": {
+   "trigger": "wish_fail"
+  },
+  "text": "「何十社も落ちると、自分が要らない人間のように思えてくる。」",
+  "effects": {
+   "happiness": -2
+  },
+  "weight": 1,
+  "check": "確認済み：就職氷河期は1993〜2005年卒（政府の就職氷河期世代支援プログラムの定義、イミダス）"
+ },
+ {
+  "id": "t3-033",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "trigger": "parent_death"
+  },
+  "text": "「もっと話をしておけばよかった。聞きたいことが、今になって次々に浮かぶ。」",
+  "effects": {
+   "happiness": -2
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-034",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "trigger": "parent_death"
+  },
+  "text": "「親のいない正月を、こんなに早く迎えるとは思わなかった。」",
+  "effects": {
+   "happiness": -2
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-035",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "trigger": "parent_death"
+  },
+  "text": "「親の字で書かれたメモを、どうしても捨てられない。」",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-036",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "trigger": "parent_death",
+   "hasChildren": true
+  },
+  "text": "「孫の顔を、もう少し見せてあげたかった。」",
+  "effects": {
+   "happiness": -2
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-037",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "trigger": "ill"
+  },
+  "text": "「体が動くことは、当たり前ではなかった。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-038",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "trigger": "ill",
+   "working": true
+  },
+  "text": "「病室の天井を見ながら、仕事のことばかり考えていた。」",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-039",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "trigger": "ill"
+  },
+  "text": "「早く元気にならなければ。でも、少し休めてほっとしている自分もいる。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-040",
+  "kind": "think",
+  "ageMin": 22,
+  "ageMax": 34,
+  "yearMin": 1987,
+  "yearMax": 1991,
+  "when": {
+   "trigger": "job"
+  },
+  "text": "「こんなにいい時代が、ずっと続くのだろうか。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：内閣府の景気基準日付（バブル景気は1986年11月〜1991年2月）"
+ },
+ {
+  "id": "t3-041",
+  "kind": "think",
+  "ageMin": 24,
+  "ageMax": 34,
+  "when": {
+   "mood": "low"
+  },
+  "text": "「自分の人生は、本当にこれでいいのだろうか。」",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-042",
+  "kind": "think",
+  "ageMin": 29,
+  "ageMax": 30,
+  "when": {},
+  "text": "「もうすぐ三十歳になる。思っていた三十歳とは、ずいぶん違う。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-043",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "working": true
+  },
+  "text": "「お金がたまらない。どこに消えているのだろう。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-044",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 30,
+  "when": {
+   "married": false
+  },
+  "text": "「好きな人に好きと言えたら、どんなに楽だろう。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-045",
+  "kind": "think",
+  "ageMin": 26,
+  "ageMax": 34,
+  "when": {
+   "married": false
+  },
+  "text": "「みんな結婚していく。自分だけ、駅のホームに取り残された気分だ。」",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-046",
+  "kind": "think",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "married": false
+  },
+  "text": "「一人の部屋は気楽だ。気楽すぎて、少しさびしい。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-047",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "working": true,
+   "mood": "high"
+  },
+  "text": "「仕事が面白いと思えた日が、今日初めてあった。」",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-048",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "working": true,
+   "mood": "low"
+  },
+  "text": "「辞めたい。でも、辞めてどうする。」",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-049",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 26,
+  "when": {
+   "working": true
+  },
+  "text": "「上司の言うことが、半分しか分からない。でも、半分は分かるようになった。」",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-050",
+  "kind": "think",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "flags": [
+    "moved_to_city"
+   ]
+  },
+  "text": "「故郷に帰ったら、もうここには戻ってこられない気がする。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-051",
+  "kind": "think",
+  "ageMin": 27,
+  "ageMax": 34,
+  "when": {
+   "mother": true
+  },
+  "text": "「親は、いつまでも元気だと思っていた。」",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-052",
+  "kind": "think",
+  "ageMin": 23,
+  "ageMax": 34,
+  "when": {
+   "married": true
+  },
+  "text": "「{spouse}がいてくれて、助かった。口に出しては言わないけれど。」",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-053",
+  "kind": "think",
+  "ageMin": 24,
+  "ageMax": 34,
+  "when": {
+   "married": true,
+   "hasChildren": false
+  },
+  "text": "「子どもを持つかどうか、まだ決められない。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-054",
+  "kind": "think",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "hasChildren": true
+  },
+  "text": "「この子が大きくなるころ、世の中はどうなっているのだろう。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-055",
+  "kind": "think",
+  "ageMin": 24,
+  "ageMax": 34,
+  "when": {
+   "childAge": [
+    2,
+    8
+   ]
+  },
+  "text": "「親に言われていたことを、今、自分が子どもに言っている。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-056",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "working": true,
+   "job": [
+    "smallco",
+    "bigco"
+   ]
+  },
+  "text": "「いつか自分の店を持ちたい。そう言えるうちは、まだ大丈夫だ。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-057",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 30,
+  "when": {
+   "job": [
+    "farm"
+   ],
+   "urban": false,
+   "father": true
+  },
+  "text": "「田んぼを継ぐのか、町へ出るのか。父の背中を見ると、何も言えなくなる。」",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-058",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 34,
+  "when": {
+   "job": [
+    "smallco"
+   ]
+  },
+  "text": "「小さな会社だけれど、社長の顔が見えるのは悪くない。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-059",
+  "kind": "think",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "job": [
+    "bigco"
+   ]
+  },
+  "text": "「大きな会社の歯車でいい。歯車がなければ、機械は回らない。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-060",
+  "kind": "think",
+  "ageMin": 24,
+  "ageMax": 34,
+  "when": {
+   "job": [
+    "public"
+   ]
+  },
+  "text": "「安定しているのはありがたい。でも、毎日が同じ色に見える。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-061",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 34,
+  "when": {
+   "mood": "high"
+  },
+  "text": "「今日はいい日だった。理由は特にない。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-062",
+  "kind": "think",
+  "ageMin": 25,
+  "ageMax": 34,
+  "when": {},
+  "text": "「人と比べるのをやめたら、少し息がしやすくなった。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-063",
+  "kind": "think",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {},
+  "text": "「学生のころの自分が今の自分を見たら、何と言うだろう。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-064",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 23,
+  "when": {
+   "school": "univ"
+  },
+  "text": "「大学で何を学んでいるのか、まだうまく言えない。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-065",
+  "kind": "think",
+  "ageMin": 22,
+  "ageMax": 34,
+  "when": {
+   "working": true,
+   "childAge": [
+    0,
+    6
+   ]
+  },
+  "text": "「働きながら子どもを育てるのは、毎日が綱渡りだ。」",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-066",
+  "kind": "think",
+  "ageMin": 26,
+  "ageMax": 34,
+  "when": {
+   "flags": [
+    "homeowner"
+   ]
+  },
+  "text": "「家を買うなんて、自分には一生無理だと思っていた。」",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1
+ },
+ {
+  "id": "t3-067",
+  "kind": "think",
+  "ageMin": 22,
+  "ageMax": 34,
+  "yearMin": 1955,
+  "yearMax": 1965,
+  "when": {},
+  "text": "「テレビの前に、家じゅうが集まる。こんな日が来るとは思わなかった。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：内閣府経済社会総合研究所の資料（三種の神器は1950年代後半、3Cは1960年代後半）"
+ },
+ {
+  "id": "t3-068",
+  "kind": "think",
+  "ageMin": 22,
+  "ageMax": 34,
+  "yearMin": 1956,
+  "yearMax": 1975,
+  "when": {
+   "urban": true,
+   "married": true
+  },
+  "text": "「団地の暮らしは、まるで映画の中みたいだ。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：UR都市機構の資料（日本住宅公団は1955年発足、DKの間取りを広めた。初期の団地は1956年）"
+ },
+ {
+  "id": "t3-069",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 34,
+  "yearMin": 1987,
+  "yearMax": 1991,
+  "when": {
+   "urban": true
+  },
+  "text": "「タクシーがつかまらない夜、みんな同じ方角へ帰りたがっている。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "確認済み：バブル期のタクシー待ちの体験談（マイナビニュースのアンケート記事）、景気の期間は内閣府の景気基準日付"
+ },
+ {
+  "id": "t3-070",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 28,
+  "yearMin": 1993,
+  "yearMax": 1997,
+  "when": {
+   "married": false
+  },
+  "text": "「ポケベルが鳴らない夜は、長い。」",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "一部確認：1995年ごろ若者がポケベルを使っていたことはY!mobile「PHS25年史」で確認。広まり始めた年は未確認"
+ },
+ {
+  "id": "t3-071",
+  "kind": "think",
+  "ageMin": 27,
+  "ageMax": 30,
+  "yearMin": 1998,
+  "yearMax": 2009,
+  "when": {
+   "working": true
+  },
+  "text": "「正社員になれないまま、三十歳が近づいてくる。」",
+  "effects": {
+   "happiness": -2
+  },
+  "weight": 1,
+  "check": "一部確認：就職氷河期は1993〜2005年卒（政府の定義、イミダス）。非正規で働き続けた人の割合は未確認"
+ },
+ {
+  "id": "t3-072",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 34,
+  "yearMin": 2012,
+  "yearMax": 2026,
+  "when": {
+   "mood": "low"
+  },
+  "text": "「SNSで見るみんなの暮らしは、どれもまぶしい。自分の暮らしだけが、くすんで見える。」",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "t3-073",
+  "kind": "think",
+  "ageMin": 22,
+  "ageMax": 34,
+  "yearMin": 2018,
+  "yearMax": 2026,
+  "when": {
+   "married": false
+  },
+  "text": "「画面越しに『はじめまして』と言った人と、結婚するかもしれない。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：明治安田生命の調査（2022年に結婚した夫婦の出会いのきっかけはマッチングアプリが22.6%で最多）"
+ },
+ {
+  "id": "t3-074",
+  "kind": "think",
+  "ageMin": 23,
+  "ageMax": 34,
+  "yearMin": 2013,
+  "yearMax": 2019,
+  "when": {
+   "working": true,
+   "childAge": [
+    0,
+    1
+   ],
+   "urban": true
+  },
+  "text": "「保育園に入れなかったら、仕事を続けられない。」",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "確認済み：待機児童は2017年がピーク（こども家庭庁の発表を報じた記事）"
+ },
+ {
+  "id": "t3-075",
+  "kind": "think",
+  "ageMin": 22,
+  "ageMax": 34,
+  "yearMin": 2020,
+  "yearMax": 2023,
+  "when": {
+   "working": true
+  },
+  "text": "「在宅勤務で、通勤の一時間がなくなった。そのぶん、どこで一日が終わるのか分からない。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "確認済み：2020年4月の緊急事態宣言後にテレワーク実施率が倍増し、ZoomやTeamsが使われた（パーソル総合研究所・JILPTの調査）"
+ },
+ {
+  "id": "t3-076",
+  "kind": "think",
+  "ageMin": 19,
+  "ageMax": 34,
+  "yearMin": 2015,
+  "yearMax": 2026,
+  "when": {},
+  "text": "「スマホを枕元に置かずに寝たのは、何年ぶりだろう。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ }
+]
