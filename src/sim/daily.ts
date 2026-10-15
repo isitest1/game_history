@@ -200,7 +200,7 @@ function fill(p: Person, d: DailyItem, ctx: DailyCtx, rng: Rng): string | null {
     childAge: child ? String(childAgeOf(child, y)) : null,
     sib: p.siblings > 1 ? sibLabel(p, rng) : null,
     pet: p.pet?.alive ? p.pet.name : null,
-    pref: S.PREFS[p.pref - 1],
+    pref: y < 1871 ? S.KUNI[p.pref - 1] : S.PREFS[p.pref - 1],
     mAge: p.motherAlive ? String(parentAge(p, 'm', y)) : null,
     fAge: p.fatherAlive ? String(parentAge(p, 'f', y)) : null,
   };
