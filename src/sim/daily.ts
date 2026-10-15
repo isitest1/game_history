@@ -30,7 +30,30 @@ export interface DailyWhen {
   flags?: string[];
   notFlags?: string[];
   trigger?: Trigger;
+  region?: Region[];
+  prefs?: number[];
+  snow?: boolean;
 }
+
+export type Region = 'hokkaido' | 'tohoku' | 'kanto' | 'hokuriku' | 'koshin' | 'tokai' | 'kinki' | 'chugoku' | 'shikoku' | 'kyushu' | 'okinawa';
+
+/** 県番号（JIS）から地方へ */
+export function regionOf(pref: number): Region {
+  if (pref === 1) return 'hokkaido';
+  if (pref <= 7) return 'tohoku';
+  if (pref <= 14) return 'kanto';
+  if (pref <= 18) return 'hokuriku';
+  if (pref <= 20) return 'koshin';
+  if (pref <= 24) return 'tokai';
+  if (pref <= 30) return 'kinki';
+  if (pref <= 35) return 'chugoku';
+  if (pref <= 39) return 'shikoku';
+  if (pref <= 46) return 'kyushu';
+  return 'okinawa';
+}
+
+/** 雪の多い県（県全体でみた目安。docs/07） */
+export const SNOW_PREFS = new Set([1, 2, 3, 4, 5, 6, 7, 15, 16, 17, 18, 20, 31]);
 
 export type Trigger = 'married' | 'child' | 'parent_death' | 'spouse_death' | 'job' | 'retire' | 'ill' | 'wish_fail' | 'moved' | 'school';
 
@@ -142,6 +165,12 @@ function okWhen(p: Person, w: DailyWhen | undefined, ctx: DailyCtx): boolean {
   if (w.flags && !w.flags.every((f) => p.flags.includes(f))) return false;
   if (w.notFlags && w.notFlags.some((f) => p.flags.includes(f))) return false;
   if (w.trigger && !ctx.triggers.has(w.trigger)) return false;
+  // 地方や県の場面は、生まれた県に住んでいる人だけ（都会へ出た人には、上京した人向けと書いた場面だけを出す）
+  const leftHome = p.movedToCity && !S.METRO.has(p.pref);
+  if ((w.region || w.prefs || w.snow) && leftHome && !w.flags?.includes('moved_to_city')) return false;
+  if (w.region && !w.region.includes(regionOf(p.pref))) return false;
+  if (w.prefs && !w.prefs.includes(p.pref)) return false;
+  if (w.snow !== undefined && w.snow !== SNOW_PREFS.has(p.pref)) return false;
   return true;
 }
 
@@ -187,6 +216,8 @@ function sibLabel(p: Person, rng: Rng): string {
   return p.sibLabel;
 }
 
+const isLocal = (d: DailyItem) => !!(d.when?.region || d.when?.prefs || d.when?.snow);
+
 function eligible(p: Person, d: DailyItem, ctx: DailyCtx): boolean {
   if (d.yearMin !== undefined && ctx.year < d.yearMin) return false;
   if (d.yearMax !== undefined && ctx.year > d.yearMax) return false;
@@ -201,7 +232,9 @@ function eligible(p: Person, d: DailyItem, ctx: DailyCtx): boolean {
   // 親友ができた年は、親友との別の場面を重ねない
   if (p.friendSince === p.age && d.text.includes('{friend}')) return false;
   const used = p.dailyUsed?.[d.id];
-  if (used !== undefined && (!d.repeatGap || p.age - used < d.repeatGap)) return false;
+  // 時代を問わない土地の暮らし（祭り、雪、名物など）は、12年あければまた出てよい
+  const gap = d.repeatGap ?? (isLocal(d) && d.yearMin === undefined && d.kind === 'daily' ? 12 : undefined);
+  if (used !== undefined && (!gap || p.age - used < gap)) return false;
   return okWhen(p, d.when, ctx);
 }
 
@@ -211,11 +244,14 @@ function weightOf(d: DailyItem, ctx: DailyCtx): number {
   if (d.yearMin !== undefined || d.yearMax !== undefined) w *= 1.6;
   if (d.when && Object.keys(d.when).length) w *= 1.3;
   if (d.when?.trigger && ctx.triggers.has(d.when.trigger)) w *= 6;
+  // 県や地方に結びついた場面は、その土地の暮らしが見えるように出やすくする
+  if (d.when?.prefs) w *= 7;
+  else if (d.when?.region || d.when?.snow) w *= 4.5;
   return w;
 }
 
-function pickItems(p: Person, rng: Rng, ctx: DailyCtx, kind: 'daily' | 'think', n: number): void {
-  const pool = (BY_AGE[p.age] ?? []).filter((d) => d.kind === kind && eligible(p, d, ctx));
+function pickItems(p: Person, rng: Rng, ctx: DailyCtx, kind: 'daily' | 'think', n: number, onlyLocal = false): void {
+  const pool = (BY_AGE[p.age] ?? []).filter((d) => d.kind === kind && (!onlyLocal || isLocal(d)) && eligible(p, d, ctx));
   for (let k = 0; k < n && pool.length; k++) {
     const d = rng.weighted(pool, pool.map((x) => weightOf(x, ctx)));
     pool.splice(pool.indexOf(d), 1);
@@ -226,6 +262,8 @@ function pickItems(p: Person, rng: Rng, ctx: DailyCtx, kind: 'daily' | 'think', 
     }
     (p.dailyUsed ??= {})[d.id] = p.age;
     ctx.log(kind, kind === 'think' ? '心の声' : '日々のこと', text);
+    // 親友が引っ越した・転校した場面のあとは、疎遠になったものとして扱う（何十年かのちに再会することはある）
+    if (d.text.includes('{friend}') && /引っ越|転校|遠くの町へ|離れ離れ/.test(d.text)) p.friendLost = p.age;
     if (d.effects) {
       const { health: _h, ...rest } = d.effects;
       ctx.applyEffects(rest);
@@ -352,7 +390,13 @@ export function dailyLife(p: Person, rng: Rng, ctx: DailyCtx): void {
   if (!p.alive) return;
   storyBeats(p, rng, ctx);
   const a = p.age;
-  const n = a <= 2 ? 1 : rng.chance(0.35) ? 3 : 2;
+  let n = a <= 2 ? 1 : rng.chance(0.35) ? 3 : 2;
+  // その土地の暮らしが見えるように、毎年3割ほどは、県や地方の場面を先に1つ選ぶ
+  if (a >= 3 && rng.chance(0.32)) {
+    const before = p.log.length;
+    pickItems(p, rng, ctx, 'daily', 1, true);
+    if (p.log.length > before) n -= 1;
+  }
   pickItems(p, rng, ctx, 'daily', n);
   const thinkProb = ctx.triggers.size ? 0.9 : a < 4 ? 0.15 : 0.55;
   if (rng.chance(thinkProb)) pickItems(p, rng, ctx, 'think', 1);
