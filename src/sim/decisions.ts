@@ -377,7 +377,8 @@ export const DECISIONS: DecisionDef[] = [
       const kind = opt === 'univ' ? 'university' : 'juniorCollege';
       const rate = S.eduRate(kind, y, p.sex);
       const cond = Math.min(0.95, rate / hs);
-      const prob = wishProb(cond, p, 0.4);
+      // 江戸・明治の初めは、高等の学びに進む道がさらに狭い（目安：上乗せをしない）
+      const prob = wishProb(cond, p, y < 1890 ? -0.4 : 0.4);
       const label = y < 1877 ? (opt === 'univ' ? '遊学' : '専門の塾') : y < 1950 ? (opt === 'univ' ? '高等教育' : '専門学校') : opt === 'univ' ? '大学' : '短大';
       if (y < 1890) {
         // 江戸・明治前半：遊学や高等教育は、ごく一部（目安）
