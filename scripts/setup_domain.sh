@@ -3,7 +3,8 @@
 # 1. Cloudflare の DNS に CNAME（umaredoshi → isitest1.github.io、プロキシはオフ）を作る
 # 2. GitHub Pages の Custom domain に umaredoshi.margheritaworks.com を入れる
 # 3. 証明書ができるのを待ち、HTTPS を必須にする
-# 必要な環境変数：CLOUDFLARE_API_TOKEN（ゾーン margheritaworks.com の DNS 編集）、GITHUB_PAGES_TOKEN（isitest1/game_history の Pages と Administration の書き込み）
+# トークンは、クラウド環境の「ネットワークのシークレット」に入れる（api.cloudflare.com と api.github.com への通信に、Authorization を自動で付ける）。
+# 環境変数 CLOUDFLARE_API_TOKEN / GITHUB_PAGES_TOKEN があれば、そちらを使う
 set -euo pipefail
 
 ZONE_NAME=margheritaworks.com
@@ -14,10 +15,10 @@ REPO=isitest1/game_history
 CF=https://api.cloudflare.com/client/v4
 GH=https://api.github.com
 
-: "${CLOUDFLARE_API_TOKEN:?CLOUDFLARE_API_TOKEN がありません}"
-: "${GITHUB_PAGES_TOKEN:?GITHUB_PAGES_TOKEN がありません}"
-cfh=(-H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" -H "Content-Type: application/json")
-ghh=(-H "Authorization: Bearer $GITHUB_PAGES_TOKEN" -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28")
+cfh=(-H "Content-Type: application/json")
+ghh=(-H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28")
+[ -n "${CLOUDFLARE_API_TOKEN:-}" ] && cfh+=(-H "Authorization: Bearer $CLOUDFLARE_API_TOKEN")
+[ -n "${GITHUB_PAGES_TOKEN:-}" ] && ghh+=(-H "Authorization: Bearer $GITHUB_PAGES_TOKEN")
 json() { python3 -c "import json,sys; d=json.load(sys.stdin); print(eval(sys.argv[1]))" "$1"; }
 
 echo "== 1. Cloudflare の DNS"
