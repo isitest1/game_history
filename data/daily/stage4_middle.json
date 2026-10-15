@@ -109,6 +109,7 @@
     "kind": "daily",
     "ageMin": 35,
     "ageMax": 52,
+    "notBefore": 1950,
     "when": {
       "childAge": [
         6,
@@ -127,6 +128,7 @@
     "kind": "daily",
     "ageMin": 38,
     "ageMax": 55,
+    "notBefore": 1950,
     "when": {
       "childAge": [
         12,
@@ -179,6 +181,7 @@
     "kind": "daily",
     "ageMin": 40,
     "ageMax": 58,
+    "notBefore": 1900,
     "when": {
       "childAge": [
         17,
@@ -196,6 +199,7 @@
     "kind": "daily",
     "ageMin": 40,
     "ageMax": 58,
+    "notBefore": 1890,
     "when": {
       "childAge": [
         15,
@@ -284,6 +288,7 @@
     "kind": "daily",
     "ageMin": 48,
     "ageMax": 64,
+    "notBefore": 1950,
     "when": {
       "childAge": [
         23,
@@ -506,6 +511,7 @@
     "kind": "daily",
     "ageMin": 35,
     "ageMax": 64,
+    "notBefore": 1920,
     "when": {
       "married": true,
       "hasChildren": false
@@ -551,6 +557,7 @@
     "kind": "daily",
     "ageMin": 40,
     "ageMax": 64,
+    "notBefore": 1920,
     "when": {
       "married": true,
       "hasChildren": false
@@ -620,6 +627,7 @@
     "kind": "daily",
     "ageMin": 40,
     "ageMax": 64,
+    "notBefore": 1890,
     "when": {
       "widowed": true
     },
@@ -634,6 +642,7 @@
     "kind": "daily",
     "ageMin": 35,
     "ageMax": 46,
+    "notBefore": 1950,
     "text": "洗面所の鏡で、こめかみに一本の白髪を見つけた。抜こうかと迷い、そのままにしておいた。",
     "effects": {},
     "weight": 1
@@ -688,6 +697,7 @@
     "kind": "daily",
     "ageMin": 40,
     "ageMax": 55,
+    "notBefore": 1950,
     "text": "久しぶりに走ったら、翌日ではなく二日後に足が痛くなった。それを人に話すと、みな同じことを言った。",
     "effects": {},
     "weight": 1
@@ -767,6 +777,7 @@
     "kind": "daily",
     "ageMin": 50,
     "ageMax": 64,
+    "notBefore": 1890,
     "text": "階段で手すりにつかまるようになった。誰も見ていないのに、少しだけ照れくさかった。",
     "effects": {},
     "weight": 1
@@ -790,6 +801,7 @@
     "kind": "daily",
     "ageMin": 40,
     "ageMax": 64,
+    "notBefore": 1950,
     "text": "体を動かそうと、朝に近所を歩き始めた。三日目に雨が降り、そのまま一週間休んだ。",
     "effects": {
       "health": 1
@@ -854,6 +866,7 @@
     "kind": "daily",
     "ageMin": 40,
     "ageMax": 55,
+    "notBefore": 1900,
     "when": {
       "working": true,
       "job": [
@@ -986,6 +999,7 @@
     "kind": "daily",
     "ageMin": 35,
     "ageMax": 64,
+    "notBefore": 1960,
     "when": {
       "job": [
         "farm"
@@ -1065,6 +1079,7 @@
     "kind": "daily",
     "ageMin": 35,
     "ageMax": 64,
+    "notBefore": 1900,
     "when": {
       "job": [
         "smallco"
@@ -1081,6 +1096,7 @@
     "kind": "daily",
     "ageMin": 35,
     "ageMax": 55,
+    "notBefore": 1900,
     "when": {
       "job": [
         "bigco",
@@ -1122,6 +1138,7 @@
     "kind": "daily",
     "ageMin": 40,
     "ageMax": 60,
+    "notBefore": 1900,
     "when": {
       "working": true,
       "job": [
@@ -1267,6 +1284,7 @@
     "kind": "daily",
     "ageMin": 45,
     "ageMax": 64,
+    "notBefore": 1950,
     "when": {
       "mother": true
     },
@@ -1462,6 +1480,7 @@
     "kind": "daily",
     "ageMin": 40,
     "ageMax": 64,
+    "notBefore": 1900,
     "text": "{friend}と二十年ぶりに飲んだ。話はすぐに昔のあだ名に戻り、終電の時間を忘れた。",
     "effects": {
       "happiness": 2
@@ -1473,6 +1492,7 @@
     "kind": "daily",
     "ageMin": 35,
     "ageMax": 64,
+    "notBefore": 1890,
     "text": "{friend}から年賀状が届いた。「今年こそ会おう」という一行が、去年と同じ字で書いてあった。",
     "effects": {
       "happiness": 1
@@ -1552,6 +1572,7 @@
     "kind": "daily",
     "ageMin": 35,
     "ageMax": 64,
+    "notBefore": 1960,
     "text": "町内の当番で、朝早くごみ置き場の網をたたんだ。顔だけ知っていた隣の人と、初めて長く話した。",
     "effects": {
       "relation": 1
@@ -1563,6 +1584,7 @@
     "kind": "daily",
     "ageMin": 35,
     "ageMax": 50,
+    "notBefore": 1960,
     "text": "住宅ローンの書類に、何十回も判を押した。最後の一枚で、指先に朱肉がにじんだ。",
     "effects": {},
     "weight": 1
@@ -1572,6 +1594,7 @@
     "kind": "daily",
     "ageMin": 40,
     "ageMax": 64,
+    "notBefore": 1970,
     "when": {
       "flags": [
         "homeowner"
@@ -1733,6 +1756,7 @@
     "kind": "daily",
     "ageMin": 35,
     "ageMax": 64,
+    "notBefore": 1871,
     "when": {
       "mood": "high"
     },
@@ -2046,6 +2070,7 @@
     "kind": "daily",
     "ageMin": 35,
     "ageMax": 64,
+    "notBefore": 1960,
     "when": {
       "married": false,
       "working": true
@@ -2061,6 +2086,7 @@
     "kind": "daily",
     "ageMin": 45,
     "ageMax": 64,
+    "notBefore": 1970,
     "when": {
       "married": false
     },
@@ -2141,6 +2167,7 @@
     "kind": "daily",
     "ageMin": 35,
     "ageMax": 64,
+    "notBefore": 1960,
     "when": {
       "married": false
     },
@@ -2184,6 +2211,7 @@
     "kind": "daily",
     "ageMin": 55,
     "ageMax": 64,
+    "notBefore": 1900,
     "when": {
       "married": false
     },
@@ -2268,6 +2296,7 @@
     "kind": "daily",
     "ageMin": 40,
     "ageMax": 64,
+    "notBefore": 1890,
     "when": {
       "hasChildren": false,
       "hasSibling": true
@@ -2408,6 +2437,7 @@
     "kind": "daily",
     "ageMin": 35,
     "ageMax": 64,
+    "notBefore": 1960,
     "when": {
       "married": false
     },
@@ -2449,6 +2479,7 @@
     "kind": "daily",
     "ageMin": 40,
     "ageMax": 64,
+    "notBefore": 1950,
     "when": {
       "married": false
     },
@@ -2489,6 +2520,7 @@
     "kind": "daily",
     "ageMin": 45,
     "ageMax": 64,
+    "notBefore": 1950,
     "when": {
       "married": false
     },
@@ -2558,6 +2590,7 @@
     "kind": "daily",
     "ageMin": 45,
     "ageMax": 64,
+    "notBefore": 1950,
     "when": {
       "married": true,
       "hasChildren": false
@@ -3521,6 +3554,7 @@
     "kind": "think",
     "ageMin": 35,
     "ageMax": 64,
+    "notBefore": 1890,
     "when": {
       "trigger": "parent_death"
     },
@@ -3532,6 +3566,7 @@
     "kind": "think",
     "ageMin": 35,
     "ageMax": 64,
+    "notBefore": 1890,
     "when": {
       "trigger": "parent_death"
     },
@@ -3689,6 +3724,7 @@
     "kind": "think",
     "ageMin": 40,
     "ageMax": 64,
+    "notBefore": 1900,
     "when": {
       "trigger": "job"
     },
@@ -3942,6 +3978,7 @@
     "kind": "think",
     "ageMin": 45,
     "ageMax": 64,
+    "notBefore": 1950,
     "when": {
       "working": true,
       "mother": true
@@ -4147,6 +4184,7 @@
     "kind": "think",
     "ageMin": 35,
     "ageMax": 64,
+    "notBefore": 1890,
     "when": {
       "poor": true
     },

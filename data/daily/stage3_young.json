@@ -467,6 +467,7 @@
   "kind": "daily",
   "ageMin": 23,
   "ageMax": 34,
+  "notBefore": 1900,
   "when": {
    "working": true,
    "job": [
@@ -539,6 +540,7 @@
   "kind": "daily",
   "ageMin": 19,
   "ageMax": 34,
+  "notBefore": 1950,
   "when": {
    "job": [
     "self"
@@ -572,6 +574,7 @@
   "kind": "daily",
   "ageMin": 19,
   "ageMax": 34,
+  "notBefore": 1900,
   "when": {
    "job": [
     "smallco"
@@ -703,6 +706,7 @@
   "kind": "daily",
   "ageMin": 21,
   "ageMax": 34,
+  "notBefore": 1950,
   "when": {
    "working": true,
    "childAge": [
@@ -970,6 +974,7 @@
   "kind": "daily",
   "ageMin": 23,
   "ageMax": 34,
+  "notBefore": 1950,
   "when": {
    "childAge": [
     3,
@@ -988,6 +993,7 @@
   "kind": "daily",
   "ageMin": 19,
   "ageMax": 30,
+  "notBefore": 1920,
   "when": {
    "urban": true
   },
@@ -1055,6 +1061,7 @@
   "kind": "daily",
   "ageMin": 21,
   "ageMax": 34,
+  "notBefore": 1890,
   "when": {
    "married": true,
    "childAge": [
@@ -1101,6 +1108,7 @@
   "kind": "daily",
   "ageMin": 23,
   "ageMax": 34,
+  "notBefore": 1890,
   "when": {},
   "text": "疎遠になっていた{friend}に、思い切って年賀状を出した。正月三日、返事が届いた。",
   "effects": {
@@ -1170,6 +1178,7 @@
   "kind": "daily",
   "ageMin": 19,
   "ageMax": 23,
+  "notBefore": 1890,
   "when": {
    "school": "univ"
   },
@@ -1338,6 +1347,7 @@
   "kind": "daily",
   "ageMin": 19,
   "ageMax": 34,
+  "notBefore": 1915,
   "when": {
    "working": true
   },
@@ -1412,6 +1422,7 @@
   "kind": "daily",
   "ageMin": 22,
   "ageMax": 34,
+  "notBefore": 1950,
   "when": {
    "married": true
   },
@@ -1459,6 +1470,7 @@
   "kind": "daily",
   "ageMin": 22,
   "ageMax": 34,
+  "notBefore": 1950,
   "when": {
    "married": true
   },
@@ -1549,6 +1561,7 @@
   "kind": "daily",
   "ageMin": 20,
   "ageMax": 34,
+  "notBefore": 1950,
   "when": {},
   "text": "引っ越した先の町で、近所の人の顔と名前がなかなか覚えられなかった。ごみ出しの朝が、少し気づまりだった。",
   "effects": {
@@ -1627,6 +1640,7 @@
   "kind": "daily",
   "ageMin": 19,
   "ageMax": 34,
+  "notBefore": 1950,
   "when": {
    "working": true
   },
@@ -3068,6 +3082,7 @@
   "kind": "think",
   "ageMin": 19,
   "ageMax": 26,
+  "notBefore": 1900,
   "when": {
    "trigger": "job"
   },
@@ -3115,6 +3130,7 @@
   "kind": "think",
   "ageMin": 20,
   "ageMax": 34,
+  "notBefore": 1900,
   "when": {
    "trigger": "married",
    "sex": "female"
@@ -3308,6 +3324,7 @@
   "kind": "think",
   "ageMin": 19,
   "ageMax": 30,
+  "notBefore": 1900,
   "when": {
    "trigger": "moved"
   },
@@ -3336,6 +3353,7 @@
   "kind": "think",
   "ageMin": 19,
   "ageMax": 34,
+  "notBefore": 1920,
   "when": {
    "trigger": "moved"
   },
@@ -3498,6 +3516,7 @@
   "kind": "think",
   "ageMin": 19,
   "ageMax": 34,
+  "notBefore": 1890,
   "when": {
    "trigger": "parent_death"
   },
@@ -3541,6 +3560,7 @@
   "kind": "think",
   "ageMin": 19,
   "ageMax": 34,
+  "notBefore": 1890,
   "when": {
    "trigger": "ill",
    "working": true
@@ -3757,6 +3777,7 @@
   "kind": "think",
   "ageMin": 24,
   "ageMax": 34,
+  "notBefore": 1950,
   "when": {
    "married": true,
    "hasChildren": false
@@ -3871,6 +3892,7 @@
   "kind": "think",
   "ageMin": 24,
   "ageMax": 34,
+  "notBefore": 1890,
   "when": {
    "job": [
     "public"
@@ -3913,6 +3935,7 @@
   "kind": "think",
   "ageMin": 22,
   "ageMax": 34,
+  "notBefore": 1890,
   "when": {},
   "text": "「学生のころの自分が今の自分を見たら、何と言うだろう。」",
   "effects": {
@@ -3957,6 +3980,7 @@
   "kind": "think",
   "ageMin": 26,
   "ageMax": 34,
+  "notBefore": 1920,
   "when": {
    "flags": [
     "homeowner"

@@ -4,7 +4,7 @@
 
 import type { Sex } from './types';
 import type { Rng } from './rng';
-import { prewarNames } from './stats';
+import { edoNames, prewarNames } from './stats';
 
 interface NameBin {
   from: number;
@@ -41,7 +41,20 @@ const PREWAR: NameBin[] = prewarNames
       { from: 1920, male: ['清', '正', '茂', '実', '勇', '博'], female: ['幸子', '文子', '静子', '和子', '久子', '節子'] },
     ];
 
+/** 江戸後期〜明治前半（1800〜1889年）。data/stats/edo.json の names があればそれを使う。なければこの目安（その時代によく見かけた一般的な名前） */
+const EDO: NameBin[] = edoNames
+  ? Object.entries(edoNames).map(([from, v]) => ({ from: Number(from), male: v.male, female: v.female })).sort((a, b) => a.from - b.from)
+  : [
+      { from: 1790, male: ['吉兵衛', '清吉', '与助', '長五郎', '伊之助', '源蔵'], female: ['とめ', 'きく', 'はる', 'うめ', 'まつ', 'さと'] },
+      { from: 1850, male: ['金次郎', '徳太郎', '亀吉', '留吉', '寅蔵', '幸助'], female: ['とら', 'ふさ', 'いと', 'なか', 'しげ', 'たけ'] },
+    ];
+
 export function pickGivenName(rng: Rng, birthYear: number, sex: Sex): string {
+  if (birthYear < 1890) {
+    let eb = EDO[0];
+    for (const b of EDO) if (birthYear >= b.from) eb = b;
+    return rng.pick(eb[sex]);
+  }
   if (birthYear < 1930) {
     let pb = PREWAR[0];
     for (const b of PREWAR) if (birthYear >= b.from) pb = b;

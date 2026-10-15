@@ -1,5 +1,5 @@
 // シミュレーションの中核。
-// - 真ん中の生まれ年を1960〜75年から出生数で重み付けして引き、その±30年に2人を置く
+// - いちばん若い生まれ年を1990〜2010年から出生数で重み付けして引き、ほかの2人は1800年までのどこかに、30年以上離して置く
 // - 年齢をそろえて1年ずつ進める
 // - 毎年、出来事を引き、死亡を判定する。亡くなった人の列は止まる
 
@@ -51,6 +51,9 @@ export interface GachaInfo {
   birthsInYear: number[];
 }
 
+/** いちばん古い生まれ年 */
+export const OLDEST = 1800;
+
 const TALENTS = ['絵', '音楽', '運動', '計算', '話すこと', '手先の器用さ', '文章', '人の世話'];
 
 export function eraOf(index: number): EraId {
@@ -62,16 +65,21 @@ export function createGame(opts: { seed?: number; playerBirthYear?: number | nul
   const seed = opts.seed ?? randomSeed();
   const rng = new Rng(seed);
 
-  // 生まれ年：いちばん若い人を1990〜2010年から出生数で重み付けして引き、
-  // そこから30〜50年ずつ、2回ランダムに遡る（いつも30年おきだと、似た組み合わせばかりになるため。2026-10-15）。
-  // 1930年より前は、資料と推計の統計（data/stats/prewar_*.json）で1890年まで遡れる
+  // 生まれ年：いちばん若い人を1990〜2010年から出生数で重み付けして引く。
+  // いちばん年上の人は1800年からいちばん若い人の60年前までのどこか、真ん中の人はそのあいだのどこかに置く。
+  // 3人のあいだは、どこも30年以上あける（近い年どうしだと違いが出ないため）。それ以外は決めない（何が来るか分からないように。2026-10-15）。
+  // 古い年ほど少しだけ出にくくする（江戸が半分近くを占めないように。いちばん若い人の60年前を1、1800年を0.5とする重み）。
+  // 1930年より前は資料と推計の統計（data/stats/prewar_*.json）、1890年より前は江戸・明治前半の推計（data/stats/edo.json）を使う
   const youngYears = Array.from({ length: 21 }, (_, i) => 1990 + i);
   const youngW = youngYears.map((y) => S.nationalBirths(Math.min(y, 2005)));
   const young = rng.weighted(youngYears, youngW);
-  const room = young - 1890; // 2回遡る年数の合計の上限（いちばん年上は1890年以降）
-  const g2 = rng.int(30, Math.min(50, room - 30)); // いちばん若い人 → 真ん中の人
-  const g1 = rng.int(30, Math.min(50, room - g2)); // 真ん中の人 → いちばん年上の人
-  const years = [young - g2 - g1, young - g2, young];
+  const oldYears = Array.from({ length: young - 60 - OLDEST + 1 }, (_, i) => OLDEST + i);
+  const old = rng.weighted(
+    oldYears,
+    oldYears.map((y) => 0.5 + (0.5 * (y - OLDEST)) / Math.max(1, young - 60 - OLDEST)),
+  );
+  const middle = rng.int(old + 30, young - 30);
+  const years = [old, middle, young];
   const mid = years[1];
   // 真ん中の年の確率（ガチャの表示用）：いちばん若い年を引く確率と、遡る年数の組み合わせの数から
   const middleYearProb = (S.nationalBirths(Math.min(young, 2005)) / youngW.reduce((a, b) => a + b, 0)) * (1 / 21);
@@ -152,6 +160,17 @@ export function createGame(opts: { seed?: number; playerBirthYear?: number | nul
 
 /** 親の職業：同じ「家の格」を、その時代の就業構造で読み替える */
 function parentJobFor(rng: Rng, year: number, familyClass: number): Job {
+  const k0 = (familyClass - 3) * 0.25;
+  if (isEdo(year)) {
+    // 江戸：百姓・武士・町人（商い・職人）・奉公人の家。武士は人口の数%（data/stats/edo.json）。豊かな家ほど武士や大きな商家になりやすい（目安）
+    const farm = S.primaryShare(year) / 100;
+    const samurai = S.samuraiShare(year) / 100;
+    const emp = S.employeeShare(year) / 100;
+    const town = Math.max(0.03, 1 - farm - samurai - emp);
+    const jobs: Job[] = ['farm', 'public', 'self', 'smallco', 'bigco'];
+    const w = [farm * (1 - k0 * 0.5), samurai * (1 + k0 * 2), town * (1 + k0 * 0.6), emp * 0.9 * (1 - k0 * 0.8), emp * 0.1 * (1 + k0 * 1.5)];
+    return rng.weighted(jobs, w);
+  }
   const farm = S.primaryShare(year) / 100;
   const emp = S.employeeShare(year) / 100;
   const self = Math.max(0.05, 1 - farm - emp);
@@ -231,10 +250,13 @@ function makePerson(rng: Rng, era: EraId, birthYear: number, shared: Shared, sur
     wishes: [],
   };
   if (p.parentJob === 'farm' && p.birthOrder === 1 && p.sex === 'male') p.flags.push('heir');
+  // 武士の家の長男は家督を継ぐ（江戸）
+  if (p.parentJob === 'public' && isEdo(birthYear) && p.birthOrder === 1 && p.sex === 'male') p.flags.push('samurai_heir');
+  if (p.parentJob === 'public' && isEdo(birthYear)) p.flags.push('samurai_family');
   if (p.birthOrder === 1 && p.sex === 'male') p.flags.push('eldest_son');
   if (pref === 47 && birthYear >= 1945 && birthYear <= 1972) p.flags.push('okinawa_us');
-  const pj = JOB_LABEL[parentJob];
-  log(p, 'birth', '誕生', `${birthYear}年${birthMonth}月、${S.PREFS[pref - 1]}で${p.siblings}人きょうだいの${orderLabel(p.birthOrder, p.siblings)}として生まれた。家は${pj}。`);
+  const pj = jobLabelAt(parentJob, birthYear);
+  log(p, 'birth', '誕生', `${birthYear}年${birthMonth}月、${S.placeName(pref, birthYear)}で${p.siblings}人きょうだいの${orderLabel(p.birthOrder, p.siblings)}として生まれた。家は${pj}。${birthYear < 1872 ? '年齢は、ここでは生まれた日から数える満年齢で書く（当時は数え年）。' : ''}`);
   return p;
 }
 
@@ -259,6 +281,38 @@ export const EDU_LABEL: Record<Edu, string> = {
   junior: '短大卒',
   univ: '大学卒',
 };
+
+/** 学制（1872年）より前を、江戸の仕組み（寺子屋・奉公・家督）として扱う */
+export function isEdo(year: number): boolean {
+  return year < 1872;
+}
+
+/** 仕事の呼び方を、その年の言葉で（江戸は百姓・町人・奉公人・武士） */
+export function jobLabelAt(job: Job, year: number): string {
+  if (isEdo(year)) return { farm: '百姓', self: '町人（商い・職人）', smallco: '奉公人', bigco: '大店の奉公人', public: '武士', none: '無職' }[job];
+  if (year < 1890) return { farm: '農家', self: '商い・職人', smallco: '小さな店や工場の勤め', bigco: '大きな店や会社の勤め', public: '役人・士族', none: '無職' }[job];
+  return JOB_LABEL[job];
+}
+
+/**
+ * 学歴の呼び方を、その人が学んだ時代の言葉で。
+ * 6歳が学制（1872年）より前なら寺子屋、15歳が学制より前なら藩校・私塾、1948年より前の中等教育は旧制の学校
+ */
+export function eduLabelOf(p: Person): string {
+  const y6 = p.birthYear + 6;
+  const y15 = p.birthYear + 15;
+  const y18 = p.birthYear + 18;
+  if (p.edu === 'none') return y6 < 1873 ? '手習いを受けていない' : EDU_LABEL.none;
+  if (p.edu === 'middle') return y6 < 1873 ? '寺子屋で読み書き' : y15 < 1948 ? '小学校まで' : EDU_LABEL.middle;
+  if (p.edu === 'high') return y15 < 1873 ? '藩校・私塾で学んだ' : y15 < 1948 ? (p.sex === 'male' ? '旧制中学卒' : '高等女学校卒') : EDU_LABEL.high;
+  if (p.edu === 'junior') return y18 < 1877 ? '専門の塾で学んだ' : y18 < 1950 ? '専門学校卒' : EDU_LABEL.junior;
+  return y18 < 1877 ? '遊学して学問を修めた' : y18 < 1950 ? '旧制の高等教育を修了' : EDU_LABEL.univ;
+}
+
+/** 金額を書く。円がない江戸（1871年の新貨条例より前）は、いまの価値に直して書く */
+export function moneyAt(yen: number, year: number): string {
+  return year < 1871 ? `いまのお金で約${man(yen * S.toReal2020(year))}` : `約${man(yen)}`;
+}
 
 export function yearOf(p: Person, age = p.age): number {
   return p.birthYear + age;
@@ -346,7 +400,23 @@ export function resetEventIndex(): void {
  * 重みは目安。docs/03 と docs/出典一覧.md を参照。
  */
 export function deathCause(rng: Rng, year: number, age: number, sex: Sex, flags: string[]): string {
+  // 飢饉や疫病の年は、その分だけ死因をそれにする（倍率 m のとき、亡くなった人のうち (m-1)/m）
+  const cr = S.crisisAt(year, age);
+  if (cr && cr.mult > 1 && rng.chance((cr.mult - 1) / cr.mult)) return cr.cause;
   const c: [string, number][] = [];
+  if (year < 1890) {
+    // 江戸・明治前半の死因の目安（死因統計は1899年から。それより前は未確認の目安）
+    if (age === 0) c.push(['生まれつきの病気', 3], ['はやり病', 3], ['腹の病（胃腸炎）', 3], ['お産のときの障害', 3]);
+    else if (age < 15) c.push(['疱瘡（天然痘）', year < 1850 ? 4 : 1.5], ['麻疹（はしか）', 2], ['はやり病', 3], ['腹の病（胃腸炎）', 3], ['不慮の事故', 2]);
+    else if (age < 50) {
+      c.push(['労咳（結核）', 6], ['はやり病', 4], ['腹の病（胃腸炎）', 2], ['不慮の事故', 2], ['脚気', year >= 1860 ? 2 : 1]);
+      if (sex === 'female' && age <= 42) c.push(['お産', 5]);
+    } else c.push(['中風（脳卒中）', 6], ['はやり病', 3], ['労咳（結核）', 2], ['腹の病（胃腸炎）', 2], ['老衰', age >= 75 ? 6 : age >= 65 ? 2 : 0.5]);
+    return rng.weighted(
+      c.map((x) => x[0]),
+      c.map((x) => x[1]),
+    );
+  }
   if (age === 0) {
     c.push(['生まれつきの病気', 3], ['肺炎', year < 1960 ? 4 : 1], ['胃腸炎', year < 1960 ? 3 : 0.2], ['お産のときの障害', 3]);
   } else if (age < 15) {
@@ -376,7 +446,7 @@ export function deathCause(rng: Rng, year: number, age: number, sex: Sex, flags:
   );
 }
 
-export const HEAVY_CAUSES = new Set(['自殺', '空襲', '戦死', '戦病死', '原爆', '原子爆弾', '沖縄戦', '震災', '震災関連死', '津波', '地震', '地震・津波', '災害', 'シベリア抑留', '戦争（満州）', '戦争（満州からの避難）', '勤労動員中の空襲', '疎開船の沈没', '火砕流', '水害', '土砂災害', '台風', '台風・高潮', '水害・土砂災害', '地震・震災関連死']);
+export const HEAVY_CAUSES = new Set(['飢饉', 'コレラ', '戊辰戦争', '西南戦争', '日清戦争', '日露戦争', '自殺', '空襲', '戦死', '戦病死', '原爆', '原子爆弾', '沖縄戦', '震災', '震災関連死', '津波', '地震', '地震・津波', '災害', 'シベリア抑留', '戦争（満州）', '戦争（満州からの避難）', '勤労動員中の空襲', '疎開船の沈没', '火砕流', '水害', '土砂災害', '台風', '台風・高潮', '水害・土砂災害', '地震・震災関連死']);
 
 // ---------- 1年を進める ----------
 
@@ -544,8 +614,27 @@ function lifecycle(state: GameState, p: Person, rng: Rng, year: number): void {
   }
 
   // 学校
-  if (a === 6) {
-    const school = year >= 1941 && year <= 1946 ? '国民学校' : year < 1941 ? '尋常小学校' : '小学校';
+  if (a === 6 && year < 1873) {
+    // 学制（1872年公布、翌年から小学校）より前：寺子屋などで手習い（読み書き・そろばん）を受けたかどうか。割合は推計（data/stats/edo.json）
+    const enroll = S.elementaryEnrollment(year, p.sex) / 100;
+    const samurai = p.flags.includes('samurai_family');
+    if (!samurai && !rng.chance(Math.min(0.97, enroll * [0.6, 0.8, 1, 1.2, 1.45][p.familyClass - 1]))) {
+      p.flags.push('no_school');
+      p.wishes.push({ age: a, wish: '手習いに通うこと', result: '家の手伝いと子守りで通えなかった', ok: false });
+      log(p, 'wish', '手習いに通えなかった', `${year}年。近くの子が寺子屋に通い始めたが、自分は家の手伝いと子守りで通えなかった。この時代に手習いを受けた${p.sex === 'male' ? '男' : '女'}の子は、約${Math.round(enroll * 100)}%とされる（推計）。`);
+    } else {
+      p.inSchool = 'none';
+      log(
+        p,
+        'school',
+        samurai ? '手習いを始めた' : '寺子屋に入った',
+        samurai
+          ? `${year}年、${p.sex === 'male' ? '素読（漢文を声に出して読むこと）と手習いを始めた。武士の子は、のちに藩校で学ぶ' : '手習いと裁縫を習い始めた'}。`
+          : `${year}年、寺子屋に入り、師匠のもとで手習い（読み書き）とそろばんを習い始めた。寺子屋に決まった入学の年はなかった。`,
+      );
+    }
+  } else if (a === 6) {
+    const school = year >= 1941 && year <= 1946 ? '国民学校' : year < 1886 ? '小学校' : year < 1941 ? '尋常小学校' : '小学校';
     // 明治の終わりまでは、学校に通えない子どもも多かった（就学率。data/stats/prewar_social.json）
     const enroll = S.elementaryEnrollment(year, p.sex) / 100;
     if (year < 1930 && !rng.chance(enroll)) {
@@ -554,7 +643,7 @@ function lifecycle(state: GameState, p: Person, rng: Rng, year: number): void {
       log(p, 'wish', '学校に通えなかった', `${year}年、${school}に上がる年になったが、家の手伝いと子守りで通えなかった。この年の${p.sex === 'male' ? '男' : '女'}の子の就学率は約${Math.round(enroll * 100)}%だった。`);
     } else {
       p.inSchool = 'none';
-      log(p, 'school', `${school}に入学`, `${prefName}の${school}に入学した。${year >= 1941 && year <= 1946 ? '1941年から1947年まで、小学校は国民学校と呼ばれていた。' : year < 1941 ? '尋常小学校は6年（1907年までは4年）だった。' : ''}`);
+      log(p, 'school', `${school}に入学`, `${prefName}の${school}に入学した。${year >= 1941 && year <= 1946 ? '1941年から1947年まで、小学校は国民学校と呼ばれていた。' : year < 1886 ? '学制で始まった小学校で、授業料がかかった。寺子屋の建物や寺を校舎に使うところも多かった。' : year < 1941 ? '尋常小学校は6年（1907年までは4年）だった。' : ''}`);
     }
   }
   if (a === 12 && p.inSchool !== null) {
@@ -681,8 +770,12 @@ function erf(x: number): number {
   return x >= 0 ? y : -y;
 }
 
-/** 見合い結婚の割合（出生動向基本調査 第17回 図表5-2 の結婚年別。docs/03 C-1） */
+/**
+ * 見合い結婚の割合（出生動向基本調査 第17回 図表5-2 の結婚年別。docs/03 C-1）。
+ * 1935年より前は調査がないので、親や仲人が相手を決める結婚が9割になるまで、古いほど増やす（目安）
+ */
 export function arrangedShare(year: number): number {
+  if (year < 1935) return Math.min(0.9, 0.69 + (1935 - year) * 0.004);
   return (
     S.interp(
       { '1935': 69.0, '1955': 53.9, '1967': 44.9, '1975': 30.4, '1985': 17.7, '1995': 9.6, '2005': 6.4, '2015': 5.3, '2022': 8.9 },
@@ -710,19 +803,18 @@ function marry(state: GameState, p: Person, rng: Rng, year: number): void {
   p.wantChildren = state.prefs.childrenWish;
   const wantedLove = wish === 'love' && type === '見合い';
   if (wantedLove) p.wishes.push({ age: p.age, wish: '恋愛結婚', result: '見合いで結婚', ok: false });
-  log(
-    p,
-    'family',
-    `${p.age}歳で結婚`,
-    `${year}年、${type === '見合い' ? '見合いで' : type === 'ネット' ? 'ネットで知り合った相手と' : '恋愛で'}結婚した。相手は${spouse}。${wantedLove ? 'ほんとうは恋愛で結婚したかったが、この時代は' + Math.round(arr * 100) + '%が見合い結婚だった。' : ''}`,
-  );
+  const old = year < 1935;
+  const how = type === '見合い' ? (year < 1890 ? '親の決めた相手と、仲人を立てて' : '見合いで') : type === 'ネット' ? 'ネットで知り合った相手と' : year < 1890 ? '好き合った相手と' : '恋愛で';
+  const why = old ? 'この時代は、親や仲人が相手を決めるのが当たり前だった。' : 'この時代は' + Math.round(arr * 100) + '%が見合い結婚だった。';
+  log(p, 'family', `${p.age}歳で結婚`, `${year}年、${how}結婚した。相手は${spouse}。${wantedLove ? 'ほんとうは好きな人と結婚したかったが、' + why : ''}`);
   applyEffects(p, { happiness: 15, relation: 10 });
   // 寿退社
   if (p.sex === 'female' && p.job && p.job !== 'none' && p.job !== 'farm' && p.job !== 'self') {
     const quitP = year < 1975 ? 0.55 : year < 1986 ? 0.45 : year < 2000 ? 0.3 : 0.12;
     if (rng.chance(quitP)) {
       const wanted = state.prefs.keepWorking === true;
-      quit(p, '寿退社', `結婚を機に会社を辞めた。${wanted ? '続けたかったが、' : ''}この時代は、結婚したら辞めるのが当たり前とされる職場が多かった。`);
+      if (year < 1890) quit(p, '奉公をやめた', `結婚を機に奉公をやめ、嫁ぎ先の家の仕事を担った。${wanted ? '外で働き続けたかったが、' : ''}嫁は家の働き手でもあった。`);
+      else quit(p, '寿退社', `結婚を機に会社を辞めた。${wanted ? '続けたかったが、' : ''}この時代は、結婚したら辞めるのが当たり前とされる職場が多かった。`);
       if (wanted) p.wishes.push({ age: p.age, wish: '仕事を続ける', result: '寿退社', ok: false });
     }
   }
@@ -769,7 +861,21 @@ function work(p: Person, rng: Rng, year: number): void {
   // 失業
   const u = S.unemployment(year) / 100;
   const risk = { farm: 0.2, self: 0.6, smallco: 1.3, bigco: 0.5, public: 0.1, none: 0 }[job];
-  if (p.age < 60 && rng.chance(u * risk * 0.6)) {
+  if (p.age < 60 && year < 1890 && rng.chance(0.02 * risk)) {
+    // 江戸・明治前半：失業の統計はない。奉公先が傾く、暇を出されるなどの目安
+    log(p, 'work', isEdo(year) ? '暇を出された' : '職を失った', isEdo(year) ? `${year}年、奉公先の商いが傾き、暇を出された。` : `${year}年、勤め先の商いが傾き、職を失った。`);
+    applyEffects(p, { happiness: -15, money: -income * 0.3 });
+    if (rng.chance(0.6)) {
+      p.job = 'smallco';
+      p.jobTitle = jobLabelAt('smallco', year);
+      log(p, 'work', '次の勤め先', isEdo(year) ? '口入れ屋（仕事の世話をする店）の世話で、別の奉公先が見つかった。' : '知り合いの口ききで、別の店で働くことになった。');
+    } else {
+      p.flags.push('part_time');
+      p.job = 'smallco';
+      p.jobTitle = '日雇いの仕事';
+      log(p, 'work', '日雇いで働く', '決まった勤め先は見つからず、日雇いの仕事でしのいだ。');
+    }
+  } else if (p.age < 60 && year >= 1890 && rng.chance(u * risk * 0.6)) {
     log(p, 'work', '職を失った', `${year}年、勤め先が人を減らし、職を失った。この年の完全失業率は${u * 100 >= 0.1 ? (u * 100).toFixed(1) : '−'}%${year >= 1963 ? `、有効求人倍率は${S.jobOpenings(year).toFixed(2)}倍` : ''}だった。`);
     applyEffects(p, { happiness: -15, money: -income * 0.3 });
     const reemp = Math.min(0.9, 0.4 + S.jobOpenings(year) * 0.3);
@@ -793,6 +899,23 @@ function pensionAndRetire(state: GameState, p: Person, rng: Rng, year: number): 
   // 1998年から60歳未満の定年は禁止。2013年からは65歳までの雇用確保が実質的に義務になったので65歳とした
   const teinen = year < 1980 ? 55 : year < 1998 ? 58 : year < 2013 ? 60 : 65;
   const employee = p.job === 'bigco' || p.job === 'smallco' || p.job === 'public';
+  // 定年の仕組みが広まる前（1920年より前）は、家督や店を譲って隠居する（目安：60歳前後。続けたい人は65歳ごろ）
+  if (year < 1920 && p.job && p.job !== 'none' && !p.retired) {
+    if (a >= (state.prefs.retireAt >= 65 ? 66 : 60)) {
+      p.retired = true;
+      p.income = 0;
+      const t =
+        p.job === 'public'
+          ? '家督を跡継ぎに譲り、隠居した。'
+          : p.job === 'farm' || p.job === 'self'
+            ? `${p.children.some((c) => c.alive) ? '家督と仕事を子に譲り' : '仕事を退き'}、隠居した。`
+            : isEdo(year)
+              ? '長く勤めた奉公先を退き、隠居した。'
+              : '長く勤めた勤め先を退き、隠居した。';
+      log(p, 'work', `${a}歳で隠居`, `${year}年、${a}歳で${t}`);
+    }
+    return;
+  }
   if (employee && !p.retired && a >= Math.max(teinen, Math.min(state.prefs.retireAt, 75)) && a >= teinen) {
     p.retired = true;
     const wage = S.annualWage(year, 55, p.sex, p.edu);
@@ -889,7 +1012,7 @@ export function man(yen: number): string {
 
 export function startWork(p: Person, job: Job, headline: string, year: number, text: string): void {
   p.job = job;
-  p.jobTitle = job === 'smallco' && p.flags.includes('part_time') ? '非正規の仕事' : JOB_LABEL[job];
+  p.jobTitle = job === 'smallco' && p.flags.includes('part_time') ? (year < 1890 ? '日雇いの仕事' : '非正規の仕事') : jobLabelAt(job, year);
   p.inSchool = null;
   p.retired = false;
   if (job === 'bigco' || job === 'smallco' || job === 'public') p.flags.push('employee_history');
@@ -932,6 +1055,7 @@ const BASE_BIGCO: Record<'middle' | 'high' | 'junior' | 'univ', number> = { midd
 /** 学校を出て働き始める。望んだ働き方（15歳で決めたもの）を、その年の求人の多さで叶える */
 export function findJob(state: GameState, p: Person, rng: Rng, year: number, level: 'middle' | 'high' | 'junior' | 'univ'): void {
   p.inSchool = null;
+  if (year < 1890) return findJobOld(state, p, rng, year, level);
   const wish = state.prefs.jobWish;
   const jo = S.jobOpenings(year);
   const ng = S.newGradRatio(level === 'junior' ? 'univ' : level, year);
@@ -1015,7 +1139,68 @@ export function findJob(state: GameState, p: Person, rng: Rng, year: number, lev
   if (ok && wish) p.wishes.push({ age: p.age, wish: wishTxt, result: title, ok: true });
 }
 
-export function jobWishLabel(w: Job | 'city'): string {
+/**
+ * 江戸・明治前半の働き始め。夢（14歳で決めた働き方）を、その時代の言葉に読み替える：
+ * 大きな会社＝大店への奉公、公務員＝武士・役人、自分の店＝商い、都会＝江戸・大坂（東京・大阪）へ出る。
+ * 身分の壁があり、百姓や町人の子が武士になることは、まずできなかった。割合は目安
+ */
+function findJobOld(state: GameState, p: Person, rng: Rng, year: number, level: 'middle' | 'high' | 'junior' | 'univ'): void {
+  const wish = state.prefs.jobWish;
+  const edo = isEdo(year);
+  const fam = [0.75, 0.9, 1, 1.1, 1.25][p.familyClass - 1];
+  // 東日本からは江戸（東京）、西日本からは大坂（大阪）へ出る
+  const west = p.pref >= 25 && p.pref !== 47;
+  const city = edo ? (west ? '大坂' : '江戸') : west ? '大阪' : '東京';
+  const urban = S.METRO.has(p.pref) || p.movedToCity;
+  const done = (job: Job, title: string, text: string, ok: boolean) => {
+    startWork(p, job, title, year, `${year}年、${text}`);
+    if (wish) p.wishes.push({ age: p.age, wish: jobWishLabel(wish, year), result: title, ok });
+  };
+  // 武士の家（江戸）：長男は家督を継ぐ見習いとして出仕。次男より下は、養子の口がなければ部屋住み（目安）
+  if (edo && p.flags.includes('samurai_family') && p.sex === 'male') {
+    if (p.flags.includes('samurai_heir')) return done('public', '藩に出仕した', '家督を継ぐ見習いとして、藩の役目に就いた。禄（給料）は家の格で決まっていた。', wish === 'public' || !wish);
+    if (rng.chance(level === 'middle' ? 0.35 : 0.5)) return done('public', '養子に入った', 'ほかの武士の家に養子に入り、その家を継ぐことになった。次男より下の武士の子は、養子の口を探すのが常だった。', wish === 'public' || !wish);
+    if (level === 'univ' || level === 'junior') return done('self', '学問で身を立てた', '学んだことを生かし、手習いの師匠や医者として身を立てた。', false);
+    done('none', '部屋住みになった', '養子の口はなく、兄の家で部屋住み（家を継がない身）として暮らした。傘張りなどの内職で家計を助けた。', false);
+    p.jobTitle = '部屋住み（内職）';
+    return;
+  }
+  // 学問を続けた人（藩校・私塾・遊学）：医者・学者・手習いの師匠
+  if (level === 'univ' || level === 'junior') {
+    if (!edo && wish === 'public' && rng.chance(0.5 * fam)) return done('public', '役所に入った', '学んだことを生かし、役所に勤めることになった。', true);
+    return done('self', level === 'univ' ? '医者・学者として身を立てた' : '手習いの師匠になった', level === 'univ' ? '学んだことを生かし、医者として開業した。' : '学んだことを生かし、子どもに読み書きを教える師匠になった。', wish === 'self' || !wish);
+  }
+  // 百姓の跡取りは家を継ぐ
+  if (p.flags.includes('heir') && wish !== 'city' && rng.chance(0.92)) return done('farm', '家の田畑を継いだ', '長男なので、家の田畑を継ぐことになった。', wish === 'farm' || !wish);
+  if (wish === 'public') {
+    if (!edo && rng.chance(0.15 * fam)) return done('public', '役所に入った', '役所の小使い（雑用係）から勤め始めた。', true);
+    p.wishes.push({ age: p.age, wish: jobWishLabel('public', year), result: edo ? '身分の壁で叶わなかった' : '叶わなかった', ok: false });
+    startWork(p, 'smallco', edo ? '武家屋敷に奉公した' : '店に奉公した', year, edo ? `${year}年、武士になりたかったが、百姓や町人の子には、まずできなかった。武家屋敷に奉公に出た。` : `${year}年、役人になりたかったが、口はなかった。店に奉公に出た。`);
+    return;
+  }
+  if (wish === 'city' || (wish === 'bigco' && !urban)) {
+    p.movedToCity = true;
+    const big = rng.chance(0.3 * fam);
+    return done(big ? 'bigco' : 'smallco', `${city}に出て奉公した`, `${city}に出て、${big ? '大店（大きな商家）に丁稚奉公' : p.sex === 'male' ? '商家に奉公' : '商家に女中奉公'}に入った。${edo ? '奉公は、年季（約束の年数）を決めて住み込みで働くものだった。' : ''}`, true);
+  }
+  if (wish === 'bigco') {
+    if (rng.chance(0.4 * fam)) return done('bigco', '大店に奉公した', `大店（大きな商家）に${p.sex === 'male' ? '丁稚' : '女中'}として奉公に入った。いずれは番頭、うまくいけば暖簾分け（独立）をめざす。`, true);
+    return done('smallco', '小さな店に奉公した', '大店に入りたかったが、口がなく、近くの小さな店に奉公に入った。', false);
+  }
+  if (wish === 'self') {
+    if (p.parentJob === 'self') return done('self', '家の商いを継いだ', '家の商いを手伝い、やがて継ぐことになった。', true);
+    if (rng.chance(0.12 * fam)) return done('self', '小さな商いを始めた', '元手を借りて、振り売り（天秤棒をかついで売り歩く商い）から始めた。', true);
+    return done('smallco', '奉公に出た', '自分の店を持ちたかったが、元手がなかった。まずは奉公に出た。', false);
+  }
+  if (wish === 'farm' || p.parentJob === 'farm') {
+    if (p.parentJob === 'farm' && (p.birthOrder === 1 || rng.chance(p.sex === 'female' ? 0.7 : 0.45))) return done('farm', '家の田畑を手伝った', p.sex === 'female' ? '家の田畑と機織りを手伝った。' : '家の田畑を手伝った。次男より下は、いずれ分家するか、よその家に婿入りするか、奉公に出るかだった。', true);
+  }
+  if (p.parentJob === 'self') return done('self', '家の商いを手伝った', '家の商いを手伝った。', !wish);
+  done('smallco', '奉公に出た', p.sex === 'female' ? '近くの商家に女中奉公に出た。' : '口入れ屋（仕事の世話をする店）の世話で、商家に奉公に出た。', !wish);
+}
+
+export function jobWishLabel(w: Job | 'city', year = 2000): string {
+  if (year < 1890) return { farm: '家の仕事を継ぐこと', self: '自分の商い', smallco: '奉公', bigco: '大店への奉公', public: isEdo(year) ? '武士になること' : '役人になること', none: '働かない', city: isEdo(year) ? '江戸や大坂で働くこと' : '東京や大阪で働くこと' }[w];
   return { farm: '家業の農業', self: '自分の店', smallco: '地元の会社', bigco: '大企業', public: '公務員', none: '働かない', city: '都会で働くこと' }[w];
 }
 
@@ -1030,6 +1215,8 @@ export function jobWishLabel(w: Job | 'city'): string {
  * - 子ども：2002年から3歳未満、2008年から小学校に上がる前は2割
  */
 export function copayRate(year: number, age: number, employee: boolean): { rate: number; note: string } {
+  // 健康保険法の施行（1927年）より前は、医療保険の仕組みがなかった
+  if (year < 1927) return { rate: 1, note: '医療保険の仕組みがまだなく、全額を自分で払った' };
   if (age >= 70) {
     if (year >= 1973 && year <= 1982) return { rate: 0, note: '老人医療費の無料化で、自己負担はなかった' };
     if (year < 1973) return { rate: employee ? 0.05 : 0.5, note: '' };
@@ -1052,6 +1239,17 @@ export function copayRate(year: number, age: number, employee: boolean): { rate:
 function illness(p: Person, rng: Rng, year: number): void {
   const a = p.age;
   if (a < 1) return;
+  if (year < 1900) {
+    // 病院がほとんどない時代：病気やけがで寝込み、医者にかかる。薬礼（医者への支払い）はすべて自分持ち（目安）
+    const base = a < 15 ? 0.03 : a < 40 ? 0.02 : a < 65 ? 0.035 : 0.07;
+    if (!rng.chance(base * (p.stats.health < 40 ? 1.8 : p.stats.health > 75 ? 0.7 : 1))) return;
+    const what = a < 15 ? rng.pick(['はやり風邪', '麻疹（はしか）', 'ひどい腹くだし', 'けが']) : a < 50 ? rng.pick(['はやり風邪', '腹の病', 'けが', '目の病']) : rng.pick(['中風', '腹の病', 'けが', '目の病', 'はやり風邪']);
+    const cost = 600000 * (S.incomeIndex(year) / 100) * 0.15 * (0.6 + rng.next() * 0.9);
+    p.money -= cost;
+    applyEffects(p, { health: -4, happiness: -6 });
+    log(p, 'health', `${what}で寝込んだ`, `${year}年、${what}で寝込んだ。${p.familyClass >= 3 ? `医者にかかり、薬礼（医者への支払い）は${moneyAt(cost, year)}だった。` : '医者を呼ぶお金はなく、家の者の看病と、売薬でしのいだ。'}`, { heavy: what === '中風' });
+    return;
+  }
   // 入院するような病気やけがの確率（年あたりの目安）。年齢とともに増え、健康が低いと増える
   const base = a < 15 ? 0.012 : a < 40 ? 0.015 : a < 65 ? 0.03 : 0.07;
   const prob = base * (p.stats.health < 40 ? 1.8 : p.stats.health > 75 ? 0.7 : 1);
@@ -1083,6 +1281,17 @@ function talentBloom(state: GameState, p: Person, rng: Rng, year: number): void 
   p.flags.push('talent_checked');
   const t = state.shared.talent;
   const pre = year < 1955; // 戦中・戦後すぐ
+  // 1890年より前（江戸・明治前半）の版
+  const edoTable: Record<string, { p: number; ok: string; ng: string }> = {
+    絵: { p: 0.15, ok: '絵の腕を見こまれ、絵師の工房に出入りして、版元の仕事を手伝うようになった。', ng: '絵がうまいと言われたが、紙も絵の具も高く、描く暇もなかった。' },
+    音楽: { p: 0.15, ok: '三味線と唄の腕が評判になり、祭りや宴に呼ばれるようになった。', ng: '唄がうまかったが、それを生かす場は祭りの日くらいだった。' },
+    運動: { p: 0.25, ok: '力の強さを買われ、村の草相撲で大関を張った。', ng: '体は丈夫だったが、それは野良仕事に使われるだけだった。' },
+    計算: { p: 0.35, ok: 'そろばんの腕を見こまれ、帳場（店の勘定）を任された。', ng: '計算は速かったが、帳面を任されるのは家の跡取りや番頭だけだった。' },
+    話すこと: { p: 0.3, ok: '口がうまく、行商や店先で客をつかむのが得意になった。', ng: '話すのは得意だったが、目上に意見することは許されなかった。' },
+    手先の器用さ: { p: 0.45, ok: '器用さを見こまれ、職人の親方に弟子入りして腕を磨いた。', ng: '手先は器用だったが、弟子入りの口はなかった。' },
+    文章: { p: 0.15, ok: '詠んだ句が評判になり、俳諧の集まりに招かれるようになった。', ng: '文章を書くのが好きだったが、紙は高く、読める人も多くなかった。' },
+    人の世話: { p: 0.35, ok: '面倒見のよさで、村や長屋で頼りにされた。取り上げ（お産の手伝い）を頼まれることもあった。', ng: '人の世話が得意だったが、それは仕事とは見なされなかった。' },
+  };
   const table: Record<string, { p: number; ok: string; ng: string }> = {
     絵: year < 1955
       ? { p: 0.1, ok: '絵の才を見こまれ、看板屋に弟子入りした。', ng: '絵がうまいと言われたが、描く暇も紙もなかった。' }
@@ -1090,7 +1299,7 @@ function talentBloom(state: GameState, p: Person, rng: Rng, year: number): void 
         ? { p: 0.35, ok: '漫画を描いて雑誌に投稿し、小さな賞をもらった。', ng: '漫画家を目指したが、その道は狭かった。' }
         : { p: 0.45, ok: 'デジタルで描いた絵をネットに上げると、思いがけず多くの人に見られた。', ng: '絵を描き続けたが、仕事にはならなかった。' },
     音楽: pre
-      ? { p: 0.08, ok: 'のど自慢で歌い、町で評判になった。', ng: '歌がうまかったが、それを生かす場はなかった。' }
+      ? { p: 0.08, ok: year < 1946 ? '祭りや宴で歌い、町で評判になった。' : 'のど自慢で歌い、町で評判になった。', ng: '歌がうまかったが、それを生かす場はなかった。' }
       : year < 2005
         ? { p: 0.3, ok: '仲間とバンドを組み、ライブハウスに立った。', ng: 'バンドを組んだが、楽器を買うお金が続かなかった。' }
         : { p: 0.4, ok: '演奏の動画を投稿し、知らない人から感想が届いた。', ng: '音楽を続けたが、仕事にはならなかった。' },
@@ -1111,7 +1320,7 @@ function talentBloom(state: GameState, p: Person, rng: Rng, year: number): void 
       ? { p: 0.3, ok: '面倒見のよさで、家族や近所から頼りにされた。', ng: '人の世話が得意だったが、それは仕事とは見なされなかった。' }
       : { p: 0.45, ok: '人の世話が得意で、介護や看護の仕事で頼りにされた。', ng: '人の世話が得意だったが、その仕事の給料は低かった。' },
   };
-  const row = table[t] ?? { p: 0.3, ok: '才能が花開いた。', ng: '才能はあったが、生かす場がなかった。' };
+  const row = (year < 1890 ? edoTable[t] : table[t]) ?? { p: 0.3, ok: '才能が花開いた。', ng: '才能はあったが、生かす場がなかった。' };
   const ok = rng.chance(row.p * [0.7, 0.85, 1, 1.15, 1.3][p.familyClass - 1]);
   if (ok) {
     p.flags.push('talent_bloom');

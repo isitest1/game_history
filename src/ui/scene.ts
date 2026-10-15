@@ -1,6 +1,6 @@
 // 列の上やトップページに描く、その年・その土地の風景（SVG、自作）。
 // 時代で空の色と建物が変わり、土地で地形が変わる。
-// - 時代：〜1955 セピア色の木造の町／1956〜73 高度成長の団地と煙突／1974〜90 夕暮れのネオン／1991〜2010 明るいビル街／2011〜2026 夕方の高層ビル／2027〜 線画（推計の時代）
+// - 時代：〜1871 和紙色の江戸（茅葺きの家・町家・お城・火の見櫓）／1872〜1955 セピア色の木造の町／1956〜73 高度成長の団地と煙突／1974〜90 夕暮れのネオン／1991〜2010 明るいビル街／2011〜2026 夕方の高層ビル／2027〜 線画（推計の時代）
 // - 土地：大都市圏か地方か（田んぼと山）、雪の多い県、沖縄（海とヤシと赤瓦）、富士山の見える県（静岡・山梨）、東京（東京タワー1958〜、スカイツリー2012〜）
 // 戦争や災害の場面は描かない。
 
@@ -30,6 +30,7 @@ interface Pal {
 
 function palette(year: number): Pal {
   if (year > 2026) return { sky: ['#f4f6fb', '#eef1f8', '#e6ebf5'], sun: '#ffffff', far: '#c7cfdf', mid: '#9aa6c0', near: '#7b88a6', win: '#ffffff', roof: '#9aa6c0', ground: '#dfe5f0', accent: '#8fa2d6', line: true };
+  if (year < 1872) return { sky: ['#ede4cc', '#e6d9bb', '#d8c6a0'], sun: '#f6ead0', far: '#9da593', mid: '#6b5a45', near: '#3e342a', win: '#f2d79a', roof: '#2f2a26', ground: '#b39a70', accent: '#b23a2a' };
   if (year < 1956) return { sky: ['#efe3c6', '#e6d3ad', '#d9c095'], sun: '#fbf2da', far: '#b9a07a', mid: '#8a6d4c', near: '#5d4631', win: '#f3dfa8', roof: '#4a3626', ground: '#a88b62', accent: '#9a4b32' };
   if (year < 1974) return { sky: ['#a9cfe0', '#e9dcc0', '#f4cf98'], sun: '#fff4d6', far: '#8fa7ae', mid: '#c9b38f', near: '#8c6f57', win: '#fff1c2', roof: '#9b3d2c', ground: '#9a8a6a', accent: '#d8562f' };
   if (year < 1991) return { sky: ['#2c2150', '#b5557a', '#f3a37c'], sun: '#ffd8a0', far: '#5b3f6e', mid: '#45305e', near: '#2a1d3d', win: '#ffd27a', roof: '#2a1d3d', ground: '#24182f', accent: '#ff5fa2' };
@@ -98,7 +99,38 @@ export function sceneSvg(year: number, pref = 13): string {
     if (snow && !P.line) out.push(`<path d="M${x - 3} ${G - h} L${x + w / 2} ${G - h - 8 - w * 0.12} L${x + w + 3} ${G - h} L${x + w} ${G - h + 2} L${x + w / 2} ${G - h - 5 - w * 0.12} L${x} ${G - h + 2}Z" fill="#fff"/>`);
     if (!P.line && r() < 0.6) out.push(`<rect x="${x + w * 0.3}" y="${G - h * 0.6}" width="${w * 0.22}" height="${h * 0.3}" fill="${P.win}" opacity=".8"/>`);
   };
+  const edo = year < 1872;
+  // 茅葺きの家（江戸の村）
+  const thatch = (x: number, w: number, h: number) => {
+    out.push(`<rect x="${x + 2}" y="${G - h}" width="${w - 4}" height="${h}" ${fillOrLine(P.mid)}/>`);
+    const top = G - h - 10 - w * 0.28;
+    out.push(`<path d="M${x - 4} ${G - h + 1} Q${x + w * 0.18} ${top + 4} ${x + w * 0.35} ${top} L${x + w * 0.65} ${top} Q${x + w * 0.82} ${top + 4} ${x + w + 4} ${G - h + 1}Z" ${fillOrLine(snow ? '#f1f3f5' : '#a4864f')}/>`);
+    if (!P.line) out.push(`<rect x="${x + w * 0.33}" y="${top - 2}" width="${w * 0.34}" height="2.4" fill="${P.near}" opacity=".8"/>`);
+    if (!P.line && r() < 0.6) out.push(`<rect x="${x + w * 0.4}" y="${G - h * 0.7}" width="${w * 0.2}" height="${h * 0.7}" fill="${P.near}" opacity=".7"/>`);
+  };
+  // 町家（江戸の町）：低い瓦屋根が続き、ときどきのれんの赤
+  const machiya = (x: number, w: number, h: number) => {
+    out.push(`<rect x="${x}" y="${G - h}" width="${w}" height="${h}" ${fillOrLine(P.mid)}/>`);
+    out.push(`<path d="M${x - 2} ${G - h} L${x + 3} ${G - h - 5} L${x + w - 3} ${G - h - 5} L${x + w + 2} ${G - h}Z" ${fillOrLine(P.roof)}/>`);
+    if (!P.line) {
+      for (let k = x + 3; k < x + w - 3; k += 3) out.push(`<rect x="${k}" y="${G - h + 3}" width="1" height="${h * 0.45}" fill="${P.near}" opacity=".6"/>`);
+      if (r() < 0.45) out.push(`<rect x="${x + w * 0.25}" y="${G - h * 0.45}" width="${w * 0.5}" height="${h * 0.22}" fill="${r() < 0.6 ? '#3b4a6b' : P.accent}" opacity=".9"/>`);
+    }
+  };
+  // お城（城下町）
+  const castle = (x: number) => {
+    out.push(`<path d="M${x - 26} ${G} L${x - 20} ${G - 16} L${x + 20} ${G - 16} L${x + 26} ${G}Z" ${fillOrLine('#8f877a')}/>`);
+    for (const [w, y0, hh] of [[30, 16, 9], [22, 27, 8], [14, 37, 8]] as const) {
+      out.push(`<rect x="${x - w / 2 + 3}" y="${G - y0 - hh}" width="${w - 6}" height="${hh}" ${fillOrLine('#efe9dc')}/>`);
+      out.push(`<path d="M${x - w / 2 - 2} ${G - y0 - hh + 1} L${x - w / 2 + 4} ${G - y0 - hh - 4} L${x + w / 2 - 4} ${G - y0 - hh - 4} L${x + w / 2 + 2} ${G - y0 - hh + 1}Z" ${fillOrLine(P.roof)}/>`);
+    }
+  };
+  // 火の見櫓（江戸の町）
+  const lookout = (x: number) => {
+    out.push(`<path d="M${x - 5} ${G} L${x - 2} ${G - 42} M${x + 5} ${G} L${x + 2} ${G - 42} M${x - 4} ${G - 14} h8 M${x - 3} ${G - 28} h6" stroke="${P.near}" stroke-width="1.2" fill="none"/><path d="M${x - 5} ${G - 42} L${x} ${G - 48} L${x + 5} ${G - 42}Z" ${fillOrLine(P.roof)}/>`);
+  };
   const pole = (x: number) => {
+    if (year < 1880) return;
     out.push(`<rect x="${x}" y="${G - 40}" width="1.6" height="40" fill="${P.near}" opacity=".9"/><rect x="${x - 6}" y="${G - 36}" width="13" height="1.4" fill="${P.near}" opacity=".9"/>`);
   };
   const tree = (x: number, s = 1) => {
@@ -110,7 +142,28 @@ export function sceneSvg(year: number, pref = 13): string {
     }
   };
 
-  if (!city) {
+  if (edo) {
+    // 江戸：村は茅葺きの家と田んぼ、町は町家の並びとお城・火の見櫓。電柱や看板の明かりはない
+    if (!city && !P.line && !okinawa) for (let i = 0; i < 4; i++) out.push(`<rect x="0" y="${G - 2 + i * 3}" width="${W}" height="1" fill="${snow ? '#ffffff' : '#7d9a4a'}" opacity=".5"/>`);
+    if (city || r() < 0.35) castle(60 + r() * 200);
+    let x = r() * 14;
+    while (x < W) {
+      if (city) {
+        const w = 18 + r() * 14;
+        machiya(x, w - 2, 10 + r() * 6);
+        if (r() < 0.08) lookout(x + w / 2);
+        x += w;
+      } else {
+        const w = 24 + r() * 16;
+        if (okinawa) {
+          const h = 9 + r() * 5;
+          out.push(`<rect x="${x}" y="${G - h}" width="${w}" height="${h}" ${fillOrLine('#d9cbb0')}/><rect x="${x - 2}" y="${G - h - 4}" width="${w + 4}" height="4" ${fillOrLine('#c4553b')}/>`);
+        } else if (r() < 0.55) thatch(x, w, 8 + r() * 5);
+        else tree(x + w / 2, 1 + r() * 0.5);
+        x += w + 6 + r() * 14;
+      }
+    }
+  } else if (!city) {
     // 地方：田んぼ・畑と、ゆとりのある家並み。時代が進むと道と家が増える
     if (!P.line && !okinawa) for (let i = 0; i < 4; i++) out.push(`<rect x="0" y="${G - 2 + i * 3}" width="${W}" height="1" fill="${snow ? '#ffffff' : year < 1974 ? '#7d9a4a' : '#6f8f55'}" opacity=".5"/>`);
     let x = r() * 20;

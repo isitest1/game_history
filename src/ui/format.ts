@@ -10,11 +10,31 @@ export function wareki(year: number): string {
   if (year >= 1989) return year === 1989 ? '平成元年' : `平成${year - 1988}年`;
   if (year >= 1926) return year === 1926 ? '昭和元年' : `昭和${year - 1925}年`;
   if (year >= 1912) return year === 1912 ? '大正元年' : `大正${year - 1911}年`;
-  return `明治${year - 1867}年`;
+  if (year >= 1868) return year === 1868 ? '明治元年' : `明治${year - 1867}年`;
+  // 江戸時代の元号（元年にあたる西暦の年。改元は旧暦の年の途中なので、目安）
+  for (const [from, name] of EDO_ERAS) if (year >= from) return year === from ? `${name}元年` : `${name}${year - from + 1}年`;
+  return `寛政${year - 1788}年`;
 }
 
-export function eraName(year: number): '明治' | '大正' | '昭和' | '平成' | '令和' {
-  return year >= 2019 ? '令和' : year >= 1989 ? '平成' : year >= 1926 ? '昭和' : year >= 1912 ? '大正' : '明治';
+const EDO_ERAS: [number, string][] = [
+  [1865, '慶応'],
+  [1864, '元治'],
+  [1861, '文久'],
+  [1860, '万延'],
+  [1854, '安政'],
+  [1848, '嘉永'],
+  [1844, '弘化'],
+  [1830, '天保'],
+  [1818, '文政'],
+  [1804, '文化'],
+  [1801, '享和'],
+  [1789, '寛政'],
+];
+
+export type EraName = '江戸' | '明治' | '大正' | '昭和' | '平成' | '令和';
+
+export function eraName(year: number): EraName {
+  return year >= 2019 ? '令和' : year >= 1989 ? '平成' : year >= 1926 ? '昭和' : year >= 1912 ? '大正' : year >= 1868 ? '明治' : '江戸';
 }
 
 export function yen(v: number): string {

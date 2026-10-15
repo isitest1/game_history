@@ -1,7 +1,7 @@
 // 共有カード（1200×630）を Canvas で描く。3人を1枚に並べる。
 
 import type { GameState } from '../sim/engine';
-import { EDU_LABEL } from '../sim/engine';
+import { eduLabelOf } from '../sim/engine';
 import * as S from '../sim/stats';
 import { yen } from './format';
 
@@ -49,7 +49,7 @@ export async function drawShareCard(c: HTMLCanvasElement, st: GameState, portrai
     }
     g.fillStyle = e.sub;
     g.font = `400 16px ${e.font}`;
-    g.fillText(`${p.birthYear}–${p.deathYear ?? ''}・${S.PREFS[p.pref - 1]}`, x + 22, y + 22);
+    g.fillText(`${p.birthYear}–${p.deathYear ?? ''}・${S.placeMid(p.pref, p.birthYear)}`, x + 22, y + 22);
     g.fillStyle = e.ink;
     g.font = `800 64px ${e.font}`;
     g.fillText(`享年${p.deathAge ?? '−'}`, x + 20, y + 48);
@@ -58,7 +58,7 @@ export async function drawShareCard(c: HTMLCanvasElement, st: GameState, portrai
     g.font = `400 20px ${e.font}`;
     const lines = [
       `死因：${p.deathCause ?? ''}`,
-      `学歴：${EDU_LABEL[p.edu]}`,
+      `学歴：${eduLabelOf(p)}`,
       `仕事：${p.jobTitle || 'なし'}`,
       `生涯年収：${yen(p.lifetimeEarningsReal)}`,
       p.pensionStartAge !== undefined ? `年金：${p.pensionStartAge}歳から月${yen(p.pensionMonthlyReal ?? 0)}` : '年金：受け取る前に死去',
@@ -109,13 +109,13 @@ function drawPortrait(c: HTMLCanvasElement, st: GameState): void {
     }
     g.fillStyle = e.sub;
     g.font = `400 26px ${e.font}`;
-    g.fillText(`${p.birthYear}–${p.deathYear ?? ''}　${S.PREFS[p.pref - 1]}　${p.name}`, x + 32, y + 26);
+    g.fillText(`${p.birthYear}–${p.deathYear ?? ''}　${S.placeMid(p.pref, p.birthYear)}　${p.name}`, x + 32, y + 26);
     g.fillStyle = e.ink;
     g.font = `800 96px ${e.font}`;
     g.fillText(`享年${p.deathAge ?? '−'}`, x + 28, y + 64);
     g.font = `400 28px ${e.font}`;
     const lines = [
-      `${p.deathCause ?? ''}・${EDU_LABEL[p.edu]}・${p.jobTitle || '仕事なし'}`,
+      `${p.deathCause ?? ''}・${eduLabelOf(p)}・${p.jobTitle || '仕事なし'}`,
       `生涯年収 ${yen(p.lifetimeEarningsReal)}`,
       p.pensionStartAge !== undefined ? `年金 ${p.pensionStartAge}歳から月${yen(p.pensionMonthlyReal ?? 0)}` : '年金を受け取る前に死去',
     ];
@@ -131,7 +131,7 @@ function drawPortrait(c: HTMLCanvasElement, st: GameState): void {
 
 /** 1930年より前（明治・大正）の生まれがいるときの断り書き */
 function prewarNote(st: GameState): string {
-  return st.persons.some((p) => p.birthYear < 1930) ? '1930年より前は概算。' : '';
+  return st.persons.some((p) => p.birthYear < 1890) ? '1890年より前は推計、1930年より前は概算。' : st.persons.some((p) => p.birthYear < 1930) ? '1930年より前は概算。' : '';
 }
 
 function roundRect(g: CanvasRenderingContext2D, x: number, y: number, w: number, h: number, r: number): void {
@@ -159,7 +159,7 @@ function wrap(g: CanvasRenderingContext2D, text: string, x: number, y: number, m
 export function shareText(st: GameState, okuri?: string): string {
   const rows = st.persons.map((p) => {
     const pen = p.pensionStartAge !== undefined ? `年金${p.pensionStartAge}歳から月${yen(p.pensionMonthlyReal ?? 0)}` : '年金の前に死去';
-    return `${p.birthYear}年・${S.PREFS[p.pref - 1]}生まれ：享年${p.deathAge}、${EDU_LABEL[p.edu]}、生涯年収${yen(p.lifetimeEarningsReal)}、${pen}`;
+    return `${p.birthYear}年・${S.placeMid(p.pref, p.birthYear)}生まれ：享年${p.deathAge}、${eduLabelOf(p)}、生涯年収${yen(p.lifetimeEarningsReal)}、${pen}`;
   });
   const msg = okuri && okuri.trim() ? `\n「${okuri.trim().slice(0, 140)}」` : '';
   return `同じ私が、三つの時代に生まれた（${st.shared.sex === 'male' ? '男' : '女'}）。\n${rows.join('\n')}${msg}\n#生まれ年ガチャ`;

@@ -358,6 +358,7 @@
     "kind": "daily",
     "ageMin": 3,
     "ageMax": 5,
+    "notBefore": 1900,
     "when": {
       "father": true
     },
@@ -727,6 +728,7 @@
     "kind": "daily",
     "ageMin": 2,
     "ageMax": 5,
+    "notBefore": 1890,
     "text": "正月、親戚の家でお年玉の袋をもらった。中身はすぐに母に預けられ、袋だけが手もとに残った。",
     "effects": {
       "happiness": 1
@@ -1035,6 +1037,7 @@
     "kind": "daily",
     "ageMin": 3,
     "ageMax": 5,
+    "notBefore": 1871,
     "text": "{pref}の夏はむし暑く、昼寝の間じゅう母がうちわで扇いでくれた。起きると、枕が汗でしめっていた。",
     "effects": {
       "relation": 1
@@ -2708,6 +2711,7 @@
     "kind": "think",
     "ageMin": 4,
     "ageMax": 5,
+    "notBefore": 1900,
     "text": "「おおきくなったら、でんしゃのうんてんしゅになるんだ」",
     "effects": {
       "happiness": 1
@@ -3019,6 +3023,7 @@
     "kind": "think",
     "ageMin": 4,
     "ageMax": 5,
+    "notBefore": 1890,
     "text": "「ようちえん、きょうはたのしかったな」",
     "effects": {
       "happiness": 1

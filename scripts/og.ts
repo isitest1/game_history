@@ -33,13 +33,13 @@ p{margin-top:26px;font-size:24px;line-height:1.6;color:#cfc3ad}
 .c .k span{display:block;font-size:14px;font-weight:400;opacity:.7;margin-bottom:4px}
 .c:nth-child(1) b,.c:nth-child(1) .k{color:#2a1f14}.c:nth-child(2) b{color:#e0367a}.c:nth-child(3) b{color:#3554e8}
 </style></head><body>
-<div class="bg">${sceneSvg(1950, 15)}${sceneSvg(1985, 27)}${sceneSvg(2018, 13)}</div>
+<div class="bg">${sceneSvg(1850, 20)}${sceneSvg(1960, 27)}${sceneSvg(2018, 13)}</div>
 <div class="l"><span class="seal">生</span><span class="logo">生まれ年ガチャ</span>
 <h1>同じ私が、<br>三つの時代に<br><em>生まれる。</em></h1>
 <p>進学も、結婚も、寿命も、年金も。<br>日本の実際の統計で、一生を生きる。</p></div>
 <div class="cards">
-<div class="c"><div class="art">${sceneSvg(1945, 13)}</div><small>活版と紙</small><b>1935</b><div class="k"><span>享年</span>？</div></div>
-<div class="c"><div class="art">${sceneSvg(1980, 27)}</div><small>ブラウン管</small><b>1972</b><div class="k"><span>享年</span>？</div></div>
+<div class="c"><div class="art">${sceneSvg(1850, 13)}</div><small>和紙と筆</small><b>1850</b><div class="k"><span>享年</span>？</div></div>
+<div class="c"><div class="art">${sceneSvg(1930, 27)}</div><small>活版と紙</small><b>1925</b><div class="k"><span>享年</span>？</div></div>
 <div class="c"><div class="art">${sceneSvg(2018, 13)}</div><small>フラット</small><b>2008</b><div class="k"><span>享年</span>？</div></div>
 </div></body></html>`;
 

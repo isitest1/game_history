@@ -142,6 +142,7 @@
   "kind": "daily",
   "ageMin": 13,
   "ageMax": 18,
+  "notBefore": 1890,
   "text": "好きな人と廊下ですれ違うだけで、その日一日が明るく見えた。目が合ったかどうかを、何度も思い返した。",
   "effects": {
    "happiness": 1
@@ -186,6 +187,7 @@
   "kind": "daily",
   "ageMin": 13,
   "ageMax": 18,
+  "notBefore": 1890,
   "when": {
    "mother": true
   },
@@ -200,6 +202,7 @@
   "kind": "daily",
   "ageMin": 15,
   "ageMax": 18,
+  "notBefore": 1890,
   "when": {
    "father": true
   },
@@ -273,6 +276,7 @@
   "kind": "daily",
   "ageMin": 13,
   "ageMax": 18,
+  "notBefore": 1890,
   "when": {
    "hasSibling": true
   },
@@ -301,6 +305,7 @@
   "kind": "daily",
   "ageMin": 15,
   "ageMax": 18,
+  "notBefore": 1890,
   "when": {
    "hasSibling": true
   },
@@ -354,6 +359,7 @@
   "kind": "daily",
   "ageMin": 13,
   "ageMax": 18,
+  "notBefore": 1950,
   "when": {
    "school": "middle"
   },
@@ -391,6 +397,7 @@
   "kind": "daily",
   "ageMin": 14,
   "ageMax": 17,
+  "notBefore": 1950,
   "text": "進路調査の紙を前にして、何も書けないまま提出の日が来た。「未定」と書いて出した。",
   "effects": {
    "happiness": -1
@@ -514,6 +521,7 @@
   "kind": "daily",
   "ageMin": 13,
   "ageMax": 16,
+  "notBefore": 1890,
   "text": "正月に祖父母の家へ行き、お年玉をもらった。祖母はこっそり、もう一つ袋をくれた。",
   "effects": {
    "happiness": 1,
@@ -620,6 +628,7 @@
   "kind": "daily",
   "ageMin": 14,
   "ageMax": 18,
+  "notBefore": 1920,
   "text": "自分で選んだ服を初めて買った。家に帰って着てみると、店で見たときほど似合わなかった。",
   "effects": {
    "happiness": 0
@@ -642,6 +651,7 @@
   "kind": "daily",
   "ageMin": 13,
   "ageMax": 18,
+  "notBefore": 1890,
   "text": "{pet}の散歩は、いつの間にか自分の役目になっていた。夜道で{pet}だけには何でも話せた。",
   "effects": {
    "happiness": 1
@@ -665,6 +675,7 @@
   "kind": "daily",
   "ageMin": 13,
   "ageMax": 16,
+  "notBefore": 1950,
   "text": "学級委員に選ばれ、断れないまま引き受けた。朝の会で前に立つと、声がうわずった。",
   "effects": {
    "knowledge": 1
@@ -2834,6 +2845,7 @@
   "kind": "daily",
   "ageMin": 13,
   "ageMax": 18,
+  "notBefore": 1890,
   "text": "友だちのあいだで流行っている話題についていけず、昼休みは本を読むふりをしていた。",
   "effects": {
    "happiness": -1
@@ -2940,6 +2952,7 @@
   "kind": "think",
   "ageMin": 14,
   "ageMax": 18,
+  "notBefore": 1890,
   "text": "「自分が何になりたいのか、自分がいちばん分かっていない」",
   "effects": {},
   "weight": 1
@@ -3009,6 +3022,7 @@
   "kind": "think",
   "ageMin": 15,
   "ageMax": 18,
+  "notBefore": 1890,
   "text": "「{friend}がいなかったら、この三年はもっと長かった」",
   "effects": {},
   "weight": 1
@@ -3048,6 +3062,7 @@
   "kind": "think",
   "ageMin": 15,
   "ageMax": 18,
+  "notBefore": 1890,
   "when": {
    "trigger": "wish_fail"
   },
@@ -3128,6 +3143,7 @@
   "kind": "think",
   "ageMin": 15,
   "ageMax": 18,
+  "notBefore": 1900,
   "when": {
    "trigger": "moved"
   },

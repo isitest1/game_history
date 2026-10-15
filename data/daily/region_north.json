@@ -304,6 +304,7 @@
     "kind": "daily",
     "ageMin": 5,
     "ageMax": 8,
+    "notBefore": 1890,
     "when": {
       "region": [
         "hokkaido",
@@ -340,6 +341,7 @@
     "kind": "daily",
     "ageMin": 3,
     "ageMax": 6,
+    "notBefore": 1890,
     "when": {
       "region": [
         "hokkaido"
@@ -485,6 +487,7 @@
     "kind": "daily",
     "ageMin": 8,
     "ageMax": 12,
+    "notBefore": 1950,
     "when": {
       "prefs": [
         1
@@ -803,6 +806,7 @@
     "kind": "daily",
     "ageMin": 25,
     "ageMax": 64,
+    "notBefore": 1900,
     "when": {
       "region": [
         "hokkaido"
@@ -823,6 +827,7 @@
     "kind": "daily",
     "ageMin": 20,
     "ageMax": 64,
+    "notBefore": 1950,
     "when": {
       "prefs": [
         1
@@ -843,6 +848,7 @@
     "kind": "daily",
     "ageMin": 20,
     "ageMax": 64,
+    "notBefore": 1890,
     "when": {
       "prefs": [
         1
@@ -863,6 +869,7 @@
     "kind": "daily",
     "ageMin": 20,
     "ageMax": 64,
+    "notBefore": 1950,
     "when": {
       "prefs": [
         1
@@ -884,6 +891,7 @@
     "kind": "daily",
     "ageMin": 30,
     "ageMax": 70,
+    "notBefore": 1890,
     "when": {
       "prefs": [
         1
@@ -919,6 +927,7 @@
     "kind": "daily",
     "ageMin": 70,
     "ageMax": 100,
+    "notBefore": 1890,
     "when": {
       "region": [
         "hokkaido"
@@ -1049,6 +1058,7 @@
     "kind": "daily",
     "ageMin": 25,
     "ageMax": 64,
+    "notBefore": 1950,
     "when": {
       "prefs": [
         1
@@ -1102,6 +1112,7 @@
     "kind": "daily",
     "ageMin": 6,
     "ageMax": 15,
+    "notBefore": 1890,
     "when": {
       "prefs": [
         2
@@ -1119,6 +1130,7 @@
     "kind": "daily",
     "ageMin": 20,
     "ageMax": 64,
+    "notBefore": 1890,
     "when": {
       "prefs": [
         2
@@ -1196,6 +1208,7 @@
     "kind": "daily",
     "ageMin": 15,
     "ageMax": 30,
+    "notBefore": 1890,
     "when": {
       "prefs": [
         2
@@ -1307,6 +1320,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 100,
+    "notBefore": 1890,
     "when": {
       "prefs": [
         2
@@ -1325,6 +1339,7 @@
     "kind": "daily",
     "ageMin": 35,
     "ageMax": 64,
+    "notBefore": 1960,
     "when": {
       "prefs": [
         2
@@ -1343,6 +1358,7 @@
     "kind": "daily",
     "ageMin": 19,
     "ageMax": 34,
+    "notBefore": 1900,
     "when": {
       "prefs": [
         2
@@ -1398,6 +1414,7 @@
     "kind": "daily",
     "ageMin": 15,
     "ageMax": 40,
+    "notBefore": 1954,
     "when": {
       "prefs": [
         3
@@ -1605,6 +1622,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 100,
+    "notBefore": 1950,
     "when": {
       "prefs": [
         3
@@ -1624,6 +1642,7 @@
     "kind": "daily",
     "ageMin": 4,
     "ageMax": 12,
+    "notBefore": 1950,
     "when": {
       "prefs": [
         4
@@ -1641,6 +1660,7 @@
     "kind": "daily",
     "ageMin": 15,
     "ageMax": 40,
+    "notBefore": 1950,
     "when": {
       "prefs": [
         4
@@ -1737,6 +1757,7 @@
     "kind": "daily",
     "ageMin": 20,
     "ageMax": 64,
+    "notBefore": 1890,
     "when": {
       "prefs": [
         4
@@ -1775,6 +1796,7 @@
     "kind": "daily",
     "ageMin": 19,
     "ageMax": 34,
+    "notBefore": 1986,
     "when": {
       "prefs": [
         4
@@ -1793,6 +1815,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 100,
+    "notBefore": 1950,
     "when": {
       "prefs": [
         4
@@ -2057,6 +2080,7 @@
     "kind": "daily",
     "ageMin": 6,
     "ageMax": 40,
+    "notBefore": 1890,
     "when": {
       "prefs": [
         6
@@ -2095,6 +2119,7 @@
     "kind": "daily",
     "ageMin": 20,
     "ageMax": 64,
+    "notBefore": 1900,
     "when": {
       "prefs": [
         6
@@ -2116,6 +2141,7 @@
     "kind": "daily",
     "ageMin": 6,
     "ageMax": 14,
+    "notBefore": 1900,
     "when": {
       "prefs": [
         6
@@ -2409,6 +2435,7 @@
     "kind": "daily",
     "ageMin": 25,
     "ageMax": 64,
+    "notBefore": 1959,
     "when": {
       "prefs": [
         7
@@ -2801,6 +2828,7 @@
     "kind": "daily",
     "ageMin": 70,
     "ageMax": 100,
+    "notBefore": 1890,
     "when": {
       "region": [
         "tohoku"
@@ -2855,6 +2883,7 @@
     "kind": "daily",
     "ageMin": 18,
     "ageMax": 34,
+    "notBefore": 1890,
     "when": {
       "region": [
         "hokkaido",
@@ -3009,6 +3038,7 @@
     "kind": "think",
     "ageMin": 13,
     "ageMax": 18,
+    "notBefore": 1868,
     "when": {
       "region": [
         "tohoku"
@@ -3080,6 +3110,7 @@
     "kind": "think",
     "ageMin": 19,
     "ageMax": 34,
+    "notBefore": 1890,
     "when": {
       "region": [
         "hokkaido",
@@ -3354,6 +3385,7 @@
     "kind": "think",
     "ageMin": 13,
     "ageMax": 30,
+    "notBefore": 1900,
     "when": {
       "prefs": [
         6
@@ -3428,6 +3460,7 @@
     "kind": "think",
     "ageMin": 65,
     "ageMax": 100,
+    "notBefore": 1890,
     "when": {
       "region": [
         "tohoku"
@@ -3478,6 +3511,7 @@
     "kind": "think",
     "ageMin": 65,
     "ageMax": 100,
+    "notBefore": 1890,
     "when": {
       "region": [
         "tohoku"
@@ -3593,6 +3627,7 @@
     "kind": "think",
     "ageMin": 19,
     "ageMax": 34,
+    "notBefore": 1890,
     "when": {
       "prefs": [
         3
