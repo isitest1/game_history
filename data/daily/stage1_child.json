@@ -147,6 +147,7 @@
     "kind": "daily",
     "ageMin": 8,
     "ageMax": 11,
+    "notBefore": 1900,
     "when": {
       "school": "elem"
     },
@@ -176,6 +177,7 @@
     "kind": "daily",
     "ageMin": 9,
     "ageMax": 12,
+    "notBefore": 1900,
     "when": {
       "school": "elem"
     },
@@ -260,6 +262,7 @@
     "kind": "daily",
     "ageMin": 7,
     "ageMax": 12,
+    "notBefore": 1890,
     "when": {
       "school": "elem"
     },
@@ -275,6 +278,7 @@
     "kind": "daily",
     "ageMin": 7,
     "ageMax": 12,
+    "notBefore": 1890,
     "when": {
       "school": "elem",
       "father": true
@@ -726,6 +730,7 @@
     "kind": "daily",
     "ageMin": 7,
     "ageMax": 12,
+    "notBefore": 1890,
     "when": {
       "school": "elem"
     },
@@ -741,6 +746,7 @@
     "kind": "daily",
     "ageMin": 6,
     "ageMax": 12,
+    "notBefore": 1890,
     "when": {
       "school": "elem"
     },
@@ -922,6 +928,7 @@
     "kind": "daily",
     "ageMin": 6,
     "ageMax": 8,
+    "notBefore": 1890,
     "when": {
       "school": "elem"
     },
@@ -952,6 +959,7 @@
     "kind": "daily",
     "ageMin": 7,
     "ageMax": 11,
+    "notBefore": 1890,
     "when": {
       "school": "elem"
     },
@@ -997,6 +1005,7 @@
     "kind": "daily",
     "ageMin": 9,
     "ageMax": 12,
+    "notBefore": 1890,
     "when": {
       "school": "elem"
     },
@@ -1144,6 +1153,7 @@
     "kind": "daily",
     "ageMin": 7,
     "ageMax": 11,
+    "notBefore": 1950,
     "when": {
       "school": "elem"
     },
@@ -1188,6 +1198,7 @@
     "kind": "daily",
     "ageMin": 6,
     "ageMax": 11,
+    "notBefore": 1950,
     "when": {
       "school": "elem"
     },
@@ -2803,6 +2814,7 @@
     "kind": "think",
     "ageMin": 7,
     "ageMax": 12,
+    "notBefore": 1890,
     "when": {
       "school": "elem"
     },
@@ -2973,6 +2985,7 @@
     "kind": "think",
     "ageMin": 8,
     "ageMax": 12,
+    "notBefore": 1900,
     "when": {
       "school": "elem",
       "mother": false

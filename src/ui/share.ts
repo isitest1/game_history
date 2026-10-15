@@ -2,7 +2,7 @@
 // リンクを貼ると、index.html の OGP（og:image）からカードの画像が出る。
 
 import type { GameState } from '../sim/engine';
-import { EDU_LABEL } from '../sim/engine';
+import { eduLabelOf } from '../sim/engine';
 import * as S from '../sim/stats';
 
 export const SITE_URL = 'https://umaredoshi.margheritaworks.com/';
@@ -49,13 +49,13 @@ const sexWord = (st: GameState) => (st.shared.sex === 'male' ? '男' : '女');
 
 /** 生まれたとき */
 export function birthXText(st: GameState): string {
-  const ys = st.persons.map((p) => `${p.birthYear}年の${S.PREFS[p.pref - 1]}`).join('、');
+  const ys = st.persons.map((p) => `${p.birthYear}年の${S.placeShort(p.pref, p.birthYear)}`).join('、');
   return `${ys}に、${st.shared.sex === 'male' ? '男の子' : '女の子'}が生まれた。\n同じ私の、三つの人生が始まる。`;
 }
 
 /** 一生を終えたとき */
 export function endXText(st: GameState, okuri?: string): string {
-  const rows = st.persons.map((p) => `${p.birthYear}年・${S.PREFS[p.pref - 1].replace(/[都府県]$/, '')}：享年${p.deathAge ?? '−'}${(p.deathAge ?? 99) >= 15 ? `・${EDU_LABEL[p.edu]}` : ''}`);
+  const rows = st.persons.map((p) => `${p.birthYear}年・${S.placeShort(p.pref, p.birthYear)}：享年${p.deathAge ?? '−'}${(p.deathAge ?? 99) >= 15 ? `・${eduLabelOf(p)}` : ''}`);
   const ages = st.persons.map((p) => p.deathAge ?? 0);
   const gap = Math.max(...ages) - Math.min(...ages);
   const head = `同じ私が、三つの時代に生まれた（${sexWord(st)}）。`;

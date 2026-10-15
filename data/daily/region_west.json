@@ -138,6 +138,7 @@
     "kind": "daily",
     "ageMin": 25,
     "ageMax": 64,
+    "notBefore": 1890,
     "when": {
       "working": true,
       "job": [
@@ -489,6 +490,7 @@
     "kind": "daily",
     "ageMin": 4,
     "ageMax": 12,
+    "notBefore": 1870,
     "when": {
       "prefs": [
         28
@@ -505,6 +507,7 @@
     "kind": "daily",
     "ageMin": 8,
     "ageMax": 60,
+    "notBefore": 1915,
     "when": {
       "prefs": [
         28
@@ -592,6 +595,7 @@
     "kind": "daily",
     "ageMin": 6,
     "ageMax": 70,
+    "notBefore": 1910,
     "when": {
       "prefs": [
         28
@@ -608,6 +612,7 @@
     "kind": "daily",
     "ageMin": 8,
     "ageMax": 30,
+    "notBefore": 1924,
     "when": {
       "mother": true,
       "prefs": [
@@ -770,6 +775,7 @@
     "kind": "daily",
     "ageMin": 5,
     "ageMax": 20,
+    "notBefore": 1920,
     "when": {
       "prefs": [
         30
@@ -887,6 +893,7 @@
     "kind": "daily",
     "ageMin": 8,
     "ageMax": 80,
+    "notBefore": 1904,
     "when": {
       "prefs": [
         31
@@ -1027,6 +1034,7 @@
     "kind": "daily",
     "ageMin": 6,
     "ageMax": 80,
+    "notBefore": 1900,
     "when": {
       "prefs": [
         33
@@ -1066,6 +1074,7 @@
     "kind": "daily",
     "ageMin": 18,
     "ageMax": 60,
+    "notBefore": 1965,
     "when": {
       "working": true,
       "job": [
@@ -1112,6 +1121,7 @@
     "kind": "daily",
     "ageMin": 6,
     "ageMax": 80,
+    "notBefore": 1950,
     "when": {
       "prefs": [
         34
@@ -1132,6 +1142,7 @@
     "kind": "daily",
     "ageMin": 20,
     "ageMax": 60,
+    "notBefore": 1920,
     "when": {
       "working": true,
       "job": [
@@ -1173,6 +1184,7 @@
     "kind": "daily",
     "ageMin": 6,
     "ageMax": 60,
+    "notBefore": 1890,
     "when": {
       "prefs": [
         34
@@ -1192,6 +1204,7 @@
     "kind": "daily",
     "ageMin": 20,
     "ageMax": 85,
+    "notBefore": 1888,
     "when": {
       "prefs": [
         35
@@ -1211,6 +1224,7 @@
     "kind": "daily",
     "ageMin": 8,
     "ageMax": 60,
+    "notBefore": 1958,
     "when": {
       "prefs": [
         35,
@@ -1250,6 +1264,7 @@
     "kind": "daily",
     "ageMin": 6,
     "ageMax": 15,
+    "notBefore": 1910,
     "when": {
       "prefs": [
         35
@@ -1287,6 +1302,7 @@
     "kind": "daily",
     "ageMin": 6,
     "ageMax": 60,
+    "notBefore": 1950,
     "when": {
       "prefs": [
         36
@@ -1467,6 +1483,7 @@
     "kind": "daily",
     "ageMin": 15,
     "ageMax": 85,
+    "notBefore": 1894,
     "when": {
       "prefs": [
         38
@@ -1638,6 +1655,7 @@
     "kind": "daily",
     "ageMin": 6,
     "ageMax": 15,
+    "notBefore": 1950,
     "when": {
       "prefs": [
         39
@@ -1737,6 +1755,7 @@
     "kind": "daily",
     "ageMin": 20,
     "ageMax": 60,
+    "notBefore": 1900,
     "when": {
       "working": true,
       "prefs": [
@@ -1936,6 +1955,7 @@
     "kind": "daily",
     "ageMin": 20,
     "ageMax": 80,
+    "notBefore": 1950,
     "when": {
       "prefs": [
         40
@@ -2315,6 +2335,7 @@
     "kind": "daily",
     "ageMin": 20,
     "ageMax": 85,
+    "notBefore": 1890,
     "when": {
       "prefs": [
         43
@@ -2393,6 +2414,7 @@
     "kind": "daily",
     "ageMin": 6,
     "ageMax": 60,
+    "notBefore": 1920,
     "when": {
       "prefs": [
         44
@@ -2489,6 +2511,7 @@
     "kind": "daily",
     "ageMin": 10,
     "ageMax": 85,
+    "notBefore": 1950,
     "when": {
       "prefs": [
         45
@@ -2506,6 +2529,7 @@
     "kind": "daily",
     "ageMin": 5,
     "ageMax": 85,
+    "notBefore": 1890,
     "when": {
       "prefs": [
         46
@@ -2526,6 +2550,7 @@
     "kind": "daily",
     "ageMin": 25,
     "ageMax": 85,
+    "notBefore": 1978,
     "when": {
       "prefs": [
         46
@@ -2873,6 +2898,7 @@
     "kind": "daily",
     "ageMin": 15,
     "ageMax": 30,
+    "notBefore": 1920,
     "when": {
       "prefs": [
         47
@@ -3265,6 +3291,7 @@
     "kind": "think",
     "ageMin": 18,
     "ageMax": 40,
+    "notBefore": 1890,
     "when": {
       "trigger": "moved",
       "prefs": [
@@ -3356,6 +3383,7 @@
     "kind": "think",
     "ageMin": 13,
     "ageMax": 18,
+    "notBefore": 1950,
     "when": {
       "prefs": [
         27
@@ -3516,6 +3544,7 @@
     "kind": "think",
     "ageMin": 60,
     "ageMax": 95,
+    "notBefore": 1950,
     "when": {
       "prefs": [
         31,
@@ -3557,6 +3586,7 @@
     "kind": "think",
     "ageMin": 15,
     "ageMax": 100,
+    "notBefore": 1950,
     "when": {
       "prefs": [
         34
@@ -3612,6 +3642,7 @@
     "kind": "think",
     "ageMin": 18,
     "ageMax": 35,
+    "notBefore": 1890,
     "when": {
       "trigger": "moved",
       "prefs": [
@@ -3833,6 +3864,7 @@
     "kind": "think",
     "ageMin": 60,
     "ageMax": 85,
+    "notBefore": 1900,
     "when": {
       "trigger": "retire",
       "prefs": [

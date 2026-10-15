@@ -17,6 +17,8 @@ export const usedFallback = new Set<string>();
 // 1930年より前（1890〜1929年）の統計。資料と推計（docs/03 の H・I 節）。1930年以降は既存のファイルを使う
 const prewarPop = file('prewar_population');
 const prewarSoc = file('prewar_social');
+// 1890年より前（1800〜1889年、江戸後期〜明治前半）の統計。歴史人口学の研究などからの推計（docs/03 の J 節）
+const edo = file('edo');
 /** つないだ表は、一度作ったら使い回す（毎回作ると遅いため） */
 const joinedCache = new Map<string, Record<string, number> | undefined>();
 function joined(key: string, make: () => Record<string, number> | undefined): Record<string, number> | undefined {
@@ -24,13 +26,43 @@ function joined(key: string, make: () => Record<string, number> | undefined): Re
   return joinedCache.get(key);
 }
 
-/** 1930年より前の年の表を、既存の表の前につなぐ */
+/** 古い年の表を、新しい表の前につなぐ（新しい表の最初の年より前の年だけを使う） */
 function joinPrewar(pre: Record<string, number> | undefined, post: Record<string, number> | undefined): Record<string, number> | undefined {
   if (!pre) return post;
   if (!post) return pre;
   const out: Record<string, number> = {};
   for (const [k, v] of Object.entries(pre)) if (Number(k) < Math.min(...Object.keys(post).map(Number))) out[k] = v;
   return { ...out, ...post };
+}
+
+/** 江戸 → 明治・大正 → 1930年以降の順につなぐ */
+function joinAll(...tables: (Record<string, number> | undefined)[]): Record<string, number> | undefined {
+  return tables.reduce<Record<string, number> | undefined>((acc, t) => joinPrewar(acc, t), undefined);
+}
+
+/** 江戸時代（廃藩置県の1871年より前）は、いまの県の代わりに当時の国の名前で呼ぶ。県の範囲と国は一致しないので、その県のおもな国（目安） */
+export const KUNI = [
+  '蝦夷地', '陸奥', '陸奥', '陸奥', '出羽', '出羽', '陸奥', '常陸', '下野', '上野',
+  '武蔵', '下総', '江戸', '相模', '越後', '越中', '加賀', '越前', '甲斐', '信濃',
+  '美濃', '駿河', '尾張', '伊勢', '近江', '京', '大坂', '播磨', '大和', '紀伊',
+  '因幡', '出雲', '備前', '安芸', '長門', '阿波', '讃岐', '伊予', '土佐', '筑前',
+  '肥前', '肥前', '肥後', '豊後', '日向', '薩摩', '琉球',
+] as const;
+
+/** その年の呼び方で、生まれた場所を書く（1871年より前は「信濃（いまの長野県）」） */
+export function placeName(pref: number, year: number): string {
+  const now = PREFS[pref - 1];
+  return year < 1871 ? `${KUNI[pref - 1]}（いまの${now}）` : now;
+}
+
+/** 中くらいの欄のための呼び方（1871年より前は「信濃（長野）」、それ以降は「長野県」） */
+export function placeMid(pref: number, year: number): string {
+  return year < 1871 ? `${KUNI[pref - 1]}（${PREFS[pref - 1].replace(/[都府県]$/, '')}）` : PREFS[pref - 1];
+}
+
+/** 狭い欄のための短い呼び方（1871年より前は「信濃」、それ以降は「長野」） */
+export function placeShort(pref: number, year: number): string {
+  return year < 1871 ? KUNI[pref - 1] : PREFS[pref - 1].replace(/[都府県]$/, '');
 }
 
 export const PREFS = [
@@ -89,6 +121,10 @@ const mortality = file('mortality');
 /** 年齢別死亡確率 qx。目安：ゴンペルツ・メイカム型（データがないときだけ） */
 export function qx(year: number, age: number, sex: Sex): number {
   const a = Math.min(Math.max(0, Math.floor(age)), 105);
+  if (year < 1890 && edo?.mortality) {
+    const v = edoQx(year, a, sex);
+    if (v !== undefined) return v;
+  }
   if (year < 1930 && prewarPop?.mortality) {
     const py = Math.max(year, 1890);
     const row = prewarPop.mortality[String(py)];
@@ -118,12 +154,60 @@ export function qx(year: number, age: number, sex: Sex): number {
 
 export const mortalityMeta = mortality?.meta;
 
+/** 江戸・明治前半の死亡確率：アンカー年の表のあいだを直線で補い、飢饉や疫病の年は倍率をかける（data/stats/edo.json） */
+const edoQxCache = new Map<string, number[]>();
+function edoQx(year: number, a: number, sex: Sex): number | undefined {
+  const y = Math.max(1790, Math.min(1889, year));
+  const key = `${y}-${sex}`;
+  let arr = edoQxCache.get(key);
+  if (!arr) {
+    const anchors = Object.keys(edo.mortality)
+      .map(Number)
+      .filter((k) => Array.isArray(edo.mortality[String(k)]?.[sex]))
+      .sort((p, q) => p - q);
+    if (!anchors.length) return undefined;
+    let lo = anchors[0];
+    let hi = anchors[anchors.length - 1];
+    for (const k of anchors) {
+      if (k <= y) lo = k;
+      if (k >= y && hi >= k) hi = k;
+    }
+    if (hi < lo) hi = lo;
+    const A: number[] = edo.mortality[String(lo)][sex];
+    const B: number[] = edo.mortality[String(hi)][sex];
+    const t = hi === lo ? 0 : (y - lo) / (hi - lo);
+    arr = A.map((v, i) => v + ((B[i] ?? v) - v) * t);
+    edoQxCache.set(key, arr);
+  }
+  const base = arr[Math.min(a, arr.length - 1)];
+  if (typeof base !== 'number') return undefined;
+  const c = crisisAt(year, a);
+  return Math.min(1, base * (c?.mult ?? 1));
+}
+
+export interface Crisis {
+  year: number;
+  endYear?: number;
+  ageMin?: number;
+  ageMax?: number;
+  mult: number;
+  cause: string;
+  note?: string;
+  source?: string;
+}
+
+/** その年・その年齢に、飢饉や疫病による死亡の山があるか（江戸・明治前半） */
+export function crisisAt(year: number, age: number): Crisis | undefined {
+  const list: Crisis[] = Array.isArray(edo?.crisis) ? edo.crisis : [];
+  return list.find((c) => year >= c.year && year <= (c.endYear ?? c.year) && age >= (c.ageMin ?? 0) && age <= (c.ageMax ?? 120));
+}
+
 // ---------- 出生 ----------
 
 const births = file('births');
 
 export function nationalBirths(year: number): number {
-  const t = joined('births', () => joinPrewar(pluck(prewarPop?.births, 'total'), pluck(births?.national, 'total')));
+  const t = joined('births', () => joinAll(edo?.births, pluck(prewarPop?.births, 'total'), pluck(births?.national, 'total')));
   return interp(t, year) ?? fb('births', 2_000_000);
 }
 
@@ -134,7 +218,21 @@ export function prefBirths(year: number): number[] {
     let best = keys[0];
     for (const k of keys) if (Math.abs(k - year) < Math.abs(best - year)) best = k;
     const row = p[String(best)];
-    if (Array.isArray(row) && row.length === 47) return row.map((x: number) => Math.max(0, x || 0));
+    if (Array.isArray(row) && row.length === 47) {
+      const out = row.map((x: number) => Math.max(0, x || 0));
+      // 1930年より前は1930年の県別の出生数を使う。1890年より前は、人の少なかった蝦夷地（北海道。開拓は1869年から）と、
+      // 1930年には人の集まっていた大都市（東京・大阪・神奈川）の重みを下げる（目安。江戸の町の人口は100万人ほどとされる）
+      if (year < 1900) {
+        const hk = year < 1869 ? 0.05 : Math.min(1, 0.05 + ((year - 1869) / 31) * 0.95);
+        out[0] *= hk;
+        if (year < 1890) {
+          out[12] *= 0.6;
+          out[26] *= 0.7;
+          out[13] *= 0.7;
+        }
+      }
+      return out;
+    }
   }
   usedFallback.add('prefBirths');
   return PREFS.map((_, i) => (i === 12 ? 6 : i === 26 ? 4 : 1.5));
@@ -152,6 +250,11 @@ const education = file('education');
 /** 進学率（%） */
 export function eduRate(kind: 'highSchool' | 'university' | 'juniorCollege', year: number, sex: Sex): number {
   // 1930年より前は、旧制の学校への進学率（中等教育＝highSchool、高等教育＝university、短大にあたるものは0）
+  if (year < 1890 && edo?.education) {
+    if (kind === 'juniorCollege') return 0;
+    const v0 = interp(pluck(kind === 'highSchool' ? edo.education.secondary : edo.education.higher, sex), year);
+    if (v0 !== undefined) return v0;
+  }
   if (year < 1930 && prewarSoc?.education) {
     if (kind === 'juniorCollege') return 0;
     const t = pluck(kind === 'highSchool' ? prewarSoc.education.secondary : prewarSoc.education.higher, sex);
@@ -170,7 +273,7 @@ export function eduRate(kind: 'highSchool' | 'university' | 'juniorCollege', yea
 /** 義務教育（尋常小学校）の就学率（%）。1930年以降はほぼ全員とみなす */
 export function elementaryEnrollment(year: number, sex: Sex): number {
   if (year >= 1930) return 99.5;
-  const v = interp(pluck(prewarSoc?.education?.elementaryEnrollment, sex), year);
+  const v = interp(joined(`elem-${sex}`, () => joinPrewar(pluck(edo?.education?.elementaryEnrollment, sex), pluck(prewarSoc?.education?.elementaryEnrollment, sex))), year);
   return v ?? fb('elementaryEnrollment', 99);
 }
 
@@ -202,10 +305,15 @@ export function newGradRatio(level: 'middle' | 'high' | 'univ', year: number): n
 const industry = file('industry');
 
 export function primaryShare(year: number): number {
-  return interp(joined('primary', () => joinPrewar(prewarSoc?.primaryShare, industry?.primaryShare)), year) ?? fb('industry', 30);
+  return interp(joined('primary', () => joinAll(edo?.primaryShare, prewarSoc?.primaryShare, industry?.primaryShare)), year) ?? fb('industry', 30);
 }
 export function employeeShare(year: number): number {
-  return interp(joined('employee', () => joinPrewar(prewarSoc?.employeeShare, industry?.employeeShare)), year) ?? fb('industry', 60);
+  return interp(joined('employee', () => joinAll(edo?.employeeShare, prewarSoc?.employeeShare, industry?.employeeShare)), year) ?? fb('industry', 60);
+}
+/** 人口のうち武士（家族を含む）の割合（%）。1871年の廃藩置県・四民平等より後は0 */
+export function samuraiShare(year: number): number {
+  if (year >= 1872) return 0;
+  return interp(edo?.samuraiShare, year) ?? fb('samuraiShare', 6);
 }
 export function largeShare(year: number): number {
   return interp(industry?.largeShareOfEmployees, year) ?? 25;
@@ -219,12 +327,17 @@ export function publicShare(year: number): number {
 const marriage = file('marriage');
 
 export function meanMarriageAge(year: number, sex: Sex): number {
-  return interp(joined(`marriageAge-${sex}`, () => joinPrewar(pluck(prewarSoc?.meanFirstMarriageAge, sex), pluck(marriage?.meanFirstMarriageAge, sex))), year) ?? fb('marriage', sex === 'male' ? 28 : 25);
+  return interp(joined(`marriageAge-${sex}`, () => joinAll(pluck(edo?.meanFirstMarriageAge, sex), pluck(prewarSoc?.meanFirstMarriageAge, sex), pluck(marriage?.meanFirstMarriageAge, sex))), year) ?? fb('marriage', sex === 'male' ? 28 : 25);
 }
 
 /** 50歳時未婚割合（%） */
 export function neverMarried50(year: number, sex: Sex): number {
-  return interp(joined(`never50-${sex}`, () => joinPrewar(pluck(prewarSoc?.neverMarriedAt50, sex), pluck(marriage?.neverMarriedAt50, sex))), year) ?? fb('marriage', 5);
+  return interp(joined(`never50-${sex}`, () => joinAll(pluck(edo?.neverMarriedAt50, sex), pluck(prewarSoc?.neverMarriedAt50, sex), pluck(marriage?.neverMarriedAt50, sex))), year) ?? fb('marriage', 5);
+}
+
+/** 結婚した女性が一生に産む子の数の目安（江戸・明治前半）。ないときは undefined */
+export function completedFertility(year: number): number | undefined {
+  return interp(edo?.completedFertility, year);
 }
 
 // ---------- 賃金・物価 ----------
@@ -244,7 +357,7 @@ function lastKey(t: Record<string, number> | undefined): number | undefined {
  * 実質賃金が年1.1%ずつ伸びるとみなす。2024年財政検証の実質賃金上昇率の前提（成長型経済移行・継続ケース1.5%、過去30年投影ケース0.5%）の中間（目安）
  */
 export function incomeIndex(year: number): number {
-  const t = joined('income', () => joinPrewar(prewarSoc?.annualIncomeIndex, wages?.annualIncomeIndex as Record<string, number> | undefined));
+  const t = joined('income', () => joinAll(edo?.annualIncomeIndex, prewarSoc?.annualIncomeIndex, wages?.annualIncomeIndex as Record<string, number> | undefined));
   const last = lastKey(t);
   if (t && last !== undefined) {
     if (year <= last) return interp(t, year)!;
@@ -257,7 +370,7 @@ export function incomeIndex(year: number): number {
 }
 
 export function cpi(year: number): number {
-  return interp(joined('cpi', () => joinPrewar(prewarSoc?.cpi, cpiFile?.years)), Math.min(year, 2025)) ?? fb('cpi', year <= 1995 ? 100 * Math.exp((year - 1995) * 0.06) : 100);
+  return interp(joined('cpi', () => joinAll(edo?.cpi, prewarSoc?.cpi, cpiFile?.years)), Math.min(year, 2025)) ?? fb('cpi', year <= 1995 ? 100 * Math.exp((year - 1995) * 0.06) : 100);
 }
 
 /** その年の1円が、2020年の何円にあたるか（未来は2025年の物価で止める） */
@@ -351,8 +464,11 @@ export function pensionAverageMonthly(year: number): number | undefined {
 
 /** 1930年より前の名前（あれば）。{ "1890": {male:[], female:[]} } */
 export const prewarNames: Record<string, { male: string[]; female: string[] }> | undefined = prewarSoc?.names;
+/** 江戸・明治前半の名前（あれば）。形は prewarNames と同じ */
+export const edoNames: Record<string, { male: string[]; female: string[] }> | undefined = edo?.names;
 
 export const statsMeta = {
+  edo: edo?.meta,
   prewarPopulation: prewarPop?.meta,
   prewarSocial: prewarSoc?.meta,
   mortality: mortality?.meta,

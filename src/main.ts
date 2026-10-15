@@ -1,5 +1,5 @@
 import './styles/main.css';
-import { createGame, runYear, eventsForYear, survivalPercentile, survivalCurve, cohortLifeExpectancy, JOB_LABEL, EDU_LABEL, type GameState, type Focus, type YearEntry } from './sim/engine';
+import { createGame, runYear, eventsForYear, survivalPercentile, survivalCurve, cohortLifeExpectancy, eduLabelOf, jobLabelAt, OLDEST, type GameState, type Focus, type YearEntry } from './sim/engine';
 import { dueDecision, viewOf, applyDecision, autoChoose, ASKED } from './sim/decisions';
 import * as S from './sim/stats';
 import type { Person, DecisionView, DecisionResult, LogEntry } from './sim/types';
@@ -120,7 +120,7 @@ function bindCommon(root: HTMLElement): void {
 function showTitle(): void {
   window.scrollTo(0, 0);
   const saved = store.get<GameState>(SAVE_KEY);
-  const years = [1935, 1965, 1995];
+  const years = TRIPLES[0];
   const yearOpts = ['<option value="">答えない</option>']
     .concat(Array.from({ length: 2020 - 1925 + 1 }, (_, i) => 2020 - i).map((y) => `<option value="${y}" ${ui.playerBirthYear === y ? 'selected' : ''}>${y}年（${wareki(y)}）</option>`))
     .join('');
@@ -130,7 +130,7 @@ function showTitle(): void {
         <p class="kicker">Born in three eras</p>
         <h1><span class="nw">同じ私が、</span><br /><span class="nw">三つの時代に</span><span class="nw"><em>生まれる</em>。</span></h1>
         <div class="triplet" aria-hidden="true">
-          ${years.map((y, i) => `<div class="yr ${ERA_CLASS[i]}"><b class="yr-num" data-roll="${i}">${y}</b><span>${['活版と紙', 'ブラウン管', 'フラット'][i]}</span></div>`)}
+          ${years.map((y, i) => `<div class="yr ${ERA_CLASS[i]}"><b class="yr-num" data-roll="${i}">${y}</b><span data-rk="${i}">${artLabel(y)}</span></div>`)}
         </div>
         <p class="lead">性格も、才能も、家の暮らし向きも同じ。違うのは、生まれた年と、生まれた県。あなたの決断は3人全員に当てはまります。けれど、結果を決めるのはそれぞれの時代です。進学も、就職も、結婚も、寿命も、年金も、日本の実際の統計で決まります。</p>
         ${saved && !saved.finished ? `<div class="resume"><span>途中の人生があります（${saved.age}歳）。</span><button class="btn small" data-act="resume">続きから</button></div>` : ''}
@@ -160,32 +160,34 @@ function showTitle(): void {
       </div>
       <div class="hero-art" aria-hidden="true">${[0, 1, 2].map((i) => `<div class="art-card ${ERA_CLASS[i]}" data-art="${i}"></div>`).join('')}</div>
       </div>
-      <div class="hero-bg" aria-hidden="true">${([[1950, 15], [1985, 27], [2018, 13]] as const).map(([y, pf], i) => `<div class="${ERA_CLASS[i]}">${sceneSvg(y, pf)}</div>`).join('')}</div>
+      <div class="hero-bg" aria-hidden="true">${([[1850, 20], [1960, 27], [2018, 13]] as const).map(([y, pf], i) => `<div class="${ERA_CLASS[i]}">${sceneSvg(y, pf)}</div>`).join('')}</div>
     </main>
     ${titleSections()}`;
   bindCommon(app);
   // 年号がくるくる回る。右の札には、その年に生まれた人の数字を出す
   const els = app.querySelectorAll<HTMLElement>('[data-roll]');
   const arts = app.querySelectorAll<HTMLElement>('[data-art]');
-  const paint = (mid: number) => {
-    els.forEach((el, i) => (el.textContent = String(mid + (i - 1) * 30)));
+  const rks = app.querySelectorAll<HTMLElement>('[data-rk]');
+  const paint = (ys: readonly number[]) => {
+    els.forEach((el, i) => (el.textContent = String(ys[i])));
+    rks.forEach((el, i) => (el.textContent = artLabel(ys[i])));
     arts.forEach((el, i) => {
-      const y = mid + (i - 1) * 30;
+      const y = ys[i];
       const q0 = (S.qx(y, 0, 'male') + S.qx(y, 0, 'female')) / 2;
-      el.innerHTML = `<span class="art-k">${['活版と紙', 'ブラウン管', 'フラット'][i]}</span><b class="yr-num">${y}</b><span class="art-w">${wareki(y)}生まれ</span>
+      el.innerHTML = `<span class="art-k">${artLabel(y)}</span><b class="yr-num">${y}</b><span class="art-w">${wareki(y)}生まれ</span>
         <dl><dt>生まれた赤ちゃん</dt><dd>${Math.round(S.nationalBirths(y) / 10000)}万人</dd>
         <dt>1歳まで</dt><dd>${Math.round(1 / Math.max(q0, 0.0003))}人に1人が亡くなる</dd>
-        <dt>15歳で高校へ</dt><dd>${Math.round((S.eduRate('highSchool', y + 15, 'male') + S.eduRate('highSchool', y + 15, 'female')) / 2)}%</dd>
+        <dt>15歳で上の学校へ</dt><dd>${Math.round((S.eduRate('highSchool', y + 15, 'male') + S.eduRate('highSchool', y + 15, 'female')) / 2)}%</dd>
         <dt>見込みの寿命</dt><dd>${Math.round((cohortLifeExpectancy(y, 'male') + cohortLifeExpectancy(y, 'female')) / 2)}歳</dd></dl>`;
     });
   };
-  paint(1965);
+  paint(TRIPLES[0]);
   if (!reducedMotion()) {
     let n = 0;
     const iv = setInterval(() => {
       if (!document.body.contains(els[0])) return clearInterval(iv);
       n++;
-      paint(1960 + ((5 + n * 7) % 16));
+      paint(TRIPLES[n % TRIPLES.length]);
     }, 6000);
   }
   app.querySelectorAll<HTMLButtonElement>('[data-pace]').forEach((b) =>
@@ -220,21 +222,36 @@ function showTitle(): void {
 
 // ---------- トップページの情報 ----------
 
+/** トップページで順に見せる3つの生まれ年の例（江戸から平成まで。どこも30年以上離れている） */
+const TRIPLES: readonly (readonly [number, number, number])[] = [
+  [1850, 1925, 2000],
+  [1822, 1889, 1995],
+  [1868, 1946, 2005],
+  [1803, 1960, 1992],
+  [1912, 1955, 2010],
+  [1841, 1903, 1998],
+];
+
+/** 年のそばに添える、その時代の手ざわり */
+function artLabel(y: number): string {
+  return y < 1872 ? '和紙と筆' : y < 1950 ? '活版と紙' : y < 1990 ? 'ブラウン管' : 'フラット';
+}
+
 /** 令和7（2025）年 人口動態統計（確定数）。厚生労働省、2026年9月30日公表 */
 const VITAL_2025 = { births: 671270, deaths: 1589533, marriages: 489158 };
 const SEC_PER_YEAR = 365 * 24 * 3600;
 
 function titleSections(): string {
-  const ex = [1910, 1955, 2000];
+  const ex = [1850, 1925, 2000];
   const avg = (f: (sx: 'male' | 'female') => number) => (f('male') + f('female')) / 2;
   const cell = (v: string) => `<td>${v}</td>`;
   const rows: [string, (y: number) => string][] = [
     ['生まれた赤ちゃん', (y) => `${Math.round(S.nationalBirths(y) / 10000)}万人`],
     ['1歳になる前に亡くなる', (y) => `${Math.round(1 / Math.max(0.0003, avg((sx) => S.qx(y, 0, sx))))}人に1人`],
-    ['高校へ進む（15歳）', (y) => `${Math.round(avg((sx) => S.eduRate('highSchool', y + 15, sx)))}%`],
+    ['上の学校へ進む（15歳）', (y) => `${Math.round(avg((sx) => S.eduRate('highSchool', y + 15, sx)))}%`],
     ['大学・短大へ進む（18歳）', (y) => `${Math.round(avg((sx) => S.eduRate('university', y + 18, sx) + S.eduRate('juniorCollege', y + 18, sx)))}%`],
     ['見込みの寿命', (y) => `${Math.round(avg((sx) => cohortLifeExpectancy(y, sx)))}歳`],
-    ['年金をもらい始める（男性）', (y) => (y < 1911 ? '70歳（老齢福祉年金）' : `${S.pensionStartAge(y, 4, 'male')}歳`)],
+    ['年金をもらい始める（男性）', (y) => (y < 1891 ? 'なし（制度がない）' : y < 1911 ? '70歳（老齢福祉年金）' : `${S.pensionStartAge(y, 4, 'male')}歳`)],
   ];
   const daily = DAILY.filter((d) => d.kind === 'daily').length;
   const think = DAILY.length - daily;
@@ -253,12 +270,12 @@ function titleSections(): string {
     <section class="tsec">
       <div class="wrap">
         <h2>生まれた年で、こんなに違う</h2>
-        <p class="lead2">同じ日本、同じ家に生まれても、30年ずれるだけで、一生の前提が変わります。</p>
+        <p class="lead2">同じ日本、同じ家に生まれても、生まれた年がずれるだけで、一生の前提が変わります。</p>
         <div class="cmp-wrap"><table class="cmp3">
           <thead><tr><th></th>${ex.map((y, i) => `<th class="${ERA_CLASS[i]}"><b>${y}</b><small>${wareki(y)}生まれ</small></th>`).join('')}</tr></thead>
           <tbody>${rows.map(([k, f]) => `<tr><th>${k}</th>${ex.map((y) => cell(f(y))).join('')}</tr>`).join('')}</tbody>
         </table></div>
-        <p class="muted small">人口動態統計・生命表・学校基本調査・年金制度の資料から。1910年生まれの進学は旧制の中学校・高等女学校と高等教育、2000年生まれの寿命は国の将来推計の死亡率を使った見込みです。戦争で亡くなった人は、この寿命の計算には入っていません。</p>
+        <p class="muted small">人口動態統計・生命表・学校基本調査・年金制度の資料と、歴史人口学の研究から。1850年生まれの数字は推計で、上の学校は藩校・私塾、1925年生まれは旧制の中学校・高等女学校です。2000年生まれの寿命は国の将来推計の死亡率を使った見込みです。戦争で亡くなった人は、この寿命の計算には入っていません。</p>
       </div>
     </section>
     <section class="tsec">
@@ -288,7 +305,7 @@ function titleSections(): string {
     ${hist.length
       ? `<section class="tsec"><div class="wrap"><h2>あなたの前世</h2><ul class="hist3">${hist
           .slice(0, 3)
-          .map((r) => `<li><small>${esc(r.at)}・${r.sex === 'male' ? '男' : '女'}</small>${r.years.map((y, k) => `<span>${y}年・${S.PREFS[(r.prefs?.[k] ?? r.pref) - 1]}生まれ ${esc(r.names[k]?.split(' ')[1] ?? '')}：享年${r.deaths[k] ?? '−'}</span>`).join('')}${r.okuri ? `<em>「${esc(r.okuri.slice(0, 60))}」</em>` : ''}</li>`)
+          .map((r) => `<li><small>${esc(r.at)}・${r.sex === 'male' ? '男' : '女'}</small>${r.years.map((y, k) => `<span>${y}年・${S.placeShort(r.prefs?.[k] ?? r.pref, y)}生まれ ${esc(r.names[k]?.split(' ')[1] ?? '')}：享年${r.deaths[k] ?? '−'}</span>`).join('')}${r.okuri ? `<em>「${esc(r.okuri.slice(0, 60))}」</em>` : ''}</li>`)
           .join('')}</ul></div></section>`
       : ''}
     <section class="tsec data-note" aria-label="数字についての注意">
@@ -296,6 +313,7 @@ function titleSections(): string {
         <h2>数字について</h2>
         <p class="small">寿命・進学・就職・結婚・賃金・物価・年金は、日本の公的な統計から作っています。取れない年は前後の年から補っています。</p>
         <p class="small">1930年より前（明治・大正）の数字は、当時の生命表・人口動態統計・学校の統計・長期経済統計などから作った<b>概算</b>です。年ごとの値が残っていないところは前後の年から補い、一部は推計しています。戦前の賃金や物価は、いまの統計と同じ形では残っていないため、目安として見てください。</p>
+        <p class="small">1890年より前（江戸後期〜明治の初め）は、国の統計がまだありません。寺の宗門人別改帳を使った歴史人口学の研究、幕府の人口調査、米の値段や賃金の研究などから作った<b>推計</b>で、地域や村によって大きな差があります。江戸時代のお金は、いまの価値に直した目安で示しています。</p>
         <p class="small">2026年より先は、国の将来推計の前提を使った見込みです。詳しくは「使った統計と出典」と、リポジトリの docs/出典一覧.md にあります。</p>
       </div>
     </section>`;
@@ -334,9 +352,9 @@ async function fillSample(): Promise<void> {
       const t = ts[Math.floor(ts.length / 2)];
       if (t) usedT.add(t.text);
       return `<article class="s3 ${ERA_CLASS[i]}">
-        <header><b>${p.birthYear}</b><span>${esc(p.name)}・${S.PREFS[p.pref - 1]}</span></header>
+        <header><b>${p.birthYear}</b><span>${esc(p.name)}・${S.placeMid(p.pref, p.birthYear)}</span></header>
         <p class="s3-k">享年${p.deathAge}<small>${esc(p.deathCause ?? '')}</small></p>
-        <p>${p.deathAge !== undefined && p.deathAge < 15 ? `${p.deathAge}歳で亡くなった。` : `${EDU_LABEL[p.edu]}。${esc(job)}。${fam}。`}</p>
+        <p>${p.deathAge !== undefined && p.deathAge < 15 ? `${p.deathAge}歳で亡くなった。` : `${eduLabelOf(p)}。${esc(job)}。${fam}。`}</p>
         ${t ? `<p class="s3-t">${esc(t.text)}<small>${t.age}歳</small></p>` : ''}
       </article>`;
     })
@@ -401,9 +419,9 @@ async function showGacha(): Promise<void> {
   // 3人それぞれの生まれた県
   label.textContent = '生まれる県（3人それぞれ）';
   for (let i = 0; i < 3; i++) await spin([...S.PREFS], S.PREFS[st.persons[i].pref - 1], i === 0 ? 900 : 600);
-  reel.textContent = st.persons.map((p) => S.PREFS[p.pref - 1]).join('・');
+  reel.textContent = st.persons.map((p) => S.placeMid(p.pref, p.birthYear)).join('・');
   prob.textContent = 'それぞれの生まれ年の、都道府県別の出生数で重み付け';
-  addRow('生まれる県', st.persons.map((p) => S.PREFS[p.pref - 1]).join('・'), g.prefProbs ? g.prefProbs.map((x) => `${(x * 100).toFixed(1)}%`).join('・') : `${(g.prefProb * 100).toFixed(1)}%`);
+  addRow('生まれる県', st.persons.map((p) => S.placeMid(p.pref, p.birthYear)).join('・'), g.prefProbs ? g.prefProbs.map((x) => `${(x * 100).toFixed(1)}%`).join('・') : `${(g.prefProb * 100).toFixed(1)}%`);
   await sleep(skip ? 0 : 900);
   mark(1);
   label.textContent = '性別';
@@ -427,12 +445,20 @@ async function showGacha(): Promise<void> {
   prob.textContent = `${g.years[2]}年に生まれたのは${(g.birthsInYear[2] / 10000).toFixed(0)}万人`;
   addRow('いちばん若い人', `${g.years[2]}年`, '1990〜2010年から');
   await sleep(skip ? 0 : 700);
-  label.textContent = 'そこから遡る年数（30〜50年を2回）';
+  // いちばん年上の人は1800年からいちばん若い人の60年前まで、真ん中の人はそのあいだ（どこも30年以上あける）
+  label.textContent = 'いちばん年上の人の生まれ年';
   prob.textContent = '';
-  const gaps = Array.from({ length: 21 }, (_, i) => `${30 + i}年`);
-  await spin(gaps, `${g.years[2] - g.years[1]}年`, 900);
-  await spin(gaps, `${g.years[1] - g.years[0]}年`, 900);
-  addRow('遡った年数', `${g.years[2] - g.years[1]}年と${g.years[1] - g.years[0]}年`, '30〜50年');
+  const olds = Array.from({ length: g.years[2] - 60 - OLDEST + 1 }, (_, i) => String(OLDEST + i));
+  await spin(olds, String(g.years[0]), 1100);
+  prob.textContent = `${wareki(g.years[0])}`;
+  addRow('いちばん年上の人', `${g.years[0]}年`, `${OLDEST}〜${g.years[2] - 60}年から`);
+  await sleep(skip ? 0 : 500);
+  label.textContent = '真ん中の人の生まれ年';
+  prob.textContent = '';
+  const mids = Array.from({ length: g.years[2] - g.years[0] - 60 + 1 }, (_, i) => String(g.years[0] + 30 + i));
+  await spin(mids, String(g.years[1]), 1000);
+  prob.textContent = `${wareki(g.years[1])}`;
+  addRow('真ん中の人', `${g.years[1]}年`, `${g.years[0] + 30}〜${g.years[2] - 30}年から`);
   await sleep(skip ? 150 : 900);
   mark(4);
   label.textContent = '3つの生まれ年';
@@ -455,13 +481,13 @@ function showBirth(): void {
   app.innerHTML = html`${topbar()}
     <main class="wrap birth" id="main">
       <p class="kicker">母子手帳</p>
-      <h2 style="font-family:var(--serif);font-size:clamp(24px,5vw,36px);margin:6px 0 4px">3つの時代、3つの県に、${st.shared.sex === 'male' ? '男の子' : '女の子'}が生まれた。</h2>
-      <p style="margin:0 0 6px;font-weight:700">${st.persons.map((p) => `${p.birthYear}年・${esc(S.PREFS[p.pref - 1])}`).join('　／　')}</p>
+      <h2 style="font-family:var(--serif);font-size:clamp(24px,5vw,36px);margin:6px 0 4px">3つの時代、3つの${st.persons.some((p) => p.birthYear < 1871) ? '土地' : '県'}に、${st.shared.sex === 'male' ? '男の子' : '女の子'}が生まれた。</h2>
+      <p style="margin:0 0 6px;font-weight:700">${st.persons.map((p) => `${p.birthYear}年・${esc(S.placeName(p.pref, p.birthYear))}`).join('　／　')}</p>
       <p class="muted" style="margin:0 0 12px">家の暮らし向きは「${fam}」。才能は「${esc(st.shared.talent)}」。3人とも同じ人です。</p>
       <div class="books">
         ${st.persons.map((p, i) => birthBook(p, i))}
       </div>
-      <p class="muted" style="font-size:13px;margin:-8px 0 16px">見込み寿命は、その年に生まれた人が生命表どおりに生きた場合の平均。1歳までの死亡は、その年の0歳の死亡率から。${st.persons.some((p) => p.birthYear < 1930) ? '1930年より前（明治・大正）の数字は、当時の統計から作った概算で、一部は推計です。' : ''}</p>
+      <p class="muted" style="font-size:13px;margin:-8px 0 16px">見込み寿命は、その年に生まれた人が生命表どおりに生きた場合の平均。1歳までの死亡は、その年の0歳の死亡率から。${st.persons.some((p) => p.birthYear < 1890) ? '1890年より前（江戸・明治の初め）の数字は、歴史人口学の研究などから作った推計です。' : st.persons.some((p) => p.birthYear < 1930) ? '1930年より前（明治・大正）の数字は、当時の統計から作った概算で、一部は推計です。' : ''}</p>
       <div class="birth-acts">
         <button class="btn" id="go">人生を始める</button>
         <button class="btn ghost" id="again">引き直す</button>
@@ -488,10 +514,10 @@ function birthBook(p: Person, i: number): string {
     <div class="bk-wareki">${wareki(p.birthYear)}${p.birthMonth}月生まれ</div>
     <div class="bk-name">${esc(p.name)}</div>
     <dl>
-      <dt>家</dt><dd>${JOB_LABEL[p.parentJob]}</dd>
+      <dt>家</dt><dd>${jobLabelAt(p.parentJob, p.birthYear)}</dd>
       <dt>きょうだい</dt><dd>${p.siblings}人の${p.siblings === 1 ? 'ひとりっ子' : `${p.birthOrder}番目`}</dd>
       <dt>父・母</dt><dd>${p.birthYear - p.fatherBirthYear}歳・${p.birthYear - p.motherBirthYear}歳</dd>
-      <dt>この年の出生</dt><dd>${Math.round(S.nationalBirths(p.birthYear) / 10000)}万人</dd>
+      <dt>この年の出生</dt><dd>${Math.round(S.nationalBirths(p.birthYear) / 10000)}万人${p.birthYear < 1899 ? '（推計）' : ''}</dd>
       <dt>1歳まで</dt><dd>${Math.round(1 / Math.max(q0, 0.0003))}人に1人が亡くなる</dd>
       <dt>見込み寿命</dt><dd>${le.toFixed(0)}歳</dd>
     </dl>
@@ -785,7 +811,7 @@ function renderCol(i: number): void {
   const nm1 = esc(p.name.split(' ')[1] ?? p.name);
   const slots: Record<string, string> = {
     head: `<div class="col-head"><span class="yr-num">${year}</span><span class="wa">${wareki(year)}</span></div>`,
-    who: `<div class="who"><span class="nm">${esc(p.name)}</span><span class="st">${S.PREFS[p.pref - 1]}生まれ・${esc(statusLine(p))}</span></div>`,
+    who: `<div class="who"><span class="nm">${esc(p.name)}</span><span class="st">${S.placeMid(p.pref, p.birthYear)}生まれ・${esc(statusLine(p))}</span></div>`,
     state: !alive
       ? `<div class="tomb"><div class="line">${p.birthYear}–${p.deathYear}</div><div class="kyonen">享年${p.deathAge}</div><div class="line">${esc(p.deathCause ?? '')}</div></div>`
       : `<div class="bars" role="img"><span class="b" title="健康"><em>健康</em><span class="bar"><i></i></span></span><span class="b" title="幸福"><em>幸福</em><span class="bar"><i></i></span></span><span class="b" title="知識"><em>知識</em><span class="bar"><i></i></span></span><span class="b" title="人間関係"><em>関係</em><span class="bar"><i></i></span></span></div>`,
@@ -831,7 +857,7 @@ function renderMFeed(): void {
     .map((p, i) => {
       const alive = p.alive || deathPending(p);
       const age = alive ? shownAge : p.deathAge ?? shownAge;
-      return `<button type="button" class="mch ${ERA_CLASS[i]}${alive ? '' : ' dead'}" data-who="${i}" aria-label="${esc(p.name)}のようすを見る"><b>${esc(p.name.split(' ')[1] ?? p.name)}</b><span>${p.birthYear}年・${S.PREFS[p.pref - 1].replace(/[都府県]$/, '')}</span><small>${alive ? `${p.birthYear + age}年・${age}歳` : `享年${p.deathAge}`}</small></button>`;
+      return `<button type="button" class="mch ${ERA_CLASS[i]}${alive ? '' : ' dead'}" data-who="${i}" aria-label="${esc(p.name)}のようすを見る"><b>${esc(p.name.split(' ')[1] ?? p.name)}</b><span>${p.birthYear}年・${S.placeShort(p.pref, p.birthYear)}</span><small>${alive ? `${p.birthYear + age}年・${age}歳` : `享年${p.deathAge}`}</small></button>`;
     })
     .join('');
   setIfChanged(box.querySelector('.mcolhead'), head);
@@ -911,14 +937,22 @@ function yearFacts(p: Person, year: number): string {
   const sx = p.sex;
   const pct = (v: number) => `${v.toFixed(v < 10 ? 1 : 0)}%`;
   const rows: [string, string][] = [];
-  if (year <= 2005) rows.push(['生まれた赤ちゃん', `${Math.round(S.nationalBirths(year) / 10000)}万人`]);
+  const sxw = sx === 'male' ? '男' : '女';
+  if (year <= 2005) rows.push([year < 1899 ? '生まれた赤ちゃん（推計）' : '生まれた赤ちゃん', `${Math.round(S.nationalBirths(year) / 10000)}万人`]);
   // 2025年：人口動態統計（確定数）671,270人（厚生労働省、2026年9月30日公表）
   if (year === 2025) rows.push(['生まれた赤ちゃん', '67万人']);
-  if (year <= 2025) {
-    rows.push(['大学へ進む割合', `${pct(S.eduRate('university', year, sx))}（${sx === 'male' ? '男' : '女'}）`]);
-    rows.push(['完全失業率', pct(S.unemployment(year))]);
-    rows.push(['有効求人倍率', `${S.jobOpenings(year).toFixed(2)}倍`]);
-    rows.push(['平均初婚年齢', `${S.meanMarriageAge(year, sx).toFixed(1)}歳（${sx === 'male' ? '男' : '女'}）`]);
+  if (year < 1890) {
+    // 江戸・明治の初め：推計の数字だけを出す（失業率・求人倍率の統計はまだない）
+    rows.push([year < 1873 ? '手習いを受ける子（推計）' : '小学校の就学率', `${pct(S.elementaryEnrollment(year, sx))}（${sxw}）`]);
+    if (year < 1872) rows.push(['人口のうち武士（推計）', pct(S.samuraiShare(year))]);
+    rows.push(['働く人のうち農業（推計）', pct(S.primaryShare(year))]);
+    rows.push(['初婚年齢（推計）', `${S.meanMarriageAge(year, sx).toFixed(1)}歳（${sxw}）`]);
+    if (year >= 1871) rows.push(['当時の1円は、2020年の（推計）', `${(Math.round(S.toReal2020(year) / 100) * 100).toLocaleString('ja-JP')}円`]);
+  } else if (year <= 2025) {
+    rows.push(['大学へ進む割合', `${pct(S.eduRate('university', year, sx))}（${sxw}）`]);
+    if (year >= 1930) rows.push(['完全失業率', pct(S.unemployment(year))]);
+    if (year >= 1963) rows.push(['有効求人倍率', `${S.jobOpenings(year).toFixed(2)}倍`]);
+    rows.push(['平均初婚年齢', `${S.meanMarriageAge(year, sx).toFixed(1)}歳（${sxw}）`]);
     rows.push(['当時の1万円は、2020年の', `${(Math.round((10000 * S.toReal2020(year)) / 100) * 100).toLocaleString('ja-JP')}円`]);
   }
   const future = year > 2025;
@@ -930,7 +964,7 @@ function yearFacts(p: Person, year: number): string {
     .filter((e, k, arr) => arr.findIndex((x) => x.title === e.title) === k)
     .slice(0, 5);
   const evHtml = evs.length
-    ? `<h5 class="yev-h">この年の出来事</h5><ul class="yev">${evs.map((e) => `<li class="${e.category === 'pref' ? 'local' : ''}">${e.category === 'pref' ? `<span class="tag">${S.PREFS[p.pref - 1]}</span>` : ''}${esc(e.title)}${e.month ? `<small>${e.month}月</small>` : ''}</li>`).join('')}</ul>`
+    ? `<h5 class="yev-h">この年の出来事</h5><ul class="yev">${evs.map((e) => `<li class="${e.category === 'pref' ? 'local' : ''}">${e.category === 'pref' ? `<span class="tag">${S.placeShort(p.pref, year)}</span>` : ''}${esc(e.title)}${e.month ? `<small>${e.month}月</small>` : ''}</li>`).join('')}</ul>`
     : '';
   return html`<section class="yfact ${ERA_CLASS[p.era]}">
     <h4><b>${year}</b><span>${wareki(year)}</span>${future ? '<em>この先は推計</em>' : ''}</h4>
@@ -975,7 +1009,7 @@ function personDetail(p: Person, i: number, age: number): string {
     return html`<div class="pd ${ERA_CLASS[i]}">
       <div class="pd-head"><b>${p.birthYear}–${p.deathYear}</b><span>${nm}</span></div>
       <p class="pd-kyonen">享年${p.deathAge}<small>${esc(p.deathCause ?? '')}</small></p>
-      <dl class="pd-dl"><dt>学歴</dt><dd>${EDU_LABEL[p.edu]}</dd><dt>仕事</dt><dd>${esc(p.jobTitle || 'なし')}</dd><dt>生涯年収</dt><dd>${yen(p.lifetimeEarningsReal)}（今の価値）</dd></dl>
+      <dl class="pd-dl"><dt>学歴</dt><dd>${eduLabelOf(p)}</dd><dt>仕事</dt><dd>${esc(p.jobTitle || 'なし')}</dd><dt>生涯年収</dt><dd>${yen(p.lifetimeEarningsReal)}（今の価値）</dd></dl>
       <div class="lifemap"><small>人生地図（1マス1年、濃いほど幸せだった年）</small>${lifeMapRow(p, i)}</div>
     </div>`;
   }
@@ -994,11 +1028,11 @@ function personDetail(p: Person, i: number, age: number): string {
   const thoughts = p.log.filter((e) => e.kind === 'think' && isShown(e)).slice(-2).reverse();
   const miss = p.wishes.filter((w) => !w.ok);
   return html`<div class="pd ${ERA_CLASS[i]}">
-    <div class="pd-head"><b>${year}</b><span>${wareki(year)}・${age}歳・${S.PREFS[p.pref - 1]}生まれ</span></div>
+    <div class="pd-head"><b>${year}</b><span>${wareki(year)}・${age}歳・${S.placeName(p.pref, p.birthYear)}生まれ</span></div>
     <p class="pd-name">${nm}<small>${esc(statusLine(p))}</small></p>
     <div class="pd-bars">${bar('健康', s.health)}${bar('幸福', s.happiness)}${bar('知識', s.knowledge)}${bar('人間関係', s.relation)}</div>
     <dl class="pd-dl">
-      <dt>学歴</dt><dd>${p.inSchool ? '在学中' : EDU_LABEL[p.edu]}</dd>
+      <dt>学歴</dt><dd>${p.inSchool ? '在学中' : eduLabelOf(p)}</dd>
       <dt>仕事</dt><dd>${esc(p.jobTitle || (p.retired ? '退職した' : 'なし'))}</dd>
       <dt>${p.money < 0 ? 'ローン' : '貯え'}</dt><dd>${yen(Math.abs(p.money))}</dd>
       ${p.income > 0 && !p.retired ? `<dt>年収</dt><dd>${yen(p.income)}</dd>` : ''}
@@ -1377,7 +1411,7 @@ function showSources(): void {
   const { el, close } = sheet(
     html`<p class="kicker">出典</p>
       <h2>使った統計と出典</h2>
-      <p class="prompt">数字は日本の公的な統計から作っています。取れない年は前後の年から補い、補ったことを記録しています。1930年より前（明治・大正）の数字は、当時の生命表・人口動態統計・学校の統計・長期経済統計などから作った概算で、一部は推計です。詳しくはリポジトリの docs/出典一覧.md を見てください。</p>
+      <p class="prompt">数字は日本の公的な統計から作っています。取れない年は前後の年から補い、補ったことを記録しています。1930年より前（明治・大正）の数字は、当時の生命表・人口動態統計・学校の統計・長期経済統計などから作った概算で、一部は推計です。1890年より前（江戸・明治の初め）は、歴史人口学の研究などから作った推計です。詳しくはリポジトリの docs/出典一覧.md を見てください。</p>
       <ul class="src">${SOURCES.map((s) => `<li><b>${esc(s.what)}</b>：${s.url ? `<a href="${s.url}" target="_blank" rel="noopener">${esc(s.title)}</a>` : esc(s.title)}</li>`)}</ul>
       <button class="btn" data-close>閉じる</button>`,
     { label: '出典', dismiss: true },
@@ -1389,7 +1423,7 @@ function showAbout(): void {
   const { el, close } = sheet(
     html`<p class="kicker">このゲームについて</p>
       <h2>人生を分けたのは、生まれた年だった</h2>
-      <p>同じ一人の人間を、30年ずつ離れた3つの時代に同時に生まれさせ、日本の統計で一生をシミュレーションします。真ん中の生まれ年は1960〜75年から、その年の出生数に比例して選ばれます。</p>
+      <p>同じ一人の人間を、江戸から平成までの3つの時代に同時に生まれさせ、日本の統計で一生をシミュレーションします。いちばん若い人の生まれ年は1990〜2010年から、その年の出生数に比例して選ばれます。ほかの2人は1800年以降のどこかに、どこも30年以上離して置きます。江戸の人の学校や仕事は、寺子屋・藩校・奉公・家督など、その時代の仕組みに読み替えます。</p>
       <p>選んだことは「本人が望んだこと」です。叶うかどうかは、その時代の進学率や求人倍率、家の暮らし向きで決まります。2026年より先の出来事は、国の将来推計にもとづく見通しです。</p>
       <p class="muted" style="font-size:13px">参考にしたゲーム「80億分の1」の考え方に学びましたが、コード・文章・画像は使っていません。</p>
       <button class="btn" data-close>閉じる</button>`,
@@ -1535,8 +1569,15 @@ const RARE: { id: string; label: string; test: (prefs: number[], sex: string, ys
   { id: 'tokyo64', label: '東京オリンピックの年（1964年）に生まれた人がいる', test: (_p, _s, ys) => ys.includes(1964) },
   { id: 'genbaku', label: '広島か長崎で、戦時中に生まれた人がいる', test: (ps, _s, ys) => ys.some((y, i) => (ps[i] === 34 || ps[i] === 42) && y >= 1941 && y <= 1945) },
   { id: 'babyboom2', label: '第2次ベビーブーム（1971〜74年）に生まれた人がいる', test: (_p, _s, ys) => ys.some((y) => y >= 1971 && y <= 1974) },
-  { id: 'meiji', label: '明治に生まれた人がいる', test: (_p, _s, ys) => ys[0] < 1912 },
+  { id: 'meiji', label: '明治に生まれた人がいる', test: (_p, _s, ys) => ys.some((y) => y >= 1868 && y < 1912) },
+  { id: 'edo', label: '江戸時代に生まれた人がいる', test: (_p, _s, ys) => ys[0] < 1868 },
+  { id: 'edo2', label: '2人が江戸時代に生まれた', test: (_p, _s, ys) => ys[1] < 1868 },
+  { id: 'kurofune', label: '黒船が来た年（1853年）に生まれた人がいる', test: (_p, _s, ys) => ys.includes(1853) },
+  { id: 'ishin', label: '明治元年（1868年）に生まれた人がいる', test: (_p, _s, ys) => ys.includes(1868) },
+  { id: 'ryukyu', label: '琉球王国の時代の沖縄に生まれた人がいる', test: (ps, _s, ys) => ys.some((y, i) => ps[i] === 47 && y < 1879) },
   { id: 'gap100', label: '3人の生まれ年が、70年以上離れた', test: (_p, _s, ys) => ys[2] - ys[0] >= 70 },
+  { id: 'gap180', label: '3人の生まれ年が、180年以上離れた', test: (_p, _s, ys) => ys[2] - ys[0] >= 180 },
+  { id: 'close', label: '3人の生まれ年が、どこもちょうど30年ずつ', test: (_p, _s, ys) => ys[1] - ys[0] === 30 && ys[2] - ys[1] === 30 },
 ];
 
 function showDex(): void {
@@ -1727,7 +1768,7 @@ function record(p: Person, i: number): string {
     <div style="font-weight:700;margin-top:4px">${esc(p.name)}</div>
     <dl>
       <dt>死因</dt><dd>${esc(p.deathCause ?? '')}</dd>
-      <dt>学歴</dt><dd>${EDU_LABEL[p.edu]}</dd>
+      <dt>学歴</dt><dd>${eduLabelOf(p)}</dd>
       <dt>仕事</dt><dd>${esc(p.jobTitle || 'なし')}</dd>
       <dt>家族</dt><dd>${p.married ? `${p.marriageType ?? ''}結婚` : '独身'}${kids ? `・子${kids}人` : ''}</dd>
       <dt>最良の年</dt><dd>${best.age}歳（${best.year}年）</dd>
@@ -1742,7 +1783,7 @@ function recordTable(st: GameState): string {
   const ps = st.persons;
   const rows: [string, (p: Person) => string][] = [
     ['死因', (p) => esc(p.deathCause ?? '')],
-    ['学歴', (p) => EDU_LABEL[p.edu]],
+    ['学歴', (p) => eduLabelOf(p)],
     ['仕事', (p) => esc(p.jobTitle || 'なし')],
     ['家族', (p) => `${p.married ? `${p.marriageType ?? ''}結婚` : '独身'}${p.children.length ? `・<wbr><span class="nw">子${p.children.length}人</span>` : ''}`],
     ['最良の年', (p) => `${p.bestYear.age}歳`],

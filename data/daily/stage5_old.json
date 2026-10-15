@@ -104,6 +104,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 72,
+    "notBefore": 1950,
     "when": {
       "retired": true
     },
@@ -185,6 +186,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 82,
+    "notBefore": 1920,
     "when": {},
     "text": "庭のトマトが赤くなった。毎朝一つずつもいで、台所で塩をふってそのままかじった。",
     "effects": {
@@ -212,6 +214,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 78,
+    "notBefore": 1970,
     "when": {
       "urban": true
     },
@@ -235,6 +238,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 88,
+    "notBefore": 1950,
     "when": {},
     "text": "夏の夕方、ホースで庭に水をまいた。乾いた土のにおいが立ちのぼり、隣の猫が塀の上へ逃げた。",
     "effects": {
@@ -273,6 +277,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 75,
+    "notBefore": 1970,
     "when": {
       "urban": false
     },
@@ -329,6 +334,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 80,
+    "notBefore": 1950,
     "when": {
       "hasChildren": true,
       "sex": "female"
@@ -373,6 +379,7 @@
     "kind": "daily",
     "ageMin": 68,
     "ageMax": 88,
+    "notBefore": 1890,
     "when": {
       "hasChildren": true
     },
@@ -387,6 +394,7 @@
     "kind": "daily",
     "ageMin": 70,
     "ageMax": 90,
+    "notBefore": 1950,
     "when": {
       "hasChildren": true
     },
@@ -429,6 +437,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 85,
+    "notBefore": 1976,
     "when": {
       "hasChildren": true
     },
@@ -467,6 +476,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 85,
+    "notBefore": 1900,
     "when": {
       "hasChildren": true
     },
@@ -493,6 +503,7 @@
     "kind": "daily",
     "ageMin": 70,
     "ageMax": 92,
+    "notBefore": 1950,
     "when": {
       "hasChildren": true
     },
@@ -680,6 +691,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 80,
+    "notBefore": 1960,
     "when": {
       "married": true,
       "rich": true
@@ -748,6 +760,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 85,
+    "notBefore": 1950,
     "when": {
       "married": true,
       "hasChildren": false
@@ -761,6 +774,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 85,
+    "notBefore": 1920,
     "when": {
       "married": true,
       "hasChildren": false
@@ -842,6 +856,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 95,
+    "notBefore": 1920,
     "when": {
       "widowed": true,
       "sex": "female"
@@ -949,6 +964,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 95,
+    "notBefore": 1950,
     "when": {
       "widowed": true
     },
@@ -978,6 +994,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 95,
+    "notBefore": 1890,
     "when": {
       "widowed": true
     },
@@ -990,6 +1007,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 95,
+    "notBefore": 1920,
     "when": {
       "widowed": true
     },
@@ -1016,6 +1034,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 95,
+    "notBefore": 1960,
     "when": {
       "widowed": true
     },
@@ -1144,6 +1163,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 95,
+    "notBefore": 1920,
     "when": {
       "married": false
     },
@@ -1216,6 +1236,7 @@
     "kind": "daily",
     "ageMin": 70,
     "ageMax": 95,
+    "notBefore": 1948,
     "when": {
       "married": false
     },
@@ -1245,6 +1266,7 @@
     "kind": "daily",
     "ageMin": 70,
     "ageMax": 92,
+    "notBefore": 1950,
     "when": {
       "married": false,
       "hasChildren": false
@@ -1328,6 +1350,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 90,
+    "notBefore": 1890,
     "when": {},
     "text": "{pet}を連れて朝の散歩に出た。帰り道の角は、{pet}のほうが先に曲がった。",
     "effects": {
@@ -1340,6 +1363,7 @@
     "kind": "daily",
     "ageMin": 70,
     "ageMax": 92,
+    "notBefore": 1890,
     "when": {},
     "text": "{pet}が年を取り、散歩の距離が短くなった。自分の足にも、ちょうどよかった。",
     "effects": {
@@ -1388,6 +1412,7 @@
     "kind": "daily",
     "ageMin": 68,
     "ageMax": 92,
+    "notBefore": 1950,
     "when": {},
     "text": "整形外科の待合室に、いつもの顔ぶれがそろっていた。一人来ないと、皆で「風邪かね」と話した。",
     "effects": {
@@ -1469,6 +1494,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 92,
+    "notBefore": 1900,
     "when": {
       "hasChildren": true,
       "sick": true
@@ -1484,6 +1510,7 @@
     "kind": "daily",
     "ageMin": 70,
     "ageMax": 95,
+    "notBefore": 1970,
     "when": {},
     "text": "薬の数が増え、曜日ごとに分けるケースを買った。月曜の分を、火曜に見つけたこともあった。",
     "effects": {},
@@ -1527,6 +1554,7 @@
     "kind": "daily",
     "ageMin": 70,
     "ageMax": 95,
+    "notBefore": 1920,
     "when": {
       "married": false
     },
@@ -1553,6 +1581,7 @@
     "kind": "daily",
     "ageMin": 70,
     "ageMax": 95,
+    "notBefore": 1965,
     "when": {
       "sick": true
     },
@@ -1577,6 +1606,7 @@
     "kind": "daily",
     "ageMin": 70,
     "ageMax": 95,
+    "notBefore": 1950,
     "when": {},
     "text": "家の段差に、手すりをつけてもらった。大工が帰ったあと、何度も握ってみた。",
     "effects": {
@@ -1718,6 +1748,7 @@
     "kind": "daily",
     "ageMin": 70,
     "ageMax": 92,
+    "notBefore": 1890,
     "when": {},
     "text": "{friend}から、手書きの暑中見舞いが届いた。字が前より少し大きくなっていた。",
     "effects": {
@@ -1754,6 +1785,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 82,
+    "notBefore": 1960,
     "when": {},
     "text": "町内の清掃に出た。若い家族が来ていて、小さな子がごみ袋を持ってくれた。",
     "effects": {
@@ -1766,6 +1798,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 92,
+    "notBefore": 1940,
     "when": {},
     "text": "回覧板を隣に回しに行き、玄関先で三十分話しこんだ。家に戻ると、やかんの湯がすっかり冷めていた。",
     "effects": {
@@ -1828,6 +1861,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 82,
+    "notBefore": 1970,
     "when": {},
     "text": "地域の子どもたちに、昔の遊びを教える会に呼ばれた。こまを回すと、子どもたちが声を上げた。",
     "effects": {
@@ -1876,6 +1910,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 85,
+    "notBefore": 1950,
     "when": {},
     "text": "町内会の夏祭りで、焼きそばの係をした。鉄板の前で汗をかき、夜は早く眠った。",
     "effects": {
@@ -1898,6 +1933,7 @@
     "kind": "daily",
     "ageMin": 75,
     "ageMax": 98,
+    "notBefore": 1980,
     "when": {},
     "text": "デイサービスで、ぬり絵をした。隣の人が、色の選び方をほめてくれた。",
     "effects": {
@@ -1910,6 +1946,7 @@
     "kind": "daily",
     "ageMin": 75,
     "ageMax": 98,
+    "notBefore": 1980,
     "when": {},
     "text": "デイサービスの風呂は広かった。湯船につかって、昔の銭湯を思い出した。",
     "effects": {
@@ -2034,6 +2071,7 @@
     "kind": "daily",
     "ageMin": 70,
     "ageMax": 95,
+    "notBefore": 1966,
     "when": {},
     "text": "敬老の日に、町から記念品が届いた。包みを開けると紅白の饅頭で、仏壇に一つ供えた。",
     "effects": {
@@ -2047,6 +2085,7 @@
     "kind": "daily",
     "ageMin": 75,
     "ageMax": 95,
+    "notBefore": 1900,
     "when": {},
     "text": "年賀状の枚数を減らした。「今年で年賀状を最後にします」と、一筆ずつ書き添えた。",
     "effects": {},
@@ -2057,6 +2096,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 90,
+    "notBefore": 1890,
     "when": {},
     "text": "衣替えで、何年も着ていない服を見つけた。袖を通すと、まだ着られた。",
     "effects": {},
@@ -2121,6 +2161,7 @@
     "kind": "daily",
     "ageMin": 68,
     "ageMax": 92,
+    "notBefore": 1890,
     "when": {
       "married": false
     },
@@ -2203,6 +2244,7 @@
     "kind": "daily",
     "ageMin": 70,
     "ageMax": 92,
+    "notBefore": 1890,
     "when": {
       "hasChildren": true
     },
@@ -2262,6 +2304,7 @@
     "kind": "daily",
     "ageMin": 68,
     "ageMax": 90,
+    "notBefore": 1950,
     "when": {},
     "text": "使わなくなった食器を、バザーに出した。自分が買った皿を、若い夫婦が手に取っていた。",
     "effects": {},
@@ -2272,6 +2315,7 @@
     "kind": "daily",
     "ageMin": 68,
     "ageMax": 90,
+    "notBefore": 1900,
     "when": {
       "hasChildren": true,
       "rich": true
@@ -2315,6 +2359,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 90,
+    "notBefore": 1950,
     "when": {},
     "text": "古い家の雨漏りを直した。業者に「次は十年後ですね」と言われ、少し笑った。",
     "effects": {},
@@ -2349,6 +2394,7 @@
     "kind": "daily",
     "ageMin": 90,
     "ageMax": 105,
+    "notBefore": 1950,
     "when": {},
     "text": "九十歳の祝い状が、市から届いた。読み上げてくれた職員の声が大きかった。",
     "effects": {
@@ -2421,6 +2467,7 @@
     "kind": "daily",
     "ageMin": 90,
     "ageMax": 105,
+    "notBefore": 1960,
     "when": {},
     "text": "施設の夏祭りで、職員が浴衣を着せてくれた。帯を締めてもらうとき、背筋がのびた。",
     "effects": {
@@ -2433,6 +2480,7 @@
     "kind": "daily",
     "ageMin": 90,
     "ageMax": 108,
+    "notBefore": 1960,
     "when": {},
     "text": "職員がスプーンで口に入れてくれたプリンが、甘かった。もう一口と、目で頼んだ。",
     "effects": {
@@ -2459,6 +2507,7 @@
     "kind": "daily",
     "ageMin": 90,
     "ageMax": 105,
+    "notBefore": 1960,
     "when": {},
     "text": "百歳の人のお祝いの会に出た。「次はあんたの番だ」と、隣の人に肩をたたかれた。",
     "effects": {
@@ -2533,6 +2582,7 @@
     "kind": "daily",
     "ageMin": 90,
     "ageMax": 108,
+    "notBefore": 1960,
     "when": {},
     "text": "耳元で、職員が今日の日付を言ってくれた。何年なのかは、聞き返さなかった。",
     "effects": {},
@@ -2543,6 +2593,7 @@
     "kind": "daily",
     "ageMin": 90,
     "ageMax": 105,
+    "notBefore": 1960,
     "when": {},
     "text": "昔覚えた歌を、職員と一緒に口ずさんだ。言葉は途中から出てこなかったが、節は最後まで覚えていた。",
     "effects": {
@@ -2555,6 +2606,7 @@
     "kind": "daily",
     "ageMin": 90,
     "ageMax": 105,
+    "notBefore": 1950,
     "when": {
       "hasChildren": false,
       "hasSibling": true
@@ -2608,6 +2660,7 @@
     "kind": "daily",
     "ageMin": 90,
     "ageMax": 105,
+    "notBefore": 1960,
     "when": {
       "mood": "high"
     },
@@ -2786,6 +2839,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 85,
+    "notBefore": 1980,
     "when": {
       "married": true,
       "hasChildren": false,
@@ -2896,6 +2950,7 @@
     "kind": "daily",
     "ageMin": 66,
     "ageMax": 95,
+    "notBefore": 1890,
     "when": {
       "widowed": true
     },
@@ -2908,6 +2963,7 @@
     "kind": "daily",
     "ageMin": 65,
     "ageMax": 90,
+    "notBefore": 1980,
     "when": {
       "married": false,
       "mood": "high"
@@ -3174,6 +3230,7 @@
     "kind": "think",
     "ageMin": 65,
     "ageMax": 75,
+    "notBefore": 1900,
     "when": {
       "trigger": "retire"
     },
@@ -3186,6 +3243,7 @@
     "kind": "think",
     "ageMin": 65,
     "ageMax": 75,
+    "notBefore": 1900,
     "when": {
       "trigger": "retire"
     },
@@ -3213,6 +3271,7 @@
     "kind": "think",
     "ageMin": 65,
     "ageMax": 75,
+    "notBefore": 1900,
     "when": {
       "trigger": "retire"
     },
@@ -3511,6 +3570,7 @@
     "kind": "think",
     "ageMin": 65,
     "ageMax": 68,
+    "notBefore": 1950,
     "when": {},
     "text": "「若いころは、六十五歳といえば、もっと年寄りだと思っていた」",
     "effects": {},
@@ -3734,6 +3794,7 @@
     "kind": "think",
     "ageMin": 65,
     "ageMax": 105,
+    "notBefore": 1890,
     "when": {},
     "text": "「ずいぶん便利な世の中になったものだ」",
     "effects": {},
@@ -3837,6 +3898,7 @@
     "kind": "think",
     "ageMin": 70,
     "ageMax": 100,
+    "notBefore": 1890,
     "when": {},
     "text": "「階段がつらい。でも、まだ自分で上れる」",
     "effects": {},

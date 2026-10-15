@@ -70,6 +70,8 @@ export interface DailyItem {
   weight?: number;
   repeatGap?: number;
   check?: string;
+  /** この年より前には出さない（時代を問わない場面のうち、江戸・明治の初めに合わないもの。重みは変えない） */
+  notBefore?: number;
 }
 
 const files = import.meta.glob('../../data/daily/*.json', { eager: true, import: 'default' }) as Record<string, DailyItem[]>;
@@ -198,7 +200,7 @@ function fill(p: Person, d: DailyItem, ctx: DailyCtx, rng: Rng): string | null {
     childAge: child ? String(childAgeOf(child, y)) : null,
     sib: p.siblings > 1 ? sibLabel(p, rng) : null,
     pet: p.pet?.alive ? p.pet.name : null,
-    pref: S.PREFS[p.pref - 1],
+    pref: y < 1871 ? S.KUNI[p.pref - 1] : S.PREFS[p.pref - 1],
     mAge: p.motherAlive ? String(parentAge(p, 'm', y)) : null,
     fAge: p.fatherAlive ? String(parentAge(p, 'f', y)) : null,
   };
@@ -231,7 +233,24 @@ const MODERN: [RegExp, number][] = [
   [/冷蔵庫|洗濯機|掃除機|炊飯器/, 1955],
   [/テレビ|画面越し/, 1955],
   [/段ボール|ビニール|プラスチック|ペットボトル|ラップ/, 1955],
-  [/車の|車で|車を|運転|フロントガラス|駐車|ドライブ|助手席|マイカー|ガソリン/, 1960],
+  [/(?<![風糸水山荷八力汽馬電列滑歯])車[のでを]|運転|フロントガラス|駐車|ドライブ|助手席|マイカー|ガソリン/, 1960],
+  [/学校|先生|授業|教科書|月謝/, 1872],
+  [/汽車|鉄道|駅|線路/, 1872],
+  [/郵便|切手|ポスト/, 1871],
+  [/はがき|葉書|年賀状|暑中見舞い/, 1873],
+  [/新聞/, 1871],
+  [/写真/, 1870],
+  [/人力車/, 1870],
+  [/洋服|帽子|ボタン|ズボン/, 1872],
+  [/牛乳/, 1870],
+  [/(?<!フライ)パン(?!ツ|ダ)/, 1875],
+  [/電灯|電気|電球|スイッチ/, 1890],
+  [/電車|市電/, 1895],
+  [/野球/, 1890],
+  [/活動写真|映画/, 1897],
+  [/自転車/, 1900],
+  [/キャラメル/, 1914],
+  [/ラジオ/, 1925],
   [/高校|中学校の|部活|塾|偏差値/, 1948],
   [/給食/, 1947],
   [/健康診断|体重計|人間ドック/, 1960],
@@ -257,6 +276,18 @@ const MODERN: [RegExp, number][] = [
   [/老眼鏡|老人会|敬老/, 1950],
   [/フェリー|バス停|バスに/, 1950],
 ];
+/**
+ * 1890年より前（江戸・明治の初め）の人には、時代を決めていない場面のうち、近代以降の物や仕組みが出てくるものを出さない。
+ * 時代を問わない場面は昭和以降の暮らしを思い浮かべて書いたものが多いため、広めに外す（江戸・明治の初めの場面は data/daily/era_edo.json などにある）
+ */
+const OLD_BAN = new RegExp(
+  '学校|教室|授業|先生|担任|クラス|同級生|部活|部室|先輩|後輩|体育|運動会|遠足|修学旅行|宿題|テスト|試験|卒業|入学|制服|ランドセル|給食|夏休み|冬休み|春休み|小学|中学|高校|大学|受験|塾|教科書|ノート|鉛筆|消しゴム|作文|黒板|図書|校庭|校舎|下校|登校|通学|会社|職場|上司|同僚|部下|給料|月給|ボーナス|残業|出勤|通勤|社員|課長|部長|係長|定年|退職|年金|就職|面接|名刺|スーツ|ネクタイ|背広|電車|汽車|列車|駅|線路|鉄道|バス|タクシー|自転車|バイク|オートバイ|車|運転|ガソリン|信号|横断歩道|道路|アスファルト|舗装|飛行機|船旅|フェリー|電話|電気|電灯|電球|蛍光灯|スイッチ|コンセント|テレビ|ラジオ|レコード|カセット|CD|映画|写真|カメラ|アルバム|新聞|雑誌|漫画|マンガ|絵本|郵便|ポスト|切手|はがき|葉書|ガラス|窓ガラス|網戸|カーテン|ソファ|ベッド|ストーブ|こたつ|扇風機|冷蔵庫|洗濯機|掃除機|炊飯器|電子レンジ|ガス|水道|蛇口|シャワー|トイレ|風呂場の|浴槽|タオル|歯ブラシ|石けん|石鹸|ハンカチ|ティッシュ|毛糸|セーター|ジャンパー|コート|帽子|靴|スニーカー|サンダル|長靴|傘|洋服|ズボン|スカート|シャツ|パジャマ|ボタン|チャック|眼鏡|メガネ|時計|腕時計|カレンダー|ケーキ|チョコ|アイス|ソフトクリーム|ジュース|コーラ|サイダー|ラムネ|ビール|ワイン|ウイスキー|コーヒー|紅茶|牛乳|パン|バター|チーズ|カレー|ラーメン|ハンバーグ|オムライス|ケチャップ|マヨネーズ|ソース|弁当箱|缶|瓶|白熊|ちゃんぽん|餃子|焼肉|ジンギスカン|コロッケ|とんかつ|すき焼き|牛丼|店員|レジ|スーパー|デパート|百貨店|商店街|喫茶|レストラン|食堂|映画館|遊園地|動物園|公園|プール|銀行|病院|医院|薬局|交番|警察|役所|市役所|区役所|町役場|千円|万円|百円|十円|円玉|円札|お札|財布|トランプ|ボール|野球|サッカー|テニス|スキー|スケート|ゲーム|おもちゃ|人形|ぬいぐるみ|クレヨン|色鉛筆|シール|風船|誕生日|誕生会|クリスマス|バレンタイン|プレゼント|旅行|帰省|休日|日曜|土曜|週末|連休|夏期|ペン|紙袋|ビニール|段ボール|袋菓子|お菓子屋|アパート|マンション|団地|エレベーター|階段の|ベランダ|玄関のチャイム|インターホン|病院|入院|手術|注射|薬を飲|体温計|検査|健康診断|レントゲン|救急|歯医者|同窓会|成人式|結婚式|披露宴|新婚旅行|指輪|婚約|ハネムーン|仕事帰り|給料日|アルバイト|バイト|パート|ポケット|リュック|カバン|鞄|かばん|ランプ|マッチ|ろうそくの|懐中電灯|新幹線|空港|ホテル|旅館|観光|温泉旅行|テーブル|椅子|いす|机の引き出し|本棚|英語|算数|数学|理科|社会科|国語|音楽の|図工|花火大会|スポーツ|マラソン|選手|試合|大会|応援団',
+);
+
+/** 1890年より前に出さない言葉の続き（学校や会社の暮らし、近代の道具・福祉など） */
+const OLD_BAN2 =
+  /飼育係|学芸会|終業式|通知表|休み時間|昼休み|鉄棒|ブランコ|連絡帳|プリント|参観日|合唱|進路|学級委員|朝の会|PTA|参考書|ようちえん|幼稚園|学生|同期|でんしゃ|うんてん|契約|事務所|シャッター|工場|社長|報告書|新人|内示|転勤|昇進|肩書き|終電|進水式|造船所|旋盤|毛布|歯みがき粉|家具|換気扇|水槽|熱帯魚|ホース|灯油|ポリタンク|電卓|家計簿|ローン|容器|宅配便|健康食品|ホチキス|資料|広告|模型|手すり|ごみ出し|ごみ置き場|ごみ袋|回覧板|民生委員|区民農園|町内会|子ども会|公民館|バザー|業者|職員|施設|プリン|スプーン|リハビリ|整形外科|待合室|病室|専門家|窓口|地図帳|タイル|休みの日|休みの朝|長い休み|船の旅|恋人|絵手紙|東京|トマト|キャベツ|肉まん|豚まん|お好み焼き|焼きそば|焼きめし|明太子/;
+
 function modernMin(text: string): number {
   let y = -Infinity;
   for (const [re, min] of MODERN) if (re.test(text) && min > y) y = min;
@@ -276,6 +307,8 @@ interface Needs {
   friend: boolean;
   local: boolean;
   minYear: number;
+  oldBan: boolean;
+  terako: boolean;
 }
 const NEEDS = new Map<DailyItem, Needs>();
 function needsOf(d: DailyItem): Needs {
@@ -293,6 +326,9 @@ function needsOf(d: DailyItem): Needs {
       friend: d.text.includes('{friend}'),
       local: !!(d.when?.region || d.when?.prefs || d.when?.snow),
       minYear: modernMin(d.text),
+      oldBan: d.yearMin === undefined && (OLD_BAN.test(d.text) || OLD_BAN2.test(d.text)),
+      // 寺子屋に通った子の場面（通わなかったことを書いたものは除く）
+      terako: /寺子屋|手習い|師匠|席書|素読/.test(d.text) && !/行かず|通わず|通えな|行けな/.test(d.text) && (d.yearMax ?? 9999) < 1890,
     };
     NEEDS.set(d, n);
   }
@@ -304,6 +340,9 @@ function eligible(p: Person, d: DailyItem, ctx: DailyCtx): boolean {
   if (d.yearMax !== undefined && ctx.year > d.yearMax) return false;
   const n = needsOf(d);
   if (ctx.year < n.minYear && (d.yearMin === undefined || d.yearMin < n.minYear)) return false;
+  if (ctx.year < 1890 && n.oldBan) return false;
+  if (d.notBefore !== undefined && ctx.year < d.notBefore) return false;
+  if (n.terako && p.flags.includes('no_school') && p.age < 15) return false;
   if (n.work && !working(p)) return false;
   if (n.school && p.age >= 15 && !['high', 'univ'].includes(schoolOf(p) ?? '')) return false;
   if (n.univ && schoolOf(p) !== 'univ') return false;
@@ -357,7 +396,8 @@ function pickItems(p: Person, rng: Rng, ctx: DailyCtx, kind: 'daily' | 'think', 
 // ---------- プログラムで作る場面 ----------
 
 const PET_NAMES: { from: number; dog: string[]; cat: string[] }[] = [
-  { from: 1930, dog: ['ポチ', 'シロ', 'クロ', 'ジョン'], cat: ['タマ', 'ミケ', 'トラ', 'クロ'] },
+  { from: 1790, dog: ['シロ', 'クロ', 'アカ', 'ブチ'], cat: ['タマ', 'ミケ', 'トラ', 'クロ'] },
+  { from: 1900, dog: ['ポチ', 'シロ', 'クロ', 'ジョン'], cat: ['タマ', 'ミケ', 'トラ', 'クロ'] },
   { from: 1965, dog: ['チビ', 'ハチ', 'コロ', 'ラッキー'], cat: ['ミー', 'タマ', 'チャー', 'ミミ'] },
   { from: 1990, dog: ['モモ', 'ココ', 'チョコ', 'マロン'], cat: ['モモ', 'ソラ', 'レオ', 'ルナ'] },
 ];
@@ -384,14 +424,23 @@ function storyBeats(p: Person, rng: Rng, ctx: DailyCtx): void {
   if (!p.friendName && a >= 6 && a <= 10 && rng.chance(a === 6 ? 0.5 : 0.3)) {
     p.friendName = otherName(p, rng, p.birthYear + rng.int(-1, 1), rng.chance(0.85) ? p.sex : p.sex === 'male' ? 'female' : 'male');
     p.friendSince = a;
+    const f = p.friendName;
     ctx.log(
       'daily',
       '親友',
-      rng.pick([
-        `同じ組の${p.friendName}と、帰り道が同じだと分かった。それから毎日いっしょに帰るようになった。`,
-        `${p.friendName}が、消しゴムを半分に切って分けてくれた。その日から${p.friendName}とは大の仲良しになった。`,
-        `近所に越してきた${p.friendName}と、日が暮れるまで遊んだ。次の日も、その次の日も遊んだ。`,
-      ]),
+      rng.pick(
+        y < 1873
+          ? [
+              `${p.inSchool !== null ? '寺子屋で隣に座った' : '近所の'}${f}と、帰り道に川で小魚をすくった。それから毎日いっしょに遊ぶようになった。`,
+              `${f}が、拾った栗を半分に分けてくれた。その日から${f}とは大の仲良しになった。`,
+              `近所の${f}と、日が暮れるまで鬼ごっこをした。次の日も、その次の日も遊んだ。`,
+            ]
+          : [
+              `同じ組の${f}と、帰り道が同じだと分かった。それから毎日いっしょに帰るようになった。`,
+              y < 1910 ? `${f}が、石板に書いた字をほめてくれた。その日から${f}とは大の仲良しになった。` : `${f}が、消しゴムを半分に切って分けてくれた。その日から${f}とは大の仲良しになった。`,
+              `近所に越してきた${f}と、日が暮れるまで遊んだ。次の日も、その次の日も遊んだ。`,
+            ],
+      ),
     );
   }
   // 親友と疎遠になる
@@ -403,27 +452,32 @@ function storyBeats(p: Person, rng: Rng, ctx: DailyCtx): void {
   if (p.friendName && p.friendLost && a >= 40 && a <= 75 && rng.chance(0.04)) {
     const gap = a - p.friendLost;
     p.friendLost = undefined;
-    ctx.log('daily', '再会', `同窓会で、${p.friendName}と${gap}年ぶりに会った。顔を見たとたん、子どものころの呼び方で呼び合っていた。`, { star: true });
+    ctx.log('daily', '再会', `${y < 1920 ? '村の祭りの日に' : '同窓会で'}、${p.friendName}と${gap}年ぶりに会った。顔を見たとたん、子どものころの呼び方で呼び合っていた。`, { star: true });
   }
 
   // 結婚記念日
   if (p.married && p.spouseAlive && p.marriageAge !== undefined && p.spouseName) {
     const yrs = a - p.marriageAge;
-    if (yrs === 10) ctx.log('daily', '結婚10年', `結婚して10年。${p.spouseName}と、いつもより少しだけいい店で夕食をとった。`);
-    if (yrs === 25) ctx.log('daily', '銀婚式', `結婚して25年の銀婚式。${p.spouseName}と、結婚したころの写真を出してきて、二人で笑った。`);
-    if (yrs === 40) ctx.log('daily', 'ルビー婚', `結婚して40年。気がつけば、${p.spouseName}と暮らした年月のほうが、ひとりで生きた年月より長くなっていた。`);
-    if (yrs === 50) ctx.log('daily', '金婚式', `結婚して50年の金婚式。子や孫が集まって、${p.spouseName}と並んで写真を撮った。`, { star: true });
+    if (yrs === 10) ctx.log('daily', '結婚10年', y < 1920 ? `結婚して10年。${p.spouseName}と、久しぶりに二人で寺社に参った。` : `結婚して10年。${p.spouseName}と、いつもより少しだけいい店で夕食をとった。`);
+    if (yrs === 25 && y >= 1930) ctx.log('daily', '銀婚式', `結婚して25年の銀婚式。${p.spouseName}と、結婚したころの写真を出してきて、二人で笑った。`);
+    if (yrs === 40) ctx.log('daily', y < 1950 ? '結婚40年' : 'ルビー婚', `結婚して40年。気がつけば、${p.spouseName}と暮らした年月のほうが、ひとりで生きた年月より長くなっていた。`);
+    if (yrs === 50) ctx.log('daily', y < 1930 ? '結婚50年' : '金婚式', y < 1930 ? `結婚して50年。子や孫が集まって、${p.spouseName}と二人の長寿を祝ってくれた。` : `結婚して50年の金婚式。子や孫が集まって、${p.spouseName}と並んで写真を撮った。`, { star: true });
   }
 
   // 子どもの節目
   for (const c of p.children) {
     if (!c.alive || !c.name) continue;
     const ca = y - c.birthYear;
-    if (ca === 6) ctx.log('daily', `${c.name}の入学`, `${c.name}が小学校に入った。大きなランドセルが、歩くたびに背中で揺れていた。`);
-    if (ca === 20) ctx.log('daily', `${c.name}が二十歳に`, `${c.name}が二十歳になった。${y >= 2023 ? '二十歳を祝う式' : '成人式'}の朝、晴れ着の姿を見て、生まれた日のことを思い出した。`);
-    if (ca >= 27 && ca <= 34 && !c.married && rng.chance(0.09)) {
+    if (ca === 6)
+      ctx.log(
+        'daily',
+        `${c.name}の${y < 1873 ? '手習い' : '入学'}`,
+        y < 1873 ? `${c.name}が手習いを始めた。小さな手で筆を握り、いろはを一字ずつ書いていた。` : y < 1950 ? `${c.name}が小学校に入った。新しい着物を着て、うれしそうに出かけていった。` : `${c.name}が小学校に入った。大きなランドセルが、歩くたびに背中で揺れていた。`,
+      );
+    if (ca === 20) ctx.log('daily', `${c.name}が二十歳に`, y < 1948 ? `${c.name}が二十歳になった。すっかり大人の顔つきになったのを見て、生まれた日のことを思い出した。` : `${c.name}が二十歳になった。${y >= 2023 ? '二十歳を祝う式' : '成人式'}の朝、晴れ着の姿を見て、生まれた日のことを思い出した。`);
+    if (ca >= (y < 1930 ? 18 : 27) && ca <= 34 && !c.married && rng.chance(0.09)) {
       c.married = true;
-      ctx.log('daily', `${c.name}の結婚`, `${c.name}が結婚した。式の最後の手紙で、思いがけず泣いてしまった。`, { star: true });
+      ctx.log('daily', `${c.name}の結婚`, y < 1950 ? `${c.name}の祝言（結婚の祝い）があった。親類が集まり、夜遅くまでにぎやかだった。` : `${c.name}が結婚した。式の最後の手紙で、思いがけず泣いてしまった。`, { star: true });
     }
     if (c.married && !c.grandchild && rng.chance(0.15)) {
       c.grandchild = true;
@@ -437,7 +491,7 @@ function storyBeats(p: Person, rng: Rng, ctx: DailyCtx): void {
     const kind = rng.chance(0.55) ? 'dog' : 'cat';
     p.pet = { name: petName(rng, y, kind), kind, since: a, alive: true };
     const label = kind === 'dog' ? '犬' : '猫';
-    ctx.log('daily', `${label}の${p.pet.name}`, kind === 'dog' ? `${label}を飼い始めた。名前は${p.pet.name}。毎朝、散歩をねだって玄関で待つようになった。` : `${label}が家に来た。名前は${p.pet.name}。新聞を広げると、必ずその上に座った。`);
+    ctx.log('daily', `${label}の${p.pet.name}`, kind === 'dog' ? `${label}を飼い始めた。名前は${p.pet.name}。毎朝、${y < 1920 ? '戸口' : '玄関'}で待つようになった。` : `${label}が家に来た。名前は${p.pet.name}。${y < 1900 ? '日なたの縁側で、いつも丸くなっていた。' : '新聞を広げると、必ずその上に座った。'}`);
     ctx.applyEffects({ happiness: 4 });
   } else if (p.pet?.alive && a - p.pet.since >= 12 && rng.chance(0.25)) {
     p.pet.alive = false;

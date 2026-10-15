@@ -7,7 +7,7 @@
 
 import { Rng } from './rng';
 import * as S from './stats';
-import { EDU_LABEL, findJob, jobWishLabel, log, man, startWork, yearOf, type GameState } from './engine';
+import { EDU_LABEL, findJob, isEdo, jobLabelAt, jobWishLabel, log, man, moneyAt, startWork, yearOf, type GameState } from './engine';
 import type { DecisionResult, DecisionView, Job, Person } from './types';
 
 type Avail = { ok: boolean; reason?: string };
@@ -69,7 +69,7 @@ export const DECISIONS: DecisionDef[] = [
     age: 3,
     title: 'いちばん好きな遊び',
     prompt: '3歳。小さいころ、いちばん好きだったのは？　選んだことが、3人に共通の気質になる。',
-    evidence: (p) => `${yearOf(p)}年、${S.PREFS[p.pref - 1]}。${p.siblings}人きょうだいの${p.birthOrder === 1 ? '上' : p.birthOrder === p.siblings ? '末っ子' : '真ん中'}。`,
+    evidence: (p) => `${yearOf(p)}年、${S.placeName(p.pref, yearOf(p))}。${p.siblings}人きょうだいの${p.birthOrder === 1 ? '上' : p.birthOrder === p.siblings ? '末っ子' : '真ん中'}。`,
     options: [
       { id: 'active', label: '外を走り回る' },
       { id: 'books', label: '絵本や図鑑を眺める' },
@@ -121,7 +121,7 @@ export const DECISIONS: DecisionDef[] = [
       {
         id: 'piano',
         label: 'ピアノ',
-        available: (p) => (yearOf(p) < 1955 && p.familyClass < 5 ? { ok: false, reason: 'ピアノを置ける家は、ごく限られていた' } : { ok: true }),
+        available: (p) => (yearOf(p) < 1900 ? { ok: false, reason: 'ピアノは、日本にはまだほとんどなかった' } : yearOf(p) < 1955 && p.familyClass < 5 ? { ok: false, reason: 'ピアノを置ける家は、ごく限られていた' } : { ok: true }),
       },
       { id: 'soroban', label: 'そろばん・習字' },
       { id: 'juku', label: '学習塾' },
@@ -146,6 +146,7 @@ export const DECISIONS: DecisionDef[] = [
       }
       p.stats.knowledge = Math.min(100, p.stats.knowledge + (opt === 'juku' ? 6 : 3));
       p.flags.push(`lesson_${opt}`);
+      if (y < 1890) return { ok: true, text: opt === 'juku' ? '漢学の私塾に通い、四書五経（儒学の書物）の素読を習った。' : 'そろばんと習字の稽古に通った。' };
       const t = {
         piano: y < 1975 ? '近所の先生の家にピアノを習いに通った。クラスでピアノを習うのは、まだ少数だった。' : 'ピアノ教室に通い始めた。',
         soroban: 'そろばん教室に通った。',
@@ -163,6 +164,7 @@ export const DECISIONS: DecisionDef[] = [
     prompt: '12歳。受験して、上の学校をめざす？',
     evidence: (p) => {
       const y = yearOf(p);
+      if (y < 1873) return `${y}年。上の学校にあたるのは、藩校（武士の子の学校）や郷学・私塾。${p.flags.includes('samurai_family') ? '武士の子なので、藩校に通うことになっている。' : '百姓や町人の子は、寺子屋を終えると働くのがふつうだった。'}`;
       if (y < 1947) return `${y}年は旧制の学校制度。旧制中学・高等女学校などへ進んだのは、${sexWord(p)}の${pct(S.eduRate('highSchool', y, p.sex))}（目安）。`;
       return `${y}年。新しい中学校（1947年から義務教育）。私立・国立の中学へ進む子は少数。`;
     },
@@ -172,8 +174,29 @@ export const DECISIONS: DecisionDef[] = [
     ],
     resolve: (p, opt, _st, rng) => {
       const y = yearOf(p);
+      if (y < 1873) {
+        // 江戸：武士の子は藩校へ。百姓・町人の子は、私塾や郷学で学び続けるのは少数（目安）
+        if (p.flags.includes('samurai_family')) {
+          p.flags.push('elite_middle');
+          p.stats.knowledge = Math.min(100, p.stats.knowledge + 6);
+          return { ok: true, text: opt === 'exam' ? '藩校に通い、漢学と武芸を学んだ。' : '藩校に通い始めた。武士の子は、藩校で学ぶ決まりだった。' };
+        }
+        if (opt === 'local') return { ok: true, text: '寺子屋を終え、家の仕事を手伝い始めた。' };
+        if (p.inSchool === null) {
+          p.wishes.push({ age: 12, wish: '学問を続けること', result: '働いた', ok: false });
+          return { ok: false, text: '学問がしたかったが、手習いも受けていなかった。家の仕事を手伝った。' };
+        }
+        const ok = rng.chance(wishProb(Math.max(0.02, S.eduRate('highSchool', y, p.sex) / 100), p, 0.4));
+        if (ok) {
+          p.flags.push('elite_middle');
+          p.stats.knowledge = Math.min(100, p.stats.knowledge + 6);
+          return { ok: true, text: '村の郷学（庶民も学べる学校）や私塾に通い、学問を続けた。' };
+        }
+        p.wishes.push({ age: 12, wish: '学問を続けること', result: '家の仕事', ok: false });
+        return { ok: false, text: '学問を続けたかったが、家の仕事の手が足りなかった。寺子屋を終えて働き始めた。' };
+      }
       if (opt === 'local') {
-        return { ok: true, text: y < 1941 ? '高等小学校に進んだ。' : y < 1947 ? '国民学校の高等科に進んだ。' : '地元の公立中学に進んだ。' };
+        return { ok: true, text: y < 1886 ? '小学校の上の課程に進んだ。' : y < 1941 ? '高等小学校に進んだ。' : y < 1947 ? '国民学校の高等科に進んだ。' : '地元の公立中学に進んだ。' };
       }
       if (y < 1947) {
         const ok = rng.chance(wishProb(S.eduRate('highSchool', y, p.sex) / 100, p));
@@ -182,8 +205,8 @@ export const DECISIONS: DecisionDef[] = [
           p.stats.knowledge = Math.min(100, p.stats.knowledge + 8);
           return { ok: true, text: `${p.sex === 'male' ? '旧制中学' : '高等女学校'}に合格した。` };
         }
-        p.wishes.push({ age: 12, wish: '旧制中学への進学', result: '国民学校高等科', ok: false });
-        return { ok: false, text: `${p.sex === 'male' ? '旧制中学' : '高等女学校'}に行きたかったが、家の事情で${y < 1941 ? '高等小学校' : '国民学校の高等科'}に進んだ。` };
+        p.wishes.push({ age: 12, wish: '旧制中学への進学', result: y < 1941 ? '高等小学校' : '国民学校高等科', ok: false });
+        return { ok: false, text: `${p.sex === 'male' ? '旧制中学' : '高等女学校'}に行きたかったが、家の事情で${y < 1886 ? '小学校の上の課程' : y < 1941 ? '高等小学校' : '国民学校の高等科'}に進んだ。` };
       }
       // 私立・国立中学の割合（目安。都市部ほど高い）
       const metro = S.METRO.has(p.pref);
@@ -205,7 +228,11 @@ export const DECISIONS: DecisionDef[] = [
     age: 14,
     title: '将来の夢',
     prompt: '14歳。大人になったら、どんなふうに働きたい？　学校を出たときに、この夢をめざす。',
-    evidence: (p) => `${yearOf(p)}年。就業者のうち農林漁業は${pct(S.primaryShare(yearOf(p)))}、雇われて働く人は${pct(S.employeeShare(yearOf(p)))}。親は${({ farm: '農家', self: '自営業', smallco: '中小企業の勤め', bigco: '大企業の勤め', public: '公務員', none: '無職' } as Record<Job, string>)[p.parentJob]}。`,
+    evidence: (p) => {
+      const y = yearOf(p);
+      if (y < 1890) return `${y}年。働く人の約${pct(S.primaryShare(y))}が農業。${isEdo(y) ? '大きな会社＝大店への奉公、公務員＝武士、と読み替える。' : '大きな会社＝大きな商家や会社、公務員＝役人、と読み替える。'}家は${jobLabelAt(p.parentJob, p.birthYear)}。`;
+      return `${y}年。就業者のうち農林漁業は${pct(S.primaryShare(y))}、雇われて働く人は${pct(S.employeeShare(y))}。親は${({ farm: '農家', self: '自営業', smallco: '中小企業の勤め', bigco: '大企業の勤め', public: '公務員', none: '無職' } as Record<Job, string>)[p.parentJob]}。`;
+    },
     options: [
       { id: 'bigco', label: '大きな会社に勤めたい' },
       { id: 'public', label: '公務員になりたい' },
@@ -215,7 +242,7 @@ export const DECISIONS: DecisionDef[] = [
     ],
     resolve: (p, opt, st) => {
       st.prefs.jobWish = (opt === 'farm' && p.parentJob === 'self' ? 'self' : opt) as Job | 'city';
-      return { ok: true, text: `「${jobWishLabel(st.prefs.jobWish)}」を夢にした。` };
+      return { ok: true, text: `「${jobWishLabel(st.prefs.jobWish, yearOf(p))}」を夢にした。` };
     },
     auto: (_st, rng) => rng.pick(['bigco', 'public', 'self', 'city']),
   },
@@ -227,6 +254,8 @@ export const DECISIONS: DecisionDef[] = [
     prompt: '15歳。中学を出たら、どうしたい？',
     evidence: (p) => {
       const y = yearOf(p);
+      if (y < 1873) return `${y}年。高校にあたるのは、藩校や私塾で学問を続けること（目安で${sexWord(p)}の${pct(S.eduRate('highSchool', y, p.sex))}）。ほとんどの子は奉公に出るか、家の仕事を手伝った。`;
+      if (y < 1890) return `${y}年。中学校に進むのは、${sexWord(p)}の${pct(S.eduRate('highSchool', y, p.sex))}（目安）。多くの子は小学校を終えると働いた。`;
       return `${y}年の${y < 1948 ? '中学校・高等女学校への進学率' : '高校進学率'}は${sexWord(p)}${pct(S.eduRate('highSchool', y, p.sex))}。${S.newGradRatio('middle', y) !== undefined ? `中卒の就職は求人倍率${S.newGradRatio('middle', y)!.toFixed(1)}倍。` : y >= 1963 ? `中卒の就職は有効求人倍率${S.jobOpenings(y).toFixed(2)}倍。` : ''}`;
     },
     options: [
@@ -237,23 +266,37 @@ export const DECISIONS: DecisionDef[] = [
       const y = yearOf(p);
       p.edu = 'middle';
       const rate = S.eduRate('highSchool', y, p.sex) / 100;
-      const school = y < 1948 ? (p.sex === 'male' ? '旧制中学' : '高等女学校') : '高校';
+      const school = y < 1873 ? (p.flags.includes('samurai_family') ? '藩校' : '私塾') : y < 1886 ? (p.sex === 'male' ? '中学校' : '女学校') : y < 1948 ? (p.sex === 'male' ? '旧制中学' : '高等女学校') : '高校';
+      if (y < 1873 && opt === 'go' && p.sex === 'female') {
+        // 江戸の女子：学問を続ける場はごく少ない。裁縫や行儀の稽古（目安）
+        if (rng.chance(0.15 + p.familyClass * 0.05)) {
+          p.stats.knowledge = Math.min(100, p.stats.knowledge + 3);
+          p.flags.push('lesson_sewing');
+          findJob(st, p, rng, y, 'middle');
+          return { ok: true, text: '裁縫や行儀の稽古に通いながら、家の仕事を手伝った。女の子が学問を続ける場は、ごく少なかった。' };
+        }
+        p.wishes.push({ age: 15, wish: '学問を続けること', result: '働いた', ok: false });
+        findJob(st, p, rng, y, 'middle');
+        return { ok: false, text: '学問を続けたかったが、女の子が学ぶ場は、ほとんどなかった。' };
+      }
       if (opt === 'go') {
         // ほとんど全員が進学する時代は、望めばほぼ進める（定時制・通信制も含む）
         const prob = p.flags.includes('elite_middle') ? 0.97 : Math.max(wishProb(rate, p), rate > 0.95 ? 0.995 : 0);
         if (rng.chance(prob)) {
           p.inSchool = 'high';
           p.stats.knowledge = Math.min(100, p.stats.knowledge + 5);
-          const note = rate < 0.6 ? `同じ年の${sexWord(p)}で${school}に進んだのは${pct(rate * 100)}だった。` : rate > 0.9 ? 'ほとんどの同級生が高校に進んだ。' : '';
+          const note = y < 1873 ? `同じ年の${sexWord(p)}で、藩校や私塾で学び続けたのは約${pct(rate * 100)}（推計）だった。` : rate < 0.6 ? `同じ年の${sexWord(p)}で${school}に進んだのは${pct(rate * 100)}だった。` : rate > 0.9 ? 'ほとんどの同級生が高校に進んだ。' : '';
           return { ok: true, text: `${school}に進んだ。${note}` };
         }
-        p.wishes.push({ age: 15, wish: '高校進学', result: '中学を出て就職', ok: false });
+        p.wishes.push({ age: 15, wish: y < 1873 ? '学問を続けること' : '高校進学', result: y < 1873 ? '奉公や家の仕事' : '中学を出て就職', ok: false });
         findJob(st, p, rng, y, 'middle');
         const why = rate > 0.9 ? '体を壊して受験できず' : p.familyClass <= 2 ? '家計を助けるため' : '家の事情で';
+        if (y < 1873) return { ok: false, text: `${school}で学び続けたかったが、${why}働くことになった。` };
         return { ok: false, text: `${school}に行きたかったが、${why}働くことになった。この年の${y < 1948 ? '中学校・高等女学校への進学率' : '高校進学率'}は${pct(rate * 100)}だった。` };
       }
       findJob(st, p, rng, y, 'middle');
-      return { ok: true, text: rate > 0.9 ? `中学を出て働き始めた。同級生のほとんどは高校に進んだ（進学率${pct(rate * 100)}）。` : `中学を出て働き始めた。` };
+      if (y < 1873) return { ok: true, text: '学問はここまでにして、働き始めた。' };
+      return { ok: true, text: rate > 0.9 ? `中学を出て働き始めた。同級生のほとんどは高校に進んだ（進学率${pct(rate * 100)}）。` : y < 1948 ? '学校を終えて働き始めた。' : `中学を出て働き始めた。` };
     },
     auto: () => 'go',
   },
@@ -274,12 +317,14 @@ export const DECISIONS: DecisionDef[] = [
       const y = yearOf(p);
       const rich = p.familyClass >= 3 || p.job !== null;
       if (opt === 'music') {
+        if (y < 1925) return { ok: true, text: '祭りの囃子や、門付け（家々を回る芸人）の三味線に聞きほれた。音楽は、その場で聴くものだった。' };
         if (y < 1955) return { ok: true, text: '家のラジオで流行歌を聴いた。自分だけの機械など、考えられなかった。' };
         if (y < 1979) return { ok: rich, text: rich ? 'トランジスタラジオを手に入れた。' : 'ラジオは家に1台だけだった。' };
         if (y < 2001) return { ok: true, text: 'ヘッドホンステレオを手に入れ、どこでも音楽を聴いた。' };
         return { ok: true, text: 'スマートフォンで、聴き放題の音楽を聴いた。' };
       }
       if (opt === 'phone') {
+        if (y < 1890) return { ok: false, text: '電話というものは、まだなかった。遠くの人への知らせは、手紙や人づてだった。' };
         if (y < 1985) return { ok: false, text: '自分専用の電話など、なかった。電話は家に1台、または近所で借りるものだった。' };
         if (y < 1995) {
           const ok = rich && rng.chance(0.4);
@@ -295,6 +340,7 @@ export const DECISIONS: DecisionDef[] = [
         if (!ok) return { ok, text: 'ゲームは買ってもらえなかった。友だちの家で遊ばせてもらった。' };
         return { ok, text: y < 2000 ? '家庭用ゲーム機を手に入れた。' : 'ゲームを買って、友だちとオンラインで遊んだ。' };
       }
+      if (y < 1900) return { ok: false, text: '自転車はまだ珍しく、どこへ行くにも歩いた。遠くへは、駕籠や馬、舟を使った。' };
       if (y < 1960) return { ok: rich, text: rich ? '中古の自転車を手に入れた。' : '自転車は家の仕事に使う大事な道具だった。' };
       return { ok: true, text: y < 1990 ? 'オートバイの免許をとった。' : '自転車で、遠くの町まで出かけた。' };
     },
@@ -310,6 +356,8 @@ export const DECISIONS: DecisionDef[] = [
     relevant: (p) => p.inSchool === 'high',
     evidence: (p) => {
       const y = yearOf(p);
+      if (y < 1877) return `${y}年。大学にあたるのは、江戸や大坂、長崎の名高い塾や学問所への遊学（ごく少数）。短大・専門学校にあたるのは、医術や算術などの専門の塾。`;
+      if (y < 1890) return `${y}年。東京大学（1877年）など、高等教育を受けるのは${sexWord(p)}の${pct1(S.eduRate('university', y, p.sex))}ほど（目安）。`;
       return `${y}年の大学進学率は${sexWord(p)}${pct(S.eduRate('university', y, p.sex))}、短大は${pct(S.eduRate('juniorCollege', y, p.sex))}。入試は${entranceExam(y)}。`;
     },
     options: [
@@ -329,8 +377,21 @@ export const DECISIONS: DecisionDef[] = [
       const kind = opt === 'univ' ? 'university' : 'juniorCollege';
       const rate = S.eduRate(kind, y, p.sex);
       const cond = Math.min(0.95, rate / hs);
-      const prob = wishProb(cond, p, 0.4);
-      const label = opt === 'univ' ? '大学' : '短大';
+      // 江戸・明治の初めは、高等の学びに進む道がさらに狭い（目安：上乗せをしない）
+      const prob = wishProb(cond, p, y < 1890 ? -0.4 : 0.4);
+      const label = y < 1877 ? (opt === 'univ' ? '遊学' : '専門の塾') : y < 1950 ? (opt === 'univ' ? '高等教育' : '専門学校') : opt === 'univ' ? '大学' : '短大';
+      if (y < 1890) {
+        // 江戸・明治前半：遊学や高等教育は、ごく一部（目安）
+        if (rng.chance(prob)) {
+          p.inSchool = opt === 'univ' ? 'univ' : 'junior';
+          p.stats.knowledge = Math.min(100, p.stats.knowledge + 8);
+          if (!S.METRO.has(p.pref)) p.movedToCity = true;
+          return { ok: true, text: y < 1877 ? (opt === 'univ' ? '江戸や大坂の名高い塾に遊学し、学問を深めた。' : '医術の塾に入り、医者の見習いになった。') : opt === 'univ' ? '東京に出て、高等教育を受けた。' : '専門の学校に入った。' };
+        }
+        p.wishes.push({ age: 18, wish: label, result: '働いた', ok: false });
+        findJob(st, p, rng, y, 'high');
+        return { ok: false, text: `${label}を望んだが、${p.familyClass <= 3 ? '家にその余裕はなかった' : 'その道は狭かった'}。働き始めた。` };
+      }
       if (rng.chance(prob)) {
         p.inSchool = opt === 'univ' ? 'univ' : 'junior';
         p.stats.knowledge = Math.min(100, p.stats.knowledge + 6);
@@ -384,6 +445,7 @@ export const DECISIONS: DecisionDef[] = [
       if (opt === 'yes') {
         st.prefs.smoke = true;
         p.flags.push('smoker');
+        if (y < 1900) return { ok: true, text: 'キセルで刻み煙草を吸い始めた。煙草入れを腰に下げるのが、大人のしるしだった。' };
         return { ok: true, text: y < 1975 ? 'タバコを吸い始めた。職場でも汽車の中でも、みんな吸っていた。' : y < 2003 ? 'タバコを吸い始めた。' : 'タバコを吸い始めた。吸える場所はどんどん減っていた。' };
       }
       // 吸わないと決めたら、そのあとの出来事で吸い始めることはない
@@ -393,6 +455,7 @@ export const DECISIONS: DecisionDef[] = [
         st.prefs.smoke = false;
         return { ok: true, text: '覚えたばかりのタバコを、やめると決めた。' };
       }
+      if (y < 1900 && p.sex === 'male') return { ok: true, text: '吸わなかった。周りの大人たちは、休むたびにキセルをくゆらせていた。' };
       if (y < 1980 && p.sex === 'male') {
         p.stats.health = Math.max(0, p.stats.health - 2);
         return { ok: true, text: '吸わなかった。それでも、職場も家もタバコの煙でいっぱいだった。' };
@@ -409,10 +472,11 @@ export const DECISIONS: DecisionDef[] = [
     prompt: '20歳。結婚について、どう考える？',
     evidence: (p) => {
       const y = yearOf(p);
+      if (y < 1935) return `${y}年ごろ、結婚相手は親や仲人が決めるのが当たり前だった。初婚年齢は${p.sex === 'male' ? '男性' : '女性'}${S.meanMarriageAge(y, p.sex).toFixed(1)}歳ほど（${y < 1899 ? '推計' : '目安'}）。`;
       return `${y}年ごろ、見合い結婚は${pct(arrShare(y) * 100)}。平均初婚年齢は${p.sex === 'male' ? '男性' : '女性'}${S.meanMarriageAge(y, p.sex).toFixed(1)}歳。`;
     },
     options: [
-      { id: 'arranged', label: '見合いでもいい。早く結婚したい' },
+      { id: 'arranged', label: '見合い（親の決めた相手）でもいい。早く結婚したい' },
       { id: 'love', label: '好きな人と結婚したい' },
       { id: 'no', label: '結婚しなくてもいい' },
     ],
@@ -424,6 +488,10 @@ export const DECISIONS: DecisionDef[] = [
         return { ok: true, text: never < 5 ? `結婚しないと決めた。ただ、この世代は50歳までに${pct(100 - never)}が結婚する。周りの目は厳しかった。` : '結婚しなくてもいいと思った。' };
       }
       const share = pct(arrShare(y) * 100);
+      if (y < 1935) {
+        if (opt === 'arranged') return { ok: true, text: '親の決めた相手でいいと思った。それが当たり前の時代だった。' };
+        return { ok: true, text: '好きな人と結婚したいと思った。ただ、家と家の結びつきである結婚は、親や仲人が決めるのが当たり前だった。' };
+      }
       if (opt === 'arranged') {
         return { ok: true, text: y < 1965 ? `見合いでもいいと思った。見合い結婚が当たり前の時代だった（見合い${share}）。` : y < 1995 ? `見合いでもいいと思った。周りでは恋愛結婚が増えていた（見合い${share}）。` : `見合いでもいいと思った。見合い結婚は${share}まで減り、結婚相談所やアプリで相手を探す人もいた。` };
       }
@@ -439,7 +507,12 @@ export const DECISIONS: DecisionDef[] = [
     prompt: '21歳。生まれた県を出て、東京や大阪で暮らしたい？',
     applies: (st) => st.persons.some((p) => p.alive && !p.movedToCity),
     relevant: (p) => !p.movedToCity,
-    evidence: (p) => `${yearOf(p)}年。${S.PREFS[p.pref - 1]}から大都市圏へ。`,
+    evidence: (p) => {
+      const y = yearOf(p);
+      const west = p.pref >= 25 && p.pref !== 47;
+      if (isEdo(y)) return `${y}年。${S.placeName(p.pref, y)}から${west ? '大坂' : '江戸'}へ。村を出るには、通行手形と、村や家の許しが要った。`;
+      return `${y}年。${S.placeName(p.pref, y)}から大都市圏へ。`;
+    },
     options: [
       {
         id: 'go',
@@ -451,6 +524,10 @@ export const DECISIONS: DecisionDef[] = [
     resolve: (p, opt, _st, rng) => {
       const y = yearOf(p);
       if (opt === 'stay') return { ok: true, text: '地元に残った。' };
+      if (p.flags.includes('samurai_heir') && isEdo(y)) {
+        p.wishes.push({ age: 21, wish: '国を出ること', result: '家督を継ぐため残った', ok: false });
+        return { ok: false, text: '国を出たかったが、武士が勝手に藩を離れることは許されなかった（脱藩は重い罪だった）。' };
+      }
       if (p.job === 'farm' && p.flags.includes('heir') && y < 1970) {
         p.wishes.push({ age: 21, wish: '上京', result: '家を継ぐため地元に残った', ok: false });
         return { ok: false, text: '都会に出たかったが、家と田畑を守るために残った。' };
@@ -462,10 +539,17 @@ export const DECISIONS: DecisionDef[] = [
         p.job = 'smallco';
         p.jobTitle = '中小企業の勤め人';
       }
+      const west = p.pref >= 25 && p.pref !== 47;
       const t =
         okinawa
           ? 'アメリカの統治下にあった沖縄から、渡航の証明書を持って本土へ渡った。'
-          : y < 1975
+          : isEdo(y)
+            ? `通行手形を手に、何日も歩いて${west ? '大坂' : '江戸'}へ出た。出稼ぎや奉公の口を探した。`
+            : y < 1889
+              ? `何日もかけて${west ? '大阪' : '東京'}へ出た。${y >= 1872 ? '途中から、開通したばかりの汽車や汽船に乗った。' : ''}`
+              : y < 1930
+                ? `汽車に乗って${west ? '大阪' : '東京'}へ出た。`
+                : y < 1975
             ? '夜行列車に乗って都会に出た。高度成長のさなかだった。'
             : y < 2000
               ? '都会に出て、狭いアパートで一人暮らしを始めた。'
@@ -485,6 +569,8 @@ export const DECISIONS: DecisionDef[] = [
     prompt: '23歳。海外に行ってみたい？',
     evidence: (p) => {
       const y = yearOf(p);
+      if (y < 1866) return `${y}年。日本人が海外へ渡ることは禁じられていた（いわゆる鎖国。海外渡航が許されたのは1866年）。`;
+      if (y < 1949) return `${y}年。海外へ渡るのは、留学や仕事、移民など、限られた人だった。`;
       return y < 1964 ? `${y}年。観光のための海外渡航は、まだ自由化されていない（自由化は1964年）。1ドル＝360円。` : y < 1971 ? `${y}年。1ドル＝360円の固定相場。海外旅行は高嶺の花。` : y < 2020 ? `${y}年。` : y < 2023 ? `${y}年。新型コロナウイルスの感染拡大で、海外との行き来が制限された。` : `${y}年。`;
     },
     options: [
@@ -496,13 +582,17 @@ export const DECISIONS: DecisionDef[] = [
       {
         id: 'travel',
         label: '海外旅行に行きたい',
-        available: (p) => (yearOf(p) < 1964 ? { ok: false, reason: '観光での海外渡航は1964年まで自由化されていない' } : { ok: true }),
+        available: (p) => (yearOf(p) < 1866 ? { ok: false, reason: '日本人が国を出ることは禁じられていた' } : yearOf(p) < 1964 ? { ok: false, reason: '観光での海外渡航は1964年まで自由化されていない' } : { ok: true }),
       },
       { id: 'stay', label: '国内で十分' },
     ],
     resolve: (p, opt, _st, rng) => {
       const y = yearOf(p);
       if (opt === 'stay') return { ok: true, text: '国内で十分だと思った。' };
+      if (y < 1866) {
+        p.wishes.push({ age: 23, wish: opt === 'study' ? '海外で学ぶこと' : '海の外を見ること', result: '国を出ることは禁じられていた', ok: false });
+        return { ok: false, text: '海の向こうを見てみたかったが、日本人が国を出ることは禁じられていた。' };
+      }
       if (y >= 2020 && y <= 2022) {
         p.wishes.push({ age: 23, wish: opt === 'study' ? '留学' : '海外旅行', result: '感染拡大で行けなかった', ok: false });
         return { ok: false, text: '行きたかったが、新型コロナウイルスの感染拡大で、海外へはほとんど行けなかった。' };
@@ -541,8 +631,12 @@ export const DECISIONS: DecisionDef[] = [
     ],
     resolve: (p, opt, _st, rng) => {
       const y = yearOf(p);
-      if (opt === 'no') return { ok: true, text: S.METRO.has(p.pref) || p.movedToCity ? '電車があれば十分だった。' : '車がなくても、なんとか暮らせた。' };
+      if (opt === 'no') return { ok: true, text: y < 1910 ? 'どこへ行くにも歩くのが当たり前だった。' : S.METRO.has(p.pref) || p.movedToCity ? '電車があれば十分だった。' : '車がなくても、なんとか暮らせた。' };
       const w = S.annualWage(y, 25, p.sex, p.edu);
+      if (y < 1910) {
+        p.wishes.push({ age: 25, wish: '車', result: '自動車がなかった', ok: false });
+        return { ok: false, text: y < 1870 ? '車といえば、荷を運ぶ大八車のことだった。人は歩くか、駕籠や馬に乗った。' : '自動車は、日本ではまだほとんど見かけなかった。町では人力車が走っていた。' };
+      }
       if (y < 1960) {
         p.wishes.push({ age: 25, wish: '車', result: '買えなかった', ok: false });
         return { ok: false, text: '車は、まだ会社や金持ちのものだった。自家用車を持つ人はわずかだった。' };
@@ -561,7 +655,12 @@ export const DECISIONS: DecisionDef[] = [
     age: 27,
     title: '子ども',
     prompt: '27歳。子どもは何人ほしい？',
-    evidence: (p) => `${yearOf(p)}年ごろ、夫婦の最終的な子どもの数は平均${yearOf(p) < 1960 ? '3人前後' : '2人前後'}（出生動向基本調査）。${p.married ? '' : '（まだ結婚していない）'}`,
+    evidence: (p) => {
+      const y = yearOf(p);
+      const cf = S.completedFertility(y);
+      if (y < 1940) return `${y}年ごろ、結婚した女性が一生に産む子どもは${cf ? `${cf.toFixed(1)}人ほど` : '4〜5人ほど'}（${y < 1890 ? '推計' : '目安'}）。1歳を迎えられない子も多かった。${p.married ? '' : '（まだ結婚していない）'}`;
+      return `${y}年ごろ、夫婦の最終的な子どもの数は平均${y < 1960 ? '3人前後' : '2人前後'}（出生動向基本調査）。${p.married ? '' : '（まだ結婚していない）'}`;
+    },
     options: [
       { id: '0', label: '子どもはいなくてもいい' },
       { id: '1', label: '1人' },
@@ -573,6 +672,10 @@ export const DECISIONS: DecisionDef[] = [
       st.prefs.childrenWish = n;
       p.wantChildren = Math.max(n, p.children.length);
       const y = yearOf(p);
+      if (y < 1900) {
+        if (n === 0) return { ok: true, text: '子どもはいなくてもいいと思った。ただ、家を継ぐ子がいなければ、養子をとるのが当たり前だった。' };
+        return { ok: true, text: n === 4 ? '子どもはたくさんほしいと思った。子は家の働き手で、跡取りでもあった。' : `子どもは${n}人ほしいと思った。` };
+      }
       if (n === 0) return { ok: true, text: y < 1970 ? '子どもはいなくてもいいと思った。ただ、周りからは「まだか」と何度も聞かれた。' : y < 2000 ? '子どもはいなくてもいいと思った。まだ少数派の考えだった。' : '子どもはいなくてもいいと思った。子どもを持たない夫婦も増えていた。' };
       if (n === 4) return { ok: true, text: y < 1960 ? '子どもは3人以上ほしいと思った。きょうだいが多いのは珍しくなかった。' : y < 2000 ? '子どもは3人以上ほしいと思った。2人が当たり前と言われる中では、多いほうだった。' : '子どもは3人以上ほしいと思った。教育費を考えると、思い切った望みだった。' };
       return { ok: true, text: `子どもは${n}人ほしいと思った。${y >= 2000 && n >= 2 ? '保育園に入れるかが心配だった。' : ''}` };
@@ -587,6 +690,7 @@ export const DECISIONS: DecisionDef[] = [
     prompt: '29歳。子育てと仕事、どちらを大事にしたい？',
     evidence: (p) => {
       const y = yearOf(p);
+      if (y < 1900) return `${y}年。家の仕事は、家族みんなで担うものだった。${p.sex === 'female' ? '女性も田畑や機織り、店の仕事をしながら子を育てた。' : ''}`;
       return y < 1986 ? `${y}年。男女雇用機会均等法（1986年施行）の前。` : y < 1992 ? `${y}年。育児休業法（1992年施行）の前。` : `${y}年。`;
     },
     options: [
@@ -596,6 +700,17 @@ export const DECISIONS: DecisionDef[] = [
     resolve: (p, opt, st, rng) => {
       st.prefs.keepWorking = opt === 'keep';
       const y = yearOf(p);
+      if (y < 1900) {
+        if (p.sex === 'male') return { ok: true, text: opt === 'home' ? '家にいる時間を大事にした。仕事場と家が同じ家も多かった。' : '仕事に打ちこんだ。' };
+        if (opt === 'keep') {
+          if (p.job === 'none') {
+            startWork(p, 'self', '内職を始めた', y, '機織りや針仕事の内職を始めた。');
+            return { ok: true, text: '子を背負いながら、機織りや針仕事の内職で家計を支えた。' };
+          }
+          return { ok: true, text: '子を背負いながら、仕事を続けた。' };
+        }
+        return { ok: true, text: '子育てと家の仕事を優先した。' };
+      }
       if (p.sex === 'male') {
         if (opt === 'home') {
           if (y < 2010) return { ok: false, text: '家庭を大事にしたかったが、職場では「男は仕事」が当たり前で、帰りはいつも遅かった。' };
@@ -625,7 +740,12 @@ export const DECISIONS: DecisionDef[] = [
     age: 33,
     title: '住まい',
     prompt: '33歳。家を買う？',
-    evidence: (p) => `${yearOf(p)}年。定期預金の金利はおよそ${S.interp({ '1960': 5.5, '1975': 6.5, '1985': 4.5, '1995': 0.5, '2000': 0.05 }, yearOf(p))?.toFixed(1)}%（目安）。`,
+    evidence: (p) => {
+      const y = yearOf(p);
+      if (y < 1900) return `${y}年。${S.METRO.has(p.pref) || p.movedToCity ? '町では、長屋や借家に住むのがふつうだった。' : '村では、家は代々受け継ぐものだった。'}`;
+      if (y < 1955) return `${y}年。借家に住む人が多かった（目安）。`;
+      return `${y}年。定期預金の金利はおよそ${S.interp({ '1960': 5.5, '1975': 6.5, '1985': 4.5, '1995': 0.5, '2000': 0.05 }, y)?.toFixed(1)}%（目安）。`;
+    },
     options: [
       { id: 'buy', label: '家を買いたい' },
       { id: 'rent', label: '賃貸でいい' },
@@ -634,7 +754,7 @@ export const DECISIONS: DecisionDef[] = [
     resolve: (p, opt, _st, rng) => {
       const y = yearOf(p);
       const w = S.annualWage(y, 33, p.sex, p.edu) * (p.married ? 1.3 : 1);
-      if (opt === 'rent') return { ok: true, text: y < 1975 ? '公団の団地に申し込み、抽選に当たった。' : '賃貸で暮らした。' };
+      if (opt === 'rent') return { ok: true, text: y < 1900 ? (S.METRO.has(p.pref) || p.movedToCity ? '長屋を借りて暮らした。井戸も便所も、長屋の皆で使った。' : '借家で暮らした。') : y < 1955 ? '借家で暮らした。' : y < 1975 ? '公団の団地に申し込み、抽選に当たった。' : '賃貸で暮らした。' };
       if (opt === 'parents') {
         p.flags.push('three_generations');
         return { ok: true, text: y < 1980 ? '親と同じ家で暮らした。三世代で住むのが珍しくなかった。' : '親と同居した。' };
@@ -646,11 +766,12 @@ export const DECISIONS: DecisionDef[] = [
       const can = p.money > price * 0.1 || rng.chance(0.4 + p.familyClass * 0.1);
       if (!can || p.income === 0) {
         p.wishes.push({ age: 33, wish: '持ち家', result: '買えなかった', ok: false });
-        return { ok: false, text: `家がほしかったが、頭金がたまらなかった。家は年収の${ratio}倍ほどした。` };
+        return { ok: false, text: y < 1900 ? '自分の家を建てたかったが、その蓄えはなかった。' : `家がほしかったが、頭金がたまらなかった。家は年収の${ratio}倍ほどした。` };
       }
       p.money -= price;
       p.flags.push('homeowner');
       p.stats.happiness = Math.min(100, p.stats.happiness + 6);
+      if (y < 1900) return { ok: true, text: '大工に頼んで、家を建てた。棟上げの日には、近所の人が集まって祝ってくれた。' };
       const t = y >= 1987 && y <= 1991 ? `バブルのさなかに、年収の${ratio}倍で家を買った。数年後、値段は大きく下がった。` : y < 1975 ? '郊外に小さな一戸建てを建てた。' : `家を買った。約${man(price)}のローンを組んだ。`;
       return { ok: true, text: t };
     },
@@ -664,7 +785,7 @@ export const DECISIONS: DecisionDef[] = [
     prompt: '38歳。今の仕事を続ける？',
     applies: (st) => st.persons.some((p) => p.alive && p.job !== null && p.job !== 'none'),
     relevant: (p) => p.job !== null && p.job !== 'none',
-    evidence: (p) => (yearOf(p) >= 1963 ? `${yearOf(p)}年の有効求人倍率は${S.jobOpenings(yearOf(p)).toFixed(2)}倍、完全失業率は${pct1(S.unemployment(yearOf(p)))}。` : `${yearOf(p)}年。完全失業率は${pct1(S.unemployment(yearOf(p)))}（有効求人倍率の統計は1963年から）。`),
+    evidence: (p) => (yearOf(p) < 1920 ? `${yearOf(p)}年。${isEdo(yearOf(p)) ? '奉公先を替えたり、暖簾分け（主人の許しを得て独立）で店を持ったりする人がいた。' : '失業や求人の統計は、まだない。'}` : yearOf(p) >= 1963 ? `${yearOf(p)}年の有効求人倍率は${S.jobOpenings(yearOf(p)).toFixed(2)}倍、完全失業率は${pct1(S.unemployment(yearOf(p)))}。` : `${yearOf(p)}年。完全失業率は${pct1(S.unemployment(yearOf(p)))}（有効求人倍率の統計は1963年から）。`),
     options: [
       { id: 'stay', label: '今の仕事を続けたい' },
       { id: 'change', label: '転職したい' },
@@ -673,14 +794,23 @@ export const DECISIONS: DecisionDef[] = [
     resolve: (p, opt, _st, rng) => {
       const y = yearOf(p);
       const jo = S.jobOpenings(y);
-      if (opt === 'stay') return { ok: true, text: y < 1990 && p.job === 'bigco' ? '定年まで勤めるつもりだった。終身雇用が当たり前だった。' : '今の仕事を続けた。' };
+      if (opt === 'stay') return { ok: true, text: y < 1890 ? '今の仕事を続けた。' : y < 1990 && p.job === 'bigco' ? '定年まで勤めるつもりだった。終身雇用が当たり前だった。' : '今の仕事を続けた。' };
+      if (isEdo(y) && p.job === 'public') {
+        p.wishes.push({ age: 38, wish: opt === 'change' ? '仕事を替えること' : '独立', result: '武士の身分は捨てられなかった', ok: false });
+        return { ok: false, text: '役目を替えたいと思ったが、武士の役目は家の格で決まっていた。' };
+      }
+      if (y < 1890 && opt === 'start' && p.job === 'bigco' && rng.chance(0.5)) {
+        p.job = 'self';
+        p.jobTitle = jobLabelAt('self', y);
+        return { ok: true, text: '長年の奉公が認められ、暖簾分け（主人の許しを得て同じ屋号で独立すること）で自分の店を持った。' };
+      }
       if (opt === 'change') {
         const ok = rng.chance(Math.min(0.85, 0.25 + jo * 0.3));
         if (ok) {
           p.flags = p.flags.filter((f) => f !== 'part_time');
           p.job = rng.chance(0.3) ? 'bigco' : 'smallco';
-          p.jobTitle = p.job === 'bigco' ? '大企業の勤め人' : '中小企業の勤め人';
-          return { ok: true, text: y < 1990 ? '転職した。中途で入るのは、まだ珍しかった。' : '転職した。' };
+          p.jobTitle = jobLabelAt(p.job, y);
+          return { ok: true, text: y < 1890 ? '別の店に移った。' : y < 1990 ? '転職した。中途で入るのは、まだ珍しかった。' : '転職した。' };
         }
         p.wishes.push({ age: 38, wish: '転職', result: '見つからなかった', ok: false });
         return { ok: false, text: `転職したかったが、よい仕事は見つからなかった${y >= 1963 ? `（有効求人倍率${jo.toFixed(2)}倍）` : ''}。` };
@@ -688,9 +818,9 @@ export const DECISIONS: DecisionDef[] = [
       const ok = rng.chance(0.3 + p.stats.knowledge / 300);
       if (ok) {
         p.job = 'self';
-        p.jobTitle = '自営業';
+        p.jobTitle = y < 1890 ? jobLabelAt('self', y) : '自営業';
         p.flags = p.flags.filter((f) => f !== 'part_time');
-        return { ok: true, text: '独立して、自分の事業を始めた。' };
+        return { ok: true, text: y < 1890 ? '独立して、小さな商いを始めた。' : '独立して、自分の事業を始めた。' };
       }
       p.money *= 0.7;
       return { ok: false, text: '独立したが、うまくいかず、また勤めに出た。' };
@@ -705,6 +835,8 @@ export const DECISIONS: DecisionDef[] = [
     prompt: '45歳。たまったお金を、どうする？',
     evidence: (p) => {
       const y = yearOf(p);
+      if (y < 1873) return `${y}年。銀行はまだない（日本で最初の銀行は1873年）。お金は両替商に預けるか、家にしまっておいた。`;
+      if (y < 1900) return `${y}年。銀行ができ始めたころ。`;
       return `${y}年。定期預金の金利はおよそ${S.interp({ '1960': 5.5, '1975': 6.5, '1985': 4.5, '1995': 0.5, '2000': 0.05 }, y)?.toFixed(2)}%（目安）。`;
     },
     options: [
@@ -715,6 +847,15 @@ export const DECISIONS: DecisionDef[] = [
     resolve: (p, opt, st) => {
       st.prefs.invest = opt as 'save' | 'stock' | 'spend';
       const y = yearOf(p);
+      if (y < 1890) {
+        if (opt === 'spend') {
+          p.stats.happiness = Math.min(100, p.stats.happiness + 8);
+          p.money *= 0.8;
+          return { ok: true, text: '講（仲間で旅費を積み立てる集まり）の仲間と、お伊勢参りに出かけた。一生に一度の旅だった。' };
+        }
+        if (opt === 'save') return { ok: true, text: y < 1873 ? 'お金は両替商に預け、残りは壺に入れて床下にしまった。' : '開業したばかりの銀行に預けてみた。' };
+        return { ok: true, text: isEdo(y) ? '米の相場に手を出した。大坂の堂島では、米の先物の取引が行われていた。' : '株を買ってみた。株式の取引所は1878年にできたばかりだった。' };
+      }
       if (opt === 'spend') {
         p.stats.happiness = Math.min(100, p.stats.happiness + 8);
         p.money *= 0.8;
@@ -737,7 +878,7 @@ export const DECISIONS: DecisionDef[] = [
     prompt: '52歳。年老いた親の世話を、どうする？',
     applies: (st) => st.persons.some((p) => p.alive && (p.fatherAlive || p.motherAlive)),
     relevant: (p) => p.fatherAlive || p.motherAlive,
-    evidence: (p) => (yearOf(p) < 2000 ? `${yearOf(p)}年。介護保険（2000年）はまだない。` : `${yearOf(p)}年。介護保険で、ヘルパーや施設を使える。`),
+    evidence: (p) => (yearOf(p) < 1900 ? `${yearOf(p)}年。年老いた親は、家で家族が看るのが当たり前だった。` : yearOf(p) < 2000 ? `${yearOf(p)}年。介護保険（2000年）はまだない。` : `${yearOf(p)}年。介護保険で、ヘルパーや施設を使える。`),
     options: [
       { id: 'home', label: '自分で看る' },
       { id: 'facility', label: '施設やヘルパーに頼みたい' },
@@ -745,6 +886,11 @@ export const DECISIONS: DecisionDef[] = [
     ],
     resolve: (p, opt, _st, rng) => {
       const y = yearOf(p);
+      if (opt === 'facility' && y < 1900) {
+        p.stats.health = Math.max(0, p.stats.health - 4);
+        p.wishes.push({ age: 52, wish: '人の手を借りた介護', result: '家で看た', ok: false });
+        return { ok: false, text: '人の手を借りたかったが、年寄りを預ける場所はなかった。家で看た。' };
+      }
       if (opt === 'facility') {
         if (y < 2000 && !rng.chance(0.25)) {
           p.stats.health = Math.max(0, p.stats.health - 4);
@@ -771,15 +917,17 @@ export const DECISIONS: DecisionDef[] = [
     prompt: '58歳。定年のあとも働く？',
     evidence: (p) => {
       const y = yearOf(p);
+      if (y < 1920) return `${y}年。定年の仕組みはまだ広まっておらず、家督や店を跡継ぎに譲って隠居するのが一般的だった。`;
       return y < 1986 ? `${y}年。定年は55歳が多かった（目安）。` : y < 2006 ? `${y}年。60歳定年が広がっていた（1998年から60歳未満の定年は禁止）。` : `${y}年。65歳までの雇用確保が企業の義務（2006年から）。`;
     },
     options: [
       { id: 'continue', label: '体が動くうちは働きたい' },
-      { id: 'retire', label: '定年で辞めて、のんびりしたい' },
+      { id: 'retire', label: '定年（隠居）で退いて、のんびりしたい' },
     ],
     resolve: (p, opt, st) => {
       st.prefs.retireAt = opt === 'continue' ? 65 : 55;
       const y = yearOf(p);
+      if (y < 1920) return { ok: true, text: opt === 'continue' ? '体が動くうちは、仕事を続けるつもりだった。' : '跡継ぎに家を任せ、早めに隠居するつもりだった。' };
       if (opt === 'continue') return { ok: true, text: y < 1986 ? '55歳の定年のあとも、関連会社で働くつもりだった。' : y < 2006 ? '60歳の定年のあとも、嘱託として働くつもりだった。' : y <= 2026 ? '65歳まで、再雇用で働くつもりだった。' : '70歳まで働くつもりだった。そうする人は珍しくなくなっていた（見通し）。' };
       return { ok: true, text: y < 1986 ? '55歳の定年で辞め、のんびり暮らすと決めた。年金が出るまでの数年は、貯金で暮らす。' : y < 2006 ? '60歳の定年で辞めると決めた。' : '定年で辞めると決めた。年金が出るまでの暮らし方を考えた。' };
     },
@@ -791,8 +939,8 @@ export const DECISIONS: DecisionDef[] = [
     age: 59,
     title: '年金の受け取り方',
     prompt: '59歳。年金は、いつから受け取る？',
-    applies: (st) => st.persons.some((p) => p.alive && p.pensionStartAge === undefined),
-    relevant: (p) => p.pensionStartAge === undefined,
+    applies: (st) => st.persons.some((p) => p.alive && p.pensionStartAge === undefined && hasPension(p)),
+    relevant: (p) => p.pensionStartAge === undefined && hasPension(p),
     evidence: (p) => `この人の厚生年金の支給開始は${S.pensionStartAge(p.birthYear, p.birthMonth, p.sex)}歳（生まれた日で決まる）。`,
     options: [
       { id: 'early', label: 'なるべく早く（減額されてもいい）' },
@@ -825,14 +973,21 @@ export const DECISIONS: DecisionDef[] = [
       const y = yearOf(p);
       p.stats.happiness = Math.min(100, p.stats.happiness + 6);
       if (opt === 'family') return { ok: true, text: p.children.length ? '孫の顔を見るのが楽しみになった。' : '近くに住む親戚と過ごす時間が増えた。' };
+      if (y < 1900) return { ok: true, text: opt === 'write' ? '筆をとり、自分の来し方（これまでの人生）を書き留めた。' : '俳諧や盆栽、寺社参りを楽しんだ。' };
       if (opt === 'write') return { ok: true, text: y < 2005 ? '原稿用紙に、自分の生きてきた道を書いた。' : y < 2040 ? 'パソコンで、自分史を書いた。' : '声で話すだけで、自分史がまとまっていった。' };
-      return { ok: true, text: y < 2000 ? 'ゲートボールや盆栽に打ち込んだ。' : y < 2040 ? '旅行や写真に打ち込んだ。' : '新しい趣味を見つけた。' };
+      return { ok: true, text: y < 1960 ? '盆栽や庭いじり、謡（うたい）に打ち込んだ。' : y < 2000 ? 'ゲートボールや盆栽に打ち込んだ。' : y < 2040 ? '旅行や写真に打ち込んだ。' : '新しい趣味を見つけた。' };
     },
     auto: (_st, rng) => rng.pick(['hobby', 'family', 'write']),
   },
 ];
 
+/** 保険料を納めて受け取る年金の対象か（1911年4月2日以降の生まれ。engine の pensionAndRetire と同じ境目） */
+function hasPension(p: Person): boolean {
+  return (p.birthMonth >= 4 ? p.birthYear : p.birthYear - 1) >= 1911;
+}
+
 function arrShare(year: number): number {
+  if (year < 1935) return Math.min(0.9, 0.69 + (1935 - year) * 0.004);
   return (
     (S.interp({ '1935': 69.0, '1955': 53.9, '1967': 44.9, '1975': 30.4, '1985': 17.7, '1995': 9.6, '2005': 6.4, '2015': 5.3, '2022': 8.9 }, year) ?? 10) / 100
   );
@@ -850,7 +1005,7 @@ function irrelevantReason(id: string, p: Person): string {
   if (id === 'city') return 'この人はもう都会で暮らしているので、この決断はない。';
   if (id === 'career') return 'この人はいま勤めに出ていないので、この決断はない。';
   if (id === 'care') return 'この人の両親はもう亡くなっているので、この決断はない。';
-  if (id === 'pensiontiming') return 'この人はもう年金を受け取っているので、この決断はない。';
+  if (id === 'pensiontiming') return hasPension(p) ? 'この人はもう年金を受け取っているので、この決断はない。' : 'この人の世代は、保険料を納めて受け取る年金の対象ではないので、この決断はない。';
   return 'この人には、この決断はない。';
 }
 
