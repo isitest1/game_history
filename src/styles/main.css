@@ -4199,3 +4199,25 @@ button {
   max-width: 48em;
   margin: 0 0 8px;
 }
+.site-foot {
+  border-top: 1px solid var(--line);
+  padding: 20px 0 32px;
+  font-size: 13px;
+  color: var(--ink-2, var(--ink));
+}
+.site-foot .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  justify-content: space-between;
+}
+.site-foot a {
+  color: inherit;
+  font-weight: 700;
+}
+.site-foot span {
+  opacity: 0.7;
+}
+.site-foot p {
+  margin: 0;
+}
