@@ -3,7 +3,8 @@
 import type { GameState } from '../sim/engine';
 import { eduLabelOf } from '../sim/engine';
 import * as S from '../sim/stats';
-import { yen } from './format';
+import { eraName, yen } from './format';
+import { oddsText } from './share';
 
 const ERA = [
   { bg: '#efe4cc', ink: '#2a1f14', sub: '#6b5641', acc: '#a63a24', font: '"Shippori Mincho", serif', label: '活版と紙' },
@@ -32,7 +33,7 @@ export async function drawShareCard(c: HTMLCanvasElement, st: GameState, portrai
   g.fillText('同じ私が、三つの時代に生まれた。', 48, 36);
   g.font = '400 18px "Zen Kaku Gothic New", sans-serif';
   g.fillStyle = '#bfb39f';
-  g.fillText(`${st.shared.sex === 'male' ? '男' : '女'}・3つの時代と3つの県　生まれ年ガチャ`, 48, 86);
+  g.fillText(`${st.shared.sex === 'male' ? '男' : '女'}・${st.persons.map((p) => eraName(p.birthYear)).join('・')}${st.gacha.comboProb ? `　この組み合わせは${oddsText(st.gacha.comboProb)}` : ''}　生まれ年ガチャ`, 48, 86);
 
   const colW = (W - 48 * 2 - 24 * 2) / 3;
   st.persons.forEach((p, i) => {
@@ -93,7 +94,7 @@ function drawPortrait(c: HTMLCanvasElement, st: GameState): void {
   g.fillText('三つの時代に生まれた。', 60, 124);
   g.font = '400 28px "Zen Kaku Gothic New", sans-serif';
   g.fillStyle = '#bfb39f';
-  g.fillText(`${st.shared.sex === 'male' ? '男' : '女'}・3つの時代と3つの県　生まれ年ガチャ`, 60, 204);
+  g.fillText(`${st.shared.sex === 'male' ? '男' : '女'}・${st.persons.map((p) => eraName(p.birthYear)).join('・')}${st.gacha.comboProb ? `　${oddsText(st.gacha.comboProb)}` : ''}`, 60, 204);
   st.persons.forEach((p, i) => {
     const e = ERA[i];
     const x = 60;

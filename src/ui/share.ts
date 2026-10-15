@@ -4,6 +4,7 @@
 import type { GameState } from '../sim/engine';
 import { eduLabelOf } from '../sim/engine';
 import * as S from '../sim/stats';
+import { eraName, wareki } from './format';
 
 export const SITE_URL = 'https://umaredoshi.margheritaworks.com/';
 export const HASHTAG = '生まれ年ガチャ';
@@ -53,15 +54,34 @@ export function birthXText(st: GameState): string {
   return `${ys}に、${st.shared.sex === 'male' ? '男の子' : '女の子'}が生まれた。\n同じ私の、三つの人生が始まる。`;
 }
 
-/** 一生を終えたとき */
+/** 確率を「約52億分の1」のように書く（1/確率を丸める） */
+export function oddsText(prob: number | undefined): string {
+  if (!prob || !(prob > 0)) return '';
+  const n = 1 / prob;
+  const round = (v: number) => (v >= 100 ? Math.round(v) : v >= 10 ? Math.round(v) : Math.round(v * 10) / 10);
+  if (n >= 1e12) return `約${round(n / 1e12).toLocaleString('ja-JP')}兆分の1`;
+  if (n >= 1e8) return `約${round(n / 1e8).toLocaleString('ja-JP')}億分の1`;
+  if (n >= 1e4) return `約${round(n / 1e4).toLocaleString('ja-JP')}万分の1`;
+  return `約${Math.round(n).toLocaleString('ja-JP')}分の1`;
+}
+
+/**
+ * 一生を終えたとき。遊んだ人が結果をそのまま投稿したくなるように、
+ * 時代の名前（江戸・昭和・平成など）、元号と生まれた場所、享年と仕事、組み合わせの珍しさを並べる（2026-10-15）
+ */
 export function endXText(st: GameState, okuri?: string): string {
-  const rows = st.persons.map((p) => `${p.birthYear}年・${S.placeShort(p.pref, p.birthYear)}：享年${p.deathAge ?? '−'}${(p.deathAge ?? 99) >= 15 ? `・${eduLabelOf(p)}` : ''}`);
+  const eras = st.persons.map((p) => eraName(p.birthYear)).join('・');
+  const head = `【生まれ年ガチャ】同じ私が、${eras}に生まれた（${sexWord(st)}）`;
+  const rows = st.persons.map((p) => {
+    const what = (p.deathAge ?? 99) >= 15 ? `・${p.jobTitle && p.jobTitle !== '無職' ? p.jobTitle : eduLabelOf(p)}` : '';
+    return `${wareki(p.birthYear)}・${S.placeShort(p.pref, p.birthYear)}：享年${p.deathAge ?? '−'}${what}`;
+  });
+  const odds = oddsText(st.gacha.comboProb);
   const ages = st.persons.map((p) => p.deathAge ?? 0);
   const gap = Math.max(...ages) - Math.min(...ages);
-  const head = `同じ私が、三つの時代に生まれた（${sexWord(st)}）。`;
-  const tail = gap >= 10 ? `寿命の差は${gap}年。人生を分けたのは、生まれた年だった。` : '生まれた年が違うだけで、人生はこう変わった。';
+  const tail = odds ? `この組み合わせは${odds}。` : gap >= 10 ? `寿命の差は${gap}年。` : '';
   const msg = okuri && okuri.trim() ? `\n「${okuri.trim()}」` : '';
-  return `${head}\n${rows.join('\n')}\n${tail}${msg}`;
+  return `${head}\n${rows.join('\n')}\n${tail}人生を分けたのは、生まれた年だった。${msg}`;
 }
 
 /** トップページから */
