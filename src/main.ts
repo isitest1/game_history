@@ -316,7 +316,10 @@ function titleSections(): string {
         <p class="small">1890年より前（江戸後期〜明治の初め）は、国の統計がまだありません。寺の宗門人別改帳を使った歴史人口学の研究、幕府の人口調査、米の値段や賃金の研究などから作った<b>推計</b>で、地域や村によって大きな差があります。江戸時代のお金は、いまの価値に直した目安で示しています。</p>
         <p class="small">2026年より先は、国の将来推計の前提を使った見込みです。詳しくは「使った統計と出典」と、リポジトリの docs/出典一覧.md にあります。</p>
       </div>
-    </section>`;
+    </section>
+    <footer class="site-foot">
+      <div class="wrap"><p>運営：<a href="https://margheritaworks.com/ja" target="_blank" rel="noopener">Margherita Works</a></p><span>© ${new Date().getFullYear()} Margherita Works</span></div>
+    </footer>`;
 }
 
 /** 今日0時からの出生・死亡・婚姻の目安（年間の数を1秒あたりにならす） */
