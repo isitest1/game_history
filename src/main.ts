@@ -511,7 +511,8 @@ let shownAge = 0;
 /** 1年の長さ（ミリ秒）。その年に出る文章の文字数に合わせる。1倍でおよそ読み終わる長さ */
 function yearMs(chars: number): number {
   const pace = PACES.find((x) => x.id === ui.pace) ?? PACES[1];
-  return (2500 + chars * pace.msPerChar) / speed;
+  // 1倍の基準は、2026-10-15にユーザーの指摘「1倍でも少し遅い」で1.2倍に速めた
+  return (2500 + chars * pace.msPerChar) / (speed * 1.2);
 }
 
 async function showLife(): Promise<void> {
