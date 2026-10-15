@@ -49,6 +49,8 @@ export interface GachaInfo {
   middleYearProb: number;
   years: number[];
   birthsInYear: number[];
+  /** この3人の組み合わせ（3つの生まれ年・3つの県・性別）を引く確率 */
+  comboProb?: number;
 }
 
 /** いちばん古い生まれ年 */
@@ -74,10 +76,8 @@ export function createGame(opts: { seed?: number; playerBirthYear?: number | nul
   const youngW = youngYears.map((y) => S.nationalBirths(Math.min(y, 2005)));
   const young = rng.weighted(youngYears, youngW);
   const oldYears = Array.from({ length: young - 60 - OLDEST + 1 }, (_, i) => OLDEST + i);
-  const old = rng.weighted(
-    oldYears,
-    oldYears.map((y) => 0.5 + (0.5 * (y - OLDEST)) / Math.max(1, young - 60 - OLDEST)),
-  );
+  const oldW = oldYears.map((y) => 0.5 + (0.5 * (y - OLDEST)) / Math.max(1, young - 60 - OLDEST));
+  const old = rng.weighted(oldYears, oldW);
   const middle = rng.int(old + 30, young - 30);
   const years = [old, middle, young];
   const mid = years[1];
@@ -153,6 +153,13 @@ export function createGame(opts: { seed?: number; playerBirthYear?: number | nul
       middleYearProb,
       years,
       birthsInYear: years.map((y) => Math.round(S.nationalBirths(y))),
+      // 生まれ年3つ × 県3つ × 性別。共有の文章で「約○億分の1」と出す
+      comboProb:
+        (youngW[youngYears.indexOf(young)] / youngW.reduce((a, b) => a + b, 0)) *
+        (oldW[oldYears.indexOf(old)] / oldW.reduce((a, b) => a + b, 0)) *
+        (1 / (young - 30 - (old + 30) + 1)) *
+        prefPicks.reduce((a, x) => a * x.prob, 1) *
+        (sex === 'male' ? pMale : 1 - pMale),
     },
   };
   return state;
@@ -822,7 +829,8 @@ function marry(state: GameState, p: Person, rng: Rng, year: number): void {
 
 function quit(p: Person, title: string, text: string): void {
   p.job = 'none';
-  p.jobTitle = '専業主婦';
+  // 専業主婦という言葉と暮らし方は近代のもの。それより前は、嫁ぎ先の家の仕事を担った
+  p.jobTitle = yearOf(p) < 1900 ? '家の仕事' : '専業主婦';
   p.income = 0;
   p.flags.push('quit_for_family');
   log(p, 'work', title, text);
