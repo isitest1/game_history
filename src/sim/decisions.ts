@@ -56,6 +56,12 @@ function entranceExam(year: number): string {
 
 const OKINAWA_US = (p: Person, year: number) => p.pref === 47 && year >= 1945 && year < 1972;
 
+/**
+ * プレイヤーに聞く決断。人生の分かれ道になり、時代によって結果がはっきり変わるものだけ（2026-10-15、ユーザーの指摘「質問が多すぎる」で21から10に減らした）。
+ * ほかの決断は、聞かずに自動で決め、記録にだけ残す
+ */
+export const ASKED = new Set(['middle', 'high', 'college', 'marriage', 'city', 'children', 'workfamily', 'house', 'care', 'retire']);
+
 export const DECISIONS: DecisionDef[] = [
   // 1. 気質
   {

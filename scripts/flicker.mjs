@@ -19,7 +19,7 @@ for (const [name, vp] of [
   await page.click('#skip');
   await page.waitForSelector('#go', { timeout: 20000 });
   await page.click('#go');
-  await page.waitForSelector('.cols');
+  await page.waitForSelector('#age');
   const normal = process.env.NORMAL === '1';
   if (!normal) await page.click('#auto');
   await page.evaluate(() => {

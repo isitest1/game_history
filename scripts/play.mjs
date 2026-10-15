@@ -19,7 +19,7 @@ await page.click('#skip');
 await page.waitForSelector('#go', { timeout: 20000 });
 await page.screenshot({ path: `${out}/a_birth.png` });
 await page.click('#go');
-await page.waitForSelector('.cols');
+await page.waitForSelector('#age');
 await page.click('#spd');
 await page.click('#spd'); // ×4
 const taken = new Set();
