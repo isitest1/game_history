@@ -43,7 +43,8 @@ export interface GameState {
 }
 
 export interface GachaInfo {
-  prefProb: number; // 生まれた県を引く確率
+  prefProb: number; // 真ん中の人の生まれた県を引く確率
+  prefProbs?: number[]; // 3人それぞれの生まれた県を引く確率
   sexProb: number;
   middleYearProb: number;
   years: number[];
@@ -75,14 +76,18 @@ export function createGame(opts: { seed?: number; playerBirthYear?: number | nul
   // 真ん中の年の確率（ガチャの表示用）：いちばん若い年を引く確率と、遡る年数の組み合わせの数から
   const middleYearProb = (S.nationalBirths(Math.min(young, 2005)) / youngW.reduce((a, b) => a + b, 0)) * (1 / 21);
 
-  // 県：真ん中の年の都道府県別出生数で重み付け（3人で共通）
-  const pb = S.prefBirths(mid);
-  const prefIdx = rng.weighted(
-    pb.map((_, i) => i),
-    pb,
-  );
-  const pref = prefIdx + 1;
-  const prefProb = pb[prefIdx] / pb.reduce((a, b) => a + b, 0);
+  // 県：3人それぞれ、その人の生まれ年の都道府県別出生数で重み付けして別々に引く（2026-10-15。以前は3人で共通）
+  const prefPicks = years.map((y) => {
+    const pb = S.prefBirths(y);
+    const idx = rng.weighted(
+      pb.map((_, i) => i),
+      pb,
+    );
+    return { pref: idx + 1, prob: pb[idx] / pb.reduce((a, b) => a + b, 0) };
+  });
+  const prefs = prefPicks.map((x) => x.pref);
+  const pref = prefs[1];
+  const prefProb = prefPicks[1].prob;
 
   // 性別：出生性比
   const ratio = S.sexRatio(mid);
@@ -92,7 +97,9 @@ export function createGame(opts: { seed?: number; playerBirthYear?: number | nul
   // 家の暮らし向き：5分位なので等確率
   const familyClass = rng.int(1, 5);
   const talent = rng.pick(TALENTS);
-  const surname = pickSurname(rng, pref);
+  // 名字は3人で同じ（沖縄に生まれた人だけは、沖縄に多い名字）
+  const surname = pickSurname(rng, 13);
+  const surnameOkinawa = pickSurname(rng, 47);
 
   const shared: Shared = {
     seed,
@@ -105,7 +112,7 @@ export function createGame(opts: { seed?: number; playerBirthYear?: number | nul
     playerBirthYear: opts.playerBirthYear ?? null,
   };
 
-  const persons = years.map((y, i) => makePerson(rng, i as EraId, y, shared, surname));
+  const persons = years.map((y, i) => makePerson(rng, i as EraId, y, shared, prefs[i] === 47 ? surnameOkinawa : surname, prefs[i]));
   const given = persons.map((q) => q.name.split(' ')[1]);
   persons.forEach((q) => (q.reservedNames = given));
 
@@ -133,6 +140,7 @@ export function createGame(opts: { seed?: number; playerBirthYear?: number | nul
     finished: false,
     gacha: {
       prefProb,
+      prefProbs: prefPicks.map((x) => x.prob),
       sexProb: sex === 'male' ? pMale : 1 - pMale,
       middleYearProb,
       years,
@@ -175,7 +183,7 @@ function siblingsFor(rng: Rng, year: number): { order: number; total: number } {
   return { order: rng.int(1, total), total };
 }
 
-function makePerson(rng: Rng, era: EraId, birthYear: number, shared: Shared, surname: string): Person {
+function makePerson(rng: Rng, era: EraId, birthYear: number, shared: Shared, surname: string, pref: number): Person {
   const birthMonth = rng.int(1, 12);
   const parentJob = parentJobFor(rng, birthYear, shared.familyClass);
   const sib = siblingsFor(rng, birthYear);
@@ -188,7 +196,7 @@ function makePerson(rng: Rng, era: EraId, birthYear: number, shared: Shared, sur
     birthMonth,
     name: `${surname} ${given}`,
     sex: shared.sex,
-    pref: shared.pref,
+    pref,
     familyClass: shared.familyClass,
     parentJob,
     birthOrder: sib.order,
@@ -210,7 +218,7 @@ function makePerson(rng: Rng, era: EraId, birthYear: number, shared: Shared, sur
     jobTitle: '',
     workYears: 0,
     retired: false,
-    movedToCity: S.METRO.has(shared.pref),
+    movedToCity: S.METRO.has(pref),
     married: false,
     spouseAlive: false,
     children: [],
@@ -224,9 +232,9 @@ function makePerson(rng: Rng, era: EraId, birthYear: number, shared: Shared, sur
   };
   if (p.parentJob === 'farm' && p.birthOrder === 1 && p.sex === 'male') p.flags.push('heir');
   if (p.birthOrder === 1 && p.sex === 'male') p.flags.push('eldest_son');
-  if (shared.pref === 47 && birthYear >= 1945 && birthYear <= 1972) p.flags.push('okinawa_us');
+  if (pref === 47 && birthYear >= 1945 && birthYear <= 1972) p.flags.push('okinawa_us');
   const pj = JOB_LABEL[parentJob];
-  log(p, 'birth', '誕生', `${birthYear}年${birthMonth}月、${S.PREFS[shared.pref - 1]}で${p.siblings}人きょうだいの${orderLabel(p.birthOrder, p.siblings)}として生まれた。家は${pj}。`);
+  log(p, 'birth', '誕生', `${birthYear}年${birthMonth}月、${S.PREFS[pref - 1]}で${p.siblings}人きょうだいの${orderLabel(p.birthOrder, p.siblings)}として生まれた。家は${pj}。`);
   return p;
 }
 

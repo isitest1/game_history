@@ -4188,3 +4188,14 @@ button {
   margin-right: 4px;
   vertical-align: 1px;
 }
+.data-note {
+  padding: 32px 0 48px;
+}
+.data-note h2 {
+  font-size: clamp(18px, 2.4vw, 22px);
+}
+.data-note p {
+  color: var(--ink-2, var(--ink));
+  max-width: 48em;
+  margin: 0 0 8px;
+}

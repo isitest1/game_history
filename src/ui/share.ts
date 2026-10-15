@@ -31,6 +31,11 @@ function fit(text: string): string {
   return out + '…';
 }
 
+/** アプリの共有画面（画像付き）に渡す文章。X の上限に収めた本文に、リンクとハッシュタグを足す */
+export function xShareText(text: string, url = SITE_URL): string {
+  return `${fit(text)}\n${url}\n#${HASHTAG}`;
+}
+
 export function xIntentUrl(text: string, url = SITE_URL): string {
   const q = new URLSearchParams({ text: fit(text), url, hashtags: HASHTAG });
   return `https://x.com/intent/tweet?${q.toString()}`;
@@ -44,18 +49,16 @@ const sexWord = (st: GameState) => (st.shared.sex === 'male' ? '男' : '女');
 
 /** 生まれたとき */
 export function birthXText(st: GameState): string {
-  const pref = S.PREFS[st.shared.pref - 1];
-  const ys = st.persons.map((p) => `${p.birthYear}年`).join('・');
-  return `${pref}に、${st.shared.sex === 'male' ? '男の子' : '女の子'}が3人生まれた。${ys}。\n同じ私の、三つの人生が始まる。`;
+  const ys = st.persons.map((p) => `${p.birthYear}年の${S.PREFS[p.pref - 1]}`).join('、');
+  return `${ys}に、${st.shared.sex === 'male' ? '男の子' : '女の子'}が生まれた。\n同じ私の、三つの人生が始まる。`;
 }
 
 /** 一生を終えたとき */
 export function endXText(st: GameState, okuri?: string): string {
-  const pref = S.PREFS[st.shared.pref - 1];
-  const rows = st.persons.map((p) => `${p.birthYear}年生まれ：享年${p.deathAge ?? '−'}${(p.deathAge ?? 99) >= 15 ? `・${EDU_LABEL[p.edu]}` : ''}`);
+  const rows = st.persons.map((p) => `${p.birthYear}年・${S.PREFS[p.pref - 1].replace(/[都府県]$/, '')}：享年${p.deathAge ?? '−'}${(p.deathAge ?? 99) >= 15 ? `・${EDU_LABEL[p.edu]}` : ''}`);
   const ages = st.persons.map((p) => p.deathAge ?? 0);
   const gap = Math.max(...ages) - Math.min(...ages);
-  const head = `同じ私が、三つの時代に生まれた（${pref}・${sexWord(st)}）。`;
+  const head = `同じ私が、三つの時代に生まれた（${sexWord(st)}）。`;
   const tail = gap >= 10 ? `寿命の差は${gap}年。人生を分けたのは、生まれた年だった。` : '生まれた年が違うだけで、人生はこう変わった。';
   const msg = okuri && okuri.trim() ? `\n「${okuri.trim()}」` : '';
   return `${head}\n${rows.join('\n')}\n${tail}${msg}`;

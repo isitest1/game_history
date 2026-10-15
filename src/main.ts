@@ -5,7 +5,7 @@ import * as S from './sim/stats';
 import type { Person, DecisionView, DecisionResult, LogEntry } from './sim/types';
 import { esc, wareki, yen, shortYen, html, sleep, reducedMotion } from './ui/format';
 import { drawShareCard, shareText } from './ui/sharecard';
-import { openX, birthXText, endXText, TITLE_X_TEXT } from './ui/share';
+import { openX, birthXText, endXText, TITLE_X_TEXT, xShareText } from './ui/share';
 import { HELP_LINES, SOURCES } from './ui/content';
 import { sound } from './ui/sound';
 import { loadEvents, eventStats } from './sim/events';
@@ -132,7 +132,7 @@ function showTitle(): void {
         <div class="triplet" aria-hidden="true">
           ${years.map((y, i) => `<div class="yr ${ERA_CLASS[i]}"><b class="yr-num" data-roll="${i}">${y}</b><span>${['活版と紙', 'ブラウン管', 'フラット'][i]}</span></div>`)}
         </div>
-        <p class="lead">性格も、才能も、生まれた県も、家の暮らし向きも同じ。違うのは、生まれた年だけ。あなたの決断は3人全員に当てはまります。けれど、結果を決めるのはそれぞれの時代です。進学も、就職も、結婚も、寿命も、年金も、日本の実際の統計で決まります。</p>
+        <p class="lead">性格も、才能も、家の暮らし向きも同じ。違うのは、生まれた年と、生まれた県。あなたの決断は3人全員に当てはまります。けれど、結果を決めるのはそれぞれの時代です。進学も、就職も、結婚も、寿命も、年金も、日本の実際の統計で決まります。</p>
         ${saved && !saved.finished ? `<div class="resume"><span>途中の人生があります（${saved.age}歳）。</span><button class="btn small" data-act="resume">続きから</button></div>` : ''}
         <form class="form" id="startform">
           <div class="row">
@@ -288,9 +288,17 @@ function titleSections(): string {
     ${hist.length
       ? `<section class="tsec"><div class="wrap"><h2>あなたの前世</h2><ul class="hist3">${hist
           .slice(0, 3)
-          .map((r) => `<li><small>${esc(r.at)}・${S.PREFS[r.pref - 1]}・${r.sex === 'male' ? '男' : '女'}</small>${r.years.map((y, k) => `<span>${y}年生まれ ${esc(r.names[k]?.split(' ')[1] ?? '')}：享年${r.deaths[k] ?? '−'}</span>`).join('')}${r.okuri ? `<em>「${esc(r.okuri.slice(0, 60))}」</em>` : ''}</li>`)
+          .map((r) => `<li><small>${esc(r.at)}・${r.sex === 'male' ? '男' : '女'}</small>${r.years.map((y, k) => `<span>${y}年・${S.PREFS[(r.prefs?.[k] ?? r.pref) - 1]}生まれ ${esc(r.names[k]?.split(' ')[1] ?? '')}：享年${r.deaths[k] ?? '−'}</span>`).join('')}${r.okuri ? `<em>「${esc(r.okuri.slice(0, 60))}」</em>` : ''}</li>`)
           .join('')}</ul></div></section>`
-      : ''}`;
+      : ''}
+    <section class="tsec data-note" aria-label="数字についての注意">
+      <div class="wrap">
+        <h2>数字について</h2>
+        <p class="small">寿命・進学・就職・結婚・賃金・物価・年金は、日本の公的な統計から作っています。取れない年は前後の年から補っています。</p>
+        <p class="small">1930年より前（明治・大正）の数字は、当時の生命表・人口動態統計・学校の統計・長期経済統計などから作った<b>概算</b>です。年ごとの値が残っていないところは前後の年から補い、一部は推計しています。戦前の賃金や物価は、いまの統計と同じ形では残っていないため、目安として見てください。</p>
+        <p class="small">2026年より先は、国の将来推計の前提を使った見込みです。詳しくは「使った統計と出典」と、リポジトリの docs/出典一覧.md にあります。</p>
+      </div>
+    </section>`;
 }
 
 /** 今日0時からの出生・死亡・婚姻の目安（年間の数を1秒あたりにならす） */
@@ -390,9 +398,12 @@ async function showGacha(): Promise<void> {
   const g = st.gacha;
   const fam = ['苦しい', 'やや苦しい', 'ふつう', 'やや豊か', '豊か'];
   mark(0);
-  await spin([...S.PREFS], S.PREFS[st.shared.pref - 1]);
-  prob.textContent = '真ん中の年の都道府県別の出生数で重み付け';
-  addRow('生まれる県', S.PREFS[st.shared.pref - 1], `${(g.prefProb * 100).toFixed(1)}%`);
+  // 3人それぞれの生まれた県
+  label.textContent = '生まれる県（3人それぞれ）';
+  for (let i = 0; i < 3; i++) await spin([...S.PREFS], S.PREFS[st.persons[i].pref - 1], i === 0 ? 900 : 600);
+  reel.textContent = st.persons.map((p) => S.PREFS[p.pref - 1]).join('・');
+  prob.textContent = 'それぞれの生まれ年の、都道府県別の出生数で重み付け';
+  addRow('生まれる県', st.persons.map((p) => S.PREFS[p.pref - 1]).join('・'), g.prefProbs ? g.prefProbs.map((x) => `${(x * 100).toFixed(1)}%`).join('・') : `${(g.prefProb * 100).toFixed(1)}%`);
   await sleep(skip ? 0 : 900);
   mark(1);
   label.textContent = '性別';
@@ -444,12 +455,13 @@ function showBirth(): void {
   app.innerHTML = html`${topbar()}
     <main class="wrap birth" id="main">
       <p class="kicker">母子手帳</p>
-      <h2 style="font-family:var(--serif);font-size:clamp(24px,5vw,36px);margin:6px 0 4px">${esc(S.PREFS[st.shared.pref - 1])}に、${st.shared.sex === 'male' ? '男の子' : '女の子'}が3人生まれた。</h2>
+      <h2 style="font-family:var(--serif);font-size:clamp(24px,5vw,36px);margin:6px 0 4px">3つの時代、3つの県に、${st.shared.sex === 'male' ? '男の子' : '女の子'}が生まれた。</h2>
+      <p style="margin:0 0 6px;font-weight:700">${st.persons.map((p) => `${p.birthYear}年・${esc(S.PREFS[p.pref - 1])}`).join('　／　')}</p>
       <p class="muted" style="margin:0 0 12px">家の暮らし向きは「${fam}」。才能は「${esc(st.shared.talent)}」。3人とも同じ人です。</p>
       <div class="books">
         ${st.persons.map((p, i) => birthBook(p, i))}
       </div>
-      <p class="muted" style="font-size:13px;margin:-8px 0 16px">見込み寿命は、その年に生まれた人が生命表どおりに生きた場合の平均。1歳までの死亡は、その年の0歳の死亡率から。</p>
+      <p class="muted" style="font-size:13px;margin:-8px 0 16px">見込み寿命は、その年に生まれた人が生命表どおりに生きた場合の平均。1歳までの死亡は、その年の0歳の死亡率から。${st.persons.some((p) => p.birthYear < 1930) ? '1930年より前（明治・大正）の数字は、当時の統計から作った概算で、一部は推計です。' : ''}</p>
       <div class="birth-acts">
         <button class="btn" id="go">人生を始める</button>
         <button class="btn ghost" id="again">引き直す</button>
@@ -773,7 +785,7 @@ function renderCol(i: number): void {
   const nm1 = esc(p.name.split(' ')[1] ?? p.name);
   const slots: Record<string, string> = {
     head: `<div class="col-head"><span class="yr-num">${year}</span><span class="wa">${wareki(year)}</span></div>`,
-    who: `<div class="who"><span class="nm">${esc(p.name)}</span><span class="st">${esc(statusLine(p))}</span></div>`,
+    who: `<div class="who"><span class="nm">${esc(p.name)}</span><span class="st">${S.PREFS[p.pref - 1]}生まれ・${esc(statusLine(p))}</span></div>`,
     state: !alive
       ? `<div class="tomb"><div class="line">${p.birthYear}–${p.deathYear}</div><div class="kyonen">享年${p.deathAge}</div><div class="line">${esc(p.deathCause ?? '')}</div></div>`
       : `<div class="bars" role="img"><span class="b" title="健康"><em>健康</em><span class="bar"><i></i></span></span><span class="b" title="幸福"><em>幸福</em><span class="bar"><i></i></span></span><span class="b" title="知識"><em>知識</em><span class="bar"><i></i></span></span><span class="b" title="人間関係"><em>関係</em><span class="bar"><i></i></span></span></div>`,
@@ -819,7 +831,7 @@ function renderMFeed(): void {
     .map((p, i) => {
       const alive = p.alive || deathPending(p);
       const age = alive ? shownAge : p.deathAge ?? shownAge;
-      return `<button type="button" class="mch ${ERA_CLASS[i]}${alive ? '' : ' dead'}" data-who="${i}" aria-label="${esc(p.name)}のようすを見る"><b>${esc(p.name.split(' ')[1] ?? p.name)}</b><span>${p.birthYear}年生まれ</span><small>${alive ? `${p.birthYear + age}年・${age}歳` : `享年${p.deathAge}`}</small></button>`;
+      return `<button type="button" class="mch ${ERA_CLASS[i]}${alive ? '' : ' dead'}" data-who="${i}" aria-label="${esc(p.name)}のようすを見る"><b>${esc(p.name.split(' ')[1] ?? p.name)}</b><span>${p.birthYear}年・${S.PREFS[p.pref - 1].replace(/[都府県]$/, '')}</span><small>${alive ? `${p.birthYear + age}年・${age}歳` : `享年${p.deathAge}`}</small></button>`;
     })
     .join('');
   setIfChanged(box.querySelector('.mcolhead'), head);
@@ -982,7 +994,7 @@ function personDetail(p: Person, i: number, age: number): string {
   const thoughts = p.log.filter((e) => e.kind === 'think' && isShown(e)).slice(-2).reverse();
   const miss = p.wishes.filter((w) => !w.ok);
   return html`<div class="pd ${ERA_CLASS[i]}">
-    <div class="pd-head"><b>${year}</b><span>${wareki(year)}・${age}歳</span></div>
+    <div class="pd-head"><b>${year}</b><span>${wareki(year)}・${age}歳・${S.PREFS[p.pref - 1]}生まれ</span></div>
     <p class="pd-name">${nm}<small>${esc(statusLine(p))}</small></p>
     <div class="pd-bars">${bar('健康', s.health)}${bar('幸福', s.happiness)}${bar('知識', s.knowledge)}${bar('人間関係', s.relation)}</div>
     <dl class="pd-dl">
@@ -1365,7 +1377,7 @@ function showSources(): void {
   const { el, close } = sheet(
     html`<p class="kicker">出典</p>
       <h2>使った統計と出典</h2>
-      <p class="prompt">数字は日本の公的な統計から作っています。取れない年は前後の年から補い、補ったことを記録しています。詳しくはリポジトリの docs/出典一覧.md を見てください。</p>
+      <p class="prompt">数字は日本の公的な統計から作っています。取れない年は前後の年から補い、補ったことを記録しています。1930年より前（明治・大正）の数字は、当時の生命表・人口動態統計・学校の統計・長期経済統計などから作った概算で、一部は推計です。詳しくはリポジトリの docs/出典一覧.md を見てください。</p>
       <ul class="src">${SOURCES.map((s) => `<li><b>${esc(s.what)}</b>：${s.url ? `<a href="${s.url}" target="_blank" rel="noopener">${esc(s.title)}</a>` : esc(s.title)}</li>`)}</ul>
       <button class="btn" data-close>閉じる</button>`,
     { label: '出典', dismiss: true },
@@ -1492,6 +1504,7 @@ interface HistRec {
   deaths: (number | undefined)[];
   names: string[];
   okuri: string;
+  prefs?: number[];
 }
 
 function saveHistory(st: GameState, okuri: string): void {
@@ -1499,7 +1512,8 @@ function saveHistory(st: GameState, okuri: string): void {
   const rec: HistRec = {
     at: new Date().toISOString().slice(0, 10),
     seed: st.seed,
-    pref: st.shared.pref,
+    pref: st.persons[1].pref,
+    prefs: st.persons.map((p) => p.pref),
     sex: st.shared.sex,
     years: st.persons.map((p) => p.birthYear),
     deaths: st.persons.map((p) => p.deathAge),
@@ -1509,18 +1523,19 @@ function saveHistory(st: GameState, okuri: string): void {
   const rest = list.filter((r) => r.seed !== st.seed);
   store.set(HIST_KEY, [rec, ...rest].slice(0, 10));
   const dex = new Set(store.get<string[]>(DEX_KEY) ?? []);
-  dex.add(`${st.shared.pref}-${st.shared.sex}-${st.gacha.years.join('_')}`);
+  dex.add(`${st.persons.map((p) => p.pref).join('_')}-${st.shared.sex}-${st.gacha.years.join('_')}`);
   store.set(DEX_KEY, [...dex]);
 }
 
 /** 珍しい組み合わせ。真ん中の生まれ年と県・性別で決まる */
-const RARE: { id: string; label: string; test: (pref: number, sex: string, ys: number[]) => boolean }[] = [
+const RARE: { id: string; label: string; test: (prefs: number[], sex: string, ys: number[]) => boolean }[] = [
   { id: 'hinoe', label: '丙午（1966年）に生まれた人がいる', test: (_p, _s, ys) => ys.includes(1966) },
   { id: 'shusen', label: '終戦の年（1945年）に生まれた人がいる', test: (_p, _s, ys) => ys.includes(1945) },
-  { id: 'okinawa', label: '本土復帰の前の沖縄に生まれた人がいる', test: (p, _s, ys) => p === 47 && ys.some((y) => y >= 1945 && y <= 1971) },
+  { id: 'okinawa', label: '本土復帰の前の沖縄に生まれた人がいる', test: (ps, _s, ys) => ys.some((y, i) => ps[i] === 47 && y >= 1945 && y <= 1971) },
   { id: 'tokyo64', label: '東京オリンピックの年（1964年）に生まれた人がいる', test: (_p, _s, ys) => ys.includes(1964) },
-  { id: 'genbaku', label: '広島か長崎で、戦時中に生まれた人がいる', test: (p, _s, ys) => (p === 34 || p === 42) && ys.some((y) => y >= 1941 && y <= 1945) },
+  { id: 'genbaku', label: '広島か長崎で、戦時中に生まれた人がいる', test: (ps, _s, ys) => ys.some((y, i) => (ps[i] === 34 || ps[i] === 42) && y >= 1941 && y <= 1945) },
   { id: 'babyboom2', label: '第2次ベビーブーム（1971〜74年）に生まれた人がいる', test: (_p, _s, ys) => ys.some((y) => y >= 1971 && y <= 1974) },
+  { id: 'meiji', label: '明治に生まれた人がいる', test: (_p, _s, ys) => ys[0] < 1912 },
   { id: 'gap100', label: '3人の生まれ年が、70年以上離れた', test: (_p, _s, ys) => ys[2] - ys[0] >= 70 },
 ];
 
@@ -1528,12 +1543,13 @@ function showDex(): void {
   const list = store.get<HistRec[]>(HIST_KEY) ?? [];
   const dex = new Set(store.get<string[]>(DEX_KEY) ?? []);
   const total = 47 * 2 * 16;
-  const prefsHit = new Set([...dex].map((k) => Number(k.split('-')[0])));
+  const prefsHit = new Set([...dex].flatMap((k) => k.split('-')[0].split('_').map(Number)));
   const rareHit = RARE.filter((r) => [...dex].some((k) => {
     const [p, s, m] = k.split('-');
-    // 古い記録は真ん中の年だけ（30年おき）。新しい記録は3人の年を _ でつなぐ
+    // 古い記録は真ん中の年だけ（30年おき）・県は1つ。新しい記録は3人の年と県を _ でつなぐ
     const ys = m.includes('_') ? m.split('_').map(Number) : [Number(m) - 30, Number(m), Number(m) + 30];
-    return r.test(Number(p), s, ys);
+    const ps = p.includes('_') ? p.split('_').map(Number) : [Number(p), Number(p), Number(p)];
+    return r.test(ps, s, ys);
   }));
   const { el, close } = sheet(
     html`<p class="kicker">前世の記録と図鑑</p>
@@ -1547,7 +1563,7 @@ function showDex(): void {
             .join('')}</ol>`
         : '<p class="muted">まだ記録はありません。最後まで生きると、ここに残ります（直近10回まで）。</p>'}
       <h3 class="sub">図鑑　${dex.size} / ${total}</h3>
-      <p class="muted" style="font-size:13px;margin-top:0">都道府県 × 性別 × 真ん中の生まれ年（1960〜75年）の組み合わせ。生まれた県が塗られていきます。</p>
+      <p class="muted" style="font-size:13px;margin-top:0">3人が生まれた県が塗られていきます。</p>
       <div class="dexmap" aria-label="生まれた都道府県">${S.PREFS.map((n, i) => `<span class="${prefsHit.has(i + 1) ? 'on' : ''}" title="${n}">${n === '北海道' ? n : n.replace(/[都府県]$/, '')}</span>`).join('')}</div>
       <h3 class="sub">珍しい組み合わせ</h3>
       <ul class="rare">${RARE.map((r) => `<li class="${rareHit.includes(r) ? 'on' : ''}">${rareHit.includes(r) ? '◆' : '◇'} ${esc(r.label)}</li>`).join('')}</ul>
@@ -1611,7 +1627,7 @@ async function showEnd(skipSlides = false): Promise<void> {
 
       <section class="panel">
         <h3>贈ることば</h3>
-        <label for="okuri" class="muted" style="display:block;margin-bottom:6px;font-size:13px">次に、同じ県に生まれる誰かへ。共有する文章と、前世の記録に残ります。</label>
+        <label for="okuri" class="muted" style="display:block;margin-bottom:6px;font-size:13px">次に、どこかの時代に生まれる誰かへ。共有する文章と、前世の記録に残ります。</label>
         <textarea id="okuri" maxlength="140" rows="3" class="okuri" placeholder="例：生まれた年は選べない。でも、望むことはやめなかった。"></textarea>
       </section>
 
@@ -1619,7 +1635,7 @@ async function showEnd(skipSlides = false): Promise<void> {
         <h3>共有カード</h3>
         <canvas id="card" width="1200" height="630" role="img" aria-label="3人の人生をまとめた共有用の画像"></canvas>
         <div class="acts">
-          <button class="btn small xbtn" id="xshare"><span aria-hidden="true">𝕏</span> Xで共有</button>
+          <button class="btn small xbtn" id="xshare"><span aria-hidden="true">𝕏</span> 画像付きでXに投稿</button>
           <button class="btn small ghost" id="save">画像を保存</button>
           <button class="btn small ghost" id="shareb">ほかのアプリで共有</button>
           <button class="btn small ghost" id="copy">文章をコピー</button>
@@ -1643,7 +1659,34 @@ async function showEnd(skipSlides = false): Promise<void> {
     a.download = `umaredoshi-${st.gacha.years.join('-')}.png`;
     a.click();
   });
-  app.querySelector('#xshare')!.addEventListener('click', () => openX(endXText(st, (app.querySelector('#okuri') as HTMLTextAreaElement)?.value)));
+  // X で共有：共有カードの画像を付けて投稿する。
+  // スマホは共有画面（画像と文章）から X を選ぶ。パソコンは X の投稿画面に画像を渡せないので、画像をコピーしてから投稿画面を開き、貼り付けてもらう
+  let cardBlob: Blob | null = null;
+  canvas.toBlob((b) => (cardBlob = b), 'image/png');
+  app.querySelector('#xshare')!.addEventListener('click', async () => {
+    const text = endXText(st, (app.querySelector('#okuri') as HTMLTextAreaElement)?.value);
+    const file = cardBlob ? new File([cardBlob], 'umaredoshi.png', { type: 'image/png' }) : null;
+    if (file && isMobile() && navigator.canShare?.({ files: [file] })) {
+      try {
+        await navigator.share({ files: [file], text: xShareText(text) });
+      } catch {
+        /* キャンセル */
+      }
+      return;
+    }
+    openX(text);
+    if (!cardBlob) return;
+    try {
+      await navigator.clipboard.write([new ClipboardItem({ 'image/png': cardBlob })]);
+      toast('共有カードの画像をコピーしました。開いたXの投稿画面で貼り付けると（Ctrl+V／⌘+V）、画像付きで投稿できます');
+    } catch {
+      const a = document.createElement('a');
+      a.href = canvas.toDataURL('image/png');
+      a.download = 'umaredoshi.png';
+      a.click();
+      toast('共有カードの画像を保存しました。Xの投稿画面で、画像を添付してください');
+    }
+  });
   app.querySelector('#copy')!.addEventListener('click', async () => {
     try {
       await navigator.clipboard.writeText(shareText(st, (app.querySelector('#okuri') as HTMLTextAreaElement)?.value));
