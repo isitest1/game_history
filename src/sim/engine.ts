@@ -63,11 +63,11 @@ export function createGame(opts: { seed?: number; playerBirthYear?: number | nul
 
   // 生まれ年：いちばん若い人を1990〜2010年から出生数で重み付けして引き、
   // そこから30〜50年ずつ、2回ランダムに遡る（いつも30年おきだと、似た組み合わせばかりになるため。2026-10-15）。
-  // 統計は1930年からなので、いちばん年上の人が1930年より前になる組み合わせは引き直す
+  // 1930年より前は、資料と推計の統計（data/stats/prewar_*.json）で1890年まで遡れる
   const youngYears = Array.from({ length: 21 }, (_, i) => 1990 + i);
   const youngW = youngYears.map((y) => S.nationalBirths(Math.min(y, 2005)));
   const young = rng.weighted(youngYears, youngW);
-  const room = young - 1930; // 2回遡る年数の合計の上限
+  const room = young - 1890; // 2回遡る年数の合計の上限（いちばん年上は1890年以降）
   const g2 = rng.int(30, Math.min(50, room - 30)); // いちばん若い人 → 真ん中の人
   const g1 = rng.int(30, Math.min(50, room - g2)); // 真ん中の人 → いちばん年上の人
   const years = [young - g2 - g1, young - g2, young];
@@ -274,6 +274,14 @@ export function applyEffects(p: Person, eff: GameEvent['effects'] | undefined): 
   p.stats.relation = clamp(p.stats.relation + (eff.relation ?? 0));
   if (eff.money) p.money += eff.money;
   for (const f of eff.flags ?? []) if (!p.flags.includes(f)) p.flags.push(f);
+  // 家族の死を、家族の状態にも反映する（戦争の出来事。data/events/war_adult.json・meiji_taisho.json）
+  const fl = eff.flags ?? [];
+  if (fl.includes('war_widow') && p.married) p.spouseAlive = false;
+  if (fl.includes('father_war_dead')) p.fatherAlive = false;
+  if (fl.includes('son_war_dead')) {
+    const son = p.children.find((c) => c.alive && c.sex === 'male');
+    if (son) son.alive = false;
+  }
 }
 
 // ---------- 出来事 ----------
@@ -360,7 +368,7 @@ export function deathCause(rng: Rng, year: number, age: number, sex: Sex, flags:
   );
 }
 
-export const HEAVY_CAUSES = new Set(['自殺', '空襲', '戦死', '原爆', '沖縄戦', '震災', '津波', '災害']);
+export const HEAVY_CAUSES = new Set(['自殺', '空襲', '戦死', '戦病死', '原爆', '原子爆弾', '沖縄戦', '震災', '震災関連死', '津波', '地震', '地震・津波', '災害', 'シベリア抑留', '戦争（満州）', '戦争（満州からの避難）', '勤労動員中の空襲', '疎開船の沈没', '火砕流', '水害', '土砂災害', '台風', '台風・高潮', '水害・土砂災害', '地震・震災関連死']);
 
 // ---------- 1年を進める ----------
 
@@ -529,9 +537,17 @@ function lifecycle(state: GameState, p: Person, rng: Rng, year: number): void {
 
   // 学校
   if (a === 6) {
-    const school = year >= 1941 && year <= 1946 ? '国民学校' : '小学校';
-    p.inSchool = 'none';
-    log(p, 'school', `${school}に入学`, `${prefName}の${school}に入学した。${year >= 1941 && year <= 1946 ? '1941年から1947年まで、小学校は国民学校と呼ばれていた。' : ''}`);
+    const school = year >= 1941 && year <= 1946 ? '国民学校' : year < 1941 ? '尋常小学校' : '小学校';
+    // 明治の終わりまでは、学校に通えない子どもも多かった（就学率。data/stats/prewar_social.json）
+    const enroll = S.elementaryEnrollment(year, p.sex) / 100;
+    if (year < 1930 && !rng.chance(enroll)) {
+      p.flags.push('no_school');
+      p.wishes.push({ age: a, wish: '小学校に通うこと', result: '家の手伝いと子守りで通えなかった', ok: false });
+      log(p, 'wish', '学校に通えなかった', `${year}年、${school}に上がる年になったが、家の手伝いと子守りで通えなかった。この年の${p.sex === 'male' ? '男' : '女'}の子の就学率は約${Math.round(enroll * 100)}%だった。`);
+    } else {
+      p.inSchool = 'none';
+      log(p, 'school', `${school}に入学`, `${prefName}の${school}に入学した。${year >= 1941 && year <= 1946 ? '1941年から1947年まで、小学校は国民学校と呼ばれていた。' : year < 1941 ? '尋常小学校は6年（1907年までは4年）だった。' : ''}`);
+    }
   }
   if (a === 12 && p.inSchool !== null) {
     p.edu = 'middle';
@@ -746,7 +762,7 @@ function work(p: Person, rng: Rng, year: number): void {
   const u = S.unemployment(year) / 100;
   const risk = { farm: 0.2, self: 0.6, smallco: 1.3, bigco: 0.5, public: 0.1, none: 0 }[job];
   if (p.age < 60 && rng.chance(u * risk * 0.6)) {
-    log(p, 'work', '職を失った', `${year}年、勤め先が人を減らし、職を失った。この年の完全失業率は${u * 100 >= 0.1 ? (u * 100).toFixed(1) : '−'}%、有効求人倍率は${S.jobOpenings(year).toFixed(2)}倍だった。`);
+    log(p, 'work', '職を失った', `${year}年、勤め先が人を減らし、職を失った。この年の完全失業率は${u * 100 >= 0.1 ? (u * 100).toFixed(1) : '−'}%${year >= 1963 ? `、有効求人倍率は${S.jobOpenings(year).toFixed(2)}倍` : ''}だった。`);
     applyEffects(p, { happiness: -15, money: -income * 0.3 });
     const reemp = Math.min(0.9, 0.4 + S.jobOpenings(year) * 0.3);
     if (rng.chance(reemp)) {
@@ -783,8 +799,21 @@ function pensionAndRetire(state: GameState, p: Person, rng: Rng, year: number): 
     log(p, 'work', '仕事から退いた', `${a}歳で、仕事を次の世代に譲った。`);
   }
 
+  // 1911年4月1日以前の生まれは、国民年金（1961年）の保険料を納める期間がほとんどなく、拠出の年金は受けられなかった。
+  // 70歳から、税でまかなう老齢福祉年金（1961年の開始時は月1,000円。目安：のちの賃金の伸びに合わせて増やす）を受けた（未確認を含む目安）
+  const fyBirth = p.birthMonth >= 4 ? p.birthYear : p.birthYear - 1;
+  if (fyBirth < 1911 && p.pensionStartAge === undefined) {
+    if (year >= 1961 && a >= 70) {
+      p.pensionStartAge = a;
+      const monthly = 1000 * Math.max(1, S.incomeIndex(year) / S.incomeIndex(1961)) * 0.6;
+      p.pensionMonthly = Math.round(monthly);
+      p.pensionMonthlyReal = Math.round(monthly * S.toReal2020(year));
+      log(p, 'pension', `${a}歳で老齢福祉年金`, `${year}年、老齢福祉年金を受け取り始めた。月に約${man(monthly)}。1911年4月1日より前に生まれた人は、国民年金の保険料を納める期間がなく、税でまかなうこの少額の年金だけだった。`);
+    }
+  }
+
   // 年金の受給開始
-  if (p.pensionStartAge === undefined) {
+  if (p.pensionStartAge === undefined && fyBirth >= 1911) {
     let start = S.pensionStartAge(p.birthYear, p.birthMonth, p.sex);
     const contributor = p.workYears >= 10 || p.married;
     if (!contributor) start = 65;
@@ -902,7 +931,7 @@ export function findJob(state: GameState, p: Person, rng: Rng, year: number, lev
   const mkt = Math.max(0.3, Math.min(1.7, market / 1.5));
   const fam = [0.75, 0.9, 1, 1.1, 1.25][p.familyClass - 1];
   const prefName = S.PREFS[p.pref - 1];
-  const marketText = ng !== undefined ? `この年の${level === 'univ' || level === 'junior' ? '大卒' : level === 'high' ? '高卒' : '中卒'}の求人倍率は${ng.toFixed(2)}倍。` : `この年の有効求人倍率は${jo.toFixed(2)}倍。`;
+  const marketText = ng !== undefined ? `この年の${level === 'univ' || level === 'junior' ? '大卒' : level === 'high' ? '高卒' : '中卒'}の求人倍率は${ng.toFixed(2)}倍。` : year >= 1963 ? `この年の有効求人倍率は${jo.toFixed(2)}倍。` : '';
 
   // 農家の長男は家を継ぐ（1960年代前半までは、ほぼ選べなかった）
   if (p.flags.includes('heir') && year < 1965 && wish !== 'farm') {

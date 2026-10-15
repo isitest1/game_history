@@ -9,11 +9,12 @@ export function wareki(year: number): string {
   if (year >= 2019) return year === 2019 ? '令和元年' : `令和${year - 2018}年`;
   if (year >= 1989) return year === 1989 ? '平成元年' : `平成${year - 1988}年`;
   if (year >= 1926) return year === 1926 ? '昭和元年' : `昭和${year - 1925}年`;
-  return `大正${year - 1911}年`;
+  if (year >= 1912) return year === 1912 ? '大正元年' : `大正${year - 1911}年`;
+  return `明治${year - 1867}年`;
 }
 
-export function eraName(year: number): '昭和' | '平成' | '令和' {
-  return year >= 2019 ? '令和' : year >= 1989 ? '平成' : '昭和';
+export function eraName(year: number): '明治' | '大正' | '昭和' | '平成' | '令和' {
+  return year >= 2019 ? '令和' : year >= 1989 ? '平成' : year >= 1926 ? '昭和' : year >= 1912 ? '大正' : '明治';
 }
 
 export function yen(v: number): string {

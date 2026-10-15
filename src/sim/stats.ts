@@ -14,6 +14,25 @@ function file(name: string): AnyJson | undefined {
 
 export const usedFallback = new Set<string>();
 
+// 1930年より前（1890〜1929年）の統計。資料と推計（docs/03 の H・I 節）。1930年以降は既存のファイルを使う
+const prewarPop = file('prewar_population');
+const prewarSoc = file('prewar_social');
+/** つないだ表は、一度作ったら使い回す（毎回作ると遅いため） */
+const joinedCache = new Map<string, Record<string, number> | undefined>();
+function joined(key: string, make: () => Record<string, number> | undefined): Record<string, number> | undefined {
+  if (!joinedCache.has(key)) joinedCache.set(key, make());
+  return joinedCache.get(key);
+}
+
+/** 1930年より前の年の表を、既存の表の前につなぐ */
+function joinPrewar(pre: Record<string, number> | undefined, post: Record<string, number> | undefined): Record<string, number> | undefined {
+  if (!pre) return post;
+  if (!post) return pre;
+  const out: Record<string, number> = {};
+  for (const [k, v] of Object.entries(pre)) if (Number(k) < Math.min(...Object.keys(post).map(Number))) out[k] = v;
+  return { ...out, ...post };
+}
+
 export const PREFS = [
   '北海道', '青森県', '岩手県', '宮城県', '秋田県', '山形県', '福島県', '茨城県', '栃木県', '群馬県',
   '埼玉県', '千葉県', '東京都', '神奈川県', '新潟県', '富山県', '石川県', '福井県', '山梨県', '長野県',
@@ -70,6 +89,12 @@ const mortality = file('mortality');
 /** 年齢別死亡確率 qx。目安：ゴンペルツ・メイカム型（データがないときだけ） */
 export function qx(year: number, age: number, sex: Sex): number {
   const a = Math.min(Math.max(0, Math.floor(age)), 105);
+  if (year < 1930 && prewarPop?.mortality) {
+    const py = Math.max(year, 1890);
+    const row = prewarPop.mortality[String(py)];
+    const arr = row?.[sex];
+    if (Array.isArray(arr) && typeof arr[a] === 'number') return arr[a];
+  }
   const y = Math.min(Math.max(year, 1930), 2070);
   const ys = mortality?.years;
   if (ys) {
@@ -98,7 +123,7 @@ export const mortalityMeta = mortality?.meta;
 const births = file('births');
 
 export function nationalBirths(year: number): number {
-  const t = pluck(births?.national, 'total');
+  const t = joined('births', () => joinPrewar(pluck(prewarPop?.births, 'total'), pluck(births?.national, 'total')));
   return interp(t, year) ?? fb('births', 2_000_000);
 }
 
@@ -126,6 +151,13 @@ const education = file('education');
 
 /** 進学率（%） */
 export function eduRate(kind: 'highSchool' | 'university' | 'juniorCollege', year: number, sex: Sex): number {
+  // 1930年より前は、旧制の学校への進学率（中等教育＝highSchool、高等教育＝university、短大にあたるものは0）
+  if (year < 1930 && prewarSoc?.education) {
+    if (kind === 'juniorCollege') return 0;
+    const t = pluck(kind === 'highSchool' ? prewarSoc.education.secondary : prewarSoc.education.higher, sex);
+    const v0 = interp(t, year);
+    if (v0 !== undefined) return v0;
+  }
   const v = interp(pluck(education?.[kind], sex), year);
   if (v !== undefined) return v;
   usedFallback.add('education');
@@ -133,6 +165,13 @@ export function eduRate(kind: 'highSchool' | 'university' | 'juniorCollege', yea
   if (kind === 'highSchool') return year < 1950 ? 20 : 42 + 55 * Math.min(1, (year - 1950) / 25);
   if (kind === 'university') return (sex === 'male' ? 8 : 2) + t * (sex === 'male' ? 40 : 45);
   return sex === 'male' ? 2 : 3 + t * 15;
+}
+
+/** 義務教育（尋常小学校）の就学率（%）。1930年以降はほぼ全員とみなす */
+export function elementaryEnrollment(year: number, sex: Sex): number {
+  if (year >= 1930) return 99.5;
+  const v = interp(pluck(prewarSoc?.education?.elementaryEnrollment, sex), year);
+  return v ?? fb('elementaryEnrollment', 99);
 }
 
 // ---------- 労働 ----------
@@ -163,10 +202,10 @@ export function newGradRatio(level: 'middle' | 'high' | 'univ', year: number): n
 const industry = file('industry');
 
 export function primaryShare(year: number): number {
-  return interp(industry?.primaryShare, year) ?? fb('industry', 30);
+  return interp(joined('primary', () => joinPrewar(prewarSoc?.primaryShare, industry?.primaryShare)), year) ?? fb('industry', 30);
 }
 export function employeeShare(year: number): number {
-  return interp(industry?.employeeShare, year) ?? fb('industry', 60);
+  return interp(joined('employee', () => joinPrewar(prewarSoc?.employeeShare, industry?.employeeShare)), year) ?? fb('industry', 60);
 }
 export function largeShare(year: number): number {
   return interp(industry?.largeShareOfEmployees, year) ?? 25;
@@ -180,12 +219,12 @@ export function publicShare(year: number): number {
 const marriage = file('marriage');
 
 export function meanMarriageAge(year: number, sex: Sex): number {
-  return interp(pluck(marriage?.meanFirstMarriageAge, sex), year) ?? fb('marriage', sex === 'male' ? 28 : 25);
+  return interp(joined(`marriageAge-${sex}`, () => joinPrewar(pluck(prewarSoc?.meanFirstMarriageAge, sex), pluck(marriage?.meanFirstMarriageAge, sex))), year) ?? fb('marriage', sex === 'male' ? 28 : 25);
 }
 
 /** 50歳時未婚割合（%） */
 export function neverMarried50(year: number, sex: Sex): number {
-  return interp(pluck(marriage?.neverMarriedAt50, sex), year) ?? fb('marriage', 5);
+  return interp(joined(`never50-${sex}`, () => joinPrewar(pluck(prewarSoc?.neverMarriedAt50, sex), pluck(marriage?.neverMarriedAt50, sex))), year) ?? fb('marriage', 5);
 }
 
 // ---------- 賃金・物価 ----------
@@ -205,7 +244,7 @@ function lastKey(t: Record<string, number> | undefined): number | undefined {
  * 実質賃金が年1.1%ずつ伸びるとみなす。2024年財政検証の実質賃金上昇率の前提（成長型経済移行・継続ケース1.5%、過去30年投影ケース0.5%）の中間（目安）
  */
 export function incomeIndex(year: number): number {
-  const t = wages?.annualIncomeIndex as Record<string, number> | undefined;
+  const t = joined('income', () => joinPrewar(prewarSoc?.annualIncomeIndex, wages?.annualIncomeIndex as Record<string, number> | undefined));
   const last = lastKey(t);
   if (t && last !== undefined) {
     if (year <= last) return interp(t, year)!;
@@ -218,7 +257,7 @@ export function incomeIndex(year: number): number {
 }
 
 export function cpi(year: number): number {
-  return interp(cpiFile?.years, Math.min(year, 2025)) ?? fb('cpi', year <= 1995 ? 100 * Math.exp((year - 1995) * 0.06) : 100);
+  return interp(joined('cpi', () => joinPrewar(prewarSoc?.cpi, cpiFile?.years)), Math.min(year, 2025)) ?? fb('cpi', year <= 1995 ? 100 * Math.exp((year - 1995) * 0.06) : 100);
 }
 
 /** その年の1円が、2020年の何円にあたるか（未来は2025年の物価で止める） */
@@ -310,7 +349,12 @@ export function pensionAverageMonthly(year: number): number | undefined {
   return interp(pension?.averageMonthly?.employees, year);
 }
 
+/** 1930年より前の名前（あれば）。{ "1890": {male:[], female:[]} } */
+export const prewarNames: Record<string, { male: string[]; female: string[] }> | undefined = prewarSoc?.names;
+
 export const statsMeta = {
+  prewarPopulation: prewarPop?.meta,
+  prewarSocial: prewarSoc?.meta,
   mortality: mortality?.meta,
   births: births?.meta,
   education: education?.meta,

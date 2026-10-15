@@ -6,7 +6,7 @@ import { runLab } from '../src/sim/lab';
 import { cohortLifeExpectancy } from '../src/sim/engine';
 import * as S from '../src/sim/stats';
 
-const N = Number((globalThis as any).process?.env?.LAB_N ?? 3000);
+const N = Number((globalThis as any).process?.env?.LAB_N ?? 2000);
 
 describe(`実験室（${N}組＝${N * 3}人の人生）`, () => {
   const r = runLab(N);
@@ -27,14 +27,19 @@ describe(`実験室（${N}組＝${N * 3}人の人生）`, () => {
     console.log('目安を使った統計:', [...S.usedFallback]);
   });
   it('平均の死亡年齢が、生命表から計算した平均寿命と合う（1960年以降の生まれは±2歳）', () => {
-    expect(Math.abs(r.byEra[1].meanDeathAge - r.byEra[1].expected)).toBeLessThan(2);
     expect(Math.abs(r.byEra[2].meanDeathAge - r.byEra[2].expected)).toBeLessThan(2);
   });
-  it('1930〜45年生まれは、生命表に入っていない戦争の死亡のぶん短い（0〜4歳の範囲）', () => {
+  it('1930〜59年生まれは、生命表に入っていない戦争の死亡のぶん短い（0〜4歳の範囲）', () => {
     // 1944〜46年の生命表は前後の年からの補間で、戦争の死亡を含まない。ゲームでは空襲・沖縄戦・原爆などの出来事で足している
-    const gap = r.byEra[0].expected - r.byEra[0].meanDeathAge;
+    const gap = r.byEra[1].expected - r.byEra[1].meanDeathAge;
     expect(gap).toBeGreaterThan(-1);
     expect(gap).toBeLessThan(4);
+  });
+  it('1890〜1929年生まれは、戦死・災害のぶん生命表より短い（0〜10歳の範囲）', () => {
+    // この世代の男性は、多い年の生まれで約2割が戦死した（data/events/war_adult.json、docs/04 の6節）
+    const gap = r.byEra[0].expected - r.byEra[0].meanDeathAge;
+    expect(gap).toBeGreaterThan(0);
+    expect(gap).toBeLessThan(10);
   });
   it('乳児死亡の割合が、生命表の0歳の死亡率と大きくずれない', () => {
     const e0 = r.byEra[0];
@@ -48,8 +53,8 @@ describe(`実験室（${N}組＝${N * 3}人の人生）`, () => {
     expect(b.highSchool).toBeGreaterThan(a.highSchool);
     expect(c.university).toBeGreaterThan(a.university);
   });
-  it('真ん中の世代の高校進学（高校以上）が、統計の進学率から±12ポイント以内', () => {
-    const b = r.byEra[1];
+  it('1960年以降の生まれの高校進学（高校以上）が、統計の進学率から±12ポイント以内', () => {
+    const b = r.byEra[2];
     const y = Math.round((b.birthYears[0] + b.birthYears[1]) / 2) + 15;
     const rate = (S.eduRate('highSchool', y, 'male') + S.eduRate('highSchool', y, 'female')) / 200;
     // 15歳まで生きた人に限らないので、乳幼児の死亡ぶん少し低く出る

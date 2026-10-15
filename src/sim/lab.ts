@@ -18,6 +18,7 @@ export function playToEnd(state: GameState, maxAge = 115): GameState {
 
 export interface LabResult {
   n: number;
+  /** 生まれ年でまとめた結果：0 は1890〜1929年、1 は1930〜59年、2 は1960年以降 */
   byEra: {
     birthYears: [number, number];
     meanDeathAge: number;
@@ -35,8 +36,9 @@ export function runLab(n: number, seed0 = 1): LabResult {
   const acc = [0, 1, 2].map(() => ({ death: 0, exp: 0, hs: 0, univ: 0, married: 0, life: 0, pension: 0, pensionN: 0, infant: 0, n: 0, minY: 9999, maxY: 0 }));
   for (let i = 0; i < n; i++) {
     const st = playToEnd(createGame({ seed: seed0 + i * 7919 }));
-    st.persons.forEach((p, k) => {
-      const a = acc[k];
+    st.persons.forEach((p) => {
+      // 生まれ年でまとめる（3人の生まれ年は毎回変わるので、何番目の人かではなく、何年生まれかで比べる）
+      const a = acc[p.birthYear < 1930 ? 0 : p.birthYear < 1960 ? 1 : 2];
       a.n++;
       a.minY = Math.min(a.minY, p.birthYear);
       a.maxY = Math.max(a.maxY, p.birthYear);
