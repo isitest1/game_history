@@ -481,7 +481,7 @@ function showBirth(): void {
   app.innerHTML = html`${topbar()}
     <main class="wrap birth" id="main">
       <p class="kicker">母子手帳</p>
-      <h2 style="font-family:var(--serif);font-size:clamp(24px,5vw,36px);margin:6px 0 4px">3つの時代、3つの県に、${st.shared.sex === 'male' ? '男の子' : '女の子'}が生まれた。</h2>
+      <h2 style="font-family:var(--serif);font-size:clamp(24px,5vw,36px);margin:6px 0 4px">3つの時代、3つの${st.persons.some((p) => p.birthYear < 1871) ? '土地' : '県'}に、${st.shared.sex === 'male' ? '男の子' : '女の子'}が生まれた。</h2>
       <p style="margin:0 0 6px;font-weight:700">${st.persons.map((p) => `${p.birthYear}年・${esc(S.placeName(p.pref, p.birthYear))}`).join('　／　')}</p>
       <p class="muted" style="margin:0 0 12px">家の暮らし向きは「${fam}」。才能は「${esc(st.shared.talent)}」。3人とも同じ人です。</p>
       <div class="books">
