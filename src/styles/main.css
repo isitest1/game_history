@@ -4221,3 +4221,141 @@ button {
 .site-foot p {
   margin: 0;
 }
+
+/* トップページの始め方（2026-10-15） */
+.start-acts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 18px 0 10px;
+}
+.btn.big {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 14px 12px;
+  font-size: 18px;
+}
+.btn.big small {
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+.linkbtn {
+  background: none;
+  border: 0;
+  padding: 6px 0;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  cursor: pointer;
+}
+.hero-sample {
+  margin-top: 14px;
+  font-size: 13px;
+}
+.hero-sample .hs-k {
+  margin: 0 0 6px;
+  color: var(--ink-2, var(--ink));
+  opacity: 0.8;
+}
+.hero-sample .hs-r {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 10px;
+  margin: 0 0 4px;
+  align-items: baseline;
+}
+.hero-sample .hs-r em {
+  font-style: normal;
+  color: var(--c-acc, var(--ink));
+  font-weight: 700;
+}
+.mine-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 10px 0;
+}
+.mine-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.mine-form select {
+  font: inherit;
+  padding: 8px;
+}
+/* 共有のリンクから開いた結果のページ */
+.shared {
+  padding: 32px 16px 48px;
+}
+.shared-odds {
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+.shared-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.shared-cards .sc {
+  border-radius: 16px;
+  padding: 16px;
+  background: var(--c-bg, var(--paper, #fff));
+  color: var(--c-ink, var(--ink));
+  border: 1px solid var(--line);
+}
+.shared-cards header {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  font-size: 13px;
+}
+.shared-cards header b {
+  font-size: 20px;
+}
+.sc-name {
+  margin: 6px 0 0;
+  font-weight: 700;
+}
+.sc-age {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 4px 0;
+}
+.sc-age small {
+  font-size: 13px;
+  font-weight: 400;
+  margin-left: 8px;
+}
+.sc-title {
+  color: var(--c-acc, var(--ink));
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+.sc-bio {
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.7;
+}
+.shared-acts {
+  margin-top: 24px;
+}
+.shared-q {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+@media (max-width: 640px) {
+  .start-acts,
+  .mine-form,
+  .shared-cards {
+    grid-template-columns: 1fr;
+  }
+}

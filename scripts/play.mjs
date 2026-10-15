@@ -12,9 +12,7 @@ const page = await browser.newPage({ viewport: { width: 390, height: 844 }, devi
 const errors = [];
 page.on('pageerror', (e) => errors.push(String(e)));
 await page.goto(base, { waitUntil: 'networkidle' });
-await page.selectOption('#pby', '1985');
-await page.click('[data-min="10"]');
-await page.click('button[type=submit]');
+await page.click('[data-act="start"]');
 await page.click('#skip');
 await page.waitForSelector('#go', { timeout: 20000 });
 await page.screenshot({ path: `${out}/a_birth.png` });

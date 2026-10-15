@@ -5,7 +5,9 @@ import * as S from './sim/stats';
 import type { Person, DecisionView, DecisionResult, LogEntry } from './sim/types';
 import { esc, wareki, yen, shortYen, html, sleep, reducedMotion } from './ui/format';
 import { drawShareCard, shareText } from './ui/sharecard';
-import { openX, birthXText, endXText, TITLE_X_TEXT, xShareText } from './ui/share';
+import { openX, birthXText, endXText, TITLE_X_TEXT, xShareText, SITE_URL, oddsText } from './ui/share';
+import { titlesOf, summarize, encodeSummary, decodeSummary, type ResultSummary } from './sim/story';
+import { eraName } from './ui/format';
 import { HELP_LINES, SOURCES } from './ui/content';
 import { sound } from './ui/sound';
 import { loadEvents, eventStats } from './sim/events';
@@ -28,6 +30,7 @@ const BREATH_AGES = [6, 15, 22, 40, 65];
 
 interface UiPrefs {
   playerBirthYear: number | null;
+  myPref?: number;
   minutes: number;
   pace?: PaceId;
   theme: 'auto' | 'light' | 'dark';
@@ -119,37 +122,25 @@ function bindCommon(root: HTMLElement): void {
 
 function showTitle(): void {
   window.scrollTo(0, 0);
+  if (new URLSearchParams(location.search).has('r')) history.replaceState(null, '', location.pathname);
   const saved = store.get<GameState>(SAVE_KEY);
   const years = TRIPLES[0];
-  const yearOpts = ['<option value="">答えない</option>']
-    .concat(Array.from({ length: 2020 - 1925 + 1 }, (_, i) => 2020 - i).map((y) => `<option value="${y}" ${ui.playerBirthYear === y ? 'selected' : ''}>${y}年（${wareki(y)}）</option>`))
-    .join('');
   app.innerHTML = html`${topbar()}
     <main class="wrap hero" id="main">
       <div class="hero-grid"><div>
-        <p class="kicker">Born in three eras</p>
-        <h1><span class="nw">同じ私が、</span><br /><span class="nw">三つの時代に</span><span class="nw"><em>生まれる</em>。</span></h1>
+        <p class="kicker">同じ私が、三つの時代に生まれる</p>
+        <h1><span class="nw">江戸に生まれた私は、</span><br /><span class="nw">何歳まで<em>生きる</em>？</span></h1>
         <div class="triplet" aria-hidden="true">
           ${years.map((y, i) => `<div class="yr ${ERA_CLASS[i]}"><b class="yr-num" data-roll="${i}">${y}</b><span data-rk="${i}">${artLabel(y)}</span></div>`)}
         </div>
-        <p class="lead">性格も、才能も、家の暮らし向きも同じ。違うのは、生まれた年と、生まれた県。あなたの決断は3人全員に当てはまります。けれど、結果を決めるのはそれぞれの時代です。進学も、就職も、結婚も、寿命も、年金も、日本の実際の統計で決まります。</p>
+        <p class="lead">性格も才能も家の暮らし向きも同じ「私」が、江戸から平成までの3つの時代に同時に生まれます。進学も、結婚も、寿命も、日本の実際の統計で決まる。どの時代が来るかはガチャです。</p>
         ${saved && !saved.finished ? `<div class="resume"><span>途中の人生があります（${saved.age}歳）。</span><button class="btn small" data-act="resume">続きから</button></div>` : ''}
-        <form class="form" id="startform">
-          <div class="row">
-            <div>
-              <label for="pby">あなたの生まれ年</label>
-              <select id="pby" name="pby">${yearOpts}</select>
-            </div>
-            <div>
-              <span id="lenlbl" style="font-size:14px;font-weight:700;display:block;margin-bottom:6px">進む速さ</span>
-              <div class="seg" role="group" aria-labelledby="lenlbl">
-                ${PACES.map((x) => `<button type="button" data-pace="${x.id}" aria-pressed="${ui.pace === x.id}">${x.label}</button>`)}
-              </div>
-            </div>
-          </div>
-          <button class="btn" type="submit">ガチャを回して生まれる</button>
-          <p class="muted" style="margin:0;font-size:13px">生まれ年は、最後にあなた自身と比べるためだけに使います。この端末の中にだけ保存します。</p>
-        </form>
+        <div class="start-acts">
+          <button class="btn big" data-act="start">ガチャを回す<small>決断しながら、一生を見届ける</small></button>
+          <button class="btn ghost big" data-act="quick">すぐ結果を見る<small>おまかせで、数秒で最後まで</small></button>
+        </div>
+        <button class="linkbtn" data-act="mine">私の生まれ年と県で回す　→</button>
+        <div class="hero-sample" id="heroSample" aria-live="polite"></div>
         <div class="hero-foot">
           <button data-act="sources">使った統計と出典</button>
           <button data-act="help2">つらいときの相談先</button>
@@ -208,16 +199,67 @@ function showTitle(): void {
   app.querySelector('[data-act="about"]')?.addEventListener('click', showAbout);
   app.querySelector('[data-act="dex"]')?.addEventListener('click', showDex);
   app.querySelector('[data-act="xtitle"]')?.addEventListener('click', () => openX(TITLE_X_TEXT));
-  (app.querySelector('#startform') as HTMLFormElement).addEventListener('submit', (e) => {
-    e.preventDefault();
-    const v = (app.querySelector('#pby') as HTMLSelectElement).value;
-    ui.playerBirthYear = v ? Number(v) : null;
-    savePrefs();
-    sound.unlock(ui.sound);
-    state = createGame({ playerBirthYear: ui.playerBirthYear });
-    store.set(SAVE_KEY, state);
-    showGacha();
-  });
+  app.querySelector('[data-act="start"]')!.addEventListener('click', () => startGame(false));
+  app.querySelector('[data-act="quick"]')!.addEventListener('click', () => startGame(true));
+  app.querySelector('[data-act="mine"]')!.addEventListener('click', () => showMine());
+}
+
+/** 新しい3人を作って始める。quick のときは、おまかせで最後の画面まで一気に進める（2026-10-15） */
+function startGame(quick: boolean, mine?: { year: number; pref: number }): void {
+  sound.unlock(ui.sound);
+  if (location.search) history.replaceState(null, '', location.pathname);
+  state = createGame({ playerBirthYear: ui.playerBirthYear, mine });
+  track(mine ? 'start-mine' : quick ? 'start-quick' : 'start');
+  if (quick) {
+    playToEnd(state);
+    void showEnd(true);
+    return;
+  }
+  store.set(SAVE_KEY, state);
+  void showGacha();
+}
+
+/** 「私の生まれ年と県で回す」：いちばん若い人を、遊ぶ人自身の生まれ年と県にする */
+function showMine(): void {
+  const years = Array.from({ length: 2010 - 1925 + 1 }, (_, i) => 2010 - i);
+  const py = ui.playerBirthYear ?? 1995;
+  const pp = ui.myPref ?? 13;
+  const { el, close } = sheet(
+    html`<p class="kicker">私の生まれ年と県で回す</p>
+      <h2>もし私が、ほかの時代に生まれていたら</h2>
+      <p class="prompt">3人のうち、いちばん若い人を、あなた自身の生まれ年と生まれた県にします。ほかの2人は、30年以上前のどこか（江戸まで）に生まれます。入れた年と県は、この端末の中にだけ保存します。</p>
+      <div class="mine-form">
+        <label>生まれ年<select id="myYear">${years.map((y) => `<option value="${y}" ${y === py ? 'selected' : ''}>${y}年（${wareki(y)}）</option>`)}</select></label>
+        <label>生まれた県<select id="myPref">${S.PREFS.map((n, i) => `<option value="${i + 1}" ${i + 1 === pp ? 'selected' : ''}>${n}</option>`)}</select></label>
+      </div>
+      <div class="start-acts">
+        <button class="btn" data-go="slow">ガチャを回す</button>
+        <button class="btn ghost" data-go="quick">すぐ結果を見る</button>
+      </div>
+      <button class="btn small ghost" data-close>閉じる</button>`,
+    { label: '私の生まれ年と県で回す', dismiss: true },
+  );
+  el.querySelector('[data-close]')!.addEventListener('click', close);
+  el.querySelectorAll<HTMLButtonElement>('[data-go]').forEach((b) =>
+    b.addEventListener('click', () => {
+      const year = Number((el.querySelector('#myYear') as HTMLSelectElement).value);
+      const pref = Number((el.querySelector('#myPref') as HTMLSelectElement).value);
+      ui.playerBirthYear = year;
+      ui.myPref = pref;
+      savePrefs();
+      close();
+      startGame(b.dataset.go === 'quick', { year, pref });
+    }),
+  );
+}
+
+/** アクセス数（GoatCounter を入れたときだけ数える。個人は特定しない） */
+function track(name: string): void {
+  try {
+    (window as any).goatcounter?.count?.({ path: name, title: name, event: true });
+  } catch {
+    /* 数えられなくても遊べる */
+  }
 }
 
 // ---------- トップページの情報 ----------
@@ -314,6 +356,7 @@ function titleSections(): string {
         <p class="small">寿命・進学・就職・結婚・賃金・物価・年金は、日本の公的な統計から作っています。取れない年は前後の年から補っています。</p>
         <p class="small">1930年より前（明治・大正）の数字は、当時の生命表・人口動態統計・学校の統計・長期経済統計などから作った<b>概算</b>です。年ごとの値が残っていないところは前後の年から補い、一部は推計しています。戦前の賃金や物価は、いまの統計と同じ形では残っていないため、目安として見てください。</p>
         <p class="small">1890年より前（江戸後期〜明治の初め）は、国の統計がまだありません。寺の宗門人別改帳を使った歴史人口学の研究、幕府の人口調査、米の値段や賃金の研究などから作った<b>推計</b>で、地域や村によって大きな差があります。江戸時代のお金は、いまの価値に直した目安で示しています。</p>
+        <p class="small">このサイトは、アクセス数と、遊ばれた回数（ガチャを回した・最後まで遊んだ・共有した）だけを、GoatCounter で数えています。Cookie は使わず、個人を特定する情報は集めません。遊んだ内容や入れた生まれ年は、この端末の中にだけ保存します。</p>
         <p class="small">2026年より先は、国の将来推計の前提を使った見込みです。詳しくは「使った統計と出典」と、リポジトリの docs/出典一覧.md にあります。</p>
       </div>
     </section>
@@ -345,6 +388,12 @@ async function fillSample(): Promise<void> {
   if (!box) return;
   const day = Math.floor(Date.now() / 86400000);
   const st = playToEnd(createGame({ seed: 100000 + day }));
+  // 最初の画面に、今日の見本の3人を短く見せる
+  const hs = app.querySelector('#heroSample');
+  if (hs)
+    hs.innerHTML = `<p class="hs-k">たとえば今日の3人（この組み合わせは${oddsText(st.gacha.comboProb)}）</p>${st.persons
+      .map((p, i) => `<p class="hs-r ${ERA_CLASS[i]}"><b>${wareki(p.birthYear)}・${esc(S.placeShort(p.pref, p.birthYear))}</b><span>享年${p.deathAge}</span><em>「${esc(titlesOf(st.persons, st.shared.talent)[i])}」</em></p>`)
+      .join('')}`;
   const usedT = new Set<string>();
   box.innerHTML = st.persons
     .map((p, i) => {
@@ -441,12 +490,19 @@ async function showGacha(): Promise<void> {
   addRow('家の暮らし向き', fam[st.shared.familyClass - 1], '20.0%');
   await sleep(skip ? 0 : 800);
   mark(3);
-  label.textContent = 'いちばん若い人の生まれ年';
-  prob.textContent = '';
-  const ys = Array.from({ length: 21 }, (_, i) => String(1990 + i));
-  await spin(ys, String(g.years[2]), 1300);
-  prob.textContent = `${g.years[2]}年に生まれたのは${(g.birthsInYear[2] / 10000).toFixed(0)}万人`;
-  addRow('いちばん若い人', `${g.years[2]}年`, '1990〜2010年から');
+  if (st.shared.mine) {
+    label.textContent = 'いちばん若い人＝あなたの生まれ年';
+    reel.textContent = `${g.years[2]}年`;
+    prob.textContent = `${g.years[2]}年に生まれたのは${(g.birthsInYear[2] / 10000).toFixed(0)}万人`;
+    addRow('いちばん若い人', `${g.years[2]}年`, 'あなたの生まれ年');
+  } else {
+    label.textContent = 'いちばん若い人の生まれ年';
+    prob.textContent = '';
+    const ys = Array.from({ length: 21 }, (_, i) => String(1990 + i));
+    await spin(ys, String(g.years[2]), 1300);
+    prob.textContent = `${g.years[2]}年に生まれたのは${(g.birthsInYear[2] / 10000).toFixed(0)}万人`;
+    addRow('いちばん若い人', `${g.years[2]}年`, '1990〜2010年から');
+  }
   await sleep(skip ? 0 : 700);
   // いちばん年上の人は1800年からいちばん若い人の60年前まで、真ん中の人はそのあいだ（どこも30年以上あける）
   label.textContent = 'いちばん年上の人の生まれ年';
@@ -1687,12 +1743,16 @@ async function showEnd(skipSlides = false): Promise<void> {
       </section>
       <div class="end-acts">
         <button class="btn" id="again">もう一度生まれる</button>
+        <button class="btn ghost" id="againQuick">すぐもう一回（おまかせ）</button>
         <button class="btn ghost" data-act="sources2">使った統計と出典</button>
       </div>
     </main>`;
   bindCommon(app);
   store.del(SAVE_KEY);
   saveHistory(st, '');
+  track('end');
+  // 共有のリンク：開いた人が、この3人の結果をそのまま見られる（?r= に結果のまとめを入れる）
+  const resultUrl = `${SITE_URL}?r=${encodeSummary(summarize(st.persons, st.shared.sex, st.seed, st.gacha.comboProb, st.shared.talent))}`;
   const okuri = app.querySelector('#okuri') as HTMLTextAreaElement;
   okuri.addEventListener('change', () => saveHistory(st, okuri.value.slice(0, 140)));
   const canvas = app.querySelector('#card') as HTMLCanvasElement;
@@ -1712,13 +1772,14 @@ async function showEnd(skipSlides = false): Promise<void> {
     const file = cardBlob ? new File([cardBlob], 'umaredoshi.png', { type: 'image/png' }) : null;
     if (file && isMobile() && navigator.canShare?.({ files: [file] })) {
       try {
-        await navigator.share({ files: [file], text: xShareText(text) });
+        await navigator.share({ files: [file], text: xShareText(text, resultUrl) });
       } catch {
         /* キャンセル */
       }
       return;
     }
-    openX(text);
+    track('share-x');
+    openX(text, resultUrl);
     if (!cardBlob) return;
     try {
       await navigator.clipboard.write([new ClipboardItem({ 'image/png': cardBlob })]);
@@ -1733,14 +1794,14 @@ async function showEnd(skipSlides = false): Promise<void> {
   });
   app.querySelector('#copy')!.addEventListener('click', async () => {
     try {
-      await navigator.clipboard.writeText(shareText(st, (app.querySelector('#okuri') as HTMLTextAreaElement)?.value));
+      await navigator.clipboard.writeText(`${shareText(st, (app.querySelector('#okuri') as HTMLTextAreaElement)?.value)}\n${resultUrl}`);
       toast('文章をコピーしました');
     } catch {
       toast('コピーできませんでした');
     }
   });
   app.querySelector('#shareb')!.addEventListener('click', async () => {
-    const text = shareText(st, (app.querySelector('#okuri') as HTMLTextAreaElement)?.value);
+    const text = `${shareText(st, (app.querySelector('#okuri') as HTMLTextAreaElement)?.value)}\n${resultUrl}`;
     try {
       const blob: Blob | null = await new Promise((r) => canvas.toBlob(r, 'image/png'));
       const file = blob ? new File([blob], 'umaredoshi.png', { type: 'image/png' }) : null;
@@ -1754,11 +1815,8 @@ async function showEnd(skipSlides = false): Promise<void> {
       /* キャンセル */
     }
   });
-  app.querySelector('#again')!.addEventListener('click', () => {
-    state = createGame({ playerBirthYear: ui.playerBirthYear });
-    store.set(SAVE_KEY, state);
-    showGacha();
-  });
+  app.querySelector('#again')!.addEventListener('click', () => startGame(false));
+  app.querySelector('#againQuick')?.addEventListener('click', () => startGame(true));
   app.querySelector('[data-act="sources2"]')!.addEventListener('click', showSources);
 }
 
@@ -1907,8 +1965,52 @@ function toast(msg: string): void {
 }
 
 // URL で画面確認用の状態に飛べるようにする（?demo=life など。Playwright のスクリーンショット用）
+/** 共有のリンク（?r=）から開いたとき：その人の3つの人生を見せ、自分も回せるようにする */
+function showShared(r: ResultSummary): void {
+  window.scrollTo(0, 0);
+  track('open-shared');
+  const eras = r.ps.map((q) => eraName(q.y)).join('・');
+  app.innerHTML = html`${topbar()}
+    <main class="wrap shared" id="main">
+      <p class="kicker">だれかが引いた、3つの人生</p>
+      <h2 class="big">同じ私が、${esc(eras)}に生まれた。</h2>
+      ${r.o ? `<p class="shared-odds">この組み合わせは${esc(oddsText(r.o))}</p>` : ''}
+      <div class="shared-cards">${r.ps
+        .map(
+          (q, i) => `<article class="sc ${ERA_CLASS[i]}">
+          <header><b>${q.y}</b><span>${esc(wareki(q.y))}・${esc(S.placeMid(q.p, q.y))}</span></header>
+          <p class="sc-name">${esc(q.n)}</p>
+          <p class="sc-age">享年${q.d}<small>${esc(q.c)}</small></p>
+          <p class="sc-title">「${esc(q.t)}」</p>
+          <p class="sc-bio">${esc(q.b)}</p>
+        </article>`,
+        )
+        .join('')}</div>
+      <div class="shared-acts">
+        <p class="shared-q">あなたは何時代に生まれて、何歳まで生きる？</p>
+        <div class="start-acts">
+          <button class="btn big" data-act="start">自分もガチャを回す<small>決断しながら、一生を見届ける</small></button>
+          <button class="btn ghost big" data-act="quick">すぐ結果を見る<small>おまかせで、数秒で最後まで</small></button>
+        </div>
+        <button class="linkbtn" data-act="mine">私の生まれ年と県で回す　→</button>
+      </div>
+    </main>
+    ${titleSections()}`;
+  bindCommon(app);
+  app.querySelector('[data-act="start"]')!.addEventListener('click', () => startGame(false));
+  app.querySelector('[data-act="quick"]')!.addEventListener('click', () => startGame(true));
+  app.querySelector('[data-act="mine"]')!.addEventListener('click', () => showMine());
+  startCounter();
+  void fillSample();
+}
+
 async function boot(): Promise<void> {
   const q = new URLSearchParams(location.search);
+  const shared = q.get('r');
+  if (shared) {
+    const r = decodeSummary(shared);
+    if (r) return void showShared(r);
+  }
   const demo = q.get('demo');
   if (demo) {
     await loadEvents();

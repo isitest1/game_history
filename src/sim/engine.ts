@@ -63,7 +63,7 @@ export function eraOf(index: number): EraId {
 }
 
 /** ガチャ：新しい3人を作る */
-export function createGame(opts: { seed?: number; playerBirthYear?: number | null } = {}): GameState {
+export function createGame(opts: { seed?: number; playerBirthYear?: number | null; mine?: { year: number; pref: number } } = {}): GameState {
   const seed = opts.seed ?? randomSeed();
   const rng = new Rng(seed);
 
@@ -74,7 +74,9 @@ export function createGame(opts: { seed?: number; playerBirthYear?: number | nul
   // 1930年より前は資料と推計の統計（data/stats/prewar_*.json）、1890年より前は江戸・明治前半の推計（data/stats/edo.json）を使う
   const youngYears = Array.from({ length: 21 }, (_, i) => 1990 + i);
   const youngW = youngYears.map((y) => S.nationalBirths(Math.min(y, 2005)));
-  const young = rng.weighted(youngYears, youngW);
+  // 「私の生まれ年と県」で回すときは、いちばん若い人を遊ぶ人自身の生まれ年にする（2026-10-15）
+  const mine = opts.mine && opts.mine.year >= OLDEST + 60 && opts.mine.year <= 2010 ? opts.mine : undefined;
+  const young = mine ? mine.year : rng.weighted(youngYears, youngW);
   const oldYears = Array.from({ length: young - 60 - OLDEST + 1 }, (_, i) => OLDEST + i);
   const oldW = oldYears.map((y) => 0.5 + (0.5 * (y - OLDEST)) / Math.max(1, young - 60 - OLDEST));
   const old = rng.weighted(oldYears, oldW);
@@ -85,7 +87,8 @@ export function createGame(opts: { seed?: number; playerBirthYear?: number | nul
   const middleYearProb = (S.nationalBirths(Math.min(young, 2005)) / youngW.reduce((a, b) => a + b, 0)) * (1 / 21);
 
   // 県：3人それぞれ、その人の生まれ年の都道府県別出生数で重み付けして別々に引く（2026-10-15。以前は3人で共通）
-  const prefPicks = years.map((y) => {
+  const prefPicks = years.map((y, i) => {
+    if (mine && i === 2) return { pref: mine.pref, prob: 1 };
     const pb = S.prefBirths(y);
     const idx = rng.weighted(
       pb.map((_, i) => i),
@@ -117,7 +120,8 @@ export function createGame(opts: { seed?: number; playerBirthYear?: number | nul
     talent,
     temperament: null,
     firstName: '',
-    playerBirthYear: opts.playerBirthYear ?? null,
+    playerBirthYear: mine ? mine.year : opts.playerBirthYear ?? null,
+    mine: !!mine,
   };
 
   const persons = years.map((y, i) => makePerson(rng, i as EraId, y, shared, prefs[i] === 47 ? surnameOkinawa : surname, prefs[i]));
@@ -155,7 +159,7 @@ export function createGame(opts: { seed?: number; playerBirthYear?: number | nul
       birthsInYear: years.map((y) => Math.round(S.nationalBirths(y))),
       // 生まれ年3つ × 県3つ × 性別。共有の文章で「約○億分の1」と出す
       comboProb:
-        (youngW[youngYears.indexOf(young)] / youngW.reduce((a, b) => a + b, 0)) *
+        (mine ? 1 : youngW[youngYears.indexOf(young)] / youngW.reduce((a, b) => a + b, 0)) *
         (oldW[oldYears.indexOf(old)] / oldW.reduce((a, b) => a + b, 0)) *
         (1 / (young - 30 - (old + 30) + 1)) *
         prefPicks.reduce((a, x) => a * x.prob, 1) *

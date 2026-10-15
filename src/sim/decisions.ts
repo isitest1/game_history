@@ -264,7 +264,8 @@ export const DECISIONS: DecisionDef[] = [
     ],
     resolve: (p, opt, st, rng) => {
       const y = yearOf(p);
-      p.edu = 'middle';
+      // 小学校（寺子屋）に通えなかった人は、学歴を「通っていない」のままにする
+      if (!p.flags.includes('no_school')) p.edu = 'middle';
       const rate = S.eduRate('highSchool', y, p.sex) / 100;
       const school = y < 1873 ? (p.flags.includes('samurai_family') ? '藩校' : '私塾') : y < 1886 ? (p.sex === 'male' ? '中学校' : '女学校') : y < 1948 ? (p.sex === 'male' ? '旧制中学' : '高等女学校') : '高校';
       if (y < 1873 && opt === 'go' && p.sex === 'female') {

@@ -5,6 +5,7 @@ import { eduLabelOf } from '../sim/engine';
 import * as S from '../sim/stats';
 import { eraName, yen } from './format';
 import { oddsText } from './share';
+import { bioOf, titlesOf } from '../sim/story';
 
 const ERA = [
   { bg: '#efe4cc', ink: '#2a1f14', sub: '#6b5641', acc: '#a63a24', font: '"Shippori Mincho", serif', label: '活版と紙' },
@@ -56,18 +57,16 @@ export async function drawShareCard(c: HTMLCanvasElement, st: GameState, portrai
     g.fillText(`享年${p.deathAge ?? '−'}`, x + 20, y + 48);
     g.font = `700 20px ${e.font}`;
     g.fillText(p.name, x + 22, y + 128);
-    g.font = `400 20px ${e.font}`;
-    const lines = [
-      `死因：${p.deathCause ?? ''}`,
-      `学歴：${eduLabelOf(p)}`,
-      `仕事：${p.jobTitle || 'なし'}`,
-      `生涯年収：${yen(p.lifetimeEarningsReal)}`,
-      p.pensionStartAge !== undefined ? `年金：${p.pensionStartAge}歳から月${yen(p.pensionMonthlyReal ?? 0)}` : '年金：受け取る前に死去',
-    ];
-    lines.forEach((t, k) => {
-      g.fillStyle = k === 0 ? e.acc : e.ink;
-      wrap(g, t, x + 22, y + 176 + k * 44, colW - 44);
-    });
+    // 称号と、ひとことの一生（src/sim/story.ts）
+    g.fillStyle = e.acc;
+    g.font = `700 21px ${e.font}`;
+    wrap(g, `「${titlesOf(st.persons, st.shared.talent)[i]}」`, x + 18, y + 164, colW - 36);
+    g.fillStyle = e.ink;
+    g.font = `400 17px ${e.font}`;
+    wrapLines(g, bioOf(p), x + 22, y + 204, colW - 44, 27, 5);
+    g.font = `400 17px ${e.font}`;
+    g.fillText(`生涯年収 ${yen(p.lifetimeEarningsReal)}`, x + 22, y + 350);
+    g.fillText(p.pensionStartAge !== undefined ? `年金 ${p.pensionStartAge}歳から月${yen(p.pensionMonthlyReal ?? 0)}` : '年金を受け取る前に死去', x + 22, y + 377);
     const miss = p.wishes.filter((w) => !w.ok).length;
     g.fillStyle = e.sub;
     g.font = `400 15px ${e.font}`;
@@ -114,16 +113,13 @@ function drawPortrait(c: HTMLCanvasElement, st: GameState): void {
     g.fillStyle = e.ink;
     g.font = `800 96px ${e.font}`;
     g.fillText(`享年${p.deathAge ?? '−'}`, x + 28, y + 64);
-    g.font = `400 28px ${e.font}`;
-    const lines = [
-      `${p.deathCause ?? ''}・${eduLabelOf(p)}・${p.jobTitle || '仕事なし'}`,
-      `生涯年収 ${yen(p.lifetimeEarningsReal)}`,
-      p.pensionStartAge !== undefined ? `年金 ${p.pensionStartAge}歳から月${yen(p.pensionMonthlyReal ?? 0)}` : '年金を受け取る前に死去',
-    ];
-    lines.forEach((t, k) => {
-      g.fillStyle = k === 0 ? e.acc : e.ink;
-      wrap(g, t, x + 32, y + 184 + k * 40, w - 64);
-    });
+    // 享年の横に称号、その下にひとことの一生（src/sim/story.ts）
+    g.fillStyle = e.acc;
+    g.font = `700 32px ${e.font}`;
+    wrapLines(g, `「${titlesOf(st.persons, st.shared.talent)[i]}」`, x + 400, y + 92, w - 430, 40, 2);
+    g.fillStyle = e.ink;
+    g.font = `400 26px ${e.font}`;
+    wrapLines(g, bioOf(p), x + 32, y + 184, w - 64, 38, 3);
   });
   g.fillStyle = 'rgba(255,255,255,0.62)';
   g.font = '400 22px "Zen Kaku Gothic New", sans-serif';
@@ -143,6 +139,24 @@ function roundRect(g: CanvasRenderingContext2D, x: number, y: number, w: number,
   g.arcTo(x, y + h, x, y, r);
   g.arcTo(x, y, x + w, y, r);
   g.closePath();
+}
+
+/** 幅に合わせて折り返して書く（最大 maxLines 行。あふれたら…） */
+function wrapLines(g: CanvasRenderingContext2D, text: string, x: number, y: number, max: number, lh: number, maxLines: number): void {
+  // 数字の途中や、句読点・閉じかっこの前では折り返さない
+  const tokens = text.match(/[0-9０-９,.]+[。、）」]?|.[。、）」]?/gu) ?? [];
+  const lines: string[] = [];
+  let line = '';
+  for (const tk of tokens) {
+    if (line && g.measureText(line + tk).width > max) {
+      lines.push(line);
+      line = tk;
+    } else line += tk;
+  }
+  if (line) lines.push(line);
+  const out = lines.slice(0, maxLines);
+  if (lines.length > maxLines) out[maxLines - 1] = out[maxLines - 1].slice(0, -1) + '…';
+  out.forEach((l, k) => g.fillText(l, x, y + k * lh));
 }
 
 function wrap(g: CanvasRenderingContext2D, text: string, x: number, y: number, max: number): void {
