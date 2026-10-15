@@ -1,0 +1,3621 @@
+[
+  {
+    "id": "rn-001",
+    "kind": "daily",
+    "ageMin": 0,
+    "ageMax": 2,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "snow": true,
+      "urban": false
+    },
+    "text": "母に抱かれて、初めて雪の積もった庭に出た。冷たい空気に驚いて、しばらく目をぱちぱちさせていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-002",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 5,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "snow": true,
+      "urban": false
+    },
+    "text": "綿入れのちゃんちゃんこを着せられ、そりに乗せられて坂を下った。止まると、もう一回と指を一本立てた。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-003",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 6,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "snow": true,
+      "urban": false,
+      "hasSibling": true
+    },
+    "text": "{sib}と庭に雪だるまを作った。目には炭を、鼻には人参を入れたが、朝になると首が少し傾いていた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-004",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "snow": true,
+      "urban": false,
+      "school": "elem"
+    },
+    "text": "濡れた手袋と長靴を、教室のストーブのまわりに並べて干した。給食のころには、毛糸の焦げるにおいがしていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-005",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "yearMax": 1975,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "snow": true,
+      "urban": false,
+      "school": "elem"
+    },
+    "text": "朝、当番が石炭を運んでだるまストーブに火を入れた。煙突がごうごう鳴りだすまで、みんなで手をこすり合わせた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-006",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "snow": true,
+      "urban": false,
+      "school": "elem"
+    },
+    "text": "屋根から落ちた雪の山に、友だちとかまくらを掘った。中でろうそくをともすと、壁がぼんやり橙色に光った。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-007",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 15,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "snow": true,
+      "urban": false
+    },
+    "text": "吹雪の朝、前を歩く人の背中だけを見て学校まで歩いた。着いたときには、眉毛もまつげも真っ白になっていた。",
+    "effects": {
+      "health": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-008",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 15,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "snow": true,
+      "urban": false,
+      "mother": true
+    },
+    "text": "学校から帰ると、母に言われて玄関前の雪をかいた。スコップを使いすぎて、夜は腕がじんじんした。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-009",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 64,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "snow": true,
+      "urban": false,
+      "working": true
+    },
+    "text": "出勤前に車の雪を払い、凍った窓に湯をかけた。エンジンをかけたまま、手のひらに息を吹きかけて待った。",
+    "effects": {
+      "health": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-010",
+    "kind": "daily",
+    "ageMin": 35,
+    "ageMax": 75,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "snow": true,
+      "urban": false,
+      "flags": [
+        "homeowner"
+      ]
+    },
+    "text": "ひと晩で屋根に雪が積もり、はしごをかけて雪下ろしをした。下ろし終えて見上げると、軒のつららが光っていた。",
+    "effects": {
+      "health": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-011",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 100,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "snow": true,
+      "urban": false
+    },
+    "text": "雪かきがきつくなり、近所の若い人がうちの前までかいてくれた。お礼に漬物を包んで持って行った。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-012",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "snow": true,
+      "urban": false
+    },
+    "text": "春になり、畑の雪がようやく消えた。黒い土からふきのとうが出ているのを見つけ、天ぷらにして食べた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-013",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 60,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "snow": true,
+      "urban": false
+    },
+    "text": "春先、道の脇の雪山が黒く汚れて小さくなっていった。長靴をやめて短い靴に替えた日、足が軽かった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-014",
+    "kind": "daily",
+    "ageMin": 13,
+    "ageMax": 18,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "snow": true,
+      "urban": false,
+      "school": "high"
+    },
+    "text": "冬の下校時、バス停で一時間近くバスを待った。足踏みしながら、友だちと缶入りのおしるこを分けて飲んだ。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-015",
+    "kind": "daily",
+    "ageMin": 0,
+    "ageMax": 2,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "urban": false,
+      "flags": [
+        "three_generations"
+      ]
+    },
+    "text": "冬の間、祖母が編んだ毛糸の帽子をかぶって過ごした。耳当てのひもを結ぶたびに、いやがって首を振った。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-016",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 8,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "snow": true,
+      "urban": false
+    },
+    "text": "初雪の日、窓に顔をくっつけて空を見上げた。落ちてくる雪をずっと目で追って、首が痛くなった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-017",
+    "kind": "daily",
+    "ageMin": 0,
+    "ageMax": 3,
+    "when": {
+      "region": [
+        "hokkaido"
+      ],
+      "urban": false
+    },
+    "text": "家の中はストーブで暖かく、冬でも薄着で過ごした。二重窓の内側に、小さな手の跡がいくつもついた。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-018",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 6,
+    "when": {
+      "region": [
+        "hokkaido"
+      ],
+      "urban": false,
+      "father": true
+    },
+    "text": "凍った道で転ばないように、父に手を引かれて歩いた。道の上には滑り止めの砂がまかれていた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-019",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 6,
+    "when": {
+      "region": [
+        "hokkaido"
+      ],
+      "urban": false
+    },
+    "text": "冬の朝、窓ガラスに氷の模様ができていた。指でなぞると、そこだけ溶けて外の白い景色が見えた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-020",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "when": {
+      "region": [
+        "hokkaido"
+      ],
+      "urban": false,
+      "school": "elem"
+    },
+    "text": "体育の時間はスキーだった。学校の裏山を何度もかにの歩き方で登り、ようやく一回だけ止まらずに滑り下りた。",
+    "effects": {
+      "health": 1,
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-021",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "when": {
+      "region": [
+        "hokkaido"
+      ],
+      "urban": false,
+      "school": "elem"
+    },
+    "text": "冬になると校庭に水をまいてスケートリンクが作られた。休み時間、みんなで手をつないで列になって滑った。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-022",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "when": {
+      "region": [
+        "hokkaido"
+      ],
+      "urban": false,
+      "school": "elem"
+    },
+    "text": "北海道の夏休みは短く、八月の半ばにはもう学校が始まった。本州の親戚の子の話を聞いて、少しうらやましかった。",
+    "effects": {},
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-023",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "yearMax": 1975,
+    "when": {
+      "region": [
+        "hokkaido"
+      ],
+      "urban": false,
+      "father": true
+    },
+    "text": "祖父が、開拓で入ったころは木の根を一本ずつ掘り起こしたと話した。父は「もう何度も聞いた」と笑っていた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-024",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 14,
+    "when": {
+      "region": [
+        "hokkaido"
+      ],
+      "urban": false
+    },
+    "text": "夏の夕方、庭で七輪に網をのせ、近所の家族とジンギスカンを焼いた。煙が服にしみこんで、夜まで羊のにおいがした。",
+    "effects": {
+      "happiness": 2,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-025",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 14,
+    "when": {
+      "region": [
+        "hokkaido"
+      ],
+      "urban": false
+    },
+    "text": "運動会の昼、親たちがござを並べて、ジンギスカン鍋を囲んだ。弁当より先に肉を取りに走った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-026",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 12,
+    "when": {
+      "prefs": [
+        1
+      ],
+      "urban": false
+    },
+    "text": "子ども会でとうきびをゆでて、ござに座って食べた。歯に挟まった皮を、帰り道もずっと舌でいじっていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-027",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "yearMin": 1955,
+    "yearMax": 2010,
+    "when": {
+      "prefs": [
+        1
+      ],
+      "urban": false
+    },
+    "text": "家族で雪まつりを見に行った。大きな雪像の前で写真を撮り、帰りに屋台で熱い甘酒を飲んだ。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "check": "未確認（さっぽろ雪まつりの始まりは1950年ごろとされるが、資料では確かめていない）"
+  },
+  {
+    "id": "rn-028",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 14,
+    "yearMin": 1971,
+    "yearMax": 1975,
+    "when": {
+      "prefs": [
+        1
+      ],
+      "urban": false
+    },
+    "text": "開通したばかりの地下鉄に乗った。ゴムのタイヤで静かに走り、窓の外が暗いのに少しどきどきした。",
+    "effects": {
+      "happiness": 1,
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "確認済み：札幌市営地下鉄南北線は1971年12月開業、札幌冬季五輪は1972年2月（札幌市交通局、北海道新聞）"
+  },
+  {
+    "id": "rn-029",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 30,
+    "yearMin": 1972,
+    "yearMax": 1972,
+    "when": {
+      "prefs": [
+        1
+      ],
+      "urban": false
+    },
+    "text": "冬のオリンピックの中継を、家族そろってテレビの前で見た。ジャンプの選手が飛ぶたびに、父が腰を浮かせた。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "check": "確認済み：札幌市営地下鉄南北線は1971年12月開業、札幌冬季五輪は1972年2月（札幌市交通局、北海道新聞）"
+  },
+  {
+    "id": "rn-030",
+    "kind": "daily",
+    "ageMin": 19,
+    "ageMax": 40,
+    "yearMin": 1950,
+    "yearMax": 1990,
+    "when": {
+      "prefs": [
+        1
+      ],
+      "urban": false,
+      "working": true
+    },
+    "text": "炭住の長屋に住んでいた。共同の風呂で隣の人と背中を流し合い、帰りに石炭の粉で黒くなった道を歩いた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-031",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "yearMin": 1950,
+    "yearMax": 1975,
+    "when": {
+      "prefs": [
+        1
+      ],
+      "urban": false
+    },
+    "text": "炭鉱の町の子どもたちは、ボタ山の下で遊んだ。サイレンが鳴ると、みんな一度だけ山のほうを振り返った。",
+    "effects": {},
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-032",
+    "kind": "daily",
+    "ageMin": 35,
+    "ageMax": 60,
+    "yearMin": 1970,
+    "yearMax": 1995,
+    "when": {
+      "prefs": [
+        1
+      ],
+      "urban": false,
+      "working": true
+    },
+    "text": "炭鉱の閉山が決まり、職安の窓口に並んだ。前にも後ろにも、同じ作業着の人が並んでいた。",
+    "effects": {
+      "happiness": -2
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-033",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 18,
+    "yearMin": 1970,
+    "yearMax": 1995,
+    "when": {
+      "prefs": [
+        1
+      ],
+      "urban": false
+    },
+    "text": "炭鉱が閉まると、クラスの友だちが一人、二人と転校していった。最後に書いた寄せ書きの色紙は、空白が多かった。",
+    "effects": {
+      "happiness": -1,
+      "relation": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-034",
+    "kind": "daily",
+    "ageMin": 40,
+    "ageMax": 75,
+    "yearMin": 2007,
+    "yearMax": 2015,
+    "when": {
+      "prefs": [
+        1
+      ],
+      "urban": false
+    },
+    "text": "町の財政が破綻したと報じられ、近くの施設が閉まった。それでも夏になると、メロンの直売所には車が並んだ。",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：夕張市は2007年3月に財政再建団体となった（関西大学・自治体問題研究所の論文）。夕張の最後の炭鉱閉山の年は未確認"
+  },
+  {
+    "id": "rn-035",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 60,
+    "yearMin": 2002,
+    "yearMax": 2004,
+    "when": {
+      "prefs": [
+        1
+      ],
+      "urban": false,
+      "working": true
+    },
+    "text": "釧路の炭鉱が閉山した年、駅前の飲み屋が一軒、また一軒と看板を下ろした。それでも港には霧が出て、汽笛が鳴った。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "確認済み：釧路の太平洋炭礦は2002年に閉山し、採炭は釧路コールマインが引き継いだ（北海道観光公式サイト、九州大学の資料）"
+  },
+  {
+    "id": "rn-036",
+    "kind": "daily",
+    "ageMin": 13,
+    "ageMax": 40,
+    "yearMin": 1955,
+    "yearMax": 1988,
+    "when": {
+      "region": [
+        "hokkaido"
+      ],
+      "urban": false
+    },
+    "text": "本州へ行くとき、青函連絡船に乗った。甲板で風に吹かれ、遠ざかる函館山を最後まで見ていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：青函トンネル開業と青函連絡船の終航は1988年3月13日（東洋経済オンライン、nippon.com、青森市立図書館資料）"
+  },
+  {
+    "id": "rn-037",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 60,
+    "yearMin": 1988,
+    "yearMax": 1990,
+    "when": {
+      "region": [
+        "hokkaido"
+      ],
+      "urban": false
+    },
+    "text": "青函トンネルを通って本州へ行った。窓の外がずっと暗く、海の底を走っているとは思えなかった。",
+    "effects": {
+      "happiness": 1,
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "確認済み：青函トンネル開業と青函連絡船の終航は1988年3月13日（東洋経済オンライン、nippon.com、青森市立図書館資料）"
+  },
+  {
+    "id": "rn-038",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 70,
+    "yearMin": 2016,
+    "yearMax": 2020,
+    "when": {
+      "region": [
+        "hokkaido"
+      ],
+      "urban": false
+    },
+    "text": "新幹線で東京まで行った。函館の駅弁を食べ終えてひと眠りすると、もう窓の外にビルが並んでいた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：北海道新幹線 新青森〜新函館北斗 2016年3月26日開業（北海道新聞、トラベルボイス）"
+  },
+  {
+    "id": "rn-039",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 60,
+    "yearMin": 1997,
+    "yearMax": 1999,
+    "when": {
+      "prefs": [
+        1
+      ],
+      "urban": false
+    },
+    "text": "拓銀がつぶれたというニュースを、職場のテレビで見た。帰りに通帳を開いて、しばらく数字を眺めていた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "確認済み：北海道拓殖銀行は1997年11月17日に破綻処理が発表され、道内の事業は北洋銀行へ譲渡（日本銀行議事録、文春オンライン）"
+  },
+  {
+    "id": "rn-040",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 40,
+    "yearMin": 2004,
+    "yearMax": 2010,
+    "when": {
+      "prefs": [
+        1
+      ],
+      "urban": false
+    },
+    "text": "北海道に来たプロ野球の試合を見にドームへ行った。知らない人と声をそろえて応援し、帰りの地下鉄でまだ興奮していた。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "check": "確認済み：日本ハムは2004年に北海道へ移転、2006年に日本一（北海道新聞）"
+  },
+  {
+    "id": "rn-041",
+    "kind": "daily",
+    "ageMin": 19,
+    "ageMax": 34,
+    "when": {
+      "region": [
+        "hokkaido"
+      ],
+      "urban": false,
+      "working": true
+    },
+    "text": "冬は暖房の灯油代がかさみ、給料日前はタンクの目盛りばかり気にした。配達のトラックの音楽が聞こえると外へ出た。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-042",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 64,
+    "when": {
+      "region": [
+        "hokkaido"
+      ],
+      "urban": false,
+      "flags": [
+        "homeowner"
+      ]
+    },
+    "text": "家を建てるとき、窓は二重にし、玄関には風除室を付けた。冬に来た本州の客が、家の中の暖かさに驚いていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-043",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 64,
+    "when": {
+      "prefs": [
+        1
+      ],
+      "urban": false,
+      "job": [
+        "farm"
+      ]
+    },
+    "text": "見渡すかぎりのじゃがいも畑で、収穫機のあとを拾って歩いた。夕方、空が広くて、どこまでも赤くなった。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-044",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 64,
+    "when": {
+      "prefs": [
+        1
+      ],
+      "urban": false,
+      "job": [
+        "farm"
+      ]
+    },
+    "text": "朝四時に起きて、牛舎で搾乳をした。白い息を吐きながら、牛の体の温かさに手を当てて少し休んだ。",
+    "effects": {
+      "health": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-045",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 64,
+    "when": {
+      "prefs": [
+        1
+      ],
+      "urban": false,
+      "job": [
+        "self",
+        "smallco"
+      ]
+    },
+    "text": "漁港で、夜明け前に揚がったばかりの鮭を箱に詰めた。手がかじかんで、ゴム手袋の上から何度も息をかけた。",
+    "effects": {
+      "health": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-046",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 70,
+    "when": {
+      "prefs": [
+        1
+      ],
+      "urban": false
+    },
+    "text": "流氷が来たと聞いて、海岸まで見に行った。白い板のような氷が沖まで続き、きしむ音が足もとから聞こえた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-047",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "region": [
+        "hokkaido"
+      ],
+      "urban": false
+    },
+    "text": "一日中ストーブの前に座っていた。上に置いたやかんがしゅんしゅん鳴り、ときどき干し芋を焼いて食べた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-048",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 100,
+    "when": {
+      "region": [
+        "hokkaido"
+      ],
+      "urban": false,
+      "hasChildren": true
+    },
+    "text": "冬だけでも札幌の{child}の家に来ないかと言われた。考えておくと答えて、窓の外の雪をしばらく見ていた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-049",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 95,
+    "yearMin": 2000,
+    "yearMax": 2026,
+    "when": {
+      "region": [
+        "hokkaido"
+      ],
+      "urban": false
+    },
+    "text": "近くのスーパーが閉まり、週に一度来る移動販売の車を待つようになった。運転手さんとは天気の話をした。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-050",
+    "kind": "daily",
+    "ageMin": 13,
+    "ageMax": 18,
+    "when": {
+      "region": [
+        "hokkaido"
+      ],
+      "urban": false,
+      "school": "high"
+    },
+    "text": "冬の体育はスキーかスケートだった。リンクを何周も滑らされ、終わるころには耳がちぎれそうに痛かった。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-051",
+    "kind": "daily",
+    "ageMin": 19,
+    "ageMax": 34,
+    "when": {
+      "region": [
+        "hokkaido"
+      ],
+      "urban": false
+    },
+    "text": "冬の休みに、友だちとスキー場へ行った。帰りの車の中で、雪焼けした顔を見て笑い合った。",
+    "effects": {
+      "happiness": 2,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-052",
+    "kind": "daily",
+    "ageMin": 35,
+    "ageMax": 64,
+    "when": {
+      "region": [
+        "hokkaido"
+      ],
+      "urban": false,
+      "childAge": [
+        6,
+        12
+      ]
+    },
+    "text": "子どもの学校のスキー遠足の前に、物置から古いスキー板を出して金具を調べた。板からワックスのにおいがした。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-053",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 100,
+    "when": {
+      "prefs": [
+        1
+      ],
+      "urban": false
+    },
+    "text": "昔住んでいた炭鉱の町の写真を眺めた。ボタ山も炭住も、今では草に覆われていると聞いた。",
+    "effects": {},
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-054",
+    "kind": "daily",
+    "ageMin": 13,
+    "ageMax": 18,
+    "when": {
+      "region": [
+        "hokkaido"
+      ],
+      "urban": false,
+      "school": "high"
+    },
+    "text": "高校の帰り、友だちと味噌ラーメンを食べに行った。湯気で眼鏡がくもり、みんなで笑った。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-055",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 64,
+    "when": {
+      "prefs": [
+        1
+      ],
+      "urban": false
+    },
+    "text": "休みの日、家族で海辺の町へ行き、ウニ丼を食べた。ご飯の上で、黄色い身がつやつや光っていた。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-056",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 12,
+    "when": {
+      "prefs": [
+        2
+      ],
+      "urban": false
+    },
+    "text": "夏の夜、ねぶたを見に行った。大きな灯りが近づくと、太鼓の音がおなかの中まで響いてきた。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-057",
+    "kind": "daily",
+    "ageMin": 13,
+    "ageMax": 30,
+    "when": {
+      "prefs": [
+        2
+      ],
+      "urban": false
+    },
+    "text": "浴衣に鈴を付け、跳人になってねぶたの後ろを跳ねた。翌朝、鈴を二つなくしていたのに気づいた。",
+    "effects": {
+      "happiness": 2,
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-058",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 15,
+    "when": {
+      "prefs": [
+        2
+      ],
+      "urban": false
+    },
+    "text": "秋、親戚のりんご畑でもぎ取りを手伝った。手のひらでくるりと回すと、実はぽろりと枝から外れた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-059",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 64,
+    "when": {
+      "prefs": [
+        2
+      ],
+      "urban": false,
+      "job": [
+        "farm"
+      ]
+    },
+    "text": "春、りんごの花を一つずつ見て回り、余分な花を摘み取った。脚立の上から見る畑は、白い花で埋まっていた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rn-060",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 70,
+    "yearMin": 1991,
+    "yearMax": 1992,
+    "when": {
+      "prefs": [
+        2
+      ],
+      "urban": false,
+      "job": [
+        "farm"
+      ]
+    },
+    "text": "台風のあと、畑一面に落ちたりんごを拾い集めた。かごがすぐにいっぱいになり、腰を伸ばすたびに空を見た。",
+    "effects": {
+      "happiness": -2
+    },
+    "weight": 1,
+    "check": "確認済み：1991年9月の台風19号で青森県のりんごの落果は約34万5千トン（気象庁災害報告、農研機構の青森県りんご試験場報告）"
+  },
+  {
+    "id": "rn-061",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "yearMin": 1991,
+    "yearMax": 1992,
+    "when": {
+      "prefs": [
+        2
+      ],
+      "urban": false
+    },
+    "text": "台風のあと、学校でりんごの話が出た。落ちずに残ったりんごが売られていると聞き、家の人が一つ買ってきた。",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：1991年9月の台風19号で青森県のりんごの落果は約34万5千トン（気象庁災害報告、農研機構の青森県りんご試験場報告）"
+  },
+  {
+    "id": "rn-062",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 18,
+    "when": {
+      "prefs": [
+        2
+      ],
+      "urban": false
+    },
+    "text": "冬の夕飯は、せんべい汁だった。汁を吸ってもちもちになった南部せんべいを、家族で取り合った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-063",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 30,
+    "when": {
+      "prefs": [
+        2
+      ],
+      "urban": false
+    },
+    "text": "東京から来た友だちに津軽弁で話したら、半分も伝わらなかった。「んだ」と「わ」だけ覚えて帰っていった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-064",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 50,
+    "yearMin": 1982,
+    "yearMax": 2002,
+    "when": {
+      "prefs": [
+        2
+      ],
+      "urban": false
+    },
+    "text": "東京へ行くとき、盛岡まで在来線の特急に乗り、そこで新幹線に乗り換えた。ホームの階段を走った。",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：東北新幹線 大宮〜盛岡1982年、盛岡〜八戸2002年12月、八戸〜新青森2010年12月4日（青森県交通戦略課「東北新幹線 これまでの経緯」、コトバンク）"
+  },
+  {
+    "id": "rn-065",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 70,
+    "yearMin": 2002,
+    "yearMax": 2009,
+    "when": {
+      "prefs": [
+        2
+      ],
+      "urban": false
+    },
+    "text": "八戸まで新幹線が来て、東京がぐっと近くなった。駅の新しいホームで、知らない人が記念写真を撮っていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：東北新幹線 大宮〜盛岡1982年、盛岡〜八戸2002年12月、八戸〜新青森2010年12月4日（青森県交通戦略課「東北新幹線 これまでの経緯」、コトバンク）"
+  },
+  {
+    "id": "rn-066",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 80,
+    "yearMin": 2010,
+    "yearMax": 2012,
+    "when": {
+      "prefs": [
+        2
+      ],
+      "urban": false
+    },
+    "text": "新青森の駅まで新幹線が来た。開業の日、ホームの端に人が並び、白と緑の車体に手を振っていた。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "check": "確認済み：東北新幹線 大宮〜盛岡1982年、盛岡〜八戸2002年12月、八戸〜新青森2010年12月4日（青森県交通戦略課「東北新幹線 これまでの経緯」、コトバンク）"
+  },
+  {
+    "id": "rn-067",
+    "kind": "daily",
+    "ageMin": 18,
+    "ageMax": 50,
+    "yearMin": 1950,
+    "yearMax": 1988,
+    "when": {
+      "prefs": [
+        2
+      ],
+      "urban": false
+    },
+    "text": "青森の桟橋から連絡船に乗った。待合室ではストーブを囲んで、大きな荷物を抱えた人たちが黙って座っていた。",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：青函トンネル開業と青函連絡船の終航は1988年3月13日（東洋経済オンライン、nippon.com、青森市立図書館資料）"
+  },
+  {
+    "id": "rn-068",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 64,
+    "when": {
+      "prefs": [
+        2
+      ],
+      "urban": false
+    },
+    "text": "地吹雪の日は町じゅうが白くかすんだ。道の端の矢印の看板を頼りに、のろのろと車を走らせた。",
+    "effects": {
+      "health": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-069",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "prefs": [
+        2
+      ],
+      "urban": false
+    },
+    "text": "縁側で、りんごを薄くむいて孫に分けた。皮を一本につなげてむけると、孫が手をたたいた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-070",
+    "kind": "daily",
+    "ageMin": 35,
+    "ageMax": 64,
+    "when": {
+      "prefs": [
+        2
+      ],
+      "urban": false
+    },
+    "text": "ほたての養殖場で、かごの貝を一つずつ数えた。陸奥湾の水は冷たく、指先の感覚がなくなった。",
+    "effects": {
+      "health": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-071",
+    "kind": "daily",
+    "ageMin": 19,
+    "ageMax": 34,
+    "when": {
+      "prefs": [
+        2
+      ],
+      "urban": false,
+      "married": true
+    },
+    "text": "{spouse}と、弘前城の桜を見に行った。お堀の水面が花びらで埋まり、桜色の絨毯のようだった。",
+    "effects": {
+      "happiness": 2,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-072",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "prefs": [
+        2
+      ],
+      "urban": false
+    },
+    "text": "冬の夜、津軽三味線の音がテレビから聞こえた。バチの強い音に、昔聞いた祭りの夜を思い出した。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-073",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 12,
+    "when": {
+      "prefs": [
+        3
+      ],
+      "urban": false
+    },
+    "text": "親戚の集まりで、わんこそばを食べた。お椀に次々とそばが入り、ふたをする前におなかが苦しくなった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-074",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 40,
+    "when": {
+      "prefs": [
+        3
+      ],
+      "urban": false
+    },
+    "text": "盛岡の店で冷麺を食べた。ゴムのようにこしの強い麺を、店の人がはさみで切ってくれた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-075",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 64,
+    "yearMax": 1975,
+    "when": {
+      "prefs": [
+        3
+      ],
+      "urban": false,
+      "job": [
+        "farm"
+      ]
+    },
+    "text": "冬の間、裏山の窯で焼いた炭を俵に詰めた。炭焼きの煙で、服も髪も同じにおいになった。",
+    "effects": {
+      "health": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-076",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 64,
+    "when": {
+      "prefs": [
+        3
+      ],
+      "urban": false,
+      "mother": true
+    },
+    "text": "南部鉄器の鉄瓶で湯をわかすと、母が「お湯がまるくなる」と言った。急須に注ぐ音が静かだった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-077",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "when": {
+      "prefs": [
+        3
+      ],
+      "urban": false,
+      "school": "elem"
+    },
+    "text": "冬の朝、分校までの道を、上級生が雪を踏んで道をつけてくれた。その足跡に自分の長靴を重ねて歩いた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-078",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 15,
+    "when": {
+      "prefs": [
+        3
+      ],
+      "urban": false
+    },
+    "text": "夏、町の人がさんさ踊りの練習をしていた。太鼓を首から下げた人が、夜遅くまで通りをたたいて歩いた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-079",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 64,
+    "yearMin": 1993,
+    "yearMax": 1994,
+    "when": {
+      "prefs": [
+        3
+      ],
+      "urban": false,
+      "job": [
+        "farm"
+      ]
+    },
+    "text": "夏が寒く、稲は穂を出しても実が入らなかった。刈り取りの日、穂を指でつぶし、中が空っぽなのを確かめた。",
+    "effects": {
+      "happiness": -2
+    },
+    "weight": 1,
+    "check": "確認済み：1993年の冷害で作況指数 全国74・青森28・岩手30・宮城37・秋田83、米を緊急輸入（農研機構東北農研資料、マイナビ農業、現代ビジネス）"
+  },
+  {
+    "id": "rn-080",
+    "kind": "daily",
+    "ageMin": 35,
+    "ageMax": 64,
+    "yearMin": 2012,
+    "yearMax": 2022,
+    "when": {
+      "prefs": [
+        3
+      ],
+      "urban": false,
+      "mother": true
+    },
+    "text": "高台に移った家で、初めての正月を迎えた。窓から見える海が遠くなり、母はしばらく窓を開けずにいた。",
+    "effects": {},
+    "weight": 1,
+    "check": "未確認（2011年の東日本大震災ののち）"
+  },
+  {
+    "id": "rn-081",
+    "kind": "daily",
+    "ageMin": 60,
+    "ageMax": 100,
+    "when": {
+      "prefs": [
+        3
+      ],
+      "urban": false
+    },
+    "text": "春、岩手山に残る雪の形を見て、種まきの時期を考えた。去年と同じ形かどうか、家族で言い合った。",
+    "effects": {},
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-082",
+    "kind": "daily",
+    "ageMin": 19,
+    "ageMax": 34,
+    "when": {
+      "prefs": [
+        3
+      ],
+      "urban": false,
+      "working": true
+    },
+    "text": "仕事帰りに同僚と北上川の土手を歩いた。川の上を吹く風が冷たく、二人とも首をすくめた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-083",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 70,
+    "when": {
+      "prefs": [
+        3
+      ],
+      "urban": false
+    },
+    "text": "三陸の浜で、とれたてのうにを殻ごと割って食べた。指先に海水のしょっぱさと甘さが残った。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-084",
+    "kind": "daily",
+    "ageMin": 19,
+    "ageMax": 34,
+    "when": {
+      "prefs": [
+        3
+      ],
+      "urban": false
+    },
+    "text": "小岩井のほうへドライブに出かけ、牧場でソフトクリームを食べた。広い牧草地の向こうに山が見えた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-085",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "prefs": [
+        3
+      ],
+      "urban": false
+    },
+    "text": "公民館で、昔話を語る会を聞いた。かっぱや座敷わらしの話に、近所の子どもたちが目を丸くしていた。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-086",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 12,
+    "when": {
+      "prefs": [
+        4
+      ],
+      "urban": false
+    },
+    "text": "七夕まつりで、アーケードにつるされた大きな吹き流しの下をくぐった。紙のすだれが顔にさらさら当たった。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-087",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 40,
+    "when": {
+      "prefs": [
+        4
+      ],
+      "urban": false
+    },
+    "text": "仙台の店で牛タン定食を食べた。厚く切った肉に、麦ご飯とテールスープが付いてきた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-088",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 15,
+    "when": {
+      "prefs": [
+        4
+      ],
+      "urban": false
+    },
+    "text": "お盆に、家族でずんだもちを作った。すり鉢で枝豆をすっていたら、手が緑色になった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-089",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 40,
+    "yearMin": 1987,
+    "yearMax": 1992,
+    "when": {
+      "prefs": [
+        4
+      ],
+      "urban": false
+    },
+    "text": "仙台に地下鉄ができて、さっそく端から端まで乗ってみた。外が見えないので、駅名の表示ばかり見ていた。",
+    "effects": {
+      "happiness": 1,
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "確認済み：仙台市地下鉄南北線は1987年7月15日開業、東西線は2015年12月開業（文春オンライン、仙台市）"
+  },
+  {
+    "id": "rn-090",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 50,
+    "yearMin": 2005,
+    "yearMax": 2010,
+    "when": {
+      "prefs": [
+        4
+      ],
+      "urban": false
+    },
+    "text": "仙台にできた新しい球団の試合を見に行った。負けても、帰り道は応援歌を口ずさんだ。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：東北楽天は2005年に参入（NPB関連記事）。2013年の日本一は未確認"
+  },
+  {
+    "id": "rn-091",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 60,
+    "yearMin": 2012,
+    "yearMax": 2015,
+    "when": {
+      "prefs": [
+        4
+      ],
+      "urban": false
+    },
+    "text": "地元の球団が勝ち続け、商店街で応援のセールが開かれた。店の人が同じ法被を着て、手をたたいていた。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "check": "確認済み：東北楽天は2005年に参入（NPB関連記事）。2013年の日本一は未確認"
+  },
+  {
+    "id": "rn-092",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 64,
+    "when": {
+      "prefs": [
+        4
+      ],
+      "urban": false
+    },
+    "text": "湾の浜で、牡蠣の殻むきを手伝った。ナイフを殻のすき間に差しこむこつを、隣のおばさんが教えてくれた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-093",
+    "kind": "daily",
+    "ageMin": 35,
+    "ageMax": 80,
+    "yearMin": 2012,
+    "yearMax": 2022,
+    "when": {
+      "prefs": [
+        4
+      ],
+      "urban": false
+    },
+    "text": "海沿いの町の仮設の商店街で、店を再開した人から魚を買った。おまけにもらった干物を、夜に焼いて食べた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認（2011年の東日本大震災ののち）"
+  },
+  {
+    "id": "rn-094",
+    "kind": "daily",
+    "ageMin": 19,
+    "ageMax": 34,
+    "when": {
+      "prefs": [
+        4
+      ],
+      "urban": false
+    },
+    "text": "冬の定禅寺通りで、光の並木の下を歩いた。吐く息が白く、木々の明かりが少しにじんで見えた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-095",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "prefs": [
+        4
+      ],
+      "urban": false
+    },
+    "text": "秋の河原で、近所の人と芋煮をした。宮城は味噌味で豚肉だ、と言い張る人がいて、毎年同じ話で笑った。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-096",
+    "kind": "daily",
+    "ageMin": 13,
+    "ageMax": 18,
+    "when": {
+      "prefs": [
+        4
+      ],
+      "urban": false,
+      "school": "high"
+    },
+    "text": "通学の電車の窓から、雪をかぶった蔵王の山並みが見えた。期末試験の朝、それを見て少し気持ちが落ち着いた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rn-097",
+    "kind": "daily",
+    "ageMin": 35,
+    "ageMax": 64,
+    "when": {
+      "prefs": [
+        4
+      ],
+      "urban": false,
+      "working": true
+    },
+    "text": "会社帰りに、駅前の店で笹かまぼこを買った。家に帰って、軽くあぶってしょうゆを垂らして食べた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-098",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 6,
+    "when": {
+      "prefs": [
+        5
+      ],
+      "urban": false
+    },
+    "text": "大みそかの夜、なまはげが家に入ってきた。泣きながら父の背中に隠れ、「いい子にする」と何度も言った。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-099",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 30,
+    "when": {
+      "prefs": [
+        5
+      ],
+      "urban": false
+    },
+    "text": "夏の夜、竿燈まつりを見た。たくさんの提灯をつけた長い竿が、男の人の額や腰の上でゆらゆらと立っていた。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-100",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 15,
+    "when": {
+      "prefs": [
+        5
+      ],
+      "urban": false
+    },
+    "text": "秋、囲炉裏で焼いたきりたんぽを、鶏の鍋に入れた。祖父がちぎって入れたせりの根が、いちばんうまかった。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-101",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 80,
+    "when": {
+      "prefs": [
+        5
+      ],
+      "urban": false
+    },
+    "text": "秋、大根を囲炉裏の上につるし、煙でいぶしてから漬けた。いぶりがっこを切ると、台所が煙のにおいになった。",
+    "effects": {},
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-102",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 18,
+    "when": {
+      "prefs": [
+        5
+      ],
+      "urban": false,
+      "mother": true
+    },
+    "text": "冬の夜、こたつに足を入れたまま宿題をした。そのまま眠ってしまい、母に「風邪ひくよ」と起こされた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rn-103",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 70,
+    "yearMin": 1997,
+    "yearMax": 2000,
+    "when": {
+      "prefs": [
+        5
+      ],
+      "urban": false
+    },
+    "text": "秋田から東京まで、新幹線で乗り換えなしに行けるようになった。赤い車体の列車を、駅の陸橋から見下ろした。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：秋田新幹線 1997年3月22日開業（コトバンク、JR東日本）"
+  },
+  {
+    "id": "rn-104",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 60,
+    "yearMin": 1993,
+    "yearMax": 1994,
+    "when": {
+      "prefs": [
+        5
+      ],
+      "urban": false
+    },
+    "text": "米が足りないと騒がれ、店に外国の米が並んだ。秋田は作柄が持ちこたえ、親戚に新米を送ってほしいと頼まれた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：1993年の冷害で作況指数 全国74・青森28・岩手30・宮城37・秋田83、米を緊急輸入（農研機構東北農研資料、マイナビ農業、現代ビジネス）"
+  },
+  {
+    "id": "rn-105",
+    "kind": "daily",
+    "ageMin": 13,
+    "ageMax": 18,
+    "when": {
+      "prefs": [
+        5
+      ],
+      "urban": false
+    },
+    "text": "冬の夜、雪に音を吸われた静けさの中で、遠くの除雪車の音だけが聞こえた。布団の中で、明日の休校を願った。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rn-106",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "prefs": [
+        5
+      ],
+      "urban": false
+    },
+    "text": "冬の夜、ラジオで民謡の番組を聞いた。聞き覚えのある節になると、昔の田植えのころを思い出して小さく口ずさんだ。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-107",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 60,
+    "when": {
+      "prefs": [
+        5
+      ],
+      "urban": false
+    },
+    "text": "秋に、近所の人と山へきのこ採りに入った。ちょうど食べごろの舞茸を見つけ、場所は誰にも言わなかった。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-108",
+    "kind": "daily",
+    "ageMin": 35,
+    "ageMax": 64,
+    "when": {
+      "prefs": [
+        5
+      ],
+      "urban": false,
+      "job": [
+        "farm"
+      ]
+    },
+    "text": "雪解けの水が田んぼに入るころ、苗代を作った。ビニールの中は暖かく、緑の芽がそろって立っていた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rn-109",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 64,
+    "when": {
+      "prefs": [
+        5
+      ],
+      "urban": false
+    },
+    "text": "冬の朝、市場に、はたはたの箱がずらりと並んだ。ぶりこの詰まったのを選んで、しょっつる鍋にした。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-110",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 40,
+    "when": {
+      "prefs": [
+        6
+      ],
+      "urban": false
+    },
+    "text": "秋、河原で芋煮会をした。大きな鍋に里芋と牛肉を入れ、しょうゆ味で煮た。煙の向こうで大人たちが笑っていた。",
+    "effects": {
+      "happiness": 2,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-111",
+    "kind": "daily",
+    "ageMin": 13,
+    "ageMax": 30,
+    "yearMin": 1965,
+    "when": {
+      "prefs": [
+        6
+      ],
+      "urban": false
+    },
+    "text": "花笠まつりで、花の付いた笠を手にパレードを踊った。「ヤッショ、マカショ」の掛け声で、のどがかれた。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "check": "確認済み：山形花笠まつりは1963年の蔵王夏まつりの花笠パレードが始まり（日本民俗学会資料、japan.travel）"
+  },
+  {
+    "id": "rn-112",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 64,
+    "when": {
+      "prefs": [
+        6
+      ],
+      "urban": false,
+      "job": [
+        "farm"
+      ]
+    },
+    "text": "六月、さくらんぼの収穫で、朝から脚立に登り続けた。赤く光る実を、傷つけないように柄ごと摘んだ。",
+    "effects": {
+      "health": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-113",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 14,
+    "when": {
+      "prefs": [
+        6
+      ],
+      "urban": false
+    },
+    "text": "親戚の家で、さくらんぼを好きなだけ食べてよいと言われた。種を庭にとばして、どこまで遠くへいくか競った。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-114",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 60,
+    "yearMin": 1992,
+    "yearMax": 1995,
+    "when": {
+      "prefs": [
+        6
+      ],
+      "urban": false
+    },
+    "text": "山形まで新幹線が来て、福島で乗り換えなくてもよくなった。初めて乗った日、駅に近所の人が見に来ていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：山形新幹線 東京〜山形1992年7月1日開業、新庄延伸1999年12月（JR東日本資料）"
+  },
+  {
+    "id": "rn-115",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 70,
+    "when": {
+      "prefs": [
+        6
+      ],
+      "urban": false
+    },
+    "text": "冬、蔵王の樹氷を見に、ロープウェイで登った。雪をかぶった木が、白い怪物のように並んでいた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-116",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 18,
+    "when": {
+      "prefs": [
+        6
+      ],
+      "urban": false,
+      "mother": true
+    },
+    "text": "夏の暑い日、母が「だし」を作ってくれた。刻んだ野菜と昆布をご飯にのせて、何杯も食べた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-117",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "prefs": [
+        6
+      ],
+      "urban": false
+    },
+    "text": "冬じまいに、青菜を樽に漬けた。毎朝ひとつまみ出して刻み、熱いご飯にのせるのが楽しみだった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-118",
+    "kind": "daily",
+    "ageMin": 19,
+    "ageMax": 34,
+    "when": {
+      "prefs": [
+        6
+      ],
+      "urban": false,
+      "working": true
+    },
+    "text": "仕事のあと、温泉街の共同浴場に寄った。熱い湯につかり、湯気の中で知らない年寄りと天気の話をした。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-119",
+    "kind": "daily",
+    "ageMin": 35,
+    "ageMax": 64,
+    "when": {
+      "prefs": [
+        6
+      ],
+      "urban": false,
+      "hasChildren": true
+    },
+    "text": "冬、{child}を連れて庄内の浜を歩いた。荒れた日本海の波が白く砕けて、風で塩が顔に当たった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-120",
+    "kind": "daily",
+    "ageMin": 19,
+    "ageMax": 34,
+    "when": {
+      "prefs": [
+        6
+      ],
+      "urban": false
+    },
+    "text": "夏、駅前の店で冷たいラーメンを食べた。氷の浮いたスープをすすると、外の暑さを少し忘れた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-121",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 15,
+    "when": {
+      "prefs": [
+        7
+      ],
+      "urban": false
+    },
+    "text": "夏、果樹園のおじさんにもらった桃を、皮ごとかじった。果汁が手首まで流れて、着ていたシャツに染みた。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-122",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "when": {
+      "prefs": [
+        7
+      ],
+      "urban": false
+    },
+    "text": "会津の祖母の家で、赤べこの人形をもらった。首を指でつつくと、いつまでもうなずいていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-123",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 40,
+    "when": {
+      "prefs": [
+        7
+      ],
+      "urban": false
+    },
+    "text": "休みの日に喜多方まで行き、朝からラーメンを食べた。透き通ったしょうゆのスープに、太い縮れ麺が入っていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-124",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 30,
+    "yearMin": 1966,
+    "yearMax": 1990,
+    "when": {
+      "prefs": [
+        7
+      ],
+      "urban": false
+    },
+    "text": "常磐ハワイアンセンターへ泳ぎに行った。冬なのに室内は南の島のようで、外に出ると体から湯気が上った。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "check": "確認済み：常磐ハワイアンセンターは1966年1月開業、炭鉱から湧く温泉を利用（社史紹介記事、テレビ東京「カンブリア宮殿」）。福島側の炭鉱閉山の年は未確認"
+  },
+  {
+    "id": "rn-125",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 60,
+    "yearMin": 1966,
+    "yearMax": 1985,
+    "when": {
+      "prefs": [
+        7
+      ],
+      "urban": false,
+      "working": true
+    },
+    "text": "炭鉱が縮んでいくなか、職場の仲間の娘たちが踊りの練習に通っていた。いつか舞台を見に行こうと話した。",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：常磐ハワイアンセンターは1966年1月開業、炭鉱から湧く温泉を利用（社史紹介記事、テレビ東京「カンブリア宮殿」）。福島側の炭鉱閉山の年は未確認"
+  },
+  {
+    "id": "rn-126",
+    "kind": "daily",
+    "ageMin": 60,
+    "ageMax": 100,
+    "when": {
+      "prefs": [
+        7
+      ],
+      "urban": false
+    },
+    "text": "冬、会津の家で、こづゆを作った。貝柱のだしで煮た汁を、朱塗りの小さなお椀によそった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-127",
+    "kind": "daily",
+    "ageMin": 35,
+    "ageMax": 80,
+    "yearMin": 2012,
+    "yearMax": 2024,
+    "when": {
+      "prefs": [
+        7
+      ],
+      "urban": false
+    },
+    "text": "県の検査を通った桃が、またスーパーに並ぶようになった。一番大きいのを二つ選び、遠くの親戚に送った。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認（2011年の原発事故ののち）"
+  },
+  {
+    "id": "rn-128",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 18,
+    "when": {
+      "prefs": [
+        7
+      ],
+      "urban": false
+    },
+    "text": "冬の朝、猪苗代湖のほうから白鳥の声が聞こえた。自転車を止めて、湖の上の白い点を数えた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-129",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 64,
+    "when": {
+      "prefs": [
+        7
+      ],
+      "urban": false,
+      "job": [
+        "farm"
+      ]
+    },
+    "text": "秋、会津の田んぼで、刈った稲をはせに掛けて干した。夕方、はせの列の影が田んぼの端まで長く伸びた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rn-130",
+    "kind": "daily",
+    "ageMin": 13,
+    "ageMax": 18,
+    "when": {
+      "prefs": [
+        7
+      ],
+      "urban": false
+    },
+    "text": "修学旅行で鶴ヶ城に来た県外の生徒たちを見かけた。地元の自分たちは、もう何度も天守に登っていた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rn-131",
+    "kind": "daily",
+    "ageMin": 35,
+    "ageMax": 64,
+    "when": {
+      "prefs": [
+        7
+      ],
+      "urban": false,
+      "working": true
+    },
+    "text": "冬の会津若松は雪が深く、朝の車はのろのろとしか進まなかった。ラジオで道路の知らせを聞きながら会社へ向かった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rn-132",
+    "kind": "daily",
+    "ageMin": 35,
+    "ageMax": 64,
+    "when": {
+      "prefs": [
+        7
+      ],
+      "urban": false
+    },
+    "text": "春、花見山に行った。山いっぱいに花が咲き、遠くから見ると、山が桃色の霞に包まれていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-133",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 10,
+    "yearMax": 1975,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "urban": false,
+      "father": true
+    },
+    "text": "冬になると父は東京へ出稼ぎに行った。駅で見送ると、父は窓から手を振り、汽車はすぐ雪の向こうに消えた。",
+    "effects": {
+      "happiness": -2,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：弘前市の出稼ぎ者数は1974年が最多（弘前市「出稼対策」資料）。東北全体の推移は未確認"
+  },
+  {
+    "id": "rn-134",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "yearMin": 1955,
+    "yearMax": 1980,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "urban": false,
+      "father": true
+    },
+    "text": "春、出稼ぎから父が帰ってきた。かばんから、東京のお菓子と、自分の名前を書いたノートが出てきた。",
+    "effects": {
+      "happiness": 2,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：弘前市の出稼ぎ者数は1974年が最多（弘前市「出稼対策」資料）。東北全体の推移は未確認"
+  },
+  {
+    "id": "rn-135",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 50,
+    "yearMin": 1955,
+    "yearMax": 1985,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "urban": false,
+      "sex": "male",
+      "married": true,
+      "job": [
+        "farm"
+      ]
+    },
+    "text": "稲刈りが終わると、東京の工事現場へ出稼ぎに出た。飯場の二段ベッドの上で、{spouse}からのはがきを読んだ。",
+    "effects": {
+      "happiness": -1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：弘前市の出稼ぎ者数は1974年が最多（弘前市「出稼対策」資料）。東北全体の推移は未確認"
+  },
+  {
+    "id": "rn-136",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 50,
+    "yearMin": 1955,
+    "yearMax": 1985,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "urban": false,
+      "sex": "female",
+      "married": true,
+      "job": [
+        "farm"
+      ]
+    },
+    "text": "夫が出稼ぎに出ている冬、子どもと義理の親と雪かきをした。夜、届いた現金書留を仏壇に供えた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "確認済み：弘前市の出稼ぎ者数は1974年が最多（弘前市「出稼対策」資料）。東北全体の推移は未確認"
+  },
+  {
+    "id": "rn-137",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 18,
+    "yearMin": 1955,
+    "yearMax": 1975,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "flags": [
+        "group_employment"
+      ]
+    },
+    "text": "集団就職の列車に乗る日、駅のホームに先生と親たちが並んだ。窓から見た田んぼには、まだ雪が残っていた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-138",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 9,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "urban": false,
+      "flags": [
+        "three_generations"
+      ]
+    },
+    "text": "こたつで祖母に昔話をしてもらった。決まった結びの言葉で話が終わると、もう一つ、とせがんだ。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-139",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "urban": false
+    },
+    "text": "田植えの日は、学校から帰ると泥だらけになって手伝った。休みに、あぜ道でおにぎりと漬物を食べた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-140",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 64,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "urban": false,
+      "job": [
+        "farm"
+      ]
+    },
+    "text": "秋、近所総出で稲刈りをした。終わった夜、あちこちの家から人が集まり、漬物を並べて酒を飲んだ。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-141",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 80,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "urban": false
+    },
+    "text": "冬の前に、白菜や大根を土に埋めて保存した。雪の下から掘り出した大根は、甘くなっていた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rn-142",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 64,
+    "yearMin": 1970,
+    "yearMax": 2000,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "urban": false,
+      "job": [
+        "farm"
+      ]
+    },
+    "text": "減反で、田んぼの一部に大豆を植えることになった。去年までの稲の株が残る土に、豆の種を落としていった。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-143",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 70,
+    "yearMin": 1993,
+    "yearMax": 1994,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "urban": false
+    },
+    "text": "冷夏で米がとれず、店に外国の細長い米が並んだ。炊いてみるとぱらぱらしていて、母は炒めご飯にした。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "確認済み：1993年の冷害で作況指数 全国74・青森28・岩手30・宮城37・秋田83、米を緊急輸入（農研機構東北農研資料、マイナビ農業、現代ビジネス）"
+  },
+  {
+    "id": "rn-144",
+    "kind": "daily",
+    "ageMin": 13,
+    "ageMax": 18,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "snow": true,
+      "urban": false,
+      "school": "high"
+    },
+    "text": "冬は凍った道を自転車で行けず、汽車で通学した。一時間に一本で、乗り遅れると駅のストーブの前で次を待った。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rn-145",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "urban": false,
+      "flags": [
+        "heir"
+      ]
+    },
+    "text": "先祖代々の田んぼを、そろそろ誰に任せるか考えていた。夕方、あぜに腰を下ろし、稲の揺れるのを見ていた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rn-146",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 100,
+    "yearMin": 2000,
+    "yearMax": 2026,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "urban": false
+    },
+    "text": "集落の家が一軒また一軒と空き家になった。冬が近づくと、空き家の雪囲いまで、残った人たちで手伝った。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-147",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "urban": false,
+      "hasChildren": true
+    },
+    "text": "お盆に、町を出た子どもや孫が帰ってきた。家じゅうに布団を敷き、夜遅くまで話し声がしていた。",
+    "effects": {
+      "happiness": 2,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-148",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "urban": false
+    },
+    "text": "冬の間、近所の人たちとお茶っこをした。漬物と煮豆を持ち寄り、こたつで日が暮れるまで話した。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rn-149",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 100,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "snow": true,
+      "urban": false
+    },
+    "text": "冬は雪で外に出られず、窓から鳥のえさ台を眺めて過ごした。すずめが三羽来て、すぐに飛び立った。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rn-150",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 70,
+    "yearMin": 1982,
+    "yearMax": 1990,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "urban": false
+    },
+    "text": "新幹線が通り、上野まで行く時間がぐっと短くなった。親戚に会いに、日帰りで出かけた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：東北新幹線 大宮〜盛岡1982年、盛岡〜八戸2002年12月、八戸〜新青森2010年12月4日（青森県交通戦略課「東北新幹線 これまでの経緯」、コトバンク）"
+  },
+  {
+    "id": "rn-151",
+    "kind": "daily",
+    "ageMin": 13,
+    "ageMax": 18,
+    "when": {
+      "prefs": [
+        3,
+        5,
+        6
+      ],
+      "urban": false,
+      "school": "high"
+    },
+    "text": "冬の朝、電車が雪で止まり、駅の待合室で友だちと動き出すのを待った。結局、二時間目から授業に出た。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rn-152",
+    "kind": "daily",
+    "ageMin": 18,
+    "ageMax": 34,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "urban": true,
+      "flags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "都会の冬は雪が積もらず、毎朝の雪かきがないのが不思議だった。乾いた風が吹くたびに、ふるさとの雪を思い出した。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rn-153",
+    "kind": "daily",
+    "ageMin": 18,
+    "ageMax": 34,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "urban": true,
+      "flags": [
+        "moved_to_city"
+      ],
+      "mother": true
+    },
+    "text": "実家から、米と漬物と手紙の入った段ボールが届いた。新聞紙に包まれたりんごが、部屋じゅうに香った。",
+    "effects": {
+      "happiness": 2,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-154",
+    "kind": "daily",
+    "ageMin": 18,
+    "ageMax": 34,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "urban": true,
+      "flags": [
+        "moved_to_city"
+      ],
+      "working": true
+    },
+    "text": "職場でうっかり方言が出て、周りに笑われた。その夜、実家に電話して、思いきり方言で話した。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-155",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 50,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "urban": true,
+      "flags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "年末、帰省の列車は人でいっぱいだった。北へ進むにつれ窓の外が白くなり、デッキで立ったまま眺めた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rn-156",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 64,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "urban": true,
+      "flags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "デパートで北海道・東北の物産展が開かれ、地元の名物を見つけて買った。売り場の人と、少しふるさとの話をした。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rnt-001",
+    "kind": "think",
+    "ageMin": 6,
+    "ageMax": 12,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "snow": true,
+      "urban": false
+    },
+    "text": "「明日、雪で学校が休みになればいいのに。でも、そうなったら友だちに会えない」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rnt-002",
+    "kind": "think",
+    "ageMin": 8,
+    "ageMax": 15,
+    "when": {
+      "region": [
+        "hokkaido"
+      ],
+      "urban": false
+    },
+    "text": "「本州の子は、冬にストーブもつけずに暮らしているのかな。寒くないのだろうか」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rnt-003",
+    "kind": "think",
+    "ageMin": 13,
+    "ageMax": 18,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "snow": true,
+      "urban": false
+    },
+    "text": "「この町を出たい。でも、冬の夜の静けさは、どこへ行ってもないような気がする」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rnt-004",
+    "kind": "think",
+    "ageMin": 13,
+    "ageMax": 18,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "urban": false
+    },
+    "text": "「東京の人に、自分の言葉を笑われたらどうしよう。それでも、一度は出てみたい」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rnt-005",
+    "kind": "think",
+    "ageMin": 15,
+    "ageMax": 18,
+    "yearMin": 1955,
+    "yearMax": 1975,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "flags": [
+        "group_employment"
+      ]
+    },
+    "text": "「働いて、仕送りして、いつか母に楽をさせたい。泣くのは汽車の中だけにする」",
+    "effects": {},
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rnt-006",
+    "kind": "think",
+    "ageMin": 18,
+    "ageMax": 30,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "urban": true,
+      "trigger": "moved"
+    },
+    "text": "「ここは雪が降らない。どこまでも歩いて行けるのが、うれしくて、少しさびしい」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rnt-007",
+    "kind": "think",
+    "ageMin": 19,
+    "ageMax": 34,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "urban": true,
+      "flags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「帰省のたびに、駅前の店が一つずつ減っている。自分も、出ていった一人なのだ」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rnt-008",
+    "kind": "think",
+    "ageMin": 19,
+    "ageMax": 34,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "urban": false,
+      "trigger": "job"
+    },
+    "text": "「地元で働くことにした。冬は大変だけれど、ここには知っている顔がある」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rnt-009",
+    "kind": "think",
+    "ageMin": 20,
+    "ageMax": 64,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "snow": true,
+      "urban": false
+    },
+    "text": "「また雪だ。かいても、かいても降る。春が来るまで、あと何回これを繰り返すのか」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rnt-010",
+    "kind": "think",
+    "ageMin": 20,
+    "ageMax": 64,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "urban": false,
+      "job": [
+        "farm"
+      ]
+    },
+    "text": "「今年の天気はどうだろう。このごろは空ばかり見上げて暮らしている」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rnt-011",
+    "kind": "think",
+    "ageMin": 25,
+    "ageMax": 64,
+    "yearMin": 1993,
+    "yearMax": 1994,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "urban": false,
+      "job": [
+        "farm"
+      ]
+    },
+    "text": "「一年かけて育てた稲が、空っぽの穂になった。来年も田んぼに入れるだろうか」",
+    "effects": {
+      "happiness": -2
+    },
+    "weight": 1,
+    "check": "確認済み：1993年の冷害で作況指数 全国74・青森28・岩手30・宮城37・秋田83、米を緊急輸入（農研機構東北農研資料、マイナビ農業、現代ビジネス）"
+  },
+  {
+    "id": "rnt-012",
+    "kind": "think",
+    "ageMin": 25,
+    "ageMax": 50,
+    "yearMin": 1955,
+    "yearMax": 1985,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "urban": false,
+      "sex": "male",
+      "married": true,
+      "job": [
+        "farm"
+      ]
+    },
+    "text": "「子どもの顔を見られるのは、春と盆だけだ。それでも、行かなければ暮らせない」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "確認済み：弘前市の出稼ぎ者数は1974年が最多（弘前市「出稼対策」資料）。東北全体の推移は未確認"
+  },
+  {
+    "id": "rnt-013",
+    "kind": "think",
+    "ageMin": 6,
+    "ageMax": 12,
+    "yearMin": 1955,
+    "yearMax": 1980,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "urban": false,
+      "father": true
+    },
+    "text": "「お父さん、早く帰ってこないかな。雪が消えたら帰ると言っていた」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "確認済み：弘前市の出稼ぎ者数は1974年が最多（弘前市「出稼対策」資料）。東北全体の推移は未確認"
+  },
+  {
+    "id": "rnt-014",
+    "kind": "think",
+    "ageMin": 35,
+    "ageMax": 64,
+    "yearMin": 1970,
+    "yearMax": 1995,
+    "when": {
+      "prefs": [
+        1
+      ],
+      "urban": false,
+      "working": true
+    },
+    "text": "「山がなくなったら、この町はどうなるのだろう。子どもたちには、別の道を選ばせたい」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rnt-015",
+    "kind": "think",
+    "ageMin": 40,
+    "ageMax": 75,
+    "yearMin": 2007,
+    "yearMax": 2015,
+    "when": {
+      "prefs": [
+        1
+      ],
+      "urban": false
+    },
+    "text": "「町がつぶれたと言われても、自分たちはここで暮らしている。それだけは変わらない」",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：夕張市は2007年3月に財政再建団体となった（関西大学・自治体問題研究所の論文）。夕張の最後の炭鉱閉山の年は未確認"
+  },
+  {
+    "id": "rnt-016",
+    "kind": "think",
+    "ageMin": 25,
+    "ageMax": 64,
+    "yearMin": 1997,
+    "yearMax": 1999,
+    "when": {
+      "prefs": [
+        1
+      ],
+      "urban": false
+    },
+    "text": "「あの大きな銀行がなくなるなんて。何が起きても、おかしくない時代になった」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "確認済み：北海道拓殖銀行は1997年11月17日に破綻処理が発表され、道内の事業は北洋銀行へ譲渡（日本銀行議事録、文春オンライン）"
+  },
+  {
+    "id": "rnt-017",
+    "kind": "think",
+    "ageMin": 13,
+    "ageMax": 40,
+    "yearMin": 1988,
+    "yearMax": 1988,
+    "when": {
+      "region": [
+        "hokkaido"
+      ],
+      "urban": false
+    },
+    "text": "「連絡船がなくなった。あの甲板から見た海を、もう誰も見ることはないのか」",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：青函トンネル開業と青函連絡船の終航は1988年3月13日（東洋経済オンライン、nippon.com、青森市立図書館資料）"
+  },
+  {
+    "id": "rnt-018",
+    "kind": "think",
+    "ageMin": 10,
+    "ageMax": 80,
+    "yearMin": 2010,
+    "yearMax": 2011,
+    "when": {
+      "prefs": [
+        2
+      ],
+      "urban": false
+    },
+    "text": "「新幹線が青森まで来た。東京が、同じ日のうちに行って帰ってこられる場所になった」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：東北新幹線 大宮〜盛岡1982年、盛岡〜八戸2002年12月、八戸〜新青森2010年12月4日（青森県交通戦略課「東北新幹線 これまでの経緯」、コトバンク）"
+  },
+  {
+    "id": "rnt-019",
+    "kind": "think",
+    "ageMin": 13,
+    "ageMax": 30,
+    "when": {
+      "prefs": [
+        2
+      ],
+      "urban": false
+    },
+    "text": "「ねぶたの太鼓が聞こえると、じっとしていられない。この夏だけは、ここが世界の真ん中だ」",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "rnt-020",
+    "kind": "think",
+    "ageMin": 13,
+    "ageMax": 30,
+    "when": {
+      "prefs": [
+        5
+      ],
+      "urban": false
+    },
+    "text": "「竿燈を額にのせて立ってみたい。来年こそ、町内の練習に入れてもらおう」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rnt-021",
+    "kind": "think",
+    "ageMin": 6,
+    "ageMax": 30,
+    "when": {
+      "prefs": [
+        4
+      ],
+      "urban": false
+    },
+    "text": "「七夕の飾りに願いごとを書いた。誰にも見られないように、いちばん奥に結んだ」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rnt-022",
+    "kind": "think",
+    "ageMin": 13,
+    "ageMax": 30,
+    "when": {
+      "prefs": [
+        6
+      ],
+      "urban": false
+    },
+    "text": "「さくらんぼの季節が来ると、町じゅうが甘いにおいになる。都会の友だちに自慢したい」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rnt-023",
+    "kind": "think",
+    "ageMin": 35,
+    "ageMax": 80,
+    "yearMin": 2012,
+    "yearMax": 2022,
+    "when": {
+      "prefs": [
+        3,
+        4,
+        7
+      ],
+      "urban": false
+    },
+    "text": "「あの春から、何年たったのだろう。前と同じ景色ではないけれど、今日もここで暮らす」",
+    "effects": {},
+    "weight": 1,
+    "check": "未確認（2011年の東日本大震災ののち）"
+  },
+  {
+    "id": "rnt-024",
+    "kind": "think",
+    "ageMin": 35,
+    "ageMax": 80,
+    "yearMin": 2012,
+    "yearMax": 2024,
+    "when": {
+      "prefs": [
+        7
+      ],
+      "urban": false
+    },
+    "text": "「福島の桃が、またおいしいと言ってもらえた。それだけで、今年はいい年だ」",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "check": "未確認（2011年の原発事故ののち）"
+  },
+  {
+    "id": "rnt-025",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "snow": true,
+      "urban": false
+    },
+    "text": "「あと何回、この冬を越せるだろう。そう思いながら、今年も雪囲いをした」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rnt-026",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "urban": false,
+      "hasChildren": true
+    },
+    "text": "「子どもたちは皆、都会で暮らしている。それでいい。盆に帰ってくれれば、それでいい」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rnt-027",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "urban": false
+    },
+    "text": "「この家で生まれて、この家で年をとった。窓から見える山は、子どものころと変わらない」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rnt-028",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "prefs": [
+        1
+      ],
+      "urban": false
+    },
+    "text": "「祖父母が木を切り倒して開いた土地だ。自分の代で手放すわけにはいかない」",
+    "effects": {},
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rnt-029",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "region": [
+        "tohoku"
+      ],
+      "urban": false
+    },
+    "text": "「方言で話せる人が、ずいぶん少なくなった。孫に通じない言葉が増えていく」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rnt-030",
+    "kind": "think",
+    "ageMin": 19,
+    "ageMax": 34,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "snow": true,
+      "urban": false,
+      "trigger": "married"
+    },
+    "text": "「この雪の町で、二人で暮らしていく。冬は長いけれど、ストーブの前は二人分あたたかい」",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "rnt-031",
+    "kind": "think",
+    "ageMin": 25,
+    "ageMax": 50,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "snow": true,
+      "urban": false,
+      "trigger": "child"
+    },
+    "text": "「この子も、雪の中で大きくなるのだろう。最初の冬は、たくさん着せてやろう」",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "rnt-032",
+    "kind": "think",
+    "ageMin": 55,
+    "ageMax": 75,
+    "when": {
+      "region": [
+        "hokkaido",
+        "tohoku"
+      ],
+      "snow": true,
+      "urban": false,
+      "trigger": "retire"
+    },
+    "text": "「もう吹雪の朝に車を出さなくていい。今年の冬は、窓から雪を見ているだけでいい」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rnt-033",
+    "kind": "think",
+    "ageMin": 20,
+    "ageMax": 60,
+    "yearMin": 2016,
+    "yearMax": 2018,
+    "when": {
+      "region": [
+        "hokkaido"
+      ],
+      "urban": false
+    },
+    "text": "「新幹線が函館まで来た。本州が、海の向こうではなくなった気がする」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：北海道新幹線 新青森〜新函館北斗 2016年3月26日開業（北海道新聞、トラベルボイス）"
+  },
+  {
+    "id": "rnt-034",
+    "kind": "think",
+    "ageMin": 8,
+    "ageMax": 40,
+    "yearMin": 2004,
+    "yearMax": 2006,
+    "when": {
+      "prefs": [
+        1
+      ],
+      "urban": false
+    },
+    "text": "「北海道に、自分たちのプロ野球チームができた。毎晩、結果を見るのが楽しみだ」",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "check": "確認済み：日本ハムは2004年に北海道へ移転、2006年に日本一（北海道新聞）"
+  },
+  {
+    "id": "rnt-035",
+    "kind": "think",
+    "ageMin": 19,
+    "ageMax": 34,
+    "when": {
+      "prefs": [
+        3
+      ],
+      "urban": false
+    },
+    "text": "「わんこそばの店の前を通るたび、子どものころの大食いを思い出す。今はもう、あんなには食べられない」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rnt-036",
+    "kind": "think",
+    "ageMin": 35,
+    "ageMax": 64,
+    "when": {
+      "prefs": [
+        7
+      ],
+      "urban": false
+    },
+    "text": "「会津の冬は長い。でも、この雪があるから、春の田んぼの水がきれいなのだと思う」",
+    "effects": {},
+    "weight": 1
+  }
+]

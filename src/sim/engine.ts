@@ -61,12 +61,19 @@ export function createGame(opts: { seed?: number; playerBirthYear?: number | nul
   const seed = opts.seed ?? randomSeed();
   const rng = new Rng(seed);
 
-  // 真ん中の生まれ年：1960〜75年を出生数で重み付け
-  const midYears = Array.from({ length: 16 }, (_, i) => 1960 + i);
-  const midW = midYears.map((y) => S.nationalBirths(y));
-  const mid = rng.weighted(midYears, midW);
-  const middleYearProb = S.nationalBirths(mid) / midW.reduce((a, b) => a + b, 0);
-  const years = [mid - 30, mid, mid + 30];
+  // 生まれ年：いちばん若い人を1990〜2010年から出生数で重み付けして引き、
+  // そこから30〜50年ずつ、2回ランダムに遡る（いつも30年おきだと、似た組み合わせばかりになるため。2026-10-15）。
+  // 統計は1930年からなので、いちばん年上の人が1930年より前になる組み合わせは引き直す
+  const youngYears = Array.from({ length: 21 }, (_, i) => 1990 + i);
+  const youngW = youngYears.map((y) => S.nationalBirths(Math.min(y, 2005)));
+  const young = rng.weighted(youngYears, youngW);
+  const room = young - 1930; // 2回遡る年数の合計の上限
+  const g2 = rng.int(30, Math.min(50, room - 30)); // いちばん若い人 → 真ん中の人
+  const g1 = rng.int(30, Math.min(50, room - g2)); // 真ん中の人 → いちばん年上の人
+  const years = [young - g2 - g1, young - g2, young];
+  const mid = years[1];
+  // 真ん中の年の確率（ガチャの表示用）：いちばん若い年を引く確率と、遡る年数の組み合わせの数から
+  const middleYearProb = (S.nationalBirths(Math.min(young, 2005)) / youngW.reduce((a, b) => a + b, 0)) * (1 / 21);
 
   // 県：真ん中の年の都道府県別出生数で重み付け（3人で共通）
   const pb = S.prefBirths(mid);
@@ -296,7 +303,7 @@ function matches(ev: GameEvent, p: Person, year: number): boolean {
 
 let eventIndex: Map<number, GameEvent[]> | null = null;
 let indexedCount = -1;
-function eventsForYear(year: number): GameEvent[] {
+export function eventsForYear(year: number): GameEvent[] {
   if (!eventIndex || indexedCount !== allEvents().length) {
     indexedCount = allEvents().length;
     eventIndex = new Map();

@@ -1,5 +1,5 @@
 import './styles/main.css';
-import { createGame, runYear, survivalPercentile, survivalCurve, cohortLifeExpectancy, JOB_LABEL, EDU_LABEL, type GameState, type Focus, type YearEntry } from './sim/engine';
+import { createGame, runYear, eventsForYear, survivalPercentile, survivalCurve, cohortLifeExpectancy, JOB_LABEL, EDU_LABEL, type GameState, type Focus, type YearEntry } from './sim/engine';
 import { dueDecision, viewOf, applyDecision, autoChoose, ASKED } from './sim/decisions';
 import * as S from './sim/stats';
 import type { Person, DecisionView, DecisionResult, LogEntry } from './sim/types';
@@ -160,7 +160,7 @@ function showTitle(): void {
       </div>
       <div class="hero-art" aria-hidden="true">${[0, 1, 2].map((i) => `<div class="art-card ${ERA_CLASS[i]}" data-art="${i}"></div>`).join('')}</div>
       </div>
-      <div class="hero-bg" aria-hidden="true">${[1940, 1972, 2030].map((y, i) => `<div class="${ERA_CLASS[i]}">${sceneSvg(y)}</div>`).join('')}</div>
+      <div class="hero-bg" aria-hidden="true">${([[1950, 15], [1985, 27], [2018, 13]] as const).map(([y, pf], i) => `<div class="${ERA_CLASS[i]}">${sceneSvg(y, pf)}</div>`).join('')}</div>
     </main>
     ${titleSections()}`;
   bindCommon(app);
@@ -409,15 +409,22 @@ async function showGacha(): Promise<void> {
   addRow('家の暮らし向き', fam[st.shared.familyClass - 1], '20.0%');
   await sleep(skip ? 0 : 800);
   mark(3);
-  label.textContent = '生まれる年（真ん中）';
+  label.textContent = 'いちばん若い人の生まれ年';
   prob.textContent = '';
-  const ys = Array.from({ length: 16 }, (_, i) => String(1960 + i));
-  await spin(ys, String(g.years[1]), 1500);
-  prob.textContent = `${g.years[1]}年に生まれたのは${(g.birthsInYear[1] / 10000).toFixed(0)}万人`;
-  addRow('生まれる年', `${g.years[1]}年`, `${(g.middleYearProb * 100).toFixed(1)}%`);
+  const ys = Array.from({ length: 21 }, (_, i) => String(1990 + i));
+  await spin(ys, String(g.years[2]), 1300);
+  prob.textContent = `${g.years[2]}年に生まれたのは${(g.birthsInYear[2] / 10000).toFixed(0)}万人`;
+  addRow('いちばん若い人', `${g.years[2]}年`, '1990〜2010年から');
+  await sleep(skip ? 0 : 700);
+  label.textContent = 'そこから遡る年数（30〜50年を2回）';
+  prob.textContent = '';
+  const gaps = Array.from({ length: 21 }, (_, i) => `${30 + i}年`);
+  await spin(gaps, `${g.years[2] - g.years[1]}年`, 900);
+  await spin(gaps, `${g.years[1] - g.years[0]}年`, 900);
+  addRow('遡った年数', `${g.years[2] - g.years[1]}年と${g.years[1] - g.years[0]}年`, '30〜50年');
   await sleep(skip ? 150 : 900);
   mark(4);
-  label.textContent = '30年ずつ離れた、3つの生まれ年';
+  label.textContent = '3つの生まれ年';
   reel.textContent = '';
   prob.textContent = '';
   const gy = app.querySelector('#gyears') as HTMLElement;
@@ -756,7 +763,7 @@ function renderCol(i: number): void {
   col.classList.toggle('dead', !alive);
   if (!col.querySelector('.col-body')) col.innerHTML = `<div class="scene-slot"></div><div class="col-body"><div class="col-top"></div><ul class="feed"></ul></div>`;
   // 町並みは、絵が変わるときだけ入れ替える
-  const scene = sceneSvg(year);
+  const scene = sceneSvg(year, p.pref);
   const slot = col.querySelector('.scene-slot') as HTMLElement;
   if (htmlOf.get(slot) !== scene) {
     slot.innerHTML = scene;
@@ -902,11 +909,22 @@ function yearFacts(p: Person, year: number): string {
     rows.push(['当時の1万円は、2020年の', `${(Math.round((10000 * S.toReal2020(year)) / 100) * 100).toLocaleString('ja-JP')}円`]);
   }
   const future = year > 2025;
+  // この年の出来事：その年に始まった全国・制度・文化・戦争の出来事と、その県の出来事
+  const order: Record<string, number> = { pref: 0, national: 1, war: 1, system: 2, culture: 3 };
+  const evs = eventsForYear(year)
+    .filter((e) => e.year === year && e.category in order && (!e.prefs || e.prefs.includes(p.pref)))
+    .sort((a, b) => order[a.category] - order[b.category])
+    .filter((e, k, arr) => arr.findIndex((x) => x.title === e.title) === k)
+    .slice(0, 5);
+  const evHtml = evs.length
+    ? `<h5 class="yev-h">この年の出来事</h5><ul class="yev">${evs.map((e) => `<li class="${e.category === 'pref' ? 'local' : ''}">${e.category === 'pref' ? `<span class="tag">${S.PREFS[p.pref - 1]}</span>` : ''}${esc(e.title)}${e.month ? `<small>${e.month}月</small>` : ''}</li>`).join('')}</ul>`
+    : '';
   return html`<section class="yfact ${ERA_CLASS[p.era]}">
     <h4><b>${year}</b><span>${wareki(year)}</span>${future ? '<em>この先は推計</em>' : ''}</h4>
     ${future
       ? '<p class="muted">2026年より先の統計はまだありません。ゲームでは、2025年ごろの値や、国の推計の前提を使っています。</p>'
       : `<dl>${rows.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('')}</dl>`}
+    ${evHtml}
   </section>`;
 }
 
@@ -1490,18 +1508,19 @@ function saveHistory(st: GameState, okuri: string): void {
   const rest = list.filter((r) => r.seed !== st.seed);
   store.set(HIST_KEY, [rec, ...rest].slice(0, 10));
   const dex = new Set(store.get<string[]>(DEX_KEY) ?? []);
-  dex.add(`${st.shared.pref}-${st.shared.sex}-${st.gacha.years[1]}`);
+  dex.add(`${st.shared.pref}-${st.shared.sex}-${st.gacha.years.join('_')}`);
   store.set(DEX_KEY, [...dex]);
 }
 
 /** 珍しい組み合わせ。真ん中の生まれ年と県・性別で決まる */
-const RARE: { id: string; label: string; test: (pref: number, sex: string, mid: number) => boolean }[] = [
-  { id: 'hinoe', label: '丙午（1966年）に生まれた', test: (_p, _s, m) => m === 1966 },
-  { id: 'shusen', label: '終戦の年（1945年）に生まれた人がいる', test: (_p, _s, m) => m === 1975 },
-  { id: 'okinawa', label: '本土復帰の前の沖縄に生まれた', test: (p, _s, m) => p === 47 && m <= 1971 },
-  { id: 'tokyo64', label: '東京オリンピックの年（1964年）に生まれた', test: (_p, _s, m) => m === 1964 },
-  { id: 'genbaku', label: '広島か長崎で、戦時中に生まれた人がいる', test: (p, _s, m) => (p === 34 || p === 42) && m <= 1975 && m >= 1971 },
-  { id: 'babyboom2', label: '第2次ベビーブーム（1971〜74年）の真ん中', test: (_p, _s, m) => m >= 1971 && m <= 1974 },
+const RARE: { id: string; label: string; test: (pref: number, sex: string, ys: number[]) => boolean }[] = [
+  { id: 'hinoe', label: '丙午（1966年）に生まれた人がいる', test: (_p, _s, ys) => ys.includes(1966) },
+  { id: 'shusen', label: '終戦の年（1945年）に生まれた人がいる', test: (_p, _s, ys) => ys.includes(1945) },
+  { id: 'okinawa', label: '本土復帰の前の沖縄に生まれた人がいる', test: (p, _s, ys) => p === 47 && ys.some((y) => y >= 1945 && y <= 1971) },
+  { id: 'tokyo64', label: '東京オリンピックの年（1964年）に生まれた人がいる', test: (_p, _s, ys) => ys.includes(1964) },
+  { id: 'genbaku', label: '広島か長崎で、戦時中に生まれた人がいる', test: (p, _s, ys) => (p === 34 || p === 42) && ys.some((y) => y >= 1941 && y <= 1945) },
+  { id: 'babyboom2', label: '第2次ベビーブーム（1971〜74年）に生まれた人がいる', test: (_p, _s, ys) => ys.some((y) => y >= 1971 && y <= 1974) },
+  { id: 'gap100', label: '3人の生まれ年が、70年以上離れた', test: (_p, _s, ys) => ys[2] - ys[0] >= 70 },
 ];
 
 function showDex(): void {
@@ -1511,7 +1530,9 @@ function showDex(): void {
   const prefsHit = new Set([...dex].map((k) => Number(k.split('-')[0])));
   const rareHit = RARE.filter((r) => [...dex].some((k) => {
     const [p, s, m] = k.split('-');
-    return r.test(Number(p), s, Number(m));
+    // 古い記録は真ん中の年だけ（30年おき）。新しい記録は3人の年を _ でつなぐ
+    const ys = m.includes('_') ? m.split('_').map(Number) : [Number(m) - 30, Number(m), Number(m) + 30];
+    return r.test(Number(p), s, ys);
   }));
   const { el, close } = sheet(
     html`<p class="kicker">前世の記録と図鑑</p>

@@ -6,7 +6,7 @@ await loadEvents();
 import { createGame } from '../src/sim/engine';
 import { playToEnd } from '../src/sim/lab';
 
-const WHEN_KEYS = new Set(['sex', 'married', 'widowed', 'hasChildren', 'childAge', 'hasSibling', 'mother', 'father', 'school', 'working', 'job', 'retired', 'urban', 'rich', 'poor', 'mood', 'sick', 'flags', 'notFlags', 'trigger']);
+const WHEN_KEYS = new Set(['sex', 'married', 'widowed', 'hasChildren', 'childAge', 'hasSibling', 'mother', 'father', 'school', 'working', 'job', 'retired', 'urban', 'rich', 'poor', 'mood', 'sick', 'flags', 'notFlags', 'trigger', 'region', 'prefs', 'snow']);
 const TRIGGERS = new Set(['married', 'child', 'parent_death', 'spouse_death', 'job', 'retire', 'ill', 'wish_fail', 'moved', 'school']);
 const SLOTS = new Set(['name', 'friend', 'spouse', 'child', 'childAge', 'sib', 'pet', 'pref', 'mAge', 'fAge']);
 const BANNED = ['効く', '寄り添', 'かけがえのない', '紡ぐ', '彩る'];

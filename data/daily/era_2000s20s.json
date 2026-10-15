@@ -1,0 +1,2679 @@
+[
+  {
+    "id": "e4-001",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 40,
+    "yearMin": 2001,
+    "yearMax": 2005,
+    "when": {
+      "hasChildren": true,
+      "childAge": [
+        0,
+        3
+      ]
+    },
+    "text": "{child}の寝顔を、カメラ付きの携帯で撮って写メールで実家に送った。届いたかどうか心配で、母に電話をかけて確かめた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：J-SH04（2000年11月1日発売、J-フォンの写メール。普及は2001年夏から）"
+  },
+  {
+    "id": "e4-002",
+    "kind": "daily",
+    "ageMin": 16,
+    "ageMax": 26,
+    "yearMin": 2001,
+    "yearMax": 2004,
+    "text": "携帯の小さなレンズを自分に向け、{friend}と顔を寄せて写メールを撮った。画面の写真は粗く、二人とも鼻だけが大きく写っていた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：J-SH04（2000年11月1日発売、J-フォンの写メール。普及は2001年夏から）"
+  },
+  {
+    "id": "e4-003",
+    "kind": "daily",
+    "ageMin": 14,
+    "ageMax": 24,
+    "yearMin": 2003,
+    "yearMax": 2008,
+    "text": "好きなバンドの新曲を、着うたでダウンロードした。電話が鳴るたびに、サビが流れるまで出ずに待った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：KDDIの発表・ITmedia（auの着うたは2002年12月開始）"
+  },
+  {
+    "id": "e4-004",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 21,
+    "yearMin": 2001,
+    "yearMax": 2004,
+    "when": {
+      "mother": true
+    },
+    "text": "月末、母が携帯の請求書を台所の机に置いた。パケット代の欄だけで二万円を超えていて、しばらく顔を上げられなかった。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "確認済み：NTTドコモ報道発表（パケ・ホーダイは2004年6月1日開始、月額3,900円税抜。それまでパケット通信は従量制）"
+  },
+  {
+    "id": "e4-005",
+    "kind": "daily",
+    "ageMin": 17,
+    "ageMax": 30,
+    "yearMin": 2004,
+    "yearMax": 2007,
+    "text": "携帯をパケット定額のプランに替えた。月三千九百円で、夜中まで着メロのサイトを見ても請求書が怖くなくなった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：NTTドコモ報道発表（パケ・ホーダイは2004年6月1日開始、月額3,900円税抜。それまでパケット通信は従量制）"
+  },
+  {
+    "id": "e4-006",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 30,
+    "yearMin": 2000,
+    "yearMax": 2005,
+    "text": "部屋の電波の入りが悪く、窓際で携帯を高く掲げた。アンテナが二本立ったところで、急いで送信のボタンを押した。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-007",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 25,
+    "yearMin": 2001,
+    "yearMax": 2008,
+    "text": "元日の零時に、あけおめのメールを送った。回線が混んでいて、{friend}から返事が届いたのは一時を過ぎてからだった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-008",
+    "kind": "daily",
+    "ageMin": 14,
+    "ageMax": 22,
+    "yearMin": 2004,
+    "yearMax": 2010,
+    "text": "メールの最後に、動く絵文字をいくつも並べてから送った。返ってきた文には、絵文字がひとつもなかった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-009",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 25,
+    "yearMin": 2004,
+    "yearMax": 2011,
+    "text": "知り合ったばかりの人と、携帯の先を向け合って赤外線で連絡先を交換した。うまく届かず、三回やり直した。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-010",
+    "kind": "daily",
+    "ageMin": 13,
+    "ageMax": 20,
+    "yearMin": 2003,
+    "yearMax": 2010,
+    "text": "二つ折りの携帯に、ストラップを五本もつけていた。ポケットから出すたびに、じゃらじゃらと音がした。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-011",
+    "kind": "daily",
+    "ageMin": 13,
+    "ageMax": 18,
+    "yearMin": 2005,
+    "yearMax": 2010,
+    "text": "携帯で作るプロフィールのページに、好きな食べ物と血液型を書いた。{friend}のページの「親友」の欄に、自分の名前を探した。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-012",
+    "kind": "daily",
+    "ageMin": 13,
+    "ageMax": 18,
+    "yearMin": 2006,
+    "yearMax": 2009,
+    "when": {
+      "sex": "female"
+    },
+    "text": "寝る前に、布団の中で携帯小説を一章ずつ読んだ。泣ける場面で画面が暗くなり、あわててボタンを押した。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-013",
+    "kind": "daily",
+    "ageMin": 18,
+    "ageMax": 35,
+    "yearMin": 2004,
+    "yearMax": 2009,
+    "text": "{friend}からmixiの招待が届いた。登録した夜、足あとの欄に知らない名前が並んでいて、少し怖くなった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "確認済み：Impress Watch（mixiは2004年2月開始、招待制、足あと機能）"
+  },
+  {
+    "id": "e4-014",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 40,
+    "yearMin": 2005,
+    "yearMax": 2010,
+    "text": "mixiの日記に、昼に食べたラーメンの写真を載せた。夜になって、「行きたい」というコメントが三つついた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：Impress Watch（mixiは2004年2月開始、招待制、足あと機能）"
+  },
+  {
+    "id": "e4-015",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 40,
+    "yearMin": 2005,
+    "yearMax": 2010,
+    "text": "mixiのコミュニティで、同じ町の出身の人を見つけた。書き込みを読んでいるうちに、地元の駄菓子屋の名前が出てきた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：Impress Watch（mixiは2004年2月開始、招待制、足あと機能）"
+  },
+  {
+    "id": "e4-016",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 50,
+    "yearMin": 2004,
+    "yearMax": 2012,
+    "when": {
+      "married": true
+    },
+    "text": "ブログを始め、毎晩その日の弁当の写真を載せた。訪問者の数が二けたになった日は、{spouse}に画面を見せた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-017",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 55,
+    "yearMin": 2001,
+    "yearMax": 2004,
+    "when": {
+      "urban": true
+    },
+    "text": "駅前で、ADSLのモデムが入った紙袋を配っていた。持ち帰ったものの、電話線のつなぎ方が分からず一晩かかった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-018",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 55,
+    "yearMin": 2005,
+    "yearMax": 2010,
+    "text": "家に光回線が入った。前は読み込みを待たされていた動画が、ボタンを押すとすぐに動き出した。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-019",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 60,
+    "yearMin": 2002,
+    "yearMax": 2006,
+    "text": "家のパソコンを、Windows XPの入った新しい機種に買い替えた。青い空と草原の壁紙が、居間の隅で明るく光った。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-020",
+    "kind": "daily",
+    "ageMin": 18,
+    "ageMax": 30,
+    "yearMin": 2001,
+    "yearMax": 2008,
+    "when": {
+      "urban": true
+    },
+    "text": "終電を逃して、ネットカフェの狭い個室で朝を待った。隣の席から、キーボードをたたく音が一晩じゅう聞こえた。",
+    "effects": {
+      "health": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-021",
+    "kind": "daily",
+    "ageMin": 18,
+    "ageMax": 40,
+    "yearMin": 2001,
+    "yearMax": 2003,
+    "when": {
+      "working": true
+    },
+    "text": "昼休み、並二百八十円の牛丼を五分でかきこんだ。お釣りを握って、走って職場に戻った。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "確認済み：J-CASTニュース・東洋経済オンライン（吉野家の牛丼並盛は2001年に280円、2004年に販売休止、2006年9月に380円で再開）"
+  },
+  {
+    "id": "e4-022",
+    "kind": "daily",
+    "ageMin": 18,
+    "ageMax": 60,
+    "yearMin": 2004,
+    "yearMax": 2005,
+    "text": "牛丼屋の入り口に、牛丼休止の貼り紙があった。仕方なくほかの丼を頼み、紅しょうがをいつもより多くのせた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "確認済み：J-CASTニュース・東洋経済オンライン（吉野家の牛丼並盛は2001年に280円、2004年に販売休止、2006年9月に380円で再開）"
+  },
+  {
+    "id": "e4-023",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 70,
+    "yearMin": 2006,
+    "yearMax": 2006,
+    "when": {
+      "urban": true
+    },
+    "text": "牛丼が戻ってくると聞いて、店の前の行列に並んだ。一杯三百八十円の湯気を、しばらく眺めてから食べた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：J-CASTニュース・東洋経済オンライン（吉野家の牛丼並盛は2001年に280円、2004年に販売休止、2006年9月に380円で再開）"
+  },
+  {
+    "id": "e4-024",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 20,
+    "yearMin": 2002,
+    "yearMax": 2002,
+    "text": "小銭を集めて、五十九円のハンバーガーを二つ買った。{friend}と公園のベンチで食べ、包み紙を丸めて投げ合った。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：東洋経済オンライン（2002年にマクドナルドのハンバーガーが59円で最安値）"
+  },
+  {
+    "id": "e4-025",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 60,
+    "yearMin": 2000,
+    "yearMax": 2000,
+    "text": "千九百円のフリースを、色違いで二枚買った。駅の階段で、同じ色のフリースの人と三人もすれ違った。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "確認済み：PRESIDENT Online・テレビ東京（ユニクロのフリース1900円、1998〜2000年のブーム、2000年に2600万枚）"
+  },
+  {
+    "id": "e4-026",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 50,
+    "yearMin": 2001,
+    "yearMax": 2001,
+    "when": {
+      "hasChildren": true,
+      "childAge": [
+        4,
+        12
+      ]
+    },
+    "text": "{child}を連れて、映画館で『千と千尋の神隠し』を見た。立ち見が出るほど混んでいて、帰りにパンフレットを買った。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-027",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 60,
+    "yearMin": 2002,
+    "yearMax": 2002,
+    "when": {
+      "urban": true
+    },
+    "text": "ワールドカップの夜、駅前の店のテレビの前に人だかりができていた。知らない人と並んで、ゴールの瞬間に声を上げた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-028",
+    "kind": "daily",
+    "ageMin": 45,
+    "ageMax": 75,
+    "yearMin": 2004,
+    "yearMax": 2005,
+    "when": {
+      "sex": "female"
+    },
+    "text": "韓国のドラマにはまり、録画したビデオを何度も巻き戻して見た。{friend}と電話で、次の回の話を一時間もした。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-029",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 80,
+    "yearMin": 2005,
+    "yearMax": 2005,
+    "when": {
+      "region": [
+        "tokai"
+      ]
+    },
+    "text": "愛知の万博に家族で出かけた。人気の館は何時間も待ちで、結局ソフトクリームを食べて帰った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-030",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 60,
+    "yearMin": 2000,
+    "yearMax": 2008,
+    "text": "車にカーナビを付けた。知らない町で「この先、右方向です」と言われ、思わず「はい」と返事をした。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-031",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 70,
+    "yearMin": 2004,
+    "yearMax": 2010,
+    "text": "車にETCを付けた。初めて料金所を通るとき、バーが開くまでブレーキに足をのせたまま身構えた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-032",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 60,
+    "yearMin": 2005,
+    "yearMax": 2008,
+    "when": {
+      "working": true,
+      "sex": "male"
+    },
+    "text": "夏のあいだ、職場でネクタイを外してよいことになった。初日は首元が落ち着かず、何度も襟に手をやった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-033",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 60,
+    "yearMin": 2001,
+    "yearMax": 2003,
+    "when": {
+      "region": [
+        "kanto"
+      ]
+    },
+    "text": "改札で、切符の代わりにSuicaをかざした。扉が開くか不安で、思わず足をゆるめた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "確認済み：Impress Watch・JR東日本（Suica利用開始2001年11月18日、電子マネー2004年3月22日、PASMOと相互利用2007年3月18日、全国相互利用2013年3月）"
+  },
+  {
+    "id": "e4-034",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 50,
+    "yearMin": 2004,
+    "yearMax": 2008,
+    "when": {
+      "region": [
+        "kanto"
+      ]
+    },
+    "text": "駅の売店で、Suicaをかざして缶コーヒーを買った。小銭を探さずに済むのが、まだ不思議だった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "確認済み：Impress Watch・JR東日本（Suica利用開始2001年11月18日、電子マネー2004年3月22日、PASMOと相互利用2007年3月18日、全国相互利用2013年3月）"
+  },
+  {
+    "id": "e4-035",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 60,
+    "yearMin": 2007,
+    "yearMax": 2008,
+    "when": {
+      "region": [
+        "kanto"
+      ]
+    },
+    "text": "PASMOが使えるようになり、私鉄から地下鉄へ乗り換えるたびに切符を買わずに済んだ。財布の中の回数券が余った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：Impress Watch・JR東日本（Suica利用開始2001年11月18日、電子マネー2004年3月22日、PASMOと相互利用2007年3月18日、全国相互利用2013年3月）"
+  },
+  {
+    "id": "e4-036",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 70,
+    "yearMin": 2013,
+    "yearMax": 2016,
+    "when": {
+      "married": true,
+      "region": [
+        "hokkaido",
+        "tohoku",
+        "hokuriku",
+        "koshin",
+        "tokai",
+        "kinki",
+        "chugoku",
+        "shikoku",
+        "kyushu",
+        "okinawa"
+      ]
+    },
+    "text": "旅行先の東京の駅で、地元で使っているICカードがそのまま通った。改札を抜けてから、{spouse}と顔を見合わせた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：Impress Watch・JR東日本（Suica利用開始2001年11月18日、電子マネー2004年3月22日、PASMOと相互利用2007年3月18日、全国相互利用2013年3月）"
+  },
+  {
+    "id": "e4-037",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 40,
+    "yearMin": 2006,
+    "yearMax": 2010,
+    "when": {
+      "region": [
+        "kanto"
+      ]
+    },
+    "text": "携帯をかざして改札を通るようにした。定期入れを持たなくなり、上着のポケットが軽くなった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-038",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 50,
+    "yearMin": 2006,
+    "yearMax": 2007,
+    "when": {
+      "hasChildren": true,
+      "childAge": [
+        6,
+        14
+      ]
+    },
+    "text": "{child}に頼まれてニンテンドーDSを探した。品切れの貼り紙が続き、三軒目の店でようやく一台見つけた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-039",
+    "kind": "daily",
+    "ageMin": 55,
+    "ageMax": 80,
+    "yearMin": 2005,
+    "yearMax": 2009,
+    "text": "{child}にもらった携帯ゲーム機で、毎朝計算の問題を解いた。画面に出る脳の年齢が、少しずつ若くなった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-040",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 15,
+    "yearMin": 2006,
+    "yearMax": 2010,
+    "when": {
+      "hasSibling": true
+    },
+    "text": "Wiiのリモコンを振って、{sib}とテニスで勝負した。手首のひもを付けなさいと、母が後ろから何度も言った。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-041",
+    "kind": "daily",
+    "ageMin": 35,
+    "ageMax": 65,
+    "yearMin": 2008,
+    "yearMax": 2011,
+    "text": "居間で、Wii Fitの白い板に乗った。体重を量られた画面の中の分身が、少しふくらんだ。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-042",
+    "kind": "daily",
+    "ageMin": 18,
+    "ageMax": 60,
+    "yearMin": 2006,
+    "yearMax": 2012,
+    "text": "昼休み、携帯のワンセグで野球中継を見た。窓際に寄ると、止まっていた画面がようやく動き出した。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "確認済み：総務省資料（地上デジタル放送2003年12月1日開始、ワンセグ2006年4月1日開始、アナログ放送2011年7月24日終了。岩手・宮城・福島は2012年3月31日）"
+  },
+  {
+    "id": "e4-043",
+    "kind": "daily",
+    "ageMin": 50,
+    "ageMax": 85,
+    "yearMin": 2004,
+    "yearMax": 2012,
+    "text": "新しいテレビで、初めてデータ放送のボタンを押した。{pref}の明日の天気と最高気温が、画面の横に出てきた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "確認済み：総務省資料（地上デジタル放送2003年12月1日開始、ワンセグ2006年4月1日開始、アナログ放送2011年7月24日終了。岩手・宮城・福島は2012年3月31日）"
+  },
+  {
+    "id": "e4-044",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 90,
+    "yearMin": 2011,
+    "yearMax": 2011,
+    "when": {
+      "region": [
+        "hokkaido",
+        "kanto",
+        "hokuriku",
+        "koshin",
+        "tokai",
+        "kinki",
+        "chugoku",
+        "shikoku",
+        "kyushu",
+        "okinawa"
+      ]
+    },
+    "text": "七月の昼、古いテレビの画面が切り替わり、放送終了の文字だけが映った。しばらく眺めてから、電源を切った。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "確認済み：総務省資料（地上デジタル放送2003年12月1日開始、ワンセグ2006年4月1日開始、アナログ放送2011年7月24日終了。岩手・宮城・福島は2012年3月31日）"
+  },
+  {
+    "id": "e4-045",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 35,
+    "yearMin": 2004,
+    "yearMax": 2009,
+    "text": "白いイヤホンを耳に入れて電車に乗った。小さな音楽プレーヤーに、持っているCDを全部入れてあった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-046",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 18,
+    "yearMin": 2007,
+    "yearMax": 2012,
+    "when": {
+      "hasSibling": true
+    },
+    "text": "パソコンでYouTubeを開き、昔のアニメの主題歌を探した。画質は粗かったが、{sib}と最後まで見た。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-047",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 25,
+    "yearMin": 2007,
+    "yearMax": 2011,
+    "text": "動画の上を流れていく文字の多さに、最初は目が回った。慣れると、自分でも「うまい」と打ちこんでいた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-048",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 40,
+    "yearMin": 2003,
+    "yearMax": 2010,
+    "text": "レンタル店で、旧作が一本百円の日にDVDを五本借りた。結局、二本しか見られずに返した。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-049",
+    "kind": "daily",
+    "ageMin": 40,
+    "ageMax": 70,
+    "yearMin": 2008,
+    "yearMax": 2015,
+    "text": "ブルーレイレコーダーに、連続ドラマを毎週予約した。見ないうちに、録画の残り時間が少なくなった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-050",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 60,
+    "yearMin": 2003,
+    "yearMax": 2010,
+    "text": "デジカメの写真を、店の機械で印刷した。百枚選んでから、同じような写真ばかりだと気づいた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-051",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 70,
+    "yearMin": 2007,
+    "yearMax": 2012,
+    "text": "薄い肌着なのに暖かいと聞いて、店で買ってみた。冬の朝、上着を一枚減らして駅まで歩いた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-052",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 80,
+    "yearMin": 2005,
+    "yearMax": 2015,
+    "when": {
+      "hasChildren": true,
+      "childAge": [
+        3,
+        15
+      ]
+    },
+    "text": "節分の夜、コンビニで予約した恵方巻を、家族で黙って食べた。途中で{child}が笑い出し、皆つられて笑った。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-053",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 60,
+    "yearMin": 2004,
+    "yearMax": 2010,
+    "when": {
+      "sex": "male"
+    },
+    "text": "ビールをやめて、安い第三のビールを箱で買うようになった。最初の一口だけ、少し物足りなかった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-054",
+    "kind": "daily",
+    "ageMin": 35,
+    "ageMax": 60,
+    "yearMin": 2009,
+    "yearMax": 2026,
+    "text": "ねんきん定期便の封筒が届いた。これまで払った額の欄を見て、思っていたより少ない気がした。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-055",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 70,
+    "yearMin": 2008,
+    "yearMax": 2008,
+    "text": "四月、ガソリンが急に安くなり、スタンドの前に車の列ができた。翌月にはまた値上がりし、満タンにしておけばよかったと思った。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "確認済み：中日本高速道路の発表（2008年4月にガソリンの暫定税率が失効、5月1日に再び適用）"
+  },
+  {
+    "id": "e4-056",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 63,
+    "yearMin": 2009,
+    "yearMax": 2009,
+    "when": {
+      "married": true
+    },
+    "text": "役所から定額給付金の申請書が届いた。一万二千円が振り込まれた通帳を見て、{spouse}と何に使うか話した。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：総務省・自治体の資料（2009年の定額給付金は1人12000円、65歳以上と18歳以下は20000円）"
+  },
+  {
+    "id": "e4-057",
+    "kind": "daily",
+    "ageMin": 66,
+    "ageMax": 95,
+    "yearMin": 2009,
+    "yearMax": 2009,
+    "text": "定額給付金の二万円が振り込まれた。正月に孫が来たら渡そうと、封筒に入れて仏壇の引き出しにしまった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：総務省・自治体の資料（2009年の定額給付金は1人12000円、65歳以上と18歳以下は20000円）"
+  },
+  {
+    "id": "e4-058",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 70,
+    "yearMin": 2009,
+    "yearMax": 2011,
+    "text": "エコポイントがつくうちにと、冷蔵庫を買い替えた。たまったポイントで、商品券を申し込んだ。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-059",
+    "kind": "daily",
+    "ageMin": 18,
+    "ageMax": 40,
+    "yearMin": 2008,
+    "yearMax": 2009,
+    "text": "発売日に、店の前の行列に並んでiPhoneを買った。家に帰って画面を二本の指で広げると、地図がぐんと大きくなった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-060",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 50,
+    "yearMin": 2011,
+    "yearMax": 2016,
+    "text": "スマホの電池が夕方までもたず、鞄に充電器を入れて持ち歩くようになった。喫茶店では、まず電源の席を探した。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-061",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 60,
+    "yearMin": 2011,
+    "yearMax": 2014,
+    "when": {
+      "hasSibling": true
+    },
+    "text": "LINEの無料通話で、遠くに住む{sib}と一時間話した。電話代を気にせず話したのは、初めてだった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-062",
+    "kind": "daily",
+    "ageMin": 18,
+    "ageMax": 35,
+    "yearMin": 2009,
+    "yearMax": 2013,
+    "text": "ツイッターに、駅のホームが寒いと一行だけ書いた。知らない人から「わかる」と返ってきた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-063",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 60,
+    "yearMin": 2012,
+    "yearMax": 2013,
+    "when": {
+      "region": [
+        "kanto"
+      ]
+    },
+    "text": "できたばかりのスカイツリーを、川の向こうの橋の上から見上げた。てっぺんが、雲に少しかかっていた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-064",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 60,
+    "yearMin": 2012,
+    "yearMax": 2026,
+    "text": "電子書籍の読み方に慣れ、本棚の前で迷うことがなくなった。そのかわり、買ったことを忘れた本がいくつもあった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-065",
+    "kind": "daily",
+    "ageMin": 28,
+    "ageMax": 40,
+    "yearMin": 2010,
+    "yearMax": 2026,
+    "when": {
+      "sex": "male",
+      "hasChildren": true,
+      "childAge": [
+        0,
+        1
+      ]
+    },
+    "text": "{child}を抱っこひもで胸に抱え、平日の昼の公園へ出た。ベンチの母親たちに、軽く会釈をした。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-066",
+    "kind": "daily",
+    "ageMin": 18,
+    "ageMax": 40,
+    "yearMin": 2013,
+    "yearMax": 2026,
+    "text": "ハンバーガーの店でスマホのクーポンを見せた。画面を差し出すと、店員がバーコードを読み取った。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-067",
+    "kind": "daily",
+    "ageMin": 18,
+    "ageMax": 40,
+    "yearMin": 2013,
+    "yearMax": 2013,
+    "when": {
+      "working": true
+    },
+    "text": "牛丼の並が二百八十円に戻ったと聞いて、昼休みに店へ行った。お釣りの小銭が、前より少し多かった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-068",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 80,
+    "yearMin": 2014,
+    "yearMax": 2014,
+    "text": "消費税が上がる前の三月、トイレットペーパーと洗剤をまとめ買いした。押し入れが、しばらく箱でいっぱいになった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-069",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 45,
+    "yearMin": 2014,
+    "yearMax": 2026,
+    "when": {
+      "hasChildren": true
+    },
+    "text": "フリマアプリで、使わなくなったベビーカーを売った。梱包の箱が見つからず、近所のスーパーでもらってきた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-070",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 30,
+    "yearMin": 2014,
+    "yearMax": 2016,
+    "text": "自撮り棒の先にスマホをつけて、観光地で{friend}と写真を撮った。周りにも、同じ棒が何本も伸びていた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-071",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 60,
+    "yearMin": 2016,
+    "yearMax": 2017,
+    "text": "夜の公園に、スマホを手にした人が大勢集まっていた。{name}も、画面の中のモンスターを探して歩き回った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-072",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 35,
+    "yearMin": 2016,
+    "yearMax": 2026,
+    "text": "CDをほとんど買わなくなった。月ぎめの音楽配信で、昔の曲も新しい曲も同じように流れてきた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-073",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 60,
+    "yearMin": 2015,
+    "yearMax": 2026,
+    "text": "ふるさと納税の返礼品で、冷凍のカニが届いた。冷凍庫に入りきらず、その夜のうちに半分食べた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-074",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 30,
+    "yearMin": 2017,
+    "yearMax": 2019,
+    "text": "パンケーキが運ばれてくると、食べる前に皆が一斉にスマホを構えた。写真を撮り終えるころには、クリームが溶けかけていた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-075",
+    "kind": "daily",
+    "ageMin": 14,
+    "ageMax": 25,
+    "yearMin": 2018,
+    "yearMax": 2019,
+    "text": "駅前のタピオカの店に、三十分並んだ。太いストローで吸うと、黒い粒が勢いよく口に飛びこんできた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-076",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 40,
+    "yearMin": 2017,
+    "yearMax": 2026,
+    "when": {
+      "urban": true
+    },
+    "text": "大きな四角い鞄を背負った自転車が、アパートの前に止まった。スマホで頼んだ牛丼が、まだ温かいまま届いた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-077",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 15,
+    "yearMin": 2017,
+    "yearMax": 2024,
+    "text": "Nintendo Switchを本体ごとテレビから外し、布団に寝転がって遊んだ。気づいたら、窓の外が暗くなっていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-078",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 50,
+    "yearMin": 2018,
+    "yearMax": 2018,
+    "text": "二割戻ってくると聞いて、家電量販店でQRコード決済を使い掃除機を買った。十日ほどで、その還元は終わってしまった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：Business Insider Japan・BCN（PayPayの100億円キャンペーンは2018年12月4日開始、20%還元、10日で終了）"
+  },
+  {
+    "id": "e4-079",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 70,
+    "yearMin": 2019,
+    "yearMax": 2020,
+    "text": "近所の八百屋の入口に、五パーセント還元のステッカーが貼られた。店主は、まだ慣れない手つきでQRコードの札を差し出した。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "確認済み：Impress Watch（キャッシュレス・消費者還元事業は2019年10月1日〜2020年6月30日、中小店5%・フランチャイズ2%）"
+  },
+  {
+    "id": "e4-080",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 70,
+    "yearMin": 2019,
+    "yearMax": 2026,
+    "text": "コンビニで「店内でお召し上がりですか」と聞かれた。持ち帰りと答えると、税率は八パーセントのままだった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-081",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 64,
+    "yearMin": 2019,
+    "yearMax": 2019,
+    "when": {
+      "working": true
+    },
+    "text": "四月の昼、職場のテレビの前に人が集まり、新しい元号の額が掲げられるのを見た。誰かが小さく拍手をした。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-082",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 40,
+    "yearMin": 2018,
+    "yearMax": 2026,
+    "text": "推しの小さなアクリルスタンドを鞄に入れて出かけた。喫茶店の机に立て、ケーキと一緒に写真を撮った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-083",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 40,
+    "yearMin": 2019,
+    "yearMax": 2026,
+    "when": {
+      "urban": true
+    },
+    "text": "推しの誕生日に、駅の大きな広告を見に行った。柱の前では、同じように写真を撮る人が順番を待っていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-084",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 80,
+    "yearMin": 2020,
+    "yearMax": 2020,
+    "text": "朝早くドラッグストアの前に並んだが、マスクの棚は空のままだった。家に帰り、ガーゼとゴムで手作りした。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-085",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 90,
+    "yearMin": 2020,
+    "yearMax": 2020,
+    "when": {
+      "married": true
+    },
+    "text": "国から布マスクが二枚届いた。かけてみると小さくて、{spouse}と顔を見合わせた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-086",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 90,
+    "yearMin": 2020,
+    "yearMax": 2020,
+    "text": "国から布マスクが届いた。封を開けて一度かけてみたが、そのまま引き出しの奥にしまった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-087",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 90,
+    "yearMin": 2020,
+    "yearMax": 2020,
+    "text": "特別定額給付金の申請書に口座番号を書き、ポストに入れた。しばらくして、通帳に十万円の数字が印字された。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-088",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 15,
+    "yearMin": 2020,
+    "yearMax": 2020,
+    "text": "三月、急に学校が休みになった。家で、配られたプリントを一日に何枚も解き、昼は母が作り置いたおにぎりを食べた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-089",
+    "kind": "daily",
+    "ageMin": 18,
+    "ageMax": 22,
+    "yearMin": 2020,
+    "yearMax": 2021,
+    "when": {
+      "school": "univ"
+    },
+    "text": "大学の講義が、すべて画面越しになった。一年が終わっても、同じ学年の人の顔をほとんど知らなかった。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-090",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 40,
+    "yearMin": 2020,
+    "yearMax": 2021,
+    "text": "画面越しの飲み会で、{friend}が缶ビールを掲げた。回線が途切れたのを合図に、その夜はお開きになった。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-091",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 60,
+    "yearMin": 2020,
+    "yearMax": 2023,
+    "when": {
+      "working": true
+    },
+    "text": "オンライン会議の前だけ、上はシャツに着替えた。下は、パジャマのズボンのままだった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-092",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 60,
+    "yearMin": 2020,
+    "yearMax": 2022,
+    "when": {
+      "working": true
+    },
+    "text": "書類にはんこを押すためだけに、週に一度出社した。人の少ない職場は、空調の音がやけに大きく聞こえた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-093",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 80,
+    "yearMin": 2020,
+    "yearMax": 2026,
+    "text": "スーパーのレジで「袋はご入用ですか」と聞かれ、袋代を払った。次の日から、鞄に折りたたんだ買い物袋を入れた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-094",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 80,
+    "yearMin": 2020,
+    "yearMax": 2020,
+    "text": "Go To トラベルの割引で、温泉宿に泊まった。もらった地域のクーポンで、土産のまんじゅうを買った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-095",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 30,
+    "yearMin": 2020,
+    "yearMax": 2020,
+    "text": "家から出られない春、『あつまれ どうぶつの森』の島で{friend}と待ち合わせた。画面の中では、二人とも毎日会えた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-096",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 70,
+    "yearMin": 2020,
+    "yearMax": 2022,
+    "text": "定食屋のカウンターに、透明な板が立てられた。向こうの客の声が、少しこもって聞こえた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-097",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 70,
+    "yearMin": 2020,
+    "yearMax": 2022,
+    "text": "店の入口で、額に体温計を向けられた。三十六度二分と表示され、軽く頭を下げて中に入った。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-098",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 40,
+    "yearMin": 2020,
+    "yearMax": 2022,
+    "text": "好きなバンドの配信ライブを、テレビにつないで部屋で見た。曲の合間に、思わず画面に向かって拍手をした。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-099",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 80,
+    "yearMin": 2020,
+    "yearMax": 2021,
+    "text": "マイナンバーカードをスマホで読み取らせて、マイナポイントを申し込んだ。暗証番号を思い出すのに、十分かかった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "確認済み：Impress Watch・BCN（マイナポイントは2020年9月から、25%・上限5000円相当）"
+  },
+  {
+    "id": "e4-100",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 80,
+    "yearMin": 2021,
+    "yearMax": 2021,
+    "text": "夏、観客のいないオリンピックをテレビで見た。がらんとした客席に、選手の声だけが響いていた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-101",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 12,
+    "yearMin": 2021,
+    "yearMax": 2026,
+    "text": "学校で、一人一台のタブレットが配られた。家に持ち帰る日は、ランドセルがいつもより重くなった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-102",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 70,
+    "yearMin": 2021,
+    "yearMax": 2026,
+    "text": "居酒屋で、机のQRコードを読み取ってスマホから注文した。店員と話したのは、最初のお通しのときだけだった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-103",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 80,
+    "yearMin": 2022,
+    "yearMax": 2026,
+    "text": "スーパーで、いつもの食パンが値上がりしていた。手に取ってから一度棚に戻し、もう一度取ってかごに入れた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-104",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 80,
+    "yearMin": 2023,
+    "yearMax": 2023,
+    "text": "卵が品薄で、棚に一パックしか残っていなかった。家に帰って、ゆで卵にするのを一つ減らした。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-105",
+    "kind": "daily",
+    "ageMin": 13,
+    "ageMax": 25,
+    "yearMin": 2023,
+    "yearMax": 2023,
+    "text": "マスクを外してよいことになったが、駅のホームではまだ多くの人がしていた。{name}も、外すきっかけが分からなかった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-106",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 90,
+    "yearMin": 2025,
+    "yearMax": 2025,
+    "text": "スーパーで、米の五キロ袋が四千円を超えていた。いつもの銘柄の前で、しばらく腕を組んだ。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "確認済み：北海道新聞・J-CAST・公明新聞（2025年5月下旬のコメ5キロ平均4223円、随意契約の備蓄米は5キロ2000円前後）"
+  },
+  {
+    "id": "e4-107",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 90,
+    "yearMin": 2025,
+    "yearMax": 2025,
+    "text": "スーパーに備蓄米が入ると聞いて、朝から並んだ。五キロ二千円ほどの袋を抱えて帰り、米びつを満たした。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：北海道新聞・J-CAST・公明新聞（2025年5月下旬のコメ5キロ平均4223円、随意契約の備蓄米は5キロ2000円前後）"
+  },
+  {
+    "id": "e4-108",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 90,
+    "yearMin": 2024,
+    "yearMax": 2026,
+    "text": "お釣りに、新しい一万円札がまじっていた。光にかざして、肖像が浮かび上がるのを確かめた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-109",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 60,
+    "yearMin": 2024,
+    "yearMax": 2025,
+    "text": "新しい千円札が、駅の券売機に入らず押し戻された。古いお札を探して、財布の中を何度もかき回した。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-110",
+    "kind": "daily",
+    "ageMin": 50,
+    "ageMax": 95,
+    "yearMin": 2024,
+    "yearMax": 2026,
+    "text": "はがきが八十五円になったと聞いて、年賀状の枚数を半分に減らした。宛名を書きながら、誰を残すか迷った。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "確認済み：日本郵便の料金改定の報道（2024年10月1日、はがき63円→85円、定形郵便110円）"
+  },
+  {
+    "id": "e4-111",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 95,
+    "yearMin": 2018,
+    "yearMax": 2026,
+    "text": "年賀状に、今年で最後にしますと書き添えた。返ってきた何枚かに、同じような一文が書かれていた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-112",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 60,
+    "yearMin": 2023,
+    "yearMax": 2026,
+    "text": "話題の対話型のAIに、冷蔵庫の残り物で作れる献立を聞いてみた。返ってきた答えは、思っていたより手が込んでいた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-113",
+    "kind": "daily",
+    "ageMin": 18,
+    "ageMax": 22,
+    "yearMin": 2023,
+    "yearMax": 2026,
+    "when": {
+      "school": "univ"
+    },
+    "text": "講義の最初に、レポートをAIに書かせてはいけないと先生が話した。教室のあちこちで、小さな笑いが起きた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-114",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 40,
+    "yearMin": 2025,
+    "yearMax": 2026,
+    "text": "Nintendo Switch 2の抽選に申し込んだ。数日後、落選を知らせるメールが届き、もう一度申し込んだ。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-115",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 90,
+    "yearMin": 2025,
+    "yearMax": 2025,
+    "when": {
+      "region": [
+        "kinki"
+      ]
+    },
+    "text": "大阪の万博の会場で、木で組まれた大屋根の上を歩いた。下を見ると、パビリオンの前に長い列ができていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-116",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 70,
+    "yearMin": 2023,
+    "yearMax": 2026,
+    "when": {
+      "sex": "male"
+    },
+    "text": "夏の日差しに負けて、初めて日傘を買った。差して歩くと、頭の上だけ涼しい影ができた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-117",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 95,
+    "yearMin": 2022,
+    "yearMax": 2026,
+    "text": "使っている二つ折りの携帯が、もうすぐ使えなくなると手紙が来た。店へ行くと、大きな画面の機種ばかりが並んでいた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-118",
+    "kind": "daily",
+    "ageMin": 75,
+    "ageMax": 95,
+    "yearMin": 2000,
+    "yearMax": 2026,
+    "text": "週に二回、デイサービスの車が家の前まで迎えに来るようになった。昼の風呂のあと、皆で歌を歌って帰った。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-119",
+    "kind": "daily",
+    "ageMin": 60,
+    "ageMax": 90,
+    "yearMin": 2018,
+    "yearMax": 2026,
+    "text": "スーパーのセルフレジで、バーコードをどこに当てればいいのか分からなかった。店員がそばに来て、黙って指さしてくれた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-120",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 90,
+    "yearMin": 2019,
+    "yearMax": 2026,
+    "text": "ドラッグストアでポイントカードを出すと、アプリのほうがお得ですと言われた。家に帰って、{child}に電話で聞いた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-121",
+    "kind": "daily",
+    "ageMin": 60,
+    "ageMax": 85,
+    "yearMin": 2015,
+    "yearMax": 2026,
+    "text": "スマホの歩数計を見るのが、朝の楽しみになった。八千歩を超えた日は、帰りに少し遠回りをした。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-122",
+    "kind": "daily",
+    "ageMin": 70,
+    "ageMax": 90,
+    "yearMin": 2012,
+    "yearMax": 2026,
+    "text": "本屋でエンディングノートを買ってきた。最初の頁の好きな食べ物の欄だけ書いて、引き出しにしまった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-123",
+    "kind": "daily",
+    "ageMin": 60,
+    "ageMax": 90,
+    "yearMin": 2006,
+    "yearMax": 2012,
+    "text": "テレビの通販番組で、電話を一本かけて健康器具を買った。届いた箱は、思っていたより二回りも大きかった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-124",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 90,
+    "yearMin": 2000,
+    "yearMax": 2008,
+    "text": "{child}に携帯電話を持たされた。鳴ったときにどこのボタンを押すか、紙に書いて電話の裏に貼った。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-125",
+    "kind": "daily",
+    "ageMin": 65,
+    "ageMax": 90,
+    "yearMin": 2016,
+    "yearMax": 2026,
+    "text": "孫に、スマホで撮った庭の花の写真を送る方法を教わった。初めて送れた写真は、指が半分写っていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-126",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 8,
+    "yearMin": 2000,
+    "yearMax": 2010,
+    "text": "父の携帯の着信音が鳴ると、どこからか同じメロディーを口ずさんだ。どの曲なのか、{name}は知らなかった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-127",
+    "kind": "daily",
+    "ageMin": 3,
+    "ageMax": 6,
+    "yearMin": 2011,
+    "yearMax": 2026,
+    "text": "母のスマホの画面を、小さな指で横にすべらせた。止めようとする母より早く、動画の再生が始まった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-128",
+    "kind": "daily",
+    "ageMin": 9,
+    "ageMax": 12,
+    "yearMin": 2003,
+    "yearMax": 2012,
+    "text": "誕生日に、携帯電話がほしいと言った。母は「中学生になってから」と答え、カレンダーの四月に丸をつけた。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-129",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 14,
+    "yearMin": 2008,
+    "yearMax": 2015,
+    "text": "クラスでカードゲームの大会があると聞いて、{friend}とデッキを組み直した。夜、布団の中でもカードを並べて考えた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-130",
+    "kind": "daily",
+    "ageMin": 12,
+    "ageMax": 18,
+    "yearMin": 2012,
+    "yearMax": 2026,
+    "text": "スマホを持たされたその日に、家族で使い方の約束を決めた。夜九時を過ぎたら、居間の棚に置くことになった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-131",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 22,
+    "yearMin": 2015,
+    "yearMax": 2026,
+    "text": "動画配信者の真似をして、{friend}と部屋で動画を撮った。見返すと恥ずかしくて、誰にも見せずに消した。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-132",
+    "kind": "daily",
+    "ageMin": 16,
+    "ageMax": 22,
+    "yearMin": 2010,
+    "yearMax": 2026,
+    "text": "アルバイト先のレジに、電子マネーで払う客が増えた。かざした音が鳴らないと、もう一度お願いしますと頭を下げた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-133",
+    "kind": "daily",
+    "ageMin": 18,
+    "ageMax": 24,
+    "yearMin": 2005,
+    "yearMax": 2013,
+    "text": "就職活動のエントリーシートを、ネットの画面で何十社も打ちこんだ。同じ志望動機を、少しずつ言い換えて送った。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-134",
+    "kind": "daily",
+    "ageMin": 18,
+    "ageMax": 24,
+    "yearMin": 2014,
+    "yearMax": 2026,
+    "text": "就職活動の説明会の予約を、スマホで次々に入れた。手帳の代わりに、画面のカレンダーが黒く埋まっていった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-135",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 35,
+    "yearMin": 2018,
+    "yearMax": 2026,
+    "text": "結婚式の招待状が、紙ではなくスマホのURLで届いた。出欠の返事は、指一本で済んでしまった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-136",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 35,
+    "yearMin": 2009,
+    "yearMax": 2016,
+    "when": {
+      "urban": true
+    },
+    "text": "シェアハウスに引っ越した。台所の冷蔵庫の中に、名前を書いた卵のパックが五つも並んでいた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4-137",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 40,
+    "yearMin": 2013,
+    "yearMax": 2026,
+    "when": {
+      "hasChildren": true,
+      "childAge": [
+        0,
+        2
+      ]
+    },
+    "text": "夜中の授乳のあいだ、スマホの明かりを最小にして育児のブログを読んだ。同じ時刻に起きている人がいると思うと、少し気が楽になった。",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-001",
+    "kind": "think",
+    "ageMin": 20,
+    "ageMax": 60,
+    "yearMin": 2001,
+    "yearMax": 2005,
+    "text": "「写真がその日のうちに届くなんて。手紙を書いていたころには、もう戻れない」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：J-SH04（2000年11月1日発売、J-フォンの写メール。普及は2001年夏から）"
+  },
+  {
+    "id": "e4t-002",
+    "kind": "think",
+    "ageMin": 18,
+    "ageMax": 35,
+    "yearMin": 2004,
+    "yearMax": 2009,
+    "text": "「足あとはついているのに、コメントはない。見ただけで帰ったのは誰だろう」",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "確認済み：Impress Watch（mixiは2004年2月開始、招待制、足あと機能）"
+  },
+  {
+    "id": "e4t-003",
+    "kind": "think",
+    "ageMin": 15,
+    "ageMax": 20,
+    "yearMin": 2001,
+    "yearMax": 2004,
+    "when": {
+      "mother": true
+    },
+    "text": "「今月のパケット代のこと、母さんに何て言おう」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "確認済み：NTTドコモ報道発表（パケ・ホーダイは2004年6月1日開始、月額3,900円税抜。それまでパケット通信は従量制）"
+  },
+  {
+    "id": "e4t-004",
+    "kind": "think",
+    "ageMin": 40,
+    "ageMax": 70,
+    "yearMin": 2008,
+    "yearMax": 2011,
+    "text": "「ボタンのない板みたいな電話で、本当に電話がかけられるんだろうか」",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-005",
+    "kind": "think",
+    "ageMin": 50,
+    "ageMax": 90,
+    "yearMin": 2011,
+    "yearMax": 2011,
+    "when": {
+      "region": [
+        "hokkaido",
+        "kanto",
+        "hokuriku",
+        "koshin",
+        "tokai",
+        "kinki",
+        "chugoku",
+        "shikoku",
+        "kyushu",
+        "okinawa"
+      ]
+    },
+    "text": "「テレビが変わっただけなのに、ひとつの時代が終わった気がする」",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "確認済み：総務省資料（地上デジタル放送2003年12月1日開始、ワンセグ2006年4月1日開始、アナログ放送2011年7月24日終了。岩手・宮城・福島は2012年3月31日）"
+  },
+  {
+    "id": "e4t-006",
+    "kind": "think",
+    "ageMin": 20,
+    "ageMax": 63,
+    "yearMin": 2009,
+    "yearMax": 2009,
+    "text": "「一万二千円か。ありがたいけれど、これで世の中がよくなるのかな」",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "確認済み：総務省・自治体の資料（2009年の定額給付金は1人12000円、65歳以上と18歳以下は20000円）"
+  },
+  {
+    "id": "e4t-007",
+    "kind": "think",
+    "ageMin": 25,
+    "ageMax": 80,
+    "yearMin": 2020,
+    "yearMax": 2020,
+    "text": "「マスクを探すだけで一日が終わる。こんな春が来るとは思わなかった」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-008",
+    "kind": "think",
+    "ageMin": 20,
+    "ageMax": 80,
+    "yearMin": 2020,
+    "yearMax": 2020,
+    "text": "「十万円は、半分を生活に、半分をこの先のためにとっておこう」",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-009",
+    "kind": "think",
+    "ageMin": 8,
+    "ageMax": 15,
+    "yearMin": 2020,
+    "yearMax": 2020,
+    "text": "「学校がないのは、最初はうれしかった。いまは、友だちに会いたい」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-010",
+    "kind": "think",
+    "ageMin": 18,
+    "ageMax": 22,
+    "yearMin": 2020,
+    "yearMax": 2021,
+    "when": {
+      "school": "univ"
+    },
+    "text": "「大学生になった実感が、画面越しではちっともわいてこない」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-011",
+    "kind": "think",
+    "ageMin": 25,
+    "ageMax": 64,
+    "yearMin": 2022,
+    "yearMax": 2026,
+    "when": {
+      "working": true
+    },
+    "text": "「値札を見るたびにため息が出る。給料だけが、昔のままだ」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-012",
+    "kind": "think",
+    "ageMin": 40,
+    "ageMax": 90,
+    "yearMin": 2025,
+    "yearMax": 2025,
+    "text": "「お米を買うのに迷う日が来るなんて、思ってもみなかった」",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "確認済み：北海道新聞・J-CAST・公明新聞（2025年5月下旬のコメ5キロ平均4223円、随意契約の備蓄米は5キロ2000円前後）"
+  },
+  {
+    "id": "e4t-013",
+    "kind": "think",
+    "ageMin": 40,
+    "ageMax": 90,
+    "yearMin": 2024,
+    "yearMax": 2026,
+    "text": "「新しいお札の顔に、まだ慣れない。そのうち、これが当たり前になるんだろう」",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-014",
+    "kind": "think",
+    "ageMin": 25,
+    "ageMax": 60,
+    "yearMin": 2023,
+    "yearMax": 2026,
+    "when": {
+      "working": true
+    },
+    "text": "「機械が文章を書く時代か。自分の仕事は、この先どうなるんだろう」",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-015",
+    "kind": "think",
+    "ageMin": 18,
+    "ageMax": 40,
+    "yearMin": 2019,
+    "yearMax": 2026,
+    "when": {
+      "working": true
+    },
+    "text": "「推しが笑っているだけで、明日も仕事に行ける」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-016",
+    "kind": "think",
+    "ageMin": 20,
+    "ageMax": 50,
+    "yearMin": 2018,
+    "yearMax": 2026,
+    "text": "「財布を持たずに出かけても、なんとかなってしまう。便利すぎて、少し怖い」",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-017",
+    "kind": "think",
+    "ageMin": 70,
+    "ageMax": 95,
+    "yearMin": 2019,
+    "yearMax": 2026,
+    "text": "「店の人に『アプリで』と言われるたびに、置いていかれた気がする」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-018",
+    "kind": "think",
+    "ageMin": 20,
+    "ageMax": 30,
+    "yearMin": 2020,
+    "yearMax": 2021,
+    "when": {
+      "trigger": "job"
+    },
+    "text": "「初めての仕事が、自分の部屋の机から始まった。会社の床を、まだ踏んでいない」",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-019",
+    "kind": "think",
+    "ageMin": 22,
+    "ageMax": 45,
+    "yearMin": 2020,
+    "yearMax": 2021,
+    "when": {
+      "trigger": "child",
+      "married": true
+    },
+    "text": "「{spouse}にも、この顔をすぐ見せたかった。画面越しでは、重さまでは伝わらない」",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-020",
+    "kind": "think",
+    "ageMin": 22,
+    "ageMax": 45,
+    "yearMin": 2020,
+    "yearMax": 2021,
+    "when": {
+      "trigger": "married"
+    },
+    "text": "「式は延期になった。それでも、届けを出した今日が二人の記念日だ」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-021",
+    "kind": "think",
+    "ageMin": 18,
+    "ageMax": 30,
+    "yearMin": 2005,
+    "yearMax": 2012,
+    "when": {
+      "trigger": "moved",
+      "region": [
+        "kanto"
+      ]
+    },
+    "text": "「改札をカード一枚で通れる。地元とは、何もかも速さが違う」",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "確認済み：Impress Watch・JR東日本（Suica利用開始2001年11月18日、電子マネー2004年3月22日、PASMOと相互利用2007年3月18日、全国相互利用2013年3月）"
+  },
+  {
+    "id": "e4t-022",
+    "kind": "think",
+    "ageMin": 6,
+    "ageMax": 7,
+    "yearMin": 2020,
+    "yearMax": 2022,
+    "when": {
+      "trigger": "school"
+    },
+    "text": "「一年生になったのに、先生の顔が半分しか分からない」",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-023",
+    "kind": "think",
+    "ageMin": 58,
+    "ageMax": 70,
+    "yearMin": 2020,
+    "yearMax": 2021,
+    "when": {
+      "trigger": "retire"
+    },
+    "text": "「最後の日も送別会はなかった。花束だけを抱えて、すいた電車に乗った」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-024",
+    "kind": "think",
+    "ageMin": 21,
+    "ageMax": 30,
+    "yearMin": 2000,
+    "yearMax": 2005,
+    "when": {
+      "trigger": "wish_fail"
+    },
+    "text": "「求人が少ないのは、生まれた年のせいだ。そう思わないと、やっていられない」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-025",
+    "kind": "think",
+    "ageMin": 60,
+    "ageMax": 80,
+    "yearMin": 2007,
+    "yearMax": 2009,
+    "text": "「年金の記録が消えたなんて。ちゃんと払ってきた分は、どこへ行ったんだ」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-026",
+    "kind": "think",
+    "ageMin": 30,
+    "ageMax": 80,
+    "yearMin": 2014,
+    "yearMax": 2014,
+    "text": "「八パーセントか。三円、五円の違いが、毎日少しずつ積もっていく」",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-027",
+    "kind": "think",
+    "ageMin": 55,
+    "ageMax": 80,
+    "yearMin": 2005,
+    "yearMax": 2009,
+    "text": "「脳の年齢が、実際より十も若く出た。今日はいい日だ」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-028",
+    "kind": "think",
+    "ageMin": 30,
+    "ageMax": 60,
+    "yearMin": 2011,
+    "yearMax": 2014,
+    "text": "「電話番号を知らない人とも、LINEだとつながっている。不思議な時代になった」",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-029",
+    "kind": "think",
+    "ageMin": 35,
+    "ageMax": 60,
+    "yearMin": 2016,
+    "yearMax": 2017,
+    "text": "「いい年をして、夜の公園を歩き回っている。でも、ちょっと楽しい」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-030",
+    "kind": "think",
+    "ageMin": 15,
+    "ageMax": 80,
+    "yearMin": 2021,
+    "yearMax": 2021,
+    "text": "「拍手のない競技場でも、選手たちは泣いていた」",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-031",
+    "kind": "think",
+    "ageMin": 13,
+    "ageMax": 25,
+    "yearMin": 2023,
+    "yearMax": 2023,
+    "text": "「マスクを外すと、顔を見られている気がして落ち着かない」",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-032",
+    "kind": "think",
+    "ageMin": 10,
+    "ageMax": 85,
+    "yearMin": 2025,
+    "yearMax": 2025,
+    "when": {
+      "region": [
+        "kinki"
+      ]
+    },
+    "text": "「並んでばかりだったのに、もう一回行きたいと思っている」",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-033",
+    "kind": "think",
+    "ageMin": 50,
+    "ageMax": 80,
+    "yearMin": 2000,
+    "yearMax": 2004,
+    "text": "「携帯を持っていないと、待ち合わせにも困る世の中になった」",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-034",
+    "kind": "think",
+    "ageMin": 40,
+    "ageMax": 60,
+    "yearMin": 2010,
+    "yearMax": 2016,
+    "when": {
+      "hasChildren": true,
+      "childAge": [
+        12,
+        20
+      ]
+    },
+    "text": "「スマホばかり見ている子と、食卓でちっとも目が合わない」",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "e4t-035",
+    "kind": "think",
+    "ageMin": 60,
+    "ageMax": 95,
+    "yearMin": 2024,
+    "yearMax": 2026,
+    "text": "「はがき一枚が八十五円。手紙が、ちょっとしたぜいたく品になった」",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "確認済み：日本郵便の料金改定の報道（2024年10月1日、はがき63円→85円、定形郵便110円）"
+  },
+  {
+    "id": "e4t-036",
+    "kind": "think",
+    "ageMin": 20,
+    "ageMax": 40,
+    "yearMin": 2012,
+    "yearMax": 2026,
+    "text": "「みんなの写真に『いいね』を押すのは、もう指の癖みたいなものだ」",
+    "effects": {
+      "happiness": 0
+    },
+    "weight": 1,
+    "check": "未確認"
+  }
+]

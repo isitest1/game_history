@@ -4125,3 +4125,66 @@ button {
     opacity: 0.3;
   }
 }
+
+/* 風景の絵（自作のSVG。空まで描くので、背景の色は付けない） */
+.scene {
+  background: none;
+  height: 64px;
+}
+@media (min-width: 900px) {
+  .scene {
+    height: 96px;
+  }
+}
+.hero-bg {
+  opacity: 0.32;
+}
+.hero-bg > div {
+  overflow: hidden;
+}
+
+/* この年の出来事 */
+.yev-h {
+  margin: 10px 0 4px;
+  font-size: 12px;
+  color: var(--c-sub);
+  letter-spacing: 0.06em;
+}
+.yev {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+  font-size: 13px;
+  line-height: 1.45;
+}
+.yev li {
+  padding-left: 10px;
+  position: relative;
+}
+.yev li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--c-acc);
+}
+.yev small {
+  margin-left: 6px;
+  color: var(--c-sub);
+  font-size: 11px;
+}
+.yev .tag {
+  display: inline-block;
+  font-size: 10px;
+  border: 1px solid var(--c-acc);
+  color: var(--c-acc);
+  border-radius: 999px;
+  padding: 0 5px;
+  margin-right: 4px;
+  vertical-align: 1px;
+}

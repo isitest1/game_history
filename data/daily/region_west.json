@@ -1,0 +1,3905 @@
+[
+  {
+    "id": "rw-001",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 12,
+    "when": {
+      "prefs": [
+        27
+      ]
+    },
+    "text": "母の買い物について、長いアーケードの商店街を歩いた。八百屋の主人が「おまけやで」と言って、みかんを一つ袋に足してくれた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-002",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 11,
+    "yearMin": 1935,
+    "yearMax": 1969,
+    "when": {
+      "prefs": [
+        27
+      ]
+    },
+    "text": "祖母に連れられて、市電で心斎橋まで出かけた。チンチンと鳴る鐘の音を、窓に額をつけて聞いていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：大阪市電は1969年に全廃（大阪市資料、交通の論文）"
+  },
+  {
+    "id": "rw-003",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 60,
+    "yearMin": 1970,
+    "yearMax": 1970,
+    "when": {
+      "prefs": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    "text": "万博の会場で、父と二時間も行列に並んだ。やっと入ったパビリオンでは、人の頭のすき間から展示が少し見えただけだった。",
+    "effects": {
+      "happiness": 1,
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "確認済み：1970年の大阪万博の入場者は約6421万人（文春オンライン）。月の石の展示は未確認"
+  },
+  {
+    "id": "rw-004",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 14,
+    "when": {
+      "prefs": [
+        27
+      ]
+    },
+    "text": "学校の帰りに、角のたこ焼き屋で八個入りを友だちと分けた。経木の舟が熱くて、指先でつまむように持った。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-005",
+    "kind": "daily",
+    "ageMin": 13,
+    "ageMax": 15,
+    "when": {
+      "school": "middle",
+      "prefs": [
+        27
+      ]
+    },
+    "text": "教室で冗談を言ったら、隣の席からすぐに「なんでやねん」と返ってきた。笑いが取れた日は、帰り道の足が軽かった。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-006",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 80,
+    "yearMin": 1985,
+    "yearMax": 1985,
+    "when": {
+      "prefs": [
+        27
+      ]
+    },
+    "text": "阪神が日本一になった夜、近所の酒屋の前に人が集まった。知らない人どうしで肩を組んで、六甲おろしを何度も歌った。",
+    "effects": {
+      "happiness": 2,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：阪神は1985年に初の日本一。ファンは御堂筋を南へ歩き、戎橋に集まった（文春オンライン）"
+  },
+  {
+    "id": "rw-007",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 100,
+    "yearMin": 2023,
+    "yearMax": 2023,
+    "when": {
+      "prefs": [
+        27
+      ]
+    },
+    "text": "阪神が三十八年ぶりに日本一になった。テレビの前で家族と万歳をして、戎橋のほうの騒ぎを中継で遅くまで見ていた。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "check": "確認済み：阪神は1985年以来38年ぶり2回目の日本一（2023年）（文春オンライン）"
+  },
+  {
+    "id": "rw-008",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 64,
+    "when": {
+      "working": true,
+      "job": [
+        "smallco",
+        "self"
+      ],
+      "prefs": [
+        27
+      ]
+    },
+    "text": "東大阪の町工場で、旋盤の油のにおいにまみれて一日を終えた。仕上げた部品を指でなでると、ひっかかりがなかった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-009",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 30,
+    "when": {
+      "prefs": [
+        27
+      ]
+    },
+    "text": "道頓堀で、太鼓をたたく人形の前に並んで写真を撮った。川沿いの大きな看板の下は、休みの日の人でいっぱいだった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-010",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 75,
+    "when": {
+      "prefs": [
+        27
+      ]
+    },
+    "text": "新世界の串カツ屋で、ソースの二度づけ禁止の札を見ながら、キャベツでソースをすくった。店の外には通天閣が明るく光っていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-011",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 85,
+    "yearMin": 1994,
+    "yearMax": 1995,
+    "when": {
+      "prefs": [
+        27,
+        30
+      ]
+    },
+    "text": "関西空港が開港した年、対岸の公園から、海の上の空港へ降りていく飛行機を家族で眺めた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：関西国際空港は1994年9月4日開港、泉州沖の人工島（泉佐野市資料、記念日解説サイト）"
+  },
+  {
+    "id": "rw-012",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 90,
+    "yearMin": 2025,
+    "yearMax": 2025,
+    "when": {
+      "prefs": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    "text": "夢洲の万博へ出かけた。大きな木の輪の屋根の上を歩くと、海からの風が強くて、帽子を手で押さえた。",
+    "effects": {
+      "happiness": 1,
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rw-013",
+    "kind": "daily",
+    "ageMin": 40,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        27
+      ]
+    },
+    "text": "年の暮れ、黒門市場へ正月の買い出しに行った。人をかき分けて進むと、魚屋の威勢のいい声が頭の上を飛んでいった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 10
+  },
+  {
+    "id": "rw-014",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        27
+      ]
+    },
+    "text": "天神祭の夜、大川に船が並んだ。花火が上がるたびに、橋の上の人たちがいっせいに声を上げた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 15
+  },
+  {
+    "id": "rw-015",
+    "kind": "daily",
+    "ageMin": 19,
+    "ageMax": 70,
+    "yearMin": 1975,
+    "yearMax": 2026,
+    "when": {
+      "prefs": [
+        27
+      ]
+    },
+    "text": "東京から来た客が、エスカレーターで左側に立って、後ろの人に声をかけられていた。大阪では右に立つのが当たり前だった。",
+    "effects": {},
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rw-016",
+    "kind": "daily",
+    "ageMin": 7,
+    "ageMax": 15,
+    "yearMin": 1960,
+    "yearMax": 2001,
+    "when": {
+      "prefs": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    "text": "土曜の昼、学校から走って帰り、テレビの新喜劇を見ながら焼きそばを食べた。お決まりのギャグで、毎回同じところで笑った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認（新喜劇のテレビ中継は1959年ごろから。土曜の授業は2002年度の学校週5日制まで）"
+  },
+  {
+    "id": "rw-017",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 80,
+    "when": {
+      "prefs": [
+        27
+      ]
+    },
+    "text": "値札を見て「もうちょっと何とかならへん？」と言うと、電器屋の店員は電卓をたたいて、少しだけ安い数字を見せた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 15
+  },
+  {
+    "id": "rw-018",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 60,
+    "when": {
+      "working": true,
+      "prefs": [
+        27,
+        28,
+        29
+      ]
+    },
+    "text": "朝の御堂筋線は人でぎっしりだった。梅田で降りると、地下街の人の流れに押されるように会社へ向かった。",
+    "effects": {
+      "health": -1
+    },
+    "weight": 1,
+    "repeatGap": 10
+  },
+  {
+    "id": "rw-019",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 80,
+    "when": {
+      "prefs": [
+        26
+      ]
+    },
+    "text": "夕方、町家の奥の坪庭に打ち水をした。細長い通り庭を抜けて、涼しい風が台所まで通っていった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 12
+  },
+  {
+    "id": "rw-020",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 30,
+    "when": {
+      "prefs": [
+        26
+      ]
+    },
+    "text": "祇園祭の宵山に、浴衣を着て出かけた。鉾の提灯の下で、コンチキチンの囃子が人の波の上から降ってきた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 8
+  },
+  {
+    "id": "rw-021",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 95,
+    "when": {
+      "prefs": [
+        26
+      ]
+    },
+    "text": "八月十六日の夜、鴨川の河原に座って、大文字に火がともるのを待った。隣のおばあさんが、手を合わせてしばらく動かなかった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 15
+  },
+  {
+    "id": "rw-022",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 90,
+    "yearMin": 1978,
+    "yearMax": 1978,
+    "when": {
+      "prefs": [
+        26
+      ]
+    },
+    "text": "市電の最後の日、停留所に人が集まった。花で飾られた電車が鐘を鳴らして通り過ぎるのを、みんなで見送った。",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：京都市電は1978年9月30日に全廃（記念日解説サイト、Wikipedia英語版）"
+  },
+  {
+    "id": "rw-023",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 11,
+    "when": {
+      "prefs": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    "text": "地蔵盆で、町内の子どもが集まって大きな数珠を回した。終わると、お菓子の袋を一つずつもらって家へ走った。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-024",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        26
+      ]
+    },
+    "text": "近所の奥さんが「炊きすぎてしもて」と言って、おからの炊いたんを鉢に入れて持ってきた。鉢は洗って、飴を入れて返した。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-025",
+    "kind": "daily",
+    "ageMin": 18,
+    "ageMax": 23,
+    "when": {
+      "school": "univ",
+      "prefs": [
+        26
+      ]
+    },
+    "text": "下宿から自転車で、鴨川沿いを大学まで走った。三条大橋の下の河原には、恋人たちが同じ間隔をあけて並んで座っていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-026",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 70,
+    "when": {
+      "working": true,
+      "job": [
+        "self"
+      ],
+      "prefs": [
+        26
+      ]
+    },
+    "text": "春と秋は、店の前を制服の団体がひっきりなしに通った。八つ橋の試食を、一人ずつつまんでいった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rw-027",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 12,
+    "when": {
+      "prefs": [
+        28
+      ]
+    },
+    "text": "坂の上の家の窓から、港に停まる大きな船が見えた。汽笛が鳴ると、母は「外国の船やね」と言った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-028",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 60,
+    "when": {
+      "prefs": [
+        28
+      ]
+    },
+    "text": "南京町で豚まんを買い、熱いのを紙ごと持って歩いた。湯気の向こうで、店の人が大きな声で客を呼んでいた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-029",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 85,
+    "yearMin": 1998,
+    "yearMax": 1999,
+    "when": {
+      "prefs": [
+        28,
+        36
+      ]
+    },
+    "text": "明石海峡大橋が開通し、淡路島まで車で渡った。橋の上から見下ろした海は、思っていたより青く、遠かった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：明石海峡大橋は1998年4月5日開通（神戸新聞、運輸省資料）"
+  },
+  {
+    "id": "rw-030",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 70,
+    "when": {
+      "prefs": [
+        27,
+        28
+      ]
+    },
+    "text": "夏の甲子園の外野席で、かち割り氷の袋を首筋に当てながら試合を見た。浜風が吹くと、旗がいっせいに鳴った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 6
+  },
+  {
+    "id": "rw-031",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 90,
+    "when": {
+      "prefs": [
+        28
+      ]
+    },
+    "text": "冬の朝、灘の酒蔵の並ぶ道を通ると、米を蒸す甘いにおいが流れてきた。白い湯気が、蔵の屋根から上がっていた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rw-032",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 15,
+    "yearMin": 1981,
+    "yearMax": 1981,
+    "when": {
+      "prefs": [
+        28
+      ]
+    },
+    "text": "ポートアイランドの博覧会へ、運転士のいない新しい電車に乗って行った。いちばん前の窓にかぶりついて、海の上を走った。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "check": "未確認（神戸ポートアイランド博覧会と新交通ポートライナーの開業は1981年とされる）"
+  },
+  {
+    "id": "rw-033",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 70,
+    "when": {
+      "prefs": [
+        28
+      ]
+    },
+    "text": "姫路城の天守まで、急な木の階段を手すりにつかまって上った。窓の外には、小さな家の屋根がどこまでも続いていた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-034",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 30,
+    "when": {
+      "mother": true,
+      "prefs": [
+        28
+      ]
+    },
+    "text": "宝塚の大劇場の前の花のみちを、母と歩いた。劇場から出てくる人を待つ人たちが、同じ色のスカーフを巻いて並んでいた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-035",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 12,
+    "when": {
+      "prefs": [
+        29
+      ]
+    },
+    "text": "奈良公園で鹿せんべいを買ったとたん、鹿が三頭寄ってきた。袋ごと持っていかれそうになって、母の後ろに隠れた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-036",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "when": {
+      "prefs": [
+        29
+      ]
+    },
+    "text": "大仏殿の柱の穴を、友だちに足を押してもらってくぐり抜けた。出た先で、髪が埃で白くなっていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-037",
+    "kind": "daily",
+    "ageMin": 22,
+    "ageMax": 60,
+    "when": {
+      "working": true,
+      "prefs": [
+        29
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "毎朝、近鉄の電車で大阪へ通った。生駒のトンネルを抜けると、窓の外が急にビルばかりになった。",
+    "effects": {},
+    "weight": 1,
+    "repeatGap": 10
+  },
+  {
+    "id": "rw-038",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        29
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "三月のお水取りの夜、二月堂の舞台を走る大きな松明を見上げた。火の粉が降ってくるたびに、人の輪から声が上がった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 12
+  },
+  {
+    "id": "rw-039",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        29,
+        30
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "夏の祭りの日、柿の葉ずしを重箱に詰めた。葉をはがすと、鯖の脂がのった酢飯のにおいがした。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-040",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 14,
+    "when": {
+      "prefs": [
+        30
+      ]
+    },
+    "text": "有田のみかん畑の斜面で、祖父とみかんをもいだ。かごを背負って下りると、指先が黄色く染まっていた。",
+    "effects": {
+      "health": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-041",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        30
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "夏の土用、庭いっぱいにむしろを広げて梅を干した。夕方に取り込むと、手が酸っぱいにおいになった。",
+    "effects": {},
+    "weight": 1,
+    "repeatGap": 15
+  },
+  {
+    "id": "rw-042",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 80,
+    "when": {
+      "prefs": [
+        30
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "那智の滝を下から見上げると、細かいしぶきが顔にかかった。滝の音が大きくて、隣の人の声が聞こえなかった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-043",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 20,
+    "when": {
+      "prefs": [
+        30
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "白浜の海水浴場で、白い砂が足の裏に熱かった。波打ち際まで走って、そのまま海に飛び込んだ。",
+    "effects": {
+      "happiness": 1,
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-044",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 15,
+    "when": {
+      "prefs": [
+        25
+      ]
+    },
+    "text": "夏、琵琶湖の浜で泳いだ。海とちがって水がしょっぱくなく、口に入っても平気だった。",
+    "effects": {
+      "happiness": 1,
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-045",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 75,
+    "yearMin": 1977,
+    "yearMax": 1982,
+    "when": {
+      "prefs": [
+        25
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "町内の集まりで、合成洗剤をやめて粉石けんを使おうと決まった。台所の棚の箱を、その日のうちに入れ替えた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "確認済み：1977年5月に琵琶湖で淡水赤潮、県民の石けん運動、1980年7月1日に富栄養化防止条例施行（滋賀県）"
+  },
+  {
+    "id": "rw-046",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 15,
+    "when": {
+      "prefs": [
+        25
+      ]
+    },
+    "text": "正月に、祖父が鮒ずしを薄く切って出した。においに顔をしかめたら、「大人になったらわかる」と笑われた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-047",
+    "kind": "daily",
+    "ageMin": 22,
+    "ageMax": 60,
+    "yearMin": 1970,
+    "yearMax": 2026,
+    "when": {
+      "working": true,
+      "prefs": [
+        25
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "新快速で京都まで通った。帰りの電車の窓から、暗くなった湖の向こうに町の明かりが点々と見えた。",
+    "effects": {},
+    "weight": 1,
+    "repeatGap": 10,
+    "check": "未確認（新快速の運転開始は1970年とされる）"
+  },
+  {
+    "id": "rw-048",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 30,
+    "when": {
+      "prefs": [
+        31
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "鳥取砂丘の大きな斜面を、靴に砂を入れながら駆け下りた。振り返ると、砂の向こうの海が空と同じ色をしていた。",
+    "effects": {
+      "happiness": 1,
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-049",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 80,
+    "when": {
+      "prefs": [
+        31
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "秋、梨畑で袋をかぶった二十世紀梨を一つずつもいだ。かじると、汁が手首まで垂れた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-050",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        31
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "冬、港に松葉がにが揚がった日、親戚から一杯分けてもらった。ゆで上がった赤い殻を、家族で黙ってほじった。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-051",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 12,
+    "when": {
+      "prefs": [
+        32
+      ]
+    },
+    "text": "十月を出雲では神在月と呼ぶのだと、祖母が教えてくれた。よそでは神無月と言うと聞いて、不思議に思った。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-052",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 80,
+    "when": {
+      "prefs": [
+        32
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "朝ごはんには、たいてい宍道湖のしじみの味噌汁が出た。食べ終わると、椀の底に小さな殻がたまっていた。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1,
+    "repeatGap": 20
+  },
+  {
+    "id": "rw-053",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        32
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "秋祭りの夜、石見神楽の大蛇が火花を散らしながら舞った。太鼓の音が胸の奥まで響いて、目が離せなかった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 15
+  },
+  {
+    "id": "rw-054",
+    "kind": "daily",
+    "ageMin": 60,
+    "ageMax": 90,
+    "yearMin": 1970,
+    "yearMax": 2026,
+    "when": {
+      "prefs": [
+        31,
+        32
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "集落の家が、また一軒空き家になった。雨戸の閉まった家の前を通るたびに、昔住んでいた家族の顔を思い出した。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-055",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 85,
+    "yearMin": 1988,
+    "yearMax": 1989,
+    "when": {
+      "prefs": [
+        33,
+        37
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "瀬戸大橋が開通した春、列車で四国まで渡った。窓の下に島と船が小さく見えて、乗客がみんな海側の窓に寄った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：瀬戸大橋は1988年4月10日開通（記念日解説サイト）"
+  },
+  {
+    "id": "rw-056",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 80,
+    "when": {
+      "prefs": [
+        33
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "夏、親戚から白桃が箱で届いた。一つずつ紙に包まれた桃は、うぶ毛が指にやわらかかった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 15
+  },
+  {
+    "id": "rw-057",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 70,
+    "when": {
+      "prefs": [
+        33
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "倉敷の川沿いを、柳の下を歩いた。白壁の蔵が水に映って、舟が通るたびにゆらゆら揺れた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-058",
+    "kind": "daily",
+    "ageMin": 18,
+    "ageMax": 60,
+    "when": {
+      "working": true,
+      "job": [
+        "smallco"
+      ],
+      "prefs": [
+        33
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "児島の縫製工場で、一日じゅうミシンでジーンズの太い糸を縫った。夕方には、指先が藍色になっていた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-059",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 85,
+    "yearMin": 1975,
+    "yearMax": 1975,
+    "when": {
+      "prefs": [
+        34
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "カープが初めて優勝した秋、町じゅうが赤い帽子とメガホンであふれた。パレードの日、沿道で知らない人と手を取り合った。",
+    "effects": {
+      "happiness": 2,
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "確認済み：広島カープは1975年にリーグ初優勝。優勝パレードがフラワーフェスティバルのきっかけ（dive-hiroshima、講談社）"
+  },
+  {
+    "id": "rw-060",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 80,
+    "when": {
+      "prefs": [
+        34
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "近所のお好み焼き屋の鉄板の前に座った。そばと卵を重ねて焼いたのを、小さなヘラで切りながら食べた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 10
+  },
+  {
+    "id": "rw-061",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 60,
+    "when": {
+      "working": true,
+      "job": [
+        "bigco",
+        "smallco"
+      ],
+      "prefs": [
+        34,
+        38
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "呉の造船所で、溶接の火花を浴びながら船の鉄板をつないだ。昼休み、ドックの船を見上げると、ビルより高かった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-062",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 15,
+    "when": {
+      "prefs": [
+        34
+      ]
+    },
+    "text": "尾道の坂道を、猫を追いかけて上った。振り返ると、細い水道の向こうに島が見えて、渡船が行き来していた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-063",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 60,
+    "when": {
+      "prefs": [
+        34
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "宮島の参道で、鹿に地図をかじられた。干潮の浜を歩いて、大鳥居の足もとまで行った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-064",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        35
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "下関では、ふぐを「ふく」と呼ぶのだと教わった。皿の模様が透けて見えるほど薄い刺身を、何枚かまとめて口に入れた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-065",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 60,
+    "when": {
+      "prefs": [
+        35,
+        40
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "関門トンネルの人道を歩いて、九州まで渡った。足もとの県境の線をまたいで、一緒に来た友だちと笑った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-066",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 70,
+    "when": {
+      "prefs": [
+        35
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "錦帯橋の五つのアーチを、上っては下りて渡った。真ん中で立ち止まると、下の川の水が澄んでいた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-067",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 15,
+    "when": {
+      "prefs": [
+        35
+      ]
+    },
+    "text": "秋吉台の草原で、白い岩がいくつも地面から顔を出していた。洞窟の中は夏でもひんやりして、腕に鳥肌が立った。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-068",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 70,
+    "when": {
+      "prefs": [
+        36
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "お盆、阿波おどりの連に混じって踊った。手を上げて足を運ぶうちに、ぞめきのリズムが体に入ってきた。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "repeatGap": 8,
+    "check": "確認済み：阿波おどりは8月12〜15日（Tokyo Weekender。年によって変わる）"
+  },
+  {
+    "id": "rw-069",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 60,
+    "when": {
+      "prefs": [
+        36
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "鳴門の観潮船に乗って、渦潮を見た。船が渦のそばに傾くと、甲板の人がいっせいに手すりにつかまった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-070",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        36
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "秋、焼き魚にもうどんにも、すだちを搾った。台所には、青い皮の香りがいつまでも残っていた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rw-071",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 70,
+    "yearMin": 1998,
+    "yearMax": 2015,
+    "when": {
+      "prefs": [
+        36
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "明石海峡大橋ができてから、高速バスで神戸まで日帰りで買い物に行けるようになった。帰りのバスで紙袋を抱えて眠った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：明石海峡大橋は1998年4月5日開通（神戸新聞、運輸省資料）"
+  },
+  {
+    "id": "rw-072",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        37
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "朝、近所の製麺所でうどんを一玉買った。自分でてぼに入れて湯に通し、だしをかけて、店の外の長いすで食べた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 10
+  },
+  {
+    "id": "rw-073",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 70,
+    "when": {
+      "prefs": [
+        37
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "こんぴらさんの長い石段を上った。途中で息が切れて、土産物屋の前で休み、また一段ずつ上った。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-074",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 60,
+    "yearMin": 1955,
+    "yearMax": 1988,
+    "when": {
+      "prefs": [
+        33,
+        37
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "宇高連絡船の甲板で、立ったままうどんをすすった。汽笛が鳴ると、だしの湯気が風で横に流れた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認（宇高連絡船は瀬戸大橋開通の1988年に廃止とされる）"
+  },
+  {
+    "id": "rw-075",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 80,
+    "yearMin": 1994,
+    "yearMax": 1994,
+    "when": {
+      "prefs": [
+        37
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "雨の少ない夏、夜になると水道の水が細くなった。風呂の残り湯をバケツにためて、洗濯にも使った。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "未確認（1994年の香川の渇水と給水制限）"
+  },
+  {
+    "id": "rw-076",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        37
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "法事のあと、親戚が集まってうどんを打った。台所の板の上で生地を足で踏み、子どもたちがその上で順番に跳ねた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-077",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 70,
+    "when": {
+      "prefs": [
+        38
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "段々畑のみかんを摘む手伝いで、急な斜面にかごを運んだ。下を見ると、畑の向こうに海が光っていた。",
+    "effects": {
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-078",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        38
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "道後温泉の古い湯屋で、石の湯船につかった。上がると、二階の座敷で茶と菓子が出た。",
+    "effects": {
+      "health": 1,
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-079",
+    "kind": "daily",
+    "ageMin": 12,
+    "ageMax": 75,
+    "yearMin": 1999,
+    "yearMax": 2026,
+    "when": {
+      "prefs": [
+        34,
+        38
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "しまなみ海道を自転車で渡った。島から島へ橋を越えるたびに、下を行く船の白い波が見えた。",
+    "effects": {
+      "health": 1,
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：しまなみ海道は1999年に主要な橋がつながり、2006年に全通（神戸新聞、乗りものニュース）"
+  },
+  {
+    "id": "rw-080",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 60,
+    "when": {
+      "working": true,
+      "job": [
+        "smallco"
+      ],
+      "prefs": [
+        38
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "今治のタオル工場で、織機の音の中で一日を過ごした。仕上がったタオルを水に浮かべると、すぐに沈んだ。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-081",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 85,
+    "when": {
+      "flags": [
+        "moved_to_city"
+      ],
+      "prefs": [
+        38
+      ]
+    },
+    "text": "冬になると、実家から段ボールいっぱいのみかんが届いた。箱を開けると、部屋じゅうがみかんのにおいになった。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "repeatGap": 8
+  },
+  {
+    "id": "rw-082",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 50,
+    "yearMin": 1954,
+    "yearMax": 2026,
+    "when": {
+      "prefs": [
+        39
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "よさこい祭りで、鳴子を両手に持って追手筋を踊った。地方車のスピーカーの音で、おなかがびりびり震えた。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "repeatGap": 6,
+    "check": "確認済み：よさこい祭りは1954年に高知市で始まった。8月9〜12日（imidas、Tokyo Weekender）"
+  },
+  {
+    "id": "rw-083",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        39
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "漁港で、藁の火で鰹をあぶるのを見た。炎が一気に上がって、皮の焦げるにおいが煙と一緒に流れてきた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-084",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        39
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "日曜市の長い通りを、端から端まで歩いた。田舎寿司と芋の天ぷらを買って、店のおばあさんと天気の話をした。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "repeatGap": 10
+  },
+  {
+    "id": "rw-085",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        39
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "親戚の集まりで、大皿に盛った皿鉢料理を囲んだ。杯を返しては返されて、夜が更けても誰も帰らなかった。",
+    "effects": {
+      "relation": 1,
+      "health": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-086",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 15,
+    "when": {
+      "prefs": [
+        39
+      ]
+    },
+    "text": "四万十川で、沈下橋から友だちと順番に飛び込んだ。水の中で目を開けると、鮎が群れになって泳いでいた。",
+    "effects": {
+      "happiness": 1,
+      "health": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-087",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 90,
+    "when": {
+      "region": [
+        "shikoku"
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "白い装束のお遍路さんが家の前を通った。祖母はみかんと小銭を包んで出ていき、「お接待です」と手渡した。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-088",
+    "kind": "daily",
+    "ageMin": 60,
+    "ageMax": 90,
+    "when": {
+      "notFlags": [
+        "moved_to_city",
+        "moved_to_city"
+      ],
+      "region": [
+        "shikoku"
+      ]
+    },
+    "text": "白い装束を着て、お遍路の道を歩いた。金剛杖の鈴の音を聞きながら、次の札所までの山道を一歩ずつ上った。",
+    "effects": {
+      "health": 1,
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-089",
+    "kind": "daily",
+    "ageMin": 12,
+    "ageMax": 15,
+    "when": {
+      "prefs": [
+        33,
+        34,
+        35,
+        37,
+        38
+      ]
+    },
+    "text": "島の中学校を出たら、高校へは毎朝フェリーで通うことになると知った。港の待合所の時刻表を、じっと見上げた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rw-090",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 18,
+    "when": {
+      "school": "high",
+      "prefs": [
+        33,
+        34,
+        35,
+        37,
+        38
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "毎朝、島の港から高校行きのフェリーに乗った。甲板の上で、同じ制服の仲間と宿題を見せ合った。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-091",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 60,
+    "when": {
+      "working": true,
+      "prefs": [
+        34,
+        37,
+        38,
+        42
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "進水式の日、造船所の岸壁に人が集まった。綱が切られて船が海へ滑り出すと、くす玉が割れて紙吹雪が舞った。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-092",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 50,
+    "when": {
+      "prefs": [
+        40
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "七月十五日の夜明け前、追い山を見ようと、まだ暗い道を急いだ。走り抜ける山笠に勢い水がかかって、しぶきが飛んできた。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "repeatGap": 8,
+    "check": "確認済み：博多祇園山笠は7月1〜15日、追い山は15日午前4時59分に櫛田神社を出る（福岡市報道発表、tabi-mag）"
+  },
+  {
+    "id": "rw-093",
+    "kind": "daily",
+    "ageMin": 18,
+    "ageMax": 50,
+    "when": {
+      "sex": "male",
+      "prefs": [
+        40
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "山笠の締め込みを着て、法被姿の男たちと一緒に走った。「オイサ」の掛け声で、自分の声がかすれていった。",
+    "effects": {
+      "happiness": 2,
+      "health": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "repeatGap": 5
+  },
+  {
+    "id": "rw-094",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 70,
+    "when": {
+      "prefs": [
+        40
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "五月の連休、どんたくの行列を見に出かけた。しゃもじを打ち鳴らしながら歩く人たちが、沿道にも手を振っていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 10,
+    "check": "確認済み：博多どんたくは毎年5月3〜4日（tabi-mag）"
+  },
+  {
+    "id": "rw-095",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 75,
+    "when": {
+      "prefs": [
+        40
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "中洲の屋台で、知らない客と肩を寄せてラーメンをすすった。「替え玉」と言うと、大将がすぐに麺を湯に放り込んだ。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 8
+  },
+  {
+    "id": "rw-096",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 14,
+    "yearMin": 1960,
+    "yearMax": 1975,
+    "when": {
+      "prefs": [
+        40,
+        41,
+        42
+      ]
+    },
+    "text": "炭鉱が閉山になり、同じ社宅の友だちの家が、トラックに荷物を積んでいた。手を振ると、荷台から布団が少しはみ出していた。",
+    "effects": {
+      "happiness": -2,
+      "relation": -1
+    },
+    "weight": 1,
+    "check": "確認済み：1960〜1975年に多くの地域で炭鉱が閉山した（研究発表資料）。個別の炭鉱の閉山年は未確認"
+  },
+  {
+    "id": "rw-097",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 64,
+    "yearMin": 1960,
+    "yearMax": 1975,
+    "when": {
+      "working": true,
+      "prefs": [
+        40,
+        41,
+        42,
+        43
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "炭鉱の閉山が決まった。坑口から出てくる人たちの顔は黒く、誰もしばらく口をきかなかった。",
+    "effects": {
+      "happiness": -2
+    },
+    "weight": 1,
+    "check": "確認済み：1960〜1975年に多くの地域で炭鉱が閉山した（研究発表資料）。個別の炭鉱の閉山年は未確認"
+  },
+  {
+    "id": "rw-098",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 85,
+    "yearMin": 1997,
+    "yearMax": 1997,
+    "when": {
+      "prefs": [
+        40,
+        43
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "三池炭鉱が閉山した日のニュースを、家族で黙って見ていた。画面の中で、最後の石炭を積んだ車が坑口から出てきた。",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：三井三池炭鉱は1997年3月に閉山（国土交通省資料、日本コークス工業の沿革）"
+  },
+  {
+    "id": "rw-099",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 85,
+    "yearMin": 1975,
+    "yearMax": 1976,
+    "when": {
+      "prefs": [
+        40
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "新幹線が博多まで来た。初めて乗った車内はしんとしていて、窓の外の景色が音もなく流れていった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：山陽新幹線は1975年3月10日に博多まで開業（乗りものニュース、秋田県資料）"
+  },
+  {
+    "id": "rw-100",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 80,
+    "when": {
+      "prefs": [
+        40
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "お歳暮に辛子明太子が届いた。その晩、炊きたてのご飯にのせて、いつもより一杯多く食べた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 10
+  },
+  {
+    "id": "rw-101",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 15,
+    "yearMin": 1950,
+    "yearMax": 1970,
+    "when": {
+      "prefs": [
+        40
+      ]
+    },
+    "text": "八幡の製鉄所の煙突から、色のついた煙が空に流れていた。洗濯物に黒い粒がつくと、母はため息をついた。",
+    "effects": {
+      "health": -1
+    },
+    "weight": 1,
+    "check": "未確認"
+  },
+  {
+    "id": "rw-102",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 18,
+    "when": {
+      "school": "high",
+      "prefs": [
+        40
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "受験の前、太宰府天満宮でお守りを買った。梅ヶ枝餅を食べながら、参道の人ごみをゆっくり歩いた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-103",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 70,
+    "yearMin": 1989,
+    "yearMax": 1992,
+    "when": {
+      "prefs": [
+        40
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "平和台球場の外野席で、ホークスの試合を見た。福岡にまたプロ野球の球団が来たと、父がうれしそうに言った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認（ダイエーホークスの福岡移転は1989年、平和台球場が本拠地だったのは1992年まで）"
+  },
+  {
+    "id": "rw-104",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 70,
+    "yearMin": 1993,
+    "yearMax": 1995,
+    "when": {
+      "prefs": [
+        40
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "新しいドーム球場で、屋根の下で野球を見た。雨の音も聞こえず、ここが外だとは思えなかった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認（福岡ドームは1993年開場）"
+  },
+  {
+    "id": "rw-105",
+    "kind": "daily",
+    "ageMin": 8,
+    "ageMax": 80,
+    "yearMin": 1956,
+    "yearMax": 1958,
+    "when": {
+      "prefs": [
+        40
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "西鉄ライオンズが日本一になった秋、町じゅうの人がラジオの前に集まった。勝った瞬間、近所の家からも歓声が聞こえた。",
+    "effects": {
+      "happiness": 2
+    },
+    "weight": 1,
+    "check": "未確認（西鉄ライオンズは1956〜1958年に3年続けて日本一）"
+  },
+  {
+    "id": "rw-106",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 60,
+    "yearMin": 1976,
+    "yearMax": 2026,
+    "when": {
+      "working": true,
+      "prefs": [
+        40
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "天神の地下街を、仕事の帰りに通り抜けた。ガス灯を思わせる薄暗い明かりと、石の床の靴音が好きだった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認（天神地下街の開業は1976年）"
+  },
+  {
+    "id": "rw-107",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 80,
+    "when": {
+      "prefs": [
+        41
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "連休の有田の陶器市で、通りにずらりと並んだ器を見て回った。手にした茶碗を指ではじくと、高い音がした。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 10
+  },
+  {
+    "id": "rw-108",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 15,
+    "when": {
+      "prefs": [
+        40,
+        41,
+        43
+      ]
+    },
+    "text": "有明海の干潟で、泥の上を跳ねるムツゴロウを見た。足を踏み入れると、ひざまで泥に沈んで抜けなくなった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-109",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        41
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "唐津くんちの日、朱塗りの大きな曳山が町を回った。掛け声とともに曳山が角を曲がると、見物人から拍手が起きた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 12
+  },
+  {
+    "id": "rw-110",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 85,
+    "yearMin": 1980,
+    "yearMax": 2026,
+    "when": {
+      "prefs": [
+        41
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "秋の朝、川原から色とりどりの熱気球がいっせいに浮かび上がった。空を見上げたまま、首が痛くなった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認（佐賀の熱気球大会は1980年代から）"
+  },
+  {
+    "id": "rw-111",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 80,
+    "when": {
+      "prefs": [
+        42
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "長崎の坂を上って家に帰った。石段の途中で振り返ると、港に浮かぶ船の明かりが一つずつともり始めていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 12
+  },
+  {
+    "id": "rw-112",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        42
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "精霊流しの夜、爆竹の音で耳がじんじんした。煙の中を、提灯をつけた精霊船がゆっくり進んでいった。",
+    "effects": {},
+    "weight": 1,
+    "repeatGap": 10
+  },
+  {
+    "id": "rw-113",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        42
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "くんちの奉納踊りで、龍が玉を追って広場を舞った。「もってこーい」の声が、あちこちから上がった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 12
+  },
+  {
+    "id": "rw-114",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 80,
+    "when": {
+      "prefs": [
+        42
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "中華街の店で、ちゃんぽんを食べた。キャベツと蒲鉾がどっさりのって、白いスープが湯気を立てていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-115",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 15,
+    "yearMin": 1974,
+    "yearMax": 1974,
+    "when": {
+      "prefs": [
+        42
+      ]
+    },
+    "text": "端島の閉山で、島の家族がそろって船で本土へ渡った。港で迎えた親戚が、大きな荷物を手分けして運んだ。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "check": "未確認（端島炭坑の閉山は1974年とされる）"
+  },
+  {
+    "id": "rw-116",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 15,
+    "when": {
+      "prefs": [
+        42,
+        46,
+        47
+      ]
+    },
+    "text": "島の中学を出る春、高校へ進むために島を離れた。フェリーの甲板から、桟橋で手を振る家族を見ていた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-117",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 70,
+    "when": {
+      "prefs": [
+        43
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "熊本城の石垣の下に立って、上を見上げた。上にいくほど反り返る石垣を、どうやって積んだのかと思った。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-118",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        43
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "早春、阿蘇の草原で野焼きが行われた。山の斜面を火の帯がゆっくりと進み、あとには黒い地面が残った。",
+    "effects": {},
+    "weight": 1,
+    "repeatGap": 15
+  },
+  {
+    "id": "rw-119",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        43
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "親戚が集まった日、からし蓮根と馬刺しが皿に並んだ。からしが鼻に抜けて、目に涙がにじんだ。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-120",
+    "kind": "daily",
+    "ageMin": 4,
+    "ageMax": 12,
+    "yearMin": 2011,
+    "yearMax": 2026,
+    "when": {
+      "prefs": [
+        43
+      ]
+    },
+    "text": "黒い熊のキャラクターの帽子をかぶって、デパートの催しに出かけた。着ぐるみが手を振ると、まわりの子が声を上げた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認（くまモンの登場は2010〜2011年）"
+  },
+  {
+    "id": "rw-121",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 80,
+    "when": {
+      "prefs": [
+        44
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "別府の町のあちこちから、湯けむりが白く立ちのぼっていた。坂の上から見ると、町全体が湯気に包まれていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-122",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        44
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "仕事の帰りに、近所の共同湯に寄った。百円玉を箱に入れて湯につかると、顔なじみの年寄りが天気の話をしてきた。",
+    "effects": {
+      "health": 1,
+      "relation": 1
+    },
+    "weight": 1,
+    "repeatGap": 8
+  },
+  {
+    "id": "rw-123",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 60,
+    "when": {
+      "prefs": [
+        44
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "地獄めぐりで、赤い色の湯の池をのぞいた。湯気の向こうから、硫黄のにおいがむっと押し寄せてきた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-124",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        44
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "秋、刺身にも鍋にも、かぼすを搾った。食卓の小皿には、いつも切ったかぼすが並んでいた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rw-125",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 30,
+    "yearMin": 1960,
+    "yearMax": 1974,
+    "when": {
+      "prefs": [
+        45
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "新婚旅行で宮崎へ来た夫婦が、海岸のフェニックスの並木の下で写真を撮り合っていた。どの組も、同じような服を着ていた。",
+    "effects": {},
+    "weight": 1,
+    "check": "未確認（宮崎の新婚旅行ブームは1960年代〜1970年代前半）"
+  },
+  {
+    "id": "rw-126",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 70,
+    "when": {
+      "prefs": [
+        45,
+        47
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "二月、プロ野球のキャンプを見に行った。ブルペンの近くまで寄ると、ミットにボールの入る音がはっきり聞こえた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 8
+  },
+  {
+    "id": "rw-127",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        45
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "炭火で焼いた鶏を、黒く焦げた皿のまま食べた。煙のにおいが服に残って、帰りのバスで隣の人が振り返った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-128",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        45
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "台風が過ぎた翌朝、日南の海岸は嘘のように静かだった。濡れた道にはヤシの葉が何枚も落ちていた。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rw-129",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        46
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "桜島の灰が降った日、窓のさんに灰色の粉がたまった。母は外に干していた洗濯物を、あわてて取り込んだ。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "repeatGap": 6
+  },
+  {
+    "id": "rw-130",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        46
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "庭に積もった桜島の灰を、ほうきで集めて克灰袋に詰めた。袋を指定の置き場に出すと、手がざらざらしていた。",
+    "effects": {},
+    "weight": 1,
+    "repeatGap": 8,
+    "check": "確認済み：鹿児島市は克灰袋を配り、宅地内降灰指定置場に出してもらう（鹿児島市）。配布の開始年は未確認"
+  },
+  {
+    "id": "rw-131",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 90,
+    "when": {
+      "prefs": [
+        45,
+        46
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "夕方、湯で割った芋焼酎を飲んだ。じょかを火にかけると、焼酎の甘いにおいが部屋に広がった。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 10
+  },
+  {
+    "id": "rw-132",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 85,
+    "yearMin": 2004,
+    "yearMax": 2005,
+    "when": {
+      "prefs": [
+        43,
+        46
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "九州新幹線が鹿児島まで来た。駅のホームで、白い車両が音もなく入ってくるのを、家族で見ていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：九州新幹線は2004年3月13日に新八代〜鹿児島中央、2011年3月12日に博多〜鹿児島中央が全線開業（秋田県資料、熊本日日新聞）"
+  },
+  {
+    "id": "rw-133",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 60,
+    "when": {
+      "prefs": [
+        46
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "天文館で白熊を食べた。練乳のかかった氷の上に果物がのって、溶けないうちにと急いでスプーンを動かした。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-134",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 70,
+    "yearMin": 1975,
+    "yearMax": 2026,
+    "when": {
+      "prefs": [
+        46
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "種子島で、ロケットの打ち上げを見ようと海岸に人が集まった。光が空へ上がったあと、遅れて地響きのような音が届いた。",
+    "effects": {
+      "happiness": 1,
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "未確認（種子島からの人工衛星打ち上げは1975年から）"
+  },
+  {
+    "id": "rw-135",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 25,
+    "when": {
+      "prefs": [
+        46
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "同じ高校の友だちと話すとき、つい薩摩の言葉が強く出た。テレビの言葉とはずいぶん違うと、改めて思った。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rw-136",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 85,
+    "yearMin": 2011,
+    "yearMax": 2012,
+    "when": {
+      "region": [
+        "kyushu"
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "博多から鹿児島まで新幹線がつながった。九州の町と町が、急に近くなったように感じた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：九州新幹線は2004年3月13日に新八代〜鹿児島中央、2011年3月12日に博多〜鹿児島中央が全線開業（秋田県資料、熊本日日新聞）"
+  },
+  {
+    "id": "rw-137",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 85,
+    "when": {
+      "flags": [
+        "moved_to_city"
+      ],
+      "region": [
+        "kyushu"
+      ]
+    },
+    "text": "盆と正月に帰省すると、親戚が「よう帰ってきたね」と言って、焼酎のお湯割りを次々についだ。",
+    "effects": {
+      "relation": 1,
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 6
+  },
+  {
+    "id": "rw-138",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 12,
+    "yearMin": 1958,
+    "yearMax": 1972,
+    "when": {
+      "prefs": [
+        47
+      ]
+    },
+    "text": "近所の売店で、セント硬貨を何枚か出してアイスキャンデーを買った。おつりの硬貨には、外国の人の顔が描かれていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：アメリカ統治下の沖縄ではドルが流通（nippon.com）。B円からドルへの切り替えは1958年（学会要旨で言及。月日は未確認）"
+  },
+  {
+    "id": "rw-139",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 64,
+    "yearMin": 1958,
+    "yearMax": 1972,
+    "when": {
+      "working": true,
+      "prefs": [
+        47
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "給料をドルでもらって、その足で市場へ寄った。父や母の代から通う店で、肉と野菜をセントまで細かく数えて払った。",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：アメリカ統治下の沖縄ではドルが流通（nippon.com）。B円からドルへの切り替えは1958年（学会要旨で言及。月日は未確認）"
+  },
+  {
+    "id": "rw-140",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 14,
+    "yearMin": 1950,
+    "yearMax": 1978,
+    "when": {
+      "prefs": [
+        47
+      ]
+    },
+    "text": "バスは道の右側を走った。降りるとき、車の来る向きを確かめて、母に手を引かれて渡った。",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：沖縄は戦後アメリカ式の右側通行で、復帰後も1978年7月29日まで続いた（JAF Mate、琉球新報）"
+  },
+  {
+    "id": "rw-141",
+    "kind": "daily",
+    "ageMin": 18,
+    "ageMax": 80,
+    "yearMin": 1978,
+    "yearMax": 1978,
+    "when": {
+      "prefs": [
+        47
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "七月三十日の朝、道路の車がいっせいに左側を走り始めた。ハンドルを握るあいだ、何度も声に出して「左、左」と言った。",
+    "effects": {
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "確認済み：1978年7月30日に沖縄の交通方法が「車は右」から「車は左」へ一斉に切り替え（JAF Mate、琉球新報）"
+  },
+  {
+    "id": "rw-142",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 17,
+    "yearMin": 1978,
+    "yearMax": 1978,
+    "when": {
+      "prefs": [
+        47
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "七月三十日から、車が道の左側を走るようになった。通学路の角では、黄色い旗を持った大人が子どもを渡らせていた。",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：1978年7月30日に沖縄の交通方法が「車は右」から「車は左」へ一斉に切り替え（JAF Mate、琉球新報）"
+  },
+  {
+    "id": "rw-143",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 85,
+    "yearMin": 1972,
+    "yearMax": 1972,
+    "when": {
+      "prefs": [
+        47
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "復帰の日、銀行の交換所に長い列ができた。ドル札を窓口に出すと、見慣れない円の札が束になって返ってきた。",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：1972年5月15日の復帰で1ドル=305円の通貨交換が始まり、20日まで。交換所は銀行や公民館など357か所（琉球新報）"
+  },
+  {
+    "id": "rw-144",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 85,
+    "yearMin": 1972,
+    "yearMax": 1973,
+    "when": {
+      "prefs": [
+        47
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "円に変わってから、いつもの店のパンや石けんが前より高くなった気がした。値札の数字を見て、計算し直すくせがついた。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1,
+    "check": "確認済み：復帰後の那覇市の小売価格調査で、305円基準で約9割の品目が値上がり（琉球新報）"
+  },
+  {
+    "id": "rw-145",
+    "kind": "daily",
+    "ageMin": 30,
+    "ageMax": 90,
+    "when": {
+      "prefs": [
+        47
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "月に一度の模合で、同級生たちと集まって会費を出し合った。お金の話はすぐに終わり、あとは夜遅くまで昔話をした。",
+    "effects": {
+      "relation": 2,
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 5
+  },
+  {
+    "id": "rw-146",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        47
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "旧盆の夜、エイサーの太鼓が道を回ってきた。指笛と掛け声が近づくと、家々から人が出てきて手をたたいた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "repeatGap": 6
+  },
+  {
+    "id": "rw-147",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 30,
+    "when": {
+      "prefs": [
+        47
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "青年会のエイサーに加わって、大太鼓を抱えて町を踊り歩いた。旧盆が終わるころには、肩に太鼓のひもの跡がついていた。",
+    "effects": {
+      "happiness": 2,
+      "relation": 1
+    },
+    "weight": 1,
+    "repeatGap": 3
+  },
+  {
+    "id": "rw-148",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 90,
+    "when": {
+      "prefs": [
+        47
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "台風が近づくと、雨戸を閉めて、ろうそくと懐中電灯を枕元に並べた。風の音を聞きながら、家族で一つの部屋に寝た。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "repeatGap": 5
+  },
+  {
+    "id": "rw-149",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 70,
+    "yearMin": 1975,
+    "yearMax": 1976,
+    "when": {
+      "prefs": [
+        47
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "本部の海洋博へ家族で出かけた。海の上に浮かぶ大きな建物に入ると、床がかすかに揺れている気がした。",
+    "effects": {
+      "happiness": 1,
+      "knowledge": 1
+    },
+    "weight": 1,
+    "check": "確認済み：沖縄国際海洋博覧会は本部町で1975年7月20日〜1976年1月18日、約350万人（沖縄県公文書館、沖縄県資料）"
+  },
+  {
+    "id": "rw-150",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 90,
+    "yearMin": 1992,
+    "yearMax": 1993,
+    "when": {
+      "prefs": [
+        47
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "首里城の正殿が、赤い色でよみがえった。門をくぐって広場に立つと、まわりの年寄りたちが静かに見上げていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "確認済み：首里城は1992年11月2日に正殿などが復元され、首里城公園が開園（奈良文化財研究所の報告書、琉球新報）"
+  },
+  {
+    "id": "rw-151",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 90,
+    "yearMin": 2003,
+    "yearMax": 2004,
+    "when": {
+      "prefs": [
+        47
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "那覇にモノレールが走り始めた。窓から見下ろすと、いつもの国道の渋滞が、足の下でじっと止まっていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認（沖縄都市モノレール「ゆいレール」は2003年8月開業とされる）"
+  },
+  {
+    "id": "rw-152",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 80,
+    "when": {
+      "prefs": [
+        47
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "夕方、隣のおじいが縁側で三線を弾いていた。蛇の皮の張った胴から、ゆっくりした音が路地まで流れてきた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-153",
+    "kind": "daily",
+    "ageMin": 5,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        47
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "シーミーの日、親戚が亀甲墓の前に集まった。重箱を広げて、墓の前でみんなで弁当を食べた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1,
+    "repeatGap": 6
+  },
+  {
+    "id": "rw-154",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 60,
+    "yearMin": 1950,
+    "yearMax": 2026,
+    "when": {
+      "prefs": [
+        47
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "朝ごはんに、ポークと卵焼きをはさんだおにぎりが出た。缶を開けたときの塩辛いにおいで、目が覚めた。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-155",
+    "kind": "daily",
+    "ageMin": 6,
+    "ageMax": 15,
+    "yearMin": 1950,
+    "yearMax": 1972,
+    "when": {
+      "father": true,
+      "prefs": [
+        47
+      ]
+    },
+    "text": "父が基地の仕事から帰ると、アメリカの缶詰やチョコレートが袋から出てきた。包み紙の英語を、声に出して読んだ。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1,
+    "check": "未確認（アメリカ統治下の沖縄で、基地で働く住民が多かったこと）"
+  },
+  {
+    "id": "rw-156",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 60,
+    "when": {
+      "flags": [
+        "moved_to_city"
+      ],
+      "working": true,
+      "prefs": [
+        47
+      ]
+    },
+    "text": "本土の職場で、つい沖縄の言葉が出て聞き返された。昼休み、同じ沖縄の出の人と話すと、肩の力が抜けた。",
+    "effects": {
+      "relation": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-157",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 85,
+    "when": {
+      "flags": [
+        "moved_to_city"
+      ],
+      "prefs": [
+        47
+      ]
+    },
+    "text": "本土で迎える冬は、思っていたよりずっと寒かった。実家から届いた黒糖をかじって、こたつで縮こまった。",
+    "effects": {
+      "happiness": -1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-158",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 85,
+    "when": {
+      "flags": [
+        "moved_to_city"
+      ],
+      "mother": true,
+      "prefs": [
+        47
+      ]
+    },
+    "text": "盆の帰省で那覇の空港に降りると、湿った空気が体を包んだ。迎えに来た母が、日に焼けた顔で手を振っていた。",
+    "effects": {
+      "happiness": 2,
+      "relation": 1
+    },
+    "weight": 1,
+    "repeatGap": 5
+  },
+  {
+    "id": "rw-159",
+    "kind": "daily",
+    "ageMin": 25,
+    "ageMax": 85,
+    "when": {
+      "prefs": [
+        47
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "ゴーヤーを薄く切って、豆腐と卵と一緒に炒めた。苦みが苦手だった子どものころの話を、食卓でまた笑った。",
+    "effects": {
+      "happiness": 1
+    },
+    "weight": 1
+  },
+  {
+    "id": "rw-160",
+    "kind": "daily",
+    "ageMin": 15,
+    "ageMax": 25,
+    "yearMin": 1950,
+    "yearMax": 1972,
+    "when": {
+      "prefs": [
+        47
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "本土の大学や職場へ行くには、パスポートが要った。手続きの窓口で、写真の自分がやけに硬い顔をしていた。",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：復帰前、沖縄から本土へ渡るにはパスポート（身分証明書）が必要だった（久留米市資料、日刊ゲンダイ、神戸新聞）"
+  },
+  {
+    "id": "rw-161",
+    "kind": "daily",
+    "ageMin": 20,
+    "ageMax": 80,
+    "when": {
+      "region": [
+        "kinki"
+      ]
+    },
+    "text": "よその土地の人に、関西の言葉はきつく聞こえると言われた。自分では、やわらかく話しているつもりだった。",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rw-162",
+    "kind": "daily",
+    "ageMin": 10,
+    "ageMax": 85,
+    "when": {
+      "region": [
+        "kinki"
+      ]
+    },
+    "text": "夏の夜、川べりで地蔵盆の提灯が揺れていた。年寄りたちが床几に座って、うちわであおぎながら話し込んでいた。",
+    "effects": {},
+    "weight": 1,
+    "repeatGap": 15
+  },
+  {
+    "id": "rwt-001",
+    "kind": "think",
+    "ageMin": 15,
+    "ageMax": 30,
+    "yearMin": 1950,
+    "yearMax": 1972,
+    "when": {
+      "trigger": "moved",
+      "prefs": [
+        47
+      ]
+    },
+    "text": "「同じ日本のはずなのに、パスポートを持って“本土”へ行くのか」",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：復帰前、沖縄から本土へ渡るにはパスポート（身分証明書）が必要だった（久留米市資料、日刊ゲンダイ、神戸新聞）"
+  },
+  {
+    "id": "rwt-002",
+    "kind": "think",
+    "ageMin": 15,
+    "ageMax": 100,
+    "yearMin": 1972,
+    "yearMax": 1972,
+    "when": {
+      "prefs": [
+        47
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「今日から日本になった。でも明日の暮らしがどう変わるのか、誰にも分からない」",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：1972年5月15日の復帰で1ドル=305円の通貨交換が始まり、20日まで。交換所は銀行や公民館など357か所（琉球新報）"
+  },
+  {
+    "id": "rwt-003",
+    "kind": "think",
+    "ageMin": 25,
+    "ageMax": 85,
+    "yearMin": 1978,
+    "yearMax": 1978,
+    "when": {
+      "prefs": [
+        47
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「三十年も右を走ってきたのに、明日から左か」",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：1978年7月30日に沖縄の交通方法が「車は右」から「車は左」へ一斉に切り替え（JAF Mate、琉球新報）"
+  },
+  {
+    "id": "rwt-004",
+    "kind": "think",
+    "ageMin": 10,
+    "ageMax": 100,
+    "when": {
+      "prefs": [
+        47
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「台風が過ぎた朝の空は、どうしてこんなに青いんだろう」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-005",
+    "kind": "think",
+    "ageMin": 18,
+    "ageMax": 40,
+    "when": {
+      "trigger": "moved",
+      "prefs": [
+        47
+      ]
+    },
+    "text": "「本土の冬はこんなに寒いのか。沖縄の海が見たい」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-006",
+    "kind": "think",
+    "ageMin": 20,
+    "ageMax": 45,
+    "yearMin": 1950,
+    "yearMax": 1972,
+    "when": {
+      "trigger": "child",
+      "prefs": [
+        47
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「この子が大きくなるころ、沖縄はどうなっているんだろう」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-007",
+    "kind": "think",
+    "ageMin": 30,
+    "ageMax": 80,
+    "when": {
+      "trigger": "parent_death",
+      "sex": "male",
+      "prefs": [
+        47
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「トートーメーを、これからは自分が守っていくのか」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-008",
+    "kind": "think",
+    "ageMin": 40,
+    "ageMax": 100,
+    "yearMin": 2003,
+    "yearMax": 2004,
+    "when": {
+      "prefs": [
+        47
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「沖縄に電車が走るなんて、子どものころは思いもしなかった」",
+    "effects": {},
+    "weight": 1,
+    "check": "未確認（沖縄都市モノレール「ゆいレール」は2003年8月開業とされる）"
+  },
+  {
+    "id": "rwt-009",
+    "kind": "think",
+    "ageMin": 30,
+    "ageMax": 90,
+    "when": {
+      "prefs": [
+        47
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「模合の日だけは、何があっても顔を出したい」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-010",
+    "kind": "think",
+    "ageMin": 13,
+    "ageMax": 18,
+    "when": {
+      "prefs": [
+        27
+      ]
+    },
+    "text": "「おもろないこと言うたら負けや。明日のネタ考えとこ」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-011",
+    "kind": "think",
+    "ageMin": 30,
+    "ageMax": 80,
+    "when": {
+      "mood": "low",
+      "prefs": [
+        27
+      ]
+    },
+    "text": "「笑ろとったら、なんとかなる。母ちゃんがいつもそう言うとった」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-012",
+    "kind": "think",
+    "ageMin": 20,
+    "ageMax": 40,
+    "when": {
+      "trigger": "married",
+      "prefs": [
+        27
+      ]
+    },
+    "text": "「この人と一緒やったら、毎日笑ろて暮らせそうや」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-013",
+    "kind": "think",
+    "ageMin": 20,
+    "ageMax": 70,
+    "yearMin": 1970,
+    "yearMax": 1970,
+    "when": {
+      "prefs": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    "text": "「世界中の国が大阪に来とる。これからどんな時代になるんやろ」",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：1970年の大阪万博の入場者は約6421万人（文春オンライン）。月の石の展示は未確認"
+  },
+  {
+    "id": "rwt-014",
+    "kind": "think",
+    "ageMin": 15,
+    "ageMax": 60,
+    "when": {
+      "trigger": "wish_fail",
+      "region": [
+        "kinki"
+      ]
+    },
+    "text": "「あかんかった。けど、まだ終わったわけやない」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-015",
+    "kind": "think",
+    "ageMin": 30,
+    "ageMax": 90,
+    "when": {
+      "prefs": [
+        26
+      ]
+    },
+    "text": "「はっきり言わへんでも、分かる人には分かる。それが京都や」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-016",
+    "kind": "think",
+    "ageMin": 65,
+    "ageMax": 100,
+    "when": {
+      "prefs": [
+        28
+      ]
+    },
+    "text": "「坂の多い町に生まれたおかげで、足だけは丈夫や」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-017",
+    "kind": "think",
+    "ageMin": 60,
+    "ageMax": 100,
+    "when": {
+      "prefs": [
+        29
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「大仏さんは、何百年もこの町の人を見てきはったんやな」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-018",
+    "kind": "think",
+    "ageMin": 40,
+    "ageMax": 100,
+    "when": {
+      "prefs": [
+        30
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「梅の花が咲いたら、また一年が始まる」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-019",
+    "kind": "think",
+    "ageMin": 25,
+    "ageMax": 80,
+    "when": {
+      "flags": [
+        "moved_to_city"
+      ],
+      "prefs": [
+        25
+      ]
+    },
+    "text": "「琵琶湖が見えると、帰ってきたと思う」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-020",
+    "kind": "think",
+    "ageMin": 60,
+    "ageMax": 95,
+    "when": {
+      "prefs": [
+        31,
+        32,
+        35,
+        39
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「若い者はみんな出ていく。この村に残るのは年寄りばかりや」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-021",
+    "kind": "think",
+    "ageMin": 30,
+    "ageMax": 90,
+    "yearMin": 1988,
+    "yearMax": 1990,
+    "when": {
+      "prefs": [
+        33,
+        37
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「橋ができて、四国がこんなに近くなるとは」",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：瀬戸大橋は1988年4月10日開通（記念日解説サイト）"
+  },
+  {
+    "id": "rwt-022",
+    "kind": "think",
+    "ageMin": 15,
+    "ageMax": 100,
+    "when": {
+      "prefs": [
+        34
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「今年こそカープが勝つ。毎年そう思うとる」",
+    "effects": {},
+    "weight": 1,
+    "repeatGap": 10
+  },
+  {
+    "id": "rwt-023",
+    "kind": "think",
+    "ageMin": 30,
+    "ageMax": 90,
+    "when": {
+      "prefs": [
+        35
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「海の向こうはもう九州じゃ。近いようで遠い」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-024",
+    "kind": "think",
+    "ageMin": 10,
+    "ageMax": 70,
+    "yearMin": 1954,
+    "yearMax": 2026,
+    "when": {
+      "prefs": [
+        39
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「鳴子の音が聞こえると、体が勝手に動き出す」",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：よさこい祭りは1954年に高知市で始まった。8月9〜12日（imidas、Tokyo Weekender）"
+  },
+  {
+    "id": "rwt-025",
+    "kind": "think",
+    "ageMin": 18,
+    "ageMax": 35,
+    "when": {
+      "trigger": "moved",
+      "prefs": [
+        37
+      ]
+    },
+    "text": "「東京のうどんはだしが黒い。香川のうどんが食べたい」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-026",
+    "kind": "think",
+    "ageMin": 35,
+    "ageMax": 75,
+    "yearMin": 1972,
+    "yearMax": 1990,
+    "when": {
+      "job": [
+        "farm"
+      ],
+      "mood": "low",
+      "prefs": [
+        38,
+        30
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「みかんの値がまた下がった。今年の冬はどうしようか」",
+    "effects": {},
+    "weight": 1,
+    "check": "未確認（1970年代のみかん価格の下落）"
+  },
+  {
+    "id": "rwt-027",
+    "kind": "think",
+    "ageMin": 30,
+    "ageMax": 64,
+    "yearMin": 1960,
+    "yearMax": 1975,
+    "when": {
+      "working": true,
+      "prefs": [
+        40,
+        41,
+        42
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「ヤマがなくなったら、この町には何が残るんやろか」",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：1960〜1975年に多くの地域で炭鉱が閉山した（研究発表資料）。個別の炭鉱の閉山年は未確認"
+  },
+  {
+    "id": "rwt-028",
+    "kind": "think",
+    "ageMin": 15,
+    "ageMax": 18,
+    "when": {
+      "trigger": "school",
+      "prefs": [
+        40
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「天神さんでお守りを買うたおかげかもしれん」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-029",
+    "kind": "think",
+    "ageMin": 18,
+    "ageMax": 35,
+    "when": {
+      "trigger": "moved",
+      "mother": true,
+      "region": [
+        "kyushu"
+      ]
+    },
+    "text": "「博多駅で見送る母の顔が、なかなか頭から離れん」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-030",
+    "kind": "think",
+    "ageMin": 50,
+    "ageMax": 100,
+    "yearMin": 2011,
+    "yearMax": 2012,
+    "when": {
+      "prefs": [
+        40
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「鹿児島まで一時間ちょっとか。世の中、早うなったなあ」",
+    "effects": {},
+    "weight": 1,
+    "check": "確認済み：九州新幹線は2004年3月13日に新八代〜鹿児島中央、2011年3月12日に博多〜鹿児島中央が全線開業（秋田県資料、熊本日日新聞）"
+  },
+  {
+    "id": "rwt-031",
+    "kind": "think",
+    "ageMin": 30,
+    "ageMax": 95,
+    "when": {
+      "prefs": [
+        46
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「また灰が降りよる。洗濯物、取り込まんといかん」",
+    "effects": {},
+    "weight": 1,
+    "repeatGap": 10
+  },
+  {
+    "id": "rwt-032",
+    "kind": "think",
+    "ageMin": 75,
+    "ageMax": 100,
+    "when": {
+      "prefs": [
+        42
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「この坂の上の家に、いつまで住めるやろか」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-033",
+    "kind": "think",
+    "ageMin": 20,
+    "ageMax": 90,
+    "when": {
+      "prefs": [
+        43
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「お城の石垣を見ると、なんだか背筋が伸びる」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-034",
+    "kind": "think",
+    "ageMin": 30,
+    "ageMax": 100,
+    "when": {
+      "prefs": [
+        44
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「湯につかっとるときだけは、なんも考えんでいい」",
+    "effects": {},
+    "weight": 1,
+    "repeatGap": 15
+  },
+  {
+    "id": "rwt-035",
+    "kind": "think",
+    "ageMin": 30,
+    "ageMax": 100,
+    "when": {
+      "prefs": [
+        45
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「冬でも日差しがあったかい。ここに生まれてよかった」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-036",
+    "kind": "think",
+    "ageMin": 20,
+    "ageMax": 80,
+    "when": {
+      "flags": [
+        "moved_to_city"
+      ],
+      "prefs": [
+        47
+      ]
+    },
+    "text": "「那覇の空港に降りたとたん、空気の湿り気で帰ってきたと分かった」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-037",
+    "kind": "think",
+    "ageMin": 60,
+    "ageMax": 85,
+    "when": {
+      "trigger": "retire",
+      "prefs": [
+        34,
+        38,
+        42
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「船を造って四十年。最後の進水式は、ちゃんと見届けたい」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-038",
+    "kind": "think",
+    "ageMin": 10,
+    "ageMax": 90,
+    "when": {
+      "prefs": [
+        26
+      ]
+    },
+    "text": "「明日は宵山や。今年は誰と行こう」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-039",
+    "kind": "think",
+    "ageMin": 20,
+    "ageMax": 90,
+    "when": {
+      "region": [
+        "shikoku"
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「お接待をしたら、こっちの気持ちまで軽うなる」",
+    "effects": {},
+    "weight": 1
+  },
+  {
+    "id": "rwt-040",
+    "kind": "think",
+    "ageMin": 20,
+    "ageMax": 85,
+    "when": {
+      "hasChildren": true,
+      "prefs": [
+        33,
+        34,
+        35,
+        37,
+        38,
+        42
+      ],
+      "notFlags": [
+        "moved_to_city"
+      ]
+    },
+    "text": "「島を出た子らは、盆にしか帰ってこん。それでいいんよ」",
+    "effects": {},
+    "weight": 1
+  }
+]

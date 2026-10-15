@@ -1,0 +1,3217 @@
+[
+ {
+  "id": "e2-001",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 14,
+  "yearMin": 1960,
+  "yearMax": 1970,
+  "when": {},
+  "text": "留守番の昼、チキンラーメンをどんぶりに入れて湯を注いだ。ふたにした皿の下から、しょうゆの甘いにおいが立ちのぼった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：日清食品の発売情報（チキンラーメンは1958年発売・35円、カップヌードルは1971年9月18日発売・100円で、袋めんは30円の時代）"
+ },
+ {
+  "id": "e2-002",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 30,
+  "yearMin": 1971,
+  "yearMax": 1972,
+  "when": {
+   "urban": true
+  },
+  "text": "銀座の歩行者天国で、発売されたばかりのカップヌードルを立ったまま食べた。百円は袋のラーメン三つ分だったが、フォークで食べるのが新しかった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：日清食品の発売情報（チキンラーメンは1958年発売・35円、カップヌードルは1971年9月18日発売・100円で、袋めんは30円の時代）。確認済み：東京の歩行者天国は1970年8月2日に銀座・新宿・池袋・浅草で始まった（JAFメイト「くるま記念日」ほか）"
+ },
+ {
+  "id": "e2-003",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 45,
+  "yearMin": 1971,
+  "yearMax": 1973,
+  "when": {},
+  "text": "店の棚で、袋のラーメンの隣に百円のカップヌードルが並んでいた。手に取って値札を見て、また棚に戻した。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "確認済み：日清食品の発売情報（チキンラーメンは1958年発売・35円、カップヌードルは1971年9月18日発売・100円で、袋めんは30円の時代）"
+ },
+ {
+  "id": "e2-004",
+  "kind": "daily",
+  "ageMin": 18,
+  "ageMax": 30,
+  "yearMin": 1972,
+  "yearMax": 1979,
+  "when": {
+   "married": false
+  },
+  "text": "夜勤明けの寮の部屋で、やかんの湯をカップヌードルに注いだ。三分待つあいだに、窓の外がだんだん明るくなった。",
+  "effects": {
+   "health": -1
+  },
+  "weight": 1,
+  "check": "確認済み：日清食品の発売情報（チキンラーメンは1958年発売・35円、カップヌードルは1971年9月18日発売・100円で、袋めんは30円の時代）"
+ },
+ {
+  "id": "e2-005",
+  "kind": "daily",
+  "ageMin": 8,
+  "ageMax": 15,
+  "yearMin": 1969,
+  "yearMax": 1979,
+  "when": {},
+  "text": "母が出かけた日の昼、箱からボンカレーの袋を出して鍋で温めた。袋を破ると、湯気と一緒にカレーのにおいが台所に広がった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：ボンカレーは1968年2月発売、1969年5月にアルミ包装になり全国販売（日本食糧新聞ほか）。値段は未確認"
+ },
+ {
+  "id": "e2-006",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1969,
+  "yearMax": 1975,
+  "when": {
+   "sex": "female",
+   "hasChildren": true
+  },
+  "text": "雨の日の夕方、戸棚に買い置いたボンカレーを家族の分だけ温めた。三分で夕飯ができたのが、少しうしろめたかった。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "確認済み：ボンカレーは1968年2月発売、1969年5月にアルミ包装になり全国販売（日本食糧新聞ほか）。値段は未確認"
+ },
+ {
+  "id": "e2-007",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 40,
+  "yearMin": 1969,
+  "yearMax": 1979,
+  "when": {
+   "married": false,
+   "working": true
+  },
+  "text": "下宿の電気ポットでボンカレーの袋を温め、炊いておいたご飯にかけた。ちゃぶ台の上で、ひとりの夕飯がすぐにすんだ。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "確認済み：ボンカレーは1968年2月発売、1969年5月にアルミ包装になり全国販売（日本食糧新聞ほか）。値段は未確認"
+ },
+ {
+  "id": "e2-008",
+  "kind": "daily",
+  "ageMin": 3,
+  "ageMax": 10,
+  "yearMin": 1965,
+  "yearMax": 1979,
+  "when": {},
+  "text": "食卓にマヨネーズの赤いふたのチューブが置かれるようになった。キャベツの千切りに、自分で細く絞ってかけた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-009",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1965,
+  "yearMax": 1979,
+  "when": {
+   "sex": "female"
+  },
+  "text": "料理の本を見て、初めてハンバーグを作った。ひき肉にパン粉を混ぜる手が、冷たくてべたべたになった。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-010",
+  "kind": "daily",
+  "ageMin": 4,
+  "ageMax": 12,
+  "yearMin": 1960,
+  "yearMax": 1975,
+  "when": {},
+  "text": "夏の夕方、粉末のジュースの素を水に溶かして飲んだ。袋の色によってメロン味やオレンジ味があり、舌がその色に染まった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-011",
+  "kind": "daily",
+  "ageMin": 5,
+  "ageMax": 12,
+  "yearMin": 1962,
+  "yearMax": 1979,
+  "when": {},
+  "text": "日曜の朝、トースターからパンが勢いよく飛び出した。バターをぬって、牛乳で流しこみながら漫画のテレビを見た。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-012",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1970,
+  "yearMax": 1979,
+  "when": {
+   "married": true
+  },
+  "text": "ちゃぶ台をしまって、ダイニングテーブルと椅子を四つ買った。最初の晩、みんなで座ると、足がぶらぶらして落ち着かなかった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-013",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1970,
+  "yearMax": 1979,
+  "when": {
+   "hasSibling": true
+  },
+  "text": "ちゃぶ台が片づけられ、台所にテーブルが来た。{sib}と自分の席を決めるのに、夕飯の前までかかった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-014",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1972,
+  "yearMax": 1979,
+  "when": {
+   "rich": true
+  },
+  "text": "電子レンジが家に来た。冷めたご飯を入れてつまみを回すと、チンと鳴って湯気が上がり、家族が集まってきた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-015",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 14,
+  "yearMin": 1964,
+  "yearMax": 1979,
+  "when": {},
+  "text": "かっぱえびせんの袋を開けると、止まらなくなって最後まで食べた。袋の底に残ったかけらを、手のひらに出してなめた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-016",
+  "kind": "daily",
+  "ageMin": 5,
+  "ageMax": 11,
+  "yearMin": 1965,
+  "yearMax": 1972,
+  "when": {},
+  "text": "駄菓子屋の店先にカプセルの出てくる機械が置かれた。十円玉を入れてハンドルを回すと、透明な玉の中に小さな指輪が入っていた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：カプセル自販機（ガチャガチャ）の日本初導入は1965年2月17日、1回10円（ペニイ、JAFメイトほか）"
+ },
+ {
+  "id": "e2-017",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1965,
+  "yearMax": 1979,
+  "when": {
+   "hasSibling": true
+  },
+  "text": "ガチャガチャで同じ怪獣の人形が二回続けて出た。一つを{sib}にやると、{sib}はしばらく機嫌がよかった。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "確認済み：カプセル自販機（ガチャガチャ）の日本初導入は1965年2月17日、1回10円（ペニイ、JAFメイトほか）"
+ },
+ {
+  "id": "e2-018",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1966,
+  "yearMax": 1972,
+  "when": {},
+  "text": "日曜の夜、テレビでウルトラマンが始まると、茶の間の前に正座した。怪獣が倒れると、一緒に見ていた父も手をたたいた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-019",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1966,
+  "yearMax": 1975,
+  "when": {},
+  "text": "怪獣の図鑑を毎晩めくって、名前と身長と体重をそらで言えるまで覚えた。学校で{friend}と問題を出し合った。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-020",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1960,
+  "yearMax": 1975,
+  "when": {},
+  "text": "めんこを地面にたたきつけると、相手のめんこが裏返った。勝ち取ったぶんを、輪ゴムで束ねてポケットに入れた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-021",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {},
+  "text": "駄菓子屋でもらったゴムの風船に水を入れ、路地で投げ合った。服がびしょぬれになり、裏口からこっそり家に入った。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-022",
+  "kind": "daily",
+  "ageMin": 7,
+  "ageMax": 12,
+  "yearMin": 1960,
+  "yearMax": 1975,
+  "when": {
+   "urban": false
+  },
+  "text": "冬の朝、田んぼに張った氷の上を長靴で歩いた。ぴしっと音がして、片足だけ冷たい泥水の中に沈んだ。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-023",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {},
+  "text": "駄菓子屋の奥の茶の間で、店のおばあさんと一緒にテレビの相撲を見た。帰りに、ラムネの瓶から出したビー玉を一つもらった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-024",
+  "kind": "daily",
+  "ageMin": 7,
+  "ageMax": 12,
+  "yearMin": 1968,
+  "yearMax": 1975,
+  "when": {},
+  "text": "野球のテレビアニメに夢中になり、空き地で{friend}とキャッチボールをした。日が暮れて、ボールが見えなくなるまでやめなかった。",
+  "effects": {
+   "health": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-025",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1976,
+  "yearMax": 1978,
+  "when": {},
+  "text": "スーパーカーのカードを集めて、ランボルギーニやフェラーリの最高速度を覚えた。町に赤いスポーツカーが来ると、カメラを持って走った。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-026",
+  "kind": "daily",
+  "ageMin": 8,
+  "ageMax": 12,
+  "yearMin": 1978,
+  "yearMax": 1979,
+  "when": {},
+  "text": "駄菓子屋の奥にインベーダーゲームの機械が置かれた。百円玉を入れる大きな子たちの後ろから、画面をのぞきこんだ。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-027",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1970,
+  "yearMax": 1979,
+  "when": {},
+  "text": "ローラースケートを靴の上からベルトで留めて、家の前の道を走った。転んでひざをすりむいても、また立ち上がって滑った。",
+  "effects": {
+   "health": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-028",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1960,
+  "yearMax": 1975,
+  "when": {
+   "urban": true
+  },
+  "text": "ビルの建つ前の原っぱで、三角ベースの野球をした。打ったボールが工事の板塀を越え、みんなで頭を下げに行った。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-029",
+  "kind": "daily",
+  "ageMin": 8,
+  "ageMax": 12,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {},
+  "text": "夏休みの朝、近所の空き地のラジオ体操に通った。首から下げたカードに、毎朝はんこを押してもらった。",
+  "effects": {
+   "health": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-030",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 14,
+  "yearMin": 1964,
+  "yearMax": 1964,
+  "when": {},
+  "text": "東京オリンピックの開会式を、学校の講堂のテレビでみんなと見た。行進する選手たちのはなやかな色が、白黒の画面からも伝わってきた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-031",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 34,
+  "yearMin": 1964,
+  "yearMax": 1964,
+  "when": {
+   "urban": true
+  },
+  "text": "オリンピックの前の年から、町じゅうが工事だらけだった。開会式の日、建ったばかりの高速道路の下で空を見上げた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-032",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1964,
+  "yearMax": 1970,
+  "when": {},
+  "text": "線路わきの土手に{friend}と寝ころび、新幹線が通るのを待った。白と青の車体が、あっというまに目の前を過ぎていった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-033",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1965,
+  "yearMax": 1975,
+  "when": {
+   "working": true,
+   "job": [
+    "bigco",
+    "smallco"
+   ]
+  },
+  "text": "大阪への出張が、新幹線で日帰りになった。車内で弁当を食べ、書類に目を通しているうちに、富士山が窓の外を流れていった。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-034",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1970,
+  "yearMax": 1970,
+  "when": {
+   "region": [
+    "kinki",
+    "chugoku",
+    "shikoku",
+    "tokai"
+   ]
+  },
+  "text": "万博の会場で、月の石を見るための列に三時間並んだ。前に進むたびに、背中の水筒が肩に食いこんだ。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "確認済み：大阪万博（1970年）の入場者は約6422万人（nippon.com）。入場料は未確認"
+ },
+ {
+  "id": "e2-035",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 25,
+  "yearMin": 1970,
+  "yearMax": 1970,
+  "when": {},
+  "text": "万博の帰りの電車で、外国館のスタンプでいっぱいになったパスポート型の手帳をめくった。足は棒のようだった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：大阪万博（1970年）の入場者は約6422万人（nippon.com）。入場料は未確認"
+ },
+ {
+  "id": "e2-036",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1970,
+  "yearMax": 1970,
+  "when": {
+   "hasChildren": true
+  },
+  "text": "万博へ{child}を連れていった。人の波にはぐれないよう、迷子札を服に縫いつけ、手を強くにぎって歩いた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "確認済み：大阪万博（1970年）の入場者は約6422万人（nippon.com）。入場料は未確認"
+ },
+ {
+  "id": "e2-037",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 14,
+  "yearMin": 1972,
+  "yearMax": 1972,
+  "when": {
+   "region": [
+    "hokkaido"
+   ]
+  },
+  "text": "札幌オリンピックの年、学校のスキー授業に熱が入った。ジャンプ台を見上げて、あそこから飛ぶ人がいるのが信じられなかった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-038",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1966,
+  "yearMax": 1975,
+  "when": {
+   "married": true
+  },
+  "text": "{spouse}と、カラーテレビとクーラーと車のどれを先に買うかで夜遅くまで話した。結局、月賦の残りを数えて、どれも来年にした。",
+  "effects": {
+   "relation": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-039",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1966,
+  "yearMax": 1979,
+  "when": {},
+  "text": "電器店の店先に、カラーテレビが何台も並んでいた。同じ番組がずらりと映り、立ち止まった人たちが黙って見ていた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-040",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1968,
+  "yearMax": 1975,
+  "when": {
+   "poor": true
+  },
+  "text": "うちのテレビはまだ白黒だった。友だちの家でカラーの画面を見て、怪獣の色が想像と違っていたのに驚いた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-041",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1965,
+  "yearMax": 1979,
+  "when": {
+   "urban": true
+  },
+  "text": "団地のダストシュートに、毎朝ごみ袋を落とした。四階から下まで、がらがらと音が響いていった。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-042",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {
+   "urban": true,
+   "married": true
+  },
+  "text": "団地の部屋は二DKで、ふすま一枚の向こうで{spouse}がいびきをかいた。風呂の順番を、毎晩決めなければならなかった。",
+  "effects": {
+   "relation": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-043",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {
+   "urban": true
+  },
+  "text": "団地の給水塔は、遠くからでもすぐに分かった。迷いそうになると、あれを目指して歩けば家に帰れた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-044",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {
+   "urban": true,
+   "sex": "female"
+  },
+  "text": "団地の自治会で、夏祭りの盆踊りの係になった。やぐらを組む男たちに、冷えた麦茶を配って回った。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-045",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1960,
+  "yearMax": 1975,
+  "when": {
+   "sex": "female",
+   "married": true
+  },
+  "text": "電気掃除機を月賦で買った。畳の上をかけると、ほうきでは取れなかったほこりが、袋の中にたまっていった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-046",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1965,
+  "yearMax": 1979,
+  "when": {
+   "married": true
+  },
+  "text": "二層式の洗濯機で、洗いの槽から脱水の槽へ、濡れた服を手で移した。脱水の音で、床ががたがたと揺れた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-047",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 14,
+  "yearMin": 1970,
+  "yearMax": 1979,
+  "when": {},
+  "text": "夏、家に初めてクーラーが付いた。窓を閉めた部屋に家族が集まり、誰も外へ出たがらなかった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-048",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1960,
+  "yearMax": 1975,
+  "when": {
+   "urban": false
+  },
+  "text": "村に有線放送の電話が引かれ、朝夕に役場からの知らせが流れた。隣の家の話し声まで、受話器から聞こえることがあった。",
+  "effects": {
+   "knowledge": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-049",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 45,
+  "yearMin": 1960,
+  "yearMax": 1972,
+  "when": {},
+  "text": "電話のない家への用事は、電報で送った。料金を気にして、文字を何度も数えて短くした。",
+  "effects": {
+   "knowledge": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-050",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 30,
+  "yearMin": 1972,
+  "yearMax": 1979,
+  "when": {},
+  "text": "駅前の黄色い公衆電話に、百円玉を入れて長距離の電話をかけた。お釣りが出ないので、話せるだけ話した。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-051",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1966,
+  "yearMax": 1975,
+  "when": {
+   "married": true
+  },
+  "text": "{spouse}と並んで販売店の展示場に立ち、白い大衆車の運転席に座ってみた。新しいビニールのにおいがした。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-052",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1966,
+  "yearMax": 1979,
+  "when": {},
+  "text": "ガソリンスタンドに車を入れると、制服の店員が走ってきて窓を拭いてくれた。満タンにして、もらったティッシュを助手席に置いた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-053",
+  "kind": "daily",
+  "ageMin": 18,
+  "ageMax": 30,
+  "yearMin": 1965,
+  "yearMax": 1979,
+  "when": {},
+  "text": "自動車教習所に通い始めた。半クラッチがうまくいかず、坂道で何度もエンストして教官にため息をつかれた。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-054",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1966,
+  "yearMax": 1979,
+  "when": {
+   "hasChildren": true
+  },
+  "text": "日曜の朝、家族で車を洗った。{child}がホースの水を空に向け、虹ができたと声をあげた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-055",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1969,
+  "yearMax": 1979,
+  "when": {
+   "urban": true
+  },
+  "text": "盆の帰省で、高速道路が何十キロも渋滞した。窓を開けたまま止まった車の中で、子どもたちが眠りこんだ。",
+  "effects": {
+   "health": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-056",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1966,
+  "yearMax": 1979,
+  "when": {},
+  "text": "父の車の後ろの座席で、窓を流れる車の数を{sib}と数えた。黄色いナンバーの軽自動車が来ると、指をさして叫んだ。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-057",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 25,
+  "yearMin": 1970,
+  "yearMax": 1979,
+  "when": {
+   "sex": "male"
+  },
+  "text": "アルバイトの金で中古のオートバイを買った。ヘルメットをかぶって走りだすと、風の音しか聞こえなくなった。",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-058",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 45,
+  "yearMin": 1978,
+  "yearMax": 1979,
+  "when": {
+   "region": [
+    "okinawa"
+   ]
+  },
+  "text": "七月三十日、車の通る側が右から左に変わった。交差点ごとに警官が立ち、バス停も道の反対側に移っていた。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "確認済み：沖縄の交通方法変更（730）は1978年7月30日。右側通行から左側通行へ（JAFメイト、沖縄県資料）"
+ },
+ {
+  "id": "e2-059",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 14,
+  "yearMin": 1978,
+  "yearMax": 1978,
+  "when": {
+   "region": [
+    "okinawa"
+   ]
+  },
+  "text": "朝起きると、道路の車が反対側を走っていた。学校の帰り道、どちらを見て渡ればいいのか、何度も首を振って確かめた。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "確認済み：沖縄の交通方法変更（730）は1978年7月30日。右側通行から左側通行へ（JAFメイト、沖縄県資料）"
+ },
+ {
+  "id": "e2-060",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 35,
+  "yearMin": 1970,
+  "yearMax": 1979,
+  "when": {
+   "urban": true
+  },
+  "text": "日曜日、車の消えた銀座の大通りの真ん中を歩いた。パラソルの下の椅子に座り、ふだん車が走る道路を見回した。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：東京の歩行者天国は1970年8月2日に銀座・新宿・池袋・浅草で始まった（JAFメイト「くるま記念日」ほか）"
+ },
+ {
+  "id": "e2-061",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1970,
+  "yearMax": 1979,
+  "when": {
+   "urban": true,
+   "hasChildren": true
+  },
+  "text": "歩行者天国の車道で、{child}が両手を広げて走り回った。白い線の上をはみ出さずに歩けるか、親子で競った。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "確認済み：東京の歩行者天国は1970年8月2日に銀座・新宿・池袋・浅草で始まった（JAFメイト「くるま記念日」ほか）"
+ },
+ {
+  "id": "e2-062",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 30,
+  "yearMin": 1971,
+  "yearMax": 1979,
+  "when": {
+   "urban": true
+  },
+  "text": "銀座のマクドナルドで、八十円のハンバーガーを買った。店の中に席はなく、通りに立ったまま紙の包みを開いた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：マクドナルド日本1号店は1971年7月20日、銀座三越1階。ハンバーガー1個80円（現代ビジネスほか）"
+ },
+ {
+  "id": "e2-063",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1971,
+  "yearMax": 1979,
+  "when": {
+   "urban": true
+  },
+  "text": "デパートの帰りに、母がハンバーガーを買ってくれた。紙袋から出したパンは、どこか外国のにおいがした。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：マクドナルド日本1号店は1971年7月20日、銀座三越1階。ハンバーガー1個80円（現代ビジネスほか）"
+ },
+ {
+  "id": "e2-064",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1971,
+  "yearMax": 1979,
+  "when": {
+   "urban": true
+  },
+  "text": "新宿の西口に、空を突くような高いホテルが建った。昼休み、同僚と首を反らせて、窓の数を途中まで数えた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-065",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {
+   "urban": true
+  },
+  "text": "デパートの大食堂で、ショーケースの見本を見てお子様ランチを指さした。食券を握りしめ、配膳の人に渡した。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-066",
+  "kind": "daily",
+  "ageMin": 7,
+  "ageMax": 15,
+  "yearMin": 1971,
+  "yearMax": 1979,
+  "when": {
+   "urban": true
+  },
+  "text": "体育の時間に光化学スモッグの注意報が出て、校庭から教室へ戻された。窓を閉めた教室は蒸し暑く、目がちくちくした。",
+  "effects": {
+   "health": -1
+  },
+  "weight": 1,
+  "check": "確認済み：光化学スモッグの初の被害報告は1970年7月18日、東京都杉並区（現代ビジネス「今日は何の日」）。注意報の始まった日付は未確認"
+ },
+ {
+  "id": "e2-067",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1971,
+  "yearMax": 1979,
+  "when": {
+   "urban": true,
+   "hasChildren": true
+  },
+  "text": "夕方、防災無線で光化学スモッグの注意報が流れた。外で遊んでいた{child}を呼び戻し、うがいをさせた。",
+  "effects": {
+   "health": 0
+  },
+  "weight": 1,
+  "check": "確認済み：光化学スモッグの初の被害報告は1970年7月18日、東京都杉並区（現代ビジネス「今日は何の日」）。注意報の始まった日付は未確認"
+ },
+ {
+  "id": "e2-068",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 40,
+  "yearMin": 1965,
+  "yearMax": 1975,
+  "when": {
+   "urban": true
+  },
+  "text": "工場の煙突が並ぶ町に住み、白いシャツの襟が一日で黒ずんだ。洗濯物は家の中に干すことが多くなった。",
+  "effects": {
+   "health": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-069",
+  "kind": "daily",
+  "ageMin": 7,
+  "ageMax": 15,
+  "yearMin": 1965,
+  "yearMax": 1975,
+  "when": {
+   "urban": true
+  },
+  "text": "近所の川は、夏になると黒く濁ってにおった。橋を渡るときは、息を止めて走り抜けた。",
+  "effects": {
+   "health": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-070",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 45,
+  "yearMin": 1970,
+  "yearMax": 1979,
+  "when": {},
+  "text": "台所の流しに、合成洗剤ではなく粉せっけんを使う家が増えた。母もせっけんに替え、泡立ちが悪いとこぼしていた。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-071",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 49,
+  "yearMin": 1973,
+  "yearMax": 1974,
+  "when": {
+   "sex": "female",
+   "married": true
+  },
+  "text": "洗剤がなくなるといううわさで、スーパーの開店前に並んだ。一家族一箱と書かれた紙を、店員が入り口に貼っていた。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-072",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 49,
+  "yearMin": 1973,
+  "yearMax": 1974,
+  "when": {},
+  "text": "石油が足りなくなるといって、夜の繁華街のネオンが早く消された。暗くなった通りを、背中を丸めて駅まで歩いた。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-073",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 14,
+  "yearMin": 1973,
+  "yearMax": 1974,
+  "when": {},
+  "text": "テレビの放送が夜早く終わるようになった。父は画面の砂嵐をしばらく見つめてから、スイッチを切った。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-074",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 49,
+  "yearMin": 1973,
+  "yearMax": 1975,
+  "when": {
+   "married": true
+  },
+  "text": "物の値段が毎月のように上がり、家計簿の数字が合わなくなった。{spouse}と並んで、そろばんを何度もはじき直した。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-075",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 49,
+  "yearMin": 1973,
+  "yearMax": 1974,
+  "when": {},
+  "text": "日曜日、ガソリンスタンドが休みで、車を出すのをやめた。家族で近くの川原まで歩き、持っていったおにぎりを食べた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-076",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 14,
+  "yearMin": 1973,
+  "yearMax": 1974,
+  "when": {},
+  "text": "母が砂糖の袋を押し入れの奥にいくつも積んでいた。どうしてそんなに買うのか聞くと、黙って戸を閉められた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-077",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 49,
+  "yearMin": 1974,
+  "yearMax": 1975,
+  "when": {
+   "working": true
+  },
+  "text": "会社の廊下の電灯が、一本おきに外された。暗い廊下ですれ違う同僚の顔が、よく見えなかった。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-078",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 35,
+  "yearMin": 1969,
+  "yearMax": 1973,
+  "when": {},
+  "text": "夜中までボウリング場は人でいっぱいで、レーンが空くまで二時間待った。待合の長椅子で、貸し靴を抱えたまま居眠りした。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "確認済み：ボウリングブームの最盛期は1970年前後、オイルショック以降に衰えた（雑学ネタ帳、プレジデントほか）"
+ },
+ {
+  "id": "e2-079",
+  "kind": "daily",
+  "ageMin": 18,
+  "ageMax": 35,
+  "yearMin": 1969,
+  "yearMax": 1973,
+  "when": {
+   "working": true
+  },
+  "text": "会社の仲間とボウリング大会をした。初めてストライクを出すと、課長が手をたたいて、ジュースを一本おごってくれた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "確認済み：ボウリングブームの最盛期は1970年前後、オイルショック以降に衰えた（雑学ネタ帳、プレジデントほか）"
+ },
+ {
+  "id": "e2-080",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1969,
+  "yearMax": 1973,
+  "when": {},
+  "text": "日曜日、家族でボウリング場へ行った。重い玉を両手で転がすと、ゆっくりと溝に落ち、父が笑いをこらえていた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：ボウリングブームの最盛期は1970年前後、オイルショック以降に衰えた（雑学ネタ帳、プレジデントほか）"
+ },
+ {
+  "id": "e2-081",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 35,
+  "yearMin": 1970,
+  "yearMax": 1973,
+  "when": {
+   "married": false
+  },
+  "text": "{friend}とボウリングのあと、上の階の喫茶店でクリームソーダを飲んだ。スコア表を見ながら、次こそ勝つと言い合った。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "確認済み：ボウリングブームの最盛期は1970年前後、オイルショック以降に衰えた（雑学ネタ帳、プレジデントほか）"
+ },
+ {
+  "id": "e2-082",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 30,
+  "yearMin": 1970,
+  "yearMax": 1979,
+  "when": {},
+  "text": "国鉄の駅に「ディスカバー・ジャパン」のポスターが貼られていた。その写真に誘われて、リュックを背負い一人で北の町へ出かけた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-083",
+  "kind": "daily",
+  "ageMin": 18,
+  "ageMax": 30,
+  "yearMin": 1970,
+  "yearMax": 1979,
+  "when": {
+   "married": false
+  },
+  "text": "大きなリュックを背負って、夜行列車で北海道を回った。網棚の下の床に新聞紙を敷いて、横になって眠った。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-084",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1965,
+  "yearMax": 1979,
+  "when": {
+   "hasChildren": true
+  },
+  "text": "夏休み、家族で海水浴に行った。海の家で借りた浮き輪をふくらませるのに、息が続かず顔が真っ赤になった。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-085",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1972,
+  "yearMax": 1975,
+  "when": {
+   "urban": true
+  },
+  "text": "上野動物園にパンダが来て、家族で見に行った。長い列に並んで、立ち止まらずに歩きながら、白と黒の背中を一瞬だけ見た。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-086",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {},
+  "text": "日曜の夕方、家族で近所に新しくできた健康センターへ行った。大広間で寝ころんで、舞台の歌謡ショーを見た。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-087",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 25,
+  "yearMin": 1968,
+  "yearMax": 1979,
+  "when": {},
+  "text": "貯めた小遣いでラジカセを買った。カセットを入れて録音のボタンを二つ同時に押し、テレビのスピーカーの前に置いた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-088",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 25,
+  "yearMin": 1970,
+  "yearMax": 1979,
+  "when": {},
+  "text": "日曜の昼、レコード店で四百円のシングル盤を一枚だけ買った。家に帰ると、ジャケットの写真を壁に立てかけて聴いた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-089",
+  "kind": "daily",
+  "ageMin": 18,
+  "ageMax": 25,
+  "yearMin": 1968,
+  "yearMax": 1975,
+  "when": {
+   "urban": true
+  },
+  "text": "駅の地下の広場で、学生たちがギターを弾いて歌っていた。仕事帰りの足を止めて、知っている曲のところだけ一緒に口を動かした。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-090",
+  "kind": "daily",
+  "ageMin": 8,
+  "ageMax": 14,
+  "yearMin": 1969,
+  "yearMax": 1979,
+  "when": {},
+  "text": "土曜の夜八時、全員集合のテレビが始まると、家族みんなで茶の間に集まった。翌朝の教室は、その話でもちきりだった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-091",
+  "kind": "daily",
+  "ageMin": 10,
+  "ageMax": 15,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {},
+  "text": "毎週、少年マガジンの発売日を待って、本屋まで走った。父が読み終わるのを待ちきれず、横からのぞきこんだ。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-092",
+  "kind": "daily",
+  "ageMin": 12,
+  "ageMax": 18,
+  "yearMin": 1970,
+  "yearMax": 1979,
+  "when": {
+   "sex": "female"
+  },
+  "text": "少女漫画の雑誌を{friend}と回し読みした。好きな場面のページを、こっそりはさみで切り抜いて下敷きにはさんだ。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-093",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 35,
+  "yearMin": 1968,
+  "yearMax": 1975,
+  "when": {
+   "working": true,
+   "urban": true
+  },
+  "text": "通勤の電車で、背広の男たちが分厚い漫画雑誌を広げていた。自分も駅の売店で一冊買い、網棚に置いて降りた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-094",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1969,
+  "yearMax": 1979,
+  "when": {},
+  "text": "日曜の夕方、サザエさんの始まる音楽が流れると、明日は学校かと思った。夕飯のにおいが台所からただよってきた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-095",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1966,
+  "yearMax": 1975,
+  "when": {
+   "sex": "male"
+  },
+  "text": "エレキギターの音にあこがれて、ラジオの番組表に丸をつけた。親には、不良になると言われて黙った。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-096",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 40,
+  "yearMin": 1975,
+  "yearMax": 1979,
+  "when": {},
+  "text": "紅茶キノコがはやり、近所の人から種を分けてもらった。台所の瓶の中で、白いかたまりが日に日にふくらんでいった。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-097",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 30,
+  "yearMin": 1974,
+  "yearMax": 1979,
+  "when": {
+   "urban": true
+  },
+  "text": "近所の酒屋が、夜遅くまで開いている新しい形の店に変わった。夜十一時、明るい店内でパンと牛乳を買って帰った。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：セブン-イレブン日本1号店は1974年5月15日、東京都江東区豊洲。酒店からの転換（楽天証券メディアほか）"
+ },
+ {
+  "id": "e2-098",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 40,
+  "yearMin": 1975,
+  "yearMax": 1979,
+  "when": {
+   "urban": true,
+   "working": true
+  },
+  "text": "残業の帰り、深夜まで開いている店でおにぎりと缶コーヒーを買った。店員と、いつもの銘柄だけで通じるようになった。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-099",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1970,
+  "yearMax": 1979,
+  "when": {
+   "urban": true,
+   "hasChildren": true
+  },
+  "text": "国道沿いのファミリーレストランに、家族で初めて入った。ウェイトレスがメニューを広げ、{child}はハンバーグを指さした。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-100",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 30,
+  "yearMin": 1970,
+  "yearMax": 1979,
+  "when": {},
+  "text": "ケンタッキーフライドチキンの店の前に、白いひげの人形が立っていた。紙の箱のチキンを、手を油だらけにして食べた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-101",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 40,
+  "yearMin": 1969,
+  "yearMax": 1979,
+  "when": {
+   "working": true
+  },
+  "text": "自動販売機で、缶コーヒーを買って飲んだ。甘くて、コーヒーというより牛乳の味が強かった。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-102",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1960,
+  "yearMax": 1975,
+  "when": {
+   "sex": "female",
+   "married": true
+  },
+  "text": "近所にスーパーマーケットができ、かごを持って自分で品物を選んだ。八百屋と魚屋で交わしていた立ち話が、少し減った。",
+  "effects": {
+   "relation": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-103",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {
+   "sex": "female"
+  },
+  "text": "月に一度、デパートの特売に出かけた。人をかき分けてセーターを手に取り、レジまで抱えて離さなかった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-104",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 45,
+  "yearMin": 1974,
+  "yearMax": 1979,
+  "when": {
+   "job": [
+    "public"
+   ]
+  },
+  "text": "給料の一部が銀行の口座に振り込まれるようになった。残りの分だけ入った給料袋は、前よりずいぶん薄かった。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "確認済み：国家公務員の給与の口座振込は1974年に始まり、当初は一部を現金で渡した（アゴラ掲載の元官僚のコラム）。民間の普及時期は未確認"
+ },
+ {
+  "id": "e2-105",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1975,
+  "yearMax": 1979,
+  "when": {
+   "working": true,
+   "married": true
+  },
+  "text": "給料が口座振込になり、給料日に{spouse}へ袋を手渡すことがなくなった。通帳の数字を二人でのぞきこんだ。",
+  "effects": {
+   "relation": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-106",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 45,
+  "yearMin": 1970,
+  "yearMax": 1979,
+  "when": {
+   "working": true
+  },
+  "text": "銀行の機械でお金を下ろすことを覚えた。カードを入れて番号を押すと、札が出てきて思わず後ろを振り返った。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-107",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 45,
+  "yearMin": 1972,
+  "yearMax": 1979,
+  "when": {
+   "working": true
+  },
+  "text": "ボーナスで電卓を買った。机の上でそろばんの隣に置き、検算のときだけそっと使った。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "確認済み：カシオミニは1972年8月発売、12,800円（カシオ計算機の社史、現代ビジネスほか）"
+ },
+ {
+  "id": "e2-108",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1972,
+  "yearMax": 1975,
+  "when": {
+   "working": true,
+   "job": [
+    "smallco",
+    "self"
+   ]
+  },
+  "text": "一万二千八百円の小さな電卓を買った。帳簿をつける夜、指一本で数字を押すと、緑の数字がすぐに答えを出した。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "確認済み：カシオミニは1972年8月発売、12,800円（カシオ計算機の社史、現代ビジネスほか）"
+ },
+ {
+  "id": "e2-109",
+  "kind": "daily",
+  "ageMin": 10,
+  "ageMax": 15,
+  "yearMin": 1972,
+  "yearMax": 1979,
+  "when": {},
+  "text": "父が会社から帰って、ポケットから電卓を出して見せてくれた。いくつも数字を掛け合わせて、表示があふれるまで遊んだ。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "確認済み：カシオミニは1972年8月発売、12,800円（カシオ計算機の社史、現代ビジネスほか）"
+ },
+ {
+  "id": "e2-110",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 40,
+  "yearMin": 1960,
+  "yearMax": 1975,
+  "when": {
+   "working": true,
+   "job": [
+    "bigco",
+    "smallco"
+   ]
+  },
+  "text": "月末の締めの日は、事務所じゅうで青い複写の伝票を書いた。カーボン紙で手の側面が黒く汚れた。",
+  "effects": {
+   "health": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-111",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1965,
+  "yearMax": 1979,
+  "when": {
+   "working": true,
+   "sex": "male"
+  },
+  "text": "会社の運動会で、部ごとの綱引きに出た。家族も弁当を持って応援に来て、昼は芝生の上にござを敷いた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-112",
+  "kind": "daily",
+  "ageMin": 18,
+  "ageMax": 25,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {
+   "working": true,
+   "sex": "female"
+  },
+  "text": "朝、課の湯飲みを並べてお茶を入れるのが仕事の一つだった。それぞれの湯飲みの柄と持ち主を、一週間で覚えた。",
+  "effects": {
+   "knowledge": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-113",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1965,
+  "yearMax": 1979,
+  "when": {
+   "working": true
+  },
+  "text": "冬の朝、社宅の前でエンジンがかからない同僚の車を、何人かで押した。かかると、みんなで手をたたいた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-114",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 40,
+  "yearMin": 1960,
+  "yearMax": 1975,
+  "when": {
+   "working": true,
+   "urban": true
+  },
+  "text": "通勤の満員電車で、駅員に背中を押されて車内に入った。ドアが閉まると、かばんが向こうの人の胸に押しつけられたままだった。",
+  "effects": {
+   "health": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-115",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1968,
+  "yearMax": 1979,
+  "when": {
+   "working": true
+  },
+  "text": "会社に初めてコピー機が入った。青い紙ではなく白い紙で写しが出てきて、課の皆が順番に試した。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-116",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {
+   "working": true,
+   "job": [
+    "farm"
+   ]
+  },
+  "text": "春、農協から耕運機を借りて田を起こした。牛を使っていたころより早く終わり、昼前に一服できた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-117",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1970,
+  "yearMax": 1979,
+  "when": {
+   "working": true,
+   "job": [
+    "farm"
+   ]
+  },
+  "text": "国の減反で、田の一部に米を作れなくなった。空いた田に大豆の種をまきながら、父は黙って腰を伸ばした。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-118",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1960,
+  "yearMax": 1975,
+  "when": {
+   "job": [
+    "farm"
+   ],
+   "snow": true
+  },
+  "text": "冬になると、近所の男たちと一緒に都会の工事現場へ働きに出た。夜行列車の窓から、雪の田んぼが遠ざかっていった。",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-119",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 40,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {
+   "working": true,
+   "job": [
+    "self"
+   ]
+  },
+  "text": "店の前を通る人に声をかけ、昼は奥の茶の間で家族と交代で食べた。帳場のそろばんの音が、夜まで続いた。",
+  "effects": {
+   "relation": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-120",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 45,
+  "yearMin": 1968,
+  "yearMax": 1972,
+  "when": {},
+  "text": "郵便番号が始まり、はがきの右上に赤い枠ができた。年賀状の宛名を書くたび、手帳の番号表を引いた。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "確認済み：郵便番号制度は1968年7月1日開始、3けたか5けた（昭和48年版通信白書ほか）"
+ },
+ {
+  "id": "e2-121",
+  "kind": "daily",
+  "ageMin": 10,
+  "ageMax": 15,
+  "yearMin": 1972,
+  "yearMax": 1976,
+  "when": {},
+  "text": "十円のはがきに、ラジオ番組へのリクエストを書いた。曲名を大きく書き、最後に小さく似顔絵を描いた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：10円の官製はがき（1972〜76年、江戸東京博物館デジタルアーカイブ）"
+ },
+ {
+  "id": "e2-122",
+  "kind": "daily",
+  "ageMin": 18,
+  "ageMax": 30,
+  "yearMin": 1967,
+  "yearMax": 1971,
+  "when": {
+   "flags": [
+    "moved_to_city"
+   ]
+  },
+  "text": "七円のはがきに、故郷の母へ元気だと書いた。書くことが足りず、寮の窓から見える景色のことで空いたところを埋めた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "確認済み：7円の官製はがき（1966〜67年製、江戸東京博物館デジタルアーカイブ）。7円が終わった年は未確認"
+ },
+ {
+  "id": "e2-123",
+  "kind": "daily",
+  "ageMin": 18,
+  "ageMax": 30,
+  "yearMin": 1972,
+  "yearMax": 1976,
+  "when": {
+   "married": false
+  },
+  "text": "十円のはがきで、好きな人に暑中見舞いを出した。返事が来るまでの毎日、郵便受けを何度ものぞいた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "確認済み：10円の官製はがき（1972〜76年、江戸東京博物館デジタルアーカイブ）"
+ },
+ {
+  "id": "e2-124",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {},
+  "text": "年賀状の版画を、彫刻刀で彫った。刷り上がった干支の絵は左右が反対で、字も裏返しになっていた。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-125",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {
+   "hasChildren": true,
+   "childAge": [
+    0,
+    2
+   ]
+  },
+  "text": "{child}の写真を撮ろうと、カメラのフィルムを巻き上げた。二十四枚撮り終えるまで、写真屋に出せなかった。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-126",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1965,
+  "yearMax": 1979,
+  "when": {
+   "hasChildren": true,
+   "childAge": [
+    3,
+    6
+   ]
+  },
+  "text": "{child}の誕生日に、八ミリカメラを借りて撮った。ろうそくを吹き消す場面で、フィルムが終わってしまった。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-127",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1965,
+  "yearMax": 1979,
+  "when": {
+   "hasChildren": true
+  },
+  "text": "日曜日、家族で遊園地へ行った。帰りの電車で、{child}は風船を手首に結んだまま眠った。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-128",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {
+   "married": true,
+   "sex": "male"
+  },
+  "text": "給料日の晩、駅前でケーキの箱を買って帰った。{spouse}は値段を気にしながらも、包み紙を丁寧にたたんだ。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-129",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {
+   "sex": "female",
+   "married": true
+  },
+  "text": "内職のミシンを踏む音が、夜中まで部屋に響いた。仕上がったブラウスを数えて、工賃を手帳に書いた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-130",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {},
+  "text": "母が編み機でセーターを編んでくれた。かちゃかちゃという音のあと、袖を当てられて、何度も腕を伸ばさされた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-131",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {
+   "hasChildren": true
+  },
+  "text": "学習机を買った。蛍光灯と本棚の付いた机の前で、{child}は宿題もしないうちから得意そうに座っていた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-132",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1965,
+  "yearMax": 1979,
+  "when": {},
+  "text": "学習机が届いた日、引き出しの奥に宝物の箱をしまった。蛍光灯のひもを引くと、ジーと音がして明るくなった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-133",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1965,
+  "yearMax": 1979,
+  "when": {
+   "married": true
+  },
+  "text": "社宅の風呂は、まきではなくガスで沸くようになった。点火のつまみを回すと、ぼっと青い火がついた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-134",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1960,
+  "yearMax": 1975,
+  "when": {
+   "urban": false
+  },
+  "text": "台所の土間の隅に、かまどがまだ残っていた。母はガスの台所になっても、正月の餅米だけはかまどで蒸した。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-135",
+  "kind": "daily",
+  "ageMin": 3,
+  "ageMax": 8,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {},
+  "text": "冬、こたつに入ってみかんを食べた。指先が黄色くなり、母に見せると「食べすぎ」と笑われた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-136",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {
+   "urban": false
+  },
+  "text": "家の便所を水洗に変えた。汲み取りの車が来なくなり、家族はしばらく流すたびに水の音を聞いていた。",
+  "effects": {
+   "health": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-137",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {
+   "hasChildren": true
+  },
+  "text": "{child}に、月に一冊の学習雑誌を取ってやった。付録の組み立てを、夜遅くまで一緒に手伝った。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-138",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {},
+  "text": "学習雑誌の付録を組み立てた。紙の部品を折って貼っているうちに、のりが乾く前に形が崩れた。",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-139",
+  "kind": "daily",
+  "ageMin": 30,
+  "ageMax": 49,
+  "yearMin": 1973,
+  "yearMax": 1979,
+  "when": {
+   "mother": true
+  },
+  "text": "七十を過ぎた母が、病院の窓口でお金を払わずにすむようになったと言った。それから母は、腰の治療に週二回通い始めた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "確認済み：国の老人医療費支給制度（70歳以上の自己負担を公費で払う）は1973年1月から。東京都は1969年12月から。1982年の老人保健法で有料化（厚生労働省資料ほか）"
+ },
+ {
+  "id": "e2-140",
+  "kind": "daily",
+  "ageMin": 30,
+  "ageMax": 49,
+  "yearMin": 1970,
+  "yearMax": 1979,
+  "when": {
+   "father": true
+  },
+  "text": "{fAge}歳の父が、老人会の旅行から帰ってきた。バスの中で歌った歌のことを、夕飯のあいだずっと話していた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-141",
+  "kind": "daily",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1966,
+  "yearMax": 1979,
+  "when": {
+   "mother": true
+  },
+  "text": "敬老の日に、{mAge}歳の母へひざかけを送った。電話の向こうで母は、もったいなくて使えないと言った。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-142",
+  "kind": "daily",
+  "ageMin": 18,
+  "ageMax": 25,
+  "yearMin": 1965,
+  "yearMax": 1979,
+  "when": {
+   "married": false
+  },
+  "text": "喫茶店のジュークボックスに十円玉を入れて、同じ曲を三回かけた。店のマスターが、カウンターの奥で苦笑いをした。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-143",
+  "kind": "daily",
+  "ageMin": 18,
+  "ageMax": 25,
+  "yearMin": 1965,
+  "yearMax": 1979,
+  "when": {
+   "married": false,
+   "urban": true
+  },
+  "text": "{friend}と、ジャズ喫茶の暗い店内で何時間も座っていた。コーヒー一杯で粘り、レコードの曲名を紙に書きとめた。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-144",
+  "kind": "daily",
+  "ageMin": 18,
+  "ageMax": 25,
+  "yearMin": 1968,
+  "yearMax": 1979,
+  "when": {
+   "married": false
+  },
+  "text": "流行りのベルボトムのジーンズをはいて出かけた。裾が地面をこすり、帰るころには端がほつれていた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-145",
+  "kind": "daily",
+  "ageMin": 18,
+  "ageMax": 25,
+  "yearMin": 1966,
+  "yearMax": 1975,
+  "when": {
+   "sex": "female"
+  },
+  "text": "ひざ上の短いスカートをはいて出かけると、近所のおばさんにじろじろ見られた。家に帰って、鏡の前でもう一度回ってみた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-146",
+  "kind": "daily",
+  "ageMin": 15,
+  "ageMax": 25,
+  "yearMin": 1970,
+  "yearMax": 1979,
+  "when": {
+   "sex": "male"
+  },
+  "text": "髪を肩まで伸ばしていたら、父に床屋へ行けと怒鳴られた。翌日、少しだけ切って帰り、父と目を合わせなかった。",
+  "effects": {
+   "relation": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-147",
+  "kind": "daily",
+  "ageMin": 18,
+  "ageMax": 30,
+  "yearMin": 1965,
+  "yearMax": 1979,
+  "when": {
+   "married": false
+  },
+  "text": "社員寮の食堂で、テレビの前の席を取るために早めに夕飯へ行った。歌番組の時間は、いつも満席だった。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-148",
+  "kind": "daily",
+  "ageMin": 18,
+  "ageMax": 30,
+  "yearMin": 1970,
+  "yearMax": 1979,
+  "when": {
+   "married": false
+  },
+  "text": "週末、{friend}と合同ハイキングに参加した。山の上で配られたおにぎりの横で、隣の会社の人と初めて話した。",
+  "effects": {
+   "relation": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-149",
+  "kind": "daily",
+  "ageMin": 18,
+  "ageMax": 30,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {
+   "married": false,
+   "sex": "female"
+  },
+  "text": "会社が終わると、お花とお茶の稽古に通った。習いごとの帰り、同期の子と駅前の甘味屋であんみつを食べた。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-150",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 25,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {
+   "school": "univ"
+  },
+  "text": "下宿の共同の流しで、米を研いだ。廊下の端の公衆電話には、夜になると順番待ちの列ができた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-151",
+  "kind": "daily",
+  "ageMin": 19,
+  "ageMax": 25,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {
+   "school": "univ",
+   "poor": true
+  },
+  "text": "家庭教師のアルバイトを二つ掛け持ちした。教え子の家で出されたお菓子が、その日の夕飯がわりになった。",
+  "effects": {
+   "health": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-152",
+  "kind": "daily",
+  "ageMin": 18,
+  "ageMax": 30,
+  "yearMin": 1972,
+  "yearMax": 1979,
+  "when": {
+   "married": false
+  },
+  "text": "休みの日、知り合いの車を借りて、{friend}と海沿いの道を走った。カーステレオのカセットを、何度も裏返した。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-153",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 35,
+  "yearMin": 1970,
+  "yearMax": 1979,
+  "when": {},
+  "text": "ジャンボジェットに初めて乗った。機体の大きさに比べて座席は狭く、離陸の瞬間、ひじかけを強くにぎった。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-154",
+  "kind": "daily",
+  "ageMin": 20,
+  "ageMax": 35,
+  "yearMin": 1965,
+  "yearMax": 1979,
+  "when": {
+   "rich": true
+  },
+  "text": "初めての海外旅行で、ハワイへ行った。持ち出せるドルが決まっていて、財布の中の札を何度も数えた。",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-155",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1960,
+  "yearMax": 1975,
+  "when": {},
+  "text": "夜、停電になって、母がろうそくに火をつけた。家族の影が壁に大きく映り、{sib}と影絵をして遊んだ。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-156",
+  "kind": "daily",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1965,
+  "yearMax": 1979,
+  "when": {},
+  "text": "修学旅行の夜、旅館の大部屋で枕を投げ合った。見回りの先生の足音がして、みんなで布団にもぐりこんだ。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-157",
+  "kind": "daily",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1965,
+  "yearMax": 1979,
+  "when": {},
+  "text": "遠足の前の晩、決められた三百円分のおやつを買いそろえた。バナナはおやつに入るのか、{friend}と真剣に話した。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-158",
+  "kind": "daily",
+  "ageMin": 0,
+  "ageMax": 3,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {},
+  "text": "母に背負われて、商店街の福引きに並んだ。ガラガラを回すと白い玉が出て、ちり紙を一つもらった。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-159",
+  "kind": "daily",
+  "ageMin": 0,
+  "ageMax": 3,
+  "yearMin": 1965,
+  "yearMax": 1979,
+  "when": {},
+  "text": "団地の階段を、母に抱かれて上り下りした。踊り場の窓から見える空を、指さして声をあげた。",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2-160",
+  "kind": "daily",
+  "ageMin": 1,
+  "ageMax": 4,
+  "yearMin": 1966,
+  "yearMax": 1979,
+  "when": {},
+  "text": "父の車の助手席で、母のひざに抱かれて乗った。窓の外のネオンを見て、きらきらと言った。",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2t-001",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 40,
+  "yearMin": 1971,
+  "yearMax": 1973,
+  "when": {},
+  "text": "「カップのラーメンに百円。こんなものが売れるのだろうか。でも、一度は食べてみたい。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "確認済み：日清食品の発売情報（チキンラーメンは1958年発売・35円、カップヌードルは1971年9月18日発売・100円で、袋めんは30円の時代）"
+ },
+ {
+  "id": "e2t-002",
+  "kind": "think",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1966,
+  "yearMax": 1975,
+  "when": {
+   "married": true
+  },
+  "text": "「カラーテレビ、クーラー、車。全部そろうのは、いつになるだろう。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2t-003",
+  "kind": "think",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1966,
+  "yearMax": 1975,
+  "when": {},
+  "text": "「ぼくも大きくなったら、怪獣と戦う隊員になるんだ。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2t-004",
+  "kind": "think",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1973,
+  "yearMax": 1974,
+  "when": {},
+  "text": "「洗剤も紙も、いつまで店に並んでいるんだろう。なんだか世の中が落ち着かない。」",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2t-005",
+  "kind": "think",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1973,
+  "yearMax": 1975,
+  "when": {
+   "married": true
+  },
+  "text": "「給料は上がったのに、暮らしは楽にならない。値札ばかりが先へ走っていく。」",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2t-006",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 30,
+  "yearMin": 1970,
+  "yearMax": 1979,
+  "when": {
+   "urban": true
+  },
+  "text": "「車の走らない大通りの真ん中に立つと、町が自分のものになったみたいだ。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：東京の歩行者天国は1970年8月2日に銀座・新宿・池袋・浅草で始まった（JAFメイト「くるま記念日」ほか）"
+ },
+ {
+  "id": "e2t-007",
+  "kind": "think",
+  "ageMin": 7,
+  "ageMax": 15,
+  "yearMin": 1971,
+  "yearMax": 1979,
+  "when": {
+   "urban": true
+  },
+  "text": "「外で遊べない夏なんて、つまらない。空は青いのに。」",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "確認済み：光化学スモッグの初の被害報告は1970年7月18日、東京都杉並区（現代ビジネス「今日は何の日」）。注意報の始まった日付は未確認"
+ },
+ {
+  "id": "e2t-008",
+  "kind": "think",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1970,
+  "yearMax": 1979,
+  "when": {
+   "urban": true,
+   "hasChildren": true
+  },
+  "text": "「この子たちには、きれいな空の下で育ってほしい。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2t-009",
+  "kind": "think",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1964,
+  "yearMax": 1970,
+  "when": {},
+  "text": "「いつか新幹線に乗って、遠くの町まで行ってみたい。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2t-010",
+  "kind": "think",
+  "ageMin": 6,
+  "ageMax": 14,
+  "yearMin": 1970,
+  "yearMax": 1970,
+  "when": {},
+  "text": "「世界中の国が、日本に集まっている。外国って、本当にあるんだ。」",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "確認済み：大阪万博（1970年）の入場者は約6422万人（nippon.com）。入場料は未確認"
+ },
+ {
+  "id": "e2t-011",
+  "kind": "think",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1966,
+  "yearMax": 1979,
+  "when": {
+   "married": true
+  },
+  "text": "「月賦の残りはまだ一年。それでも、自分の車で家族を海へ連れていける。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2t-012",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 25,
+  "yearMin": 1968,
+  "yearMax": 1979,
+  "when": {},
+  "text": "「深夜のラジオで流れた曲を、明日レコード屋で探そう。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2t-013",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 25,
+  "yearMin": 1968,
+  "yearMax": 1979,
+  "when": {},
+  "text": "「ギター一本で、言いたいことを歌える。そんな人たちがうらやましい。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2t-014",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 45,
+  "yearMin": 1972,
+  "yearMax": 1979,
+  "when": {
+   "working": true
+  },
+  "text": "「そろばん三級の腕も、この小さな機械にはかなわないのか。」",
+  "effects": {
+   "knowledge": 0
+  },
+  "weight": 1,
+  "check": "確認済み：カシオミニは1972年8月発売、12,800円（カシオ計算機の社史、現代ビジネスほか）"
+ },
+ {
+  "id": "e2t-015",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 45,
+  "yearMin": 1974,
+  "yearMax": 1979,
+  "when": {
+   "working": true
+  },
+  "text": "「給料袋の重みがなくなると、働いた実感まで薄くなる気がする。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "確認済み：国家公務員の給与の口座振込は1974年に始まり、当初は一部を現金で渡した（アゴラ掲載の元官僚のコラム）。民間の普及時期は未確認"
+ },
+ {
+  "id": "e2t-016",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 45,
+  "yearMin": 1960,
+  "yearMax": 1975,
+  "when": {
+   "urban": true,
+   "trigger": "moved"
+  },
+  "text": "「団地の窓の明かりが、どれも同じに見える。この中に自分の家ができるだろうか。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2t-017",
+  "kind": "think",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {
+   "trigger": "married",
+   "urban": true
+  },
+  "text": "「二DKの団地でも、ここが二人の城だ。」",
+  "effects": {
+   "happiness": 2
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2t-018",
+  "kind": "think",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1965,
+  "yearMax": 1979,
+  "when": {
+   "trigger": "child"
+  },
+  "text": "「この子が大人になるころ、日本はどんな国になっているだろう。もっと豊かになっているはずだ。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2t-019",
+  "kind": "think",
+  "ageMin": 18,
+  "ageMax": 25,
+  "yearMin": 1965,
+  "yearMax": 1979,
+  "when": {
+   "trigger": "job"
+  },
+  "text": "「会社のバッジを付けて、満員電車に乗る。これが一人前ということなのか。」",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2t-020",
+  "kind": "think",
+  "ageMin": 18,
+  "ageMax": 25,
+  "yearMin": 1960,
+  "yearMax": 1975,
+  "when": {
+   "trigger": "job",
+   "flags": [
+    "moved_to_city"
+   ]
+  },
+  "text": "「仕送りを引くと、手元に残るのはわずかだ。それでも、家の役に立っている。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2t-021",
+  "kind": "think",
+  "ageMin": 25,
+  "ageMax": 49,
+  "yearMin": 1960,
+  "yearMax": 1979,
+  "when": {
+   "trigger": "parent_death"
+  },
+  "text": "「親父の世代は、戦争をくぐってきた。今の暮らしを、もう少し見せてやりたかった。」",
+  "effects": {
+   "happiness": -2
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2t-022",
+  "kind": "think",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1965,
+  "yearMax": 1979,
+  "when": {},
+  "text": "「次のガチャガチャこそ、銀色の指輪が出ますように。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：カプセル自販機（ガチャガチャ）の日本初導入は1965年2月17日、1回10円（ペニイ、JAFメイトほか）"
+ },
+ {
+  "id": "e2t-023",
+  "kind": "think",
+  "ageMin": 6,
+  "ageMax": 12,
+  "yearMin": 1969,
+  "yearMax": 1979,
+  "when": {},
+  "text": "「サザエさんが終わったら、明日はもう月曜日だ。」",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2t-024",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 30,
+  "yearMin": 1974,
+  "yearMax": 1979,
+  "when": {
+   "urban": true
+  },
+  "text": "「夜中でも明かりのついた店がある。都会は眠らないんだな。」",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "確認済み：セブン-イレブン日本1号店は1974年5月15日、東京都江東区豊洲。酒店からの転換（楽天証券メディアほか）"
+ },
+ {
+  "id": "e2t-025",
+  "kind": "think",
+  "ageMin": 20,
+  "ageMax": 45,
+  "yearMin": 1978,
+  "yearMax": 1979,
+  "when": {
+   "region": [
+    "okinawa"
+   ]
+  },
+  "text": "「道の走る側が変わっても、ここは同じ島だ。でも、確かに何かが変わった。」",
+  "effects": {
+   "knowledge": 1
+  },
+  "weight": 1,
+  "check": "確認済み：沖縄の交通方法変更（730）は1978年7月30日。右側通行から左側通行へ（JAFメイト、沖縄県資料）"
+ },
+ {
+  "id": "e2t-026",
+  "kind": "think",
+  "ageMin": 30,
+  "ageMax": 49,
+  "yearMin": 1973,
+  "yearMax": 1979,
+  "when": {
+   "mother": true
+  },
+  "text": "「病院代の心配がなくなって、母さんの顔が少し明るくなった。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：国の老人医療費支給制度（70歳以上の自己負担を公費で払う）は1973年1月から。東京都は1969年12月から。1982年の老人保健法で有料化（厚生労働省資料ほか）"
+ },
+ {
+  "id": "e2t-027",
+  "kind": "think",
+  "ageMin": 15,
+  "ageMax": 30,
+  "yearMin": 1969,
+  "yearMax": 1973,
+  "when": {},
+  "text": "「ストライクの音が、仕事の憂さを全部はじき飛ばしてくれる。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "確認済み：ボウリングブームの最盛期は1970年前後、オイルショック以降に衰えた（雑学ネタ帳、プレジデントほか）"
+ },
+ {
+  "id": "e2t-028",
+  "kind": "think",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1964,
+  "yearMax": 1964,
+  "when": {},
+  "text": "「オリンピックが来た。戦争が終わって二十年足らずで、ここまで来たのか。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2t-029",
+  "kind": "think",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1965,
+  "yearMax": 1979,
+  "when": {
+   "job": [
+    "farm"
+   ]
+  },
+  "text": "「機械が入って楽になった。でも、田をやめて町へ出る家も増えた。」",
+  "effects": {
+   "happiness": -1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2t-030",
+  "kind": "think",
+  "ageMin": 18,
+  "ageMax": 30,
+  "yearMin": 1970,
+  "yearMax": 1979,
+  "when": {
+   "married": false
+  },
+  "text": "「どこか遠くへ行きたい。誰も自分を知らない町を、ひとりで歩いてみたい。」",
+  "effects": {
+   "happiness": 0
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2t-031",
+  "kind": "think",
+  "ageMin": 8,
+  "ageMax": 14,
+  "yearMin": 1976,
+  "yearMax": 1978,
+  "when": {},
+  "text": "「いつか、あの赤いスーパーカーに乗ってみたい。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2t-032",
+  "kind": "think",
+  "ageMin": 25,
+  "ageMax": 45,
+  "yearMin": 1970,
+  "yearMax": 1979,
+  "when": {
+   "married": true
+  },
+  "text": "「ちゃぶ台から椅子とテーブルへ。父の家とは、ずいぶん違う暮らしになった。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ },
+ {
+  "id": "e2t-033",
+  "kind": "think",
+  "ageMin": 13,
+  "ageMax": 18,
+  "yearMin": 1966,
+  "yearMax": 1979,
+  "when": {},
+  "text": "「漫画雑誌の発売日まで、あと三日。それだけで一週間を乗り切れる。」",
+  "effects": {
+   "happiness": 1
+  },
+  "weight": 1,
+  "check": "未確認"
+ }
+]
