@@ -91,10 +91,14 @@ const SELF_GRANDMA = /ばあば|おばあちゃんと呼ばれ/;
 const SELF_GRANDPA = /じいじ|おじいちゃんと呼ばれ/;
 const needsLoan = (d: DailyItem) => /奨学金/.test(d.text) && !d.when?.flags?.includes('student_loan');
 
-// 年齢ごとに引けるように分けておく
-const BY_AGE: DailyItem[][] = [];
+// 年齢と種類（日常／心の声／土地の日常）ごとに引けるように分けておく
+const BY_AGE: Record<'daily' | 'think' | 'local', DailyItem[][]> = { daily: [], think: [], local: [] };
 for (const d of DAILY) {
-  for (let a = Math.max(0, d.ageMin); a <= Math.min(120, d.ageMax); a++) (BY_AGE[a] ??= []).push(d);
+  const local = d.kind === 'daily' && !!(d.when?.region || d.when?.prefs || d.when?.snow);
+  for (let a = Math.max(0, d.ageMin); a <= Math.min(120, d.ageMax); a++) {
+    (BY_AGE[d.kind][a] ??= []).push(d);
+    if (local) (BY_AGE.local[a] ??= []).push(d);
+  }
 }
 
 /** 差し込みの一覧。本文に出てくるものは、その人に当てはまるときだけ選ばれる */
@@ -218,22 +222,101 @@ function sibLabel(p: Person, rng: Rng): string {
 
 const isLocal = (d: DailyItem) => !!(d.when?.region || d.when?.prefs || d.when?.snow);
 
+/**
+ * 本文に出てくる物が世の中に広まった年の目安。時代を問わない場面として書いたものでも、
+ * それより前の年には出さない（明治・大正の人に、家の電話や段ボールが出ないように）。年はおおよその目安
+ */
+const MODERN: [RegExp, number][] = [
+  [/電話|受話器/, 1955],
+  [/冷蔵庫|洗濯機|掃除機|炊飯器/, 1955],
+  [/テレビ|画面越し/, 1955],
+  [/段ボール|ビニール|プラスチック|ペットボトル|ラップ/, 1955],
+  [/車の|車で|車を|運転|フロントガラス|駐車|ドライブ|助手席|マイカー|ガソリン/, 1960],
+  [/高校|中学校の|部活|塾|偏差値/, 1948],
+  [/給食/, 1947],
+  [/健康診断|体重計|人間ドック/, 1960],
+  [/介護|デイサービス|ヘルパー|ケアマネ/, 1985],
+  [/レシート|コンビニ|スーパー|自動販売機|自販機|ファミレス/, 1965],
+  [/[一二三四五六七八九十百千]+万円|\d+万円|万円/, 1955],
+  [/ボールペン|シャープペン|マジック/, 1960],
+  [/プール/, 1960],
+  [/新幹線|飛行機|空港/, 1964],
+  [/アパート|マンション|団地/, 1956],
+  [/残業|有給|定年|退職金|年金|ボーナス/, 1950],
+  [/カープ|プロ野球|ナイター/, 1950],
+  [/電子レンジ|エアコン|クーラー|冷房/, 1970],
+  [/ガス台|ガスコンロ|給湯/, 1960],
+  [/保育園|学童/, 1950],
+  [/ランドセル/, 1950],
+  [/デート|喫茶店で待ち合わせ/, 1950],
+  [/扇風機/, 1950],
+  [/動画|メール|パソコン|ネット|スマホ|携帯/, 1995],
+  [/通帳|ATM|カード/, 1960],
+  [/インスタント|カップ麺|レトルト/, 1960],
+  [/成人式|二十歳の式/, 1948],
+  [/老眼鏡|老人会|敬老/, 1950],
+  [/フェリー|バス停|バスに/, 1950],
+];
+function modernMin(text: string): number {
+  let y = -Infinity;
+  for (const [re, min] of MODERN) if (re.test(text) && min > y) y = min;
+  return y;
+}
+
+/** 本文から分かる前提は、読み込みのときに1回だけ調べておく（毎年すべての場面を調べ直すと遅いため） */
+interface Needs {
+  work: boolean;
+  school: boolean;
+  univ: boolean;
+  loan: boolean;
+  newly: boolean;
+  grand: boolean;
+  grandma: boolean;
+  grandpa: boolean;
+  friend: boolean;
+  local: boolean;
+  minYear: number;
+}
+const NEEDS = new Map<DailyItem, Needs>();
+function needsOf(d: DailyItem): Needs {
+  let n = NEEDS.get(d);
+  if (!n) {
+    n = {
+      work: needsWork(d),
+      school: needsSchool(d),
+      univ: needsUniv(d),
+      loan: needsLoan(d),
+      newly: NEWLYWED.test(d.text),
+      grand: GRANDCHILD.test(d.text),
+      grandma: SELF_GRANDMA.test(d.text),
+      grandpa: SELF_GRANDPA.test(d.text),
+      friend: d.text.includes('{friend}'),
+      local: !!(d.when?.region || d.when?.prefs || d.when?.snow),
+      minYear: modernMin(d.text),
+    };
+    NEEDS.set(d, n);
+  }
+  return n;
+}
+
 function eligible(p: Person, d: DailyItem, ctx: DailyCtx): boolean {
   if (d.yearMin !== undefined && ctx.year < d.yearMin) return false;
   if (d.yearMax !== undefined && ctx.year > d.yearMax) return false;
-  if (needsWork(d) && !working(p)) return false;
-  if (needsSchool(d) && p.age >= 15 && !['high', 'univ'].includes(schoolOf(p) ?? '')) return false;
-  if (needsUniv(d) && schoolOf(p) !== 'univ') return false;
-  if (needsLoan(d) && !p.flags.includes('student_loan')) return false;
-  if (NEWLYWED.test(d.text) && !(p.marriageAge !== undefined && p.age - p.marriageAge <= 2 && p.married)) return false;
-  if (GRANDCHILD.test(d.text) && !p.children.some((c) => c.grandchild)) return false;
-  if (SELF_GRANDMA.test(d.text) && p.sex !== 'female') return false;
-  if (SELF_GRANDPA.test(d.text) && p.sex !== 'male') return false;
+  const n = needsOf(d);
+  if (ctx.year < n.minYear && (d.yearMin === undefined || d.yearMin < n.minYear)) return false;
+  if (n.work && !working(p)) return false;
+  if (n.school && p.age >= 15 && !['high', 'univ'].includes(schoolOf(p) ?? '')) return false;
+  if (n.univ && schoolOf(p) !== 'univ') return false;
+  if (n.loan && !p.flags.includes('student_loan')) return false;
+  if (n.newly && !(p.marriageAge !== undefined && p.age - p.marriageAge <= 2 && p.married)) return false;
+  if (n.grand && !p.children.some((c) => c.grandchild)) return false;
+  if (n.grandma && p.sex !== 'female') return false;
+  if (n.grandpa && p.sex !== 'male') return false;
   // 親友ができた年は、親友との別の場面を重ねない
-  if (p.friendSince === p.age && d.text.includes('{friend}')) return false;
+  if (p.friendSince === p.age && n.friend) return false;
   const used = p.dailyUsed?.[d.id];
   // 時代を問わない土地の暮らし（祭り、雪、名物など）は、12年あければまた出てよい
-  const gap = d.repeatGap ?? (isLocal(d) && d.yearMin === undefined && d.kind === 'daily' ? 12 : undefined);
+  const gap = d.repeatGap ?? (n.local && d.yearMin === undefined && d.kind === 'daily' ? 12 : undefined);
   if (used !== undefined && (!gap || p.age - used < gap)) return false;
   return okWhen(p, d.when, ctx);
 }
@@ -251,7 +334,7 @@ function weightOf(d: DailyItem, ctx: DailyCtx): number {
 }
 
 function pickItems(p: Person, rng: Rng, ctx: DailyCtx, kind: 'daily' | 'think', n: number, onlyLocal = false): void {
-  const pool = (BY_AGE[p.age] ?? []).filter((d) => d.kind === kind && (!onlyLocal || isLocal(d)) && eligible(p, d, ctx));
+  const pool = (BY_AGE[onlyLocal ? 'local' : kind][p.age] ?? []).filter((d) => eligible(p, d, ctx));
   for (let k = 0; k < n && pool.length; k++) {
     const d = rng.weighted(pool, pool.map((x) => weightOf(x, ctx)));
     pool.splice(pool.indexOf(d), 1);

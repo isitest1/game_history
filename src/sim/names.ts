@@ -4,6 +4,7 @@
 
 import type { Sex } from './types';
 import type { Rng } from './rng';
+import { prewarNames } from './stats';
 
 interface NameBin {
   from: number;
@@ -31,7 +32,21 @@ export function pickSurname(rng: Rng, pref: number): string {
   return rng.pick(pref === 47 ? SURNAMES_OKINAWA : SURNAMES);
 }
 
+/** 明治・大正（1890〜1929年）。data/stats/prewar_social.json の names があればそれを使う。なければこの目安（その時代によく見かけた一般的な名前） */
+const PREWAR: NameBin[] = prewarNames
+  ? Object.entries(prewarNames).map(([from, v]) => ({ from: Number(from), male: v.male, female: v.female })).sort((a, b) => a.from - b.from)
+  : [
+      { from: 1890, male: ['正一', '金太郎', '三郎', '清', '武雄', '茂'], female: ['ハル', 'キヨ', 'ツル', 'マツ', 'ウメ', 'トメ'] },
+      { from: 1912, male: ['正雄', '清', '正', '茂', '一郎', '実'], female: ['千代', '静子', '久子', '文子', 'ハナ', '芳子'] },
+      { from: 1920, male: ['清', '正', '茂', '実', '勇', '博'], female: ['幸子', '文子', '静子', '和子', '久子', '節子'] },
+    ];
+
 export function pickGivenName(rng: Rng, birthYear: number, sex: Sex): string {
+  if (birthYear < 1930) {
+    let pb = PREWAR[0];
+    for (const b of PREWAR) if (birthYear >= b.from) pb = b;
+    return rng.pick(pb[sex]);
+  }
   let bin = BINS[0];
   for (const b of BINS) if (birthYear >= b.from) bin = b;
   return rng.pick(bin[sex]);

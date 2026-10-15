@@ -9,7 +9,7 @@ describe('生まれ年の組み合わせ', () => {
     const gaps = new Set<string>();
     for (let seed = 1; seed <= 1000; seed++) {
       const [a, b, c] = createGame({ seed }).persons.map((p) => p.birthYear);
-      expect(a).toBeGreaterThanOrEqual(1930);
+      expect(a).toBeGreaterThanOrEqual(1890);
       expect(c).toBeLessThanOrEqual(2010);
       expect(b - a).toBeGreaterThanOrEqual(30);
       expect(c - b).toBeGreaterThanOrEqual(30);
@@ -24,14 +24,14 @@ describe('通しで1回遊べる', () => {
     const st = playToEnd(createGame({ seed: 42 }));
     expect(st.persons).toHaveLength(3);
     const [a, b, c] = st.persons.map((p) => p.birthYear);
-    // いちばん若い人は1990〜2010年。そこから30〜50年ずつ遡る。いちばん年上でも1930年以降
+    // いちばん若い人は1990〜2010年。そこから30〜50年ずつ遡る。いちばん年上でも1890年以降
     expect(c).toBeGreaterThanOrEqual(1990);
     expect(c).toBeLessThanOrEqual(2010);
     expect(c - b).toBeGreaterThanOrEqual(30);
     expect(c - b).toBeLessThanOrEqual(50);
     expect(b - a).toBeGreaterThanOrEqual(30);
     expect(b - a).toBeLessThanOrEqual(50);
-    expect(a).toBeGreaterThanOrEqual(1930);
+    expect(a).toBeGreaterThanOrEqual(1890);
     expect(st.finished).toBe(true);
     for (const p of st.persons) {
       expect(p.alive).toBe(false);

@@ -1,0 +1,4346 @@
+[
+  {
+    "id": "mt-001",
+    "key": "mt-teikoku-gikai-1890",
+    "category": "national",
+    "year": 1890,
+    "month": 11,
+    "ageMin": 0,
+    "ageMax": 0,
+    "sex": "any",
+    "title": "帝国議会が開かれた年",
+    "text": "生まれた年の11月、大日本帝国憲法が施行され、第1回の帝国議会が開かれた。7月の選挙で投票できたのは、税を多く納める男子だけで、人口の1%ほどだったと後で教わった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "probability": 1,
+    "source": {
+      "title": "nippon.com 今日は何の日 11月29日（1890年、第1回帝国議会開院）",
+      "url": "https://www.nippon.com/ja/japan-topics/today1129/",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-002",
+    "key": "mt-nisshin-1894",
+    "category": "national",
+    "year": 1894,
+    "endYear": 1895,
+    "month": 8,
+    "ageMin": 2,
+    "ageMax": 5,
+    "sex": "any",
+    "title": "日清戦争",
+    "text": "清国との戦争が始まり、村からも兵隊が出ていった。勝ったという知らせのたびに旗を振る大人たちの姿を、幼いながらに覚えている。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "世界史の窓 下関条約",
+      "url": "https://y-history.net/appendix/wh1303-144.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-003",
+    "key": "mt-nisshin-peace-1895",
+    "category": "national",
+    "year": 1895,
+    "month": 4,
+    "ageMin": 3,
+    "ageMax": 5,
+    "sex": "any",
+    "title": "日清戦争が終わった",
+    "text": "4月、下関で講和が結ばれた。清国から2億両の賠償金を取ったと大人たちは喜んだが、まもなく遼東半島を返すことになり、くやしがる声も聞こえた。",
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "世界史の窓 下関条約",
+      "url": "https://y-history.net/appendix/wh1303-144.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-004",
+    "key": "mt-nichiro-1904",
+    "category": "national",
+    "year": 1904,
+    "month": 2,
+    "ageMin": 6,
+    "ageMax": 10,
+    "sex": "any",
+    "title": "日露戦争が始まった",
+    "text": "ロシアとの戦争が始まった。学校では戦地の兵隊さんに慰問袋を送り、勝ったと聞くと、夜に提灯行列に連れていってもらった。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.7,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "世界史の窓 日露戦争の戦費と外債",
+      "url": "https://y-history.net/appendix/wh1403-039.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-005",
+    "key": "mt-nichiro-1904",
+    "category": "national",
+    "year": 1904,
+    "month": 2,
+    "ageMin": 11,
+    "ageMax": 14,
+    "sex": "any",
+    "title": "日露戦争と増税",
+    "text": "ロシアとの戦争が始まった。勝報のたびに提灯行列が出たが、家では税が上がり、塩や煙草まで高くなったと親がこぼしていた。戦費は17億円にのぼったという。",
+    "effects": {
+      "happiness": -1
+    },
+    "probability": 0.7,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "世界史の窓 日露戦争の戦費と外債",
+      "url": "https://y-history.net/appendix/wh1403-039.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-006",
+    "key": "mt-nichiro-soldier-1904",
+    "category": "national",
+    "year": 1904,
+    "endYear": 1905,
+    "ageMin": 0,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "近所の兵隊が戻らなかった",
+    "text": "近所や親類から出征した人のうち、戻らなかった人がいた。日露戦争では日本の兵士約8万5千人が亡くなった。村で葬式が続いた年だった。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.15,
+    "probNote": "目安。出征者約100万人のうち戦没約8.5万人",
+    "heavy": true,
+    "source": {
+      "title": "世界史の窓 日露戦争の戦費と外債",
+      "url": "https://y-history.net/appendix/wh1403-039.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-007",
+    "key": "mt-nichiro-peace-1905",
+    "category": "national",
+    "year": 1905,
+    "month": 9,
+    "ageMin": 8,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "賠償金のない講和",
+    "text": "9月、アメリカのポーツマスで講和が結ばれた。賠償金が取れなかったと知って大人たちは怒り、東京では焼打ち騒ぎが起き、戒厳令が出たと新聞に載った。",
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "コトバンク 日比谷焼打事件",
+      "url": "https://kotobank.jp/word/%E6%97%A5%E6%AF%94%E8%B0%B7%E7%84%BC%E6%89%93%E4%BA%8B%E4%BB%B6-612227",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-008",
+    "key": "mt-hibiya-1905",
+    "category": "pref",
+    "year": 1905,
+    "month": 9,
+    "prefs": [
+      13
+    ],
+    "ageMin": 8,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "日比谷焼打ち事件",
+    "text": "9月5日、講和に反対する集会に集まった人々が、交番や電車を焼いた。翌日まで騒ぎが続き、戒厳令が出された。家の近くまで兵隊が出てきた。",
+    "effects": {
+      "happiness": -1
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "コトバンク 日比谷焼打事件",
+      "url": "https://kotobank.jp/word/%E6%97%A5%E6%AF%94%E8%B0%B7%E7%84%BC%E6%89%93%E4%BA%8B%E4%BB%B6-612227",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-009",
+    "key": "mt-meiji-hogyo-1912",
+    "category": "national",
+    "year": 1912,
+    "month": 7,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "明治から大正へ",
+    "text": "7月30日、明治天皇が亡くなり、元号が大正に変わった。学校では喪章をつけ、しばらく歌や遊びを控えるように言われた。",
+    "probability": 1,
+    "source": {
+      "title": "文春オンライン 1912年7月30日 明治天皇崩御・大正に改元",
+      "url": "https://bunshun.jp/articles/-/3532",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-010",
+    "key": "mt-meiji-hogyo-1912",
+    "category": "national",
+    "year": 1912,
+    "month": 7,
+    "ageMin": 13,
+    "ageMax": 22,
+    "sex": "any",
+    "title": "明治が終わった",
+    "text": "7月30日、明治天皇が亡くなり、元号が大正になった。新聞は黒い枠で囲まれ、町じゅうが喪に服した。生まれてからずっと続いてきた時代が終わったと感じた。",
+    "probability": 1,
+    "source": {
+      "title": "文春オンライン 1912年7月30日 明治天皇崩御・大正に改元",
+      "url": "https://bunshun.jp/articles/-/3532",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-011",
+    "key": "mt-ww1-1914",
+    "category": "national",
+    "year": 1914,
+    "month": 8,
+    "ageMin": 10,
+    "ageMax": 24,
+    "sex": "any",
+    "title": "欧州で大戦が始まった",
+    "text": "8月、日本もドイツに宣戦し、中国の青島を攻めた。遠いヨーロッパの戦争だと思っていたが、新聞は毎日のように戦況を伝えた。",
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（第一次世界大戦への参戦）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-012",
+    "key": "mt-narikin-1915",
+    "category": "national",
+    "year": 1915,
+    "endYear": 1919,
+    "ageMin": 10,
+    "ageMax": 19,
+    "sex": "any",
+    "title": "大戦景気と成金",
+    "text": "戦争で船や糸が飛ぶように売れ、にわかに金持ちになった「成金」が話題になった。町には新しい工場が建ち、働き口が増えた。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.25,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（大戦景気）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-013",
+    "key": "mt-narikin-1915",
+    "category": "national",
+    "year": 1915,
+    "endYear": 1919,
+    "ageMin": 20,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "大戦景気",
+    "text": "大戦で輸出が伸び、工場はどこも人手が足りなかった。給金は上がったが、それ以上に米や品物が値上がりし、暮らしは楽にならなかった。",
+    "effects": {
+      "happiness": -1
+    },
+    "probability": 0.25,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（大戦景気）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-014",
+    "key": "mt-siberia-1918",
+    "category": "national",
+    "year": 1918,
+    "endYear": 1922,
+    "month": 8,
+    "ageMin": 20,
+    "ageMax": 27,
+    "sex": "male",
+    "title": "シベリア出兵",
+    "text": "8月、ロシアの革命に干渉するため、日本はシベリアに兵を送った。部隊の一員として極寒の地に渡った。撤兵は1922年までかかった。",
+    "effects": {
+      "health": -3,
+      "happiness": -3,
+      "death": {
+        "prob": 0.01,
+        "cause": "戦病死",
+        "note": "目安（未確認）"
+      }
+    },
+    "probability": 0.02,
+    "probNote": "目安。派兵数は延べ7万人あまりとされる（未確認）",
+    "heavy": true,
+    "source": {
+      "title": "一般的な年表（シベリア出兵）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-015",
+    "key": "mt-kome-1918",
+    "category": "national",
+    "year": 1918,
+    "month": 8,
+    "ageMin": 8,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "米騒動",
+    "text": "夏、米の値段がひと月で跳ね上がり、各地で米屋に人が押しかける騒ぎが起きた。家の食事は麦や芋が多くなった。子どもながらに、ご飯を残すなと強く言われた。",
+    "effects": {
+      "health": -1,
+      "happiness": -2
+    },
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "コトバンク 米騒動",
+      "url": "https://kotobank.jp/word/%E7%B1%B3%E9%A8%92%E5%8B%95",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-016",
+    "key": "mt-kome-1918",
+    "category": "national",
+    "year": 1918,
+    "month": 8,
+    "ageMin": 16,
+    "ageMax": 28,
+    "sex": "any",
+    "title": "米騒動",
+    "text": "富山の漁村の主婦たちから始まった米の安売りを求める動きが、全国に広がった。軍隊まで出動し、内閣は総辞職した。米は給金で買えないほど高かった。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.7,
+    "probNote": "目安",
+    "source": {
+      "title": "コトバンク 米騒動",
+      "url": "https://kotobank.jp/word/%E7%B1%B3%E9%A8%92%E5%8B%95",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-017",
+    "key": "mt-kome-toyama-1918",
+    "category": "pref",
+    "year": 1918,
+    "month": 7,
+    "prefs": [
+      16
+    ],
+    "ageMin": 10,
+    "ageMax": 28,
+    "sex": "any",
+    "title": "米騒動の始まり",
+    "text": "7月、魚津の浜で、漁師の家の女たちが米の積み出しを止めようと集まった。新聞がこれを報じ、騒ぎは全国へ広がった。地元の話として長く語られた。",
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "コトバンク 米騒動",
+      "url": "https://kotobank.jp/word/%E7%B1%B3%E9%A8%92%E5%8B%95",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-018",
+    "key": "mt-spanish-flu-1918",
+    "category": "national",
+    "year": 1918,
+    "endYear": 1920,
+    "ageMin": 0,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "流行性感冒",
+    "text": "スペインかぜと呼ばれた悪いかぜがはやり、学校が休みになった。家族も寝込んだ。この流行で国内でも多くの人が亡くなった。",
+    "effects": {
+      "health": -3
+    },
+    "probability": 0.4,
+    "probNote": "目安。国民の4割前後がかかったとする推計がある（未確認）",
+    "heavy": true,
+    "source": {
+      "title": "国立保健医療科学院『保健医療科学』58巻3号（日本のスペインかぜの流行と被害）",
+      "url": "https://www.niph.go.jp/journal/data/58-3/200958030008.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-019",
+    "key": "mt-spanish-flu-1918",
+    "category": "national",
+    "year": 1918,
+    "endYear": 1920,
+    "ageMin": 13,
+    "ageMax": 30,
+    "sex": "any",
+    "title": "スペインかぜ",
+    "text": "1918年から3年続いて悪性のかぜが流行した。自分も熱を出して寝込み、職場でも休む人が相次いだ。国内の死者は数十万人にのぼった。",
+    "effects": {
+      "health": -4
+    },
+    "probability": 0.4,
+    "probNote": "目安。国民の4割前後がかかったとする推計がある（未確認）",
+    "heavy": true,
+    "source": {
+      "title": "国立保健医療科学院『保健医療科学』58巻3号（日本のスペインかぜの流行と被害）",
+      "url": "https://www.niph.go.jp/journal/data/58-3/200958030008.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-020",
+    "key": "mt-sengo-kyoko-1920",
+    "category": "national",
+    "year": 1920,
+    "month": 3,
+    "ageMin": 20,
+    "ageMax": 30,
+    "sex": "any",
+    "title": "戦後恐慌",
+    "text": "3月、株が暴落し、大戦の好景気は終わった。生糸や綿糸の値が崩れ、勤め先では賃下げや首切りの話が出た。好景気の間に増えた借金を抱えて、店をたたむ人もいた。",
+    "effects": {
+      "happiness": -2
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（1920年の戦後恐慌）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-021",
+    "key": "mt-kanto-news-1923",
+    "category": "national",
+    "year": 1923,
+    "month": 9,
+    "prefs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      15,
+      16,
+      17,
+      18,
+      20,
+      21,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+    ],
+    "ageMin": 6,
+    "ageMax": 33,
+    "sex": "any",
+    "title": "関東大震災の知らせ",
+    "text": "9月1日、関東で大地震が起き、東京と横浜が火災で焼けたと伝わった。死者・行方不明者は約10万5千人。学校や町内で義援金や品物を集めた。",
+    "effects": {
+      "happiness": -2
+    },
+    "probability": 0.9,
+    "heavy": true,
+    "source": {
+      "title": "内閣府 防災白書 令和5年版（関東大震災から100年）",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/r05/honbun/t1_1s_01_00.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-022",
+    "key": "mt-fusen-1925",
+    "category": "system",
+    "year": 1925,
+    "month": 5,
+    "ageMin": 20,
+    "ageMax": 35,
+    "sex": "male",
+    "title": "普通選挙法",
+    "text": "税の額にかかわらず、満25歳以上の男子なら衆議院の選挙権を持てることになった。女子にはまだ選挙権がなかった。これで有権者はそれまでの約4倍に増えることになった。",
+    "effects": {
+      "knowledge": 1
+    },
+    "probability": 0.8,
+    "probNote": "目安",
+    "source": {
+      "title": "国立公文書館 アーカイブズ・クイズ（選挙権の移り変わり）",
+      "url": "https://www.archives.go.jp/learning/quiz_1/",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-023",
+    "key": "mt-fusen-1925",
+    "category": "system",
+    "year": 1925,
+    "month": 5,
+    "ageMin": 20,
+    "ageMax": 35,
+    "sex": "female",
+    "title": "男子だけの普通選挙",
+    "text": "普通選挙法が成立し、25歳以上の男子はみな選挙権を持てることになった。女子は除かれたままで、婦人参政権を求める運動が続いた。",
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "国立公文書館 アーカイブズ・クイズ（選挙権の移り変わり）",
+      "url": "https://www.archives.go.jp/learning/quiz_1/",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-024",
+    "key": "mt-fusen-vote-1928",
+    "category": "national",
+    "year": 1928,
+    "month": 2,
+    "ageMin": 25,
+    "ageMax": 38,
+    "sex": "male",
+    "title": "初めての普通選挙",
+    "text": "2月、初めての普通選挙で投票した。有権者は前回の約4倍の1,200万人あまりに増えた。投票所へ向かう道が少し誇らしかった。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.8,
+    "probNote": "目安（投票率は約8割とされる。未確認）",
+    "source": {
+      "title": "国立公文書館 アーカイブズ・クイズ（選挙権の移り変わり）",
+      "url": "https://www.archives.go.jp/learning/quiz_1/",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-025",
+    "key": "mt-chian-1925",
+    "category": "system",
+    "year": 1925,
+    "month": 5,
+    "ageMin": 20,
+    "ageMax": 35,
+    "sex": "any",
+    "title": "治安維持法",
+    "text": "5月、国のしくみを変えようとする結社などを罰する治安維持法が施行された。普通選挙と同じ年だった。言っていいことの幅が狭くなった気がした。",
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "コトバンク 治安維持法",
+      "url": "https://kotobank.jp/word/治安維持法",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-026",
+    "key": "mt-radio-1925",
+    "category": "national",
+    "year": 1925,
+    "endYear": 1929,
+    "month": 3,
+    "ageMin": 6,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "ラジオを聞いた",
+    "text": "1925年3月、東京でラジオ放送が始まった。近所の家で大きなラッパのような拡声器を囲み、遠くから届く声に耳をすました。",
+    "effects": {
+      "happiness": 2,
+      "knowledge": 1
+    },
+    "probability": 0.15,
+    "probNote": "目安。開始時の受信契約は約3,500件",
+    "source": {
+      "title": "nippon.com 今日は何の日 3月22日（1925年、ラジオ仮放送開始）",
+      "url": "https://www.nippon.com/ja/japan-topics/today0322/",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-027",
+    "key": "mt-radio-1925",
+    "category": "national",
+    "year": 1925,
+    "endYear": 1929,
+    "month": 3,
+    "ageMin": 16,
+    "ageMax": 39,
+    "sex": "any",
+    "title": "ラジオ放送が始まった",
+    "text": "1925年3月、東京でラジオの放送が始まり、受信料は月1円だった。ニュースや相場、音楽が家に居ながら聞けるようになった。",
+    "effects": {
+      "happiness": 1,
+      "knowledge": 1
+    },
+    "probability": 0.12,
+    "probNote": "目安。開始時の受信契約は約3,500件",
+    "source": {
+      "title": "nippon.com 今日は何の日 3月22日（1925年、ラジオ仮放送開始）",
+      "url": "https://www.nippon.com/ja/japan-topics/today0322/",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-028",
+    "key": "mt-showa-kaigen-1926",
+    "category": "national",
+    "year": 1926,
+    "month": 12,
+    "ageMin": 6,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "大正から昭和へ",
+    "text": "12月25日、大正天皇が亡くなり、元号が昭和に変わった。大正15年は昭和元年になり、年の暮れの一週間だけだった。",
+    "probability": 1,
+    "source": {
+      "title": "記念日の辞典「昭和」改元の日（12月25日）",
+      "url": "https://bestcalendar.jp/dates/kinenbi/5130",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-029",
+    "key": "mt-showa-kaigen-1926",
+    "category": "national",
+    "year": 1926,
+    "month": 12,
+    "ageMin": 16,
+    "ageMax": 36,
+    "sex": "any",
+    "title": "昭和が始まった",
+    "text": "12月25日、大正天皇が亡くなり、元号が昭和になった。正月の祝いは控えられた。大正は15年で終わった。新しい元号の響きに、まだ耳がなじまなかった。",
+    "probability": 1,
+    "source": {
+      "title": "記念日の辞典「昭和」改元の日（12月25日）",
+      "url": "https://bestcalendar.jp/dates/kinenbi/5130",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-030",
+    "key": "mt-gotaiten-1928",
+    "category": "national",
+    "year": 1928,
+    "month": 11,
+    "ageMin": 6,
+    "ageMax": 38,
+    "sex": "any",
+    "title": "御大典",
+    "text": "11月、京都で昭和天皇の即位の礼が行われた。各地で奉祝の行事があり、町には旗と提灯が並んだ。学校では記念の品が配られた。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（1928年即位の礼）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-031",
+    "key": "mt-kinyu-1927",
+    "category": "national",
+    "year": 1927,
+    "month": 3,
+    "ageMin": 18,
+    "ageMax": 37,
+    "sex": "any",
+    "title": "昭和金融恐慌",
+    "text": "3月、国会での大臣の失言をきっかけに、銀行に預金を引き出す人の列ができた。4月には3週間の支払い猶予令が出た。この年、休業した銀行は数十行にのぼった。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "コトバンク 金融恐慌",
+      "url": "https://kotobank.jp/word/%E9%87%91%E8%9E%8D%E6%81%90%E6%85%8C-481877",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-032",
+    "key": "mt-kinyu-loss-1927",
+    "category": "national",
+    "year": 1927,
+    "month": 4,
+    "ageMin": 25,
+    "ageMax": 37,
+    "sex": "any",
+    "conditions": {
+      "familyClass": [
+        2,
+        3,
+        4
+      ]
+    },
+    "title": "預けた銀行が閉まった",
+    "text": "預金していた銀行が店を閉めた。預けたお金がいつ戻るのか分からず、しばらく生活を切り詰めた。近所の商店にも、同じ目にあった家がいくつもあった。",
+    "effects": {
+      "happiness": -5,
+      "money": -50
+    },
+    "probability": 0.05,
+    "probNote": "目安",
+    "source": {
+      "title": "コトバンク 金融恐慌",
+      "url": "https://kotobank.jp/word/%E9%87%91%E8%9E%8D%E6%81%90%E6%85%8C-481877",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-033",
+    "key": "mt-kinyu-1927",
+    "category": "national",
+    "year": 1927,
+    "month": 3,
+    "ageMin": 8,
+    "ageMax": 17,
+    "sex": "any",
+    "title": "銀行の前の行列",
+    "text": "春、銀行の前に人が長い列を作った。親も預金を下ろしに行った。大人たちが「銀行がつぶれる」と話すのを聞いて不安になった。",
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "コトバンク 金融恐慌",
+      "url": "https://kotobank.jp/word/%E9%87%91%E8%9E%8D%E6%81%90%E6%85%8C-481877",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-034",
+    "key": "mt-kyoko-1929",
+    "category": "national",
+    "year": 1929,
+    "month": 10,
+    "ageMin": 20,
+    "ageMax": 39,
+    "sex": "any",
+    "title": "世界恐慌",
+    "text": "10月、ニューヨークで株が大暴落したと新聞に出た。翌年には日本にも不況が押し寄せ、生糸の値は崩れ、農村も町も苦しくなっていった。",
+    "effects": {
+      "happiness": -1
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "世界史の窓 世界恐慌",
+      "url": "https://y-history.net/appendix/wh1504-001.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-035",
+    "key": "mt-chokugo-1891",
+    "category": "system",
+    "year": 1896,
+    "endYear": 1929,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "教育勅語",
+    "text": "1890年に出された教育勅語を、式の日には校長先生が読み上げた。白い手袋をはめた手元を、頭を下げたまま、じっとしているのがつらかった。",
+    "probability": 0.25,
+    "probNote": "目安。毎年少しずつ、在学中のどこかで経験する",
+    "source": {
+      "title": "一般的な年表（1890年10月 教育ニ関スル勅語）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-036",
+    "key": "mt-gimu4-1900",
+    "category": "system",
+    "year": 1900,
+    "endYear": 1901,
+    "ageMin": 6,
+    "ageMax": 10,
+    "sex": "any",
+    "title": "尋常小学校4年が義務に",
+    "text": "小学校令が改まり、尋常小学校の4年間が義務教育になった。翌年からは授業料を取らないのが原則になり、通う子が増えた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "probability": 0.9,
+    "source": {
+      "title": "文部科学省 我が国の義務教育制度の変遷",
+      "url": "https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo0/toushin/attach/1419881.htm",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-037",
+    "key": "mt-gimu6-1907",
+    "category": "system",
+    "year": 1907,
+    "endYear": 1908,
+    "ageMin": 7,
+    "ageMax": 11,
+    "sex": "any",
+    "title": "義務教育が6年に",
+    "text": "小学校令が改められ、尋常小学校が6年になった。4年で卒業して家の手伝いをするつもりだったが、あと2年通うことになった。",
+    "effects": {
+      "knowledge": 2
+    },
+    "probability": 0.9,
+    "source": {
+      "title": "文部科学省 学制百年史 義務教育制度の確立",
+      "url": "https://www.mext.go.jp/b_menu/hakusho/html/others/detail/1317613.htm",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-038",
+    "key": "mt-koto-sho-1902",
+    "category": "system",
+    "year": 1902,
+    "endYear": 1929,
+    "ageMin": 12,
+    "ageMax": 13,
+    "sex": "any",
+    "title": "高等小学校へ進んだ",
+    "text": "尋常小学校を終えて、高等小学校に進んだ。同級生の中には、もう奉公や家の仕事に出た子もいた。教室には、尋常科のころより少し大人びた顔が並んでいた。",
+    "effects": {
+      "knowledge": 2
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "文部科学省 学制百年史 義務教育制度の確立",
+      "url": "https://www.mext.go.jp/b_menu/hakusho/html/others/detail/1317613.htm",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-039",
+    "key": "mt-chohei-kensa",
+    "category": "system",
+    "year": 1910,
+    "endYear": 1929,
+    "ageMin": 20,
+    "ageMax": 20,
+    "sex": "male",
+    "title": "徴兵検査",
+    "text": "20歳になり、役場の通知で徴兵検査を受けた。身長や視力を測られ、裸で並んで軍医に診られた。結果で甲種・乙種などに分けられた。",
+    "probability": 0.95,
+    "source": {
+      "title": "一般的な制度史（徴兵令・兵役法による徴兵検査）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-040",
+    "key": "mt-nyuei",
+    "category": "system",
+    "year": 1910,
+    "endYear": 1929,
+    "ageMin": 20,
+    "ageMax": 21,
+    "sex": "male",
+    "title": "現役兵として入営",
+    "text": "徴兵検査に合格し、抽選で現役兵に選ばれて連隊に入営した。家の働き手が減るので、親は複雑な顔で送り出した。営内では朝から晩まで教練と内務の毎日が続いた。",
+    "effects": {
+      "health": 1,
+      "happiness": -2,
+      "relation": 1
+    },
+    "probability": 0.2,
+    "probNote": "目安。受検者のうち現役で入営したのは2割前後とされる（未確認）",
+    "source": {
+      "title": "一般的な制度史（兵役）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-041",
+    "key": "mt-kojoho-1916",
+    "category": "system",
+    "year": 1916,
+    "month": 9,
+    "ageMin": 12,
+    "ageMax": 20,
+    "sex": "female",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco"
+      ]
+    },
+    "title": "工場法の施行",
+    "text": "9月、工場法が施行され、子どもや女の働く時間と夜業に決まりができた。けれども例外が多く、工場の暮らしはすぐには変わらなかった。",
+    "probability": 0.6,
+    "probNote": "目安",
+    "source": {
+      "title": "厚生労働省 広報誌「厚生労働」2016年8月号（工場法の施行から100年）",
+      "url": "https://www.mhlw.go.jp/houdou_kouhou/kouhou_shuppan/magazine/2016/08_01.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-042",
+    "key": "mt-kojoho-1916",
+    "category": "system",
+    "year": 1916,
+    "month": 9,
+    "ageMin": 21,
+    "ageMax": 26,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco"
+      ]
+    },
+    "title": "工場法の施行",
+    "text": "1911年にできた工場法がようやく施行された。15人以上の工場が対象で、年少者や女工の働く時間が制限され、けがの扶助も定められた。",
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "厚生労働省 広報誌「厚生労働」2016年8月号（工場法の施行から100年）",
+      "url": "https://www.mhlw.go.jp/houdou_kouhou/kouhou_shuppan/magazine/2016/08_01.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-043",
+    "key": "mt-kokusei-1920",
+    "category": "system",
+    "year": 1920,
+    "month": 10,
+    "ageMin": 6,
+    "ageMax": 30,
+    "sex": "any",
+    "title": "第1回国勢調査",
+    "text": "10月1日、初めての国勢調査があった。調査員が家々を回って、家族の名前や年、仕事を書き取っていった。全国の人口が初めて一斉に数えられた日だった。",
+    "probability": 0.9,
+    "source": {
+      "title": "一般的な年表（1920年第1回国勢調査）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-044",
+    "key": "mt-metric-1921",
+    "category": "system",
+    "year": 1921,
+    "ageMin": 20,
+    "ageMax": 31,
+    "sex": "any",
+    "title": "メートル法",
+    "text": "度量衡法が改められ、メートル法を使うことになった。尺や貫に慣れた店の人たちは戸惑い、実際にはなかなか切り替わらなかった。",
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（1921年 度量衡法改正）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-045",
+    "key": "mt-kenkohoken-1927",
+    "category": "system",
+    "year": 1927,
+    "ageMin": 18,
+    "ageMax": 37,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "smallco",
+        "bigco"
+      ]
+    },
+    "title": "健康保険が始まった",
+    "text": "工場や鉱山で働く人のための健康保険が始まり、給料から保険料が引かれるようになった。けがや病気のときに医者にかかりやすくなった。",
+    "effects": {
+      "health": 1
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（1922年健康保険法公布、1927年施行）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-046",
+    "key": "mt-minpo-1898",
+    "category": "life",
+    "year": 1898,
+    "endYear": 1929,
+    "ageMin": 18,
+    "ageMax": 30,
+    "sex": "any",
+    "title": "「家」のしきたり",
+    "text": "明治の民法で、家のことは戸主が決めるものとされた。結婚にも戸主の同意が要り、長男が家督を継ぐのが当たり前だった。",
+    "probability": 0.05,
+    "probNote": "目安。一生のどこかで実感する",
+    "source": {
+      "title": "一般的な制度史（1898年 明治民法施行）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-047",
+    "key": "mt-kisha",
+    "category": "life",
+    "year": 1895,
+    "endYear": 1929,
+    "ageMin": 5,
+    "ageMax": 14,
+    "sex": "any",
+    "title": "初めての汽車",
+    "text": "初めて汽車に乗った。黒い煙を吐いて走り出すと、窓の外の景色が見たこともない速さで流れていった。駅弁の味と、トンネルで顔が煤けたことをよく覚えている。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.06,
+    "probNote": "目安。毎年このくらいの割合で初めて乗る",
+    "source": {
+      "title": "一般的な年表（鉄道網の広がり）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-048",
+    "key": "mt-dento",
+    "category": "life",
+    "year": 1905,
+    "endYear": 1929,
+    "ageMin": 3,
+    "ageMax": 39,
+    "sex": "any",
+    "title": "家に電灯がついた",
+    "text": "家に電灯が引かれた。ランプのほやを磨く仕事がなくなり、夜でも部屋の隅まで明るかった。電灯は一部屋に一つで、使った分ではなく灯りの数で料金を払った。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.05,
+    "probNote": "目安。1920年代後半に電灯のある家が大半になったとされる（未確認）",
+    "source": {
+      "title": "一般的な年表（電灯の普及）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-049",
+    "key": "mt-undokai",
+    "category": "life",
+    "year": 1896,
+    "endYear": 1929,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "運動会",
+    "text": "秋に学校の運動会があった。家族がござを持って見に来て、昼はおにぎりと煮しめを広げた。かけっこで一等になりたくて前の晩は眠れなかった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.2,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な学校史",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-050",
+    "key": "mt-ensoku",
+    "category": "life",
+    "year": 1896,
+    "endYear": 1929,
+    "ageMin": 7,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "遠足",
+    "text": "遠足で隣の村の山まで歩いた。わらじのひもが切れそうになりながら、みんなで歌を歌って帰ってきた。帰ると足がぱんぱんだったが、弁当の味は格別だった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.15,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な学校史",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-051",
+    "key": "mt-komori",
+    "category": "life",
+    "year": 1890,
+    "endYear": 1929,
+    "ageMin": 8,
+    "ageMax": 13,
+    "sex": "female",
+    "conditions": {
+      "familyClass": [
+        1,
+        2
+      ]
+    },
+    "title": "子守奉公",
+    "text": "口減らしのため、よその家に子守として住み込んだ。赤ん坊をおぶって学校の窓の外から授業を眺めた日もあった。同じ年ごろの子が学校へ行くのを見るのがつらかった。",
+    "effects": {
+      "happiness": -3,
+      "relation": -1
+    },
+    "probability": 0.08,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な生活史（子守奉公）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-052",
+    "key": "mt-detchi",
+    "category": "life",
+    "year": 1890,
+    "endYear": 1929,
+    "ageMin": 12,
+    "ageMax": 15,
+    "sex": "male",
+    "conditions": {
+      "familyClass": [
+        1,
+        2,
+        3
+      ]
+    },
+    "title": "丁稚奉公",
+    "text": "学校を終えると、町の商家に丁稚として住み込んだ。朝は誰よりも早く起きて掃除をし、給金はなく、盆と正月の藪入りだけが楽しみだった。",
+    "effects": {
+      "happiness": -2,
+      "knowledge": 1,
+      "flags": [
+        "moved_to_city"
+      ]
+    },
+    "probability": 0.08,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な生活史（丁稚奉公）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-053",
+    "key": "mt-yabuiri",
+    "category": "life",
+    "year": 1890,
+    "endYear": 1929,
+    "ageMin": 13,
+    "ageMax": 18,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "moved_to_city"
+      ]
+    },
+    "title": "藪入り",
+    "text": "正月の藪入りで、奉公先から数日だけ家に帰った。新しい着物を着せてもらい、母の作った餅を腹いっぱい食べた。帰りの日は、なかなか家の門を出られなかった。",
+    "effects": {
+      "happiness": 3,
+      "relation": 2
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な生活史",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-054",
+    "key": "mt-jokou",
+    "category": "life",
+    "year": 1890,
+    "endYear": 1929,
+    "ageMin": 12,
+    "ageMax": 20,
+    "sex": "female",
+    "conditions": {
+      "familyClass": [
+        1,
+        2,
+        3
+      ]
+    },
+    "title": "製糸工場の女工に",
+    "text": "村に来た募集人の話で、遠くの製糸工場に働きに出た。寄宿舎に住み、朝から晩まで湯気の中で繭から糸をとった。前借りの金は家に送られた。",
+    "effects": {
+      "health": -3,
+      "happiness": -2,
+      "money": 20
+    },
+    "probability": 0.04,
+    "probNote": "目安。1900年代〜1920年代、製糸・紡績の女工は数十万人いたとされる（未確認）",
+    "source": {
+      "title": "一般的な産業史（製糸業の女工）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-055",
+    "key": "mt-boseki",
+    "category": "life",
+    "year": 1890,
+    "endYear": 1929,
+    "ageMin": 13,
+    "ageMax": 20,
+    "sex": "female",
+    "conditions": {
+      "familyClass": [
+        1,
+        2,
+        3
+      ]
+    },
+    "title": "紡績工場で働いた",
+    "text": "大きな紡績工場で働いた。昼と夜の二交代で、綿ぼこりの舞う中、機械の糸が切れないように見張り続けた。寄宿舎の仲間と、ふるさとの話をして眠った。",
+    "effects": {
+      "health": -3,
+      "money": 20
+    },
+    "probability": 0.03,
+    "probNote": "目安（未確認）",
+    "source": {
+      "title": "一般的な産業史（紡績業）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-056",
+    "key": "mt-kekkaku",
+    "category": "life",
+    "year": 1900,
+    "endYear": 1929,
+    "ageMin": 5,
+    "ageMax": 39,
+    "sex": "any",
+    "title": "家族が結核に",
+    "text": "家族が結核にかかった。当時の死因の上位で、うつると言われ、離れの部屋で療養した。家の中が静かになった。まだよく効く薬はなく、栄養と安静が頼りだった。",
+    "effects": {
+      "happiness": -4,
+      "health": -1
+    },
+    "probability": 0.01,
+    "probNote": "目安（未確認）",
+    "heavy": true,
+    "source": {
+      "title": "人口動態統計（結核は戦前の主要な死因）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-057",
+    "key": "mt-yofuku",
+    "category": "life",
+    "year": 1920,
+    "endYear": 1929,
+    "ageMin": 20,
+    "ageMax": 39,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "bigco",
+        "public"
+      ]
+    },
+    "title": "洋服で通勤",
+    "text": "背広を着て、市電で役所や会社に通う勤め人になった。「サラリーマン」という言葉が使われはじめていた。月給取りは安定していると、親類に羨ましがられた。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.1,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な生活史（大正期の俸給生活者）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-058",
+    "key": "mt-yoshoku",
+    "category": "life",
+    "year": 1915,
+    "endYear": 1929,
+    "ageMin": 6,
+    "ageMax": 39,
+    "sex": "any",
+    "title": "洋食の味",
+    "text": "カレーライスやコロッケを初めて食べた。とろりとした黄色いご飯は、家の膳とはまるで違う味がした。洋食屋の前を通るたび、あの匂いを思い出した。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.05,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な生活史（大正の三大洋食）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-059",
+    "key": "mt-bunka-jutaku",
+    "category": "life",
+    "year": 1922,
+    "endYear": 1929,
+    "prefs": [
+      13,
+      14,
+      27,
+      28
+    ],
+    "ageMin": 25,
+    "ageMax": 39,
+    "sex": "any",
+    "conditions": {
+      "familyClass": [
+        3,
+        4,
+        5
+      ]
+    },
+    "title": "文化住宅",
+    "text": "郊外に、赤い瓦屋根と洋風の応接間のある「文化住宅」を借りた。電車で都心に通う暮らしが始まった。ガラス窓の明るい部屋で、椅子に座って暮らすのが新鮮だった。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.03,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な生活史（大正期の文化住宅）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-060",
+    "key": "mt-jitensha",
+    "category": "life",
+    "year": 1910,
+    "endYear": 1929,
+    "ageMin": 12,
+    "ageMax": 30,
+    "sex": "any",
+    "title": "自転車",
+    "text": "自転車に乗れるようになった。まだ高い品で、借り物を何度も倒しながら練習した。町まで行くのが一気に近くなった。荷台に荷物を積んで、配達の手伝いもした。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.04,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な生活史",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-061",
+    "key": "mt-shinbun",
+    "category": "life",
+    "year": 1900,
+    "endYear": 1929,
+    "ageMin": 12,
+    "ageMax": 39,
+    "sex": "any",
+    "title": "新聞を読む",
+    "text": "家で新聞をとるようになり、毎朝読むのが習慣になった。連載小説の続きが待ち遠しかった。米の相場や遠い国の戦争の記事まで、知らない世界が広がった。",
+    "effects": {
+      "knowledge": 2
+    },
+    "probability": 0.04,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な生活史",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-062",
+    "key": "mt-chabudai",
+    "category": "life",
+    "year": 1920,
+    "endYear": 1929,
+    "ageMin": 5,
+    "ageMax": 39,
+    "sex": "any",
+    "title": "ちゃぶ台",
+    "text": "家族の食事が、一人ずつの箱膳から、丸いちゃぶ台を囲む形に変わった。食べながら話をしても叱られなくなった。夕食どきには、その日の出来事を話すのが習いになった。",
+    "effects": {
+      "happiness": 1,
+      "relation": 1
+    },
+    "probability": 0.04,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な生活史",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-063",
+    "key": "mt-suido",
+    "category": "life",
+    "year": 1910,
+    "endYear": 1929,
+    "prefs": [
+      13,
+      14,
+      27,
+      28,
+      23,
+      26,
+      40
+    ],
+    "ageMin": 5,
+    "ageMax": 39,
+    "sex": "any",
+    "title": "水道がきた",
+    "text": "町に水道が引かれ、井戸まで水をくみに行かなくてよくなった。蛇口をひねると水が出るのが不思議だった。夏でも冷たい水がふんだんに使えるようになった。",
+    "effects": {
+      "health": 1,
+      "happiness": 1
+    },
+    "probability": 0.05,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（近代水道の普及）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-064",
+    "key": "mt-yubin-chokin",
+    "category": "life",
+    "year": 1905,
+    "endYear": 1929,
+    "ageMin": 10,
+    "ageMax": 20,
+    "sex": "any",
+    "title": "郵便貯金",
+    "text": "郵便局で貯金を始めた。通帳に判を押してもらうたび、少しずつ増える数字を眺めた。お年玉や小遣いを少しずつ入れ、何に使うかを考えるのが楽しみだった。",
+    "effects": {
+      "money": 5
+    },
+    "probability": 0.03,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な生活史",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-065",
+    "key": "mt-hokkaido-ijyu",
+    "category": "life",
+    "year": 1890,
+    "endYear": 1915,
+    "prefs": [
+      15,
+      16,
+      17,
+      18,
+      4,
+      6,
+      5,
+      2
+    ],
+    "ageMin": 0,
+    "ageMax": 25,
+    "sex": "any",
+    "conditions": {
+      "familyClass": [
+        1,
+        2
+      ]
+    },
+    "title": "一家で北海道へ",
+    "text": "家族で北海道へ渡り、開拓地に入った。原生林を切り開いて畑にする仕事は、冬の寒さとともに想像以上にきつかった。それでも、自分の土地が持てるという望みがあった。",
+    "effects": {
+      "health": -2,
+      "happiness": -2,
+      "flags": [
+        "hokkaido_settler"
+      ]
+    },
+    "probability": 0.01,
+    "probNote": "目安。明治後期は北陸・東北からの移住が多かった（未確認）",
+    "source": {
+      "title": "一般的な年表（北海道開拓）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-066",
+    "key": "mt-hokkaido-kaitaku",
+    "category": "pref",
+    "year": 1890,
+    "endYear": 1929,
+    "prefs": [
+      1
+    ],
+    "ageMin": 6,
+    "ageMax": 20,
+    "sex": "any",
+    "title": "開拓の村",
+    "text": "開拓で開かれた村で育った。親たちは本州のふるさとの言葉で話し、畑の切り株を掘り起こすのを手伝った。冬は雪に閉ざされ、春が来るのが待ち遠しかった。",
+    "effects": {
+      "health": 1
+    },
+    "probability": 0.05,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（北海道開拓）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-067",
+    "key": "mt-tondenhei",
+    "category": "pref",
+    "year": 1890,
+    "endYear": 1904,
+    "prefs": [
+      1
+    ],
+    "ageMin": 0,
+    "ageMax": 14,
+    "sex": "any",
+    "title": "屯田兵の村",
+    "text": "屯田兵の村で育った。父たちは昼は畑を耕し、合図があると兵として訓練に出た。屯田兵の制度は1904年に終わった。",
+    "probability": 0.05,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（屯田兵制度 1875〜1904年）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-068",
+    "key": "mt-tohoku-kyosaku-1905",
+    "category": "pref",
+    "year": 1905,
+    "endYear": 1906,
+    "prefs": [
+      4,
+      7,
+      3
+    ],
+    "ageMin": 3,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "東北の大凶作",
+    "text": "1905年、やませで稲が実らず、宮城・福島・岩手では平年の1〜3割しか米がとれなかった。学校に来られない子が増え、家では雑穀や草の根を食べた。",
+    "effects": {
+      "health": -4,
+      "happiness": -4
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "皇學館大学 紀要論文（明治38年東北大凶作）",
+      "url": "https://kogakkan.repo.nii.ac.jp/record/798/files/%E7%9A%87%E5%AD%A6%E8%AB%96%E7%BA%8205.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-069",
+    "key": "mt-tohoku-kyosaku-1905",
+    "category": "pref",
+    "year": 1905,
+    "endYear": 1906,
+    "prefs": [
+      4,
+      7,
+      3
+    ],
+    "ageMin": 13,
+    "ageMax": 16,
+    "sex": "any",
+    "title": "東北の大凶作",
+    "text": "1905年、冷たい風で稲が実らず、天明・天保の飢饉以来といわれる凶作になった。家の借金が増え、働きに出る話が出た。",
+    "effects": {
+      "health": -3,
+      "happiness": -4
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "皇學館大学 紀要論文（明治38年東北大凶作）",
+      "url": "https://kogakkan.repo.nii.ac.jp/record/798/files/%E7%9A%87%E5%AD%A6%E8%AB%96%E7%BA%8205.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-070",
+    "key": "mt-miuri",
+    "category": "pref",
+    "year": 1905,
+    "endYear": 1929,
+    "prefs": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "ageMin": 12,
+    "ageMax": 20,
+    "sex": "female",
+    "conditions": {
+      "familyClass": [
+        1
+      ]
+    },
+    "title": "家の借金で働きに出された",
+    "text": "凶作と借金で家が立ちゆかず、前借りの金と引きかえに、遠くの町へ年季奉公に出された。東北の農村では、こうしたことが珍しくなかった。",
+    "effects": {
+      "happiness": -8,
+      "relation": -3,
+      "flags": [
+        "sold_away"
+      ]
+    },
+    "probability": 0.02,
+    "probNote": "目安（未確認）。昭和恐慌期に特に多かったとされる",
+    "heavy": true,
+    "source": {
+      "title": "一般的な生活史（東北農村の娘の身売り）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-071",
+    "key": "mt-tanko",
+    "category": "pref",
+    "year": 1890,
+    "endYear": 1929,
+    "prefs": [
+      40,
+      1,
+      7,
+      8,
+      42
+    ],
+    "ageMin": 15,
+    "ageMax": 39,
+    "sex": "male",
+    "conditions": {
+      "familyClass": [
+        1,
+        2,
+        3
+      ]
+    },
+    "title": "炭鉱で働いた",
+    "text": "炭鉱で坑夫として働いた。暗い坑内で石炭を掘り、炭住と呼ばれる長屋に住んだ。賃金はよかったが、落盤やガスの危険と隣り合わせだった。",
+    "effects": {
+      "health": -3,
+      "money": 20,
+      "flags": [
+        "coal_miner"
+      ]
+    },
+    "probability": 0.03,
+    "probNote": "目安（未確認）",
+    "source": {
+      "title": "一般的な産業史（筑豊・北海道・常磐の炭鉱）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-072",
+    "key": "mt-tanko-child",
+    "category": "pref",
+    "year": 1890,
+    "endYear": 1929,
+    "prefs": [
+      40,
+      1,
+      7,
+      8,
+      42
+    ],
+    "ageMin": 6,
+    "ageMax": 14,
+    "sex": "any",
+    "title": "炭鉱の町",
+    "text": "炭鉱の町で育った。父は真っ黒な顔で坑内から上がってきて、共同風呂で煤を落とした。ボタ山が遊び場だった。町には全国から人が集まり、いろいろな訛りが飛び交っていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.05,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な産業史（炭鉱町）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-073",
+    "key": "mt-suwa-seishi",
+    "category": "pref",
+    "year": 1895,
+    "endYear": 1929,
+    "prefs": [
+      20,
+      21
+    ],
+    "ageMin": 12,
+    "ageMax": 20,
+    "sex": "female",
+    "conditions": {
+      "familyClass": [
+        1,
+        2,
+        3
+      ]
+    },
+    "title": "諏訪の製糸場へ",
+    "text": "雪の峠を越えて、諏訪の製糸場へ働きに行った。何百人もの女工が並んで糸をとった。年の暮れに家へ持ち帰る給金が、家族の一年を支えた。",
+    "effects": {
+      "health": -3,
+      "money": 30
+    },
+    "probability": 0.08,
+    "probNote": "目安。岡谷・諏訪は製糸業の中心で、飛騨や県内各地から女工が集まった（未確認）",
+    "source": {
+      "title": "一般的な産業史（諏訪・岡谷の製糸業）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-074",
+    "key": "mt-osaka-boseki",
+    "category": "pref",
+    "year": 1895,
+    "endYear": 1929,
+    "prefs": [
+      27
+    ],
+    "ageMin": 13,
+    "ageMax": 25,
+    "sex": "any",
+    "title": "「東洋のマンチェスター」",
+    "text": "大阪には紡績工場の煙突が林のように立ち並び、「東洋のマンチェスター」と呼ばれた。工場の汽笛で一日が始まった。町には地方から働きに来た若者があふれていた。",
+    "probability": 0.1,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な産業史（大阪の紡績業）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-075",
+    "key": "mt-hawaii-kanyaku",
+    "category": "pref",
+    "year": 1890,
+    "endYear": 1894,
+    "prefs": [
+      34,
+      35,
+      43,
+      40
+    ],
+    "ageMin": 0,
+    "ageMax": 4,
+    "sex": "any",
+    "title": "親類がハワイへ",
+    "text": "親類が官約移民としてハワイへ渡った。さとうきび畑で働き、何年かして稼いで帰るという話だった。1885年からの10年で約2万9千人が渡り、7割以上が広島と山口の人だった。",
+    "probability": 0.1,
+    "probNote": "目安",
+    "source": {
+      "title": "広島県立文書館 特別展示図録（ハワイ官約移民の県別人数）",
+      "url": "https://www.pref.hiroshima.lg.jp/soshiki_file/monjokan/zuroku/iju-zuroku2015.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-076",
+    "key": "mt-hawaii-iminn",
+    "category": "pref",
+    "year": 1905,
+    "endYear": 1907,
+    "prefs": [
+      34,
+      35,
+      43,
+      40,
+      47
+    ],
+    "ageMin": 15,
+    "ageMax": 17,
+    "sex": "male",
+    "conditions": {
+      "familyClass": [
+        1,
+        2,
+        3
+      ]
+    },
+    "title": "ハワイへ渡った",
+    "text": "村の先輩を頼って、移民会社の世話でハワイへ渡った。さとうきびの農園で働き、稼いだ金をふるさとへ送った。ふるさとへの仕送りで、家は田畑を買い足した。",
+    "effects": {
+      "happiness": -1,
+      "money": 30,
+      "flags": [
+        "emigrated"
+      ]
+    },
+    "probability": 0.01,
+    "probNote": "目安（未確認）",
+    "source": {
+      "title": "広島県立文書館 特別展示図録（ハワイ官約移民の県別人数）",
+      "url": "https://www.pref.hiroshima.lg.jp/soshiki_file/monjokan/zuroku/iju-zuroku2015.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-077",
+    "key": "mt-shashin-hanayome",
+    "category": "pref",
+    "year": 1908,
+    "endYear": 1920,
+    "prefs": [
+      34,
+      35,
+      43,
+      40,
+      47,
+      22,
+      30
+    ],
+    "ageMin": 17,
+    "ageMax": 25,
+    "sex": "female",
+    "title": "写真で決まった縁談",
+    "text": "ハワイやアメリカで働く同郷の男と、写真を交わしただけで縁談がまとまった。会ったことのない夫のもとへ、船で海を渡った。",
+    "effects": {
+      "happiness": -1,
+      "flags": [
+        "emigrated"
+      ]
+    },
+    "probability": 0.005,
+    "probNote": "目安（未確認）",
+    "source": {
+      "title": "一般的な移民史（写真花嫁）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-078",
+    "key": "mt-brazil-1908",
+    "category": "national",
+    "year": 1908,
+    "month": 4,
+    "ageMin": 10,
+    "ageMax": 18,
+    "sex": "any",
+    "title": "笠戸丸のブラジル移民",
+    "text": "4月、ブラジルへの最初の移民781人を乗せた笠戸丸が神戸を出た。地球の裏側でコーヒーを作るという話に、村の大人たちが聞き入っていた。",
+    "probability": 0.15,
+    "probNote": "目安",
+    "source": {
+      "title": "国立国会図書館 ブラジル移民の100年（笠戸丸）",
+      "url": "https://www.ndl.go.jp/brasil/column/kasatomaru.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-079",
+    "key": "mt-brazil-imin",
+    "category": "pref",
+    "year": 1912,
+    "endYear": 1929,
+    "prefs": [
+      43,
+      40,
+      34,
+      35,
+      47,
+      46,
+      13,
+      1,
+      16,
+      32,
+      30
+    ],
+    "ageMin": 16,
+    "ageMax": 35,
+    "sex": "any",
+    "conditions": {
+      "familyClass": [
+        1,
+        2,
+        3
+      ]
+    },
+    "title": "一家でブラジルへ",
+    "text": "家族そろってブラジルへの移民船に乗った。50日あまりの船旅の末、コーヒー農園で働き始めた。言葉も気候も何もかも違った。",
+    "effects": {
+      "happiness": -3,
+      "flags": [
+        "emigrated"
+      ]
+    },
+    "probability": 0.003,
+    "probNote": "目安（未確認）",
+    "source": {
+      "title": "国立国会図書館 ブラジル移民の100年（笠戸丸）",
+      "url": "https://www.ndl.go.jp/brasil/column/kasatomaru.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-080",
+    "key": "mt-brazil-imin-child",
+    "category": "pref",
+    "year": 1912,
+    "endYear": 1929,
+    "prefs": [
+      43,
+      40,
+      34,
+      35,
+      47,
+      46
+    ],
+    "ageMin": 6,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "移民した親類からの手紙",
+    "text": "ブラジルに渡った親類から手紙が届いた。広い畑と、見たことのない果物の話が書いてあり、地図で何度も場所を探した。",
+    "probability": 0.05,
+    "probNote": "目安",
+    "source": {
+      "title": "国立国会図書館 ブラジル移民の100年（笠戸丸）",
+      "url": "https://www.ndl.go.jp/brasil/column/kasatomaru.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-081",
+    "key": "mt-sotetsu",
+    "category": "pref",
+    "year": 1920,
+    "endYear": 1929,
+    "prefs": [
+      47
+    ],
+    "ageMin": 6,
+    "ageMax": 39,
+    "sex": "any",
+    "title": "ソテツ地獄",
+    "text": "戦後の不況で砂糖の値が暴落し、食べるものに困った家ではソテツの実まで口にした。島を出て本土や南洋、南米へ働きに行く人が増えた。",
+    "effects": {
+      "health": -3,
+      "happiness": -3
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "一般的な年表（沖縄のソテツ地獄）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-082",
+    "key": "mt-ashio-1890",
+    "category": "pref",
+    "year": 1890,
+    "endYear": 1900,
+    "prefs": [
+      9,
+      10
+    ],
+    "ageMin": 0,
+    "ageMax": 10,
+    "sex": "any",
+    "title": "渡良瀬川の鉱毒",
+    "text": "足尾銅山から流れ出た鉱毒で、渡良瀬川沿いの田畑が荒れた。大水のたびに被害は広がり、1896年の洪水では埼玉や東京にまで及んだ。",
+    "effects": {
+      "health": -2,
+      "happiness": -2
+    },
+    "probability": 0.15,
+    "probNote": "目安。流域に住む割合",
+    "heavy": true,
+    "source": {
+      "title": "コトバンク 足尾鉱毒事件",
+      "url": "https://kotobank.jp/word/%E8%B6%B3%E5%B0%BE%E9%89%B1%E6%AF%92%E4%BA%8B%E4%BB%B6-25196",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-083",
+    "key": "mt-ashio-jikiso-1901",
+    "category": "national",
+    "year": 1901,
+    "month": 12,
+    "ageMin": 8,
+    "ageMax": 11,
+    "sex": "any",
+    "title": "鉱毒の直訴",
+    "text": "12月、足尾銅山の鉱毒の被害を訴えるため、元代議士が天皇の馬車に直訴しようとした。直訴はかなわなかったが、新聞がこぞって書き立てた。",
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "コトバンク 足尾鉱毒事件",
+      "url": "https://kotobank.jp/word/%E8%B6%B3%E5%B0%BE%E9%89%B1%E6%AF%92%E4%BA%8B%E4%BB%B6-25196",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-084",
+    "key": "mt-yanaka-1906",
+    "category": "pref",
+    "year": 1906,
+    "prefs": [
+      9
+    ],
+    "ageMin": 10,
+    "ageMax": 16,
+    "sex": "any",
+    "title": "谷中村の廃村",
+    "text": "鉱毒の水をためる遊水地をつくるため、谷中村が廃村となり、隣の町に合わされた。立ち退きを拒んで残った家もあった。",
+    "probability": 0.1,
+    "probNote": "目安",
+    "source": {
+      "title": "コトバンク 足尾鉱毒事件",
+      "url": "https://kotobank.jp/word/%E8%B6%B3%E5%B0%BE%E9%89%B1%E6%AF%92%E4%BA%8B%E4%BB%B6-25196",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-085",
+    "key": "mt-nobi-1891",
+    "category": "pref",
+    "year": 1891,
+    "month": 10,
+    "prefs": [
+      21,
+      23
+    ],
+    "ageMin": 0,
+    "ageMax": 1,
+    "sex": "any",
+    "title": "濃尾地震",
+    "text": "10月28日の朝、岐阜県を震源とするM8.0の大地震が起き、岐阜と愛知を中心に7,273人が亡くなった。幼くて覚えていないが、家族は家が倒れたと何度も話した。",
+    "effects": {
+      "happiness": -2,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.003,
+        "cause": "地震",
+        "note": "死者7,273人÷岐阜・愛知の人口約340万人（未確認）≒0.2%を、被害の大きい地域に住む割合で割り戻した目安"
+      }
+    },
+    "probability": 0.5,
+    "probNote": "目安。美濃西部から尾張北西部の被害の大きい地域に住む割合",
+    "heavy": true,
+    "source": {
+      "title": "気象庁 名古屋地方気象台 東海地方に被害を及ぼした主な地震",
+      "url": "https://www.data.jma.go.jp/nagoya/shosai/chara/kiroku_jishin.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-086",
+    "key": "mt-meiji-sanriku-1896",
+    "category": "pref",
+    "year": 1896,
+    "month": 6,
+    "prefs": [
+      3
+    ],
+    "ageMin": 0,
+    "ageMax": 6,
+    "sex": "any",
+    "title": "明治三陸津波",
+    "text": "6月15日の夜、三陸沖の地震のあと大津波が沿岸を襲い、岩手県だけで約1万8千人が亡くなった。家族や近所の人を亡くした家が多かった。",
+    "effects": {
+      "happiness": -6,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.08,
+        "cause": "津波",
+        "note": "岩手県の死者約1万8千人÷沿岸部の人口（県人口約70万人の3割弱と置いた。未確認）"
+      }
+    },
+    "probability": 0.25,
+    "probNote": "目安。県民のうち沿岸部に住む割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府 災害教訓の継承 1896 明治三陸地震津波",
+      "url": "https://www.bousai.go.jp/kyoiku/kyokun/kyoukunnokeishou/rep/1896_meiji_sanriku_jishintsunami/pdf/1896-meiji-sanrikuJISHINTSUNAMI_14_sheet.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-087",
+    "key": "mt-meiji-sanriku-1896",
+    "category": "pref",
+    "year": 1896,
+    "month": 6,
+    "prefs": [
+      4,
+      2
+    ],
+    "ageMin": 0,
+    "ageMax": 6,
+    "sex": "any",
+    "title": "明治三陸津波",
+    "text": "6月15日の夜、三陸沖の地震のあと大津波が太平洋岸を襲った。死者は全体で約2万2千人、宮城で約3,500人、青森で約300人とされる。",
+    "effects": {
+      "happiness": -4,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.02,
+        "cause": "津波",
+        "note": "宮城の死者約3,500人÷沿岸部の人口（未確認）の目安"
+      }
+    },
+    "probability": 0.15,
+    "probNote": "目安。県民のうち三陸沿岸に住む割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府 災害教訓の継承 1896 明治三陸地震津波",
+      "url": "https://www.bousai.go.jp/kyoiku/kyokun/kyoukunnokeishou/rep/1896_meiji_sanriku_jishintsunami/pdf/1896-meiji-sanrikuJISHINTSUNAMI_14_sheet.pdf",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-088",
+    "key": "mt-yawata-1901",
+    "category": "pref",
+    "year": 1901,
+    "month": 2,
+    "prefs": [
+      40
+    ],
+    "ageMin": 5,
+    "ageMax": 11,
+    "sex": "any",
+    "title": "八幡製鉄所",
+    "text": "2月、八幡に官営の製鉄所ができ、高炉に火が入った。それまで静かだった村に、煙突と大勢の働く人が集まってきた。鉄を作る町として、八幡はみるみる大きくなった。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.2,
+    "probNote": "目安",
+    "source": {
+      "title": "北九州市 東田第一高炉史跡広場",
+      "url": "https://www.city.kitakyushu.lg.jp/yahatahigashi/file_0009.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-089",
+    "key": "mt-yawata-work",
+    "category": "pref",
+    "year": 1910,
+    "endYear": 1929,
+    "prefs": [
+      40
+    ],
+    "ageMin": 15,
+    "ageMax": 35,
+    "sex": "male",
+    "title": "製鉄所で働いた",
+    "text": "八幡の製鉄所で職工として働いた。真っ赤な鉄の熱で顔がほてり、交代の笛が鳴ると、汗をぬぐって家路についた。製鉄所の社宅に住み、共同の浴場や購買所を使った。",
+    "effects": {
+      "health": -1,
+      "money": 20
+    },
+    "probability": 0.03,
+    "probNote": "目安",
+    "source": {
+      "title": "北九州市 東田第一高炉史跡広場",
+      "url": "https://www.city.kitakyushu.lg.jp/yahatahigashi/file_0009.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-090",
+    "key": "mt-sakurajima-1914",
+    "category": "pref",
+    "year": 1914,
+    "month": 1,
+    "prefs": [
+      46
+    ],
+    "ageMin": 0,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "桜島の大噴火",
+    "text": "1月12日、桜島が大噴火し、続いて大きな地震も起きた。死者・行方不明者は58人。流れ出た溶岩が海峡を埋め、桜島は大隅半島と陸続きになった。",
+    "effects": {
+      "happiness": -3,
+      "flags": [
+        "disaster_survivor"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安。灰が降った地域に住む割合",
+    "heavy": true,
+    "source": {
+      "title": "内閣府 日本の火山 vol.01 桜島",
+      "url": "https://www.bousai.go.jp/kohou/kouhoubousai/h20/05/volcano.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-091",
+    "key": "mt-sakurajima-1914",
+    "category": "pref",
+    "year": 1914,
+    "month": 1,
+    "prefs": [
+      46
+    ],
+    "ageMin": 13,
+    "ageMax": 24,
+    "sex": "any",
+    "title": "桜島の大噴火",
+    "text": "1月12日、桜島が大噴火した。島の人々は対岸へ避難し、鹿児島の町にも灰が降り積もった。死者・行方不明者は58人。溶岩で桜島は大隅半島とつながった。",
+    "effects": {
+      "happiness": -3,
+      "flags": [
+        "disaster_survivor"
+      ]
+    },
+    "probability": 0.5,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府 日本の火山 vol.01 桜島",
+      "url": "https://www.bousai.go.jp/kohou/kouhoubousai/h20/05/volcano.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-092",
+    "key": "mt-tokyo-station-1914",
+    "category": "pref",
+    "year": 1914,
+    "month": 12,
+    "prefs": [
+      13,
+      11,
+      12,
+      14
+    ],
+    "ageMin": 6,
+    "ageMax": 24,
+    "sex": "any",
+    "title": "東京駅ができた",
+    "text": "12月20日、赤れんがの東京駅が開業し、東海道線の起点が新橋から移った。見物に行くと、横に長い駅舎に人がひっきりなしに出入りしていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.2,
+    "probNote": "目安",
+    "source": {
+      "title": "nippon.com 今日は何の日 12月20日（1914年、東京駅開業）",
+      "url": "https://www.nippon.com/ja/japan-topics/today1220/",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-093",
+    "key": "mt-shiden-tokyo-1911",
+    "category": "pref",
+    "year": 1911,
+    "endYear": 1929,
+    "prefs": [
+      13
+    ],
+    "ageMin": 6,
+    "ageMax": 39,
+    "sex": "any",
+    "title": "市電に乗った",
+    "text": "1911年、東京の路面電車は市営になり「市電」と呼ばれた。チンチンと鐘を鳴らして走る電車に乗ると、浅草も銀座もすぐだった。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.1,
+    "probNote": "目安",
+    "source": {
+      "title": "東京都交通局 都電のあゆみ",
+      "url": "https://www.kotsu.metro.tokyo.jp/about/ayumi/toden.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-094",
+    "key": "mt-shiden-osaka",
+    "category": "pref",
+    "year": 1903,
+    "endYear": 1929,
+    "prefs": [
+      27
+    ],
+    "ageMin": 6,
+    "ageMax": 39,
+    "sex": "any",
+    "title": "大阪の市電",
+    "text": "大阪では市営の電車が走っていた。築港から延びた線は町じゅうに広がり、通勤や買い物に欠かせなくなった。電車の窓から見る大阪の町は、年ごとに大きくなった。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.08,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（1903年 大阪市電開業）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-095",
+    "key": "mt-kyoto-densha",
+    "category": "pref",
+    "year": 1895,
+    "endYear": 1910,
+    "prefs": [
+      26
+    ],
+    "ageMin": 5,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "京都の電車",
+    "text": "京都では、日本で最初の電車が走っていた。前を行く子どもが「電車が来るぞ」と知らせて回る姿があった。電車は珍しく、乗るだけで一日の楽しみになった。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.08,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（1895年 京都電気鉄道開業）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-096",
+    "key": "mt-subway-1927",
+    "category": "pref",
+    "year": 1927,
+    "month": 12,
+    "prefs": [
+      13
+    ],
+    "ageMin": 6,
+    "ageMax": 37,
+    "sex": "any",
+    "title": "地下鉄が開通",
+    "text": "12月30日、上野と浅草の間、約2.2kmに東洋初の地下鉄が開業した。運賃は10銭均一。地面の下を電車が走ると聞いて、行列に並んで乗った。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.2,
+    "probNote": "目安",
+    "source": {
+      "title": "JAF Mate 12月30日は「地下鉄記念日」",
+      "url": "https://jafmate.jp/car/car_anniversary_20251230.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-097",
+    "key": "mt-kanto-1923",
+    "category": "pref",
+    "year": 1923,
+    "month": 9,
+    "prefs": [
+      13,
+      14
+    ],
+    "ageMin": 0,
+    "ageMax": 5,
+    "sex": "any",
+    "title": "関東大震災",
+    "text": "9月1日の昼前、相模湾北西部を震源とするM7.9の地震が起き、東京と横浜は火災で焼けた。死者・行方不明者は約10万5千人。幼くて覚えていないが、家は焼けたと聞いた。",
+    "effects": {
+      "happiness": -5,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.015,
+        "cause": "震災",
+        "note": "死者・行方不明者約10万5千人÷東京府・神奈川県の人口約590万人（未確認）≒1.8%。千葉・埼玉などはこれより少ない"
+      }
+    },
+    "probability": 0.6,
+    "probNote": "目安。住家の被害は約37万棟",
+    "heavy": true,
+    "source": {
+      "title": "内閣府 防災白書 令和5年版（関東大震災から100年）",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/r05/honbun/t1_1s_01_00.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-098",
+    "key": "mt-kanto-1923",
+    "category": "pref",
+    "year": 1923,
+    "month": 9,
+    "prefs": [
+      13,
+      14
+    ],
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "関東大震災",
+    "text": "9月1日の昼前、大きな地震が起き、東京と横浜は火災で焼けた。死者・行方不明者は約10万5千人で、その多くは火災によるものだった。家族と知り合いの家に身を寄せ、学校はしばらく焼け跡のバラックで続いた。",
+    "effects": {
+      "happiness": -8,
+      "health": -2,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.015,
+        "cause": "震災",
+        "note": "死者・行方不明者約10万5千人÷東京府・神奈川県の人口約590万人（未確認）≒1.8%。千葉・埼玉などはこれより少ない"
+      }
+    },
+    "probability": 0.6,
+    "probNote": "目安。住家の被害は約37万棟",
+    "heavy": true,
+    "source": {
+      "title": "内閣府 防災白書 令和5年版（関東大震災から100年）",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/r05/honbun/t1_1s_01_00.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-099",
+    "key": "mt-kanto-1923",
+    "category": "pref",
+    "year": 1923,
+    "month": 9,
+    "prefs": [
+      13,
+      14
+    ],
+    "ageMin": 13,
+    "ageMax": 29,
+    "sex": "any",
+    "title": "関東大震災",
+    "text": "9月1日、関東大震災が起きた。死者・行方不明者は約10万5千人、全半壊や焼失した家は約37万棟。勤め先も住まいも失い、しばらく郊外の親類を頼った。",
+    "effects": {
+      "happiness": -8,
+      "health": -2,
+      "money": -50,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.015,
+        "cause": "震災",
+        "note": "死者・行方不明者約10万5千人÷東京府・神奈川県の人口約590万人（未確認）≒1.8%。千葉・埼玉などはこれより少ない"
+      }
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府 防災白書 令和5年版（関東大震災から100年）",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/r05/honbun/t1_1s_01_00.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-100",
+    "key": "mt-kanto-1923",
+    "category": "pref",
+    "year": 1923,
+    "month": 9,
+    "prefs": [
+      13,
+      14
+    ],
+    "ageMin": 30,
+    "ageMax": 33,
+    "sex": "any",
+    "title": "関東大震災",
+    "text": "9月1日、関東大震災が起きた。死者・行方不明者は約10万5千人。家と商売の道具を失い、家族の暮らしを一から立て直すことになった。",
+    "effects": {
+      "happiness": -8,
+      "money": -100,
+      "flags": [
+        "disaster_survivor"
+      ],
+      "death": {
+        "prob": 0.015,
+        "cause": "震災",
+        "note": "死者・行方不明者約10万5千人÷東京府・神奈川県の人口約590万人（未確認）≒1.8%。千葉・埼玉などはこれより少ない"
+      }
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府 防災白書 令和5年版（関東大震災から100年）",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/r05/honbun/t1_1s_01_00.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-101",
+    "key": "mt-kanto-near-1923",
+    "category": "pref",
+    "year": 1923,
+    "month": 9,
+    "prefs": [
+      12,
+      11,
+      22,
+      19
+    ],
+    "ageMin": 6,
+    "ageMax": 33,
+    "sex": "any",
+    "title": "関東大震災",
+    "text": "9月1日、関東一帯を大地震が襲った。こちらでも家が傾き、東京から焼け出された人々が親類を頼って次々にやってきた。",
+    "effects": {
+      "happiness": -4,
+      "flags": [
+        "disaster_survivor"
+      ]
+    },
+    "probability": 0.6,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "内閣府 防災白書 令和5年版（関東大震災から100年）",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/r05/honbun/t1_1s_01_00.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-102",
+    "key": "mt-fukko-1924",
+    "category": "pref",
+    "year": 1924,
+    "endYear": 1929,
+    "prefs": [
+      13,
+      14
+    ],
+    "ageMin": 8,
+    "ageMax": 39,
+    "sex": "any",
+    "title": "帝都の復興",
+    "text": "焼け跡に区画整理で広い道が通り、鉄筋の小学校や公園、アパートができていった。下町を離れて郊外に移り住む人も増えた。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.2,
+    "probNote": "目安",
+    "source": {
+      "title": "内閣府 防災白書 令和5年版（関東大震災から100年）",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/r05/honbun/t1_1s_01_00.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-103",
+    "key": "mt-kitatango-1927",
+    "category": "pref",
+    "year": 1927,
+    "month": 3,
+    "prefs": [
+      26
+    ],
+    "ageMin": 0,
+    "ageMax": 37,
+    "sex": "any",
+    "title": "北丹後地震",
+    "text": "3月7日の夕方、丹後半島で大きな地震があり、多くの家が倒れて燃えた。死者は約2,900人とされる。丹後ちりめんの機場も大きな被害を受けた。",
+    "effects": {
+      "happiness": -4,
+      "flags": [
+        "disaster_survivor"
+      ]
+    },
+    "probability": 0.15,
+    "probNote": "目安。丹後地方に住む割合",
+    "heavy": true,
+    "source": {
+      "title": "一般的な年表（1927年 北丹後地震）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-104",
+    "key": "mt-kitatajima-1925",
+    "category": "pref",
+    "year": 1925,
+    "month": 5,
+    "prefs": [
+      28
+    ],
+    "ageMin": 0,
+    "ageMax": 35,
+    "sex": "any",
+    "title": "北但馬地震",
+    "text": "5月、但馬地方で大きな地震があり、城崎の温泉街などが火事で焼けた。死者は400人あまりとされる。地震のあと、温泉街は燃えにくい町並みに建て直された。",
+    "effects": {
+      "happiness": -3,
+      "flags": [
+        "disaster_survivor"
+      ]
+    },
+    "probability": 0.08,
+    "probNote": "目安。但馬地方に住む割合",
+    "heavy": true,
+    "source": {
+      "title": "一般的な年表（1925年 北但馬地震）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-105",
+    "key": "mt-rail-tohoku-1891",
+    "category": "pref",
+    "year": 1891,
+    "prefs": [
+      7,
+      4,
+      3,
+      2
+    ],
+    "ageMin": 0,
+    "ageMax": 1,
+    "sex": "any",
+    "title": "上野から青森まで汽車",
+    "text": "9月、上野から青森までの鉄道が全通した。幼くて覚えていないが、村の近くを汽車が通るようになったと、家族は後々まで話していた。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.3,
+    "probNote": "目安。沿線に住み、開通を実感した割合",
+    "source": {
+      "title": "一般的な鉄道年表",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-106",
+    "key": "mt-rail-sanyo-1901",
+    "category": "pref",
+    "year": 1901,
+    "prefs": [
+      28,
+      33,
+      34,
+      35
+    ],
+    "ageMin": 5,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "山陽鉄道の全通",
+    "text": "神戸から下関まで、山陽鉄道が全通した。駅に急行が止まるたび、見物の子どもたちが柵にしがみついて眺めた。駅の近くに宿屋や商店が増えていった。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.3,
+    "probNote": "目安。沿線に住み、開通を実感した割合",
+    "source": {
+      "title": "一般的な鉄道年表",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-107",
+    "key": "mt-rail-ou-1905",
+    "category": "pref",
+    "year": 1905,
+    "prefs": [
+      7,
+      6,
+      5,
+      2
+    ],
+    "ageMin": 5,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "奥羽線の全通",
+    "text": "福島から山形・秋田を通って青森まで、奥羽線がつながった。雪深い山あいにも汽車が通い、東京が近くなった。遠い親類の家にも、汽車で一日で行けるようになった。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.3,
+    "probNote": "目安。沿線に住み、開通を実感した割合",
+    "source": {
+      "title": "一般的な鉄道年表",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-108",
+    "key": "mt-rail-hokkaido-1905",
+    "category": "pref",
+    "year": 1905,
+    "prefs": [
+      1
+    ],
+    "ageMin": 5,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "函館から旭川へ",
+    "text": "函館と旭川の間が汽車で結ばれた。開拓地で採れた米や木材が、汽車で港へ運ばれるようになった。駅ができると、そのまわりに新しい町が生まれた。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.3,
+    "probNote": "目安。沿線に住み、開通を実感した割合",
+    "source": {
+      "title": "一般的な鉄道年表",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-109",
+    "key": "mt-rail-kyushu-1909",
+    "category": "pref",
+    "year": 1909,
+    "prefs": [
+      40,
+      41,
+      43,
+      46
+    ],
+    "ageMin": 5,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "鹿児島まで汽車",
+    "text": "門司から熊本を経て鹿児島までの線がつながった。九州の南の端まで、汽車で行けるようになった。駅には遠くの町から来た人や品物があふれた。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.3,
+    "probNote": "目安。沿線に住み、開通を実感した割合",
+    "source": {
+      "title": "一般的な鉄道年表",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-110",
+    "key": "mt-rail-chuo-1911",
+    "category": "pref",
+    "year": 1911,
+    "prefs": [
+      13,
+      19,
+      20,
+      21,
+      23
+    ],
+    "ageMin": 5,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "中央線の全通",
+    "text": "東京から甲府・塩尻を通って名古屋まで、中央線がつながった。山国の村から都会へ出るのがずっと楽になった。沿線の製糸場の糸も、汽車で横浜へ運ばれた。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.3,
+    "probNote": "目安。沿線に住み、開通を実感した割合",
+    "source": {
+      "title": "一般的な鉄道年表",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-111",
+    "key": "mt-rail-kokuyu-1906",
+    "category": "national",
+    "year": 1906,
+    "ageMin": 10,
+    "ageMax": 16,
+    "sex": "any",
+    "title": "鉄道の国有化",
+    "text": "鉄道国有法ができ、日本鉄道や山陽鉄道など17の私鉄が国のものになった。駅の看板や切符が少しずつ変わっていった。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.2,
+    "probNote": "目安。沿線に住み、開通を実感した割合",
+    "source": {
+      "title": "Wikipedia英語版 Railway Nationalization Act",
+      "url": "https://en.wikipedia.org/wiki/Railway_Nationalization_Act",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-112",
+    "key": "mt-rail-hokuriku-1913",
+    "category": "pref",
+    "year": 1913,
+    "prefs": [
+      25,
+      18,
+      17,
+      16,
+      15
+    ],
+    "ageMin": 5,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "北陸線の全通",
+    "text": "米原から金沢・富山を通って直江津まで、北陸線がつながった。雪の季節でも都会に出られるようになった。駅のホームは見物の人でいっぱいだった。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.3,
+    "probNote": "目安。沿線に住み、開通を実感した割合",
+    "source": {
+      "title": "一般的な鉄道年表",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-113",
+    "key": "mt-rail-nippo-1923",
+    "category": "pref",
+    "year": 1923,
+    "prefs": [
+      40,
+      44,
+      45,
+      46
+    ],
+    "ageMin": 5,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "日豊線の全通",
+    "text": "小倉から大分・宮崎を通って鹿児島へ、日豊線がつながった。宮崎の町にも汽車で人と品物が届くようになった。これで九州をぐるりと汽車で回れるようになった。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.3,
+    "probNote": "目安。沿線に住み、開通を実感した割合",
+    "source": {
+      "title": "一般的な鉄道年表",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-114",
+    "key": "mt-rail-uetsu-1924",
+    "category": "pref",
+    "year": 1924,
+    "prefs": [
+      15,
+      6,
+      5
+    ],
+    "ageMin": 5,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "羽越線の全通",
+    "text": "新潟から日本海沿いに秋田まで、羽越線がつながった。海沿いの町と町が汽車で結ばれた。これで東京から日本海側を通って青森まで、汽車がつながった。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.3,
+    "probNote": "目安。沿線に住み、開通を実感した割合",
+    "source": {
+      "title": "一般的な鉄道年表",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-115",
+    "key": "mt-hakurankai-osaka-1903",
+    "category": "pref",
+    "year": 1903,
+    "prefs": [
+      27,
+      28,
+      26,
+      29,
+      30
+    ],
+    "ageMin": 5,
+    "ageMax": 13,
+    "sex": "any",
+    "title": "大阪の内国勧業博覧会",
+    "text": "大阪の天王寺で第5回内国勧業博覧会が開かれた。夜になるとイルミネーションで会場が光り、外国の品物や機械に目を丸くした。",
+    "effects": {
+      "happiness": 3,
+      "knowledge": 1
+    },
+    "probability": 0.2,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（1903年 第5回内国勧業博覧会）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-116",
+    "key": "mt-hakurankai-tokyo-1914",
+    "category": "pref",
+    "year": 1914,
+    "prefs": [
+      13,
+      11,
+      12,
+      14
+    ],
+    "ageMin": 6,
+    "ageMax": 24,
+    "sex": "any",
+    "title": "東京大正博覧会",
+    "text": "上野で東京大正博覧会が開かれ、会場には日本で初めてというエスカレーターも動いていた。人の多さに驚いた。帰りに買ってもらった絵はがきを、長く大事にしていた。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.2,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（1914年 東京大正博覧会）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-117",
+    "key": "mt-ryounkaku",
+    "category": "pref",
+    "year": 1891,
+    "endYear": 1922,
+    "prefs": [
+      13
+    ],
+    "ageMin": 5,
+    "ageMax": 32,
+    "sex": "any",
+    "title": "浅草十二階",
+    "text": "浅草の凌雲閣、通称「十二階」に上った。電動の昇降機で上がった先から、東京の町が一望できた。十二階は関東大震災で壊れた。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.04,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（1890年 凌雲閣開業）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-118",
+    "key": "mt-katsudo",
+    "category": "culture",
+    "year": 1903,
+    "endYear": 1929,
+    "ageMin": 6,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "活動写真",
+    "text": "町の小屋で活動写真を見た。弁士の語りに合わせて、白い幕の上で人が動いた。帰り道はチャンバラのまねをして遊んだ。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.1,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（活動写真の常設館）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-119",
+    "key": "mt-katsudo",
+    "category": "culture",
+    "year": 1903,
+    "endYear": 1929,
+    "ageMin": 16,
+    "ageMax": 39,
+    "sex": "any",
+    "title": "活動写真館",
+    "text": "休みの日に活動写真館へ通った。人気の弁士が出る日は満員で、楽士の生演奏に合わせて、外国の喜劇に腹をかかえて笑った。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.1,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（活動写真）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-120",
+    "key": "mt-tetsudo-shoka",
+    "category": "culture",
+    "year": 1900,
+    "endYear": 1910,
+    "ageMin": 6,
+    "ageMax": 14,
+    "sex": "any",
+    "title": "『鉄道唱歌』",
+    "text": "1900年にできた『鉄道唱歌』がはやり、駅の名前を順に歌って覚えた。行ったことのない土地の名前に胸がおどった。",
+    "effects": {
+      "happiness": 2,
+      "knowledge": 1
+    },
+    "probability": 0.2,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（1900年『鉄道唱歌』）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-121",
+    "key": "mt-shoka",
+    "category": "culture",
+    "year": 1911,
+    "endYear": 1929,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "文部省唱歌",
+    "text": "学校で『尋常小学唱歌』の歌を習った。オルガンの伴奏で、四季や故郷を歌う歌を声をそろえて歌った。家に帰っても、覚えた歌を口ずさんでいた。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.15,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（1911年『尋常小学唱歌』）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-122",
+    "key": "mt-shonen-zasshi",
+    "category": "culture",
+    "year": 1914,
+    "endYear": 1929,
+    "ageMin": 8,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "少年雑誌",
+    "text": "『少年倶楽部』を友だちと回し読みした。冒険小説や付録が楽しみで、発売日が待ちきれなかった。読み終わると、付録の組み立て模型に夢中になった。",
+    "effects": {
+      "happiness": 2,
+      "knowledge": 1
+    },
+    "probability": 0.08,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（1914年『少年倶楽部』創刊）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-123",
+    "key": "mt-akai-tori",
+    "category": "culture",
+    "year": 1918,
+    "endYear": 1929,
+    "ageMin": 6,
+    "ageMax": 12,
+    "sex": "any",
+    "conditions": {
+      "familyClass": [
+        3,
+        4,
+        5
+      ]
+    },
+    "title": "『赤い鳥』",
+    "text": "童話と童謡の雑誌『赤い鳥』を親が買ってくれた。作家が子どものために書いた話を、寝る前に何度も読んだ。自分でも童謡や綴り方を書いて投稿してみた。",
+    "effects": {
+      "knowledge": 2,
+      "happiness": 1
+    },
+    "probability": 0.06,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（1918年『赤い鳥』創刊）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-124",
+    "key": "mt-tachikawa-bunko",
+    "category": "culture",
+    "year": 1911,
+    "endYear": 1925,
+    "ageMin": 9,
+    "ageMax": 16,
+    "sex": "any",
+    "title": "立川文庫",
+    "text": "小さな本の立川文庫で、忍者や豪傑の話を読みふけった。貸本屋で一冊借りては、次の巻を探した。先生に見つかると取り上げられるので、こっそり読んだ。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.08,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（立川文庫）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-125",
+    "key": "mt-king-1925",
+    "category": "culture",
+    "year": 1925,
+    "endYear": 1929,
+    "ageMin": 15,
+    "ageMax": 39,
+    "sex": "any",
+    "title": "雑誌『キング』",
+    "text": "1925年に出た大衆雑誌『キング』を買った。小説から実用記事まで何でも載っていて、たちまち百万部を超えたと評判だった。",
+    "effects": {
+      "happiness": 1,
+      "knowledge": 1
+    },
+    "probability": 0.08,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（1925年『キング』創刊）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-126",
+    "key": "mt-enpon-1926",
+    "category": "culture",
+    "year": 1926,
+    "endYear": 1929,
+    "ageMin": 18,
+    "ageMax": 39,
+    "sex": "any",
+    "title": "円本",
+    "text": "1冊1円の全集「円本」が大流行した。予約して毎月届く本が、狭い部屋の棚に少しずつ並んでいった。本が手の届く値段になり、読書が身近になった。",
+    "effects": {
+      "knowledge": 2
+    },
+    "probability": 0.05,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（円本ブーム）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-127",
+    "key": "mt-asakusa-opera",
+    "category": "culture",
+    "year": 1917,
+    "endYear": 1923,
+    "prefs": [
+      13,
+      11,
+      12,
+      14
+    ],
+    "ageMin": 14,
+    "ageMax": 30,
+    "sex": "any",
+    "title": "浅草オペラ",
+    "text": "浅草の劇場で、歌と踊りの「浅草オペラ」を見た。若い客が役者に声をかけて熱狂していた。ブームは震災で終わった。帰り道、覚えたての歌を仲間と口ずさんだ。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.05,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（浅草オペラ）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-128",
+    "key": "mt-takarazuka",
+    "category": "culture",
+    "year": 1914,
+    "endYear": 1929,
+    "prefs": [
+      27,
+      28,
+      26
+    ],
+    "ageMin": 8,
+    "ageMax": 30,
+    "sex": "any",
+    "title": "宝塚少女歌劇",
+    "text": "宝塚の温泉地で始まった少女歌劇を見に行った。娘たちが歌い踊る舞台に、客席の子どもも大人も見とれた。帰ってからも、舞台の歌が耳から離れなかった。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.04,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（1914年 宝塚少女歌劇初公演）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-129",
+    "key": "mt-yakyu",
+    "category": "culture",
+    "year": 1915,
+    "endYear": 1929,
+    "ageMin": 10,
+    "ageMax": 20,
+    "sex": "male",
+    "title": "中等学校野球",
+    "text": "全国中等学校優勝野球大会の結果を新聞で追った。1924年には甲子園に大きな球場ができた。空き地で三角ベースに明け暮れた。",
+    "effects": {
+      "happiness": 2,
+      "health": 1
+    },
+    "probability": 0.1,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（1915年 全国中等学校優勝野球大会、1924年 甲子園球場）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-130",
+    "key": "mt-koshien",
+    "category": "culture",
+    "year": 1924,
+    "endYear": 1929,
+    "prefs": [
+      28,
+      27
+    ],
+    "ageMin": 10,
+    "ageMax": 39,
+    "sex": "any",
+    "title": "甲子園球場",
+    "text": "甲子園の大球場で中等学校野球を見た。大観衆の歓声が地鳴りのように響いていた。1924年にできた球場は、当時、東洋一の大きさといわれた。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.05,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（1924年 甲子園球場）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-131",
+    "key": "mt-cafe",
+    "category": "culture",
+    "year": 1911,
+    "endYear": 1929,
+    "prefs": [
+      13,
+      14,
+      27,
+      28,
+      26,
+      23
+    ],
+    "ageMin": 18,
+    "ageMax": 39,
+    "sex": "any",
+    "title": "カフェー",
+    "text": "銀座のカフェーで、白いエプロンの女給にコーヒーを運んでもらった。洋楽のレコードが流れ、文士や学生がたむろしていた。",
+    "effects": {
+      "happiness": 2,
+      "money": -2
+    },
+    "probability": 0.05,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（1911年 カフェー・プランタン開業）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-132",
+    "key": "mt-mogamobo",
+    "category": "culture",
+    "year": 1926,
+    "endYear": 1929,
+    "prefs": [
+      13,
+      14,
+      27,
+      28
+    ],
+    "ageMin": 16,
+    "ageMax": 30,
+    "sex": "any",
+    "title": "モガ・モボ",
+    "text": "断髪に洋装のモダンガール、山高帽にステッキのモダンボーイが銀座を歩いていた。「モガ」「モボ」と呼ばれ、新聞は物珍しげに書き立てた。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.1,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（モダンガール・モダンボーイ）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-133",
+    "key": "mt-ginbura",
+    "category": "culture",
+    "year": 1915,
+    "endYear": 1929,
+    "prefs": [
+      13
+    ],
+    "ageMin": 15,
+    "ageMax": 39,
+    "sex": "any",
+    "title": "銀ブラ",
+    "text": "休日に銀座をぶらぶら歩く「銀ブラ」をした。ショーウインドーをのぞき、喫茶店で一休みするのが楽しみだった。人の流れに乗って歩くだけで、都会に暮らしている気がした。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.06,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（銀ブラ）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-134",
+    "key": "mt-depart-1904",
+    "category": "culture",
+    "year": 1904,
+    "endYear": 1915,
+    "prefs": [
+      13,
+      27
+    ],
+    "ageMin": 6,
+    "ageMax": 25,
+    "sex": "any",
+    "title": "デパートメントストア",
+    "text": "1904年、日本橋の呉服店が「デパートメントストア宣言」をして、品物を並べて売る新しい店に変わった。座敷に上がらなくても品物が見られるのに驚いた。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.08,
+    "probNote": "目安",
+    "source": {
+      "title": "社史で見る 三越 デパートメントストア宣言（1904年）",
+      "url": "https://the-shashi.com/tse/8231/decisions/department-store-declaration-1904/",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-135",
+    "key": "mt-depart-1920s",
+    "category": "culture",
+    "year": 1920,
+    "endYear": 1929,
+    "prefs": [
+      13,
+      14,
+      27,
+      28,
+      23,
+      26,
+      40
+    ],
+    "ageMin": 5,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "デパートの食堂",
+    "text": "親に連れられてデパートへ行き、食堂でお子様向けの洋食を食べた。屋上から見下ろす町が小さく見えた。デパートに行く日は、朝からよそ行きの服を着せられた。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.08,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（大正・昭和初期の百貨店）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-136",
+    "key": "mt-depart-1920s",
+    "category": "culture",
+    "year": 1920,
+    "endYear": 1929,
+    "prefs": [
+      13,
+      14,
+      27,
+      28,
+      23,
+      26,
+      40
+    ],
+    "ageMin": 16,
+    "ageMax": 39,
+    "sex": "any",
+    "title": "デパートで買い物",
+    "text": "震災のあと、デパートは下足のまま入れるようになり、普段着の客も気軽に行けるようになった。休みの日の楽しみになった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.06,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（大正・昭和初期の百貨店）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-137",
+    "key": "mt-radio-taiso-1928",
+    "category": "culture",
+    "year": 1928,
+    "endYear": 1929,
+    "month": 11,
+    "ageMin": 6,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "ラジオ体操",
+    "text": "1928年11月、ラジオ体操の放送が始まった。ラジオのある家や学校で、号令に合わせて手足を動かした。夏休みには町内で朝の体操に集まった。",
+    "effects": {
+      "health": 1
+    },
+    "probability": 0.1,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（1928年 ラジオ体操放送開始）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-138",
+    "key": "mt-chikuonki",
+    "category": "culture",
+    "year": 1910,
+    "endYear": 1929,
+    "ageMin": 10,
+    "ageMax": 39,
+    "sex": "any",
+    "title": "蓄音機",
+    "text": "ゼンマイを巻いて鳴らす蓄音機で、レコードを聴いた。ラッパの口から浪花節の声が流れ出すと、家じゅうが集まってきた。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.04,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な生活史（蓄音機とレコード）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-139",
+    "key": "mt-naniwabushi",
+    "category": "culture",
+    "year": 1905,
+    "endYear": 1929,
+    "ageMin": 10,
+    "ageMax": 39,
+    "sex": "any",
+    "title": "浪花節",
+    "text": "浪花節の寄席に通った。三味線に合わせてうなる節回しに、客席の大人たちが涙ぐんでいた。好きな演目の節回しは、すっかり口まねできるようになった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.05,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（明治末〜大正の浪花節）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-140",
+    "key": "mt-dagashi",
+    "category": "culture",
+    "year": 1890,
+    "endYear": 1929,
+    "ageMin": 4,
+    "ageMax": 11,
+    "sex": "any",
+    "title": "駄菓子屋とめんこ",
+    "text": "一銭玉を握って駄菓子屋に通った。路地でめんこやベーゴマ、凧あげに日が暮れるまで夢中になった。夕方、母の呼ぶ声がするまで家に帰らなかった。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.1,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な生活史（明治・大正の子どもの遊び）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-141",
+    "key": "mt-kamishibai-tachie",
+    "category": "culture",
+    "year": 1910,
+    "endYear": 1929,
+    "ageMin": 4,
+    "ageMax": 11,
+    "sex": "any",
+    "title": "立ち絵の紙芝居",
+    "text": "路地にやってきた紙芝居のおじさんから水あめを買い、立ち絵の芝居を見た。続きが気になって、翌日も同じ場所で待った。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.06,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な生活史（紙芝居の前身）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-142",
+    "key": "mt-nisshin-taiwan-1895",
+    "category": "national",
+    "year": 1895,
+    "endYear": 1896,
+    "ageMin": 4,
+    "ageMax": 6,
+    "sex": "any",
+    "title": "戦争のあと",
+    "text": "日清戦争のあと、戦地から帰った兵隊さんの話を近所で聞いた。勝ち戦の話ばかりではなく、病気で戻らなかった人もいたという。",
+    "probability": 0.2,
+    "probNote": "目安",
+    "heavy": true,
+    "source": {
+      "title": "世界史の窓 下関条約",
+      "url": "https://y-history.net/appendix/wh1303-144.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-143",
+    "key": "mt-gashin-1895",
+    "category": "national",
+    "year": 1896,
+    "endYear": 1903,
+    "ageMin": 6,
+    "ageMax": 13,
+    "sex": "any",
+    "title": "臥薪嘗胆",
+    "text": "遼東半島を返したくやしさから、「臥薪嘗胆」という言葉を大人たちがよく口にした。学校でもロシアに負けるなと教えられた。",
+    "probability": 0.2,
+    "probNote": "目安",
+    "source": {
+      "title": "世界史の窓 下関条約",
+      "url": "https://y-history.net/appendix/wh1303-144.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-144",
+    "key": "mt-nichiro-father-1904",
+    "category": "national",
+    "year": 1904,
+    "month": 2,
+    "ageMin": 0,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "父の出征",
+    "text": "父に召集の知らせが来て、日露戦争に出征した。駅で旗を振って見送ったあと、家の仕事は母と祖父母の肩にかかった。日露戦争には約100万人が動員された。",
+    "effects": {
+      "happiness": -4,
+      "flags": [
+        "father_soldier"
+      ]
+    },
+    "probability": 0.08,
+    "probNote": "目安。動員は約100万人",
+    "heavy": true,
+    "source": {
+      "title": "世界史の窓 日露戦争の戦費と外債",
+      "url": "https://y-history.net/appendix/wh1403-039.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-145",
+    "key": "mt-nichiro-father-back-1905",
+    "category": "national",
+    "year": 1906,
+    "ageMin": 2,
+    "ageMax": 17,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "father_soldier"
+      ],
+      "notFlags": [
+        "father_war_dead"
+      ]
+    },
+    "title": "父が帰ってきた",
+    "text": "戦争が終わり、父が戦地から帰ってきた。やせて日に焼けた顔を見ても、すぐには父だと分からなかった。その晩は親類が集まって、無事を祝った。",
+    "effects": {
+      "happiness": 5,
+      "relation": 2,
+      "flags": [
+        "father_returned"
+      ]
+    },
+    "probability": 0.95,
+    "probNote": "戦死の判定（1905年）を経た人のうち、ほとんどが帰還したとして置いた目安",
+    "source": {
+      "title": "世界史の窓 日露戦争の戦費と外債",
+      "url": "https://y-history.net/appendix/wh1403-039.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-146",
+    "key": "mt-nichiro-father-dead-1905",
+    "category": "national",
+    "year": 1905,
+    "ageMin": 1,
+    "ageMax": 16,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "father_soldier"
+      ]
+    },
+    "title": "父が戦死した",
+    "text": "戦地の父が亡くなったという知らせが役場から届いた。日露戦争の戦没者は約8万5千人。それからは母と二人で家を支えた。",
+    "effects": {
+      "happiness": -10,
+      "flags": [
+        "father_war_dead"
+      ]
+    },
+    "probability": 0.1,
+    "probNote": "出征者約100万人に対し戦没約8.5万人から置いた目安",
+    "heavy": true,
+    "source": {
+      "title": "世界史の窓 日露戦争の戦費と外債",
+      "url": "https://y-history.net/appendix/wh1403-039.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-147",
+    "key": "mt-meiji-hogyo-1912",
+    "category": "national",
+    "year": 1912,
+    "month": 7,
+    "ageMin": 0,
+    "ageMax": 5,
+    "sex": "any",
+    "title": "大正元年",
+    "text": "明治天皇が亡くなり、元号が大正になった。幼くて覚えていないが、町じゅうが黒い布で喪に服していたと後で聞いた。明治の年号は、この子にとって遠い昔のものになった。",
+    "probability": 1,
+    "source": {
+      "title": "文春オンライン 1912年7月30日 明治天皇崩御・大正に改元",
+      "url": "https://bunshun.jp/articles/-/3532",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-148",
+    "key": "mt-showa-kaigen-1926",
+    "category": "national",
+    "year": 1926,
+    "month": 12,
+    "ageMin": 0,
+    "ageMax": 5,
+    "sex": "any",
+    "title": "昭和元年",
+    "text": "大正天皇が亡くなり、元号が昭和になった。幼くて覚えていないが、その年の正月は門松も控えめだったと聞いた。昭和のはじまりは、ちょうど年の瀬の一週間だった。",
+    "probability": 1,
+    "source": {
+      "title": "記念日の辞典「昭和」改元の日（12月25日）",
+      "url": "https://bestcalendar.jp/dates/kinenbi/5130",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-149",
+    "key": "mt-kanto-news-1923",
+    "category": "national",
+    "year": 1923,
+    "month": 9,
+    "prefs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      15,
+      16,
+      17,
+      18,
+      20,
+      21,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+    ],
+    "ageMin": 0,
+    "ageMax": 5,
+    "sex": "any",
+    "title": "関東大震災の年",
+    "text": "生まれて間もない9月、関東で大地震があり、約10万5千人が亡くなった。この年のことは、のちに9月1日が来るたびに聞かされた。",
+    "probability": 0.6,
+    "heavy": true,
+    "source": {
+      "title": "内閣府 防災白書 令和5年版（関東大震災から100年）",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/r05/honbun/t1_1s_01_00.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-150",
+    "key": "mt-kyoko-1929",
+    "category": "national",
+    "year": 1929,
+    "month": 10,
+    "ageMin": 10,
+    "ageMax": 19,
+    "sex": "any",
+    "title": "不景気の足音",
+    "text": "秋、アメリカで株が暴落したと大人たちが話していた。まもなく生糸の値が下がり、家の暮らしも苦しくなると心配していた。",
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "世界史の窓 世界恐慌",
+      "url": "https://y-history.net/appendix/wh1504-001.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-151",
+    "key": "mt-kinshuku-1929",
+    "category": "national",
+    "year": 1929,
+    "month": 7,
+    "ageMin": 20,
+    "ageMax": 39,
+    "sex": "any",
+    "title": "緊縮と金解禁",
+    "text": "7月に新しい内閣ができ、役所も家庭も倹約せよという「緊縮」を呼びかけた。金解禁に向けて、物価が下がり始めた。国産品を使い、無駄をなくせというポスターが町に貼られた。",
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（1929年 浜口内閣の緊縮財政）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-152",
+    "key": "mt-narikin-1915",
+    "category": "national",
+    "year": 1915,
+    "endYear": 1919,
+    "ageMin": 6,
+    "ageMax": 9,
+    "sex": "any",
+    "title": "成金の話",
+    "text": "戦争のおかげで大金持ちになった人の話を聞いた。お札を燃やして明かりにしたという漫画が新聞に載り、大人たちが笑っていた。",
+    "probability": 0.2,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（大戦景気）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-153",
+    "key": "mt-bukka-1917",
+    "category": "national",
+    "year": 1917,
+    "endYear": 1919,
+    "ageMin": 20,
+    "ageMax": 29,
+    "sex": "any",
+    "conditions": {
+      "married": true
+    },
+    "title": "物価高",
+    "text": "大戦の好景気で、米も炭も着物も値上がりが続いた。給金が上がっても追いつかず、家計のやりくりに頭を悩ませた。子どもの着物は、上の子のお下がりを仕立て直して着せた。",
+    "effects": {
+      "happiness": -2
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "コトバンク 米騒動",
+      "url": "https://kotobank.jp/word/%E7%B1%B3%E9%A8%92%E5%8B%95",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-154",
+    "key": "mt-kanto-1923-work",
+    "category": "national",
+    "year": 1923,
+    "endYear": 1924,
+    "month": 9,
+    "prefs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      15,
+      16,
+      17,
+      18,
+      20,
+      21,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+    ],
+    "ageMin": 20,
+    "ageMax": 33,
+    "sex": "any",
+    "conditions": {
+      "job": [
+        "self",
+        "smallco",
+        "bigco"
+      ]
+    },
+    "title": "震災の影響",
+    "text": "関東大震災で東京の取引先が焼け、仕事が止まった。手形の決済が延び、不景気が長引いた。東京の復興の仕事を求めて、上京する知り合いもいた。",
+    "effects": {
+      "happiness": -2
+    },
+    "probability": 0.15,
+    "probNote": "目安",
+    "source": {
+      "title": "内閣府 防災白書 令和5年版（関東大震災から100年）",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/r05/honbun/t1_1s_01_00.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-155",
+    "key": "mt-gimu4-1900",
+    "category": "system",
+    "year": 1900,
+    "endYear": 1901,
+    "ageMin": 11,
+    "ageMax": 12,
+    "sex": "any",
+    "title": "授業料がなくなった",
+    "text": "尋常小学校の授業料を原則として取らないことになった。弟や妹は、自分より気兼ねなく学校に通えるようになった。家の負担が減ったと、親はほっとしていた。",
+    "probability": 0.5,
+    "probNote": "目安",
+    "source": {
+      "title": "文部科学省 我が国の義務教育制度の変遷",
+      "url": "https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo0/toushin/attach/1419881.htm",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-156",
+    "key": "mt-shogakko-nyugaku",
+    "category": "system",
+    "year": 1896,
+    "endYear": 1929,
+    "ageMin": 6,
+    "ageMax": 7,
+    "sex": "any",
+    "title": "尋常小学校に入学",
+    "text": "尋常小学校に入学した。石板と石筆を持って、着物にわらじ姿で村の学校へ通いはじめた。教室には、同じ年ごろの子どもたちがぎっしり並んでいた。",
+    "effects": {
+      "knowledge": 2,
+      "happiness": 1
+    },
+    "probability": 0.9,
+    "probNote": "就学率は1900年代に9割を超えたとされる（未確認）",
+    "source": {
+      "title": "文部科学省 我が国の義務教育制度の変遷",
+      "url": "https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo0/toushin/attach/1419881.htm",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-157",
+    "key": "mt-kotojogakko",
+    "category": "system",
+    "year": 1902,
+    "endYear": 1929,
+    "ageMin": 12,
+    "ageMax": 13,
+    "sex": "female",
+    "conditions": {
+      "familyClass": [
+        4,
+        5
+      ]
+    },
+    "title": "高等女学校へ",
+    "text": "高等女学校に進んだ。袴姿で通い、裁縫や作法とともに英語も習った。「良妻賢母」になることが教育の目標とされていた。",
+    "effects": {
+      "knowledge": 3
+    },
+    "probability": 0.3,
+    "probNote": "目安。高等女学校令は1899年（未確認）",
+    "source": {
+      "title": "一般的な教育史（1899年 高等女学校令）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-158",
+    "key": "mt-chugakko",
+    "category": "system",
+    "year": 1900,
+    "endYear": 1929,
+    "ageMin": 12,
+    "ageMax": 13,
+    "sex": "male",
+    "conditions": {
+      "familyClass": [
+        4,
+        5
+      ]
+    },
+    "title": "中学校へ",
+    "text": "試験に受かって、旧制の中学校に進んだ。詰め襟の制服に学帽をかぶり、村から通う者は自分を含めてわずかだった。下宿や汽車で通う者もいて、勉強の量に驚いた。",
+    "effects": {
+      "knowledge": 3
+    },
+    "probability": 0.3,
+    "probNote": "目安（未確認）",
+    "source": {
+      "title": "一般的な教育史（旧制中学校）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-159",
+    "key": "mt-daigakurei-1918",
+    "category": "system",
+    "year": 1918,
+    "endYear": 1920,
+    "ageMin": 17,
+    "ageMax": 24,
+    "sex": "male",
+    "conditions": {
+      "familyClass": [
+        4,
+        5
+      ]
+    },
+    "title": "大学令",
+    "text": "大学令が出て、帝国大学のほかに私立や公立の大学も認められることになった。進学の道が広がったと学生たちが話していた。",
+    "effects": {
+      "knowledge": 1
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な教育史（1918年 大学令）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-160",
+    "key": "mt-kanto-1923-yokohama",
+    "category": "pref",
+    "year": 1924,
+    "endYear": 1929,
+    "prefs": [
+      14
+    ],
+    "ageMin": 8,
+    "ageMax": 39,
+    "sex": "any",
+    "title": "横浜の再建",
+    "text": "震災で焼けた横浜の港と町が少しずつ建て直された。がれきで海を埋めた跡は、のちに海沿いの公園になった。港には再び外国の船が出入りするようになった。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.15,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（山下公園は震災がれきで造成、1930年開園）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-161",
+    "key": "mt-dojunkai",
+    "category": "pref",
+    "year": 1926,
+    "endYear": 1929,
+    "prefs": [
+      13,
+      14
+    ],
+    "ageMin": 20,
+    "ageMax": 39,
+    "sex": "any",
+    "conditions": {
+      "familyClass": [
+        3,
+        4
+      ]
+    },
+    "title": "同潤会アパート",
+    "text": "震災の義援金でつくられた同潤会の鉄筋アパートに入った。水洗便所とガスがあり、近所の人に羨ましがられた。屋上で洗濯物を干しながら、近所の人と話をした。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.01,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（同潤会 1924年設立）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-162",
+    "key": "mt-osaka-dai",
+    "category": "pref",
+    "year": 1925,
+    "prefs": [
+      27
+    ],
+    "ageMin": 6,
+    "ageMax": 35,
+    "sex": "any",
+    "title": "大大阪",
+    "text": "大阪市が周りの町村を合わせ、人口で東京市を抜いて日本一の都市になった。「大大阪」と呼ばれ、町じゅうが活気づいていた。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.3,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（1925年 第2次市域拡張）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-163",
+    "key": "mt-kyoto-gotaiten-1928",
+    "category": "pref",
+    "year": 1928,
+    "month": 11,
+    "prefs": [
+      26
+    ],
+    "ageMin": 6,
+    "ageMax": 38,
+    "sex": "any",
+    "title": "京都の即位礼",
+    "text": "即位の礼が京都御所で行われ、町には奉祝の飾りがあふれた。行列を見ようと、沿道は人で埋まった。学校では奉祝の歌を練習し、旗行列に加わった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.4,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（1928年即位の礼）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-164",
+    "key": "mt-yokohama-port",
+    "category": "pref",
+    "year": 1890,
+    "endYear": 1922,
+    "prefs": [
+      14
+    ],
+    "ageMin": 6,
+    "ageMax": 25,
+    "sex": "any",
+    "title": "港の町",
+    "text": "横浜の港には外国の汽船が並び、生糸の荷が次々と積み込まれていった。居留地の西洋館やガス灯が物珍しかった。港で働く人たちの話す外国の言葉が、時々聞こえてきた。",
+    "effects": {
+      "happiness": 1
+    },
+    "probability": 0.05,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な年表（横浜港と生糸輸出）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-165",
+    "key": "mt-kobe-port",
+    "category": "pref",
+    "year": 1890,
+    "endYear": 1929,
+    "prefs": [
+      28
+    ],
+    "ageMin": 6,
+    "ageMax": 25,
+    "sex": "any",
+    "title": "神戸の港",
+    "text": "神戸の港から、移民船や外国航路の船が出ていった。見送りの紙テープが風になびくのを、岸壁から眺めた。港には、遠くの国の荷物を積んだ船がひっきりなしに出入りした。",
+    "probability": 0.05,
+    "probNote": "目安",
+    "source": {
+      "title": "国立国会図書館 ブラジル移民の100年（笠戸丸）",
+      "url": "https://www.ndl.go.jp/brasil/column/kasatomaru.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-166",
+    "key": "mt-okinawa-1903",
+    "category": "pref",
+    "year": 1903,
+    "endYear": 1929,
+    "prefs": [
+      47
+    ],
+    "ageMin": 15,
+    "ageMax": 35,
+    "sex": "male",
+    "title": "島を出て働く",
+    "text": "島では暮らしが立たず、本土の紡績工場や南洋の島々へ働きに出る人が多かった。自分も船に乗って出稼ぎに行った。稼ぎの一部は、ふるさとの家族に送った。",
+    "effects": {
+      "money": 20,
+      "happiness": -1
+    },
+    "probability": 0.03,
+    "probNote": "目安（未確認）",
+    "source": {
+      "title": "一般的な年表（沖縄からの出稼ぎ・移民）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-167",
+    "key": "mt-hokkaido-herring",
+    "category": "pref",
+    "year": 1890,
+    "endYear": 1929,
+    "prefs": [
+      1,
+      2,
+      5
+    ],
+    "ageMin": 15,
+    "ageMax": 35,
+    "sex": "male",
+    "title": "ニシン場の出稼ぎ",
+    "text": "春、北海道の日本海側のニシン場へ出稼ぎに行った。群来（くき）の季節は夜も昼もなく網を引き、稼いだ金を持って村に帰った。",
+    "effects": {
+      "health": -2,
+      "money": 20
+    },
+    "probability": 0.02,
+    "probNote": "目安（未確認）",
+    "source": {
+      "title": "一般的な産業史（北海道のニシン漁）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-168",
+    "key": "mt-kitakyushu-smoke",
+    "category": "pref",
+    "year": 1910,
+    "endYear": 1929,
+    "prefs": [
+      40
+    ],
+    "ageMin": 6,
+    "ageMax": 15,
+    "sex": "any",
+    "title": "七色の煙",
+    "text": "工場の煙突から上がる煙は、町が栄えているしるしだと言われた。洗濯物はすぐに黒くなったが、それが当たり前だった。",
+    "probability": 0.05,
+    "probNote": "目安",
+    "source": {
+      "title": "北九州市 東田第一高炉史跡広場",
+      "url": "https://www.city.kitakyushu.lg.jp/yahatahigashi/file_0009.html",
+      "verified": true
+    }
+  },
+  {
+    "id": "mt-169",
+    "key": "mt-besshi",
+    "category": "pref",
+    "year": 1890,
+    "endYear": 1929,
+    "prefs": [
+      38
+    ],
+    "ageMin": 15,
+    "ageMax": 35,
+    "sex": "male",
+    "title": "別子銅山",
+    "text": "別子銅山で働いた。山の上の坑口まで、急な道を毎朝登った。鉱山の町には学校も病院もあった。銅を精錬する煙の害が問題になり、製錬所は海の島に移された。",
+    "effects": {
+      "health": -2,
+      "money": 15
+    },
+    "probability": 0.02,
+    "probNote": "目安（未確認）",
+    "source": {
+      "title": "一般的な産業史（別子銅山）",
+      "verified": false
+    }
+  },
+  {
+    "id": "mt-170",
+    "key": "mt-tango-chirimen",
+    "category": "pref",
+    "year": 1890,
+    "endYear": 1929,
+    "prefs": [
+      26,
+      10
+    ],
+    "ageMin": 12,
+    "ageMax": 25,
+    "sex": "female",
+    "title": "機織り",
+    "text": "家の機で織物を織る手伝いをした。機の音が朝から晩まで響き、織り上がった反物は仲買人が買いに来た。機を織れる娘は、嫁入り先でも重宝された。",
+    "effects": {
+      "money": 5
+    },
+    "probability": 0.05,
+    "probNote": "目安",
+    "source": {
+      "title": "一般的な産業史（丹後・桐生の織物）",
+      "verified": false
+    }
+  }
+]

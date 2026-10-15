@@ -1,0 +1,3450 @@
+[
+  {
+    "id": "wa-001",
+    "key": "chohei-kensa",
+    "category": "war",
+    "year": 1930,
+    "endYear": 1936,
+    "ageMin": 20,
+    "ageMax": 20,
+    "sex": "male",
+    "title": "徴兵検査を受けた",
+    "text": "20歳で徴兵検査を受けた。身長や体の丈夫さで甲種・乙種・丙種などに分けられた。平時は甲種でも全員が入営するのではなく、必要な人数だけが選ばれた。",
+    "effects": {
+      "flags": [
+        "chohei_kensa"
+      ]
+    },
+    "probability": 0.9,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "20歳の男子は全員が受けた。記録に出る割合として0.9"
+  },
+  {
+    "id": "wa-002",
+    "key": "genkieki",
+    "category": "war",
+    "year": 1930,
+    "endYear": 1936,
+    "ageMin": 20,
+    "ageMax": 20,
+    "sex": "male",
+    "title": "現役兵として入営",
+    "text": "徴兵検査のあと現役兵に選ばれ、入営した。陸軍で2年間、兵営で寝起きして訓練を受けた。除隊したあとも予備役として、いざというときは召集される身になった。",
+    "effects": {
+      "health": 2,
+      "happiness": -3,
+      "flags": [
+        "ex_soldier"
+      ]
+    },
+    "probability": 0.2,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "平時の現役徴集率（受検者のうち入営した割合）は確認できなかったため2割前後の目安。死亡はない"
+  },
+  {
+    "id": "wa-003",
+    "key": "manchurian-incident-1931",
+    "category": "war",
+    "year": 1931,
+    "month": 9,
+    "ageMin": 16,
+    "ageMax": 90,
+    "sex": "any",
+    "title": "満州事変",
+    "text": "1931年9月、満州（中国東北部）で満州事変が起きた。新聞やラジオが関東軍の進撃を伝え、翌年には満州国がつくられた。戦争の時代が始まったとは、まだ誰も思っていなかった。",
+    "probability": 0.5,
+    "source": {
+      "title": "総務省 国内各都市の戦災の状況（宇都宮市）",
+      "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_26.html",
+      "verified": true
+    },
+    "probNote": "目安"
+  },
+  {
+    "id": "wa-004",
+    "key": "manchurian-incident-soldier",
+    "category": "war",
+    "year": 1931,
+    "endYear": 1932,
+    "ageMin": 20,
+    "ageMax": 22,
+    "sex": "male",
+    "title": "満州事変で出征",
+    "text": "現役兵として入営していた部隊が、満州事変で満州へ送られた。翌年には満州国がつくられ、その後も現地の警備が続いた。",
+    "effects": {
+      "happiness": -8,
+      "flags": [
+        "manchuria_1931",
+        "ex_soldier"
+      ],
+      "death": {
+        "prob": 0.02,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.03,
+    "heavy": true,
+    "source": {
+      "title": "満州事変での動員数・戦死者数（未確認）",
+      "verified": false
+    },
+    "probNote": "入営中の現役兵のうち満州へ送られた割合、戦死の割合ともに未確認の目安。人数が少ないため全体の戦没率にはほとんど効かない"
+  },
+  {
+    "id": "wa-005",
+    "key": "chohei-kensa",
+    "category": "war",
+    "year": 1937,
+    "endYear": 1943,
+    "ageMin": 20,
+    "ageMax": 20,
+    "sex": "male",
+    "title": "戦時の徴兵検査",
+    "text": "日中戦争のさなかに、20歳で徴兵検査を受けた。平時なら入営しなかった乙種の人も現役兵に取られ、丙種の人も召集されるようになっていた。",
+    "effects": {
+      "flags": [
+        "chohei_kensa"
+      ]
+    },
+    "probability": 0.95,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "20歳の男子は全員が受けた。記録に出る割合として0.95"
+  },
+  {
+    "id": "wa-006",
+    "key": "chohei-kensa",
+    "category": "war",
+    "year": 1944,
+    "endYear": 1945,
+    "ageMin": 19,
+    "ageMax": 20,
+    "sex": "male",
+    "title": "19歳で徴兵検査",
+    "text": "1943年12月、徴兵検査の年齢が20歳から19歳に引き下げられ、19歳で検査を受けた。合格すれば、すぐに入営する時代になっていた。",
+    "effects": {
+      "flags": [
+        "chohei_kensa"
+      ]
+    },
+    "probability": 0.95,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "記録に出る割合として0.95"
+  },
+  {
+    "id": "wa-007",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1937,
+    "endYear": 1941,
+    "ageMin": 20,
+    "ageMax": 21,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "現役兵として中国へ",
+    "text": "徴兵検査のあと現役兵として入営し、訓練を終えると中国の戦線へ送られた。1937年に始まった日中戦争は、いつ終わるとも分からないまま続いていた。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_china"
+      ]
+    },
+    "probability": 0.2739,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1937〜1941年、20〜21歳）は合計0.33。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.78・満州0.22（地域別戦没者数から逆算した目安）"
+  },
+  {
+    "id": "wa-008",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1937,
+    "endYear": 1941,
+    "ageMin": 20,
+    "ageMax": 21,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "現役兵として満州へ",
+    "text": "現役兵として入営し、満州の部隊に配属された。ソ連と向かい合う国境に近い土地で、冬の厳しい寒さの中、警備と訓練の日々を送った。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_manchuria"
+      ]
+    },
+    "probability": 0.0773,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1937〜1941年、20〜21歳）は合計0.33。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.78・満州0.22（地域別戦没者数から逆算した目安）"
+  },
+  {
+    "id": "wa-009",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1937,
+    "endYear": 1941,
+    "ageMin": 22,
+    "ageMax": 32,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "召集令状が届いた",
+    "text": "予備役として召集令状を受け取った。数日のうちに家を出て入営し、中国の戦線へ送られた。近所の人たちが日の丸の小旗を振って駅まで見送った。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_china"
+      ]
+    },
+    "probability": 0.0633,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1937〜1941年、22〜32歳）は合計0.08。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.78・満州0.22（地域別戦没者数から逆算した目安）"
+  },
+  {
+    "id": "wa-010",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1937,
+    "endYear": 1941,
+    "ageMin": 22,
+    "ageMax": 32,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "召集されて満州へ",
+    "text": "召集令状が届き、満州の部隊へ送られた。日中戦争が始まってから、満州の守りにつく兵も大きく増やされていた。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_manchuria"
+      ]
+    },
+    "probability": 0.0178,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1937〜1941年、22〜32歳）は合計0.08。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.78・満州0.22（地域別戦没者数から逆算した目安）"
+  },
+  {
+    "id": "wa-011",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1937,
+    "endYear": 1941,
+    "ageMin": 33,
+    "ageMax": 40,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "30代で召集された",
+    "text": "召集令状が届いた。妻子と仕事を残して入営し、中国の戦線へ送られた。日中戦争が長引くにつれ、30代の人にも召集が広がっていった。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_china"
+      ]
+    },
+    "probability": 0.0196,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1937〜1941年、33〜40歳）は合計0.025。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.78・満州0.22（地域別戦没者数から逆算した目安）"
+  },
+  {
+    "id": "wa-012",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1937,
+    "endYear": 1941,
+    "ageMin": 33,
+    "ageMax": 40,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "30代で満州へ召集",
+    "text": "召集令状が届き、満州の部隊へ送られた。家のことは妻と親に任せるしかなかった。30代の兵も多く、家族の写真を持っている人ばかりだった。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_manchuria"
+      ]
+    },
+    "probability": 0.0055,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1937〜1941年、33〜40歳）は合計0.025。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.78・満州0.22（地域別戦没者数から逆算した目安）"
+  },
+  {
+    "id": "wa-013",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1942,
+    "endYear": 1943,
+    "ageMin": 20,
+    "ageMax": 21,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "現役兵として中国へ",
+    "text": "現役兵として入営し、中国の戦線へ送られた。太平洋で米英と戦うようになっても中国での戦争は終わらず、大軍がとどまり続けていた。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_china"
+      ]
+    },
+    "probability": 0.1474,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1942〜1943年、20〜21歳）は合計0.42。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.3・満州0.2・南方0.5（地域別戦没者数から逆算した目安）"
+  },
+  {
+    "id": "wa-014",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1942,
+    "endYear": 1943,
+    "ageMin": 20,
+    "ageMax": 21,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "現役兵として満州へ",
+    "text": "現役兵として入営し、満州の部隊に配属された。米英との戦争が始まっても、ソ連に備える国境の守りは続いていた。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_manchuria"
+      ]
+    },
+    "probability": 0.0983,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1942〜1943年、20〜21歳）は合計0.42。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.3・満州0.2・南方0.5（地域別戦没者数から逆算した目安）"
+  },
+  {
+    "id": "wa-015",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1942,
+    "endYear": 1943,
+    "ageMin": 20,
+    "ageMax": 21,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "現役兵として南方へ",
+    "text": "現役兵として入営し、輸送船で南方の島へ送られた。1942年の前半に広げた占領地は、その年の後半から米軍の反撃を受けるようになっていた。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_south"
+      ]
+    },
+    "probability": 0.2456,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1942〜1943年、20〜21歳）は合計0.42。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.3・満州0.2・南方0.5（地域別戦没者数から逆算した目安）"
+  },
+  {
+    "id": "wa-016",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1942,
+    "endYear": 1943,
+    "ageMin": 22,
+    "ageMax": 32,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "召集令状が届いた",
+    "text": "召集令状が届き、中国の戦線へ送られた。太平洋で戦争が始まってからも、中国での戦いは何年も続いていた。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_china"
+      ]
+    },
+    "probability": 0.0573,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1942〜1943年、22〜32歳）は合計0.18。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.3・満州0.2・南方0.5（地域別戦没者数から逆算した目安）"
+  },
+  {
+    "id": "wa-017",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1942,
+    "endYear": 1943,
+    "ageMin": 22,
+    "ageMax": 32,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "召集されて満州へ",
+    "text": "召集令状が届き、満州の部隊へ送られた。南方の戦いが激しくなるにつれ、満州の部隊からも兵が南へ移されていった。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_manchuria"
+      ]
+    },
+    "probability": 0.0382,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1942〜1943年、22〜32歳）は合計0.18。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.3・満州0.2・南方0.5（地域別戦没者数から逆算した目安）"
+  },
+  {
+    "id": "wa-018",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1942,
+    "endYear": 1943,
+    "ageMin": 22,
+    "ageMax": 32,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "召集されて南方へ",
+    "text": "召集令状が届き、輸送船で南方へ送られた。暑さと湿気の中、マラリアなどの病気に気をつけながら、慣れない土地での暮らしが始まった。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_south"
+      ]
+    },
+    "probability": 0.0956,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1942〜1943年、22〜32歳）は合計0.18。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.3・満州0.2・南方0.5（地域別戦没者数から逆算した目安）"
+  },
+  {
+    "id": "wa-019",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1942,
+    "endYear": 1943,
+    "ageMin": 33,
+    "ageMax": 45,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "30代で召集された",
+    "text": "召集令状が届いた。妻子を残して入営し、中国の戦線へ送られた。若い兵に交じって、30代の兵も同じ荷物を背負って歩いた。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_china"
+      ]
+    },
+    "probability": 0.0122,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1942〜1943年、33〜45歳）は合計0.04。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.3・満州0.2・南方0.5（地域別戦没者数から逆算した目安）"
+  },
+  {
+    "id": "wa-020",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1942,
+    "endYear": 1943,
+    "ageMin": 33,
+    "ageMax": 45,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "30代で満州へ召集",
+    "text": "召集令状が届き、満州の部隊へ送られた。家のことは妻と親に任せた。1943年12月には兵役の上限が45歳に引き上げられた。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_manchuria"
+      ]
+    },
+    "probability": 0.0081,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1942〜1943年、33〜45歳）は合計0.04。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.3・満州0.2・南方0.5（地域別戦没者数から逆算した目安）"
+  },
+  {
+    "id": "wa-021",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1942,
+    "endYear": 1943,
+    "ageMin": 33,
+    "ageMax": 45,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "30代で南方へ召集",
+    "text": "召集令状が届き、輸送船で南方へ送られた。家に残した妻子の暮らしが気がかりだったが、手紙もなかなか届かなかった。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_south"
+      ]
+    },
+    "probability": 0.0203,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1942〜1943年、33〜45歳）は合計0.04。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.3・満州0.2・南方0.5（地域別戦没者数から逆算した目安）"
+  },
+  {
+    "id": "wa-022",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1944,
+    "endYear": 1945,
+    "ageMin": 19,
+    "ageMax": 21,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "入営して中国へ",
+    "text": "19歳や20歳で入営し、短い訓練のあと中国の戦線へ送られた。戦地では、補給が細る中で何か月も行軍が続いた。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_china"
+      ],
+      "death": {
+        "prob": 0.02,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.074,
+    "heavy": true,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1944〜1945年、19〜21歳）は合計0.5。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.12・満州0.1・南方0.33・本土0.45（地域別戦没者数から逆算した目安）。1944〜45年は送られた年のうちに亡くなる人も多かった（輸送船の沈没など）ため、死亡の確率0.02を置いた"
+  },
+  {
+    "id": "wa-023",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1944,
+    "endYear": 1945,
+    "ageMin": 19,
+    "ageMax": 21,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "入営して満州へ",
+    "text": "入営して満州の部隊に配属された。満州の部隊は南方へ兵を送り出して人数が減っており、新しく入った兵で埋め合わされていた。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_manchuria"
+      ],
+      "death": {
+        "prob": 0.02,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.0617,
+    "heavy": true,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1944〜1945年、19〜21歳）は合計0.5。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.12・満州0.1・南方0.33・本土0.45（地域別戦没者数から逆算した目安）。1944〜45年は送られた年のうちに亡くなる人も多かった（輸送船の沈没など）ため、死亡の確率0.02を置いた"
+  },
+  {
+    "id": "wa-024",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1944,
+    "endYear": 1945,
+    "ageMin": 19,
+    "ageMax": 21,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "入営して南方へ",
+    "text": "入営して短い訓練を受け、輸送船で南方へ送られた。1944年には兵を運ぶ船が次々に沈められ、目的地に着けない船も多かった。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_south"
+      ],
+      "death": {
+        "prob": 0.05,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.2035,
+    "heavy": true,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1944〜1945年、19〜21歳）は合計0.5。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.12・満州0.1・南方0.33・本土0.45（地域別戦没者数から逆算した目安）。1944〜45年は送られた年のうちに亡くなる人も多かった（輸送船の沈没など）ため、死亡の確率0.05を置いた"
+  },
+  {
+    "id": "wa-025",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1944,
+    "endYear": 1945,
+    "ageMin": 19,
+    "ageMax": 21,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "入営して本土の守りに",
+    "text": "入営して本土の部隊に配属された。米軍の上陸に備えて、海岸や山に陣地を掘る作業が毎日続いた。銃や弾薬も足りなかった。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_home"
+      ],
+      "death": {
+        "prob": 0.01,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.2775,
+    "heavy": true,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1944〜1945年、19〜21歳）は合計0.5。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.12・満州0.1・南方0.33・本土0.45（地域別戦没者数から逆算した目安）。1944〜45年は送られた年のうちに亡くなる人も多かった（輸送船の沈没など）ため、死亡の確率0.01を置いた"
+  },
+  {
+    "id": "wa-026",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1944,
+    "endYear": 1945,
+    "ageMin": 22,
+    "ageMax": 32,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "召集されて中国へ",
+    "text": "召集令状が届き、中国の戦線へ送られた。1944年には中国大陸を南北に貫く大きな作戦が始まり、長い行軍が続いた。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_china"
+      ],
+      "death": {
+        "prob": 0.02,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.0403,
+    "heavy": true,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1944〜1945年、22〜32歳）は合計0.3。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.12・満州0.1・南方0.33・本土0.45（地域別戦没者数から逆算した目安）。1944〜45年は送られた年のうちに亡くなる人も多かった（輸送船の沈没など）ため、死亡の確率0.02を置いた"
+  },
+  {
+    "id": "wa-027",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1944,
+    "endYear": 1945,
+    "ageMin": 22,
+    "ageMax": 32,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "召集されて満州へ",
+    "text": "召集令状が届き、満州の部隊へ送られた。精鋭の部隊は南方へ移されたあとで、残った部隊は新しく召集された人ばかりだった。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_manchuria"
+      ],
+      "death": {
+        "prob": 0.02,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.0336,
+    "heavy": true,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1944〜1945年、22〜32歳）は合計0.3。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.12・満州0.1・南方0.33・本土0.45（地域別戦没者数から逆算した目安）。1944〜45年は送られた年のうちに亡くなる人も多かった（輸送船の沈没など）ため、死亡の確率0.02を置いた"
+  },
+  {
+    "id": "wa-028",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1944,
+    "endYear": 1945,
+    "ageMin": 22,
+    "ageMax": 32,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "召集されて南方へ",
+    "text": "召集令状が届き、輸送船で南方へ送られた。新聞やラジオは勝っていると伝えていたが、戦況が悪いことは、口には出さなくても誰もが感じていた。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_south"
+      ],
+      "death": {
+        "prob": 0.05,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.1108,
+    "heavy": true,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1944〜1945年、22〜32歳）は合計0.3。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.12・満州0.1・南方0.33・本土0.45（地域別戦没者数から逆算した目安）。1944〜45年は送られた年のうちに亡くなる人も多かった（輸送船の沈没など）ため、死亡の確率0.05を置いた"
+  },
+  {
+    "id": "wa-029",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1944,
+    "endYear": 1945,
+    "ageMin": 22,
+    "ageMax": 32,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "召集されて本土の守りに",
+    "text": "召集令状が届き、本土決戦に備える部隊に入れられた。武器が足りず、海岸に陣地を掘る作業ばかりの毎日だった。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_home"
+      ],
+      "death": {
+        "prob": 0.01,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.1512,
+    "heavy": true,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1944〜1945年、22〜32歳）は合計0.3。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.12・満州0.1・南方0.33・本土0.45（地域別戦没者数から逆算した目安）。1944〜45年は送られた年のうちに亡くなる人も多かった（輸送船の沈没など）ため、死亡の確率0.01を置いた"
+  },
+  {
+    "id": "wa-030",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1944,
+    "endYear": 1945,
+    "ageMin": 33,
+    "ageMax": 45,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "30〜40代で召集",
+    "text": "召集令状が届き、中国の戦線へ送られた。1943年12月に兵役の上限が45歳に引き上げられ、40歳を過ぎた人にも召集が及ぶようになっていた。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_china"
+      ],
+      "death": {
+        "prob": 0.02,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.0073,
+    "heavy": true,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1944〜1945年、33〜45歳）は合計0.06。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.12・満州0.1・南方0.33・本土0.45（地域別戦没者数から逆算した目安）。1944〜45年は送られた年のうちに亡くなる人も多かった（輸送船の沈没など）ため、死亡の確率0.02を置いた"
+  },
+  {
+    "id": "wa-031",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1944,
+    "endYear": 1945,
+    "ageMin": 33,
+    "ageMax": 45,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "30〜40代で満州へ召集",
+    "text": "召集令状が届き、満州の部隊へ送られた。兵役の上限は45歳まで引き上げられ、子どもの多い父親も、農家の働き手も召集されていった。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_manchuria"
+      ],
+      "death": {
+        "prob": 0.02,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.0061,
+    "heavy": true,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1944〜1945年、33〜45歳）は合計0.06。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.12・満州0.1・南方0.33・本土0.45（地域別戦没者数から逆算した目安）。1944〜45年は送られた年のうちに亡くなる人も多かった（輸送船の沈没など）ため、死亡の確率0.02を置いた"
+  },
+  {
+    "id": "wa-032",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1944,
+    "endYear": 1945,
+    "ageMin": 33,
+    "ageMax": 45,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "30〜40代で南方へ召集",
+    "text": "召集令状が届き、輸送船で南方へ送られた。兵役の上限は45歳まで引き上げられていた。家には妻と子どもたちが残された。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_south"
+      ],
+      "death": {
+        "prob": 0.05,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.0202,
+    "heavy": true,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1944〜1945年、33〜45歳）は合計0.06。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.12・満州0.1・南方0.33・本土0.45（地域別戦没者数から逆算した目安）。1944〜45年は送られた年のうちに亡くなる人も多かった（輸送船の沈没など）ため、死亡の確率0.05を置いた"
+  },
+  {
+    "id": "wa-033",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1944,
+    "endYear": 1945,
+    "ageMin": 33,
+    "ageMax": 45,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "30〜40代で召集",
+    "text": "召集令状が届き、本土の守りにつく部隊に入れられた。兵役の上限は45歳まで引き上げられていた。40代の兵が、19歳の兵と並んで穴を掘った。",
+    "effects": {
+      "happiness": -10,
+      "relation": -3,
+      "flags": [
+        "soldier",
+        "front_home"
+      ],
+      "death": {
+        "prob": 0.01,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.0276,
+    "heavy": true,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "入営・召集される1年あたりの確率（1944〜1945年、33〜45歳）は合計0.06。生まれ年ごとの戦没率（docs/04「戦争（大人の世代）」）に合うよう調整した値。戦地の比は中国0.12・満州0.1・南方0.33・本土0.45（地域別戦没者数から逆算した目安）。1944〜45年は送られた年のうちに亡くなる人も多かった（輸送船の沈没など）ため、死亡の確率0.01を置いた"
+  },
+  {
+    "id": "wa-034",
+    "key": "mobilized",
+    "category": "war",
+    "year": 1942,
+    "endYear": 1945,
+    "ageMin": 17,
+    "ageMax": 19,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "志願して入隊",
+    "text": "1942年の兵役法の改正で、17歳から志願して兵隊になれるようになった。徴兵を待たずに志願し、入隊した。少年兵として、訓練のあと南方へ送られた。",
+    "effects": {
+      "happiness": -5,
+      "flags": [
+        "soldier",
+        "front_south",
+        "volunteer"
+      ]
+    },
+    "probability": 0.07,
+    "source": {
+      "title": "Ogasawara & Igarashi (2024) The Impacts of the Gender Imbalance on the Marriage Market: Evidence from WWII in Japan（1947年・1950年国勢調査の年齢別性比、兵役法の改正）",
+      "url": "https://arxiv.org/abs/2102.00687",
+      "verified": true
+    },
+    "probNote": "志願兵の人数は徴兵に比べて少ない（Ogasawara & Igarashi）。割合は目安"
+  },
+  {
+    "id": "wa-035",
+    "key": "gakuto-shutsujin-1943",
+    "category": "war",
+    "year": 1943,
+    "month": 10,
+    "ageMin": 20,
+    "ageMax": 25,
+    "sex": "male",
+    "conditions": {
+      "education": [
+        "univ"
+      ],
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "学徒出陣",
+    "text": "1943年10月、大学生の徴兵猶予がなくなり、学生のまま徴兵検査を受けた。雨の中の壮行会のあと、12月に入営した。勉強は途中で終わった。",
+    "effects": {
+      "happiness": -15,
+      "knowledge": -3,
+      "flags": [
+        "soldier",
+        "front_south",
+        "gakuto"
+      ]
+    },
+    "probability": 0.85,
+    "source": {
+      "title": "コトバンク 学徒出陣",
+      "url": "https://kotobank.jp/word/学徒出陣-460620",
+      "verified": true
+    },
+    "probNote": "文系の大学生などが対象。理系は猶予が続いたため0.85の目安"
+  },
+  {
+    "id": "wa-036",
+    "key": "front-china-1937",
+    "category": "war",
+    "year": 1937,
+    "ageMin": 17,
+    "ageMax": 47,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "soldier",
+        "front_china"
+      ],
+      "notFlags": [
+        "demobilized",
+        "siberia"
+      ]
+    },
+    "title": "中国の戦線で（1937年）",
+    "text": "1937年、中国の戦線に加わった。戦争は短く終わると言われていたが、上海から内陸へと戦線は広がっていった。",
+    "effects": {
+      "health": -6,
+      "happiness": -10,
+      "death": {
+        "prob": 0.03,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.9,
+    "heavy": true,
+    "source": {
+      "title": "1937年の中国での戦線の広がり（死者数は中国本土の戦没者465,700人から割り振った目安）",
+      "url": "https://www.mhlw.go.jp/content/12103000/001223055.pdf",
+      "verified": false
+    },
+    "probNote": "死亡の確率は、地域別戦没者数（中国本土約46.6万、南方約130万、中国東北部約24.5万など）と、死者の9割が1944年以降という推計に合うよう置いた1年あたりの目安。"
+  },
+  {
+    "id": "wa-037",
+    "key": "front-china-1938",
+    "category": "war",
+    "year": 1938,
+    "ageMin": 17,
+    "ageMax": 47,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "soldier",
+        "front_china"
+      ],
+      "notFlags": [
+        "demobilized",
+        "siberia"
+      ]
+    },
+    "title": "中国の戦線で（1938年）",
+    "text": "1938年、部隊は中国の内陸へ進む作戦に加わった。歩く距離は長く、戦闘のほかに暑さや病気に苦しむ人も多かった。",
+    "effects": {
+      "health": -6,
+      "happiness": -10,
+      "death": {
+        "prob": 0.03,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.9,
+    "heavy": true,
+    "source": {
+      "title": "1938年の中国での作戦（未確認。死者数は中国本土の戦没者465,700人から割り振った目安）",
+      "url": "https://www.mhlw.go.jp/content/12103000/001223055.pdf",
+      "verified": false
+    },
+    "probNote": "死亡の確率は、地域別戦没者数（中国本土約46.6万、南方約130万、中国東北部約24.5万など）と、死者の9割が1944年以降という推計に合うよう置いた1年あたりの目安。"
+  },
+  {
+    "id": "wa-038",
+    "key": "front-china-1939",
+    "category": "war",
+    "year": 1939,
+    "endYear": 1941,
+    "ageMin": 17,
+    "ageMax": 47,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "soldier",
+        "front_china"
+      ],
+      "notFlags": [
+        "demobilized",
+        "siberia"
+      ]
+    },
+    "title": "中国の戦線で（長期戦）",
+    "text": "中国の戦線では、占領した町や鉄道を守る警備と、小さな戦いが何年も続いた。戦争がいつ終わるのか、誰にも見通せなかった。",
+    "effects": {
+      "health": -6,
+      "happiness": -10,
+      "death": {
+        "prob": 0.03,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.5,
+    "heavy": true,
+    "source": {
+      "title": "1939〜41年の中国の戦線（未確認。死者数は中国本土の戦没者465,700人から割り振った目安）",
+      "url": "https://www.mhlw.go.jp/content/12103000/001223055.pdf",
+      "verified": false
+    },
+    "probNote": "死亡の確率は、地域別戦没者数（中国本土約46.6万、南方約130万、中国東北部約24.5万など）と、死者の9割が1944年以降という推計に合うよう置いた1年あたりの目安。1939〜41年の3年間で1回起きる（1年あたり0.5）"
+  },
+  {
+    "id": "wa-039",
+    "key": "front-china-1942",
+    "category": "war",
+    "year": 1942,
+    "endYear": 1943,
+    "ageMin": 17,
+    "ageMax": 47,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "soldier",
+        "front_china"
+      ],
+      "notFlags": [
+        "demobilized",
+        "siberia"
+      ]
+    },
+    "title": "中国に残された部隊",
+    "text": "太平洋で米英との戦争が始まっても、中国の戦線には多くの兵が残された。補給は細り、食べ物を現地で集めながらの行軍が続いた。",
+    "effects": {
+      "health": -6,
+      "happiness": -10,
+      "death": {
+        "prob": 0.025,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.6,
+    "heavy": true,
+    "source": {
+      "title": "1942〜43年の中国の戦線（未確認。死者数は中国本土の戦没者465,700人から割り振った目安）",
+      "url": "https://www.mhlw.go.jp/content/12103000/001223055.pdf",
+      "verified": false
+    },
+    "probNote": "死亡の確率は、地域別戦没者数（中国本土約46.6万、南方約130万、中国東北部約24.5万など）と、死者の9割が1944年以降という推計に合うよう置いた1年あたりの目安。"
+  },
+  {
+    "id": "wa-040",
+    "key": "front-china-1944",
+    "category": "war",
+    "year": 1944,
+    "ageMin": 17,
+    "ageMax": 47,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "soldier",
+        "front_china"
+      ],
+      "notFlags": [
+        "demobilized",
+        "siberia"
+      ]
+    },
+    "title": "中国大陸での大作戦",
+    "text": "1944年、中国大陸を南北に貫く大きな作戦に加わった。何か月も歩き続け、戦闘よりも栄養失調や病気で亡くなる人が多かった。",
+    "effects": {
+      "health": -6,
+      "happiness": -10,
+      "death": {
+        "prob": 0.05,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.9,
+    "heavy": true,
+    "source": {
+      "title": "1944年の中国大陸での大作戦（作戦の規模は未確認。戦病死の多さは吉田裕『日本軍兵士』の書評 https://bunshun.jp/articles/-/7440 で確認）",
+      "verified": false
+    },
+    "probNote": "死亡の確率は、地域別戦没者数（中国本土約46.6万、南方約130万、中国東北部約24.5万など）と、死者の9割が1944年以降という推計に合うよう置いた1年あたりの目安。"
+  },
+  {
+    "id": "wa-041",
+    "key": "front-china-1945",
+    "category": "war",
+    "year": 1945,
+    "ageMin": 17,
+    "ageMax": 47,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "soldier",
+        "front_china"
+      ],
+      "notFlags": [
+        "demobilized",
+        "siberia"
+      ]
+    },
+    "title": "中国の戦線で（1945年）",
+    "text": "1945年、中国の戦線では物資が尽き、病気や栄養失調で亡くなる人が増えていた。中国本土での日本の戦没者は約46万5千人とされる。",
+    "effects": {
+      "health": -6,
+      "happiness": -10,
+      "death": {
+        "prob": 0.05,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.9,
+    "heavy": true,
+    "source": {
+      "title": "厚生労働省 中国本土における遺骨収容実施状況（戦没者概数465,700人）",
+      "url": "https://www.mhlw.go.jp/content/12103000/001223055.pdf",
+      "verified": true
+    },
+    "probNote": "死亡の確率は、地域別戦没者数（中国本土約46.6万、南方約130万、中国東北部約24.5万など）と、死者の9割が1944年以降という推計に合うよう置いた1年あたりの目安。"
+  },
+  {
+    "id": "wa-042",
+    "key": "front-manchuria-1937",
+    "category": "war",
+    "year": 1937,
+    "endYear": 1943,
+    "ageMin": 17,
+    "ageMax": 47,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "soldier",
+        "front_manchuria"
+      ],
+      "notFlags": [
+        "demobilized",
+        "siberia",
+        "front_south"
+      ]
+    },
+    "title": "満州の国境で",
+    "text": "満州の部隊で、ソ連との国境の警備にあたった。1939年には、満州と外モンゴルの境のノモンハンで、ソ連軍との大きな戦いがあった。",
+    "effects": {
+      "health": -6,
+      "happiness": -10,
+      "death": {
+        "prob": 0.015,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.3,
+    "heavy": true,
+    "source": {
+      "title": "ノモンハン事件（1939年）。年は未確認。厚生労働省の概見図は中国東北部の戦没者245,400人に「ノモンハンを含む」とする",
+      "url": "https://www.mhlw.go.jp/file/04-Houdouhappyou-12103000-Shakaiengokyoku-Engo-Gaijishitsu/0000015304_1.pdf",
+      "verified": false
+    },
+    "probNote": "死亡の確率は、地域別戦没者数（中国本土約46.6万、南方約130万、中国東北部約24.5万など）と、死者の9割が1944年以降という推計に合うよう置いた1年あたりの目安。1937〜43年の間に1回起きる"
+  },
+  {
+    "id": "wa-043",
+    "key": "manchuria-to-south",
+    "category": "war",
+    "year": 1943,
+    "endYear": 1944,
+    "ageMin": 17,
+    "ageMax": 47,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "soldier",
+        "front_manchuria"
+      ],
+      "notFlags": [
+        "front_south",
+        "demobilized",
+        "siberia"
+      ]
+    },
+    "title": "満州から南方へ移る",
+    "text": "戦況が悪くなり、満州にいた部隊ごと南方へ移されることになった。寒い満州から、輸送船で暑い南の島へ向かった。",
+    "effects": {
+      "happiness": -8,
+      "flags": [
+        "front_south"
+      ]
+    },
+    "probability": 0.2,
+    "source": {
+      "title": "関東軍の部隊の南方への転用（人数は未確認）",
+      "verified": false
+    },
+    "probNote": "1943〜44年に関東軍から多くの部隊が南方へ移された。割合は目安"
+  },
+  {
+    "id": "wa-044",
+    "key": "front-manchuria-1945",
+    "category": "war",
+    "year": 1945,
+    "month": 8,
+    "ageMin": 17,
+    "ageMax": 47,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "soldier",
+        "front_manchuria"
+      ],
+      "notFlags": [
+        "demobilized",
+        "siberia",
+        "front_south"
+      ]
+    },
+    "title": "ソ連軍の侵攻",
+    "text": "1945年8月9日、ソ連軍が満州に攻め込んだ。兵の減っていた部隊は各地で押し戻された。中国東北部での日本人の戦没者は約24万5千人とされる。",
+    "effects": {
+      "health": -6,
+      "happiness": -10,
+      "death": {
+        "prob": 0.12,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.95,
+    "heavy": true,
+    "source": {
+      "title": "コトバンク 中国残留孤児（1945年8月9日ソ連軍の満州侵攻）",
+      "url": "https://kotobank.jp/word/中国残留孤児",
+      "verified": true
+    },
+    "probNote": "死亡の確率は、地域別戦没者数（中国本土約46.6万、南方約130万、中国東北部約24.5万など）と、死者の9割が1944年以降という推計に合うよう置いた1年あたりの目安。中国東北部の戦没者約24.5万人には民間人も含まれる"
+  },
+  {
+    "id": "wa-045",
+    "key": "front-south-1942",
+    "category": "war",
+    "year": 1942,
+    "ageMin": 17,
+    "ageMax": 47,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "soldier",
+        "front_south"
+      ],
+      "notFlags": [
+        "demobilized",
+        "siberia"
+      ]
+    },
+    "title": "南方の島で（1942年）",
+    "text": "1942年、南方の島々で戦った。8月からはガダルカナル島をめぐる戦いが始まり、補給が届かず、飢えと病気で多くの兵が亡くなった。",
+    "effects": {
+      "health": -6,
+      "happiness": -10,
+      "death": {
+        "prob": 0.04,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.9,
+    "heavy": true,
+    "source": {
+      "title": "ガダルカナル島の戦い（1942年8月〜）の年月・死者数は未確認。餓死・戦病死の多さは吉田裕『日本軍兵士』の書評 https://bunshun.jp/articles/-/7440 で確認",
+      "verified": false
+    },
+    "probNote": "死亡の確率は、地域別戦没者数（中国本土約46.6万、南方約130万、中国東北部約24.5万など）と、死者の9割が1944年以降という推計に合うよう置いた1年あたりの目安。"
+  },
+  {
+    "id": "wa-046",
+    "key": "front-south-1943",
+    "category": "war",
+    "year": 1943,
+    "ageMin": 17,
+    "ageMax": 47,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "soldier",
+        "front_south"
+      ],
+      "notFlags": [
+        "demobilized",
+        "siberia"
+      ]
+    },
+    "title": "南方の戦線で（1943年）",
+    "text": "1943年、南方の戦線は守りの戦いになった。ニューギニアでは食べ物も薬も届かない中で戦いが続いた。東部ニューギニアの戦没者は約12万7千人とされる。",
+    "effects": {
+      "health": -6,
+      "happiness": -10,
+      "death": {
+        "prob": 0.06,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.9,
+    "heavy": true,
+    "source": {
+      "title": "厚生労働省 地域別戦没者概見図（中国本土465,700、中国東北部245,400、フィリピン518,000、中部太平洋247,000、東部ニューギニア127,600、ミャンマー137,000、沖縄188,100）",
+      "url": "https://www.mhlw.go.jp/file/04-Houdouhappyou-12103000-Shakaiengokyoku-Engo-Gaijishitsu/0000015304_1.pdf",
+      "verified": true
+    },
+    "probNote": "死亡の確率は、地域別戦没者数（中国本土約46.6万、南方約130万、中国東北部約24.5万など）と、死者の9割が1944年以降という推計に合うよう置いた1年あたりの目安。"
+  },
+  {
+    "id": "wa-047",
+    "key": "front-south-1944",
+    "category": "war",
+    "year": 1944,
+    "ageMin": 17,
+    "ageMax": 47,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "soldier",
+        "front_south"
+      ],
+      "notFlags": [
+        "demobilized",
+        "siberia"
+      ]
+    },
+    "title": "南方の戦線で（1944年）",
+    "text": "1944年、マリアナ諸島やフィリピンをめぐって米軍との戦いが激しくなった。サイパン島などの中部太平洋での戦没者は約24万7千人とされる。",
+    "effects": {
+      "health": -10,
+      "happiness": -10,
+      "death": {
+        "prob": 0.25,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.9,
+    "heavy": true,
+    "source": {
+      "title": "厚生労働省 地域別戦没者概見図（中国本土465,700、中国東北部245,400、フィリピン518,000、中部太平洋247,000、東部ニューギニア127,600、ミャンマー137,000、沖縄188,100）",
+      "url": "https://www.mhlw.go.jp/file/04-Houdouhappyou-12103000-Shakaiengokyoku-Engo-Gaijishitsu/0000015304_1.pdf",
+      "verified": true
+    },
+    "probNote": "死亡の確率は、地域別戦没者数（中国本土約46.6万、南方約130万、中国東北部約24.5万など）と、死者の9割が1944年以降という推計に合うよう置いた1年あたりの目安。"
+  },
+  {
+    "id": "wa-048",
+    "key": "front-south-1945",
+    "category": "war",
+    "year": 1945,
+    "ageMin": 17,
+    "ageMax": 47,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "soldier",
+        "front_south"
+      ],
+      "notFlags": [
+        "demobilized",
+        "siberia"
+      ]
+    },
+    "title": "南方の戦線で（1945年）",
+    "text": "1945年、フィリピンやビルマでは部隊が山や密林へ追いこまれ、飢えや病気で亡くなる人がとても多かった。フィリピンでの戦没者は約51万8千人とされる。",
+    "effects": {
+      "health": -12,
+      "happiness": -10,
+      "death": {
+        "prob": 0.3,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.9,
+    "heavy": true,
+    "source": {
+      "title": "厚生労働省 フィリピンにおける遺骨収容実施状況（戦没者概数518,000人、うち海没約78,000人）",
+      "url": "https://www.mhlw.go.jp/content/12103000/001223069.pdf",
+      "verified": true
+    },
+    "probNote": "死亡の確率は、地域別戦没者数（中国本土約46.6万、南方約130万、中国東北部約24.5万など）と、死者の9割が1944年以降という推計に合うよう置いた1年あたりの目安。"
+  },
+  {
+    "id": "wa-049",
+    "key": "front-sea",
+    "category": "war",
+    "year": 1943,
+    "endYear": 1945,
+    "ageMin": 17,
+    "ageMax": 47,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "soldier",
+        "front_south"
+      ],
+      "notFlags": [
+        "demobilized",
+        "siberia"
+      ]
+    },
+    "title": "輸送船が沈められた",
+    "text": "兵を運ぶ輸送船や軍艦が、潜水艦や飛行機の攻撃で次々と沈められた。海で亡くなった軍人は30万人を超えるとされる。",
+    "effects": {
+      "health": -6,
+      "happiness": -10,
+      "death": {
+        "prob": 0.25,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.3,
+    "heavy": true,
+    "source": {
+      "title": "文春オンライン 吉田裕『日本軍兵士』書評（死者の9割が1944年以降、海没死30万人超、戦病死・餓死の多さ）",
+      "url": "https://bunshun.jp/articles/-/7440",
+      "verified": true
+    },
+    "probNote": "死亡の確率は、地域別戦没者数（中国本土約46.6万、南方約130万、中国東北部約24.5万など）と、死者の9割が1944年以降という推計に合うよう置いた1年あたりの目安。1943〜45年の間に1回起きる（1年あたり0.3）。経験した人のうち亡くなる割合"
+  },
+  {
+    "id": "wa-050",
+    "key": "front-home-1945",
+    "category": "war",
+    "year": 1945,
+    "ageMin": 17,
+    "ageMax": 47,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "soldier",
+        "front_home"
+      ],
+      "notFlags": [
+        "demobilized",
+        "siberia"
+      ]
+    },
+    "title": "本土決戦の準備",
+    "text": "1945年、本土決戦に備えて、海岸や山に陣地を掘る毎日だった。食べ物は足りず、栄養失調で体をこわす兵も多かった。空襲で部隊にも死者が出た。",
+    "effects": {
+      "health": -6,
+      "happiness": -10,
+      "death": {
+        "prob": 0.05,
+        "cause": "戦死"
+      }
+    },
+    "probability": 0.9,
+    "heavy": true,
+    "source": {
+      "title": "本土の部隊の戦没者数（未確認）",
+      "verified": false
+    },
+    "probNote": "本土の部隊の戦没者数は確認できなかった。空襲・沖縄戦などを合わせた小さめの目安"
+  },
+  {
+    "id": "wa-051",
+    "key": "war-wounded",
+    "category": "war",
+    "year": 1938,
+    "endYear": 1945,
+    "ageMin": 17,
+    "ageMax": 47,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "soldier"
+      ],
+      "notFlags": [
+        "demobilized",
+        "siberia"
+      ]
+    },
+    "title": "負傷して内地へ",
+    "text": "戦地で負傷し、内地の陸軍病院に送られた。治療のあとも体に障害が残り、傷痍軍人として除隊した。元の仕事に戻れるのか、先の見えない帰郷だった。",
+    "effects": {
+      "health": -20,
+      "happiness": -12,
+      "flags": [
+        "war_wounded",
+        "demobilized"
+      ]
+    },
+    "probability": 0.03,
+    "heavy": true,
+    "source": {
+      "title": "戦傷者の人数（未確認）",
+      "verified": false
+    },
+    "probNote": "1年あたりの目安。除隊するので、その後の戦死の確率はかからない"
+  },
+  {
+    "id": "wa-052",
+    "key": "gunji-yubin-soldier",
+    "category": "war",
+    "year": 1937,
+    "endYear": 1945,
+    "ageMin": 17,
+    "ageMax": 47,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "soldier"
+      ],
+      "notFlags": [
+        "demobilized",
+        "siberia"
+      ]
+    },
+    "title": "戦地から家へ手紙",
+    "text": "戦地から家族へ軍事郵便を書いた。検閲があるため、部隊のいる場所や戦いのことは書けず、元気でいるとだけ書いて送った。家からの手紙は何度も読み返した。",
+    "effects": {
+      "happiness": 3,
+      "relation": 3
+    },
+    "probability": 0.3,
+    "source": {
+      "title": "軍事郵便と検閲",
+      "verified": false
+    },
+    "probNote": "目安"
+  },
+  {
+    "id": "wa-053",
+    "key": "war-end-1945",
+    "category": "war",
+    "year": 1945,
+    "month": 8,
+    "ageMin": 17,
+    "ageMax": 47,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "soldier"
+      ],
+      "notFlags": [
+        "front_home",
+        "demobilized",
+        "siberia"
+      ]
+    },
+    "title": "戦地で終戦を知る",
+    "text": "1945年8月15日、戦地で終戦を知った。部隊ごとに武器を引き渡し、捕虜として扱われた。いつ日本に帰れるのか、誰にも分からなかった。",
+    "effects": {
+      "happiness": -5
+    },
+    "probability": 0.95,
+    "source": {
+      "title": "コトバンク 玉音放送",
+      "url": "https://kotobank.jp/word/玉音放送",
+      "verified": true
+    },
+    "probNote": "目安"
+  },
+  {
+    "id": "wa-054",
+    "key": "war-end-1945",
+    "category": "war",
+    "year": 1945,
+    "month": 8,
+    "ageMin": 17,
+    "ageMax": 47,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "soldier",
+        "front_home"
+      ],
+      "notFlags": [
+        "demobilized",
+        "siberia"
+      ]
+    },
+    "title": "部隊で終戦を知る",
+    "text": "1945年8月15日正午、本土の部隊で終戦の放送を聞いた。掘り続けた陣地は使われないまま残った。まもなく部隊は解散した。",
+    "probability": 0.95,
+    "source": {
+      "title": "コトバンク 玉音放送",
+      "url": "https://kotobank.jp/word/玉音放送",
+      "verified": true
+    },
+    "probNote": "目安"
+  },
+  {
+    "id": "wa-055",
+    "key": "fukuin",
+    "category": "war",
+    "year": 1945,
+    "endYear": 1946,
+    "ageMin": 17,
+    "ageMax": 48,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "soldier",
+        "front_home"
+      ],
+      "notFlags": [
+        "demobilized",
+        "siberia"
+      ]
+    },
+    "title": "復員して家へ",
+    "text": "部隊が解散し、復員して家に帰った。家族は無事を喜んでくれたが、町には仕事も食べ物も足りず、これからどう暮らすかを考えなければならなかった。",
+    "effects": {
+      "happiness": 10,
+      "relation": 5,
+      "flags": [
+        "demobilized"
+      ]
+    },
+    "probability": 0.95,
+    "source": {
+      "title": "立教大学 論文（民間人の引揚げと旧軍人の復員は合わせて629万人以上。厚生省援護局『援護50年史』による）",
+      "url": "https://rikkyo.repo.nii.ac.jp/record/2000308/files/AN00248808_77-2_08.pdf",
+      "verified": true
+    },
+    "probNote": "本土の部隊は1945年のうちにほぼ解散した。目安"
+  },
+  {
+    "id": "wa-056",
+    "key": "fukuin",
+    "category": "war",
+    "year": 1946,
+    "endYear": 1948,
+    "ageMin": 18,
+    "ageMax": 50,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "soldier",
+        "front_china"
+      ],
+      "notFlags": [
+        "front_south",
+        "demobilized",
+        "siberia"
+      ]
+    },
+    "title": "中国から復員",
+    "text": "中国から引揚げ船で日本に帰り、復員した。海外から引揚げた軍人と民間人は、合わせて約629万人にのぼった。故郷の駅で家族が待っていた。",
+    "effects": {
+      "happiness": 10,
+      "relation": 5,
+      "flags": [
+        "demobilized",
+        "repatriated"
+      ]
+    },
+    "probability": 0.85,
+    "source": {
+      "title": "立教大学 論文（民間人の引揚げと旧軍人の復員は合わせて629万人以上。厚生省援護局『援護50年史』による）",
+      "url": "https://rikkyo.repo.nii.ac.jp/record/2000308/files/AN00248808_77-2_08.pdf",
+      "verified": true
+    },
+    "probNote": "中国からの復員は1946年に大部分が終わった。目安"
+  },
+  {
+    "id": "wa-057",
+    "key": "fukuin",
+    "category": "war",
+    "year": 1946,
+    "endYear": 1948,
+    "ageMin": 18,
+    "ageMax": 50,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "soldier",
+        "front_south"
+      ],
+      "notFlags": [
+        "demobilized",
+        "siberia"
+      ]
+    },
+    "title": "南方から復員",
+    "text": "南方の島から復員船で日本に帰った。やせ細った体で故郷に着くと、家族はもう戦死したものと思っていた。海外からの引揚げと復員は約629万人にのぼった。",
+    "effects": {
+      "happiness": 10,
+      "relation": 5,
+      "health": -5,
+      "flags": [
+        "demobilized",
+        "repatriated"
+      ]
+    },
+    "probability": 0.75,
+    "source": {
+      "title": "立教大学 論文（民間人の引揚げと旧軍人の復員は合わせて629万人以上。厚生省援護局『援護50年史』による）",
+      "url": "https://rikkyo.repo.nii.ac.jp/record/2000308/files/AN00248808_77-2_08.pdf",
+      "verified": true
+    },
+    "probNote": "南方からの復員は1946〜47年が中心。目安"
+  },
+  {
+    "id": "wa-058",
+    "key": "fukuin",
+    "category": "war",
+    "year": 1946,
+    "endYear": 1948,
+    "ageMin": 18,
+    "ageMax": 50,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "soldier",
+        "front_manchuria"
+      ],
+      "notFlags": [
+        "front_south",
+        "demobilized",
+        "siberia"
+      ]
+    },
+    "title": "満州から復員",
+    "text": "ソ連軍に連れて行かれずにすみ、満州から引揚げ船で日本に帰った。故郷に着くまで、何度も列車と船を乗り継いだ。",
+    "effects": {
+      "happiness": 10,
+      "relation": 5,
+      "flags": [
+        "demobilized",
+        "repatriated"
+      ]
+    },
+    "probability": 0.7,
+    "source": {
+      "title": "立教大学 論文（民間人の引揚げと旧軍人の復員は合わせて629万人以上。厚生省援護局『援護50年史』による）",
+      "url": "https://rikkyo.repo.nii.ac.jp/record/2000308/files/AN00248808_77-2_08.pdf",
+      "verified": true
+    },
+    "probNote": "目安"
+  },
+  {
+    "id": "wa-059",
+    "key": "fukuin-life",
+    "category": "war",
+    "year": 1946,
+    "endYear": 1949,
+    "ageMin": 18,
+    "ageMax": 52,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "soldier",
+        "demobilized"
+      ],
+      "notFlags": [
+        "war_wounded"
+      ]
+    },
+    "title": "復員してからの暮らし",
+    "text": "復員したが、もとの職場は焼けたり、なくなったりしていた。闇市で物を売ったり、田舎で畑を手伝ったりして、家族を食べさせる道を探した。",
+    "effects": {
+      "happiness": -3,
+      "money": 0
+    },
+    "probability": 0.4,
+    "source": {
+      "title": "コトバンク 闇市",
+      "url": "https://kotobank.jp/word/闇市",
+      "verified": true
+    },
+    "probNote": "目安"
+  },
+  {
+    "id": "wa-060",
+    "key": "siberia-intern",
+    "category": "war",
+    "year": 1945,
+    "month": 9,
+    "ageMin": 17,
+    "ageMax": 47,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "soldier",
+        "front_manchuria"
+      ],
+      "notFlags": [
+        "front_south",
+        "demobilized",
+        "siberia"
+      ]
+    },
+    "title": "シベリアに抑留された",
+    "text": "終戦のあと、ソ連軍の捕虜となり、シベリアなどの収容所へ送られた。旧ソ連地域に抑留された日本人は約57万5千人とされる。",
+    "effects": {
+      "health": -10,
+      "happiness": -25,
+      "flags": [
+        "siberia"
+      ]
+    },
+    "probability": 0.8,
+    "heavy": true,
+    "source": {
+      "title": "厚生労働省 シベリア抑留中死亡者に関する資料（抑留者約57万5千人、死亡と認められる者約5万5千人）",
+      "url": "https://www.mhlw.go.jp/seisaku/2009/11/01.html",
+      "verified": true
+    },
+    "probNote": "終戦時に満州・北朝鮮・樺太などにいた兵のうち抑留された割合。終戦時の兵力は未確認のため目安"
+  },
+  {
+    "id": "wa-061",
+    "key": "siberia-winter",
+    "category": "war",
+    "year": 1946,
+    "endYear": 1947,
+    "ageMin": 18,
+    "ageMax": 49,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "siberia"
+      ],
+      "notFlags": [
+        "siberia_returned"
+      ]
+    },
+    "title": "収容所の冬",
+    "text": "収容所では、寒さと飢えの中で、森の木を切る仕事や鉄道を造る仕事をさせられた。抑留中に亡くなった人は約5万5千人とされる。",
+    "effects": {
+      "health": -15,
+      "happiness": -15,
+      "death": {
+        "prob": 0.101,
+        "cause": "シベリア抑留"
+      }
+    },
+    "probability": 0.95,
+    "heavy": true,
+    "source": {
+      "title": "厚生労働省 シベリア抑留中死亡者に関する資料（抑留者約57万5千人、死亡と認められる者約5万5千人）",
+      "url": "https://www.mhlw.go.jp/seisaku/2009/11/01.html",
+      "verified": true
+    },
+    "probNote": "死亡の確率は、亡くなった人約5万5千人÷抑留者約57万5千人＝約9.6%を、この出来事の確率0.95で割った値"
+  },
+  {
+    "id": "wa-062",
+    "key": "siberia-return",
+    "category": "war",
+    "year": 1946,
+    "month": 12,
+    "ageMin": 18,
+    "ageMax": 49,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "siberia"
+      ]
+    },
+    "title": "シベリアから帰国",
+    "text": "1946年12月、シベリアからの引揚げが始まり、最初の船で日本に帰ることができた。収容所に残る仲間のことが気がかりだった。",
+    "effects": {
+      "happiness": 15,
+      "relation": 5,
+      "flags": [
+        "siberia_returned",
+        "demobilized"
+      ]
+    },
+    "probability": 0.1,
+    "source": {
+      "title": "札幌市 さっぽろ資料室 シベリア抑留関連資料（引揚げは1946年12月に始まり1956年12月に終了）。1956年12月26日の興安丸の舞鶴入港は現代ビジネスの記事による",
+      "url": "https://www.city.sapporo.jp/toshokan/sapporosiryo/siberia.html",
+      "verified": true
+    },
+    "probNote": "目安"
+  },
+  {
+    "id": "wa-063",
+    "key": "siberia-return",
+    "category": "war",
+    "year": 1947,
+    "endYear": 1950,
+    "ageMin": 19,
+    "ageMax": 53,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "siberia"
+      ]
+    },
+    "title": "シベリアから帰国",
+    "text": "何年もの抑留のあと、ようやく引揚げ船で日本に帰った。故郷では、戦争が終わってからの暮らしの変わりように驚いた。",
+    "effects": {
+      "happiness": 15,
+      "relation": 5,
+      "flags": [
+        "siberia_returned",
+        "demobilized"
+      ]
+    },
+    "probability": 0.6,
+    "source": {
+      "title": "札幌市 さっぽろ資料室 シベリア抑留関連資料（引揚げは1946年12月に始まり1956年12月に終了）。1956年12月26日の興安丸の舞鶴入港は現代ビジネスの記事による",
+      "url": "https://www.city.sapporo.jp/toshokan/sapporosiryo/siberia.html",
+      "verified": true
+    },
+    "probNote": "抑留者の大部分は1947〜50年に帰国した。1年あたりの目安"
+  },
+  {
+    "id": "wa-064",
+    "key": "siberia-return",
+    "category": "war",
+    "year": 1953,
+    "endYear": 1956,
+    "ageMin": 25,
+    "ageMax": 60,
+    "sex": "male",
+    "conditions": {
+      "flags": [
+        "siberia"
+      ]
+    },
+    "title": "11年ぶりの帰国",
+    "text": "長い抑留のあと、日本とソ連の国交回復を前後して帰国が許された。1956年12月、最後の抑留者たちを乗せた船が舞鶴港に着き、シベリアからの引揚げは終わった。",
+    "effects": {
+      "happiness": 15,
+      "relation": 3,
+      "flags": [
+        "siberia_returned",
+        "demobilized"
+      ]
+    },
+    "probability": 0.7,
+    "source": {
+      "title": "札幌市 さっぽろ資料室 シベリア抑留関連資料（引揚げは1946年12月に始まり1956年12月に終了）。1956年12月26日の興安丸の舞鶴入港は現代ビジネスの記事による",
+      "url": "https://www.city.sapporo.jp/toshokan/sapporosiryo/siberia.html",
+      "verified": true
+    },
+    "probNote": "長期の抑留者はごく一部。目安"
+  },
+  {
+    "id": "wa-065",
+    "key": "sino-japanese-war-1937",
+    "category": "war",
+    "year": 1937,
+    "month": 7,
+    "ageMin": 16,
+    "ageMax": 90,
+    "sex": "any",
+    "title": "日中戦争が始まる",
+    "text": "1937年7月、盧溝橋事件をきっかけに中国との戦争が始まった。町や村からは次々に兵が出征し、駅前では日の丸の小旗を振って見送る人の列ができた。",
+    "probability": 0.7,
+    "source": {
+      "title": "総務省 国内各都市の戦災の状況（名古屋市）",
+      "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/tokai_06.html",
+      "verified": true
+    },
+    "probNote": "目安"
+  },
+  {
+    "id": "wa-066",
+    "key": "national-mobilization-1938",
+    "category": "war",
+    "year": 1938,
+    "month": 4,
+    "ageMin": 16,
+    "ageMax": 90,
+    "sex": "any",
+    "title": "国家総動員法",
+    "text": "1938年4月、国家総動員法が公布され、政府は人も物も戦争のために使えるようになった。物の値段や売り買いに決まりが増え、店先から品物が減っていった。",
+    "effects": {
+      "happiness": -2
+    },
+    "probability": 0.5,
+    "source": {
+      "title": "コトバンク 国家総動員法",
+      "url": "https://kotobank.jp/word/国家総動員法",
+      "verified": true
+    },
+    "probNote": "目安"
+  },
+  {
+    "id": "wa-067",
+    "key": "senninbari",
+    "category": "war",
+    "year": 1937,
+    "endYear": 1942,
+    "ageMin": 16,
+    "ageMax": 70,
+    "sex": "female",
+    "title": "千人針を縫った",
+    "text": "出征する兵士のために、街角で千人針を頼まれ、赤い糸で一針ずつ結び目を縫った。弾よけのお守りとされ、千人の女性が一針ずつ縫うものだった。",
+    "probability": 0.25,
+    "source": {
+      "title": "千人針",
+      "verified": false
+    },
+    "probNote": "目安"
+  },
+  {
+    "id": "wa-068",
+    "key": "chouyou",
+    "category": "war",
+    "year": 1939,
+    "endYear": 1943,
+    "month": 7,
+    "ageMin": 16,
+    "ageMax": 45,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "軍需工場へ徴用",
+    "text": "1939年にできた国民徴用令によって徴用され、軍需工場で働くことになった。元の仕事を離れ、決められた工場へ通った。徴用された人は約160万人とされる。",
+    "effects": {
+      "happiness": -6,
+      "flags": [
+        "chouyou"
+      ]
+    },
+    "probability": 0.025,
+    "source": {
+      "title": "コトバンク 国民徴用令（1939年7月公布、1945年までに160万人が徴用）",
+      "url": "https://kotobank.jp/word/国民徴用令-64274",
+      "verified": true
+    },
+    "probNote": "徴用約160万人÷16〜45歳の男子（約1,500万人、未確認）を7年で割った1年あたり約1.5%を、兵士にならなかった人に寄せて置いた目安"
+  },
+  {
+    "id": "wa-069",
+    "key": "chouyou",
+    "category": "war",
+    "year": 1944,
+    "endYear": 1945,
+    "ageMin": 16,
+    "ageMax": 50,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "軍需工場へ徴用",
+    "text": "徴用令書が届き、飛行機や船を造る軍需工場で働くことになった。家の仕事は家族に任せ、工場の寮で寝起きした。空襲の警報が鳴るたびに作業が止まった。",
+    "effects": {
+      "happiness": -6,
+      "flags": [
+        "chouyou"
+      ]
+    },
+    "probability": 0.06,
+    "source": {
+      "title": "コトバンク 国民徴用令（1939年7月公布、1945年までに160万人が徴用）",
+      "url": "https://kotobank.jp/word/国民徴用令-64274",
+      "verified": true
+    },
+    "probNote": "目安"
+  },
+  {
+    "id": "wa-070",
+    "key": "rice-ration-1941",
+    "category": "war",
+    "year": 1941,
+    "month": 4,
+    "prefs": [
+      13,
+      14,
+      23,
+      26,
+      27,
+      28
+    ],
+    "ageMin": 16,
+    "ageMax": 90,
+    "sex": "any",
+    "title": "米が配給制に",
+    "text": "1941年4月、六大都市で米が通帳による配給制になった。決まった量しか買えず、米に麦や芋を混ぜて、家族の食事をなんとかやりくりした。",
+    "effects": {
+      "happiness": -3
+    },
+    "probability": 0.9,
+    "source": {
+      "title": "総務省 国内各都市の戦災の状況（名古屋市）",
+      "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/tokai_06.html",
+      "verified": true
+    },
+    "probNote": "目安"
+  },
+  {
+    "id": "wa-071",
+    "key": "pacific-war-1941",
+    "category": "war",
+    "year": 1941,
+    "month": 12,
+    "ageMin": 16,
+    "ageMax": 90,
+    "sex": "any",
+    "title": "太平洋戦争が始まる",
+    "text": "1941年12月8日、真珠湾攻撃で米英との戦争が始まった。ラジオは戦果を伝え続けたが、中国との戦争も終わらないまま、戦う相手がさらに増えた。",
+    "probability": 0.8,
+    "source": {
+      "title": "総務省 国内各都市の戦災の状況（宇都宮市）",
+      "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_26.html",
+      "verified": true
+    },
+    "probNote": "目安"
+  },
+  {
+    "id": "wa-072",
+    "key": "tonarigumi",
+    "category": "war",
+    "year": 1940,
+    "endYear": 1944,
+    "ageMin": 20,
+    "ageMax": 70,
+    "sex": "female",
+    "title": "隣組と防空演習",
+    "text": "隣組の防空演習に加わり、バケツリレーで火を消す訓練をした。回覧板で配給や行事の知らせが回ってきて、隣近所との付き合いは前よりずっと濃くなった。",
+    "probability": 0.25,
+    "source": {
+      "title": "隣組・防空演習",
+      "verified": false
+    },
+    "probNote": "目安"
+  },
+  {
+    "id": "wa-073",
+    "key": "joshi-teishin-1944",
+    "category": "war",
+    "year": 1944,
+    "endYear": 1945,
+    "month": 8,
+    "ageMin": 16,
+    "ageMax": 25,
+    "sex": "female",
+    "conditions": {
+      "married": false
+    },
+    "title": "女子挺身隊",
+    "text": "1944年8月に女子挺身勤労令が出て、結婚していない女性も工場などで働くよう動員された。女子挺身隊として軍需工場に通い、部品を作った。",
+    "effects": {
+      "health": -2,
+      "happiness": -5,
+      "flags": [
+        "mobilized"
+      ]
+    },
+    "probability": 0.15,
+    "source": {
+      "title": "中央区 戦争の記録（1944年8月23日 学徒勤労令・女子挺身勤労令の公布）",
+      "url": "https://www.city.chuo.lg.jp/virtualmuseum/sensokiroku/history/1944_0823.html",
+      "verified": true
+    },
+    "probNote": "動員された人数は未確認。結婚していない16〜25歳の女性の2〜3割になる目安"
+  },
+  {
+    "id": "wa-074",
+    "key": "send-child-sokai-1944",
+    "category": "war",
+    "year": 1944,
+    "endYear": 1945,
+    "month": 8,
+    "prefs": [
+      13,
+      14,
+      23,
+      27,
+      28,
+      40
+    ],
+    "ageMin": 27,
+    "ageMax": 50,
+    "sex": "female",
+    "conditions": {
+      "married": true
+    },
+    "title": "子どもを疎開へ送る",
+    "text": "1944年8月から、都市の国民学校の子どもたちが学校ごとに地方へ集団疎開することになった。わが子を見送り、無事を祈って手紙を書いた。",
+    "effects": {
+      "happiness": -8,
+      "relation": -2
+    },
+    "probability": 0.2,
+    "source": {
+      "title": "コトバンク 学童疎開",
+      "url": "https://kotobank.jp/word/学童疎開",
+      "verified": true
+    },
+    "probNote": "疎開の対象都市を含む県に限った目安"
+  },
+  {
+    "id": "wa-075",
+    "key": "giyuheieki-1945",
+    "category": "war",
+    "year": 1945,
+    "month": 6,
+    "ageMin": 16,
+    "ageMax": 60,
+    "sex": "male",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "国民義勇戦闘隊",
+    "text": "1945年6月、義勇兵役法ができ、本土決戦に備えて男子は60歳まで国民義勇戦闘隊に組み込まれることになった。仕事の合間に竹やりの訓練をした。",
+    "effects": {
+      "happiness": -5
+    },
+    "probability": 0.4,
+    "source": {
+      "title": "アジア歴史資料センター 用語解説（国民義勇隊）",
+      "url": "https://www.jacar.archives.go.jp/das/term-en/00002125",
+      "verified": true
+    },
+    "probNote": "目安"
+  },
+  {
+    "id": "wa-076",
+    "key": "giyuheieki-1945",
+    "category": "war",
+    "year": 1945,
+    "month": 6,
+    "ageMin": 17,
+    "ageMax": 40,
+    "sex": "female",
+    "title": "国民義勇戦闘隊",
+    "text": "1945年6月、義勇兵役法ができ、本土決戦に備えて女子も40歳まで国民義勇戦闘隊に組み込まれることになった。なぎなたや竹やりの訓練をした。",
+    "effects": {
+      "happiness": -5
+    },
+    "probability": 0.4,
+    "source": {
+      "title": "アジア歴史資料センター 用語解説（国民義勇隊）",
+      "url": "https://www.jacar.archives.go.jp/das/term-en/00002125",
+      "verified": true
+    },
+    "probNote": "目安"
+  },
+  {
+    "id": "wa-077",
+    "key": "tokyo-airraid-1945",
+    "category": "war",
+    "year": 1945,
+    "month": 3,
+    "prefs": [
+      13
+    ],
+    "ageMin": 16,
+    "ageMax": 100,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "東京大空襲",
+    "text": "1945年3月10日の未明、東京の下町が空襲を受けた。一晩で約26万7千戸が焼け、死者は約8万4千人とされる。住んでいた家が焼け、焼け跡で暮らしを立て直すことになった。",
+    "effects": {
+      "health": -5,
+      "happiness": -18,
+      "flags": [
+        "airraid_survivor",
+        "lost_home_war"
+      ],
+      "death": {
+        "prob": 0.08,
+        "cause": "空襲"
+      }
+    },
+    "probability": 0.15,
+    "heavy": true,
+    "source": {
+      "title": "総務省 国内各都市の戦災の状況（東京都）",
+      "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kanto_11.html",
+      "verified": true
+    },
+    "probNote": "war.json の同じ key（15歳まで）と同じ確率・死亡率。兵士として出征中の人には出さない"
+  },
+  {
+    "id": "wa-078",
+    "key": "osaka-airraid-1945",
+    "category": "war",
+    "year": 1945,
+    "month": 3,
+    "prefs": [
+      27
+    ],
+    "ageMin": 16,
+    "ageMax": 100,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "大阪大空襲",
+    "text": "1945年3月13日の深夜から14日未明、大阪が空襲を受けた。市の中心部約21平方キロが焼け、死者・行方不明は4千人を超えた。住んでいた家が焼けた。",
+    "effects": {
+      "health": -5,
+      "happiness": -18,
+      "flags": [
+        "airraid_survivor",
+        "lost_home_war"
+      ],
+      "death": {
+        "prob": 0.009,
+        "cause": "空襲"
+      }
+    },
+    "probability": 0.12,
+    "heavy": true,
+    "source": {
+      "title": "ピースおおさか 学習ガイド（第1次大阪大空襲）",
+      "url": "https://www.peace-osaka.or.jp/sys/wp-content/themes/peaceosaka/assets/images/education/worksheet/guide_english.pdf",
+      "verified": true
+    },
+    "probNote": "war.json の同じ key（15歳まで）と同じ確率・死亡率。兵士として出征中の人には出さない"
+  },
+  {
+    "id": "wa-079",
+    "key": "nagoya-airraid-1945",
+    "category": "war",
+    "year": 1945,
+    "month": 3,
+    "prefs": [
+      23
+    ],
+    "ageMin": 16,
+    "ageMax": 100,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "名古屋大空襲",
+    "text": "1945年3月19日、名古屋が空襲を受けた。この日だけで約4万戸が被害を受け、約14万3千人が焼け出された。住んでいた家が焼けた。",
+    "effects": {
+      "health": -5,
+      "happiness": -18,
+      "flags": [
+        "airraid_survivor",
+        "lost_home_war"
+      ],
+      "death": {
+        "prob": 0.006,
+        "cause": "空襲"
+      }
+    },
+    "probability": 0.045,
+    "heavy": true,
+    "source": {
+      "title": "総務省 国内各都市の戦災の状況（名古屋市）",
+      "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/tokai_06.html",
+      "verified": true
+    },
+    "probNote": "war.json の同じ key（15歳まで）と同じ確率・死亡率。兵士として出征中の人には出さない"
+  },
+  {
+    "id": "wa-080",
+    "key": "kobe-airraid-1945",
+    "category": "war",
+    "year": 1945,
+    "month": 3,
+    "prefs": [
+      28
+    ],
+    "ageMin": 16,
+    "ageMax": 100,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "神戸大空襲",
+    "text": "1945年3月17日の未明、神戸が空襲を受けた。市の西半分が焼け、6月までの空襲で死者は7千人を超えた。住んでいた家が焼けた。",
+    "effects": {
+      "health": -5,
+      "happiness": -18,
+      "flags": [
+        "airraid_survivor",
+        "lost_home_war"
+      ],
+      "death": {
+        "prob": 0.014,
+        "cause": "空襲"
+      }
+    },
+    "probability": 0.15,
+    "heavy": true,
+    "source": {
+      "title": "総務省 国内各都市の戦災の状況（神戸市）",
+      "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/kinki_07.html",
+      "verified": true
+    },
+    "probNote": "war.json の同じ key（15歳まで）と同じ確率・死亡率。兵士として出征中の人には出さない"
+  },
+  {
+    "id": "wa-081",
+    "key": "yokohama-airraid-1945",
+    "category": "war",
+    "year": 1945,
+    "month": 5,
+    "prefs": [
+      14
+    ],
+    "ageMin": 16,
+    "ageMax": 100,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "横浜大空襲",
+    "text": "1945年5月29日、横浜が空襲を受けた。死者は3,650人、焼け出された人は30万人を超えた。住んでいた家が焼けた。",
+    "effects": {
+      "health": -5,
+      "happiness": -18,
+      "flags": [
+        "airraid_survivor",
+        "lost_home_war"
+      ],
+      "death": {
+        "prob": 0.012,
+        "cause": "空襲"
+      }
+    },
+    "probability": 0.14,
+    "heavy": true,
+    "source": {
+      "title": "横浜市 国際広報（横浜大空襲）",
+      "url": "https://cn.city.yokohama.lg.jp/city-info/yokohamashi/org/kokusai/sonota/international-digest/digest-2021.files/digest210622.pdf",
+      "verified": true
+    },
+    "probNote": "war.json の同じ key（15歳まで）と同じ確率・死亡率。兵士として出征中の人には出さない"
+  },
+  {
+    "id": "wa-082",
+    "key": "hiroshima-abomb-1945",
+    "category": "war",
+    "year": 1945,
+    "month": 8,
+    "prefs": [
+      34
+    ],
+    "ageMin": 16,
+    "ageMax": 100,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "広島に原爆",
+    "text": "1945年8月6日午前8時15分、広島市に原子爆弾が落とされた。その年の末までに約14万人が亡くなったとされる。市内で被爆し、のちに被爆者と呼ばれる一人になった。",
+    "effects": {
+      "health": -20,
+      "happiness": -22,
+      "flags": [
+        "hibakusha",
+        "airraid_survivor"
+      ],
+      "death": {
+        "prob": 0.4,
+        "cause": "原子爆弾"
+      }
+    },
+    "probability": 0.15,
+    "heavy": true,
+    "source": {
+      "title": "広島市 原爆被害の概要",
+      "url": "https://www.city.hiroshima.lg.jp/soshiki/48/9400.html",
+      "verified": true
+    },
+    "probNote": "war.json の同じ key と同じ確率・死亡率"
+  },
+  {
+    "id": "wa-083",
+    "key": "nagasaki-abomb-1945",
+    "category": "war",
+    "year": 1945,
+    "month": 8,
+    "prefs": [
+      42
+    ],
+    "ageMin": 16,
+    "ageMax": 100,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "長崎に原爆",
+    "text": "1945年8月9日、長崎市に原子爆弾が落とされた。その年の末までに7万3千人余りが亡くなったとされる。市内で被爆し、のちに被爆者と呼ばれる一人になった。",
+    "effects": {
+      "health": -20,
+      "happiness": -22,
+      "flags": [
+        "hibakusha",
+        "airraid_survivor"
+      ],
+      "death": {
+        "prob": 0.31,
+        "cause": "原子爆弾"
+      }
+    },
+    "probability": 0.17,
+    "heavy": true,
+    "source": {
+      "title": "長崎原爆資料館 原爆による被害（1945年12月末までの推定）",
+      "url": "https://nagasakipeace.jp/en/reference/materials/kids/higai.html",
+      "verified": true
+    },
+    "probNote": "war.json の同じ key と同じ確率・死亡率"
+  },
+  {
+    "id": "wa-084",
+    "key": "okinawa-battle-1945",
+    "category": "war",
+    "year": 1945,
+    "month": 4,
+    "prefs": [
+      47
+    ],
+    "ageMin": 16,
+    "ageMax": 100,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "soldier",
+        "evacuated"
+      ]
+    },
+    "title": "沖縄戦",
+    "text": "1945年4月1日、米軍が沖縄本島に上陸し、約3か月の地上戦になった。県民の戦没者は一般の人だけで約9万4千人と推計されている。家族と避難を続けた。",
+    "effects": {
+      "health": -15,
+      "happiness": -25,
+      "flags": [
+        "okinawa_battle",
+        "lost_home_war"
+      ],
+      "death": {
+        "prob": 0.18,
+        "cause": "沖縄戦"
+      }
+    },
+    "probability": 0.85,
+    "heavy": true,
+    "source": {
+      "title": "総務省 国内各都市の戦災の状況（沖縄県）",
+      "url": "https://www.soumu.go.jp/main_sosiki/daijinkanbou/sensai/situation/state/okinawa_04.html",
+      "verified": true
+    },
+    "probNote": "war.json の同じ key と同じ確率・死亡率。17〜45歳の男子の防衛召集（未確認）は含めていない"
+  },
+  {
+    "id": "wa-085",
+    "key": "war-end-1945",
+    "category": "war",
+    "year": 1945,
+    "month": 8,
+    "ageMin": 16,
+    "ageMax": 100,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "soldier"
+      ]
+    },
+    "title": "戦争が終わる",
+    "text": "1945年8月15日正午、ラジオで天皇の声による終戦の放送を聞いた。負けたという悔しさと、もう空襲はないという思いが入りまじった。",
+    "probability": 1,
+    "source": {
+      "title": "コトバンク 玉音放送",
+      "url": "https://kotobank.jp/word/玉音放送",
+      "verified": true
+    }
+  },
+  {
+    "id": "wa-086",
+    "key": "husband-drafted",
+    "category": "war",
+    "year": 1937,
+    "endYear": 1941,
+    "ageMin": 18,
+    "ageMax": 42,
+    "sex": "female",
+    "conditions": {
+      "married": true,
+      "notFlags": [
+        "husband_soldier"
+      ]
+    },
+    "title": "夫が出征した",
+    "text": "夫に召集令状が届いた。駅まで見送り、それからは夫のいない家を一人で守った。子どもの世話も、田畑や店の仕事も、自分の肩にかかってきた。",
+    "effects": {
+      "happiness": -10,
+      "relation": -2,
+      "flags": [
+        "husband_soldier"
+      ]
+    },
+    "probability": 0.04,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "夫が召集される1年あたりの目安（男子の動員の確率を、夫の年齢にあてはめた）"
+  },
+  {
+    "id": "wa-087",
+    "key": "husband-drafted",
+    "category": "war",
+    "year": 1942,
+    "endYear": 1945,
+    "ageMin": 18,
+    "ageMax": 45,
+    "sex": "female",
+    "conditions": {
+      "married": true,
+      "notFlags": [
+        "husband_soldier"
+      ]
+    },
+    "title": "夫が出征した",
+    "text": "夫に召集令状が届いた。子どもを抱えて配給の列に並び、家の仕事を一人でこなす毎日になった。夫からの軍事郵便だけが楽しみだった。",
+    "effects": {
+      "happiness": -10,
+      "relation": -2,
+      "flags": [
+        "husband_soldier"
+      ]
+    },
+    "probability": 0.09,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "夫が召集される1年あたりの目安"
+  },
+  {
+    "id": "wa-088",
+    "key": "husband-fate",
+    "category": "war",
+    "year": 1938,
+    "endYear": 1943,
+    "ageMin": 18,
+    "ageMax": 48,
+    "sex": "female",
+    "conditions": {
+      "flags": [
+        "husband_soldier"
+      ]
+    },
+    "title": "夫の戦死の公報",
+    "text": "夫が戦死したという公報が届いた。遺骨は帰ってこなかった。夫のいない家で、子どもを育てていくことになった。",
+    "effects": {
+      "happiness": -25,
+      "relation": -5,
+      "flags": [
+        "war_widow",
+        "war_bereaved"
+      ]
+    },
+    "probability": 0.015,
+    "heavy": true,
+    "source": {
+      "title": "厚生労働省 戦没者慰霊（先の大戦の戦没者約310万人、うち軍人・軍属約230万人）",
+      "url": "https://www.mhlw.go.jp/seisaku/2010/08/02.html",
+      "verified": true
+    },
+    "probNote": "戦死の公報が届く1年あたりの確率。出征した家族のうち亡くなる割合が約22%（軍人・軍属の戦没者約230万人÷のべ動員数の目安）になるよう、1938〜43年は0.015、1944〜47年は0.08と置いた"
+  },
+  {
+    "id": "wa-089",
+    "key": "husband-fate",
+    "category": "war",
+    "year": 1944,
+    "endYear": 1947,
+    "ageMin": 18,
+    "ageMax": 50,
+    "sex": "female",
+    "conditions": {
+      "flags": [
+        "husband_soldier"
+      ]
+    },
+    "title": "夫の戦死の公報",
+    "text": "夫が戦死したという公報が届いた。戦地の名前と日付だけが書かれていた。軍人・軍属の戦没者は約230万人とされ、遺骨の多くは今も帰っていない。",
+    "effects": {
+      "happiness": -25,
+      "relation": -5,
+      "flags": [
+        "war_widow",
+        "war_bereaved"
+      ]
+    },
+    "probability": 0.08,
+    "heavy": true,
+    "source": {
+      "title": "厚生労働省 戦没者遺骨収集事業の概要（海外戦没者約240万人、未収容遺骨約112万柱、うち海没約30万柱）",
+      "url": "https://www.mhlw.go.jp/content/12103000/001233035.pdf",
+      "verified": true
+    },
+    "probNote": "戦死の公報が届く1年あたりの確率。出征した家族のうち亡くなる割合が約22%（軍人・軍属の戦没者約230万人÷のべ動員数の目安）になるよう、1938〜43年は0.015、1944〜47年は0.08と置いた"
+  },
+  {
+    "id": "wa-090",
+    "key": "husband-fate",
+    "category": "war",
+    "year": 1945,
+    "endYear": 1948,
+    "ageMin": 18,
+    "ageMax": 52,
+    "sex": "female",
+    "conditions": {
+      "flags": [
+        "husband_soldier"
+      ]
+    },
+    "title": "夫が復員した",
+    "text": "戦地から夫が復員して帰ってきた。やせて顔つきが変わっていたが、生きて帰ってきてくれた。もう一度、家族で暮らしを立て直すことになった。",
+    "effects": {
+      "happiness": 12,
+      "relation": 4,
+      "flags": [
+        "husband_returned"
+      ]
+    },
+    "probability": 0.5,
+    "source": {
+      "title": "立教大学 論文（民間人の引揚げと旧軍人の復員は合わせて629万人以上。厚生省援護局『援護50年史』による）",
+      "url": "https://rikkyo.repo.nii.ac.jp/record/2000308/files/AN00248808_77-2_08.pdf",
+      "verified": true
+    },
+    "probNote": "1945〜48年の1年あたりの目安"
+  },
+  {
+    "id": "wa-091",
+    "key": "brother-drafted",
+    "category": "war",
+    "year": 1937,
+    "endYear": 1941,
+    "ageMin": 16,
+    "ageMax": 40,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "brother_soldier"
+      ]
+    },
+    "title": "兄弟が出征した",
+    "text": "兄弟の一人に召集令状が届き、出征していった。家族そろって駅まで見送った。家の働き手が一人減り、残った者で田畑や店の仕事を分け合った。",
+    "effects": {
+      "happiness": -10,
+      "relation": -2,
+      "flags": [
+        "brother_soldier"
+      ]
+    },
+    "probability": 0.1,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "この時代はきょうだいが多く、兄弟の誰かが出征する1年あたりの目安"
+  },
+  {
+    "id": "wa-092",
+    "key": "brother-drafted",
+    "category": "war",
+    "year": 1942,
+    "endYear": 1945,
+    "ageMin": 16,
+    "ageMax": 45,
+    "sex": "any",
+    "conditions": {
+      "notFlags": [
+        "brother_soldier"
+      ]
+    },
+    "title": "兄弟が出征した",
+    "text": "兄弟の一人に召集令状が届き、出征していった。近所でも若い男の人の姿がめっきり減り、どの家にも出征した人の名前の札がかかっていた。",
+    "effects": {
+      "happiness": -10,
+      "relation": -2,
+      "flags": [
+        "brother_soldier"
+      ]
+    },
+    "probability": 0.2,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "1年あたりの目安"
+  },
+  {
+    "id": "wa-093",
+    "key": "brother-fate",
+    "category": "war",
+    "year": 1938,
+    "endYear": 1943,
+    "ageMin": 16,
+    "ageMax": 46,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "brother_soldier"
+      ]
+    },
+    "title": "兄弟の戦死の公報",
+    "text": "出征していた兄弟が戦死したという公報が届いた。遺骨は帰ってこなかった。家族で葬儀を出し、仏壇に写真を置いた。",
+    "effects": {
+      "happiness": -25,
+      "relation": -5,
+      "flags": [
+        "brother_war_dead",
+        "war_bereaved"
+      ]
+    },
+    "probability": 0.015,
+    "heavy": true,
+    "source": {
+      "title": "厚生労働省 戦没者慰霊（先の大戦の戦没者約310万人、うち軍人・軍属約230万人）",
+      "url": "https://www.mhlw.go.jp/seisaku/2010/08/02.html",
+      "verified": true
+    },
+    "probNote": "戦死の公報が届く1年あたりの確率。出征した家族のうち亡くなる割合が約22%（軍人・軍属の戦没者約230万人÷のべ動員数の目安）になるよう、1938〜43年は0.015、1944〜47年は0.08と置いた"
+  },
+  {
+    "id": "wa-094",
+    "key": "brother-fate",
+    "category": "war",
+    "year": 1944,
+    "endYear": 1947,
+    "ageMin": 16,
+    "ageMax": 50,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "brother_soldier"
+      ]
+    },
+    "title": "兄弟の戦死の公報",
+    "text": "出征していた兄弟が戦死したという公報が届いた。どこで、どのように亡くなったのか、くわしいことは分からなかった。",
+    "effects": {
+      "happiness": -25,
+      "relation": -5,
+      "flags": [
+        "brother_war_dead",
+        "war_bereaved"
+      ]
+    },
+    "probability": 0.08,
+    "heavy": true,
+    "source": {
+      "title": "厚生労働省 戦没者慰霊（先の大戦の戦没者約310万人、うち軍人・軍属約230万人）",
+      "url": "https://www.mhlw.go.jp/seisaku/2010/08/02.html",
+      "verified": true
+    },
+    "probNote": "戦死の公報が届く1年あたりの確率。出征した家族のうち亡くなる割合が約22%（軍人・軍属の戦没者約230万人÷のべ動員数の目安）になるよう、1938〜43年は0.015、1944〜47年は0.08と置いた"
+  },
+  {
+    "id": "wa-095",
+    "key": "brother-fate",
+    "category": "war",
+    "year": 1945,
+    "endYear": 1948,
+    "ageMin": 16,
+    "ageMax": 52,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "brother_soldier"
+      ]
+    },
+    "title": "兄弟が復員した",
+    "text": "出征していた兄弟が復員して帰ってきた。戦地のことはあまり話さなかったが、家族はそろって無事を喜んだ。",
+    "effects": {
+      "happiness": 12,
+      "relation": 4,
+      "flags": [
+        "brother_returned"
+      ]
+    },
+    "probability": 0.5,
+    "source": {
+      "title": "立教大学 論文（民間人の引揚げと旧軍人の復員は合わせて629万人以上。厚生省援護局『援護50年史』による）",
+      "url": "https://rikkyo.repo.nii.ac.jp/record/2000308/files/AN00248808_77-2_08.pdf",
+      "verified": true
+    },
+    "probNote": "目安"
+  },
+  {
+    "id": "wa-096",
+    "key": "son-drafted",
+    "category": "war",
+    "year": 1937,
+    "endYear": 1941,
+    "ageMin": 42,
+    "ageMax": 65,
+    "sex": "any",
+    "conditions": {
+      "married": true,
+      "notFlags": [
+        "son_soldier"
+      ]
+    },
+    "title": "息子が出征した",
+    "text": "息子に召集令状が届いた。親として、喜んで送り出すように振る舞うしかなかった。駅で姿が見えなくなるまで見送った。",
+    "effects": {
+      "happiness": -10,
+      "relation": -2,
+      "flags": [
+        "son_soldier"
+      ]
+    },
+    "probability": 0.05,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "息子が20〜30代になる親の年齢帯で、1年あたりの目安"
+  },
+  {
+    "id": "wa-097",
+    "key": "son-drafted",
+    "category": "war",
+    "year": 1942,
+    "endYear": 1945,
+    "ageMin": 40,
+    "ageMax": 68,
+    "sex": "any",
+    "conditions": {
+      "married": true,
+      "notFlags": [
+        "son_soldier"
+      ]
+    },
+    "title": "息子が出征した",
+    "text": "息子に召集令状が届き、出征していった。19歳で検査を受ける時代になり、まだ子どもだと思っていた息子も兵隊になった。",
+    "effects": {
+      "happiness": -10,
+      "relation": -2,
+      "flags": [
+        "son_soldier"
+      ]
+    },
+    "probability": 0.15,
+    "source": {
+      "title": "imidas「赤紙（あかがみ）」（徴兵検査の年齢・等級、兵役の上限、兵力 1931年約28万→1945年716万、帰らなかった人約230万）",
+      "url": "https://imidas.jp/jijikaitai/t-02-011-25-08-g241/",
+      "verified": true
+    },
+    "probNote": "1年あたりの目安"
+  },
+  {
+    "id": "wa-098",
+    "key": "son-fate",
+    "category": "war",
+    "year": 1938,
+    "endYear": 1943,
+    "ageMin": 43,
+    "ageMax": 70,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "son_soldier"
+      ]
+    },
+    "title": "息子の戦死の公報",
+    "text": "出征していた息子が戦死したという公報が届いた。親より先に子を亡くした。仏壇に、出征の前に撮った軍服姿の写真を置いた。",
+    "effects": {
+      "happiness": -25,
+      "relation": -5,
+      "flags": [
+        "son_war_dead",
+        "war_bereaved"
+      ]
+    },
+    "probability": 0.015,
+    "heavy": true,
+    "source": {
+      "title": "厚生労働省 戦没者慰霊（先の大戦の戦没者約310万人、うち軍人・軍属約230万人）",
+      "url": "https://www.mhlw.go.jp/seisaku/2010/08/02.html",
+      "verified": true
+    },
+    "probNote": "戦死の公報が届く1年あたりの確率。出征した家族のうち亡くなる割合が約22%（軍人・軍属の戦没者約230万人÷のべ動員数の目安）になるよう、1938〜43年は0.015、1944〜47年は0.08と置いた"
+  },
+  {
+    "id": "wa-099",
+    "key": "son-fate",
+    "category": "war",
+    "year": 1944,
+    "endYear": 1947,
+    "ageMin": 42,
+    "ageMax": 72,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "son_soldier"
+      ]
+    },
+    "title": "息子の戦死の公報",
+    "text": "息子が戦死したという公報が届いた。遺骨は帰らず、戦地の名前だけが知らされた。親より先に子を亡くした。",
+    "effects": {
+      "happiness": -25,
+      "relation": -5,
+      "flags": [
+        "son_war_dead",
+        "war_bereaved"
+      ]
+    },
+    "probability": 0.08,
+    "heavy": true,
+    "source": {
+      "title": "厚生労働省 戦没者慰霊（先の大戦の戦没者約310万人、うち軍人・軍属約230万人）",
+      "url": "https://www.mhlw.go.jp/seisaku/2010/08/02.html",
+      "verified": true
+    },
+    "probNote": "戦死の公報が届く1年あたりの確率。出征した家族のうち亡くなる割合が約22%（軍人・軍属の戦没者約230万人÷のべ動員数の目安）になるよう、1938〜43年は0.015、1944〜47年は0.08と置いた"
+  },
+  {
+    "id": "wa-100",
+    "key": "son-fate",
+    "category": "war",
+    "year": 1945,
+    "endYear": 1948,
+    "ageMin": 42,
+    "ageMax": 75,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "son_soldier"
+      ]
+    },
+    "title": "息子が復員した",
+    "text": "出征していた息子が復員して帰ってきた。やせた姿で玄関に立っているのを見て、しばらく言葉が出なかった。家族そろって食卓を囲んだ。",
+    "effects": {
+      "happiness": 12,
+      "relation": 4,
+      "flags": [
+        "son_returned"
+      ]
+    },
+    "probability": 0.5,
+    "source": {
+      "title": "立教大学 論文（民間人の引揚げと旧軍人の復員は合わせて629万人以上。厚生省援護局『援護50年史』による）",
+      "url": "https://rikkyo.repo.nii.ac.jp/record/2000308/files/AN00248808_77-2_08.pdf",
+      "verified": true
+    },
+    "probNote": "目安"
+  },
+  {
+    "id": "wa-101",
+    "key": "husband-letter",
+    "category": "war",
+    "year": 1938,
+    "endYear": 1945,
+    "ageMin": 18,
+    "ageMax": 50,
+    "sex": "female",
+    "conditions": {
+      "flags": [
+        "husband_soldier"
+      ],
+      "notFlags": [
+        "war_widow",
+        "husband_returned"
+      ]
+    },
+    "title": "戦地の夫からの便り",
+    "text": "戦地の夫から軍事郵便が届いた。検閲のため場所は書かれていなかったが、元気でいるという字を何度も読み返した。",
+    "effects": {
+      "happiness": 4
+    },
+    "probability": 0.35,
+    "source": {
+      "title": "軍事郵便と検閲",
+      "verified": false
+    },
+    "probNote": "目安"
+  },
+  {
+    "id": "wa-102",
+    "key": "yamiichi",
+    "category": "war",
+    "year": 1945,
+    "endYear": 1949,
+    "month": 10,
+    "ageMin": 20,
+    "ageMax": 80,
+    "sex": "any",
+    "title": "闇市",
+    "text": "駅前の焼け跡に闇市ができた。配給だけでは家族が食べていけず、着物や道具を持って行って食べ物と換えた。闇市は1946〜48年が最も盛んだった。",
+    "probability": 0.35,
+    "source": {
+      "title": "コトバンク 闇市",
+      "url": "https://kotobank.jp/word/闇市",
+      "verified": true
+    },
+    "probNote": "目安"
+  },
+  {
+    "id": "wa-103",
+    "key": "food-shortage-1945",
+    "category": "war",
+    "year": 1945,
+    "endYear": 1946,
+    "month": 10,
+    "ageMin": 20,
+    "ageMax": 80,
+    "sex": "any",
+    "title": "戦後の食糧難",
+    "text": "戦争が終わっても食べ物は足りず、配給は遅れるのが当たり前になった。満員の買い出し列車で農村へ行き、着物と米を換えた。",
+    "effects": {
+      "health": -5,
+      "happiness": -6
+    },
+    "probability": 0.55,
+    "source": {
+      "title": "コトバンク 闇市",
+      "url": "https://kotobank.jp/word/闇市",
+      "verified": true
+    },
+    "probNote": "目安"
+  },
+  {
+    "id": "wa-104",
+    "key": "women-suffrage-1946",
+    "category": "war",
+    "year": 1946,
+    "month": 4,
+    "ageMin": 20,
+    "ageMax": 100,
+    "sex": "female",
+    "title": "初めての投票",
+    "text": "1946年4月10日、戦後初めての総選挙で、女性が初めて投票した。自分も投票所へ行き、一票を入れた。女性の議員が39人生まれた。",
+    "effects": {
+      "happiness": 3
+    },
+    "probability": 0.65,
+    "source": {
+      "title": "国立国会図書館 史料にみる日本の近代（戦後初の総選挙）",
+      "url": "https://www.ndl.go.jp/modern/cha5/description05.html",
+      "verified": true
+    },
+    "probNote": "目安"
+  },
+  {
+    "id": "wa-105",
+    "key": "engo-ho-1952",
+    "category": "war",
+    "year": 1952,
+    "month": 4,
+    "ageMin": 20,
+    "ageMax": 100,
+    "sex": "any",
+    "conditions": {
+      "flags": [
+        "war_bereaved"
+      ]
+    },
+    "title": "遺族への援護が始まる",
+    "text": "1952年4月、戦傷病者戦没者遺族等援護法ができ、戦争で亡くなった軍人・軍属の遺族に遺族年金などが支払われるようになった。",
+    "effects": {
+      "happiness": 2
+    },
+    "probability": 0.7,
+    "source": {
+      "title": "厚生白書（昭和38年版）戦傷病者戦没者遺族等援護法（1952年4月30日公布）",
+      "url": "https://www.mhlw.go.jp/toukei_hakusho/hakusho/kousei/1963/dl/15.pdf",
+      "verified": true
+    },
+    "probNote": "遺族のうち記録に出る割合の目安"
+  },
+  {
+    "id": "wa-106",
+    "key": "tsuma-kyufukin-1963",
+    "category": "war",
+    "year": 1963,
+    "ageMin": 35,
+    "ageMax": 100,
+    "sex": "female",
+    "conditions": {
+      "flags": [
+        "war_widow"
+      ]
+    },
+    "title": "戦没者の妻への給付金",
+    "text": "1963年、戦没者等の妻に対する特別給付金支給法ができた。夫を戦争で亡くし、一人で子どもを育ててきた妻たちに給付金が支払われることになった。",
+    "probability": 0.8,
+    "source": {
+      "title": "厚生白書（昭和43年版）戦没者等の妻に対する特別給付金支給法（1963年）",
+      "url": "https://www.mhlw.go.jp/toukei_hakusho/hakusho/kousei/1968/dl/14.pdf",
+      "verified": true
+    },
+    "probNote": "目安"
+  }
+]

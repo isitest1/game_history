@@ -225,7 +225,7 @@ const VITAL_2025 = { births: 671270, deaths: 1589533, marriages: 489158 };
 const SEC_PER_YEAR = 365 * 24 * 3600;
 
 function titleSections(): string {
-  const ex = [1940, 1970, 2000];
+  const ex = [1910, 1955, 2000];
   const avg = (f: (sx: 'male' | 'female') => number) => (f('male') + f('female')) / 2;
   const cell = (v: string) => `<td>${v}</td>`;
   const rows: [string, (y: number) => string][] = [
@@ -234,7 +234,7 @@ function titleSections(): string {
     ['高校へ進む（15歳）', (y) => `${Math.round(avg((sx) => S.eduRate('highSchool', y + 15, sx)))}%`],
     ['大学・短大へ進む（18歳）', (y) => `${Math.round(avg((sx) => S.eduRate('university', y + 18, sx) + S.eduRate('juniorCollege', y + 18, sx)))}%`],
     ['見込みの寿命', (y) => `${Math.round(avg((sx) => cohortLifeExpectancy(y, sx)))}歳`],
-    ['年金をもらい始める（男性）', (y) => `${S.pensionStartAge(y, 4, 'male')}歳`],
+    ['年金をもらい始める（男性）', (y) => (y < 1911 ? '70歳（老齢福祉年金）' : `${S.pensionStartAge(y, 4, 'male')}歳`)],
   ];
   const daily = DAILY.filter((d) => d.kind === 'daily').length;
   const think = DAILY.length - daily;
@@ -258,7 +258,7 @@ function titleSections(): string {
           <thead><tr><th></th>${ex.map((y, i) => `<th class="${ERA_CLASS[i]}"><b>${y}</b><small>${wareki(y)}生まれ</small></th>`).join('')}</tr></thead>
           <tbody>${rows.map(([k, f]) => `<tr><th>${k}</th>${ex.map((y) => cell(f(y))).join('')}</tr>`).join('')}</tbody>
         </table></div>
-        <p class="muted small">人口動態統計・生命表・学校基本調査・年金制度の資料から。2000年生まれの寿命は、国の将来推計の死亡率を使った見込みです。</p>
+        <p class="muted small">人口動態統計・生命表・学校基本調査・年金制度の資料から。1910年生まれの進学は旧制の中学校・高等女学校と高等教育、2000年生まれの寿命は国の将来推計の死亡率を使った見込みです。戦争で亡くなった人は、この寿命の計算には入っていません。</p>
       </div>
     </section>
     <section class="tsec">

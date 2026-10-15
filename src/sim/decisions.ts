@@ -173,7 +173,7 @@ export const DECISIONS: DecisionDef[] = [
     resolve: (p, opt, _st, rng) => {
       const y = yearOf(p);
       if (opt === 'local') {
-        return { ok: true, text: y < 1947 ? '国民学校の高等科に進んだ。' : '地元の公立中学に進んだ。' };
+        return { ok: true, text: y < 1941 ? '高等小学校に進んだ。' : y < 1947 ? '国民学校の高等科に進んだ。' : '地元の公立中学に進んだ。' };
       }
       if (y < 1947) {
         const ok = rng.chance(wishProb(S.eduRate('highSchool', y, p.sex) / 100, p));
@@ -183,7 +183,7 @@ export const DECISIONS: DecisionDef[] = [
           return { ok: true, text: `${p.sex === 'male' ? '旧制中学' : '高等女学校'}に合格した。` };
         }
         p.wishes.push({ age: 12, wish: '旧制中学への進学', result: '国民学校高等科', ok: false });
-        return { ok: false, text: `${p.sex === 'male' ? '旧制中学' : '高等女学校'}に行きたかったが、家の事情で国民学校の高等科に進んだ。` };
+        return { ok: false, text: `${p.sex === 'male' ? '旧制中学' : '高等女学校'}に行きたかったが、家の事情で${y < 1941 ? '高等小学校' : '国民学校の高等科'}に進んだ。` };
       }
       // 私立・国立中学の割合（目安。都市部ほど高い）
       const metro = S.METRO.has(p.pref);
@@ -227,7 +227,7 @@ export const DECISIONS: DecisionDef[] = [
     prompt: '15歳。中学を出たら、どうしたい？',
     evidence: (p) => {
       const y = yearOf(p);
-      return `${y}年の高校進学率は${sexWord(p)}${pct(S.eduRate('highSchool', y, p.sex))}。中卒の就職は${S.newGradRatio('middle', y) !== undefined ? `求人倍率${S.newGradRatio('middle', y)!.toFixed(1)}倍` : `有効求人倍率${S.jobOpenings(y).toFixed(2)}倍`}。`;
+      return `${y}年の${y < 1948 ? '中学校・高等女学校への進学率' : '高校進学率'}は${sexWord(p)}${pct(S.eduRate('highSchool', y, p.sex))}。${S.newGradRatio('middle', y) !== undefined ? `中卒の就職は求人倍率${S.newGradRatio('middle', y)!.toFixed(1)}倍。` : y >= 1963 ? `中卒の就職は有効求人倍率${S.jobOpenings(y).toFixed(2)}倍。` : ''}`;
     },
     options: [
       { id: 'go', label: '高校に行きたい' },
@@ -250,7 +250,7 @@ export const DECISIONS: DecisionDef[] = [
         p.wishes.push({ age: 15, wish: '高校進学', result: '中学を出て就職', ok: false });
         findJob(st, p, rng, y, 'middle');
         const why = rate > 0.9 ? '体を壊して受験できず' : p.familyClass <= 2 ? '家計を助けるため' : '家の事情で';
-        return { ok: false, text: `${school}に行きたかったが、${why}働くことになった。この年の高校進学率は${pct(rate * 100)}だった。` };
+        return { ok: false, text: `${school}に行きたかったが、${why}働くことになった。この年の${y < 1948 ? '中学校・高等女学校への進学率' : '高校進学率'}は${pct(rate * 100)}だった。` };
       }
       findJob(st, p, rng, y, 'middle');
       return { ok: true, text: rate > 0.9 ? `中学を出て働き始めた。同級生のほとんどは高校に進んだ（進学率${pct(rate * 100)}）。` : `中学を出て働き始めた。` };
@@ -289,6 +289,7 @@ export const DECISIONS: DecisionDef[] = [
         return { ok: true, text: 'スマートフォンを手に入れた。友だちとはいつもつながっていた。' };
       }
       if (opt === 'game') {
+        if (y < 1950) return { ok: false, text: '欲しいものを口に出せる暮らしではなかった。遊び道具は自分で作るものだった。' };
         if (y < 1983) return { ok: false, text: '家でできるテレビゲームは、まだ普及していなかった。' };
         const ok = rich || rng.chance(0.5);
         if (!ok) return { ok, text: 'ゲームは買ってもらえなかった。友だちの家で遊ばせてもらった。' };
@@ -601,7 +602,7 @@ export const DECISIONS: DecisionDef[] = [
           const ok = rng.chance(y < 2020 ? 0.25 : 0.5);
           return { ok, text: ok ? '育児休業をとって、子どもと過ごす時間をつくった。男性の育休はまだ少数派だった。' : '育児休業をとりたかったが、職場で言い出せなかった。' };
         }
-        return { ok: true, text: y < 1990 ? 'モーレツに働いた。' : '仕事を続けた。' };
+        return { ok: true, text: y >= 1960 && y < 1990 ? 'モーレツに働いた。' : y < 1960 ? '仕事に打ちこんだ。' : '仕事を続けた。' };
       }
       if (opt === 'keep') {
         if (p.job === 'none') {
@@ -663,7 +664,7 @@ export const DECISIONS: DecisionDef[] = [
     prompt: '38歳。今の仕事を続ける？',
     applies: (st) => st.persons.some((p) => p.alive && p.job !== null && p.job !== 'none'),
     relevant: (p) => p.job !== null && p.job !== 'none',
-    evidence: (p) => `${yearOf(p)}年の有効求人倍率は${S.jobOpenings(yearOf(p)).toFixed(2)}倍、完全失業率は${pct1(S.unemployment(yearOf(p)))}。`,
+    evidence: (p) => (yearOf(p) >= 1963 ? `${yearOf(p)}年の有効求人倍率は${S.jobOpenings(yearOf(p)).toFixed(2)}倍、完全失業率は${pct1(S.unemployment(yearOf(p)))}。` : `${yearOf(p)}年。完全失業率は${pct1(S.unemployment(yearOf(p)))}（有効求人倍率の統計は1963年から）。`),
     options: [
       { id: 'stay', label: '今の仕事を続けたい' },
       { id: 'change', label: '転職したい' },
@@ -682,7 +683,7 @@ export const DECISIONS: DecisionDef[] = [
           return { ok: true, text: y < 1990 ? '転職した。中途で入るのは、まだ珍しかった。' : '転職した。' };
         }
         p.wishes.push({ age: 38, wish: '転職', result: '見つからなかった', ok: false });
-        return { ok: false, text: `転職したかったが、よい仕事は見つからなかった（有効求人倍率${jo.toFixed(2)}倍）。` };
+        return { ok: false, text: `転職したかったが、よい仕事は見つからなかった${y >= 1963 ? `（有効求人倍率${jo.toFixed(2)}倍）` : ''}。` };
       }
       const ok = rng.chance(0.3 + p.stats.knowledge / 300);
       if (ok) {
@@ -717,6 +718,7 @@ export const DECISIONS: DecisionDef[] = [
       if (opt === 'spend') {
         p.stats.happiness = Math.min(100, p.stats.happiness + 8);
         p.money *= 0.8;
+        if (y >= 1938 && y <= 1952) return { ok: false, text: '旅行どころではなく、家計を守るので精いっぱいだった。' };
         return { ok: true, text: y < 1985 ? '家族で温泉旅行に出かけ、趣味にもお金を使った。' : y >= 2020 && y <= 2022 ? '旅行には行けず、家で過ごす時間のための趣味にお金を使った。' : y < 2020 ? '家族で海外旅行に出かけ、趣味にもお金を使った。' : '旅行や趣味にお金を使った。' };
       }
       if (opt === 'save') return { ok: true, text: y < 1991 ? '定期預金に預けた。利息だけで、少しずつ増えていった。' : y < 2026 ? '銀行に預けた。利息はほとんどつかなかった。' : '銀行に預けた（この先の金利は見通しが立たない）。' };
