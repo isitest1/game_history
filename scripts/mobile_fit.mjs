@@ -1,5 +1,5 @@
 // スマホで実際に遊びながら、次の3つを毎年確かめる。
-// 1. 一番上（スクロール0）で、最新の年齢の見出しと最初の人の記録が、上の帯に隠れずに見える
+// 1. 一番上（スクロール0）で、最新の年齢の見出しと3列の書き出しが、上の帯と見出しに隠れずに見える
 // 2. 指で下へ送り、また上へ戻しても、上の帯の高さが変わらず、出来事の位置が飛ばない
 // 3. 上へ戻しきると、最新の年齢がまた見える
 // あわせて、3人分がすべて一画面に収まった年の割合（all3）を数える（その年のことは全部並べるので、収まらない年もある）
@@ -18,9 +18,10 @@ async function measure(page) {
     const bar = document.querySelector('.agebar').getBoundingClientRect();
     const colsEl = document.querySelector('.cols');
     const cols = colsEl.getBoundingClientRect();
-    const top = Math.max(bar.bottom, getComputedStyle(colsEl).display === 'none' ? 0 : cols.bottom);
+    const ch = document.querySelector('.mcolhead');
+    const top = Math.max(bar.bottom, ch ? ch.getBoundingClientRect().bottom : 0, getComputedStyle(colsEl).display === 'none' ? 0 : cols.bottom);
     const ctr = document.querySelector('.controls').getBoundingClientRect();
-    const lines = [...row.querySelectorAll('.mline')].map((e) => e.getBoundingClientRect());
+    const lines = [...row.querySelectorAll('.mcell')].map((e) => e.getBoundingClientRect());
     const head = row.querySelector('.mage').getBoundingClientRect();
     return {
       scrollY: Math.round(window.scrollY),
@@ -30,7 +31,7 @@ async function measure(page) {
       rowTop: Math.round(head.top),
       rowDocTop: Math.round(head.top + window.scrollY),
       linesBottom: Math.round(Math.max(...lines.map((r) => r.bottom))),
-      fits: head.top >= top - 1 && lines[0].bottom <= ctr.top + 1,
+      fits: head.top >= top - 1 && lines[0].top <= ctr.top - 60,
       all3: head.top >= top - 1 && Math.max(...lines.map((r) => r.bottom)) <= ctr.top + 1,
       age: row.querySelector('.mage').firstChild.textContent,
     };
