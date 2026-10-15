@@ -2,7 +2,7 @@
 // リンクを貼ると、index.html の OGP（og:image）からカードの画像が出る。
 
 import type { GameState } from '../sim/engine';
-import { eduLabelOf } from '../sim/engine';
+import { titlesOf } from '../sim/story';
 import * as S from '../sim/stats';
 import { eraName, wareki } from './format';
 
@@ -67,21 +67,20 @@ export function oddsText(prob: number | undefined): string {
 
 /**
  * 一生を終えたとき。遊んだ人が結果をそのまま投稿したくなるように、
- * 時代の名前（江戸・昭和・平成など）、元号と生まれた場所、享年と仕事、組み合わせの珍しさを並べる（2026-10-15）
+ * 時代の名前（江戸・昭和・平成など）、元号と生まれた場所、享年と称号、組み合わせの珍しさを並べる（2026-10-15）
  */
 export function endXText(st: GameState, okuri?: string): string {
   const eras = st.persons.map((p) => eraName(p.birthYear)).join('・');
-  const head = `【生まれ年ガチャ】同じ私が、${eras}に生まれた（${sexWord(st)}）`;
-  const rows = st.persons.map((p) => {
-    const what = (p.deathAge ?? 99) >= 15 ? `・${p.jobTitle && p.jobTitle !== '無職' ? p.jobTitle : eduLabelOf(p)}` : '';
-    return `${wareki(p.birthYear)}・${S.placeShort(p.pref, p.birthYear)}：享年${p.deathAge ?? '−'}${what}`;
-  });
+  const me = st.persons[2];
+  const head = st.shared.mine
+    ? `【生まれ年ガチャ】${me.birthYear}年${S.placeShort(me.pref, me.birthYear)}生まれの私が、${st.persons.slice(0, 2).map((p) => eraName(p.birthYear)).join('と')}にも生まれたら`
+    : `【生まれ年ガチャ】同じ私が、${eras}に生まれた（${sexWord(st)}）`;
+  const titles = titlesOf(st.persons, st.shared.talent);
+  const rows = st.persons.map((p, i) => `${wareki(p.birthYear)}・${S.placeShort(p.pref, p.birthYear)}：享年${p.deathAge ?? '−'}「${titles[i]}」`);
   const odds = oddsText(st.gacha.comboProb);
-  const ages = st.persons.map((p) => p.deathAge ?? 0);
-  const gap = Math.max(...ages) - Math.min(...ages);
-  const tail = odds ? `この組み合わせは${odds}。` : gap >= 10 ? `寿命の差は${gap}年。` : '';
+  const tail = odds ? `この組み合わせは${odds}` : '人生を分けたのは、生まれた年だった。';
   const msg = okuri && okuri.trim() ? `\n「${okuri.trim()}」` : '';
-  return `${head}\n${rows.join('\n')}\n${tail}人生を分けたのは、生まれた年だった。${msg}`;
+  return `${head}\n${rows.join('\n')}\n${tail}${msg}`;
 }
 
 /** トップページから */

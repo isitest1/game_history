@@ -14,8 +14,7 @@ for (const [name, vp] of [
   const ctx = await browser.newContext({ viewport: { width, height }, ...rest });
   const page = await ctx.newPage();
   await page.goto(base, { waitUntil: 'networkidle' });
-  await page.selectOption('#pby', '1990');
-  await page.click('button[type=submit]');
+  await page.click('[data-act="start"]');
   await page.click('#skip');
   await page.waitForSelector('#go', { timeout: 20000 });
   await page.click('#go');

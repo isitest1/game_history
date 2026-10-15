@@ -44,8 +44,7 @@ for (const h of heights) {
   const ctx = await browser.newContext({ viewport: { width: 390, height: h }, deviceScaleFactor: 2, isMobile: true, hasTouch: true });
   const page = await ctx.newPage();
   await page.goto(base, { waitUntil: 'networkidle' });
-  await page.selectOption('#pby', '1990');
-  await page.click('button[type=submit]');
+  await page.click('[data-act="start"]');
   await page.click('#skip');
   await page.waitForSelector('#go', { timeout: 20000 });
   await page.click('#go');

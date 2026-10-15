@@ -99,6 +99,8 @@ export interface Shared {
   temperament: string | null; // 気質（2〜5歳の選択で決まる）
   firstName: string; // 3人で同じ名前の読みにはしない。時代ごとに名前は変わる
   playerBirthYear: number | null;
+  /** 「私の生まれ年と県」で回したか（いちばん若い人が遊ぶ人自身） */
+  mine?: boolean;
 }
 
 export interface Person {
