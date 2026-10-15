@@ -3890,3 +3890,238 @@ button {
   margin: 0;
   font-size: 12px;
 }
+
+/* ---------- スマホ：縦3列（2026-10-15） ---------- */
+.mcolhead {
+  display: none;
+}
+@media (max-width: 640px) {
+  .mfeed {
+    padding: 0 6px;
+    gap: 0;
+  }
+  .mcolhead {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 5px;
+    position: sticky;
+    top: var(--agebar-h, 40px);
+    z-index: 12;
+    padding: 6px 0 6px;
+    background: color-mix(in srgb, var(--bg) 94%, transparent);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .mch {
+    appearance: none;
+    border: 1px solid color-mix(in srgb, var(--c-ink) 18%, transparent);
+    border-radius: 10px;
+    padding: 5px 6px 6px;
+    text-align: left;
+    color: var(--c-ink);
+    font: inherit;
+    display: grid;
+    line-height: 1.25;
+    cursor: pointer;
+    min-width: 0;
+    border-top: 4px solid var(--c-acc);
+  }
+  .mch b {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .mch span {
+    font-size: 11px;
+    color: var(--c-sub);
+  }
+  .mch small {
+    font-size: 11px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+  .mch.dead {
+    opacity: 0.6;
+  }
+  .mrows {
+    display: grid;
+    gap: 12px;
+    padding-top: 8px;
+  }
+  .mrow {
+    display: grid;
+    gap: 5px;
+  }
+  .mgrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 5px;
+    align-items: stretch;
+  }
+  .mcell {
+    border-radius: 10px;
+    padding: 6px 6px 8px;
+    color: var(--c-ink);
+    border: 1px solid color-mix(in srgb, var(--c-ink) 12%, transparent);
+    display: grid;
+    align-content: start;
+    gap: 6px;
+    min-width: 0;
+    font-size: 12.5px;
+    line-height: 1.55;
+  }
+  .mcell.era-0 {
+    border-radius: 3px;
+    border: 2px double color-mix(in srgb, var(--c-ink) 35%, transparent);
+  }
+  .mcell.empty,
+  .mcell.gone {
+    opacity: 0.55;
+  }
+  .mcell .myr {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--c-sub);
+    font-variant-numeric: tabular-nums;
+  }
+  .mcell .ment {
+    display: grid;
+    gap: 1px;
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .mcell .ment .t {
+    font-size: 12.5px;
+    line-height: 1.4;
+  }
+  .mcell .ment .d {
+    display: block;
+    -webkit-line-clamp: unset;
+    overflow: visible;
+    font-size: 12.5px;
+    line-height: 1.55;
+    word-break: normal;
+    overflow-wrap: anywhere;
+  }
+  .mcell .ment.k-daily .d {
+    color: var(--c-ink);
+  }
+  .mcell .ment.k-think .d {
+    padding-left: 6px;
+    border-left: 2px solid color-mix(in srgb, var(--c-acc) 55%, transparent);
+    color: var(--c-sub);
+    font-size: 12.5px;
+  }
+  .mcell .ment + .ment {
+    padding-top: 6px !important;
+    border-top: 1px dashed color-mix(in srgb, var(--c-ink) 15%, transparent) !important;
+  }
+  .mcell .help-note {
+    font-size: 11px;
+    padding: 2px 6px;
+  }
+  .mage {
+    font-size: 15px;
+  }
+}
+
+/* 「3人のようす」ボタン：3つの時代の色の点を付けて目立たせる */
+.statusbtn {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 34px;
+  padding: 0 12px 0 10px;
+  border-radius: 999px;
+  border: 0;
+  background: var(--ink);
+  color: var(--bg);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 14px -6px rgba(0, 0, 0, 0.45);
+}
+.sdots {
+  display: inline-flex;
+  gap: 2px;
+}
+.sdots i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1.5px solid var(--bg);
+}
+.sdots i:nth-child(1) {
+  background: #c0582f;
+}
+.sdots i:nth-child(2) {
+  background: #e0367a;
+}
+.sdots i:nth-child(3) {
+  background: #3554e8;
+}
+@media (max-width: 640px) {
+  .statusbtn {
+    height: 32px !important;
+    padding: 0 11px 0 9px !important;
+    font-size: 12.5px !important;
+  }
+}
+/* 3人のようす：人を選ぶ札とスワイプ */
+.status-sheet .tabs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  margin: 0 40px 4px 0;
+}
+.stab {
+  appearance: none;
+  border: 1px solid color-mix(in srgb, var(--c-ink) 18%, transparent);
+  border-top: 4px solid var(--c-acc);
+  border-radius: 10px;
+  padding: 6px 8px;
+  color: var(--c-ink);
+  font: inherit;
+  display: grid;
+  text-align: left;
+  cursor: pointer;
+  opacity: 0.6;
+  line-height: 1.3;
+}
+.stab[aria-selected='true'] {
+  opacity: 1;
+  box-shadow: 0 0 0 2px var(--c-acc);
+}
+.stab small {
+  font-size: 11px;
+  color: var(--c-sub);
+}
+.swipe-hint {
+  font-size: 11px;
+  color: var(--ink-3);
+  margin: 4px 0 8px;
+  text-align: center;
+}
+.pd-wrap.from-r {
+  animation: slide-r 0.25s ease-out both;
+}
+.pd-wrap.from-l {
+  animation: slide-l 0.25s ease-out both;
+}
+@keyframes slide-r {
+  from {
+    transform: translateX(30px);
+    opacity: 0.3;
+  }
+}
+@keyframes slide-l {
+  from {
+    transform: translateX(-30px);
+    opacity: 0.3;
+  }
+}

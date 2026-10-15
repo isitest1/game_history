@@ -29,6 +29,7 @@ const BREATH_AGES = [6, 15, 22, 40, 65];
 interface UiPrefs {
   playerBirthYear: number | null;
   minutes: number;
+  pace?: PaceId;
   theme: 'auto' | 'light' | 'dark';
   sound: boolean;
   answers: Record<string, string>;
@@ -61,9 +62,14 @@ const store = {
 };
 
 const ui: UiPrefs = { playerBirthYear: null, minutes: 25, theme: 'auto', sound: false, answers: {}, ...(store.get<UiPrefs>(PREF_KEY) ?? {}) };
-/** 遊ぶ長さ（分）。1倍の速さで、決断やひと息を含めた目安 */
-const LENGTHS = [15, 25, 40];
-if (!LENGTHS.includes(ui.minutes)) ui.minutes = 25;
+/** 進む速さ。1年の長さは、その年に出る文章の量で決める（読み終わるくらいの時間をとる） */
+const PACES = [
+  { id: 'slow', label: 'ゆっくり', msPerChar: 85 },
+  { id: 'normal', label: 'ふつう', msPerChar: 55 },
+  { id: 'fast', label: 'はやめ', msPerChar: 35 },
+] as const;
+type PaceId = (typeof PACES)[number]['id'];
+if (!PACES.some((x) => x.id === ui.pace)) ui.pace = 'normal';
 applyTheme();
 
 function savePrefs(): void {
@@ -135,9 +141,9 @@ function showTitle(): void {
               <select id="pby" name="pby">${yearOpts}</select>
             </div>
             <div>
-              <span id="lenlbl" style="font-size:14px;font-weight:700;display:block;margin-bottom:6px">遊ぶ長さ</span>
+              <span id="lenlbl" style="font-size:14px;font-weight:700;display:block;margin-bottom:6px">進む速さ</span>
               <div class="seg" role="group" aria-labelledby="lenlbl">
-                ${LENGTHS.map((m) => `<button type="button" data-min="${m}" aria-pressed="${ui.minutes === m}">${m}分</button>`)}
+                ${PACES.map((x) => `<button type="button" data-pace="${x.id}" aria-pressed="${ui.pace === x.id}">${x.label}</button>`)}
               </div>
             </div>
           </div>
@@ -182,10 +188,10 @@ function showTitle(): void {
       paint(1960 + ((5 + n * 7) % 16));
     }, 6000);
   }
-  app.querySelectorAll<HTMLButtonElement>('[data-min]').forEach((b) =>
+  app.querySelectorAll<HTMLButtonElement>('[data-pace]').forEach((b) =>
     b.addEventListener('click', () => {
-      ui.minutes = Number(b.dataset.min);
-      app.querySelectorAll('[data-min]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+      ui.pace = b.dataset.pace as PaceId;
+      app.querySelectorAll('[data-pace]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
       savePrefs();
     }),
   );
@@ -495,10 +501,10 @@ let autoMode = false;
 /** 画面に出している年齢（runYear のあとも、その年を見せているあいだは前の年齢のまま） */
 let shownAge = 0;
 
-function yearMs(): number {
-  // 平均して約90年。決断とひと息の時間を差し引いて、1年の長さを決める
-  const total = ui.minutes * 60 * 1000 * 0.72;
-  return Math.max(1500, total / 90) / speed;
+/** 1年の長さ（ミリ秒）。その年に出る文章の文字数に合わせる。1倍でおよそ読み終わる長さ */
+function yearMs(chars: number): number {
+  const pace = PACES.find((x) => x.id === ui.pace) ?? PACES[1];
+  return (2500 + chars * pace.msPerChar) / speed;
 }
 
 async function showLife(): Promise<void> {
@@ -515,7 +521,7 @@ async function showLife(): Promise<void> {
           <div class="age" aria-live="polite"><span id="age">${st.age}</span><small>歳</small></div>
         </div>
         <div style="display:flex;gap:6px">
-          <button class="iconbtn statusbtn" id="statusbtn" aria-label="3人のようすを見る">3人のようす</button>
+          <button class="statusbtn" id="statusbtn" aria-label="3人のようすを見る"><span class="sdots" aria-hidden="true"><i></i><i></i><i></i></span>3人のようす</button>
           <button class="iconbtn" data-act="theme" aria-label="${themeLabel()}">${ICON[ui.theme]}</button>
           <button class="iconbtn" data-act="help">相談先</button>
         </div>
@@ -789,7 +795,7 @@ function renderCol(i: number): void {
   markEnter(feed, entries.map((e) => ({ el: feed.querySelector(`[data-k="${keyOf(e)}"]`), e })));
 }
 
-/** スマホ：3列の下に、同い年の出来事を横幅いっぱいで読めるように並べる */
+/** スマホ：3人を縦3列に並べる。上の見出し（名前・生まれ年・いまの年）は貼りつけ、どの列が誰かを分かるようにする */
 function renderMFeed(): void {
   if (!state) return;
   const box = app.querySelector('#mfeed') as HTMLElement | null;
@@ -799,70 +805,61 @@ function renderMFeed(): void {
     return;
   }
   const st = state;
+  if (!box.querySelector('.mcolhead')) box.innerHTML = '<div class="mcolhead"></div><div class="mrows"></div>';
+  // 見出し：押すと、その人のくわしい様子が開く
+  const head = st.persons
+    .map((p, i) => {
+      const alive = p.alive || deathPending(p);
+      const age = alive ? shownAge : p.deathAge ?? shownAge;
+      return `<button type="button" class="mch ${ERA_CLASS[i]}${alive ? '' : ' dead'}" data-who="${i}" aria-label="${esc(p.name)}のようすを見る"><b>${esc(p.name.split(' ')[1] ?? p.name)}</b><span>${p.birthYear}年生まれ</span><small>${alive ? `${p.birthYear + age}年・${age}歳` : `享年${p.deathAge}`}</small></button>`;
+    })
+    .join('');
+  setIfChanged(box.querySelector('.mcolhead'), head);
+
   const rows: { e: LogEntry; i: number }[] = [];
   st.persons.forEach((p, i) => p.log.filter(isShown).forEach((e) => rows.push({ e, i })));
   const ages = [...new Set(rows.map((r) => r.e.age))].sort((a, b) => b - a).slice(0, 4);
   const shownNow: { key: string; e: LogEntry }[] = [];
-  // 年齢ごとの段（section）は残したまま、中の行だけを入れ替える
   const sections = ages.map((age) => {
     const gone = st.persons.filter((p) => p.deathAge !== undefined && p.deathAge < age && !deathPending(p)).map((p) => `${esc(p.name.split(' ')[1] ?? '')}は${p.deathAge}歳で死去`);
-    const head = `<h3 class="mage">${age}歳${gone.length ? `<small>${gone.join('・')}</small>` : ''}</h3>`;
-    const lines = st.persons.map((p, i) => {
+    const h = `<h3 class="mage">${age}歳${gone.length ? `<small>${gone.join('・')}</small>` : ''}</h3>`;
+    const cells = st.persons.map((p, i) => {
       const es = rows.filter((r) => r.i === i && r.e.age === age).map((r) => r.e);
       const year = p.birthYear + age;
-      const whoOf = (more = '') => `<span class="mwho"><b>${year}</b><small>${esc(p.name.split(' ')[1] ?? '')}</small>${more}</span>`;
-      if (!es.length) {
-        const dead = p.deathAge !== undefined && p.deathAge < age && !deathPending(p);
-        if (dead) return null;
-        return { key: `p${i}`, html: `<div class="mline ${ERA_CLASS[i]} empty">${whoOf()}<div class="mbody"><p class="d">特に記録なし</p></div></div>` };
-      }
-      // その年のことは、隠さずに全部出す（日々の場面や心の声こそが、その人の物語になるため）。
-      // 大事な出来事を先に、心の声を最後に。長い本文は2〜3行で切り、押すと全文
+      const dead = p.deathAge !== undefined && p.deathAge < age && !deathPending(p);
+      if (dead) return { key: `p${i}`, html: `<div class="mcell ${ERA_CLASS[i]} gone"><span class="myr">${year}</span><p class="d">—</p></div>` };
+      if (!es.length) return { key: `p${i}`, html: `<div class="mcell ${ERA_CLASS[i]} empty"><span class="myr">${year}</span><p class="d">特に記録なし</p></div>` };
+      // その年のことは全部出す。大事な出来事を先に、心の声を最後に
       const rank = (e: LogEntry) => KIND_RANK[e.kind] ?? 5;
-      const visible = [...es].sort((x, y) => rank(x) - rank(y));
-      const inner = visible
+      const inner = [...es]
+        .sort((x, y) => rank(x) - rank(y))
         .map((e) => {
           const key = `${i}:${age}:${p.log.indexOf(e)}`;
           shownNow.push({ key, e });
-          const cls = [`k-${e.kind}`, e.kind === 'wish' ? 'wish' : '', e.kind === 'decision' || e.kind === 'wish' ? 'dec' : '', e.kind === 'death' ? 'death' : '', e.heavy ? 'heavy' : '', openKeys.has(key) ? 'open' : ''].join(' ');
+          const cls = [`k-${e.kind}`, e.kind === 'wish' ? 'wish' : '', e.kind === 'decision' || e.kind === 'wish' ? 'dec' : '', e.kind === 'death' ? 'death' : '', e.heavy ? 'heavy' : ''].join(' ');
           const plain = e.kind === 'daily' || e.kind === 'think';
-          return `<button type="button" class="ment ${cls}" data-key="${key}" aria-expanded="${openKeys.has(key)}">${plain ? '' : `<b class="t">${esc(e.title)}</b>`}<span class="d">${esc(e.text)}</span></button>${e.heavy ? '<button class="help-note" data-act="helpnote">つらいときの相談先</button>' : ''}`;
+          return `<div class="ment ${cls}" data-key="${key}">${plain ? '' : `<b class="t">${esc(e.title)}</b>`}<span class="d">${esc(e.text)}</span>${e.heavy ? '<button class="help-note" data-act="helpnote">相談先</button>' : ''}</div>`;
         })
         .join('');
-      return { key: `p${i}`, html: `<div class="mline ${ERA_CLASS[i]}">${whoOf()}<div class="mbody">${inner}</div></div>` };
+      return { key: `p${i}`, html: `<div class="mcell ${ERA_CLASS[i]}"><span class="myr">${year}</span>${inner}</div>` };
     });
-    return { age, head, lines: lines.filter(Boolean) as { key: string; html: string }[] };
+    return { age, h, cells };
   });
-  patch(box, sections.map((sec) => ({ key: `a${sec.age}`, html: `<section class="mrow"><div class="mhead"></div><div class="mlines"></div></section>` })));
+  const rowsEl = box.querySelector('.mrows')!;
+  patch(rowsEl, sections.map((sec) => ({ key: `a${sec.age}`, html: `<section class="mrow"><div class="mhead"></div><div class="mgrid"></div></section>` })));
   for (const sec of sections) {
-    const el = box.querySelector(`[data-k="a${sec.age}"]`)!;
-    const h = el.querySelector('.mhead')!;
-    if (htmlOf.get(h) !== sec.head) {
-      h.innerHTML = sec.head;
-      htmlOf.set(h, sec.head);
-    }
-    patch(el.querySelector('.mlines')!, sec.lines);
+    const el = rowsEl.querySelector(`[data-k="a${sec.age}"]`)!;
+    setIfChanged(el.querySelector('.mhead'), sec.h);
+    patch(el.querySelector('.mgrid')!, sec.cells);
   }
-  markEnter(box, shownNow.map(({ key, e }) => ({ el: box.querySelector(`.ment[data-key="${key}"]`), e })));
+  markEnter(rowsEl, shownNow.map(({ key, e }) => ({ el: rowsEl.querySelector(`.ment[data-key="${key}"]`), e })));
   if (!box.dataset.bound) {
     box.dataset.bound = '1';
     box.addEventListener('click', (ev) => {
-      const t = ev.target as HTMLElement;
-      const more = t.closest<HTMLElement>('[data-more]');
-      if (more) {
+      const w = (ev.target as HTMLElement).closest<HTMLElement>('[data-who]');
+      if (w) {
         ev.stopPropagation();
-        openKeys.add(more.dataset.more!);
-        renderMFeed();
-        return;
-      }
-      const m = t.closest<HTMLElement>('.ment[data-key]');
-      if (m) {
-        ev.stopPropagation();
-        const k = m.dataset.key!;
-        if (openKeys.has(k)) openKeys.delete(k);
-        else openKeys.add(k);
-        m.classList.toggle('open', openKeys.has(k));
-        m.setAttribute('aria-expanded', String(openKeys.has(k)));
+        showStatus(Number(w.dataset.who));
       }
     });
   }
@@ -991,9 +988,10 @@ function showStatus(start = 0): void {
   if (!state) return;
   const st = state;
   const ages = st.persons.map((p) => (p.alive || deathPending(p) ? shownAge : p.deathAge ?? shownAge));
-  const render = (k: number) => html`<div class="status-sheet">
-    <div class="tabs" role="tablist">${st.persons.map((q, j) => `<button class="btn small ${j === k ? '' : 'ghost'}" role="tab" aria-selected="${j === k}" data-tab="${j}">${q.birthYear}年生まれ</button>`)}</div>
-    ${personDetail(st.persons[k], k, ages[k])}
+  const render = (k: number, dir = 0) => html`<div class="status-sheet">
+    <div class="tabs" role="tablist">${st.persons.map((q, j) => `<button class="stab ${ERA_CLASS[j]}" role="tab" aria-selected="${j === k}" data-tab="${j}"><b>${esc(q.name.split(' ')[1] ?? '')}</b><small>${q.birthYear}年</small></button>`)}</div>
+    <p class="swipe-hint">左右にスワイプで切り替え</p>
+    <div class="pd-wrap${dir ? (dir > 0 ? ' from-r' : ' from-l') : ''}">${personDetail(st.persons[k], k, ages[k])}</div>
     <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn small ghost" data-log="${k}">この人の記録をすべて見る</button><button class="btn small" data-close>閉じる</button></div>
   </div>`;
   // 見ているあいだは止めておく
@@ -1011,10 +1009,13 @@ function showStatus(start = 0): void {
     document.removeEventListener('keydown', onEsc);
   };
   document.addEventListener('keydown', onEsc);
-  const bind = (k: number) => {
+  let cur = start;
+  const bind = (k: number, dir = 0) => {
+    cur = k;
     const box = el.querySelector('.sheet')!;
-    box.innerHTML = '<button class="sheet-x" data-x aria-label="閉じる">×</button>' + render(k);
-    box.querySelectorAll<HTMLButtonElement>('[data-tab]').forEach((b) => b.addEventListener('click', () => bind(Number(b.dataset.tab))));
+    box.innerHTML = '<button class="sheet-x" data-x aria-label="閉じる">×</button>' + render(k, dir);
+    box.scrollTop = 0;
+    box.querySelectorAll<HTMLButtonElement>('[data-tab]').forEach((b) => b.addEventListener('click', () => bind(Number(b.dataset.tab), Math.sign(Number(b.dataset.tab) - cur))));
     box.querySelector('[data-close]')!.addEventListener('click', close);
     box.querySelector('[data-log]')!.addEventListener('click', () => {
       close();
@@ -1022,6 +1023,22 @@ function showStatus(start = 0): void {
     });
   };
   bind(start);
+  // 左右にスワイプして、人を切り替える
+  const sh = el.querySelector('.sheet') as HTMLElement;
+  let x0 = 0;
+  let y0 = 0;
+  sh.addEventListener('touchstart', (e) => {
+    x0 = e.touches[0].clientX;
+    y0 = e.touches[0].clientY;
+  }, { passive: true });
+  sh.addEventListener('touchend', (e) => {
+    const dx = e.changedTouches[0].clientX - x0;
+    const dy = e.changedTouches[0].clientY - y0;
+    if (Math.abs(dx) < 50 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+    const n = st.persons.length;
+    if (dx < 0) bind((cur + 1) % n, 1);
+    else bind((cur + n - 1) % n, -1);
+  }, { passive: true });
 }
 
 function renderSides(): void {
@@ -1112,12 +1129,14 @@ async function playYear(st: GameState, entries: YearEntry[], me: { stop: boolean
   const prog = app.querySelector('#prog') as HTMLElement | null;
   shownAge = st.age - 1;
   if (ageEl) ageEl.textContent = String(shownAge);
-  // 速さや「次の決断」は、年の途中でもすぐに効くように、毎回の長さで進み具合を足していく
-  const durNow = () => (untilDecision || autoMode ? 120 : yearMs());
-  let idx = 0;
-  // その年の出来事は、表示が始まるまで隠しておく
-  hiddenEntries = new Set(entries.map((x) => x.entry));
-  freshEntries = new Set();
+  // その年のことは、年の初めにまとめて出す（少しずつ出すと読みにくい）。
+  // 1年の長さは文章の量で決める。速さや「次の決断」は、年の途中でもすぐに効く
+  const chars = entries.reduce((n, x) => n + x.entry.text.length + (x.entry.title?.length ?? 0), 0);
+  const durNow = () => (untilDecision || autoMode ? 120 : yearMs(chars));
+  let idx = entries.length;
+  hiddenEntries = new Set();
+  freshEntries = new Set(entries.map((x) => x.entry));
+  if (entries.some((x) => x.entry.kind === 'death')) sound.bell();
   renderAll();
   let t = 0;
   let last = performance.now();
