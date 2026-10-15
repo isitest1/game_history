@@ -5,7 +5,7 @@ import type { GameState } from '../sim/engine';
 import { EDU_LABEL } from '../sim/engine';
 import * as S from '../sim/stats';
 
-export const SITE_URL = 'https://isitest1.github.io/game_history/';
+export const SITE_URL = 'https://umaredoshi.margheritaworks.com/';
 export const HASHTAG = '生まれ年ガチャ';
 
 /** X の文字数の数え方：半角などは1、日本語などは2。URL は23 */

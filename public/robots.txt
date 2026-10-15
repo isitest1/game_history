@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://isitest1.github.io/game_history/sitemap.xml
+Sitemap: https://umaredoshi.margheritaworks.com/sitemap.xml
