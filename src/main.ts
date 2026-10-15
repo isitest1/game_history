@@ -1,6 +1,6 @@
 import './styles/main.css';
 import { createGame, runYear, survivalPercentile, survivalCurve, cohortLifeExpectancy, JOB_LABEL, EDU_LABEL, type GameState, type Focus, type YearEntry } from './sim/engine';
-import { dueDecision, viewOf, applyDecision, autoChoose } from './sim/decisions';
+import { dueDecision, viewOf, applyDecision, autoChoose, ASKED } from './sim/decisions';
 import * as S from './sim/stats';
 import type { Person, DecisionView, DecisionResult, LogEntry } from './sim/types';
 import { esc, wareki, yen, shortYen, html, sleep, reducedMotion } from './ui/format';
@@ -515,6 +515,7 @@ async function showLife(): Promise<void> {
           <div class="age" aria-live="polite"><span id="age">${st.age}</span><small>歳</small></div>
         </div>
         <div style="display:flex;gap:6px">
+          <button class="iconbtn statusbtn" id="statusbtn" aria-label="3人のようすを見る">3人のようす</button>
           <button class="iconbtn" data-act="theme" aria-label="${themeLabel()}">${ICON[ui.theme]}</button>
           <button class="iconbtn" data-act="help">相談先</button>
         </div>
@@ -634,6 +635,7 @@ async function showLife(): Promise<void> {
     pp.textContent = '❚❚';
   });
   app.querySelector('#kurashi')!.addEventListener('click', () => showKurashi());
+  app.querySelector('#statusbtn')!.addEventListener('click', () => showStatus());
   const auto = app.querySelector('#auto') as HTMLButtonElement;
   auto.addEventListener('click', () => {
     autoMode = !autoMode;
@@ -814,16 +816,10 @@ function renderMFeed(): void {
         if (dead) return null;
         return { key: `p${i}`, html: `<div class="mline ${ERA_CLASS[i]} empty">${whoOf()}<div class="mbody"><p class="d">特に記録なし</p></div></div>` };
       }
-      const moreKey = `${i}:${age}:more`;
-      // 3人を一度に見られるよう、1人につき大事な1件と、心の声1つだけを出す。残りは「ほか○件」で開く
+      // その年のことは、隠さずに全部出す（日々の場面や心の声こそが、その人の物語になるため）。
+      // 大事な出来事を先に、心の声を最後に。長い本文は2〜3行で切り、押すと全文
       const rank = (e: LogEntry) => KIND_RANK[e.kind] ?? 5;
-      const sorted = [...es].sort((x, y) => rank(x) - rank(y));
-      const main = sorted.find((e) => e.kind !== 'think') ?? sorted[0];
-      // 2行目は心の声。なければ日々のこと（出来事だけでは、その人の暮らしが見えないため）
-      const second = sorted.find((e) => e.kind === 'think' && e !== main) ?? (main.kind !== 'daily' ? sorted.find((e) => e.kind === 'daily') : undefined);
-      const top = [main, second].filter(Boolean) as LogEntry[];
-      const showAll = openKeys.has(moreKey) || es.length <= top.length;
-      const visible = showAll ? [...top, ...sorted.filter((e) => !top.includes(e))] : top;
+      const visible = [...es].sort((x, y) => rank(x) - rank(y));
       const inner = visible
         .map((e) => {
           const key = `${i}:${age}:${p.log.indexOf(e)}`;
@@ -833,8 +829,7 @@ function renderMFeed(): void {
           return `<button type="button" class="ment ${cls}" data-key="${key}" aria-expanded="${openKeys.has(key)}">${plain ? '' : `<b class="t">${esc(e.title)}</b>`}<span class="d">${esc(e.text)}</span></button>${e.heavy ? '<button class="help-note" data-act="helpnote">つらいときの相談先</button>' : ''}`;
         })
         .join('');
-      const more = showAll ? '' : `<button type="button" class="mmore" data-more="${moreKey}">ほか${es.length - top.length}件</button>`;
-      return { key: `p${i}`, html: `<div class="mline ${ERA_CLASS[i]}">${whoOf(more)}<div class="mbody">${inner}</div></div>` };
+      return { key: `p${i}`, html: `<div class="mline ${ERA_CLASS[i]}">${whoOf()}<div class="mbody">${inner}</div></div>` };
     });
     return { age, head, lines: lines.filter(Boolean) as { key: string; html: string }[] };
   });
@@ -943,6 +938,92 @@ function personNow(p: Person, i: number, age: number): string {
   </section>`;
 }
 
+/** スマホなど：上の「3人のようす」で開く、くわしい今の状態 */
+function personDetail(p: Person, i: number, age: number): string {
+  const year = p.birthYear + age;
+  const alive = p.alive || deathPending(p);
+  const nm = esc(p.name);
+  if (!alive) {
+    return html`<div class="pd ${ERA_CLASS[i]}">
+      <div class="pd-head"><b>${p.birthYear}–${p.deathYear}</b><span>${nm}</span></div>
+      <p class="pd-kyonen">享年${p.deathAge}<small>${esc(p.deathCause ?? '')}</small></p>
+      <dl class="pd-dl"><dt>学歴</dt><dd>${EDU_LABEL[p.edu]}</dd><dt>仕事</dt><dd>${esc(p.jobTitle || 'なし')}</dd><dt>生涯年収</dt><dd>${yen(p.lifetimeEarningsReal)}（今の価値）</dd></dl>
+      <div class="lifemap"><small>人生地図（1マス1年、濃いほど幸せだった年）</small>${lifeMapRow(p, i)}</div>
+    </div>`;
+  }
+  const s = p.stats;
+  const bar = (k: string, v: number) => `<div class="pd-bar"><span>${k}</span><span class="bar"><i style="width:${v}%"></i></span><b>${Math.round(v)}</b></div>`;
+  const pa = (by: number) => year - by;
+  const fam: string[] = [];
+  fam.push(`父　${p.fatherAlive ? `${pa(p.fatherBirthYear)}歳` : '亡くなった'}`);
+  fam.push(`母　${p.motherAlive ? `${pa(p.motherBirthYear)}歳` : '亡くなった'}`);
+  if (p.siblings > 1) fam.push(`きょうだい　${p.siblings}人の${p.birthOrder === 1 ? '長子' : `${p.birthOrder}番目`}`);
+  if (p.married) fam.push(`${p.sex === 'male' ? '妻' : '夫'}　${p.spouseAlive ? esc(p.spouseName ?? 'いる') : '先に亡くなった'}${p.marriageAge !== undefined ? `（${p.marriageAge}歳で${p.marriageType ?? ''}結婚）` : ''}`);
+  const kids = p.children.filter((c) => c.birthYear <= year);
+  if (kids.length) fam.push(`子　${kids.map((c) => `${esc(c.name ?? '')}${c.alive ? `（${year - c.birthYear}歳）` : '（亡くなった）'}`).join('、')}`);
+  if (p.friendName && (p.friendSince ?? 99) <= age) fam.push(`親友　${esc(p.friendName)}${p.friendLost ? '（いまは疎遠）' : ''}`);
+  if (p.pet && p.pet.since <= age) fam.push(`${p.pet.kind === 'dog' ? '犬' : '猫'}　${esc(p.pet.name)}${p.pet.alive ? '' : '（見送った）'}`);
+  const thoughts = p.log.filter((e) => e.kind === 'think' && isShown(e)).slice(-2).reverse();
+  const miss = p.wishes.filter((w) => !w.ok);
+  return html`<div class="pd ${ERA_CLASS[i]}">
+    <div class="pd-head"><b>${year}</b><span>${wareki(year)}・${age}歳</span></div>
+    <p class="pd-name">${nm}<small>${esc(statusLine(p))}</small></p>
+    <div class="pd-bars">${bar('健康', s.health)}${bar('幸福', s.happiness)}${bar('知識', s.knowledge)}${bar('人間関係', s.relation)}</div>
+    <dl class="pd-dl">
+      <dt>学歴</dt><dd>${p.inSchool ? '在学中' : EDU_LABEL[p.edu]}</dd>
+      <dt>仕事</dt><dd>${esc(p.jobTitle || (p.retired ? '退職した' : 'なし'))}</dd>
+      <dt>${p.money < 0 ? 'ローン' : '貯え'}</dt><dd>${yen(Math.abs(p.money))}</dd>
+      ${p.income > 0 && !p.retired ? `<dt>年収</dt><dd>${yen(p.income)}</dd>` : ''}
+      ${p.pensionMonthly ? `<dt>年金</dt><dd>月${yen(p.pensionMonthly)}</dd>` : ''}
+      <dt>これまでの稼ぎ</dt><dd>${yen(p.lifetimeEarningsReal)}（今の価値）</dd>
+    </dl>
+    <h5>家族と身近な人</h5>
+    <ul class="pd-fam">${fam.map((f) => `<li>${f}</li>`).join('')}</ul>
+    ${thoughts.length ? `<h5>最近思ったこと</h5>${thoughts.map((t) => `<p class="lastthink">${esc(t.text)}<small>${t.age}歳</small></p>`).join('')}` : ''}
+    ${miss.length ? `<h5>叶わなかった望み</h5><ul class="pd-fam">${miss.map((w) => `<li>${w.age}歳　${esc(w.wish)}<small>→ ${esc(w.result)}</small></li>`).join('')}</ul>` : ''}
+    <div class="lifemap"><small>人生地図（1マス1年、濃いほど幸せだった年）</small>${lifeMapRow(p, i)}</div>
+    <h5>この年の日本</h5>
+    ${yearFacts(p, year)}
+  </div>`;
+}
+
+function showStatus(start = 0): void {
+  if (!state) return;
+  const st = state;
+  const ages = st.persons.map((p) => (p.alive || deathPending(p) ? shownAge : p.deathAge ?? shownAge));
+  const render = (k: number) => html`<div class="status-sheet">
+    <div class="tabs" role="tablist">${st.persons.map((q, j) => `<button class="btn small ${j === k ? '' : 'ghost'}" role="tab" aria-selected="${j === k}" data-tab="${j}">${q.birthYear}年生まれ</button>`)}</div>
+    ${personDetail(st.persons[k], k, ages[k])}
+    <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn small ghost" data-log="${k}">この人の記録をすべて見る</button><button class="btn small" data-close>閉じる</button></div>
+  </div>`;
+  // 見ているあいだは止めておく
+  const wasPaused = paused;
+  paused = true;
+  const { el, close: close0 } = sheet(render(start), { label: '3人のようす', dismiss: true });
+  const close = () => {
+    close0();
+    paused = wasPaused;
+  };
+  el.addEventListener('click', (e) => (e.target === el || (e.target as HTMLElement).closest('[data-x]')) && (paused = wasPaused));
+  const onEsc = (e: KeyboardEvent) => {
+    if (e.key !== 'Escape') return;
+    paused = wasPaused;
+    document.removeEventListener('keydown', onEsc);
+  };
+  document.addEventListener('keydown', onEsc);
+  const bind = (k: number) => {
+    const box = el.querySelector('.sheet')!;
+    box.innerHTML = '<button class="sheet-x" data-x aria-label="閉じる">×</button>' + render(k);
+    box.querySelectorAll<HTMLButtonElement>('[data-tab]').forEach((b) => b.addEventListener('click', () => bind(Number(b.dataset.tab))));
+    box.querySelector('[data-close]')!.addEventListener('click', close);
+    box.querySelector('[data-log]')!.addEventListener('click', () => {
+      close();
+      showLog(k);
+    });
+  };
+  bind(start);
+}
+
 function renderSides(): void {
   const L = app.querySelector('#sideL');
   const R = app.querySelector('#sideR');
@@ -992,24 +1073,21 @@ async function loop(): Promise<void> {
     shownAge = st.age;
     const ageEl0 = app.querySelector('#age');
     if (ageEl0) ageEl0.textContent = String(st.age);
-    // ひと息
-    if (BREATH_AGES.includes(st.age) && !st.done.includes(`breath${st.age}`) && st.persons.some((p) => p.alive)) {
-      st.done.push(`breath${st.age}`);
-      if (!autoMode) await showBreather(st.age);
-    }
-    // 決断
+    // 決断。人生の分かれ道になるものだけを聞き、ほかは聞かずに決めて記録に残す
+    // （「ひと息」の問いかけは、読んでいる途中にじゃまになるので出さない。2026-10-15）
     let d = dueDecision(st);
     while (d && !me.stop) {
       const view = viewOf(st, d);
+      const ask = !autoMode && ASKED.has(d.id);
       let choice: string;
-      if (autoMode) choice = autoChoose(st, d);
+      if (!ask) choice = autoChoose(st, d);
       else {
         untilDecision = false;
         choice = await askDecision(view);
       }
       const res = applyDecision(st, d.id, choice);
       renderAll();
-      if (!autoMode) await showResult(view, res);
+      if (ask) await showResult(view, res);
       d = dueDecision(st);
     }
     if (me.stop) return;

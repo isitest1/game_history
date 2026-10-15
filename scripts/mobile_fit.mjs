@@ -1,7 +1,8 @@
 // スマホで実際に遊びながら、次の3つを毎年確かめる。
-// 1. 一番上（スクロール0）で、最新の年齢の3人分が、3人の帯と下の操作バーの間に収まっている
-// 2. 指で下へ送り、また上へ戻しても、帯の高さが変わらず、出来事の位置が飛ばない
-// 3. 上へ戻しきると、最新の年齢の3人分がまた全部見える
+// 1. 一番上（スクロール0）で、最新の年齢の見出しと最初の人の記録が、上の帯に隠れずに見える
+// 2. 指で下へ送り、また上へ戻しても、上の帯の高さが変わらず、出来事の位置が飛ばない
+// 3. 上へ戻しきると、最新の年齢がまた見える
+// あわせて、3人分がすべて一画面に収まった年の割合（all3）を数える（その年のことは全部並べるので、収まらない年もある）
 // 使い方：npm run build && npx vite preview --port 4173 & node scripts/mobile_fit.mjs [画面の高さ,...]
 import { chromium } from '@playwright/test';
 
@@ -14,19 +15,23 @@ async function measure(page) {
   return page.evaluate(() => {
     const row = document.querySelector('.mrow');
     if (!row) return null;
-    const cols = document.querySelector('.cols').getBoundingClientRect();
+    const bar = document.querySelector('.agebar').getBoundingClientRect();
+    const colsEl = document.querySelector('.cols');
+    const cols = colsEl.getBoundingClientRect();
+    const top = Math.max(bar.bottom, getComputedStyle(colsEl).display === 'none' ? 0 : cols.bottom);
     const ctr = document.querySelector('.controls').getBoundingClientRect();
     const lines = [...row.querySelectorAll('.mline')].map((e) => e.getBoundingClientRect());
     const head = row.querySelector('.mage').getBoundingClientRect();
     return {
       scrollY: Math.round(window.scrollY),
-      colsH: Math.round(cols.height),
-      colsBottom: Math.round(cols.bottom),
+      colsH: Math.round(top),
+      colsBottom: Math.round(top),
       controlsTop: Math.round(ctr.top),
       rowTop: Math.round(head.top),
       rowDocTop: Math.round(head.top + window.scrollY),
       linesBottom: Math.round(Math.max(...lines.map((r) => r.bottom))),
-      fits: head.top >= cols.bottom - 1 && Math.max(...lines.map((r) => r.bottom)) <= ctr.top + 1,
+      fits: head.top >= top - 1 && lines[0].bottom <= ctr.top + 1,
+      all3: head.top >= top - 1 && Math.max(...lines.map((r) => r.bottom)) <= ctr.top + 1,
       age: row.querySelector('.mage').firstChild.textContent,
     };
   });
@@ -43,9 +48,10 @@ for (const h of heights) {
   await page.click('#skip');
   await page.waitForSelector('#go', { timeout: 20000 });
   await page.click('#go');
-  await page.waitForSelector('.cols');
+  await page.waitForSelector('#age');
   await page.click('#auto'); // 決断はおまかせ
   let checked = 0;
+  let all3 = 0;
   let maxScroll = 0;
   let lastAge = '';
   for (let i = 0; i < 600; i++) {
@@ -75,6 +81,7 @@ for (const h of heights) {
       await page.waitForTimeout(120);
       const top = await measure(page);
       if (!top.fits) problems.push({ h, at: 'top', ...top });
+      if (top.all3) all3++;
       // 指で少しずつ下へ送り、また上へ戻す
       const seen = [];
       for (const dy of [30, 30, 60, 120, -120, -60, -30, -30, -200]) {
@@ -96,7 +103,7 @@ for (const h of heights) {
     await page.waitForTimeout(120);
   }
   const ended = (await page.locator('.end').count()) > 0;
-  summary.push({ h, checked, ended, maxScroll });
+  summary.push({ h, checked, ended, maxScroll, all3Share: +(all3 / Math.max(1, checked)).toFixed(2) });
   await ctx.close();
 }
 await browser.close();

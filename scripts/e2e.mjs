@@ -15,7 +15,7 @@ await page.click('button[type=submit]');
 await page.click('#skip');
 await page.waitForSelector('#go', { timeout: 20000 });
 await page.click('#go');
-await page.waitForSelector('.cols');
+await page.waitForSelector('#age');
 // 最初の数回の決断は手で選ぶ（ひと息も含む）
 let decisions = 0;
 let breaths = 0;

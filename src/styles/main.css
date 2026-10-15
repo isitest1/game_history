@@ -3682,3 +3682,211 @@ button {
   font-family: var(--serif);
   font-size: clamp(26px, 5vw, 40px);
 }
+
+/* ---------- スマホ：上の3人の欄は出さず、「3人のようす」で開く。その年のことは全部並べる（2026-10-15） ---------- */
+.statusbtn {
+  font-size: 13px;
+}
+@media (min-width: 1360px) {
+  .statusbtn {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .life > .cols {
+    display: none;
+  }
+  .statusbtn {
+    height: 30px !important;
+    padding: 0 10px !important;
+    font-size: 12px !important;
+  }
+  .mfeed {
+    padding-top: 6px;
+  }
+  .ment .d {
+    -webkit-line-clamp: 2;
+  }
+  .ment:first-child:not(.k-daily):not(.k-think) .d {
+    -webkit-line-clamp: 3;
+  }
+  .ment + .ment.k-daily {
+    padding-top: 2px;
+  }
+}
+.status-sheet .tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: 0 36px 10px 0;
+}
+.pd {
+  color: var(--c-ink);
+  border-radius: 14px;
+  padding: 14px 14px 16px;
+}
+.pd h5 {
+  margin: 14px 0 4px;
+  font-size: 13px;
+  color: var(--c-sub);
+  letter-spacing: 0.06em;
+}
+.pd-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.pd-head b {
+  font-size: 30px;
+  font-variant-numeric: tabular-nums;
+}
+.pd-head span {
+  color: var(--c-sub);
+  font-size: 13px;
+}
+.pd-name {
+  margin: 2px 0 10px;
+  font-weight: 700;
+}
+.pd-name small {
+  display: block;
+  font-weight: 400;
+  color: var(--c-sub);
+  font-size: 13px;
+}
+.pd-kyonen {
+  font-size: 26px;
+  font-weight: 800;
+  margin: 6px 0;
+}
+.pd-kyonen small {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 8px;
+}
+.pd-bars {
+  display: grid;
+  gap: 5px;
+}
+.pd-bar {
+  display: grid;
+  grid-template-columns: 5em 1fr 2.2em;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+.pd-bar .bar {
+  height: 7px;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--c-ink) 12%, transparent);
+  overflow: hidden;
+}
+.pd-bar .bar i {
+  display: block;
+  height: 100%;
+  background: var(--c-acc);
+}
+.pd-bar b {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.pd-dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 14px;
+  margin: 12px 0 0;
+  font-size: 14px;
+}
+.pd-dl dt {
+  color: var(--c-sub);
+}
+.pd-dl dd {
+  margin: 0;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.pd-fam {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 3px;
+  font-size: 14px;
+}
+.pd-fam small {
+  color: var(--c-sub);
+  margin-left: 6px;
+}
+.pd .lastthink {
+  margin: 6px 0 0;
+  padding-left: 9px;
+  border-left: 2px solid color-mix(in srgb, var(--c-acc) 55%, transparent);
+  color: var(--c-sub);
+  line-height: 1.6;
+}
+.pd .lastthink small {
+  display: block;
+  font-size: 11px;
+}
+.pd .lifemap {
+  margin-top: 12px;
+}
+.pd .lifemap small {
+  display: block;
+  font-size: 11px;
+  color: var(--c-sub);
+  margin-bottom: 4px;
+}
+.pd .lifemap .rowm {
+  grid-template-columns: 1fr;
+}
+.pd .lifemap .rowm > span {
+  display: none;
+}
+.pd .lifemap .cells {
+  grid-template-columns: repeat(20, 1fr);
+}
+.pd .yfact {
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: color-mix(in srgb, var(--c-bg) 60%, var(--card));
+  border: 1px solid color-mix(in srgb, var(--c-ink) 12%, transparent);
+}
+.pd .yfact h4 {
+  margin: 0 0 6px;
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  font-size: 14px;
+}
+.pd .yfact h4 span {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--c-sub);
+}
+.pd .yfact h4 em {
+  font-style: normal;
+  font-size: 11px;
+  color: var(--c-acc);
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: 0 6px;
+}
+.pd .yfact dl {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 3px 10px;
+  margin: 0;
+  font-size: 13px;
+}
+.pd .yfact dt {
+  color: var(--c-sub);
+}
+.pd .yfact dd {
+  margin: 0;
+  text-align: right;
+}
+.pd .yfact p {
+  margin: 0;
+  font-size: 12px;
+}
