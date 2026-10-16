@@ -209,6 +209,11 @@ export const DECISIONS: DecisionDef[] = [
         p.wishes.push({ age: 12, wish: '学問を続けること', result: '家の仕事', ok: false });
         return { ok: false, text: '学問を続けたかったが、家の仕事の手が足りなかった。寺子屋を終えて働き始めた。' };
       }
+      if (p.flags.includes('no_school') && y < 1947) {
+        // 小学校に通えなかった人（明治・大正）
+        if (opt === 'exam') p.wishes.push({ age: 12, wish: '上の学校への進学', result: '家の仕事', ok: false });
+        return { ok: opt !== 'exam', text: opt === 'exam' ? '上の学校に行きたかったが、小学校にも通えなかったので、その道はなかった。家の仕事を手伝った。' : '家の仕事を手伝った。' };
+      }
       if (opt === 'local') {
         return { ok: true, text: y < 1886 ? '小学校の上の課程に進んだ。' : y < 1941 ? '高等小学校に進んだ。' : y < 1947 ? '国民学校の高等科に進んだ。' : '地元の公立中学に進んだ。' };
       }
@@ -293,6 +298,12 @@ export const DECISIONS: DecisionDef[] = [
         p.wishes.push({ age: 15, wish: '学問を続けること', result: '働いた', ok: false });
         findJob(st, p, rng, y, 'middle');
         return { ok: false, text: '学問を続けたかったが、女の子が学ぶ場は、ほとんどなかった。' };
+      }
+      if (opt === 'go' && p.flags.includes('no_school')) {
+        // 小学校（寺子屋）に通えなかった人は、上の学校には進めない
+        p.wishes.push({ age: 15, wish: y < 1873 ? '学問を続けること' : '上の学校への進学', result: '働いた', ok: false });
+        findJob(st, p, rng, y, 'middle');
+        return { ok: false, text: `${school}で学びたかったが、${y < 1873 ? '手習い' : '小学校'}にも通えなかったので、その道はなかった。働き始めた。` };
       }
       if (opt === 'go') {
         // ほとんど全員が進学する時代は、望めばほぼ進める（定時制・通信制も含む）
@@ -552,7 +563,7 @@ export const DECISIONS: DecisionDef[] = [
       p.stats.happiness = Math.min(100, p.stats.happiness + 4);
       if (p.job === 'farm' || p.job === 'self') {
         p.job = 'smallco';
-        p.jobTitle = '中小企業の勤め人';
+        p.jobTitle = jobLabelAt('smallco', y);
       }
       const west = p.pref >= 25 && p.pref !== 47;
       const t =
@@ -571,7 +582,10 @@ export const DECISIONS: DecisionDef[] = [
               : y < 2020
                 ? '都会に出て、シェアハウスで暮らし始めた。'
                 : '都会に出た。仕事の多くはオンラインでもできた。';
-      if (p.job && rng.chance(0.3)) p.job = 'smallco';
+      if (p.job && p.job !== 'none' && rng.chance(0.3)) {
+        p.job = 'smallco';
+        p.jobTitle = jobLabelAt('smallco', y);
+      }
       return { ok: true, text: t };
     },
     auto: (_st, rng) => (rng.chance(0.35) ? 'go' : 'stay'),

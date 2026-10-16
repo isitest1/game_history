@@ -22,6 +22,13 @@ describe('称号と共有', () => {
     }
   });
 
+  it('小学校（寺子屋）に通えなかった人は、上の学校に進まない', () => {
+    for (let seed = 1; seed <= 150; seed++) {
+      const st = playToEnd(createGame({ seed }));
+      for (const p of st.persons) if (p.flags.includes('no_school')) expect(p.edu).toBe('none');
+    }
+  });
+
   it('壊れた共有のリンクは受け付けない', () => {
     expect(decodeSummary('abc')).toBeNull();
     expect(decodeSummary('')).toBeNull();
