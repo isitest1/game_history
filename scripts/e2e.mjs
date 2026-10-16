@@ -29,7 +29,11 @@ for (let i = 0; i < 400; i++) {
     decisions++;
     await opt.nth(decisions % (await opt.count())).click();
     await page.click('#cont');
-    if (decisions === 6) await page.click('#auto'); // あとはおまかせ
+    if (decisions === 6) {
+      // あとはおまかせ（「質問」ボタンから選ぶ）
+      await page.click('#qbtn');
+      await page.click('[data-q="auto"]');
+    }
     continue;
   }
   if (await page.locator('#ans').count()) {

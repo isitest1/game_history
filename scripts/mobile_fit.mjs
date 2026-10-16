@@ -49,7 +49,9 @@ for (const h of heights) {
   await page.waitForSelector('#go', { timeout: 20000 });
   await page.click('#go');
   await page.waitForSelector('#age');
-  await page.click('#auto'); // 決断はおまかせ
+  // 決断はおまかせ（「質問」ボタンから選ぶ）
+  await page.click('#qbtn');
+  await page.click('[data-q="auto"]');
   let checked = 0;
   let all3 = 0;
   let maxScroll = 0;

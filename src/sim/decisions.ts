@@ -62,6 +62,20 @@ const OKINAWA_US = (p: Person, year: number) => p.pref === 47 && year >= 1945 &&
  */
 export const ASKED = new Set(['middle', 'high', 'college', 'marriage', 'city', 'children', 'workfamily', 'house', 'care', 'retire']);
 
+/** 質問の数（遊ぶ人が選ぶ。2026-10-16）。少なめは人生の分かれ道の4問、多めは21問すべて */
+export type QuestionLevel = 'few' | 'normal' | 'many';
+export const QUESTION_LEVELS: { id: QuestionLevel; label: string; hint: string }[] = [
+  { id: 'few', label: '少なめ', hint: '4問' },
+  { id: 'normal', label: 'ふつう', hint: '10問' },
+  { id: 'many', label: '多め', hint: '21問' },
+];
+const FEW = new Set(['high', 'college', 'marriage', 'city']);
+export function askedSet(level: QuestionLevel | undefined): Set<string> {
+  if (level === 'few') return FEW;
+  if (level === 'many') return new Set(DECISIONS.map((d) => d.id));
+  return ASKED;
+}
+
 export const DECISIONS: DecisionDef[] = [
   // 1. 気質
   {

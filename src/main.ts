@@ -1,6 +1,6 @@
 import './styles/main.css';
 import { createGame, runYear, eventsForYear, survivalPercentile, survivalCurve, cohortLifeExpectancy, eduLabelOf, jobLabelAt, OLDEST, type GameState, type Focus, type YearEntry } from './sim/engine';
-import { dueDecision, viewOf, applyDecision, autoChoose, ASKED } from './sim/decisions';
+import { dueDecision, viewOf, applyDecision, autoChoose, askedSet, QUESTION_LEVELS, type QuestionLevel } from './sim/decisions';
 import * as S from './sim/stats';
 import type { Person, DecisionView, DecisionResult, LogEntry } from './sim/types';
 import { esc, wareki, yen, shortYen, html, sleep, reducedMotion } from './ui/format';
@@ -31,6 +31,7 @@ const BREATH_AGES = [6, 15, 22, 40, 65];
 interface UiPrefs {
   playerBirthYear: number | null;
   myPref?: number;
+  questions?: QuestionLevel;
   minutes: number;
   pace?: PaceId;
   theme: 'auto' | 'light' | 'dark';
@@ -139,6 +140,10 @@ function showTitle(): void {
           <button class="btn big" data-act="start">ガチャを回す<small>決断しながら、一生を見届ける</small></button>
           <button class="btn ghost big" data-act="quick">すぐ結果を見る<small>おまかせで、数秒で最後まで</small></button>
         </div>
+        <div class="qpick">
+          <span id="qlbl">ガチャを回すときの質問の数</span>
+          <div class="seg" role="group" aria-labelledby="qlbl">${QUESTION_LEVELS.map((q) => `<button type="button" data-qpick="${q.id}" aria-pressed="${(ui.questions ?? 'normal') === q.id}">${q.label}<small>${q.hint}</small></button>`).join('')}</div>
+        </div>
         <button class="linkbtn" data-act="mine">私の生まれ年と県で回す　→</button>
         <div class="hero-sample" id="heroSample" aria-live="polite"></div>
         <div class="hero-foot">
@@ -202,6 +207,13 @@ function showTitle(): void {
   app.querySelector('[data-act="start"]')!.addEventListener('click', () => startGame(false));
   app.querySelector('[data-act="quick"]')!.addEventListener('click', () => startGame(true));
   app.querySelector('[data-act="mine"]')!.addEventListener('click', () => showMine());
+  app.querySelectorAll<HTMLButtonElement>('[data-qpick]').forEach((b) =>
+    b.addEventListener('click', () => {
+      ui.questions = b.dataset.qpick as QuestionLevel;
+      savePrefs();
+      app.querySelectorAll('[data-qpick]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    }),
+  );
 }
 
 /** 新しい3人を作って始める。quick のときは、おまかせで最後の画面まで一気に進める（2026-10-15） */
@@ -209,6 +221,7 @@ function startGame(quick: boolean, mine?: { year: number; pref: number }): void 
   sound.unlock(ui.sound);
   if (location.search) history.replaceState(null, '', location.pathname);
   state = createGame({ playerBirthYear: ui.playerBirthYear, mine });
+  autoMode = false;
   track(mine ? 'start-mine' : quick ? 'start-quick' : 'start');
   if (quick) {
     playToEnd(state);
@@ -298,7 +311,18 @@ function titleSections(): string {
   const daily = DAILY.filter((d) => d.kind === 'daily').length;
   const think = DAILY.length - daily;
   const hist = store.get<HistRec[]>(HIST_KEY) ?? [];
-  return html`<section class="tsec counter-band" aria-label="いまの日本">
+  return html`<section class="tsec howto" aria-label="遊び方">
+      <div class="wrap">
+        <h2>遊び方</h2>
+        <ol class="steps">
+          <li><b>ガチャを回す</b>3人の生まれ年（江戸〜平成）と、生まれる県、性別、家の暮らし向きが決まります。</li>
+          <li><b>決断する</b>進学・上京・結婚などの決断は、3人全員に当てはまります。叶うかどうかは時代しだい。質問の数は「少なめ・ふつう・多め」から選べ、途中でも変えられます。</li>
+          <li><b>見比べて共有する</b>最後に、3人の享年・称号・ひとことの一生を並べます。画像付きでXに投稿したり、リンクで結果を見せたりできます。</li>
+        </ol>
+        <p class="muted small">すぐに結果を見たいときは「すぐ結果を見る」。数秒で最後の画面まで進みます。</p>
+      </div>
+    </section>
+    <section class="tsec counter-band" aria-label="いまの日本">
       <div class="wrap">
         <p class="kicker">今日、0時から今までに、日本では</p>
         <div class="counters">
@@ -657,7 +681,10 @@ async function showLife(): Promise<void> {
             <button class="iconbtn" id="kurashi" aria-label="家族とお金、思いを残す">暮らし</button>
           </div>
           <div class="grp">
-            <button class="iconbtn" id="auto" aria-pressed="${autoMode}" aria-label="決断をおまかせにする">おまかせ</button>
+            <span class="spdwrap">
+              <button class="iconbtn" id="qbtn" aria-haspopup="true" aria-expanded="false" aria-label="質問の数を選ぶ">質問：ふつう</button>
+              <span class="spdmenu qmenu" id="qmenu" role="radiogroup" aria-label="質問の数" hidden>${QUESTION_LEVELS.map((q) => `<button type="button" role="radio" data-q="${q.id}" aria-checked="false">${q.label}<small>${q.hint}</small></button>`).join('')}<button type="button" role="radio" data-q="auto" aria-checked="false">おまかせ<small>聞かない</small></button></span>
+            </span>
             <button class="iconbtn" id="next" aria-label="次の決断まで進める">次の決断 ▸▸</button>
           </div>
         </div>
@@ -747,11 +774,33 @@ async function showLife(): Promise<void> {
   });
   app.querySelector('#kurashi')!.addEventListener('click', () => showKurashi());
   app.querySelector('#statusbtn')!.addEventListener('click', () => showStatus());
-  const auto = app.querySelector('#auto') as HTMLButtonElement;
-  auto.addEventListener('click', () => {
-    autoMode = !autoMode;
-    auto.setAttribute('aria-pressed', String(autoMode));
+  // 質問の数：少なめ・ふつう・多め・おまかせ（いつでも変えられる）
+  const qbtn = app.querySelector('#qbtn') as HTMLButtonElement;
+  const qmenu = app.querySelector('#qmenu') as HTMLElement;
+  const openQ = (open: boolean) => {
+    qmenu.hidden = !open;
+    qbtn.setAttribute('aria-expanded', String(open));
+  };
+  showQuestions();
+  qbtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    openQ(qmenu.hidden);
   });
+  qmenu.addEventListener('click', (e) => {
+    const b = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-q]');
+    if (!b) return;
+    e.stopPropagation();
+    if (b.dataset.q === 'auto') autoMode = true;
+    else {
+      autoMode = false;
+      ui.questions = b.dataset.q as QuestionLevel;
+      savePrefs();
+    }
+    showQuestions();
+    openQ(false);
+    qbtn.focus();
+  });
+  document.addEventListener('click', () => !qmenu.hidden && openQ(false));
   loop();
 }
 
@@ -1219,12 +1268,14 @@ async function loop(): Promise<void> {
     let d = dueDecision(st);
     while (d && !me.stop) {
       const view = viewOf(st, d);
-      const ask = !autoMode && ASKED.has(d.id);
+      const ask = !autoMode && askedSet(ui.questions).has(d.id);
       let choice: string;
       if (!ask) choice = autoChoose(st, d);
       else {
         untilDecision = false;
         choice = await askDecision(view);
+        // 決断の画面で「おまかせ」を選んだとき
+        if (choice === AUTO_PICK) choice = autoChoose(st, d);
       }
       const res = applyDecision(st, d.id, choice);
       renderAll();
@@ -1335,6 +1386,10 @@ function askDecision(v: DecisionView): Promise<string> {
               .join('');
             return `<button class="opt" data-opt="${o.id}" ${all ? 'disabled' : ''}><span class="ol">${esc(o.label)}</span>${reasons ? `<span class="why">${reasons}</span>` : ''}</button>`;
           })}
+        </div>
+        <div class="opt-auto">
+          <button class="btn small ghost" data-opt="${AUTO_PICK}">おまかせで選ぶ</button>
+          <button class="btn small ghost" data-auto-all>このあとは全部おまかせ</button>
         </div>`,
       { label: `決断：${v.title}` },
     );
@@ -1344,7 +1399,26 @@ function askDecision(v: DecisionView): Promise<string> {
         resolve(b.dataset.opt!);
       }),
     );
+    el.querySelector('[data-auto-all]')!.addEventListener('click', () => {
+      autoMode = true;
+      app.querySelector('#auto')?.setAttribute('aria-pressed', 'true');
+      showQuestions();
+      close();
+      resolve(AUTO_PICK);
+    });
   });
+}
+
+/** 決断の画面の「おまかせで選ぶ」 */
+const AUTO_PICK = '__auto__';
+
+/** 遊んでいる最中の「質問」ボタンの表示（いまの質問の数か、おまかせ） */
+function showQuestions(): void {
+  const b = app.querySelector('#qbtn');
+  if (!b) return;
+  const lv = QUESTION_LEVELS.find((x) => x.id === (ui.questions ?? 'normal'))!;
+  b.textContent = autoMode ? '質問：おまかせ' : `質問：${lv.label}`;
+  app.querySelectorAll<HTMLButtonElement>('[data-q]').forEach((x) => x.setAttribute('aria-checked', String(autoMode ? x.dataset.q === 'auto' : x.dataset.q === lv.id)));
 }
 
 function showResult(v: DecisionView, r: DecisionResult): Promise<void> {
@@ -1687,6 +1761,22 @@ async function showEnd(skipSlides = false): Promise<void> {
       <p class="kicker">3つの死亡記録</p>
       <h2 class="big">同じ人が、<br />${st.persons.map((p, i) => `<span class="nw">享年${p.deathAge}${i < 2 ? '、' : '。'}</span>`).join('')}</h2>
       <div class="records">${st.persons.map((p, i) => record(p, i))}</div>
+
+      <section class="panel share">
+        <h3>共有カード</h3>
+        <canvas id="card" width="1200" height="630" role="img" aria-label="3人の人生をまとめた共有用の画像"></canvas>
+        <div class="acts">
+          <button class="btn small xbtn" id="xshare"><span aria-hidden="true">𝕏</span> 画像付きでXに投稿</button>
+          <button class="btn small ghost" id="save">画像を保存</button>
+          <button class="btn small ghost" id="shareb">ほかのアプリで共有</button>
+          <button class="btn small ghost" id="copy">文章をコピー</button>
+        </div>
+      </section>
+      <section class="panel">
+        <h3>贈ることば</h3>
+        <label for="okuri" class="muted" style="display:block;margin-bottom:6px;font-size:13px">次に、どこかの時代に生まれる誰かへ。共有する文章と、前世の記録に残ります。</label>
+        <textarea id="okuri" maxlength="140" rows="3" class="okuri" placeholder="例：生まれた年は選べない。でも、望むことはやめなかった。"></textarea>
+      </section>
       ${recordTable(st)}
 
       <section class="panel">
@@ -1725,22 +1815,6 @@ async function showEnd(skipSlides = false): Promise<void> {
       ${thoughtsPanel(st)}
       ${wishesPanel(st)}
 
-      <section class="panel">
-        <h3>贈ることば</h3>
-        <label for="okuri" class="muted" style="display:block;margin-bottom:6px;font-size:13px">次に、どこかの時代に生まれる誰かへ。共有する文章と、前世の記録に残ります。</label>
-        <textarea id="okuri" maxlength="140" rows="3" class="okuri" placeholder="例：生まれた年は選べない。でも、望むことはやめなかった。"></textarea>
-      </section>
-
-      <section class="panel share">
-        <h3>共有カード</h3>
-        <canvas id="card" width="1200" height="630" role="img" aria-label="3人の人生をまとめた共有用の画像"></canvas>
-        <div class="acts">
-          <button class="btn small xbtn" id="xshare"><span aria-hidden="true">𝕏</span> 画像付きでXに投稿</button>
-          <button class="btn small ghost" id="save">画像を保存</button>
-          <button class="btn small ghost" id="shareb">ほかのアプリで共有</button>
-          <button class="btn small ghost" id="copy">文章をコピー</button>
-        </div>
-      </section>
       <div class="end-acts">
         <button class="btn" id="again">もう一度生まれる</button>
         <button class="btn ghost" id="againQuick">すぐもう一回（おまかせ）</button>

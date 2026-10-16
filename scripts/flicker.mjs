@@ -20,7 +20,10 @@ for (const [name, vp] of [
   await page.click('#go');
   await page.waitForSelector('#age');
   const normal = process.env.NORMAL === '1';
-  if (!normal) await page.click('#auto');
+  if (!normal) {
+    await page.click('#qbtn');
+    await page.click('[data-q="auto"]');
+  }
   await page.evaluate(() => {
     const w = window;
     w.__m = { removed: 0, anim: 0, entries: 0 };
