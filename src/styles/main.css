@@ -4359,3 +4359,61 @@ button {
     grid-template-columns: 1fr;
   }
 }
+
+/* 質問の数・遊び方・決断のおまかせ（2026-10-16） */
+.qpick {
+  margin: 4px 0 6px;
+  font-size: 13px;
+}
+.qpick > span {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+.qpick .seg button small,
+.qmenu button small {
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+  opacity: 0.75;
+}
+.qmenu {
+  right: 0;
+  left: auto;
+}
+.opt-auto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+.howto .steps {
+  margin: 8px 0 10px;
+  padding-left: 1.4em;
+  display: grid;
+  gap: 10px;
+  max-width: 46em;
+}
+.howto .steps b {
+  display: block;
+}
+.qmenu {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-width: max-content;
+  right: 0;
+  left: auto;
+}
+.qmenu[hidden] {
+  display: none;
+}
+.qmenu button {
+  white-space: nowrap;
+  padding: 6px 14px;
+  text-align: left;
+}
+.qmenu button small {
+  display: inline;
+  margin-left: 4px;
+}
