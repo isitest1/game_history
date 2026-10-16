@@ -478,8 +478,10 @@ async function showGacha(): Promise<void> {
   };
   const addRow = (k: string, v: string, pr: string) => {
     const li = document.createElement('li');
+    // 「1000人のうち何人」は、確率が1つだけのときに出す（「1990〜2010年から」や県3つの確率には出さない）
+    const one = /^[\d.]+%$/.test(pr);
     const per = Math.round(parseFloat(pr) * 10);
-    li.innerHTML = `<span class="k">${esc(k)}</span><b>${esc(v)}</b><span class="p">${esc(pr)}<small>1000人のうち${per}人</small></span>`;
+    li.innerHTML = `<span class="k">${esc(k)}</span><b>${esc(v)}</b><span class="p">${esc(pr)}${one ? `<small>1000人のうち${per}人</small>` : ''}</span>`;
     ledger.appendChild(li);
   };
   const mark = (i: number) =>
@@ -573,12 +575,19 @@ function showBirth(): void {
       <p class="muted" style="font-size:13px;margin:-8px 0 16px">見込み寿命は、その年に生まれた人が生命表どおりに生きた場合の平均。1歳までの死亡は、その年の0歳の死亡率から。${st.persons.some((p) => p.birthYear < 1890) ? '1890年より前（江戸・明治の初め）の数字は、歴史人口学の研究などから作った推計です。' : st.persons.some((p) => p.birthYear < 1930) ? '1930年より前（明治・大正）の数字は、当時の統計から作った概算で、一部は推計です。' : ''}</p>
       <div class="birth-acts">
         <button class="btn" id="go">人生を始める</button>
+        <button class="btn ghost" id="birthQuick">すぐ結果を見る</button>
         <button class="btn ghost" id="again">引き直す</button>
         <button class="btn ghost xbtn-g" id="xbirth"><span aria-hidden="true">𝕏</span> 生まれた3人をXで共有</button>
       </div>
     </main>`;
   bindCommon(app);
   app.querySelector('#go')!.addEventListener('click', () => showLife());
+  // 生まれた3人を見たあと、おまかせで最後の画面まで一気に進める
+  app.querySelector('#birthQuick')!.addEventListener('click', () => {
+    track('birth-quick');
+    playToEnd(st);
+    void showEnd(true);
+  });
   app.querySelector('#xbirth')!.addEventListener('click', () => openX(birthXText(st)));
   app.querySelector('#again')!.addEventListener('click', () => {
     state = createGame({ playerBirthYear: ui.playerBirthYear });

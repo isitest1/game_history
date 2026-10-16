@@ -893,7 +893,7 @@ function work(p: Person, rng: Rng, year: number): void {
     const reemp = Math.min(0.9, 0.4 + S.jobOpenings(year) * 0.3);
     if (rng.chance(reemp)) {
       p.job = 'smallco';
-      p.jobTitle = '中小企業の勤め人';
+      p.jobTitle = jobLabelAt('smallco', year);
       log(p, 'work', '再就職した', `しばらくして、小さな会社に再就職できた。`);
     } else {
       p.flags.push('part_time');

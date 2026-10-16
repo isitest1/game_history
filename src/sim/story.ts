@@ -51,12 +51,12 @@ function titleCandidates(p: Person, talent: string): string[] {
   const job = p.job === 'none' && p.jobTitle ? p.jobTitle : p.job;
   if (job === 'farm') add('田畑とともに生きた人');
   if (job === 'self') add('商いに生きた人');
-  if (job === 'public') add(isEdo(y15) ? '武士として生きた人' : '公に尽くした人');
-  if (job === 'bigco') add(isEdo(y15) ? '大店に仕えた人' : '大きな会社で働いた人');
+  if (job === 'public') add(/武士|士族/.test(p.jobTitle) ? '武士として生きた人' : '公に尽くした人');
+  if (job === 'bigco') add(/大店|店や会社/.test(p.jobTitle) ? '大店に仕えた人' : '大きな会社で働いた人');
   if (p.jobTitle === '専業主婦' || p.jobTitle === '家の仕事') add('家を守った人');
   if (p.wishes.filter((w) => !w.ok).length >= 8) add('望みの多くが叶わなかった人');
   if (p.movedToCity && !urban(p)) add('故郷を出て都会で生きた人');
-  if (job === 'smallco') add(isEdo(y15) ? '奉公に生きた人' : '働きづめに生きた人');
+  if (job === 'smallco') add(/奉公|店や工場/.test(p.jobTitle) ? '奉公に生きた人' : '働きづめに生きた人');
   add('ふつうの一生を生きた人');
   return out;
 }

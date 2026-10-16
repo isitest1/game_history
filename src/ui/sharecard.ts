@@ -143,8 +143,8 @@ function roundRect(g: CanvasRenderingContext2D, x: number, y: number, w: number,
 
 /** 幅に合わせて折り返して書く（最大 maxLines 行。あふれたら…） */
 function wrapLines(g: CanvasRenderingContext2D, text: string, x: number, y: number, max: number, lh: number, maxLines: number): void {
-  // 数字の途中や、句読点・閉じかっこの前では折り返さない
-  const tokens = text.match(/[0-9０-９,.]+[。、）」]?|.[。、）」]?/gu) ?? [];
+  // 数字の途中・「2人」「58歳」の間や、句読点・中黒・閉じかっこの前では折り返さない
+  const tokens = text.match(/[0-9０-９,.]+[人歳]?[。、）」・]?|.[。、）」・]?/gu) ?? [];
   const lines: string[] = [];
   let line = '';
   for (const tk of tokens) {
